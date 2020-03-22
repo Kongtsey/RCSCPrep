@@ -27,7 +27,7 @@ questionsAnswers = {
     "questions":"",
     "choices":""
 }
-json_file = open('PastPapers/PEQuestion.txt','w')
+json_file = open('JSONFormatQuestions/PEQuestion.txt','w')
 for i in range(len(choices)):
     questionsAnswers["questions"]=questions[i]
     questionsAnswers["choices"]=choices[i]
