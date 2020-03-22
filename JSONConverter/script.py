@@ -1,6 +1,6 @@
 import classifierQuestions as cQ
 import json as js
-prblmSlvPage = open("PastPapers/2010_PE.txt","r")
+prblmSlvPage = open("PastPapers/2010_PE.txt","r") #prblmSlvPage is the quantitative part of the PE
 content = prblmSlvPage.read()
 content = content.split("\n")
 # split all of the text files by new lines.
@@ -23,14 +23,16 @@ for i in range(len(orderedList)):
 choices = cQ.iterator(choices,cQ.reverse)
 
 # Time to convert into a dictionary
-questionsAnswers = {
+questionsAnswers = { #dictionary format to store as JSON.
     "questions":"",
     "choices":""
 }
-json_file = open('JSONFormatQuestions/PEQuestion.txt','w')
+year = input("What year is the paper?\n")
+json_file = open('JSONFormatQuestions/PEQuestion'+year+'.txt','w')
 for i in range(len(choices)):
-    questionsAnswers["questions"]=questions[i]
-    questionsAnswers["choices"]=choices[i]
-    data = js.dumps(questionsAnswers)
+    questionsAnswers["questions"]=questions[i] # each question is stored in question
+    questionsAnswers["choices"]=choices[i] # choice is stored
+    data = js.dumps(questionsAnswers) #and then choice and question are converted and process repeats.
     json_file.write(data+"\n")
 json_file.close()
+prblmSlvPage.close()
