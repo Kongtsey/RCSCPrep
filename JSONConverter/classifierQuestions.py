@@ -92,5 +92,5 @@ def joiner(list):
     """
     fullThing = ""
     for i in range(len(list)):
-        fullThing += str(list[i])
+        fullThing += " "+str(list[i])
     return fullThing

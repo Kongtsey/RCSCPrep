@@ -22,7 +22,7 @@ for i in range(len(orderedList)):
     choicesResult = cQ.finder3(orderedList[i],'D.') # compiles all choices into a single list and have each choice as an element
     choices.append(choicesResult)
 choices = cQ.iterator(choices,cQ.reverse)
-
+choices = cQ.iterator(choices,cQ.joiner)
 # Time to convert into a dictionary
 questionsAnswers = { #dictionary format to store as JSON.
     "questions":"",
