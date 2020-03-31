@@ -4,6 +4,7 @@ year = input("What year is the paper?\n")
 prblmSlvPage = open("PastPapers/"+year+"_PE.txt","r") #prblmSlvPage is the quantitative part of the PE
 content = prblmSlvPage.read()
 content = content.split("\n")
+cQ.iterator(content,print)
 # split all of the text files by new lines.
 questions = [] # list to store all the questions
 choices = [] # list to store all the choices
@@ -34,5 +35,8 @@ for i in range(len(choices)):
     questionsAnswers["choices"]=choices[i] # choice is stored
     data = js.dumps(questionsAnswers) #and then choice and question are converted and process repeats.
     json_file.write(data+"\n")
+# for i in range(len(questions)):
+#     print(questions[i])
+#     print(choices[i])
 json_file.close()
 prblmSlvPage.close()
