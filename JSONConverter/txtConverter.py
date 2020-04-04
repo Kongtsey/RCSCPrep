@@ -1,7 +1,10 @@
 import pdftotext
-with open("PastPapers/BCSE-2013-PE.pdf","rb") as f:
+
+paperYear = 2010
+with open("PastPapers/BCSE-"+str(paperYear)+"-PE.pdf","rb") as f:
     pdf = pdftotext.PDF(f)
 # for page in pdf:
 #     print(page)
-tezt = ("\n\n".join(pdf))
-print(tezt)
+paperContent = ("\n\n".join(pdf))
+with open("PastPapers/BCSE-"+str(paperYear)+"-PE.txt","w") as f:
+    f.write(paperContent)

@@ -16,18 +16,23 @@ def finder(list,x,qNum):
     """
     anotherList = []
     for i in range(len(list)):
-        if list[i][0:2]==x: #since the options are always "D." thus the first 2 characters are equal to x which is specified by user
-            temp = []# empty list to store all elements
-            for y in range(i,-1,-1):# we have found "D." so now go back and store everything until we at the end of question
-                temp.append(list[y])# append all elements that you come across
-                try:
-                    if(int(list[y][0:2])==qNum): # questions in quantitative part range from 51 to 75
-                        anotherList.append(temp)# anotherList is the final list with questions
-                        qNum+=1
-                        temp = [] # emptied to store the next questions
-                        break
-                except:
-                    pass
+        wordCheck = list[i].split()
+        try:
+            if wordCheck[0]==x: #since the options are always "D." thus the first 2 characters are equal to x which is specified by user
+                temp = []# empty list to store all elements
+                for y in range(i,-1,-1):# we have found "D." so now go back and store everything until we at the end of question
+                    broken = list[y].split()#because of the spaces and tabs present we arent able to directly compare using indices
+                    temp.append(list[y])# append all elements that you come across
+                    try:
+                        if(int(broken[0][0:2])==qNum): # questions in quantitative part range from 51 to 75
+                            anotherList.append(temp)# anotherList is the final list with questions
+                            qNum+=1
+                            temp = [] # emptied to store the next questions
+                            break
+                    except:
+                        pass
+        except:
+            pass
     return (anotherList)
 def finder2(list,x,qNum):
     """
@@ -38,16 +43,25 @@ def finder2(list,x,qNum):
     :return: temp: just the question concerned with the qNum
     """
     for i in range(len(list)):
-        if list[i][0:2]==x:
-            temp = []
-            for y in range(i-1,-1,-1):
-                temp.append(list[y])
-                try:
-                    if(int(list[y][0:2])==qNum):
-                        temp[len(temp)-1] = temp[len(temp)-1][3:-1]# removes the number question number.
-                        return (temp)
-                except:
-                    pass
+        wordCheck = list[i].split()
+        try:
+            if wordCheck[0]==x:
+                temp = []
+                for y in range(i-1,-1,-1):
+                    broken = list[y].split()
+                    temp.append(list[y])
+                    try:
+                        if(int(broken[0][0:2])==qNum):
+                            temp = reverse(temp)# reverse the orders
+                            temp = joiner(temp)# combine them all together
+                            temp = temp.split()# need to split in order to remove the question number
+                            temp = temp[1:]# Remove question number
+                            temp = joiner(temp)# join them back all together
+                            return (temp)
+                    except:
+                        pass
+        except:
+            pass
 def finder3(list,x):
     """
     function to get only the choices and returns them
@@ -56,12 +70,21 @@ def finder3(list,x):
     :return: only the choices for each question.
     """
     for i in range(len(list)):
-        if list[i][0:2]==x:
-            temp = []
-            for y in range(i,-1,-1):
-                temp.append(list[y])
-                if list[y][0:2] == 'A.':
-                    return (temp)
+        wordCheck = list[i].split()
+        try:
+            if wordCheck[0]==x:
+                temp = []
+                for y in range(i,-1,-1):
+                    broken = list[y].split()
+                    temp.append(list[y])
+                    if broken[0] == 'A.':
+                        temp = reverse(temp)
+                        temp = joiner(temp)
+                        temp = temp.split()
+                        temp = joiner(temp)
+                        return (temp)
+        except:
+            pass
 def reverse(list):
     """
 
@@ -69,8 +92,11 @@ def reverse(list):
     :return: anotherList: list with all elements reversed
     """
     anotherList = []
-    for i in range(len(list)-1,-1,-1):
-        anotherList.append(list[i])
+    try:
+        for i in range(len(list)-1,-1,-1):
+            anotherList.append(list[i])
+    except:
+        pass
     return anotherList
 def iterator(list, method):
     """
