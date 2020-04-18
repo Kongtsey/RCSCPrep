@@ -1,4 +1,4 @@
-year = 2012
+year = 2011
 peTxtFile = open("PastPapers/BCSE-"+str(year)+"-PE.txt","r")
 quantPart = open("PastPapers/"+str(year)+"_PE.txt","w")
 peTxtFileList = peTxtFile.readlines()

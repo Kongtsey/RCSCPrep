@@ -1,6 +1,6 @@
 import pdftotext
 
-paperYear = 2010
+paperYear = 2011
 with open("PastPapers/BCSE-"+str(paperYear)+"-PE.pdf","rb") as f:
     pdf = pdftotext.PDF(f)
 # for page in pdf:
