@@ -71,8 +71,8 @@ for i in range(len(choices)):  # splitting the choices in order to seperate them
 for i in range(len(questions)):
     questionsAnswers["Question"] = questions[i]  # each question is stored in question
     tempIndex = 0
-    for key in questionsAnswers["Choices"][0]:
-        questionsAnswers["Choices"][0][key] = choices[i][tempIndex]
+    for key in questionsAnswers["Choices"][0]:#access the dictionary inside of the dictionarry
+        questionsAnswers["Choices"][0][key] = choices[i][tempIndex] #for each option assign respective value
         tempIndex+=1
     data = js.dumps(questionsAnswers, sort_keys=False,
                     indent=4)  # and then choice and question are converted and process repeats.
