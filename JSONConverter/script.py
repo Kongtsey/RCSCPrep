@@ -1,5 +1,14 @@
 import classifierQuestions as cQ
 import json as js
+import firebase_admin
+from firebase_admin import credentials
+from firebase_admin import firestore
+# Use the application default credentials
+cred = credentials.Certificate("../Credentials.json")
+firebase_admin.initialize_app(cred, {
+  'projectId': "bhutanexamfactory-d7ea2",
+})
+db = firestore.client()
 
 
 def choicesSplitter(list):
@@ -50,7 +59,7 @@ questionsAnswers = {  # dictionary format to store as JSON.
     "Question": "",
     "QuestionYear":year,
     "Category":"Quantitative",
-    "Choices": [{
+    "Choice": [{
         "A":"",
         "B":"",
         "C":"",
@@ -58,7 +67,7 @@ questionsAnswers = {  # dictionary format to store as JSON.
     }],
     "CorrectAnswer":"A",
     "UserHasResponded":False,
-    "isAnswerCorrect":False
+    "IsAnswerCorrect":False
 }
 json_file = open('JSONFormatQuestions/PEQuestion' + year + '.txt', 'w')
 
@@ -74,8 +83,8 @@ for i in range(len(questions)):
     for key in questionsAnswers["Choices"][0]:#access the dictionary inside of the dictionarry
         questionsAnswers["Choices"][0][key] = choices[i][tempIndex] #for each option assign respective value
         tempIndex+=1
-    data = js.dumps(questionsAnswers, sort_keys=False,
-                    indent=4)  # and then choice and question are converted and process repeats.
+    data = js.dumps(questionsAnswers, sort_keys=True,indent=4)  # and then choice and question are converted and process repeats.
+    db.collection(u'Questions').add(data)
     json_file.write(data + "\n")
 json_file.close()
 prblmSlvPage.close()
