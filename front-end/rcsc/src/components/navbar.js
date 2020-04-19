@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import "../navbar.css";
+import "../style-sheet/navbar.css";
 
 function NavigationBar() {
   return (
-    <Container fluid={true}>
+    <Container className='navbar-parent-container'>
       <Navbar collapseOnSelect expand='lg'>
         <Navbar.Brand href='#home'>React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />

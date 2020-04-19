@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+  This is only for the navigation bar. The position is set as aboslute 
+  so that it sits on top of the background of the front-page content.
+*/
+.navbar-parent-container {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/*
+This is the actual text of the navbar.
+*/
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  padding: 0 20px;
+}

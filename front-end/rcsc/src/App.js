@@ -1,12 +1,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col } from "react-bootstrap";
-import logo from "./images/logo.svg";
 import "./App.css";
-import NavigationBar from "./components/navbar";
+import FrontPage from "./components/home-front-page";
 
 function Homepage() {
-  return <NavigationBar />;
+  return <FrontPage />;
 }
 
 export default Homepage;
