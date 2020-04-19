@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row, Button } from "react-bootstrap";
 import "../style-sheet/home-front-page.css";
 import NavigationBar from "./navbar";
 import front_page_image from "../images/studying.png";
 
 function FrontPage() {
   return (
-    <Container fluid={true} className='homepage_parent_container'>
+    <Container fluid={true} className='homepage_parent_container' s>
       <NavigationBar />
       <Row className='front_page_content'>
         <Col lg={6} md={6} sm={12} className='front_page_image'>
@@ -18,6 +18,7 @@ function FrontPage() {
             NEW and EFFICIENT <br /> way to study for
             <br /> RCSC Preliminary
           </p>
+          <Button> Explore</Button>
         </Col>
       </Row>
     </Container>

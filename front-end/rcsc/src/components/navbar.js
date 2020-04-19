@@ -20,6 +20,7 @@ function NavigationBar() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      <hr />
     </Container>
   );
 }
