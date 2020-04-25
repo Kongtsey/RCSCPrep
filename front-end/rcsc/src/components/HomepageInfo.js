@@ -6,7 +6,7 @@ import image_subsection_1 from "../images/subsection-1.png";
 import image_subsection_2 from "../images/subsection-2.png";
 import image_subsection_3 from "../images/subsection-3.png";
 import image_subsection_4 from "../images/subsection-4.png";
-import man_studying from "../images/man_studying.jpeg";
+import landscape from "../images/landscape.jpg";
 
 function HomepageInfo() {
   return (
@@ -40,10 +40,10 @@ function HomepageInfo() {
           </Col>
         </Row>
       </Container>
-      <Container className='image_divider' fluid={true}>
+      <Container fluid={true}>
         <Row>
-          <Col className='image_divider_image_div' md={12} lg={12} sm={12}>
-            <img alt='a man studying on his laptop' src={man_studying} className='image_divider_image'></img>
+          <Col className='content_before_footer' md={12} lg={12} sm={12}>
+            <p>Coming Soon</p>
           </Col>
         </Row>
       </Container>

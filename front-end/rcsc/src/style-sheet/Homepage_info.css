@@ -19,12 +19,8 @@
 .info_description_subsection {
   margin: 50px 0;
 }
-.image_divider {
-  border: 1px solid red;
-}
-.image_divider_image {
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
-  object-fit: cover;
+.content_before_footer {
+  font-size: 200px;
+  text-align: center;
+  background: #0000001a;
 }
