@@ -6,7 +6,6 @@ import image_subsection_1 from "../images/subsection-1.png";
 import image_subsection_2 from "../images/subsection-2.png";
 import image_subsection_3 from "../images/subsection-3.png";
 import image_subsection_4 from "../images/subsection-4.png";
-import landscape from "../images/landscape.jpg";
 
 function HomepageInfo() {
   return (

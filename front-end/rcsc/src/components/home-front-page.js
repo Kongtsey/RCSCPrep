@@ -4,7 +4,7 @@ import "../style-sheet/home-front-page.css";
 import NavigationBar from "./navbar";
 import HomepageInfo from "./HomepageInfo";
 import front_page_image from "../images/studying.png";
-
+import Footer from "./Footer";
 function FrontPage() {
   return (
     <React.Fragment>
@@ -24,6 +24,7 @@ function FrontPage() {
         </Row>
       </Container>
       <HomepageInfo />
+      <Footer />
     </React.Fragment>
   );
 }
