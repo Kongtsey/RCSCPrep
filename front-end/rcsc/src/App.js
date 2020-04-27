@@ -1,10 +1,19 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Route, Switch, Link, Redirect } from "react-router-dom";
 import "./App.css";
-import FrontPage from "./components/home-front-page";
+import HomePage from "./pages/homePage";
+import SignUp from "./pages/signUp";
 
-function Homepage() {
-  return <FrontPage />;
+function App() {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route exact path='/sign_up' component={SignUp} />
+      </Switch>
+    </BrowserRouter>
+  );
 }
 
-export default Homepage;
+export default App;

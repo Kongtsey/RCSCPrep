@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../style-sheet/footer.css";
 
-function NavigationBar() {
+function Footer() {
   return (
     <Container className='footer_parent_div' fluid={true}>
       <Container>
@@ -43,4 +43,4 @@ function NavigationBar() {
   );
 }
 
-export default NavigationBar;
+export default Footer;

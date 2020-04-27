@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import "../style-sheet/navbar.css";
+import "../style-sheet/homepage-navbar.css";
 
 function NavigationBar() {
   return (

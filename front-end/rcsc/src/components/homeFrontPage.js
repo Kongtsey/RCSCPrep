@@ -1,15 +1,12 @@
 import React from "react";
 import { Container, Col, Row, Button } from "react-bootstrap";
 import "../style-sheet/home-front-page.css";
-import NavigationBar from "./navbar";
-import HomepageInfo from "./HomepageInfo";
 import front_page_image from "../images/studying.png";
-import Footer from "./Footer";
+
 function FrontPage() {
   return (
     <React.Fragment>
       <Container fluid={true} className='homepage_parent_container' s>
-        <NavigationBar />
         <Row className='front_page_content'>
           <Col lg={6} md={6} sm={12} className='front_page_image'>
             <img alt='people sitting infront of a laptop' src={front_page_image}></img>
@@ -23,8 +20,6 @@ function FrontPage() {
           </Col>
         </Row>
       </Container>
-      <HomepageInfo />
-      <Footer />
     </React.Fragment>
   );
 }

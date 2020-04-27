@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import "../style-sheet/Homepage_info.css";
+import "../style-sheet/home-page-info.css";
 import info_description_image from "../images/piechart.png";
 import image_subsection_1 from "../images/subsection-1.png";
 import image_subsection_2 from "../images/subsection-2.png";
