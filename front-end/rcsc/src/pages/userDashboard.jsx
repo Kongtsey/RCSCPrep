@@ -1,7 +1,7 @@
 import React from "react";
 import GeneralNavigationBar from "../components/generalNavbar";
 
-function SignUp() {
+function userDashboard() {
   return (
     <React.Fragment>
       <GeneralNavigationBar />
@@ -10,4 +10,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default userDashboard;
