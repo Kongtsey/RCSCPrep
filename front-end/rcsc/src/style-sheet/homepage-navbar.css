@@ -22,3 +22,6 @@ This is the actual text of the navbar.
   padding: 0 20px;
   font-size: large;
 }
+.form-input {
+  padding: 0 !important;
+}

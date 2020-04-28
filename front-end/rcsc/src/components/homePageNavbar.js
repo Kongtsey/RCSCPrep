@@ -1,6 +1,8 @@
 import React from "react";
-import { Container, Col, Row, Nav, Navbar, Button, Modal } from "react-bootstrap";
+import { Container, Col, Row, Form, Nav, Navbar, Button, Modal } from "react-bootstrap";
 import "../style-sheet/homepage-navbar.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faBookReader, faPhoneAlt, faUser, faLock } from "@fortawesome/free-solid-svg-icons";
 
 function NavigationBar() {
   const [show, setShow] = React.useState(false);
@@ -32,9 +34,52 @@ function NavigationBar() {
           <Modal.Title>Register</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Row>
-            <Col md={12} lg={12} sm={12}></Col>
-          </Row>
+          <Form>
+            <Form.Group as={Row}>
+              <Form.Label column sm='1'>
+                <FontAwesomeIcon icon={faUser} />
+              </Form.Label>
+              <Col sm='10' className='form-input'>
+                <Form.Control type='email' placeholder='Full Name' />
+              </Col>
+            </Form.Group>
+
+            <Form.Group as={Row} controlId='formPlaintextEmail'>
+              <Form.Label column sm='1'>
+                <FontAwesomeIcon icon={faEnvelope} />
+              </Form.Label>
+              <Col sm='10' className='form-input'>
+                <Form.Control type='email' placeholder='Email' />
+              </Col>
+            </Form.Group>
+
+            <Form.Group as={Row} controlId='formPlaintextPassword'>
+              <Form.Label column sm='1'>
+                <FontAwesomeIcon icon={faLock} />
+              </Form.Label>
+              <Col sm='10' className='form-input'>
+                <Form.Control type='password' placeholder='Password' />
+              </Col>
+            </Form.Group>
+
+            <Form.Group as={Row} controlId='number'>
+              <Form.Label column sm='1'>
+                <FontAwesomeIcon icon={faPhoneAlt} />
+              </Form.Label>
+              <Col sm='10' className='form-input'>
+                <Form.Control type='number' placeholder='Phone' />
+              </Col>
+            </Form.Group>
+
+            <Form.Group as={Row} controlId='plaintext'>
+              <Form.Label column sm='1'>
+                <FontAwesomeIcon icon={faBookReader} />
+              </Form.Label>
+              <Col sm='10' className='form-input'>
+                <Form.Control type='text' placeholder='College' />
+              </Col>
+            </Form.Group>
+          </Form>
         </Modal.Body>
         <Modal.Footer>
           <Button variant='primary' onClick={handleClose}>
