@@ -1,0 +1,26 @@
+.homepage-info-parent-div {
+  margin-top: 100px;
+}
+.info_description {
+}
+.info_description_title {
+  font-size: 50px;
+}
+.info_description_content {
+  line-height: 40px;
+}
+.info_description_image {
+  align-items: left;
+}
+.info_description_image img {
+  float: right;
+  width: 70%;
+}
+.info_description_subsection {
+  margin: 50px 0;
+}
+.content_before_footer {
+  font-size: 200px;
+  text-align: center;
+  background: #0000001a;
+}
