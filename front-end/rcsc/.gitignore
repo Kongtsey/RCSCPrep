@@ -10,7 +10,7 @@
 
 # production
 /build
-/src/config
+*Fire.js
 
 # misc
 .DS_Store
