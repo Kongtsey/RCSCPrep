@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../style-sheet/user-dashboard.css";
 import fire from "../config/Fire";
-
+import ReadData from "../components/readMathData";
 class UserDashboard extends Component {
   constructor(props) {
     super(props);
@@ -13,6 +13,7 @@ class UserDashboard extends Component {
   render() {
     return (
       <React.Fragment>
+        <ReadData />
         <div>
           <h1>WELCOME USER</h1>
           <br />
