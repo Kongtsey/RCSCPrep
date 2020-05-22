@@ -1,7 +1,7 @@
 import React from "react";
 import NavigationBar from "../components/homePageNavbar";
 import FrontPage from "../components/homeFrontPage";
-import HomepageInfo from "../components/homePageInfo";
+import HomepageInfo from "../components/HomepageInfo";
 import Footer from "../components/footer";
 function HomePage() {
   return (

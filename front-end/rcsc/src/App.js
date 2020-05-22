@@ -1,38 +1,17 @@
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import "./App.css";
+import HomePage from "./pages/homePage";
 import userDashboard from "./pages/UserDashboard";
-import React, {Component} from 'react';
-import fire from './config/Fire';
-import './App.css';
-import UserDashboard from "./pages/UserDashboard"
-import Login from "./Login";
 
-class App extends Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            user: {},
-        }
-    }
-    componentDidMount() {
-        this.authListener();
-    }
-
-    authListener(){
-        fire.auth().onAuthStateChanged((user)=>{
-            console.log(user);
-            if (user){
-                this.setState({user});
-            } else {
-                this.setState({user: null});
-            }
-        });
-    }
-    render() {
-        return (
-            <div className="App">
-                {this.state.user ? (<UserDashboard />) : (<Login />)}
-            </div>
-        );
-    }
+function App() {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route exact path='/user' component={userDashboard} />
+      </Switch>
+    </BrowserRouter>
+  );
 }
-
 export default App;
