@@ -21,7 +21,7 @@ function NavigationBar() {
               <Nav.Link href='#contact'>Contact</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link>Login</Nav.Link>
+              <Nav.Link href='/userLogin'>Login</Nav.Link>
               <Nav.Link onClick={handleShow}>Sign Up</Nav.Link>
             </Nav>
           </Navbar.Collapse>
