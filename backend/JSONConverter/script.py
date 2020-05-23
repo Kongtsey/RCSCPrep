@@ -4,7 +4,7 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 # Use the application default credentials
-cred = credentials.Certificate("../Credentials.json")
+cred = credentials.Certificate("../credentials/Credentials.json")
 firebase_admin.initialize_app(cred, {
   'projectId': "bhutanexamfactory-d7ea2",
 })
@@ -84,7 +84,8 @@ for i in range(len(questions)):
         questionsAnswers["Choice"][0][key] = choices[i][tempIndex] #for each option assign respective value
         tempIndex+=1
     data = js.dumps(questionsAnswers, sort_keys=True,indent=4)  # and then choice and question are converted and process repeats.
-    db.collection('Questions').add(data)
+    db.collection('Questions').add(questionsAnswers)
     json_file.write(data + "\n")
 json_file.close()
 prblmSlvPage.close()
+print("All questions have been uploaded to console.")
