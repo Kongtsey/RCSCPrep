@@ -4,6 +4,7 @@ import "../style-sheet/homepage-navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faBookReader, faPhoneAlt, faUser, faLock } from "@fortawesome/free-solid-svg-icons";
 
+
 function NavigationBar() {
   const [show, setShow] = React.useState(false);
   const handleClose = () => setShow(false);
@@ -21,7 +22,7 @@ function NavigationBar() {
               <Nav.Link href='#contact'>Contact</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link>Login</Nav.Link>
+              <Nav.Link href={"./Login"}>Login</Nav.Link>
               <Nav.Link onClick={handleShow}>Sign Up</Nav.Link>
             </Nav>
           </Navbar.Collapse>
