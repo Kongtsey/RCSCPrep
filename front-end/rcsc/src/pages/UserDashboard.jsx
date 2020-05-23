@@ -3,6 +3,8 @@ import { Row, Col, Container } from "react-bootstrap";
 import fire from "../config/Fire";
 import GeneralNavbar from "../components/generalNavbar";
 import DashboardTool from "../components/dashboardTool";
+import MathStatsBoard from "../components/mathStatsBoard";
+import EnglishStatsBoard from "../components/englishStatsBoard";
 
 import "../style-sheet/user-dashboard.css";
 class UserDashboard extends Component {
@@ -14,15 +16,19 @@ class UserDashboard extends Component {
           <Row>
             <Col md={{ span: 3, offset: 1 }}>
               <h3 style={{ marginTop: "30px" }}> Dashboard </h3>
-              <hr />
             </Col>
           </Row>
+          <br />
           <Row>
             <Col md={{ span: 3, offset: 1 }}>
               <DashboardTool />
             </Col>
-            <Col md={6} lg={6}>
-              <DashboardTool />
+            <Col md={3} lg={3} style={{ background: "gray", color: "white", padding: "10px" }}>
+              <MathStatsBoard />
+            </Col>
+            <Col md={1}></Col>
+            <Col md={3} lg={3} style={{ background: "gray", color: "white", padding: "10px" }}>
+              <EnglishStatsBoard />
             </Col>
           </Row>
         </Container>
