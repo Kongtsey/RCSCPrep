@@ -18,7 +18,7 @@ function GetData() {
   }, []);
   return times;
 }
-const TimesList = () => {
+const MathList = () => {
   const times = GetData();
   return (
     <ol>
@@ -34,4 +34,4 @@ const TimesList = () => {
     </ol>
   );
 };
-export default TimesList;
+export default MathList;
