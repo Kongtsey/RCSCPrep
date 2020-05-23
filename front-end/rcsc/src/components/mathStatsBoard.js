@@ -8,7 +8,7 @@ function MathStatsBoard() {
     <React.Fragment>
       <Row>
         <Col md={12} lg={12} sm={12}>
-          <Link to={"/math_pratice"} style={{ color: "white" }}>
+          <Link to={"/math_practice"} style={{ color: "white" }}>
             <Button>Practice Math</Button>
           </Link>
           <br />
