@@ -1,24 +1,31 @@
 import React, { Component } from "react";
-import "../style-sheet/user-dashboard.css";
+import { Row, Col, Container } from "react-bootstrap";
 import fire from "../config/Fire";
-import ReadData from "../components/readMathData";
+import GeneralNavbar from "../components/generalNavbar";
+import DashboardTool from "../components/dashboardTool";
+
+import "../style-sheet/user-dashboard.css";
 class UserDashboard extends Component {
-  constructor(props) {
-    super(props);
-    this.logout = this.logout.bind(this);
-  }
-  logout() {
-    fire.auth().signOut();
-  }
   render() {
     return (
       <React.Fragment>
-        <ReadData />
-        <div>
-          <h1>WELCOME USER</h1>
-          <br />
-          <button onClick={this.logout}>Logout</button>
-        </div>
+        <GeneralNavbar />
+        <Container fluid={true}>
+          <Row>
+            <Col md={{ span: 3, offset: 1 }}>
+              <h3 style={{ marginTop: "30px" }}> Dashboard </h3>
+              <hr />
+            </Col>
+          </Row>
+          <Row>
+            <Col md={{ span: 3, offset: 1 }}>
+              <DashboardTool />
+            </Col>
+            <Col md={6} lg={6}>
+              <DashboardTool />
+            </Col>
+          </Row>
+        </Container>
       </React.Fragment>
     );
   }

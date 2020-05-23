@@ -24,8 +24,11 @@ const TimesList = () => {
     <ol>
       {times.map((time) => (
         <li key={time.id}>
-          <div>{time.Title}</div>
-          <div>{time.Local} </div>
+          <div>{time.Category}</div>
+          <div>{time.Question} </div>
+          <div>{time.QuestionYear} </div>
+
+          <br />
         </li>
       ))}
     </ol>

@@ -7,7 +7,7 @@ import "../style-sheet/general-navbar.css";
 function GeneralNavigationBar() {
   return (
     <Navbar collapseOnSelect expand='lg' bg='warning'>
-      <Navbar.Brand href='#home'>&nbsp;&nbsp;&nbsp;React-Bootstrap</Navbar.Brand>
+      <Navbar.Brand href='#home'>&nbsp;&nbsp;&nbsp;BhutanExamFactory</Navbar.Brand>
       <Navbar.Toggle aria-controls='responsive-navbar-nav' />
       <Navbar.Collapse id='responsive-navbar-nav'>
         <Nav className='mr-auto'>
@@ -16,10 +16,12 @@ function GeneralNavigationBar() {
           <Nav.Link href='#contact'>Math</Nav.Link>
         </Nav>
         <Nav>
-          <Nav.Link>Norbu </Nav.Link>
+          <Nav.Link> Norbu </Nav.Link>
+          &nbsp;&nbsp;&nbsp;
           <Nav.Link>
             <FontAwesomeIcon icon={faUserCircle} className='user_profile_picture' />
           </Nav.Link>
+          <Nav.Link> LogOut </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
