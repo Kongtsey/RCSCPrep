@@ -19,6 +19,7 @@ class UserDashboard extends Component {
             </Col>
           </Row>
           <br />
+
           <Row>
             <Col md={{ span: 3, offset: 1 }}>
               <DashboardTool />
