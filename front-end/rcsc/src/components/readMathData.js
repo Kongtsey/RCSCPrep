@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import fire from "../config/Fire";
+import { Container, Col, Row } from "react-bootstrap";
 
 function GetData() {
   const [times, setTimes] = useState([]);
@@ -21,17 +22,26 @@ function GetData() {
 const MathList = () => {
   const times = GetData();
   return (
-    <ol>
-      {times.map((time) => (
-        <li key={time.id}>
-          <div>{time.Category}</div>
-          <div>{time.Question} </div>
-          <div>{time.QuestionYear} </div>
-
+    <Container>
+      <Row>
+        <Col md={12} lg={12} sm={12}>
+          <h3> Math Questions</h3>
           <br />
-        </li>
-      ))}
-    </ol>
+        </Col>
+        <Col md={12} lg={12} sm={12}>
+          <ol>
+            {times.map((time) => (
+              <li key={time.id}>
+                <div>{time.Question} </div>
+                <div>{time.Category}</div>
+                <div>{time.QuestionYear} </div>
+                <br />
+              </li>
+            ))}
+          </ol>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 export default MathList;

@@ -7,6 +7,7 @@ function PracticeMath() {
   return (
     <React.Fragment>
       <GeneralNavbar />
+      <br />
       <MathList />
     </React.Fragment>
   );
