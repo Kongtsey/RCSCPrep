@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import fire from "../config/Fire";
 import { Container, Col, Row } from "react-bootstrap";
-
+import NumberOfQuestion from "../components/questionNumberOptionsAndTime";
 function GetData() {
   const [times, setTimes] = useState([]);
   useEffect(() => {
@@ -26,10 +26,14 @@ const MathList = () => {
   return (
     <Container>
       <Row>
-        <Col md={12} lg={12} sm={12}>
+        <Col md={3} lg={3} sm={12}>
           <h3> Math Questions</h3>
+        </Col>
+        <Col md={3} lg={3} sm={12}>
+          <NumberOfQuestion />
           <br />
         </Col>
+
         <Col md={12} lg={12} sm={12}>
           <ol>
             {times.map((time) => (
