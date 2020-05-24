@@ -5,8 +5,7 @@ import "../style-sheet/number-of-question.css";
 class NumberOfQuestion extends Component {
   constructor(props) {
     super(props);
-    this.state = { value: "5" };
-    this.state = { timer: "off" };
+    this.state = { value: "5", timer: false };
     this.handleChange = this.handleChange.bind(this);
     this.timerHandleChange = this.timerHandleChange.bind(this);
   }
@@ -38,13 +37,18 @@ class NumberOfQuestion extends Component {
           <Col md={4} lg={4} sm={12}>
             <Form>
               <Form.Group>
-                <Form.Control as='select' size='sm' custom value={this.state.value} onChange={this.timerHandleChange}>
-                  <option>Timer: Off</option>
-                  <option>Timer: On</option>
+                <Form.Control as='select' size='sm' custom value={this.state.bool} onChange={this.timerHandleChange}>
+                  <option bool='true' value='true'>
+                    Timer: Off
+                  </option>
+                  <option bool='false' value='false'>
+                    Timer: On
+                  </option>
                 </Form.Control>
               </Form.Group>
             </Form>
           </Col>
+
           <Col md={4} lg={4} sm={12}>
             <input type='submit' value='Submit' style={{ padding: "2px 10px", background: "#ffcA00", color: "white" }} />
           </Col>
