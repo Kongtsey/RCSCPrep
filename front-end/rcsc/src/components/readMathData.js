@@ -8,6 +8,8 @@ function GetData() {
     fire
       .firestore()
       .collection("Questions")
+      .limit(3)
+      .orderBy("Question")
       .onSnapshot((snapshot) => {
         const newTimes = snapshot.docs.map((doc) => ({
           id: doc.id,

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Row, Col, Container } from "react-bootstrap";
-import fire from "../config/Fire";
 import GeneralNavbar from "../components/generalNavbar";
 import DashboardTool from "../components/dashboardTool";
 import MathStatsBoard from "../components/mathStatsBoard";
