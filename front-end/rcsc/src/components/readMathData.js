@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import fire from "../config/Fire";
 import { Container, Col, Row } from "react-bootstrap";
 import NumberOfQuestion from "../components/questionNumberOptionsAndTime";
+
 function GetData() {
   const [times, setTimes] = useState([]);
   useEffect(() => {
     fire
       .firestore()
       .collection("Questions")
-      .limit(3)
+      .limit(5)
       .orderBy("Question")
       .onSnapshot((snapshot) => {
         const newTimes = snapshot.docs.map((doc) => ({
@@ -31,6 +32,7 @@ const MathList = () => {
         </Col>
         <Col md={9} lg={9} sm={12}>
           <NumberOfQuestion />
+
           <br />
         </Col>
 

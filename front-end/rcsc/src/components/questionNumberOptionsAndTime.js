@@ -6,11 +6,17 @@ class NumberOfQuestion extends Component {
   constructor(props) {
     super(props);
     this.state = { value: "5" };
+    this.state = { timer: "off" };
     this.handleChange = this.handleChange.bind(this);
+    this.timerHandleChange = this.timerHandleChange.bind(this);
   }
   handleChange(event) {
     console.log("the event value is: ", event.target.value);
     this.setState({ value: event.target.value });
+  }
+  timerHandleChange(event) {
+    console.log("the timer value is: ", event.target.value);
+    this.setState({ timer: event.target.value });
   }
   render() {
     return (
@@ -32,7 +38,7 @@ class NumberOfQuestion extends Component {
           <Col md={4} lg={4} sm={12}>
             <Form>
               <Form.Group>
-                <Form.Control as='select' size='sm' custom>
+                <Form.Control as='select' size='sm' custom value={this.state.value} onChange={this.timerHandleChange}>
                   <option>Timer: Off</option>
                   <option>Timer: On</option>
                 </Form.Control>
