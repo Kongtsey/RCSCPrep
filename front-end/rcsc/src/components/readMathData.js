@@ -29,7 +29,7 @@ const MathList = () => {
         <Col md={3} lg={3} sm={12}>
           <h3> Math Questions</h3>
         </Col>
-        <Col md={3} lg={3} sm={12}>
+        <Col md={9} lg={9} sm={12}>
           <NumberOfQuestion />
           <br />
         </Col>
