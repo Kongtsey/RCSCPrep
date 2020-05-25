@@ -1,14 +1,14 @@
 import React from "react";
 import "../style-sheet/practice-math.css";
 import GeneralNavbar from "../components/generalNavbar";
-import MathList from "../components/readMathData";
+import NumberOfQuestion from "../components/questionNumberOptionsAndTime";
 
 function PracticeMath() {
   return (
     <React.Fragment>
       <GeneralNavbar />
       <br />
-      <MathList />
+      <NumberOfQuestion />
     </React.Fragment>
   );
 }

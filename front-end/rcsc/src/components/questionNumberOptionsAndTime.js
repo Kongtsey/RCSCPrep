@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Form, Col, Row } from "react-bootstrap";
+import { Form, Col, Row, Container } from "react-bootstrap";
 import "../style-sheet/number-of-question.css";
+import MathList from "../components/readMathData";
 
 class NumberOfQuestion extends Component {
   constructor(props) {
@@ -20,39 +21,45 @@ class NumberOfQuestion extends Component {
   render() {
     return (
       <React.Fragment>
-        <Row>
-          <Col md={4} lg={4} sm={12}>
-            <Form>
-              <Form.Group>
-                <Form.Control as='select' size='sm' value={this.state.value} onChange={this.handleChange}>
-                  <option value='5'>5 Questions</option>
-                  <option value='10'>10 Questions</option>
-                  <option value='15'>15 Questions</option>
-                  <option value='20'>20 Questions</option>
-                </Form.Control>
-              </Form.Group>
-            </Form>
-          </Col>
+        <Container>
+          <Row>
+            <Col md={3} lg={3} sm={12}>
+              <h3> Math Questions</h3>
+            </Col>
+            <Col md={3} lg={3} sm={12}>
+              <Form>
+                <Form.Group>
+                  <Form.Control as='select' size='sm' value={this.state.value} onChange={this.handleChange}>
+                    <option value='5'>5 Questions</option>
+                    <option value='10'>10 Questions</option>
+                    <option value='15'>15 Questions</option>
+                    <option value='20'>20 Questions</option>
+                  </Form.Control>
+                </Form.Group>
+              </Form>
+            </Col>
 
-          <Col md={4} lg={4} sm={12}>
-            <Form>
-              <Form.Group>
-                <Form.Control as='select' size='sm' custom value={this.state.bool} onChange={this.timerHandleChange}>
-                  <option bool='true' value='true'>
-                    Timer: Off
-                  </option>
-                  <option bool='false' value='false'>
-                    Timer: On
-                  </option>
-                </Form.Control>
-              </Form.Group>
-            </Form>
-          </Col>
+            <Col md={3} lg={3} sm={12}>
+              <Form>
+                <Form.Group>
+                  <Form.Control as='select' size='sm' custom value={this.state.bool} onChange={this.timerHandleChange}>
+                    <option bool='false' value='false'>
+                      Timer: Off
+                    </option>
+                    <option bool='true' value='true'>
+                      Timer: On
+                    </option>
+                  </Form.Control>
+                </Form.Group>
+              </Form>
+            </Col>
 
-          <Col md={4} lg={4} sm={12}>
-            <input type='submit' value='Submit' style={{ padding: "2px 10px", background: "#ffcA00", color: "white" }} />
-          </Col>
-        </Row>
+            <Col md={3} lg={3} sm={12}>
+              <input type='submit' value='Submit' style={{ padding: "2px 10px", background: "#ffcA00", color: "white" }} />
+            </Col>
+          </Row>
+          <MathList value={this.state.value} />
+        </Container>
       </React.Fragment>
     );
   }

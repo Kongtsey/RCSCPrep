@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
 import fire from "../config/Fire";
 import { Container, Col, Row } from "react-bootstrap";
-import NumberOfQuestion from "../components/questionNumberOptionsAndTime";
 
-function GetData() {
+function GetData(num) {
   const [times, setTimes] = useState([]);
   useEffect(() => {
     fire
       .firestore()
       .collection("Questions")
-      .limit(5)
+      .limit(num)
       .orderBy("Question")
       .onSnapshot((snapshot) => {
         const newTimes = snapshot.docs.map((doc) => ({
@@ -22,20 +21,12 @@ function GetData() {
   }, []);
   return times;
 }
-const MathList = () => {
-  const times = GetData();
+const MathList = (props) => {
+  const num = parseInt(props.value);
+  const times = GetData(num);
   return (
     <Container>
       <Row>
-        <Col md={3} lg={3} sm={12}>
-          <h3> Math Questions</h3>
-        </Col>
-        <Col md={9} lg={9} sm={12}>
-          <NumberOfQuestion />
-
-          <br />
-        </Col>
-
         <Col md={12} lg={12} sm={12}>
           <ol>
             {times.map((time) => (
