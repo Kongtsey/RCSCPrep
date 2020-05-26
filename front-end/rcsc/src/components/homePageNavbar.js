@@ -20,7 +20,7 @@ class NavigationBar extends Component{
     this.state = {
       toShowLogin : false,
       toShowSignUp : false,
-      email: 'kzoepa',
+      email: '',
       password: ''
     };
   }
@@ -104,7 +104,7 @@ class NavigationBar extends Component{
                     <FontAwesomeIcon icon={faEnvelope}/>
                   </Form.Label>
                   <Col sm='10' className='form-input'>
-                    <Form.Control type='email' placeholder='Email'/>
+                    <Form.Control value={this.state.email} onChange={this.handleChange} name='email' type='email' placeholder='Email'/>
                   </Col>
                 </Form.Group>
 
@@ -113,7 +113,7 @@ class NavigationBar extends Component{
                     <FontAwesomeIcon icon={faLock}/>
                   </Form.Label>
                   <Col sm='10' className='form-input'>
-                    <Form.Control type='password' placeholder='Password'/>
+                    <Form.Control value={this.state.password} onChange={this.handleChange} name='password' type='password' placeholder='Password'/>
                   </Col>
                 </Form.Group>
 
@@ -137,7 +137,7 @@ class NavigationBar extends Component{
               </Form>
             </Modal.Body>
             <Modal.Footer>
-              <Button variant='primary' onClick={this.handleClose}>
+              <Button variant='primary' onClick={this.signUp}>
                 Sign up
               </Button>
             </Modal.Footer>
