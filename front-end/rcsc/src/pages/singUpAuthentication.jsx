@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import fire from "./config/Fire";
 import "./App.css";
 import UserDashboard from "./pages/UserDashboard";
-import Login from "./Login";
 
 class SignUpAuth extends Component {
   constructor(props) {
@@ -27,7 +26,7 @@ class SignUpAuth extends Component {
     });
   }
   render() {
-    return <div className='App'>{this.state.user ? <UserDashboard /> : <Login />}</div>;
+    return <div className='App'>{this.state.user ? <UserDashboard /> : <UserDashboard />}</div>;
   }
 }
 export default SignUpAuth;
