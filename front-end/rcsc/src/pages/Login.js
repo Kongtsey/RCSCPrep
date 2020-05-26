@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import fire from '../config/Fire';
-import NavigationBar from "../components/generalNavbar";
+import NavBar from '../components/homePageNavbar';
 import Footer from "../components/footer";
+import {Col, Container, Form, Row} from "react-bootstrap";
+import Button from "react-bootstrap/Button";
 class Login extends Component {
     constructor(props) {
         super(props);
@@ -51,12 +53,36 @@ class Login extends Component {
 // </form>
 //
 // </div>
+
+// <React.Fragment>
+// <Container fluid={true} className="parent-div">
+// <NavBar/>
+// <Container>
+// <Row className="login-div login-form">
+// <Col md={6} lg={6} sm={12}>
+// <Form>
+// <Form.Group controlId="formBasicEmail">
+// <Form.Label>Email Address</Form.Label>
+// <Form.Control type='email' placeholder='Enter Email'/>
+// </Form.Group>
+// <Form.Group controlId="formBasicPassword">
+// <Form.Label>Password</Form.Label>
+// <Form.Control type="password" placeholder="Enter Password"/>
+// </Form.Group>
+// <Button variant="primary" type="submit">
+// Login
+// </Button>
+// </Form>
+// </Col>
+// </Row>
+// </Container>
+// </Container>
+// </React.Fragment>
     render() {
         return (
-            <React.Fragment>
-                <NavigationBar/>
-                <Footer/>
-            </React.Fragment>
+            <div>
+                <h1>Whats up</h1>
+            </div>
         );
     }
 }
