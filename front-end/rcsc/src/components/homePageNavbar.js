@@ -5,8 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faBookReader, faPhoneAlt, faUser, faLock } from "@fortawesome/free-solid-svg-icons";
 import fire from '../config/Fire';
 
-// const handleClose = () => setShow(false);
-// const handleShow = () => setShow(true);
 class NavigationBar extends Component{
   constructor(props){
     super(props);
@@ -21,7 +19,8 @@ class NavigationBar extends Component{
       toShowLogin : false,
       toShowSignUp : false,
       email: '',
-      password: ''
+      password: '',
+      errorMessage: ''
     };
   }
   //Functions
@@ -31,9 +30,19 @@ class NavigationBar extends Component{
   }
   handleShow(){
     this.setState({toShowSignUp: true});
+    this.setState({
+      email: '',
+      password: '',
+      errorMessage: '',
+    })
   }
   handleCloseLogin(){
     this.setState({toShowLogin: false});
+    this.setState({
+      email: '',
+      password: '',
+      errorMessage: '',
+    })
   }
   handleShowLogin(){
     this.setState({toShowLogin: true});
@@ -49,13 +58,20 @@ class NavigationBar extends Component{
     fire.auth().signInWithEmailAndPassword(this.state.email,this.state.password).then((u)=>{
       console.log("Logged In")
     }).catch((error)=>{
-      console.log(error)
+      console.log(error);
+      if(error.code==="auth/user-not-found"){
+        this.setState({errorMessage: "Incorrect password or email."})
+      } else {
+        this.setState({errorMessage: error.message});
+      }
     });
+
   }
   signUp(e){
     e.preventDefault();
     fire.auth().createUserWithEmailAndPassword(this.state.email,this.state.password).then((u)=>{console.log(u)}).catch((error)=>{
       console.log(error);
+      this.setState({errorMessage: error.message});
     })
   }
   //Firebase functions end --->
@@ -90,6 +106,9 @@ class NavigationBar extends Component{
             </Modal.Header>
             <Modal.Body>
               <Form>
+                {this.state.errorMessage && (
+                    <h6 className='error-msg'>{this.state.errorMessage}</h6>
+                )}
                 <Form.Group as={Row}>
                   <Form.Label column sm='1'>
                     <FontAwesomeIcon icon={faUser}/>
@@ -151,12 +170,15 @@ class NavigationBar extends Component{
             </Modal.Header>
             <Modal.Body>
               <Form>
+                {this.state.errorMessage && (
+                    <h6 className='error-msg'>{this.state.errorMessage}</h6>
+                )}
                 <Form.Group as={Row} controlId='formPlaintextEmail'>
                   <Form.Label column sm='1'>
                     <FontAwesomeIcon icon={faUser}/>
                   </Form.Label>
                   <Col sm='10' className='form-input'>
-                    <Form.Control value={this.state.email} onChange={this.handleChange} name='email' type='email' placeholder='Username/Email'/>
+                    <Form.Control onChange={this.handleChange} name='email' type='email' placeholder='Email'/>
                   </Col>
                 </Form.Group>
                 <Form.Group as={Row} controlId='formPlaintextPassword'>
@@ -164,7 +186,7 @@ class NavigationBar extends Component{
                     <FontAwesomeIcon icon={faLock}/>
                   </Form.Label>
                   <Col sm='10' className='form-input'>
-                    <Form.Control value={this.state.password} onChange={this.handleChange} name='password' type='password' placeholder='Password'/>
+                    <Form.Control onChange={this.handleChange} name='password' type='password' placeholder='Password'/>
                   </Col>
                 </Form.Group>
               </Form>
