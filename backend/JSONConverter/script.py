@@ -59,30 +59,22 @@ questionsAnswers = {  # dictionary format to store as JSON.
     "Question": "",
     "QuestionYear":year,
     "Category":"Quantitative",
-    "Choice": [{
-        "A":"",
-        "B":"",
-        "C":"",
-        "D":"",
-    }],
-    "CorrectAnswer":"A",
+    "Choice": [],
+    "CorrectAnswer":0,
     "UserHasResponded":False,
     "IsAnswerCorrect":False
 }
 json_file = open('JSONFormatQuestions/PEQuestion' + year + '.txt', 'w')
-
 for i in range(len(choices)):  # splitting the choices in order to seperate them
     splitList = choices[i].split()
     choices[i] = choicesSplitter(splitList)
     for y in range(len(choices[i])):
         choices[i][y] = cQ.joiner(
             choices[i][y])  # joining the elements together inside of the list since subdivided within.
+
 for i in range(len(questions)):
     questionsAnswers["Question"] = questions[i]  # each question is stored in question
-    tempIndex = 0
-    for key in questionsAnswers["Choice"][0]: #access the dictionary inside of the dictionarry
-        questionsAnswers["Choice"][0][key] = choices[i][tempIndex] #for each option assign respective value
-        tempIndex+=1
+    questionsAnswers["Choice"]=choices[i] #assign the right array to the choice in form on indexes
     data = js.dumps(questionsAnswers, sort_keys=True,indent=4)  # and then choice and question are converted and process repeats.
     db.collection('Questions').add(questionsAnswers)
     json_file.write(data + "\n")
