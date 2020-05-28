@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Fredoka+One&family=Monoton&family=Ultra&family=Rubik+Mono+One&display=swap");
+
+.homepage_parent_container {
+  border: solid #ec6f66 1px;
+  background: #ec6f66; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ec6f66, #f3a183); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ec6f66, #f3a183); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* 
+This is the parent div that contains the front-page image 
+and the tag line with the button. Margin-top needs to set
+because the navigator bar position is set to absolute, 
+meaning it would intersect with the image if the margin 
+is not set.
+*/
+.front_page_content {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+/*
+This is for the div containing the image  on the front-page.
+it takes 6 cols on a desktop and 12 in mobile. 
+*/
+.front_page_image {
+  text-align: right;
+}
+
+/*
+This is for the actual image tag. Changing the size of the 
+image from here. 
+*/
+.front_page_image img {
+  width: 80%;
+}
+
+/*
+This is the parent div for the tag line on the right of the image. 
+*/
+.tagline {
+  padding-left: 70px;
+}
+
+/*
+This is the actual message of the tagline.
+*/
+.tagline_message {
+  color: white;
+  font-size: 50px;
+  font-family: sans-serif;
+}
