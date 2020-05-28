@@ -58,6 +58,7 @@ class NumberOfQuestion extends Component {
               <input type='submit' value='Submit' style={{ padding: "2px 10px", background: "#ffcA00", color: "white" }} />
             </Col>
           </Row>
+          <br />
           <MathList value={this.state.value} />
         </Container>
       </React.Fragment>

@@ -46,13 +46,15 @@ function MathList(props) {
             {times.map((time) => (
               <li key={time.id}>
                 <div>{time.Question} </div>
-                <div>{time.Category}</div>
-                <div>{time.QuestionYear} </div>
                 <div>
-                  <p>a. &nbsp;{time.Choice[0]}</p>
-                  <p>b. &nbsp;{time.Choice[1]}</p>
-                  <p>c. &nbsp;{time.Choice[2]}</p>
-                  <p>d. &nbsp;{time.Choice[3]}</p>
+                  {time.Choice.map((choice) => (
+                    <p>
+                      <label>
+                        <input type='radio' value={choice} name='gender' />
+                        &nbsp;{choice}
+                      </label>
+                    </p>
+                  ))}
                 </div>
                 <br />
               </li>
