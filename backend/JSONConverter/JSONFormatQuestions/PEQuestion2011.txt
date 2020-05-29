@@ -1,400 +1,350 @@
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " Deki",
-            "B": " Pema",
-            "C": " Kesang",
-            "D": " Yangzom"
-        }
+    "Choice": [
+        " Deki",
+        " Pema",
+        " Kesang",
+        " Yangzom"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " Deki is shorter than Pema and taller than Kesang. Kesang is taller than Yangzom. Who is the",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " 26451",
-            "B": " 62451",
-            "C": " 51462",
-            "D": " 15264"
-        }
+    "Choice": [
+        " 26451",
+        " 62451",
+        " 51462",
+        " 15264"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " Which one of the four choices makes the best comparison? PEACH is to HCAEP as 46251 is to:",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " 4",
-            "B": " 8",
-            "C": " 12",
-            "D": " 16"
-        }
+    "Choice": [
+        " 4",
+        " 8",
+        " 12",
+        " 16"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " The value of a company share drops from Nu 100 per share to Nu 96 per share. What is the percent of the decrease?",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " All individuals produce at their maximum level",
-            "B": " Only durable and best-quality products be produced",
-            "C": " Only perishable and low cost products be produced",
-            "D": " All economic activity generating more benefits than costs to individuals in the economy be"
-        }
+    "Choice": [
+        " All individuals produce at their maximum level",
+        " Only durable and best-quality products be produced",
+        " Only perishable and low cost products be produced",
+        " All economic activity generating more benefits than costs to individuals in the economy be"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " Economic efficiency in an economy requires:",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " 49",
-            "B": " None of the above",
-            "C": " 5040",
-            "D": " C7"
-        }
+    "Choice": [
+        " 49",
+        " None of the above",
+        " 5040",
+        " C7"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " In how many ways can the letter SOLVING be rearranged to make 7 letter words such that none of the letters repeat?",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " q",
-            "B": " r",
-            "C": " s",
-            "D": " u"
-        }
+    "Choice": [
+        " q",
+        " r",
+        " s",
+        " u"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " What is the missing letter in this series: b e h k n ? t",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " 106",
-            "B": " 146",
-            "C": " 144",
-            "D": " 156"
-        }
+    "Choice": [
+        " 106",
+        " 146",
+        " 144",
+        " 156"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " If: 2, 3 = 10 7, 2 = 63 6, 5 = 66 8 ,4 = 96 9 ,7 =\u2026\u2026.",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " 15",
-            "B": " 20",
-            "C": " 22",
-            "D": " 24"
-        }
+    "Choice": [
+        " 15",
+        " 20",
+        " 22",
+        " 24"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " The average age of a group of 5 students was 10. The average age increased by 4 years when 2 new students joined the group. What is the average age of the two new students who joined the group?",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " Percent decrease is less than the percent increase",
-            "B": " Percent decrease is more than the percent increase",
-            "C": " Percent increase is less than the percent increase",
-            "D": " None of the above"
-        }
+    "Choice": [
+        " Percent decrease is less than the percent increase",
+        " Percent decrease is more than the percent increase",
+        " Percent increase is less than the percent increase",
+        " None of the above"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " A number increases from 20 to 30 and then decreases from 30 to 20. Compare the percent of increase from 20 to 30 and that of the decrease from 30 to 20. From the following which of the following statement is true:",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " Mountain pass",
-            "B": " Warrior",
-            "C": " Flower",
-            "D": " Country"
-        }
+    "Choice": [
+        " Mountain pass",
+        " Warrior",
+        " Flower",
+        " Country"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " If you unscramble the letters YKANE, you will get the name of a:",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " Approx. 50%",
-            "B": " Approx. 56%",
-            "C": " Approx. 48%",
-            "D": " Approx. 60%"
-        }
+    "Choice": [
+        " Approx. 50%",
+        " Approx. 56%",
+        " Approx. 48%",
+        " Approx. 60%"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " What percent of the squares in the figure below are shaded?",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " 20 times",
-            "B": " 10 times",
-            "C": " 5 times",
-            "D": " 1 time only"
-        }
+    "Choice": [
+        " 20 times",
+        " 10 times",
+        " 5 times",
+        " 1 time only"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " How many times can you subtract 20 from 200?",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " 2.50",
-            "B": " 3.00",
-            "C": " 3.75",
-            "D": " 3.50"
-        }
+    "Choice": [
+        " 2.50",
+        " 3.00",
+        " 3.75",
+        " 3.50"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " 3 is 80% of what number?",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " 19 and 5",
-            "B": " 18 and 6",
-            "C": " 15 and 9",
-            "D": " 14 and 10"
-        }
+    "Choice": [
+        " 19 and 5",
+        " 18 and 6",
+        " 15 and 9",
+        " 14 and 10"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " There are twenty four students in a certain class. For every nine girls there are three boys. How many girls and how many boys are there in the class?",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " First",
-            "B": " Second",
-            "C": " Third",
-            "D": " Fourth"
-        }
+    "Choice": [
+        " First",
+        " Second",
+        " Third",
+        " Fourth"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " In a horse race Dawa came in ahead of Pema. Dawa finished after Tashi. Sonam beat Tashi but finished after Rinzin. Where did Sonam finish?",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " c",
-            "B": " f",
-            "C": " e",
-            "D": " h"
-        }
+    "Choice": [
+        " c",
+        " f",
+        " e",
+        " h"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " What is the missing letter in this series: g ? d i j d k l d",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " Ocean",
-            "B": " Animal",
-            "C": " Island",
-            "D": " Aeroplane"
-        }
+    "Choice": [
+        " Ocean",
+        " Animal",
+        " Island",
+        " Aeroplane"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " If you unscramble the letters ITNKA, you will get the name of an:",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " Penjor",
-            "B": " Lhamo",
-            "C": " Choki",
-            "D": " Dorji"
-        }
+    "Choice": [
+        " Penjor",
+        " Lhamo",
+        " Choki",
+        " Dorji"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " Penjore, Choki, Lhamo and Dorji speak many languages. Penjore and Choki speak Chinese, whereas the others speak Arabic. Choki and Dorji speak Albanian. Everyone except Penjore speaks Hindi. Who only speaks Arabic and Hindi?",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " Personal Manager",
-            "B": " Personnal Manager",
-            "C": " Personnel Manager",
-            "D": " Personality Manager"
-        }
+    "Choice": [
+        " Personal Manager",
+        " Personnal Manager",
+        " Personnel Manager",
+        " Personality Manager"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " If Selki\u2019s job is to recruit, develop and manage staff in her organization, which among the following is her designation?",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " 13 children : 10 girls and 3 boys",
-            "B": " 12 children : 9 girls and 3 boys",
-            "C": " 9 children : 6 girls and 3 boys",
-            "D": " 8 children : 6 girls and 2 boys"
-        }
+    "Choice": [
+        " 13 children : 10 girls and 3 boys",
+        " 12 children : 9 girls and 3 boys",
+        " 9 children : 6 girls and 3 boys",
+        " 8 children : 6 girls and 2 boys"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " Pema Dorji and Kesang Choden are two children in a big family. Pema Dorji has thrice as many sisters as he has brothers. Kesang Choden has two less brothers than she has sisters. How many children are there in the family?",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " 10",
-            "B": " 20 Page 22 of 29 BCSE 2011 PRELIMINARY EXAMINATION SERIES A",
-            "C": " 30",
-            "D": " 40"
-        }
+    "Choice": [
+        " 10",
+        " 20 Page 22 of 29 BCSE 2011 PRELIMINARY EXAMINATION SERIES A",
+        " 30",
+        " 40"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " Five teams from Thimphu\u2019s Schools are participating in a Summer School Football League. If each team plays the other teams 2 times, the total number of games the League will play is",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " c&b",
-            "B": " d&b",
-            "C": " a&d",
-            "D": " a&c"
-        }
+    "Choice": [
+        " c&b",
+        " d&b",
+        " a&d",
+        " a&c"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " Identify two statements necessary to make the statement \u201cA is south-west to C\u201d true. a) A is two miles south of B. b) B is two miles east of D. c) C is two miles east of B. d) D is North-west of A. The two correct statements are:",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " b",
-            "B": " c",
-            "C": " y",
-            "D": " z"
-        }
+    "Choice": [
+        " b",
+        " c",
+        " y",
+        " z"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " What is the missing letter in this series: a z b ? c x",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " 3/4",
-            "B": " 2/3",
-            "C": " 1/2",
-            "D": " 1/3"
-        }
+    "Choice": [
+        " 3/4",
+        " 2/3",
+        " 1/2",
+        " 1/3"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " If B is the midpoint of line segment AD and C is the midpoint of line segment BD, What is the value of AB/AC?",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }
 {
     "Category": "Quantitative",
-    "Choices": [
-        {
-            "A": " Branch",
-            "B": " Tree",
-            "C": " Twig",
-            "D": " Blossom"
-        }
+    "Choice": [
+        " Branch",
+        " Tree",
+        " Twig",
+        " Blossom"
     ],
-    "CorrectAnswer": "A",
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
     "Question": " Which one of the four choices makes the best comparison? Fingers is to Hand as Leaf is to:",
     "QuestionYear": "2011",
-    "UserHasResponded": false,
-    "isAnswerCorrect": false
+    "UserHasResponded": false
 }

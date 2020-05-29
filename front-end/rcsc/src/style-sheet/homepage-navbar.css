@@ -25,3 +25,6 @@ This is the actual text of the navbar.
 .form-input {
   padding: 0 !important;
 }
+.error-msg {
+  color: #ec2121;
+}
