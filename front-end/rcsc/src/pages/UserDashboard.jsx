@@ -1,23 +1,37 @@
 import React, { Component } from "react";
-import "../style-sheet/user-dashboard.css";
-import fire from "../config/Fire";
+import { Row, Col, Container } from "react-bootstrap";
+import GeneralNavbar from "../components/generalNavbar";
+import DashboardTool from "../components/dashboardTool";
+import MathStatsBoard from "../components/mathStatsBoard";
+import EnglishStatsBoard from "../components/englishStatsBoard";
 
+import "../style-sheet/user-dashboard.css";
 class UserDashboard extends Component {
-  constructor(props) {
-    super(props);
-    this.logout = this.logout.bind(this);
-  }
-  logout() {
-    fire.auth().signOut();
-  }
   render() {
     return (
       <React.Fragment>
-        <div>
-          <h1>WELCOME USER</h1>
+        <GeneralNavbar />
+        <Container fluid={true}>
+          <Row>
+            <Col md={{ span: 3, offset: 1 }}>
+              <h3 style={{ marginTop: "30px" }}> Dashboard </h3>
+            </Col>
+          </Row>
           <br />
-          <button onClick={this.logout}>Logout</button>
-        </div>
+
+          <Row>
+            <Col md={{ span: 3, offset: 1 }}>
+              <DashboardTool />
+            </Col>
+            <Col md={3} lg={3} style={{ background: "gray", color: "white", padding: "10px" }}>
+              <MathStatsBoard />
+            </Col>
+            <Col md={1}></Col>
+            <Col md={3} lg={3} style={{ background: "gray", color: "white", padding: "10px" }}>
+              <EnglishStatsBoard />
+            </Col>
+          </Row>
+        </Container>
       </React.Fragment>
     );
   }

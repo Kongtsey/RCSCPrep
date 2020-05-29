@@ -66,6 +66,7 @@ class NavigationBar extends Component{
       }
     });
 
+
   }
   signUp(e){
     e.preventDefault();
