@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import fire from "../config/Fire";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row, Form } from "react-bootstrap";
 
 function MathList(props) {
   const [times, setTimes] = useState([]);
@@ -46,16 +46,14 @@ function MathList(props) {
             {times.map((time) => (
               <li key={time.id}>
                 <div>{time.Question} </div>
-                <div>
+                <Form>
                   {time.Choice.map((choice) => (
                     <p>
-                      <label>
-                        <input type='radio' value={choice} name='gender' />
-                        &nbsp;{choice}
-                      </label>
+                      <input type='radio' name='choice' value={choice} />
+                      {choice}
                     </p>
                   ))}
-                </div>
+                </Form>
                 <br />
               </li>
             ))}
