@@ -6,6 +6,7 @@ import Footer from "../components/footer";
 import fire from "../config/Fire";
 import UserDashboard from "./UserDashboard";
 class HomePage extends Component{
+    _isMounted = false;
     constructor(props){
         super(props);
         this.authListener = this.authListener.bind(this);
@@ -14,7 +15,13 @@ class HomePage extends Component{
         };
     }
     componentDidMount() {
-        this.authListener();
+        this._isMounted = true;
+        if(this._isMounted==true){
+            this.authListener();
+        };
+    }
+    componentWillUnmount() {
+        this._isMounted = false;
     }
     authListener(){
         fire.auth().onAuthStateChanged((user)=>{
