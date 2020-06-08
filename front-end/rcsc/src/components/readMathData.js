@@ -37,8 +37,8 @@ function MathList(props) {
       });
   }, [prop]);
 
-  const handleChange = () => {
-    console.log("hello world ");
+  const handleChange = (e, choice, time) => {
+    console.log("hello world: ", time, " : ", choice);
   };
 
   return (
@@ -52,7 +52,7 @@ function MathList(props) {
                 <Form>
                   {time.Choice.map((choice) => (
                     <p>
-                      <input type='radio' name='choice' value={choice} onChange={handleChange} />
+                      <input type='radio' name='choice' value={choice} onChange={(e) => handleChange(e, choice, time.id)} />
                       {choice}
                     </p>
                   ))}
