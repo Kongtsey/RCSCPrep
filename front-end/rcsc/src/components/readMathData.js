@@ -4,19 +4,18 @@ import { Container, Col, Row, Form } from "react-bootstrap";
 
 function MathList(props) {
   const [times, setTimes] = useState([]);
-
   useEffect(() => {
     fire
       .firestore()
       .collection("Questions")
-      .limit(10)
+      .limit(5)
       .orderBy("Question")
       .onSnapshot((snapshot) => {
         const newTimes = snapshot.docs.map((doc) => ({
           id: doc.id,
           ...doc.data(),
         }));
-        console.log(newTimes);
+        //console.log("This is the default number of questions displayed", newTimes);
         setTimes(newTimes);
       });
   }, []);
@@ -33,10 +32,14 @@ function MathList(props) {
           id: doc.id,
           ...doc.data(),
         }));
-        console.log(newTimes);
+        //console.log("This is the user selected number of questions displayed", newTimes);
         setTimes(newTimes);
       });
   }, [prop]);
+
+  const handleChange = () => {
+    console.log("hello world ");
+  };
 
   return (
     <Container>
@@ -44,12 +47,12 @@ function MathList(props) {
         <Col md={12} lg={12} sm={12}>
           <ol>
             {times.map((time) => (
-              <li key={time.id}>
+              <li id={time.id}>
                 <div>{time.Question} </div>
                 <Form>
                   {time.Choice.map((choice) => (
                     <p>
-                      <input type='radio' name='choice' value={choice} />
+                      <input type='radio' name='choice' value={choice} onChange={handleChange} />
                       {choice}
                     </p>
                   ))}
