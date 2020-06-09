@@ -1,10 +1,9 @@
-import React, {Component} from "react";
+import React, {Component, useContext} from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import fire from "../config/Fire";
 import "../style-sheet/general-navbar.css";
-
 class GeneralNavigationBar extends Component{
     constructor(props){
         super(props);
@@ -24,7 +23,7 @@ class GeneralNavigationBar extends Component{
                   <Nav.Link href='#contact'>Math</Nav.Link>
                 </Nav>
                 <Nav>
-                  <Nav.Link> Norbu </Nav.Link>
+                  <Nav.Link> {fire.auth().currentUser.displayName}</Nav.Link>
                   &nbsp;&nbsp;&nbsp;
                   <Nav.Link>
                     <FontAwesomeIcon icon={faUserCircle} className='user_profile_picture' />

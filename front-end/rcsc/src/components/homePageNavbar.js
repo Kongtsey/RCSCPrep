@@ -73,7 +73,17 @@ class NavigationBar extends Component{
   }
   signUp(e){
     e.preventDefault();
-    fire.auth().createUserWithEmailAndPassword(this.state.email,this.state.password).then((u)=>{console.log(u)}).catch((error)=>{
+    fire.auth().createUserWithEmailAndPassword(this.state.email,this.state.password).then((u)=>{
+      console.log(u);
+      let user =fire.auth().currentUser;
+      if(user!=null){
+        user.updateProfile(
+            {
+              displayName: this.state.name
+            }
+        ).then(r => {})
+      }
+    }).catch((error)=>{
       console.log(error);
       this.setState({errorMessage: error.message});
     })
