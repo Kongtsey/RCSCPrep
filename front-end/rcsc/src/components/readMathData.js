@@ -49,6 +49,10 @@ class MathList extends Component {
   }
   handleChange = (questionId, userChoice, correctAnswer) => () => {
     console.log(questionId, " ", userChoice, " ", correctAnswer);
+    this.setState({ [questionId]: userChoice }, () => {
+      console.log("State updated: ", JSON.stringify(this.state[questionId]));
+    });
+    console.log("after state update: ", JSON.stringify(this.state[questionId]));
   };
 
   render() {
