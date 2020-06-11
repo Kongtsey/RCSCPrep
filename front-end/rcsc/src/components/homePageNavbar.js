@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import { Container, Col, Row, Form, Nav, Navbar, Button, Modal } from "react-bootstrap";
 import "../style-sheet/homepage-navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faBookReader, faPhoneAlt, faUser, faLock } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faBookReader, faUser, faLock } from "@fortawesome/free-solid-svg-icons";
 import fire from '../config/Fire';
 
 class NavigationBar extends Component{
@@ -22,7 +22,6 @@ class NavigationBar extends Component{
       password: '',
       errorMessage: '',
       name: '',
-      phone: '',
       college: ''
     };
   }
@@ -91,7 +90,6 @@ class NavigationBar extends Component{
     let data = {
       name: this.state.name,
       email: this.state.email,
-      phone: this.state.phone,
       college: this.state.college
     }
     let setDoc = db.collection(this.state.email).doc('UserProfile').set(data);
@@ -155,15 +153,6 @@ class NavigationBar extends Component{
                   </Form.Label>
                   <Col sm='10' className='form-input'>
                     <Form.Control value={this.state.password} onChange={this.handleChange} name='password' type='password' placeholder='Password'/>
-                  </Col>
-                </Form.Group>
-
-                <Form.Group as={Row} controlId='number'>
-                  <Form.Label column sm='1'>
-                    <FontAwesomeIcon icon={faPhoneAlt}/>
-                  </Form.Label>
-                  <Col sm='10' className='form-input'>
-                    <Form.Control value={this.state.phone} onChange={this.handleChange} name='phone' type='number' placeholder='Phone'/>
                   </Col>
                 </Form.Group>
 
