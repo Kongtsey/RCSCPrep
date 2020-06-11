@@ -7,6 +7,7 @@ class MathList extends Component {
     super(props);
     this.state = {
       questionData: [],
+      count: 0,
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -49,10 +50,13 @@ class MathList extends Component {
   }
   handleChange = (questionId, userChoice, correctAnswer) => () => {
     console.log(questionId, " ", userChoice, " ", correctAnswer);
-    this.setState({ [questionId]: userChoice }, () => {
-      console.log("State updated: ", JSON.stringify(this.state[questionId]));
+    let user_and_correct_answer = [];
+    user_and_correct_answer[1] = userChoice;
+    user_and_correct_answer[0] = correctAnswer;
+
+    this.setState({ [questionId]: user_and_correct_answer }, () => {
+      console.log("State updated:", JSON.stringify(this.state[questionId][1]));
     });
-    console.log("after state update: ", JSON.stringify(this.state[questionId]));
   };
 
   render() {
