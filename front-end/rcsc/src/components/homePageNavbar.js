@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import { Container, Col, Row, Form, Nav, Navbar, Button, Modal } from "react-bootstrap";
 import "../style-sheet/homepage-navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faBookReader, faPhoneAlt, faUser, faLock } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faBookReader, faUser, faLock } from "@fortawesome/free-solid-svg-icons";
 import fire from '../config/Fire';
 
 class NavigationBar extends Component{
@@ -20,7 +20,9 @@ class NavigationBar extends Component{
       toShowSignUp : false,
       email: '',
       password: '',
-      errorMessage: ''
+      errorMessage: '',
+      name: '',
+      college: ''
     };
   }
   //Functions
@@ -70,10 +72,27 @@ class NavigationBar extends Component{
   }
   signUp(e){
     e.preventDefault();
-    fire.auth().createUserWithEmailAndPassword(this.state.email,this.state.password).then((u)=>{console.log(u)}).catch((error)=>{
+    fire.auth().createUserWithEmailAndPassword(this.state.email,this.state.password).then((u)=>{
+      console.log(u);
+      let user =fire.auth().currentUser;
+      if(user!=null){
+        user.updateProfile(
+            {
+              displayName: this.state.name
+            }
+        ).then(r => {})
+      }
+    }).catch((error)=>{
       console.log(error);
       this.setState({errorMessage: error.message});
     })
+    let db = fire.firestore();
+    let data = {
+      name: this.state.name,
+      email: this.state.email,
+      college: this.state.college
+    }
+    let setDoc = db.collection(this.state.email).doc('UserProfile').set(data);
   }
   //Firebase functions end --->
 
@@ -115,7 +134,7 @@ class NavigationBar extends Component{
                     <FontAwesomeIcon icon={faUser}/>
                   </Form.Label>
                   <Col sm='10' className='form-input'>
-                    <Form.Control type='email' placeholder='Full Name'/>
+                    <Form.Control value={this.state.name} onChange={this.handleChange} name='name' type='text' placeholder='Full Name'/>
                   </Col>
                 </Form.Group>
 
@@ -137,27 +156,18 @@ class NavigationBar extends Component{
                   </Col>
                 </Form.Group>
 
-                <Form.Group as={Row} controlId='number'>
-                  <Form.Label column sm='1'>
-                    <FontAwesomeIcon icon={faPhoneAlt}/>
-                  </Form.Label>
-                  <Col sm='10' className='form-input'>
-                    <Form.Control type='number' placeholder='Phone'/>
-                  </Col>
-                </Form.Group>
-
                 <Form.Group as={Row} controlId='plaintext'>
                   <Form.Label column sm='1'>
                     <FontAwesomeIcon icon={faBookReader}/>
                   </Form.Label>
                   <Col sm='10' className='form-input'>
-                    <Form.Control type='text' placeholder='College'/>
+                    <Form.Control value={this.state.college} onChange={this.handleChange} name='college' type='text' placeholder='College'/>
                   </Col>
                 </Form.Group>
               </Form>
             </Modal.Body>
             <Modal.Footer>
-              <Button variant='primary' onClick={this.signUp}>
+              <Button variant='primary' onClick={this.signUp} name={this.state.name}>
                 Sign up
               </Button>
             </Modal.Footer>
@@ -193,7 +203,7 @@ class NavigationBar extends Component{
               </Form>
             </Modal.Body>
             <Modal.Footer>
-              <Button variant='primary' onClick={this.login}>
+              <Button variant='primary' onClick={this.login} name={this.state.name}>
                 Log in
               </Button>
             </Modal.Footer>

@@ -4,8 +4,8 @@ import GeneralNavbar from "../components/generalNavbar";
 import DashboardTool from "../components/dashboardTool";
 import MathStatsBoard from "../components/mathStatsBoard";
 import EnglishStatsBoard from "../components/englishStatsBoard";
-
 import "../style-sheet/user-dashboard.css";
+
 class UserDashboard extends Component {
   render() {
     return (
