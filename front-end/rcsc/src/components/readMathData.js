@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import fire from "../config/Fire";
 import { Button, Container, Col, Row, Form } from "react-bootstrap";
 
-let previously_answered_question = [];
+const answered_question_id = [];
+const answered_question_info = [];
 class MathList extends Component {
   constructor(props) {
     super(props);
@@ -52,35 +53,34 @@ class MathList extends Component {
   }
   handleChange = (questionId, userChoice, correctAnswer) => () => {
     let iterator = 0;
-    let answers = [];
-    answers[1] = userChoice;
-    answers[0] = correctAnswer;
-    this.setState({ [questionId]: answers });
-
-    if (previously_answered_question.length === 0) {
-      previously_answered_question[0] = questionId;
-      console.log("when the length is 0: ", previously_answered_question[0]);
+    if (answered_question_id.length === 0) {
+      answered_question_id[0] = questionId;
+      answered_question_info[0] = [questionId, userChoice];
+      //console.log("when the length is 0: ", answered_question_id[0]);
     } else {
-      for (let i = 0; i < previously_answered_question.length; i++) {
-        if (previously_answered_question[i] === questionId) {
+      for (let i = 0; i < answered_question_id.length; i++) {
+        if (answered_question_id[i] === questionId) {
+          answered_question_info[i] = [questionId, userChoice];
           iterator = 0;
           break;
         } else {
-          iterator = previously_answered_question.length;
-          //console.log(iterator, previously_answered_question.length);
+          iterator = answered_question_id.length;
         }
       }
     }
-    if (iterator === previously_answered_question.length) {
-      previously_answered_question[iterator] = questionId;
-      console.log("Added the question ID: ", questionId);
+    if (iterator === answered_question_id.length) {
+      answered_question_id[iterator] = questionId;
+      answered_question_info[iterator] = [questionId, userChoice];
+      //console.log("Added the question ID: ", questionId);
     } else {
-      console.log("The question id ", questionId, " already exist.");
+      //console.log("The question id ", questionId, " already exist.");
     }
   };
+
   showResult() {
-    for (let i = 0; i < previously_answered_question.length; i++) {
-      console.log("Question ", i, " : ", previously_answered_question[i]);
+    for (let i = 0; i < answered_question_id.length; i++) {
+      //console.log("Question ", i, " : ", answered_question_id[i]);
+      console.log("Question ", i, " : ", answered_question_info[i][1]);
     }
   }
 
