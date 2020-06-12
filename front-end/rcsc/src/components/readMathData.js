@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import fire from "../config/Fire";
-import { Container, Col, Row, Form } from "react-bootstrap";
+import { Button, Container, Col, Row, Form } from "react-bootstrap";
 
+let previously_answered_question = [];
 class MathList extends Component {
   constructor(props) {
     super(props);
@@ -10,6 +11,7 @@ class MathList extends Component {
       count: 0,
     };
     this.handleChange = this.handleChange.bind(this);
+    this.showResult = this.showResult.bind(this);
   }
 
   componentDidMount() {
@@ -49,39 +51,63 @@ class MathList extends Component {
     }
   }
   handleChange = (questionId, userChoice, correctAnswer) => () => {
-    console.log(questionId, " ", userChoice, " ", correctAnswer);
-    let user_and_correct_answer = [];
-    user_and_correct_answer[1] = userChoice;
-    user_and_correct_answer[0] = correctAnswer;
+    let iterator = 0;
+    let answers = [];
+    answers[1] = userChoice;
+    answers[0] = correctAnswer;
+    this.setState({ [questionId]: answers });
 
-    this.setState({ [questionId]: user_and_correct_answer }, () => {
-      console.log("State updated:", JSON.stringify(this.state[questionId][1]));
-    });
+    if (previously_answered_question.length === 0) {
+      previously_answered_question[0] = questionId;
+      console.log("when the length is 0: ", previously_answered_question[0]);
+    } else {
+      for (let i = 0; i < previously_answered_question.length; i++) {
+        if (previously_answered_question[i] === questionId) {
+          iterator = 0;
+          break;
+        } else {
+          iterator = previously_answered_question.length;
+          //console.log(iterator, previously_answered_question.length);
+        }
+      }
+    }
+    if (iterator === previously_answered_question.length) {
+      previously_answered_question[iterator] = questionId;
+      console.log("Added the question ID: ", questionId);
+    } else {
+      console.log("The question id ", questionId, " already exist.");
+    }
   };
+  showResult() {
+    for (let i = 0; i < previously_answered_question.length; i++) {
+      console.log("Question ", i, " : ", previously_answered_question[i]);
+    }
+  }
 
   render() {
     return (
       <Container>
         <Row>
           <Col md={12} lg={12} sm={12}>
-            {
-              <ol>
-                {this.state.questionData.map((data) => (
-                  <li id={data.id}>
-                    <div>{data.Question} </div>
-                    <Form>
-                      {data.Choice.map((choice) => (
-                        <p>
-                          <input type='radio' name='choice' value={data.id} onChange={this.handleChange(data.id, choice, data.CorrectAnswer)} />
-                          {choice}
-                        </p>
-                      ))}
-                    </Form>
-                    <br />
-                  </li>
-                ))}
-              </ol>
-            }
+            <ol>
+              {this.state.questionData.map((data) => (
+                <li id={data.id}>
+                  <div>{data.Question} </div>
+                  <Form>
+                    {data.Choice.map((choice) => (
+                      <p>
+                        <input type='radio' name='choice' value={data.id} onChange={this.handleChange(data.id, choice, data.CorrectAnswer)} />
+                        {choice}
+                      </p>
+                    ))}
+                  </Form>
+                  <br />
+                </li>
+              ))}
+            </ol>
+            <Button className='home' onClick={this.showResult}>
+              See Result
+            </Button>
           </Col>
         </Row>
       </Container>
