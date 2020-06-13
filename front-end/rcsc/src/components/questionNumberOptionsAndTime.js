@@ -59,7 +59,7 @@ class NumberOfQuestion extends Component {
             </Col>
           </Row>
           <br />
-          <MathList value={this.state.value} />
+          <MathList chosenChoiceNumber={parseInt(this.state.value)} />
         </Container>
       </React.Fragment>
     );
