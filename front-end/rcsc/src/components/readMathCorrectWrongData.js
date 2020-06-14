@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import fire from "../config/Fire";
+import {SimplePieChart} from "./PieChart";
 class CorrectWrong extends Component{
     constructor(props){
         super(props);
@@ -15,8 +16,11 @@ class CorrectWrong extends Component{
         let correctAnswers = 0;
         let totalAnswered = 0;
         let db = fire.firestore();
-        let questionRef = db.collection('Questions');
-        let responseQuery = questionRef.where('UserHasResponded','==',true);
+        let questionRef = db.collection('Questions');//abc
+        let responseQuery = questionRef.where('UserHasResponded','==',true);//true
+        //docid array
+        // actualQuestion = db.collection('questions)
+        //
         responseQuery.get().then(snapshot => {
             if (snapshot.empty){
                 console.log('No matching docs.');
@@ -48,26 +52,9 @@ class CorrectWrong extends Component{
                 console.log(err);
             })
     }
-    // numCorrect(){
-    //     let db = fire.firestore();
-    //     let questionRef = db.collection('Questions');
-    //     let responseQuery = questionRef.where('UserHasResponded', '==', true);
-    //     responseQuery.where('IsAnswerCorrect','==',true).get()
-    //         .then(snapshot =>{
-    //             if (snapshot.empty){
-    //                 console.log("No such doc exists.");
-    //                 return;
-    //             }
-    //             snapshot.forEach(doc => {
-    //                 console.log(doc.id,'=>',doc.data());
-    //                 this.increaseCount("numCorrectAnswers")
-    //             });
-    //         })
-    //         .catch(err => {
-    //             console.log(err);
-    //         })
-    // }
     render() {
+        let correctAnswers = this.state.numCorrectAnswers;
+        let incorrectAnswers = this.state.numWrongAnswers;
         if (this.state.pending){
             return <>Loading ...</>
         }
@@ -75,6 +62,7 @@ class CorrectWrong extends Component{
             <React.Fragment>
                 {console.log(this.state.numCorrectAnswers)}
                 {console.log(this.state.numWrongAnswers)}
+                <SimplePieChart correctAnswers={correctAnswers} incorrectAnswers = {incorrectAnswers}/>
             </React.Fragment>
         )
     }
