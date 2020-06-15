@@ -15,11 +15,11 @@ function MathStatsBoard() {
           <br />
           <br />
           <h2>{<CorrectWrong/>}</h2>
-          <hr />
-          <p>
-            Description: <br /> correct =23 <br /> Incorrect= 45
-            <br />
-          </p>
+          {/*<hr />*/}
+          {/*<p>*/}
+          {/*  Description: <br /> correct =23 <br /> Incorrect= 45*/}
+          {/*  <br />*/}
+          {/*</p>*/}
         </Col>
       </Row>
     </React.Fragment>

@@ -10,10 +10,13 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.5.0",
+    "d3": "^5.16.0",
     "firebase": "^7.14.4",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
+    "react-d3-library": "^1.1.8",
     "react-dom": "^16.13.1",
+    "react-minimal-pie-chart": "^8.0.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1"
   },
