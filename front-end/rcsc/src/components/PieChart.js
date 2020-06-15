@@ -12,7 +12,12 @@ export const SimplePieChart = (props) => {
     let incorrectAnswers = props.incorrectAnswers;
     let totalAnswers = correctAnswers+incorrectAnswers;
     let percentCorrectAnswers = correctAnswers/totalAnswers*100;
-    let percentInCorrectAnswers = incorrectAnswers/totalAnswers*100
+    let percentInCorrectAnswers = incorrectAnswers/totalAnswers*100;
+    if (correctAnswers==0 && incorrectAnswers==0){
+        return (
+            <h4>Not Enough Data</h4>
+        )
+    }
     return (
         <React.Fragment>
             <PieChart data={
