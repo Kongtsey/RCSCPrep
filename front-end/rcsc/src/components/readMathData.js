@@ -82,6 +82,7 @@ class MathList extends Component {
     let userName = auth.currentUser.email;//need to get email since we need to know which collection
     let db = fire.firestore();
     let userCollection = db.collection(userName);//ref to collection we need to update to.
+    let hasDocSet = false;
     for (let i = 0; i < answered_question_id.length; i++) {
       //console.log("Question ", i, " : ", answered_question_id[i]);
       console.log("Question ", i, " : ", answered_question_info[i][1]);
@@ -89,8 +90,15 @@ class MathList extends Component {
       let userResponse = answered_question_info[i][1];
       let data = {};
       data[qID]=[qID,userResponse];
-      userCollection.doc('MathQuestions').update(data);//update since set erases everything
+      if (hasDocSet==false){//need to do this since update doesnt create a doc.
+        userCollection.doc('MathQuestions').set(data);
+        hasDocSet = true
+      } else {
+        userCollection.doc('MathQuestions').update(data);//update since set erases everything
+      }
+
     }
+    console.log(userName, "successfully entered data.")
   }
 
   render() {
