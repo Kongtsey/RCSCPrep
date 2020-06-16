@@ -80,19 +80,21 @@ class NavigationBar extends Component{
             {
               displayName: this.state.name
             }
-        ).then(r => {})
+        )
+        .then(r => {})
       }
+
     }).catch((error)=>{
       console.log(error);
       this.setState({errorMessage: error.message});
-    })
+    });
     let db = fire.firestore();
     let data = {
       name: this.state.name,
       email: this.state.email,
       college: this.state.college
-    }
-    let setDoc = db.collection(this.state.email).doc('UserProfile').set(data);
+    };
+    db.collection(this.state.email).doc('UserProfile').set(data);
   }
   //Firebase functions end --->
 

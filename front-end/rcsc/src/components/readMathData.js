@@ -78,9 +78,18 @@ class MathList extends Component {
   };
 
   showResult() {
+    let auth = fire.auth();
+    let userName = auth.currentUser.email;//need to get email since we need to know which collection
+    let db = fire.firestore();
+    let userCollection = db.collection(userName);//ref to collection we need to update to.
     for (let i = 0; i < answered_question_id.length; i++) {
       //console.log("Question ", i, " : ", answered_question_id[i]);
       console.log("Question ", i, " : ", answered_question_info[i][1]);
+      let qID = answered_question_info[i][0];
+      let userResponse = answered_question_info[i][1];
+      let data = {};
+      data[qID]=[qID,userResponse];
+      userCollection.doc('MathQuestions').update(data);//update since set erases everything
     }
   }
 
