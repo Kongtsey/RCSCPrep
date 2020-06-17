@@ -1,7 +1,6 @@
 import React from "react";
 import {PieChart} from "react-minimal-pie-chart";
 import "../style-sheet/math-stats-jumbo-box.css";
-import {description} from "d3/package";
 const defaultLabelStyle = {
     fontSize: '4px',
     fontFamily: 'Helvetica Neue',
@@ -13,7 +12,7 @@ export const SimplePieChart = (props) => {
     let totalAnswers = correctAnswers+incorrectAnswers;
     let percentCorrectAnswers = correctAnswers/totalAnswers*100;
     let percentInCorrectAnswers = incorrectAnswers/totalAnswers*100;
-    if (correctAnswers==0 && incorrectAnswers==0){
+    if (correctAnswers===0 && incorrectAnswers===0){
         return (
             <h4>Not Enough Data</h4>
         )
