@@ -98,7 +98,6 @@ class MathList extends Component {
       }
 
     }
-    console.log(userName, "successfully entered data.")
   }
 
   render() {
