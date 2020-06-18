@@ -140,8 +140,8 @@ class NavigationBar extends Component{
                   <Nav.Link href='#contact'>Contact</Nav.Link>
                 </Nav>
                 <Nav>
-                  <Nav.Link onClick={this.handleShowLogin}>Login</Nav.Link>
-                  <Nav.Link onClick={this.handleShow}>Sign Up</Nav.Link>
+                  <Nav.Link onClick={this.handleShowLogin} className="navLinkGhi">Login</Nav.Link>
+                  <div className="button"><Nav.Link onClick={this.handleShow} className="buttonText">Sign Up</Nav.Link></div>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>

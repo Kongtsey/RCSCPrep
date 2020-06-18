@@ -28,3 +28,29 @@ This is the actual text of the navbar.
 .error-msg {
   color: #ec2121;
 }
+.button{
+  background: #007bff;
+  border: 1px solid #007bff;
+  margin-left: 20px;
+  display: block;
+  /*font-weight: 400;*/
+  /*color: #212529;*/
+  /*!*text-align: center;*!*/
+  /*!*vertical-align: middle;*!*/
+  /*!*-webkit-user-select: none;*!*/
+  /*user-select: none;*/
+  /*padding: .35rem .7rem;*/
+  /*font-size: large;*/
+  line-height: 1.5;
+  /*margin-left: 0.5rem;*/
+  border-radius: .25rem;
+  /*transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;*/
+}
+.buttonText{
+  display: block;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+.navLinkGhi{
+  margin-top: 0.4rem;
+}
