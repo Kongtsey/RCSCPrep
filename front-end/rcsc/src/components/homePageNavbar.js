@@ -213,11 +213,17 @@ class NavigationBar extends Component{
               </Form>
             </Modal.Body>
             <Modal.Footer>
-              <Button variant='primary' onClick={this.handleSubmit} name={this.state.name}>
-                Sign up
-              </Button>
+              <p className="haveAnAcc" onClick={()=>{
+                this.handleClose();
+                this.handleShowLogin();
+              } }>Already have an account?</p>
+              <div column sm={4}>
+                <Button  variant='primary' onClick={this.handleSubmit} name={this.state.name}>
+                  Sign up
+                </Button>
+              </div>
+
             </Modal.Footer>
-            <p>Already have an account?</p>
           </Modal>
 
           {/*For Login Form*/}
@@ -254,7 +260,10 @@ class NavigationBar extends Component{
               </Button>
             </Modal.Footer>
             <p>Forgot Password?</p>
-            <p>Create Account</p>
+            <p onClick={()=>{
+              this.handleCloseLogin();
+              this.handleShow();
+            }} >Create Account</p>
           </Modal>
         </React.Fragment>
     );
