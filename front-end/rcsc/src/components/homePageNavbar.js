@@ -15,14 +15,19 @@ class NavigationBar extends Component{
     this.login = this.login.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.signUp = this.signUp.bind(this);
+    // this.handleShowError = this.handleShowError.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
     this.state = {
       toShowLogin : false,
       toShowSignUp : false,
       email: '',
       password: '',
+      confirmPassword: '',
+      showConfirm: false,//show confirm is used to decide whther to show error message" passwords dont match"
       errorMessage: '',
       name: '',
-      college: ''
+      college: '',
+      showRequired: false
     };
   }
   //Functions
@@ -33,9 +38,15 @@ class NavigationBar extends Component{
   handleShow(){
     this.setState({toShowSignUp: true});
     this.setState({
+      name: '',
       email: '',
       password: '',
       errorMessage: '',
+      college: '',
+      showConfirm: false,
+      confirmPassword: '',
+      showRequired: false,
+
     })
   }
   handleCloseLogin(){
@@ -49,11 +60,28 @@ class NavigationBar extends Component{
   handleShowLogin(){
     this.setState({toShowLogin: true});
   }
+  handleChange(e){
+    this.setState({[e.target.name]:e.target.value});
+  }
   //Modal Functions end --->
 
   //Firebase Functions start <--
-  handleChange(e){
-    this.setState({[e.target.name]:e.target.value});
+
+  handleSubmit(e){
+    e.preventDefault();
+    this.setState({errorMessage: ''});
+    this.setState({showConfirm: false});
+    this.setState({showRequired: false});
+    let charCodeName = this.state.name.charCodeAt(0);
+    let charCodeCollege = this.state.college.charCodeAt(0);
+    if(this.state.name===''||this.state.college===''||charCodeName===32||charCodeCollege===32){
+      this.setState({showRequired: true});
+    }
+    else if (this.state.password!== this.state.confirmPassword){
+      this.setState({showConfirm: true})
+    } else {
+      console.log("Success")
+    }
   }
   login(e){
     e.preventDefault();
@@ -70,8 +98,7 @@ class NavigationBar extends Component{
 
 
   }
-  signUp(e){
-    e.preventDefault();
+  signUp(){
     fire.auth().createUserWithEmailAndPassword(this.state.email,this.state.password).then((u)=>{
       console.log(u);
       let user =fire.auth().currentUser;
@@ -137,6 +164,9 @@ class NavigationBar extends Component{
                   </Form.Label>
                   <Col sm='10' className='form-input'>
                     <Form.Control value={this.state.name} onChange={this.handleChange} name='name' type='text' placeholder='Full Name'/>
+                    {this.state.showRequired && (
+                        <h6 className='error-msg'>Required field!</h6>
+                    )}
                   </Col>
                 </Form.Group>
 
@@ -157,6 +187,17 @@ class NavigationBar extends Component{
                     <Form.Control value={this.state.password} onChange={this.handleChange} name='password' type='password' placeholder='Password'/>
                   </Col>
                 </Form.Group>
+                <Form.Group as={Row} controlId='formPlaintextPasswordConfirm'>
+                  <Form.Label column sm='1'>
+                    <FontAwesomeIcon icon={faLock}/>
+                  </Form.Label>
+                  <Col sm='10' className='form-input'>
+                    <Form.Control value={this.state.confirmPassword} onChange={this.handleChange} name='confirmPassword' type='password' placeholder='Renter Password' handle={this.handleError}/>
+                    {this.state.showConfirm && (
+                        <h6 className="error-msg">Passwords do not seem to match</h6>
+                    )}
+                  </Col>
+                </Form.Group>
 
                 <Form.Group as={Row} controlId='plaintext'>
                   <Form.Label column sm='1'>
@@ -164,16 +205,25 @@ class NavigationBar extends Component{
                   </Form.Label>
                   <Col sm='10' className='form-input'>
                     <Form.Control value={this.state.college} onChange={this.handleChange} name='college' type='text' placeholder='College'/>
+                    {this.state.showRequired && (
+                        <h6 className='error-msg'>Required field!</h6>
+                    )}
                   </Col>
                 </Form.Group>
               </Form>
             </Modal.Body>
             <Modal.Footer>
-              <Button variant='primary' onClick={this.signUp} name={this.state.name}>
-                Sign up
-              </Button>
+              <p className="haveAnAcc" onClick={()=>{
+                this.handleClose();
+                this.handleShowLogin();
+              } }>Already have an account?</p>
+              <div column sm={4}>
+                <Button  variant='primary' onClick={this.handleSubmit} name={this.state.name}>
+                  Sign up
+                </Button>
+              </div>
+
             </Modal.Footer>
-            <p>Already have an account?</p>
           </Modal>
 
           {/*For Login Form*/}
@@ -210,7 +260,10 @@ class NavigationBar extends Component{
               </Button>
             </Modal.Footer>
             <p>Forgot Password?</p>
-            <p>Create Account</p>
+            <p onClick={()=>{
+              this.handleCloseLogin();
+              this.handleShow();
+            }} >Create Account</p>
           </Modal>
         </React.Fragment>
     );
