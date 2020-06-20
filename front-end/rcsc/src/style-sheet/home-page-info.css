@@ -1,20 +1,31 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css");
 .homepage-info-parent-div {
   margin-top: 100px;
 }
 .info_description {
+  /*animation-name: fadeInRight;*/
+  /*animation-duration: 2s;*/
+  /*animation-delay: 4s;*/
 }
+.animate__fadeInLeft{}
 .info_description_title {
-  font-size: 50px;
+  color: #2b354f;
+  font-weight: 500;
+  font-size: 35px;
+  margin-top: 5rem;
 }
 .info_description_content {
+  color: #253541bf;
   line-height: 40px;
 }
 .info_description_image {
   align-items: left;
 }
 .info_description_image img {
-  float: right;
-  width: 70%;
+  float: left;
+  width: 90%;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
 }
 .info_description_subsection {
   margin: 50px 0;
@@ -23,4 +34,36 @@
   font-size: 200px;
   text-align: center;
   background: #0000001a;
+}
+.homePage_info_container{
+  background: #F2EEF5;
+  /*padding-top: 0.5rem;*/
+}
+.fadeInRight{
+  animation-name: fadeInRight;
+  animation-duration: 0.75s;
+}
+.fadeInLeft{
+  animation-name: fadeInLeft;
+  animation-duration: 0.75s;
+}
+@keyframes fadeInRight {
+  from{
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInLeft {
+  from{
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

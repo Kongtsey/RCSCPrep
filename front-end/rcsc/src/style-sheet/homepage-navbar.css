@@ -13,12 +13,13 @@
   left: 0;
   right: 0;
   margin-top: 10px;
+  padding: 0px!important;
 }
 /*
 This is the actual text of the navbar.
 */
 .navbar-light .navbar-nav .nav-link {
-  color: white;
+  color: #2b354f !important;
   padding: 0 20px;
   font-size: large;
 }
@@ -47,12 +48,20 @@ This is the actual text of the navbar.
   /*transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;*/
 }
 .buttonText{
-  display: block;
+  font-size: large !important;
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
 }
-.navLinkGhi{
-  margin-top: 0.4rem;
-}
+/*.navLinkGhi{*/
+/*  color: white;*/
+/*  margin-top: 0.5rem;*/
+/*  background: gray;*/
+/*  padding: 0px !important;*/
+/*}*/
 .haveAnAcc{
 }
+.login {
+  color: black !important;
+  font-size: large !important;
+}
+

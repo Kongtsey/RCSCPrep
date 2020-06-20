@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Fredoka+One&family=Monoton&family=Ultra&family=Rubik+Mono+One&display=swap"rel="stylesheet");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Fredoka+One&family=Monoton&family=Ultra&family=Rubik+Mono+One&display=swaprel=stylesheet");
 
 .homepage_parent_container {
-  border: solid #ec6f66 1px;
-  background: #ec6f66; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ec6f66, #f3a183); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ec6f66, #f3a183); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: solid #F9fbfd 1px;
+  background: #F9fbfd;
+  margin: 0;
+  /*background: -webkit-linear-gradient(to right, #6eD9bb,#00d4ff); !* Chrome 10-25, Safari 5.1-6 *!*/
+  /*background: linear-gradient(to right, #6eD9bb, #00d4ff); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
 }
 
 /* 
@@ -15,8 +16,8 @@ meaning it would intersect with the image if the margin
 is not set.
 */
 .front_page_content {
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin-top: 190px;
+  margin-bottom: 100px;
 }
 
 /*
@@ -39,14 +40,33 @@ image from here.
 This is the parent div for the tag line on the right of the image. 
 */
 .tagline {
-  padding-left: 70px;
+  padding-left: 0px !important;
+}
+.product_description{
+  text-align: justify;
+  color: #253541bf;
+  margin-top: -10px;
+  font-size: 18px;
 }
 
 /*
 This is the actual message of the tagline.
 */
 .tagline_message {
-  color: white;
+  color: #2b354f;
+  font-size: 35px;
+  font-weight: 500;
+}
+.featureIcons{
   font-size: 50px;
-  font-family: sans-serif;
+  color: #0069d9;
+}
+.featureTitle{
+  font-size: 25px;
+  color: black;
+  margin-top: 10px;
+}
+.featureDescription{
+  color: #253541bf;
+  margin-top: -15px;
 }

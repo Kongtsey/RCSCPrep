@@ -132,17 +132,17 @@ class NavigationBar extends Component{
         <React.Fragment>
           <Container className='navbar-parent-container'>
             <Navbar collapseOnSelect expand='lg'>
-              <Navbar.Brand href='#home'>React-Bootstrap</Navbar.Brand>
+              <Navbar.Brand href='#home'>RCSC Prep</Navbar.Brand>
               <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
               <Navbar.Collapse id='responsive-navbar-nav'>
                 <Nav className='mr-auto'>
                   <Nav.Link href='#about'>About</Nav.Link>
                   <Nav.Link href='#contact'>Contact</Nav.Link>
                 </Nav>
-                <Nav>
-                  <Nav.Link onClick={this.handleShowLogin} className="navLinkGhi">Login</Nav.Link>
-                  <div className="button"><Nav.Link onClick={this.handleShow} className="buttonText">Sign Up</Nav.Link></div>
-                </Nav>
+                <Form inline>
+                  <Button variant="light" className="login" onClick={this.handleShowLogin}>Login</Button>
+                  <Button className="button buttonText" onClick={this.handleShow}><span>Sign Up</span></Button>
+                </Form>
               </Navbar.Collapse>
             </Navbar>
             <hr/>
