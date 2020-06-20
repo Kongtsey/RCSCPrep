@@ -80,7 +80,7 @@ class NavigationBar extends Component{
     else if (this.state.password!== this.state.confirmPassword){
       this.setState({showConfirm: true})
     } else {
-      console.log("Success")
+      this.signUp();
     }
   }
   login(e){
