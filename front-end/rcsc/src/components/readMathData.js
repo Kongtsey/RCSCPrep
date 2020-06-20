@@ -79,9 +79,9 @@ class MathList extends Component {
     if (iterator === answered_question_id.length) {
       answered_question_id[iterator] = questionId;
       answered_question_info[iterator] = [questionId, userChoice];
-      //console.log("Added the question ID: ", questionId);
+      console.log("Added the question ID: ", questionId);
     } else {
-      //console.log("The question id ", questionId, " already exist.");
+      console.log("The question id ", questionId, " already exist.");
     }
   };
 
@@ -90,21 +90,18 @@ class MathList extends Component {
     let userName = auth.currentUser.email; //need to get email since we need to know which collection
     let db = fire.firestore();
     let userCollection = db.collection(userName); //ref to collection we need to update to.
-    let hasDocSet = false;
+
     for (let i = 0; i < answered_question_id.length; i++) {
       //console.log("Question ", i, " : ", answered_question_id[i]);
       console.log("Question ", i, " : ", answered_question_info[i][1]);
       let qID = answered_question_info[i][0];
-      let userResponse = answered_question_info[i][1];
-      let data = {};
-      data[qID] = [qID, userResponse];
-      if (hasDocSet === false) {
-        //need to do this since update doesnt create a doc.
-        userCollection.doc("MathQuestions").set(data);
-        hasDocSet = true;
-      } else {
-        userCollection.doc("MathQuestions").update(data); //update since set erases everything
-      }
+      //let userResponse = answered_question_info[i][1];
+      userCollection.doc("MathQuestions").collection("Questions").doc(qID).set(
+        {
+          UserHasResponded: true,
+        },
+        { merge: true }
+      );
     }
   }
 
