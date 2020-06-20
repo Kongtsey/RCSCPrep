@@ -16,11 +16,15 @@ class MathList extends Component {
   }
 
   componentDidMount() {
+    let auth = fire.auth();
+    let userName = auth.currentUser.email;
     fire
       .firestore()
+      .collection(userName)
+      .doc("MathQuestions")
       .collection("Questions")
+      .where("UserHasResponded", "==", false)
       .limit(this.props.chosenChoiceNumber)
-      .orderBy("Question")
       .onSnapshot((snapshot) => {
         const newData = snapshot.docs.map((doc) => ({
           id: doc.id,
@@ -33,12 +37,16 @@ class MathList extends Component {
       });
   }
   componentDidUpdate(prevProps) {
+    let auth = fire.auth();
+    let userName = auth.currentUser.email;
     if (prevProps.chosenChoiceNumber !== this.props.chosenChoiceNumber) {
       fire
         .firestore()
+        .collection(userName)
+        .doc("MathQuestions")
         .collection("Questions")
+        .where("UserHasResponded", "==", false)
         .limit(this.props.chosenChoiceNumber)
-        .orderBy("Question")
         .onSnapshot((snapshot) => {
           const newData = snapshot.docs.map((doc) => ({
             id: doc.id,
@@ -79,9 +87,9 @@ class MathList extends Component {
 
   showResult() {
     let auth = fire.auth();
-    let userName = auth.currentUser.email;//need to get email since we need to know which collection
+    let userName = auth.currentUser.email; //need to get email since we need to know which collection
     let db = fire.firestore();
-    let userCollection = db.collection(userName);//ref to collection we need to update to.
+    let userCollection = db.collection(userName); //ref to collection we need to update to.
     let hasDocSet = false;
     for (let i = 0; i < answered_question_id.length; i++) {
       //console.log("Question ", i, " : ", answered_question_id[i]);
@@ -89,14 +97,14 @@ class MathList extends Component {
       let qID = answered_question_info[i][0];
       let userResponse = answered_question_info[i][1];
       let data = {};
-      data[qID]=[qID,userResponse];
-      if (hasDocSet==false){//need to do this since update doesnt create a doc.
-        userCollection.doc('MathQuestions').set(data);
-        hasDocSet = true
+      data[qID] = [qID, userResponse];
+      if (hasDocSet === false) {
+        //need to do this since update doesnt create a doc.
+        userCollection.doc("MathQuestions").set(data);
+        hasDocSet = true;
       } else {
-        userCollection.doc('MathQuestions').update(data);//update since set erases everything
+        userCollection.doc("MathQuestions").update(data); //update since set erases everything
       }
-
     }
   }
 

@@ -124,6 +124,11 @@ class NavigationBar extends Component {
       email: this.state.email,
       college: this.state.college,
     };
+    /*
+    ========================================================================================================
+        TODO: NEED TO CHECK IF THERE IS ERRROR OR NOT AT FIRST AND THEN ONLY EXECUTE THE FOLLOWING PROGRAM!!!!!!
+    ========================================================================================================
+    */
     db.collection(this.state.email).doc("UserProfile").set(data);
     console.log("email user: ", this.state.email);
     db.collection("Questions")
