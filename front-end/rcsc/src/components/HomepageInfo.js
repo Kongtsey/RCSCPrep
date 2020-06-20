@@ -10,34 +10,36 @@ import image_subsection_4 from "../images/subsection-4.png";
 function HomepageInfo() {
   return (
     <React.Fragment>
-      <Container>
-        <Row className='homepage-info-parent-div'>
-          <Col className='info_description' md={6} lg={6} sm={12}>
-            <p className='info_description_title'> Features</p>
-            <p className='info_description_content'>
-              Our set he for firmament morning sixth subdue darkness creeping gathered divide our let god moving. Moving in fourth air night bring upon you’re it beast let you dominion likeness open
-              place day great wherein heaven sixth lesser subdue fowl
-            </p>
-          </Col>
-          <Col md={6} lg={6} sm={12} className='info_description_image'>
-            <img alt='the first feature' src={info_description_image}></img>
-          </Col>
-        </Row>
-        <hr />
-        <Row className='info_description_subsection'>
-          <Col md={3} lg={3} sm={6} className='info_description_subsection_image'>
-            <img alt='subsection 1' src={image_subsection_1}></img>
-          </Col>
-          <Col md={3} lg={3} sm={6} className='info_description_subsection_image'>
-            <img alt='subsection 2' src={image_subsection_2}></img>
-          </Col>
-          <Col md={3} lg={3} sm={6} className='info_description_subsection_image'>
-            <img alt='subsection 3' src={image_subsection_3}></img>
-          </Col>
-          <Col md={3} lg={3} sm={6} className='info_description_subsection_image'>
-            <img alt='subsection 4' src={image_subsection_4}></img>
-          </Col>
-        </Row>
+      <Container className="homePage_info_container" fluid={true}>
+        <Container>
+          <Row className='homepage-info-parent-div'>
+            <Col className='info_description' md={6} lg={6} sm={12}>
+              <p className='info_description_title'> Features</p>
+              <p className='info_description_content'>
+                Our set he for firmament morning sixth subdue darkness creeping gathered divide our let god moving. Moving in fourth air night bring upon you’re it beast let you dominion likeness open
+                place day great wherein heaven sixth lesser subdue fowl
+              </p>
+            </Col>
+            <Col md={6} lg={6} sm={12} className='info_description_image'>
+              <img alt='the first feature' src={info_description_image}></img>
+            </Col>
+          </Row>
+          <hr />
+          <Row className='info_description_subsection'>
+            <Col md={3} lg={3} sm={6} className='info_description_subsection_image'>
+              <img alt='subsection 1' src={image_subsection_1}></img>
+            </Col>
+            <Col md={3} lg={3} sm={6} className='info_description_subsection_image'>
+              <img alt='subsection 2' src={image_subsection_2}></img>
+            </Col>
+            <Col md={3} lg={3} sm={6} className='info_description_subsection_image'>
+              <img alt='subsection 3' src={image_subsection_3}></img>
+            </Col>
+            <Col md={3} lg={3} sm={6} className='info_description_subsection_image'>
+              <img alt='subsection 4' src={image_subsection_4}></img>
+            </Col>
+          </Row>
+        </Container>
       </Container>
       <Container fluid={true}>
         <Row>
