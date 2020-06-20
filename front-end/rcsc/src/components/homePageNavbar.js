@@ -134,6 +134,7 @@ class NavigationBar extends Component {
     db.collection("Questions")
       .get()
       .then((snapshot) => {
+        let counter = 0;
         snapshot.forEach((doc) => {
           console.log(doc.id, " -----> ", doc.data());
           db.collection(this.state.email).doc("MathQuestions").collection("Questions").doc(doc.id).set({
@@ -145,6 +146,8 @@ class NavigationBar extends Component {
             UserHasResponded: doc.data().UserHasResponded,
             QuestionYear: doc.data().QuestionYear,
           });
+          counter = 1 + counter;
+          console.log(counter);
         });
         console.log("done copying the database ");
       });
