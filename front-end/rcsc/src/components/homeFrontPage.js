@@ -7,8 +7,8 @@ import { faChartPie, faLaptopHouse, faMoneyBillAlt} from  "@fortawesome/free-sol
 function FrontPage() {
   return (
     <React.Fragment>
-      <Container fluid={true} className='homepage_parent_container'>
-        <Container>
+      {/*<Container fluid={true} className='homepage_parent_container'>*/}
+        <Container className='homepage_parent_container'>
           <Row className='front_page_content'>
             <Col lg={6} md={6} sm={12} className='tagline'>
               <p className='tagline_message'>
@@ -55,7 +55,7 @@ function FrontPage() {
             </Col>
           </Row>
         </Container>
-      </Container>
+      {/*</Container>*/}
     </React.Fragment>
   );
 }

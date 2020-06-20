@@ -13,7 +13,7 @@ function HomePage() {
     }else {
         return (
             <React.Fragment>
-                <Container fluid={true} style={{background: "#F9fbfd"}}>
+                <Container fluid={true} style={{background: "#F9fbfd", padding: "0px"}}>
                     <FrontPage />
                     <HomepageInfo />
                     <NavigationBar />
