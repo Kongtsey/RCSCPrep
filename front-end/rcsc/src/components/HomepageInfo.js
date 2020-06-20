@@ -1,7 +1,8 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import "../style-sheet/home-page-info.css";
-import info_description_image from "../images/piechart.png";
+import dashboard_image from "../images/dashboard.png";
+import ScrollAnimation from 'react-animate-on-scroll';
 import image_subsection_1 from "../images/subsection-1.png";
 import image_subsection_2 from "../images/subsection-2.png";
 import image_subsection_3 from "../images/subsection-3.png";
@@ -10,18 +11,28 @@ import image_subsection_4 from "../images/subsection-4.png";
 function HomepageInfo() {
   return (
     <React.Fragment>
+      <head>
+        {/*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>*/}
+      </head>
       <Container className="homePage_info_container" fluid={true}>
         <Container>
           <Row className='homepage-info-parent-div'>
-            <Col className='info_description' md={6} lg={6} sm={12}>
-              <p className='info_description_title'> Features</p>
-              <p className='info_description_content'>
-                Our set he for firmament morning sixth subdue darkness creeping gathered divide our let god moving. Moving in fourth air night bring upon you’re it beast let you dominion likeness open
-                place day great wherein heaven sixth lesser subdue fowl
-              </p>
-            </Col>
             <Col md={6} lg={6} sm={12} className='info_description_image'>
-              <img alt='the first feature' src={info_description_image}></img>
+              <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
+              <img alt='the first feature' src={dashboard_image}></img>
+              </ScrollAnimation>
+            </Col>
+            <Col className='info_description' md={6} lg={6} sm={12}>
+              <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
+                <p className='info_description_title'> A custom study plan just for you.</p>
+                <p className='info_description_content'>
+                  RCSC Prep makes it easy for you to study at your own pace and at your own time. Our feedback is personalized to your performance
+                  and helps you find your weaknesses and your strengths.
+                </p>
+                <p className='info_description_content'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim eget nunc eget eleifend. Nullam finibus tincidunt dui ut luctus. Proin ut tempor urna, sit amet aliquet massa. Vivamus at leo non leo fermentum viverra. Cras vulputate tellus quis vulputate posuere. Praesent at nisi massa. Etiam finibus tellus est, ac placerat elit dictum eu. Nunc sollicitudin ipsum mi. Nulla facilisi. Aenean dapibus metus bibendum, faucibus sem sit amet, volutpat neque. Nulla quis diam quis quam feugiat interdum.
+                </p>
+              </ScrollAnimation>
             </Col>
           </Row>
           <hr />
