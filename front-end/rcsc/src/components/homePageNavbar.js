@@ -100,7 +100,7 @@ class NavigationBar extends Component{
   }
   signUp(){
     fire.auth().createUserWithEmailAndPassword(this.state.email,this.state.password).then((u)=>{
-      console.log(u);
+      // console.log(u);
       let user =fire.auth().currentUser;
       if(user!=null){
         user.updateProfile(
@@ -108,20 +108,22 @@ class NavigationBar extends Component{
               displayName: this.state.name
             }
         )
-        .then(r => {})
+        .then((r) => {
+          // console.log(r, "this the user?")
+          let db = fire.firestore();
+          let data = {
+            name: this.state.name,
+            email: this.state.email,
+            college: this.state.college
+          };
+          db.collection(this.state.email).doc('UserProfile').set(data);
+        })
       }
 
     }).catch((error)=>{
-      console.log(error);
+      // console.log(error);
       this.setState({errorMessage: error.message});
     });
-    let db = fire.firestore();
-    let data = {
-      name: this.state.name,
-      email: this.state.email,
-      college: this.state.college
-    };
-    db.collection(this.state.email).doc('UserProfile').set(data);
   }
   //Firebase functions end --->
 
