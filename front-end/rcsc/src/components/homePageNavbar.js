@@ -111,45 +111,41 @@ class NavigationBar extends Component {
             .updateProfile({
               displayName: this.state.name,
             })
-            .then((r) => {});
+            .then((r) => {
+              let db = fire.firestore();
+              let data = {
+                name: this.state.name,
+                email: this.state.email,
+                college: this.state.college,
+              };
+              db.collection(this.state.email).doc("UserProfile").set(data);
+              console.log("email user: ", this.state.email);
+              db.collection("Questions")
+                .get()
+                .then((snapshot) => {
+                  let counter = 0;
+                  snapshot.forEach((doc) => {
+                    console.log(doc.id, " -----> ", doc.data());
+                    db.collection(this.state.email).doc("MathQuestions").collection("Questions").doc(doc.id).set({
+                      Category: doc.data().Category,
+                      Choice: doc.data().Choice,
+                      CorrectAnswer: doc.data().CorrectAnswer,
+                      IsAnswerCorrect: doc.data().IsAnswerCorrect,
+                      Question: doc.data().Question,
+                      UserHasResponded: doc.data().UserHasResponded,
+                      QuestionYear: doc.data().QuestionYear,
+                    });
+                    counter = 1 + counter;
+                    console.log(counter);
+                  });
+                  console.log("done copying the database ");
+                });
+            });
         }
       })
       .catch((error) => {
         console.log(error);
         this.setState({ errorMessage: error.message });
-      });
-    let db = fire.firestore();
-    let data = {
-      name: this.state.name,
-      email: this.state.email,
-      college: this.state.college,
-    };
-    /*
-    ========================================================================================================
-        TODO: NEED TO CHECK IF THERE IS ERRROR OR NOT AT FIRST AND THEN ONLY EXECUTE THE FOLLOWING PROGRAM!!!!!!
-    ========================================================================================================
-    */
-    db.collection(this.state.email).doc("UserProfile").set(data);
-    console.log("email user: ", this.state.email);
-    db.collection("Questions")
-      .get()
-      .then((snapshot) => {
-        let counter = 0;
-        snapshot.forEach((doc) => {
-          console.log(doc.id, " -----> ", doc.data());
-          db.collection(this.state.email).doc("MathQuestions").collection("Questions").doc(doc.id).set({
-            Category: doc.data().Category,
-            Choice: doc.data().Choice,
-            CorrectAnswer: doc.data().CorrectAnswer,
-            IsAnswerCorrect: doc.data().IsAnswerCorrect,
-            Question: doc.data().Question,
-            UserHasResponded: doc.data().UserHasResponded,
-            QuestionYear: doc.data().QuestionYear,
-          });
-          counter = 1 + counter;
-          console.log(counter);
-        });
-        console.log("done copying the database ");
       });
   }
 
