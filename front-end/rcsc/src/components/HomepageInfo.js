@@ -30,35 +30,23 @@ function HomepageInfo() {
                   and helps you find your weaknesses and your strengths.
                 </p>
                 <p className='info_description_content'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim eget nunc eget eleifend. Nullam finibus tincidunt dui ut luctus. Proin ut tempor urna, sit amet aliquet massa. Vivamus at leo non leo fermentum viverra. Cras vulputate tellus quis vulputate posuere. Praesent at nisi massa. Etiam finibus tellus est, ac placerat elit dictum eu. Nunc sollicitudin ipsum mi. Nulla facilisi. Aenean dapibus metus bibendum, faucibus sem sit amet, volutpat neque. Nulla quis diam quis quam feugiat interdum.
+                  RCSC Prep also has features that make you be able to take control of when you want to study and is tailor made just for you.
+                  <br/>
+                  You can also choose to focus on what you lack rather than just going along with the classroom, in a sense RCSC Prep is what allows you to make
+                  this education a 21st century education and the best part is that its completely free.
                 </p>
               </ScrollAnimation>
             </Col>
           </Row>
-          <hr />
-          <Row className='info_description_subsection'>
-            <Col md={3} lg={3} sm={6} className='info_description_subsection_image'>
-              <img alt='subsection 1' src={image_subsection_1}></img>
-            </Col>
-            <Col md={3} lg={3} sm={6} className='info_description_subsection_image'>
-              <img alt='subsection 2' src={image_subsection_2}></img>
-            </Col>
-            <Col md={3} lg={3} sm={6} className='info_description_subsection_image'>
-              <img alt='subsection 3' src={image_subsection_3}></img>
-            </Col>
-            <Col md={3} lg={3} sm={6} className='info_description_subsection_image'>
-              <img alt='subsection 4' src={image_subsection_4}></img>
-            </Col>
-          </Row>
         </Container>
       </Container>
-      <Container fluid={true}>
-        <Row>
-          <Col className='content_before_footer' md={12} lg={12} sm={12}>
-            <p>Coming Soon</p>
-          </Col>
-        </Row>
-      </Container>
+      {/*<Container fluid={true}>*/}
+      {/*  <Row>*/}
+      {/*    <Col className='content_before_footer' md={12} lg={12} sm={12}>*/}
+      {/*      <p>Coming Soon</p>*/}
+      {/*    </Col>*/}
+      {/*  </Row>*/}
+      {/*</Container>*/}
     </React.Fragment>
   );
 }

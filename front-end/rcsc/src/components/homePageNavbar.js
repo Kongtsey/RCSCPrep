@@ -99,6 +99,7 @@ class NavigationBar extends Component {
         }
       });
   }
+
   signUp() {
     fire
       .auth()
@@ -147,11 +148,13 @@ class NavigationBar extends Component {
         console.log(error);
         this.setState({ errorMessage: error.message });
       });
+
   }
 
   //Render
   render() {
     return (
+
       <React.Fragment>
         <Container className='navbar-parent-container'>
           <Navbar collapseOnSelect expand='lg'>
