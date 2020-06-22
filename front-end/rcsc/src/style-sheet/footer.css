@@ -1,17 +1,40 @@
 .footer_parent_div {
-  background: black;
+  background: #EEF6FB;
 }
 .project_motto {
-  color: white;
-  margin-top: 30px;
+  color: #2B3568;
+  margin-top: 50px;
+  /*margin-bottom: 40px;*/
 }
 .footer_contacts {
-  color: white;
+  color: #2B3568;
   margin-top: 30px;
-  text-align: end;
+  text-align: left;
 }
-.links {
-  color: white;
+.quickNav {
+  color: #2B3568;
   margin-top: 30px;
-  text-align: end;
+  text-align: left;
+}
+.legal{
+  text-align: left;
+
+}
+.copyright{
+  color: #253541bf;
+}
+a{
+  color: #2B3568 !important;
+}
+a:hover{
+  transition: 0.5s;
+  text-decoration: none !important;
+  color: #007bff !important;
+}
+.socialMedia{
+  margin-top: 30px;
+  text-align: left;
+}
+.smIcons{
+  margin-top: 20px;
 }

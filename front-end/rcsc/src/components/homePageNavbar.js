@@ -135,7 +135,7 @@ class NavigationBar extends Component{
               <Navbar.Brand href='#home'>RCSC Prep</Navbar.Brand>
               <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
               <Navbar.Collapse id='responsive-navbar-nav'>
-                <Nav className='mr-auto'>
+                <Nav className='mr-auto anotherOne'>
                   <Nav.Link href='#about'>About</Nav.Link>
                   <Nav.Link href='#contact'>Contact</Nav.Link>
                 </Nav>

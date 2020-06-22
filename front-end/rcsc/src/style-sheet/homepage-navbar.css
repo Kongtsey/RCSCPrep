@@ -61,7 +61,14 @@ This is the actual text of the navbar.
 .haveAnAcc{
 }
 .login {
+  transition: 0.5s;
   color: black !important;
   font-size: large !important;
 }
-
+.login:hover{
+  color: #0069d9 !important;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  transition: 0.5s;
+  color: #0069d9 !important;
+}
