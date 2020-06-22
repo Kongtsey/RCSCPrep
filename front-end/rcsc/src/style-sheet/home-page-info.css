@@ -3,9 +3,7 @@
   margin-top: 100px;
 }
 .info_description {
-  /*animation-name: fadeInRight;*/
-  /*animation-duration: 2s;*/
-  /*animation-delay: 4s;*/
+  margin-bottom: 6rem;
 }
 .animate__fadeInLeft{}
 .info_description_title {
@@ -36,7 +34,7 @@
   background: #0000001a;
 }
 .homePage_info_container{
-  background: #F4F9FC;
+  background: #CCCBC9;
   /*padding-top: 0.5rem;*/
 }
 .fadeInRight{

@@ -14,7 +14,7 @@ function HomepageInfo() {
       <head>
         {/*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>*/}
       </head>
-      <Container className="homePage_info_container" style={{marginBottom: "100px"}} fluid={true}>
+      <Container className="homePage_info_container" fluid={true}>
         <Container>
           <Row className='homepage-info-parent-div'>
             <Col md={6} lg={6} sm={12} className='info_description_image'>
