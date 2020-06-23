@@ -1,6 +1,6 @@
 import classifierQuestions as cQ
 import json as js
-import firebase_admin
+# import firebase_admin
 # from firebase_admin import credentials
 # from firebase_admin import firestore
 # Use the application default credentials

@@ -1,5 +1,16 @@
 import classifierQuestions as cQ
+import passageDivider as pD
 import json as js
+
+import firebase_admin
+from firebase_admin import credentials
+from firebase_admin import firestore
+# Use the application default credentials
+cred = credentials.Certificate("../credentials/Credentials.json")
+firebase_admin.initialize_app(cred, {
+  'projectId': "bhutanexamfactory-d7ea2",
+})
+db = firestore.client()
 def choicesSplitter(list):
     """
     Function to divide the choices as seperate elements
@@ -11,8 +22,7 @@ def choicesSplitter(list):
     temp = []  # accumulator variable a list to store
     for i in range(len(list)):  # Traverse the split list
         for j in range(len(choiceLetter)):  # traverse choice letters
-            if list[i] == choiceLetter[
-                j]:  # if element in the split list matches choice letters then we add everything up to that element i
+            if list[i] == choiceLetter[j]:  # if element in the split list matches choice letters then we add everything up to that element i
                 temp.append(list[tempIndex:i])
                 tempIndex = i + 1  # raise the tempindex to now be above that choiceLetter
         if list[i] == "D.":  # exception case for D. since we need to add elements forward of D.
@@ -21,6 +31,7 @@ def choicesSplitter(list):
 year = input("What year is the english paper?\n")
 englishPage = open("PastPapers/Eng" + year + "_PE.txt", "r")
 content = englishPage.read()
+englishPassage = pD.englishPassageSplit(content)
 content = content.split("\n")
 # split all of the text files by new lines.
 questions = []  # list to store all the questions
@@ -40,16 +51,29 @@ for i in range(len(orderedList)):
     choicesResult = cQ.finder3(orderedList[i],
                                'D.')  # compiles all choices into a single list and have each choice as an element
     choices.append(choicesResult)
+passage = {
+    "passage": englishPassage,
+    "QuestionYear": year
+}
 questionsAnswers = {  # dictionary format to store as JSON.
     "Question": "",
     "QuestionYear":year,
     "Category":"Quantitative",
     "Choice": [],
     "CorrectAnswer":0,
+    "isPassageQuestion": False,
     "UserHasResponded":False,
     "IsAnswerCorrect":False
 }
+
+# ADDING THE PASSAGE TO DB
+data = js.dumps(passage, sort_keys=True,indent=4)
 json_file = open('JSONFormatQuestions/PEQuestionEnglish' + year + '.txt', 'w')
+json_file.write(data+"\n")
+db.collection("EnglishQuestions").document("passage"+year).set(passage) #adding the passage to the console
+
+
+#ADDING THE QUESTIONS TO THE DB
 for i in range(len(choices)):  # splitting the choices in order to seperate them
     splitList = choices[i].split()
     choices[i] = choicesSplitter(splitList)
@@ -60,9 +84,23 @@ for i in range(len(choices)):  # splitting the choices in order to seperate them
 for i in range(len(questions)):
     questionsAnswers["Question"] = questions[i]  # each question is stored in question
     questionsAnswers["Choice"]=choices[i] #assign the right array to the choice in form on indexes
+    if (i<=4):
+        questionsAnswers["isPassageQuestion"] = True
+        questionsAnswers["Category"] = "Comprehension"
+    elif (i>=5 and i <=9):
+        questionsAnswers["isPassageQuestion"] = False
+        questionsAnswers["Category"] = "Grammar"
+    elif (i>=10 and i<=14):
+        questionsAnswers["Category"] = "Vocabulary"
+    elif (i >= 15 and i <= 19):
+        questionsAnswers["Category"] = "Synonyms"
+    else:
+        questionsAnswers["Category"] = "Antonyms"
     data = js.dumps(questionsAnswers, sort_keys=True,indent=4)  # and then choice and question are converted and process repeats.
-    # db.collection('Questions').add(questionsAnswers)
+    db.collection('EnglishQuestions').add(questionsAnswers)
     json_file.write(data + "\n")
+
+#DONE.
 json_file.close()
 englishPage.close()
 print("All questions have been uploaded to console. saved in JSONFormatQuestions/PEQuestionsEnglish")
