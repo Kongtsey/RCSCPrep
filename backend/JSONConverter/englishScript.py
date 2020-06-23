@@ -1,16 +1,5 @@
 import classifierQuestions as cQ
 import json as js
-import firebase_admin
-# from firebase_admin import credentials
-# from firebase_admin import firestore
-# Use the application default credentials
-# cred = credentials.Certificate("../credentials/Credentials.json")
-# firebase_admin.initialize_app(cred, {
-#   'projectId': "bhutanexamfactory-d7ea2",
-# })
-# db = firestore.client()
-
-
 def choicesSplitter(list):
     """
     Function to divide the choices as seperate elements
@@ -29,21 +18,18 @@ def choicesSplitter(list):
         if list[i] == "D.":  # exception case for D. since we need to add elements forward of D.
             temp.append(list[tempIndex:])
     return temp
-
-
-year = input("What year is the paper?\n")
-prblmSlvPage = open("PastPapers/" + year + "_PE.txt", "r")  # prblmSlvPage is the quantitative part of the PE
-content = prblmSlvPage.read()
+year = input("What year is the english paper?\n")
+englishPage = open("PastPapers/Eng" + year + "_PE.txt", "r")
+content = englishPage.read()
 content = content.split("\n")
 # split all of the text files by new lines.
 questions = []  # list to store all the questions
 choices = []  # list to store all the choices
-qNum = 51  # since the questions start from number 51
-content = cQ.finder(content, 'D.',
-                    qNum)  # updates the content list to contain each question and choice as a single element in the list
+qNum = 1  # since the questions start from number 1
+content = cQ.finder(content, 'D.',qNum)  # updates the content list to contain each question
+# and choice as a single element in the list
 orderedList = []  # list to store content but in a standard way
 orderedList = cQ.iterator(content, cQ.reverse)  # reverses the list content
-
 for i in range(len(orderedList)):
     questionResult = cQ.finder2(orderedList[i], 'A.',
                                 qNum)  # function to find questions since some of them have new lines so are broken down as new questions.
@@ -54,7 +40,6 @@ for i in range(len(orderedList)):
     choicesResult = cQ.finder3(orderedList[i],
                                'D.')  # compiles all choices into a single list and have each choice as an element
     choices.append(choicesResult)
-# Time to convert into a dictionary
 questionsAnswers = {  # dictionary format to store as JSON.
     "Question": "",
     "QuestionYear":year,
@@ -64,7 +49,7 @@ questionsAnswers = {  # dictionary format to store as JSON.
     "UserHasResponded":False,
     "IsAnswerCorrect":False
 }
-json_file = open('JSONFormatQuestions/PEQuestion' + year + '.txt', 'w')
+json_file = open('JSONFormatQuestions/PEQuestionEnglish' + year + '.txt', 'w')
 for i in range(len(choices)):  # splitting the choices in order to seperate them
     splitList = choices[i].split()
     choices[i] = choicesSplitter(splitList)
@@ -79,5 +64,5 @@ for i in range(len(questions)):
     # db.collection('Questions').add(questionsAnswers)
     json_file.write(data + "\n")
 json_file.close()
-prblmSlvPage.close()
-print("All questions have been uploaded to console.")
+englishPage.close()
+print("All questions have been uploaded to console. saved in JSONFormatQuestions/PEQuestionsEnglish")
