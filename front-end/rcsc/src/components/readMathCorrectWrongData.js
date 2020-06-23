@@ -16,14 +16,14 @@ class CorrectWrong extends Component{
         let correctAnswers = 0;
         let totalAnswered = 0;
         let db = fire.firestore();
-        let questionRef = db.collection('Questions');//abc
-        let responseQuery = questionRef.where('UserHasResponded','==',true);//true
-        //docid array
-        // actualQuestion = db.collection('questions)
-        //
+        let user = fire.auth().currentUser;
+        let questionRef = db.collection(user.email).doc('MathQuestions').collection("Questions");//abc
+        let responseQuery = questionRef.where('UserHasResponded','==',true);
         responseQuery.get().then(snapshot => {
             if (snapshot.empty){
-                console.log('No matching docs.');
+                this.setState({pending: false});
+                this.setState({numCorrectAnswers: 0});
+                this.setState({numWrongAnswers: 0});
                 return;
             }
             snapshot.forEach(doc => {
@@ -33,24 +33,30 @@ class CorrectWrong extends Component{
         })
             .catch(err => {
                 console.log(err);
-            })
-        responseQuery.where('IsAnswerCorrect','==',true).get()
-            .then(snapshot =>{
-                if (snapshot.empty){
-                    console.log("No such doc exists.");
-                    return;
-                }
-                snapshot.forEach(doc =>{
-                    console.log(doc.id,'=>', doc.data());
-                    correctAnswers = correctAnswers + 1;
+            });
+        if(this.state.pending === true){
+            responseQuery.where('IsAnswerCorrect','==',true).get()
+                .then(snapshot =>{
+                    if (snapshot.empty){
+                        this.setState({pending: false})
+                        this.setState({numCorrectAnswers: 0});
+                        this.setState({numWrongAnswers: totalAnswered});
+                        return;
+                    }
+                    snapshot.forEach(doc =>{
+                        console.log(doc.id,'=>', doc.data());
+                        correctAnswers = correctAnswers + 1;
+                    });
+                    if(this.state.pending === true){
+                        this.setState({pending: false});
+                        this.setState({numCorrectAnswers: correctAnswers});
+                        this.setState({numWrongAnswers: totalAnswered-correctAnswers});
+                    }
                 })
-                this.setState({pending: false});
-                this.setState({numCorrectAnswers: correctAnswers});
-                this.setState({numWrongAnswers: totalAnswered-correctAnswers});
-            })
-            .catch(err => {
-                console.log(err);
-            })
+                .catch(err => {
+                    console.log(err);
+                })
+        }
     }
     render() {
         let correctAnswers = this.state.numCorrectAnswers;
