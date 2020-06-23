@@ -24,11 +24,18 @@ def finder(list,x,qNum):
                     broken = list[y].split()#because of the spaces and tabs present we arent able to directly compare using indices
                     temp.append(list[y])# append all elements that you come across
                     try:
-                        if(int(broken[0][0:2])==qNum): # questions in quantitative part range from 51 to 75
-                            anotherList.append(temp)# anotherList is the final list with questions
-                            qNum+=1
-                            temp = [] # emptied to store the next questions
-                            break
+                        if (qNum > 9):
+                            if (int(broken[0][0:2]) == qNum):  # questions in quantitative part range from 51 to 75
+                                anotherList.append(temp)  # anotherList is the final list with questions
+                                qNum += 1
+                                temp = []  # emptied to store the next questions
+                                break
+                        else:
+                            if (broken[0][0:2] == str(qNum) + "."):  # since numbers less than 10 come in format '9.'
+                                anotherList.append(temp)
+                                qNum += 1
+                                temp = []
+                                break
                     except:
                         pass
         except:
@@ -51,7 +58,7 @@ def finder2(list,x,qNum):
                     broken = list[y].split()
                     temp.append(list[y])
                     try:
-                        if(int(broken[0][0:2])==qNum):
+                        if (broken[0][0:2]==str(qNum)+"." or broken[0][0:2] == str(qNum)): # questions in quantitative part range from 51 to 75 the first condition is for numbers from 1 to 9
                             temp = reverse(temp)# reverse the orders
                             temp = joiner(temp)# combine them all together
                             temp = temp.split()# need to split in order to remove the question number

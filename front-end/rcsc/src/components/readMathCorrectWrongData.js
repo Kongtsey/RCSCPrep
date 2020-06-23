@@ -38,7 +38,7 @@ class CorrectWrong extends Component{
             responseQuery.where('IsAnswerCorrect','==',true).get()
                 .then(snapshot =>{
                     if (snapshot.empty){
-                        this.setState({pending: false})
+                        this.setState({pending: false});
                         this.setState({numCorrectAnswers: 0});
                         this.setState({numWrongAnswers: totalAnswered});
                         return;
