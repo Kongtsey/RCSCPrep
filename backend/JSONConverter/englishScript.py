@@ -18,7 +18,7 @@ def choicesSplitter(list):
     :return: temp a list which stores each choice as its element in a list tho.
     """
     choiceLetter = ["B.", "C.", "D."]  # option letters always start with this not included A. since too much trouble
-    tempIndex = 1  # start from 1 to not inlclude A.
+    tempIndex = 26  # start from 1 to not inlclude A.
     temp = []  # accumulator variable a list to store
     for i in range(len(list)):  # Traverse the split list
         for j in range(len(choiceLetter)):  # traverse choice letters
@@ -34,9 +34,10 @@ content = englishPage.read()
 englishPassage = pD.englishPassageSplit(content)
 content = content.split("\n")
 # split all of the text files by new lines.
+
 questions = []  # list to store all the questions
 choices = []  # list to store all the choices
-qNum = 1  # since the questions start from number 1
+qNum = 26  # since the questions start from number 1
 content = cQ.finder(content, 'D.',qNum)  # updates the content list to contain each question
 # and choice as a single element in the list
 orderedList = []  # list to store content but in a standard way
