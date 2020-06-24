@@ -155,6 +155,7 @@ class MathList extends Component {
               {this.state.questionData.map((data) => (
                 <li id={data.id}>
                   <div>{data.Question} </div>
+                  <br />
                   <Form className={data.id}>
                     {data.Choice.map((choice, index) => (
                       <p className={index}>
@@ -163,6 +164,7 @@ class MathList extends Component {
                       </p>
                     ))}
                   </Form>
+                  <br />
                   <br />
                 </li>
               ))}

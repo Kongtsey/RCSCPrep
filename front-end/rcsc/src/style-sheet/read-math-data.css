@@ -1,10 +1,15 @@
 input[type="radio"] {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 8px;
+  display: inline-block;
+  border: white 1px solid;
 }
 input[type="radio"]:after {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
+  position: relative;
   background-color: white;
   content: "";
   display: inline-block;
@@ -14,8 +19,8 @@ input[type="radio"]:after {
 }
 
 input[type="radio"]:checked:after {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   position: relative;
   background-color: #ffa500;
   content: "";
