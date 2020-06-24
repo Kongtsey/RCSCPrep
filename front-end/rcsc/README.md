@@ -4,4 +4,5 @@ Need to install
 <ol> 
     <li>react bootstrap</li>
     <li>jquery</li>
+    <li>react-spinner</li>
 </ol>

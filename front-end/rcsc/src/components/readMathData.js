@@ -3,6 +3,7 @@ import fire from "../config/Fire";
 import { Button, Container, Col, Row, Form } from "react-bootstrap";
 import $ from "jquery";
 import "../style-sheet/read-math-data.css";
+import Loading from "../components/loading";
 
 const answered_question_id = [];
 const answered_question_info = [];
@@ -11,6 +12,7 @@ class MathList extends Component {
     super(props);
     this.state = {
       questionData: [],
+      loading: false,
     };
     this.handleChange = this.handleChange.bind(this);
     this.showResult = this.showResult.bind(this);
@@ -19,6 +21,7 @@ class MathList extends Component {
   }
 
   componentDidMount() {
+    this.setState({ loading: true });
     let auth = fire.auth();
     let userName = auth.currentUser.email;
     fire
@@ -36,6 +39,7 @@ class MathList extends Component {
         //console.log("This is the default number of questions displayed", newTimes);
         this.setState({
           questionData: newData,
+          loading: false,
         });
       });
   }
@@ -149,8 +153,8 @@ class MathList extends Component {
       );
     }
   }
-
   render() {
+    const loading = this.state.loading;
     return (
       <Container>
         <Row>
@@ -173,9 +177,14 @@ class MathList extends Component {
                 </li>
               ))}
             </ol>
-            <Button variant='warning' id='showResult' onClick={this.showResult}>
-              See Result
-            </Button>
+            {loading ? (
+              <Loading />
+            ) : (
+              <Button variant='warning' id='showResult' onClick={this.showResult}>
+                See Result
+              </Button>
+            )}
+
             <Button id='submit' variant='outline-success' onClick={this.updateDatabase}>
               Done
             </Button>
