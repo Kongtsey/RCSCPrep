@@ -11,11 +11,11 @@ class MathList extends Component {
     super(props);
     this.state = {
       questionData: [],
-      count: 0,
     };
     this.handleChange = this.handleChange.bind(this);
     this.showResult = this.showResult.bind(this);
     this.highlightNewAnswer = this.highlightNewAnswer.bind(this);
+    this.updateDatabase = this.updateDatabase.bind(this);
   }
 
   componentDidMount() {
@@ -90,6 +90,7 @@ class MathList extends Component {
     }
     this.highlightNewAnswer(questionId, index);
   };
+
   highlightNewAnswer(questionId, index) {
     for (let i = 0; i < 4; i++) {
       $("#" + questionId)
@@ -125,21 +126,24 @@ class MathList extends Component {
         }
       }
     }
+    $("#showResult").css("display", "none");
+    $("#submit").css("display", "block");
   }
 
-  writeToDatabase() {
+  updateDatabase() {
     let auth = fire.auth();
     let userName = auth.currentUser.email; //need to get email since we need to know which collection
     let db = fire.firestore();
     let userCollection = db.collection(userName); //ref to collection we need to update to.
     for (let i = 0; i < answered_question_id.length; i++) {
       //console.log("Question ", i, " : ", answered_question_id[i]);
-      console.log("Question ", i, " : ", answered_question_info[i][1]);
+      //console.log("Question ", i, " : ", answered_question_info[i][1]);
       let qID = answered_question_info[i][0];
       //let userResponse = answered_question_info[i][1];
       userCollection.doc("MathQuestions").collection("Questions").doc(qID).set(
         {
           UserHasResponded: true,
+          IsAnswerCorrect: answered_question_info[i][3],
         },
         { merge: true }
       );
@@ -169,10 +173,12 @@ class MathList extends Component {
                 </li>
               ))}
             </ol>
-            <Button className='home' onClick={this.showResult}>
+            <Button variant='warning' id='showResult' onClick={this.showResult}>
               See Result
             </Button>
-            <Button className='submit'>Done</Button>
+            <Button id='submit' variant='outline-success' onClick={this.updateDatabase}>
+              Done
+            </Button>
           </Col>
         </Row>
         <br />
