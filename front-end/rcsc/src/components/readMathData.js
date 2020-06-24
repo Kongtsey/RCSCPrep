@@ -172,6 +172,7 @@ class MathList extends Component {
             <Button className='home' onClick={this.showResult}>
               See Result
             </Button>
+            <Button className='submit'>Done</Button>
           </Col>
         </Row>
         <br />
