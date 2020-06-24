@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import fire from "../config/Fire";
 import { Button, Container, Col, Row, Form } from "react-bootstrap";
 import $ from "jquery";
+import "../style-sheet/read-math-data.css";
 
 const answered_question_id = [];
 const answered_question_info = [];
@@ -14,6 +15,7 @@ class MathList extends Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.showResult = this.showResult.bind(this);
+    this.highlightNewAnswer = this.highlightNewAnswer.bind(this);
   }
 
   componentDidMount() {
@@ -86,9 +88,29 @@ class MathList extends Component {
     } else {
       console.log("The question id ", questionId, " already exist.");
     }
+    this.highlightNewAnswer(questionId, index);
   };
+  highlightNewAnswer(questionId, index) {
+    for (let i = 0; i < 4; i++) {
+      $("#" + questionId)
+        .find("form")
+        .find("." + i)
+        .css("color", "black");
+    }
+    $("#" + questionId)
+      .find("form")
+      .find("." + index)
+      .css("color", "#ffc107");
+  }
 
+  /***
+   * @return: void;
+   * @param: void;
+   * This class method is called when the user is finished answering the questions.
+   * This method highlights the wrong questions in light gray color and the correct in green.
+   */
   showResult() {
+    $(":radio").attr("disabled", true);
     for (let i = 0; i < answered_question_id.length; i++) {
       let id = "#" + answered_question_info[i][0];
       let answer_class = "." + answered_question_info[i][2];
@@ -137,7 +159,7 @@ class MathList extends Component {
                     {data.Choice.map((choice, index) => (
                       <p className={index}>
                         <input type='radio' id={data.CorrectAnswer} name='choice' value={data.id} onChange={this.handleChange(data.id, choice, data.CorrectAnswer, index)} />
-                        {choice}
+                        &nbsp;&nbsp;&nbsp;&nbsp; {choice}
                       </p>
                     ))}
                   </Form>
@@ -150,6 +172,10 @@ class MathList extends Component {
             </Button>
           </Col>
         </Row>
+        <br />
+        <br />
+        <br />
+        <br />
       </Container>
     );
   }

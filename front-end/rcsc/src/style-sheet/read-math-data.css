@@ -1,0 +1,22 @@
+input[type="radio"]:after {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked:after {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  background-color: #ffa500;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid gray;
+  cursor: pointer;
+}
