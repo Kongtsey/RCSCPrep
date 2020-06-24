@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import fire from "../config/Fire";
 import { Button, Container, Col, Row, Form } from "react-bootstrap";
+import $ from "jquery";
 
 const answered_question_id = [];
 const answered_question_info = [];
@@ -36,6 +37,7 @@ class MathList extends Component {
         });
       });
   }
+
   componentDidUpdate(prevProps) {
     let auth = fire.auth();
     let userName = auth.currentUser.email;
@@ -59,16 +61,17 @@ class MathList extends Component {
         });
     }
   }
-  handleChange = (questionId, userChoice, correctAnswer) => () => {
+  handleChange = (questionId, userChoice, correctAnswer, index) => () => {
+    const userAnsweredIndex = parseInt(index);
+    const correctAnswerBool = correctAnswer === userAnsweredIndex;
     let iterator = 0;
     if (answered_question_id.length === 0) {
       answered_question_id[0] = questionId;
-      answered_question_info[0] = [questionId, userChoice];
-      //console.log("when the length is 0: ", answered_question_id[0]);
+      answered_question_info[0] = [questionId, userChoice, correctAnswer, correctAnswerBool];
     } else {
       for (let i = 0; i < answered_question_id.length; i++) {
         if (answered_question_id[i] === questionId) {
-          answered_question_info[i] = [questionId, userChoice];
+          answered_question_info[i] = [questionId, userChoice, correctAnswer, correctAnswerBool];
           iterator = 0;
           break;
         } else {
@@ -78,7 +81,7 @@ class MathList extends Component {
     }
     if (iterator === answered_question_id.length) {
       answered_question_id[iterator] = questionId;
-      answered_question_info[iterator] = [questionId, userChoice];
+      answered_question_info[iterator] = [questionId, userChoice, correctAnswer, correctAnswerBool];
       console.log("Added the question ID: ", questionId);
     } else {
       console.log("The question id ", questionId, " already exist.");
@@ -86,11 +89,18 @@ class MathList extends Component {
   };
 
   showResult() {
+    for (let i = 0; i < answered_question_id.length; i++) {
+      let id = "#" + answered_question_info[i][0];
+      let home = "." + answered_question_info[i][2];
+      console.log(typeof id, "    ", typeof home, home, id);
+      $(id).css("color", "red");
+    }
+  }
+  writeToDatabase() {
     let auth = fire.auth();
     let userName = auth.currentUser.email; //need to get email since we need to know which collection
     let db = fire.firestore();
     let userCollection = db.collection(userName); //ref to collection we need to update to.
-
     for (let i = 0; i < answered_question_id.length; i++) {
       //console.log("Question ", i, " : ", answered_question_id[i]);
       console.log("Question ", i, " : ", answered_question_info[i][1]);
@@ -115,9 +125,9 @@ class MathList extends Component {
                 <li id={data.id}>
                   <div>{data.Question} </div>
                   <Form>
-                    {data.Choice.map((choice) => (
+                    {data.Choice.map((choice, index) => (
                       <p>
-                        <input type='radio' name='choice' value={data.id} onChange={this.handleChange(data.id, choice, data.CorrectAnswer)} />
+                        <input type='radio' id={data.CorrectAnswer} className={index} name='choice' value={data.id} onChange={this.handleChange(data.id, choice, data.CorrectAnswer, index)} />
                         {choice}
                       </p>
                     ))}
