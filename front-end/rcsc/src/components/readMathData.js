@@ -91,11 +91,20 @@ class MathList extends Component {
   showResult() {
     for (let i = 0; i < answered_question_id.length; i++) {
       let id = "#" + answered_question_info[i][0];
-      let home = "." + answered_question_info[i][2];
-      console.log(typeof id, "    ", typeof home, home, id);
-      $(id).css("color", "red");
+      let answer_class = "." + answered_question_info[i][2];
+      for (let j = 0; j < 4; j++) {
+        if (j === parseInt(answered_question_info[i][2])) {
+          $(id).find("form").find(answer_class).css("color", "green");
+        } else {
+          $(id)
+            .find("form")
+            .find("." + j)
+            .css("color", "#cfcfcf");
+        }
+      }
     }
   }
+
   writeToDatabase() {
     let auth = fire.auth();
     let userName = auth.currentUser.email; //need to get email since we need to know which collection
@@ -124,10 +133,10 @@ class MathList extends Component {
               {this.state.questionData.map((data) => (
                 <li id={data.id}>
                   <div>{data.Question} </div>
-                  <Form>
+                  <Form className={data.id}>
                     {data.Choice.map((choice, index) => (
-                      <p>
-                        <input type='radio' id={data.CorrectAnswer} className={index} name='choice' value={data.id} onChange={this.handleChange(data.id, choice, data.CorrectAnswer, index)} />
+                      <p className={index}>
+                        <input type='radio' id={data.CorrectAnswer} name='choice' value={data.id} onChange={this.handleChange(data.id, choice, data.CorrectAnswer, index)} />
                         {choice}
                       </p>
                     ))}
