@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Row, Col, Button } from "react-bootstrap";
 import "../style-sheet/math-stats-jumbo-box.css";
-import CorrectWrong from "./readMathCorrectWrongData";
+import CorrectWrong from "./pieChartData";
 
 function MathStatsBoard() {
   return (
@@ -14,7 +14,7 @@ function MathStatsBoard() {
           </Link>
           <br />
           <br />
-          <h2>{<CorrectWrong/>}</h2>
+          <h2>{<CorrectWrong category="MathQuestions"/>}</h2>
           {/*<hr />*/}
           {/*<p>*/}
           {/*  Description: <br /> correct =23 <br /> Incorrect= 45*/}

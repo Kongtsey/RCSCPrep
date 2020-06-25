@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../style-sheet/math-stats-jumbo-box.css";
+import CorrectWrong from "./pieChartData";
 
 function EnglishStatsBoard() {
   return (
@@ -13,12 +14,7 @@ function EnglishStatsBoard() {
           </Link>
           <br />
           <br />
-          <h2>THIS IS WHERE THE PIE CHART SHOWING THER PROPRTTION OF THE CORRECT AND WORNG ANSWER WILL BE</h2>
-          <hr />
-          <p>
-            Description: <br /> correct =12 <br /> Incorrect= 1
-            <br />
-          </p>
+          {<CorrectWrong category={"EnglishQuestions"}/>}
         </Col>
       </Row>
     </React.Fragment>

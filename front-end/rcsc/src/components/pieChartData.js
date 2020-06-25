@@ -16,8 +16,9 @@ class CorrectWrong extends Component{
         let correctAnswers = 0;
         let totalAnswered = 0;
         let db = fire.firestore();
+        let docPath = this.props.category;
         let user = fire.auth().currentUser;
-        let questionRef = db.collection(user.email).doc('MathQuestions').collection("Questions");//abc
+        let questionRef = db.collection(user.email).doc(docPath).collection("Questions");//abc
         let responseQuery = questionRef.where('UserHasResponded','==',true);
         responseQuery.get().then(snapshot => {
             if (snapshot.empty){
@@ -66,8 +67,8 @@ class CorrectWrong extends Component{
         }
         return(
             <React.Fragment>
-                {console.log(this.state.numCorrectAnswers)}
-                {console.log(this.state.numWrongAnswers)}
+                {/*{console.log(this.state.numCorrectAnswers)}*/}
+                {/*{console.log(this.state.numWrongAnswers)}*/}
                 <SimplePieChart correctAnswers={correctAnswers} incorrectAnswers = {incorrectAnswers}/>
             </React.Fragment>
         )
