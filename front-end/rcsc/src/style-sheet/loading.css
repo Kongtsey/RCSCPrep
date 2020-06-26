@@ -1,0 +1,123 @@
+.loading-text {
+  text-align: center;
+  width: 100%;
+  transform: rotate(-45deg);
+}
+#l {
+  animation: l 700ms infinite;
+}
+#o {
+  animation: o 700ms infinite;
+}
+#a {
+  animation: a 700ms infinite;
+}
+#d {
+  animation: d 700ms infinite;
+}
+#i {
+  animation: i 700ms infinite;
+}
+#n {
+  animation: n 700ms infinite;
+}
+#g {
+  animation: g 700ms infinite;
+}
+@keyframes l {
+  0% {
+    color: #007bff;
+  }
+  50% {
+    color: black;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes o {
+  0% {
+    color: black;
+  }
+  14% {
+    color: yellow;
+  }
+  28% {
+    color: black;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes a {
+  0% {
+    color: black;
+  }
+  28% {
+    color: red;
+  }
+  42% {
+    color: black;
+  }
+  100% {
+    color: black;
+  }
+}
+@keyframes d {
+  0% {
+    color: black;
+  }
+  42% {
+    color: #007bff;
+  }
+  56% {
+    color: black;
+  }
+  100% {
+    color: black;
+  }
+}
+@keyframes i {
+  0% {
+    color: black;
+  }
+  56% {
+    color: green;
+  }
+  70% {
+    color: black;
+  }
+  100% {
+    color: black;
+  }
+}
+@keyframes n {
+  0% {
+    color: black;
+  }
+  70% {
+    color: red;
+  }
+  84% {
+    color: black;
+  }
+  100% {
+    color: black;
+  }
+}
+@keyframes g {
+  0% {
+    color: black;
+  }
+  84% {
+    color: #007bff;
+  }
+  98% {
+    color: black;
+  }
+  100% {
+    color: black;
+  }
+}

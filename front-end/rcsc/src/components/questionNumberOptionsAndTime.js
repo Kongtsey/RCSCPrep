@@ -6,9 +6,14 @@ import MathList from "../components/readMathData";
 class NumberOfQuestion extends Component {
   constructor(props) {
     super(props);
-    this.state = { value: "5", timer: false };
+    this.state = { value: "5", timer: false, valueToBePassed: "5" };
     this.handleChange = this.handleChange.bind(this);
     this.timerHandleChange = this.timerHandleChange.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
+  }
+  onSubmit() {
+    this.setState({ valueToBePassed: this.state.value });
+    console.log("the value to be passed: ", this.state.valueToBePassed);
   }
   handleChange(event) {
     console.log("the event value is: ", event.target.value);
@@ -55,11 +60,11 @@ class NumberOfQuestion extends Component {
             </Col>
 
             <Col md={3} lg={3} sm={12}>
-              <input type='submit' value='Submit' style={{ padding: "2px 10px", background: "#ffcA00", color: "white" }} />
+              <input type='submit' value='Submit' onClick={this.onSubmit} style={{ padding: "2px 10px", background: "#ffcA00", color: "white" }} />
             </Col>
           </Row>
           <br />
-          <MathList chosenChoiceNumber={parseInt(this.state.value)} />
+          <MathList chosenChoiceNumber={parseInt(this.state.valueToBePassed)} />
         </Container>
       </React.Fragment>
     );
