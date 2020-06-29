@@ -22,10 +22,10 @@ export const SimplePieChart = (props) => {
             <PieChart data={
                 [
                     {
-                        title: "correct",value: percentCorrectAnswers, color: "#3577CF", key: "correct"
+                        title: "correct",value: percentCorrectAnswers, color: "#3577CFFD", key: "correct"
                     },
                     {
-                        title: "incorrect",value: percentInCorrectAnswers, color: "#FF4B32", key: "incorrect"
+                        title: "incorrect",value: percentInCorrectAnswers, color: "#FF4B32A9", key: "incorrect"
                     }
                 ]
             } radius={35} animate={true} label={({dataEntry}) =>
