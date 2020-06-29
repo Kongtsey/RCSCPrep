@@ -1,6 +1,5 @@
 import React from "react";
-import { Row, Col, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Row, Col} from "react-bootstrap";
 import "../style-sheet/math-stats-jumbo-box.css";
 import CorrectWrong from "./pieChartData";
 
@@ -9,10 +8,7 @@ function EnglishStatsBoard() {
     <React.Fragment>
       <Row>
         <Col md={12} lg={12} sm={12}>
-          <Link to={"/english_pratice"} style={{ color: "white" }}>
-            <Button>Practice English</Button>
-          </Link>
-          <br />
+          <h3 className="pieTopic">English</h3>
           <br />
           {<CorrectWrong category={"EnglishQuestions"}/>}
         </Col>
