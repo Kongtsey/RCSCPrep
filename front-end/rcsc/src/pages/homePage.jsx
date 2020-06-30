@@ -6,6 +6,7 @@ import Footer from "../components/footer";
 import { withRouter, Redirect } from "react-router-dom";
 import { AuthContext } from "../components/authentication";
 import { Container } from "react-bootstrap";
+import ContactUs from "../components/contactUs";
 function HomePage() {
   const { currentUser } = useContext(AuthContext);
   if (currentUser != null) {
@@ -15,8 +16,9 @@ function HomePage() {
       <React.Fragment>
         <Container fluid={true} style={{ background: "#F9fbfd", padding: "0px" }}>
           <FrontPage />
-          <HomepageInfo />
           <NavigationBar />
+          <HomepageInfo />
+          <ContactUs />
           <Footer />
         </Container>
       </React.Fragment>

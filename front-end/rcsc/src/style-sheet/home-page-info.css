@@ -1,29 +1,29 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css");
 .homepage-info-parent-div {
   margin-top: 100px;
+  background: #e7e7e7;
 }
 .info_description {
-  margin-bottom: 6rem;
+  background-color: #007bff;
+  padding: 50px !important;
+  text-align: justify !important;
 }
-.animate__fadeInLeft{}
 .info_description_title {
-  color: #2b354f;
-  font-weight: 500;
-  font-size: 35px;
-  margin-top: 5rem;
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
 }
 .info_description_content {
-  color: #253541bf;
+  color: #ffe7e7;
   line-height: 40px;
 }
 .info_description_image {
-  align-items: left;
+  padding: 50px;
 }
 .info_description_image img {
-  float: left;
-  width: 90%;
-  margin-top: 8rem;
-  margin-bottom: 5rem;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
 }
 .info_description_subsection {
   margin: 50px 0;
@@ -33,34 +33,31 @@
   text-align: center;
   background: #0000001a;
 }
-.homePage_info_container{
-  background: #CCCBC9;
-  /*padding-top: 0.5rem;*/
-}
-.fadeInRight{
+
+.fadeInRight {
   animation-name: fadeInRight;
   animation-duration: 0.75s;
 }
-.fadeInLeft{
+.fadeInLeft {
   animation-name: fadeInLeft;
   animation-duration: 0.75s;
 }
 @keyframes fadeInRight {
-  from{
+  from {
     opacity: 0;
     transform: translateX(40px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateX(0);
   }
 }
 @keyframes fadeInLeft {
-  from{
+  from {
     opacity: 0;
     transform: translateX(-40px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateX(0);
   }
