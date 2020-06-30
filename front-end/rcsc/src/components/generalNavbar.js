@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import fire from "../config/Fire";
 import "../style-sheet/general-navbar.css";
+import logo from "../images/web-logo.png";
+
 class GeneralNavigationBar extends Component {
   logout() {
     fire.auth().signOut();
@@ -11,7 +13,10 @@ class GeneralNavigationBar extends Component {
   render() {
     return (
       <Navbar collapseOnSelect expand='lg' bg='warning'>
-        <Navbar.Brand href='/'>&nbsp;&nbsp;&nbsp;BhutanExamFactory</Navbar.Brand>
+        <Navbar.Brand href='/'>
+          &nbsp;&nbsp;&nbsp;
+          <img src={logo} alt='this is the logo' className='logo' />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='mr-auto'>
