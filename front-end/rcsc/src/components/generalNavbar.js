@@ -11,11 +11,11 @@ class GeneralNavigationBar extends Component {
   render() {
     return (
       <Navbar collapseOnSelect expand='lg' bg='warning'>
-        <Navbar.Brand href='#home'>&nbsp;&nbsp;&nbsp;BhutanExamFactory</Navbar.Brand>
+        <Navbar.Brand href='/'>&nbsp;&nbsp;&nbsp;BhutanExamFactory</Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='mr-auto'>
-            <Nav.Link href='#about'>Dashboard</Nav.Link>
+            <Nav.Link href='/'>Dashboard</Nav.Link>
             <Nav.Link href='#contact'>English</Nav.Link>
             <Nav.Link href='#contact'>Math</Nav.Link>
           </Nav>
