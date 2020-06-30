@@ -8,7 +8,7 @@ function EnglishStatsBoard() {
     <React.Fragment>
       <Row>
         <Col md={12} lg={12} sm={12}>
-          <Link to={"/english_pratice"} style={{ color: "white" }}>
+          <Link to={"/english_practice"} style={{ color: "white" }}>
             <Button>Practice English</Button>
           </Link>
           <br />

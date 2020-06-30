@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Form, Col, Row, Container } from "react-bootstrap";
 import "../style-sheet/number-of-question.css";
 import MathList from "../components/readMathData";
+import ReadEnglishQuestion from "../components/readEnglishData";
 
 class NumberOfQuestion extends Component {
   constructor(props) {
@@ -24,6 +25,14 @@ class NumberOfQuestion extends Component {
     this.setState({ timer: event.target.value });
   }
   render() {
+    //THIS IS NECESSARY TO CHECK WHERE THIS COMPONENT IS BEING CALLED FROM(EITHER FROM ENGLISH OR MATH)
+    const subject = this.props.calledBy;
+    let bool;
+    if (subject === "english") {
+      bool = true;
+    } else {
+      bool = false;
+    }
     return (
       <React.Fragment>
         <Container>
@@ -64,7 +73,8 @@ class NumberOfQuestion extends Component {
             </Col>
           </Row>
           <br />
-          <MathList chosenChoiceNumber={parseInt(this.state.valueToBePassed)} />
+
+          {bool ? <ReadEnglishQuestion chosenChoiceNumber={parseInt(this.state.valueToBePassed)} /> : <MathList chosenChoiceNumber={parseInt(this.state.valueToBePassed)} />}
         </Container>
       </React.Fragment>
     );
