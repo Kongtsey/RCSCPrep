@@ -6,7 +6,6 @@ import ScrollAnimation from "react-animate-on-scroll";
 function HomepageInfo() {
   return (
     <React.Fragment>
-      <head>{/*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>*/}</head>
       <Container className='homePage_info_container' fluid={true}>
         <Container>
           <Row className='homepage-info-parent-div'>
