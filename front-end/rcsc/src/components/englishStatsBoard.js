@@ -9,7 +9,6 @@ function EnglishStatsBoard() {
       <Row>
         <Col md={12} lg={12} sm={12}>
           <h3 className="pieTopic">English</h3>
-          <br />
           {<CorrectWrong category={"EnglishQuestions"}/>}
         </Col>
       </Row>

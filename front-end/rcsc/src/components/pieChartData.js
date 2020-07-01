@@ -63,7 +63,7 @@ class CorrectWrong extends Component{
         let correctAnswers = this.state.numCorrectAnswers;
         let incorrectAnswers = this.state.numWrongAnswers;
         if (this.state.pending){
-            return <>Loading ...</>
+            return <p>Loading ...</p>
         }
         return(
             <React.Fragment>

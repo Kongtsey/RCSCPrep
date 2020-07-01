@@ -14,51 +14,84 @@ class UserDashboard extends Component {
         <GeneralNavbar />
         <Container fluid={true}>
           <Row>
-            <Col md={{ span: 3, offset: 1 }}>
-              <h3 style={{ marginTop: "30px" }}> Dashboard </h3>
-            </Col>
-            <Col md={3}>
+            {/*<Col md={{ span: 3, offset: 1 }}>*/}
+            {/*  <h3 style={{ marginTop: "30px" }}> Dashboard </h3>*/}
+            {/*</Col>*/}
+              <Col md={3} className="dboardTool">
+                <DashboardTool />
+              </Col>
+            <Col md={{span:8, offset: 1}}>
               <h3 style={{ marginTop: "30px" }}> Result Summary </h3>
+              <br/>
+              <hr/>
+              <Row>
+                <Col md={5} lg={5}>
+                  <Row>
+                    <Col sm={12} md={12} lg={12} style={{ color: "black", padding: "8px",borderStyle: "solid", borderWidth: "1px", borderColor: "rgba(0,0,0,.3)"
+                    }} className="statsBoard">
+                      <MathStatsBoard />
+                    </Col>
+                  </Row>
+                  <Row>
+                      <Col md={12} lg={12} sm={12} className="justify-content-center">
+                        <Link to={"/math_practice"} style={{ color: "white" }}>
+                          <Button size="lg" block className="practiceButtons">Practice Math</Button>
+                        </Link>
+                      </Col>
+                  </Row>
+                </Col>
+                <Col md={{span:5, offset:1}} lg={{span:5, offset:1}}>
+                  <Row>
+                    <Col sm={12} md={12} lg={12} style={{ color: "black", padding: "8px",borderStyle: "solid", borderWidth: "1px", borderColor: "rgba(0,0,0,.3)"
+                    }} className="statsBoard">
+                      <EnglishStatsBoard />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col md={12} lg={12} sm={12} className="justify-content-center">
+                      <Link to={"/english_practice"} style={{ color: "white" }}>
+                        <Button size="lg" block className="practiceButtons">Practice English</Button>
+                      </Link>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
             </Col>
           </Row>
-          <hr/>
           <br />
 
-          <Row>
-            <Col md={3}>
-              <DashboardTool />
-            </Col>
-            <Col sm={12} md={{span: 3, offset:1}} lg={{span:3, offset:1}}>
-              <Row>
-                <Col sm={12} md={12} lg={12} style={{ color: "black", padding: "8px",borderStyle: "solid", borderWidth: "1px", borderColor: "rgba(0,0,0,.3)"
-                }} className="statsBoard">
-                  <MathStatsBoard />
-                </Col>
-              </Row>
-              <Row>
-                <Col md={12} lg={12} sm={12} className="justify-content-center">
-                  <Link to={"/math_practice"} style={{ color: "white" }}>
-                          <Button size="lg" block className="practiceButtons">Practice Math</Button>
-                  </Link>
-                </Col>
-              </Row>
-            </Col>
-            <Col sm={12} md={{span: 3, offset:1}} lg={{span:3, offset:1}}>
-              <Row>
-                <Col sm={12} md={12} lg={12} style={{ color: "black", padding: "8px",borderStyle: "solid", borderWidth: "1px", borderColor: "rgba(0,0,0,.3)"
-                }} className="statsBoard">
-                  <EnglishStatsBoard />
-                </Col>
-              </Row>
-              <Row>
-                <Col md={12} lg={12} sm={12} className="justify-content-center">
-                  <Link to={"/english_practice"} style={{ color: "white" }}>
-                    <Button size="lg" block className="practiceButtons">Practice English</Button>
-                  </Link>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
+          {/*<Row>*/}
+          {/*  <Col sm={12} md={{span: 3, offset:4}} lg={{span:3, offset:4}}>*/}
+          {/*    <Row>*/}
+          {/*      <Col sm={12} md={12} lg={12} style={{ color: "black", padding: "8px",borderStyle: "solid", borderWidth: "1px", borderColor: "rgba(0,0,0,.3)"*/}
+          {/*      }} className="statsBoard">*/}
+          {/*        <MathStatsBoard />*/}
+          {/*      </Col>*/}
+          {/*    </Row>*/}
+          {/*    <Row>*/}
+          {/*      <Col md={12} lg={12} sm={12} className="justify-content-center">*/}
+          {/*        <Link to={"/math_practice"} style={{ color: "white" }}>*/}
+          {/*                <Button size="lg" block className="practiceButtons">Practice Math</Button>*/}
+          {/*        </Link>*/}
+          {/*      </Col>*/}
+          {/*    </Row>*/}
+          {/*  </Col>*/}
+          {/*  <Col sm={12} md={{span: 3, offset:1}} lg={{span:3, offset:1}}>*/}
+          {/*    <Row>*/}
+          {/*      <Col sm={12} md={12} lg={12} style={{ color: "black", padding: "8px",borderStyle: "solid", borderWidth: "1px", borderColor: "rgba(0,0,0,.3)"*/}
+          {/*      }} className="statsBoard">*/}
+          {/*        <EnglishStatsBoard />*/}
+          {/*      </Col>*/}
+          {/*    </Row>*/}
+          {/*    <Row>*/}
+          {/*      <Col md={12} lg={12} sm={12} className="justify-content-center">*/}
+          {/*        <Link to={"/english_practice"} style={{ color: "white" }}>*/}
+          {/*          <Button size="lg" block className="practiceButtons">Practice English</Button>*/}
+          {/*        </Link>*/}
+          {/*      </Col>*/}
+          {/*    </Row>*/}
+          {/*  </Col>*/}
+          {/*</Row>*/}
         </Container>
       </React.Fragment>
     );
