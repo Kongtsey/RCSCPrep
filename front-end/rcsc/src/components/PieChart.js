@@ -46,6 +46,5 @@ export const SimplePieChart = (props) => {
                 </p>
             </div>
         </React.Fragment>
-
     );
 }
