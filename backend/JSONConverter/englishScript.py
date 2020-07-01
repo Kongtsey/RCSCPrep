@@ -18,7 +18,7 @@ def choicesSplitter(list):
     :return: temp a list which stores each choice as its element in a list tho.
     """
     choiceLetter = ["B.", "C.", "D."]  # option letters always start with this not included A. since too much trouble
-    tempIndex = 26  # start from 1 to not inlclude A.
+    tempIndex = 1  # start from 1 to not inlclude A.
     temp = []  # accumulator variable a list to store
     for i in range(len(list)):  # Traverse the split list
         for j in range(len(choiceLetter)):  # traverse choice letters
@@ -52,27 +52,28 @@ for i in range(len(orderedList)):
     choicesResult = cQ.finder3(orderedList[i],
                                'D.')  # compiles all choices into a single list and have each choice as an element
     choices.append(choicesResult)
-passage = {
-    "passage": englishPassage,
-    "QuestionYear": year
-}
+# passage = {
+#     "passage": englishPassage,
+#     "QuestionYear": year
+# }
 questionsAnswers = {  # dictionary format to store as JSON.
     "Question": "",
+    "Passage": "",
     "QuestionYear":year,
     "Category":"Quantitative",
     "Choice": [],
     "CorrectAnswer":0,
     "isPassageQuestion": False,
     "UserHasResponded":False,
-    "IsAnswerCorrect":False
+    "IsAnswerCorrect":False,
+    "Marked": False,
 }
 
 # ADDING THE PASSAGE TO DB
-data = js.dumps(passage, sort_keys=True,indent=4)
+# data = js.dumps(passage, sort_keys=True,indent=4)
 json_file = open('JSONFormatQuestions/PEQuestionEnglish' + year + '.txt', 'w')
-json_file.write(data+"\n")
-db.collection("EnglishQuestions").document("passage"+year).set(passage) #adding the passage to the console
-
+# json_file.write(data+"\n")
+# db.collection("EnglishQuestions").document("passage"+year).set(passage) #adding the passage to the console
 
 #ADDING THE QUESTIONS TO THE DB
 for i in range(len(choices)):  # splitting the choices in order to seperate them
@@ -81,16 +82,17 @@ for i in range(len(choices)):  # splitting the choices in order to seperate them
     for y in range(len(choices[i])):
         choices[i][y] = cQ.joiner(
             choices[i][y])  # joining the elements together inside of the list since subdivided within.
-
 for i in range(len(questions)):
     questionsAnswers["Question"] = questions[i]  # each question is stored in question
     questionsAnswers["Choice"]=choices[i] #assign the right array to the choice in form on indexes
     if (i<=4):
+        questionsAnswers["Passage"] = englishPassage
         questionsAnswers["isPassageQuestion"] = True
         questionsAnswers["Category"] = "Comprehension"
     elif (i>=5 and i <=9):
         questionsAnswers["isPassageQuestion"] = False
         questionsAnswers["Category"] = "Grammar"
+        questionsAnswers["Passage"] = ""
     elif (i>=10 and i<=14):
         questionsAnswers["Category"] = "Vocabulary"
     elif (i >= 15 and i <= 19):
