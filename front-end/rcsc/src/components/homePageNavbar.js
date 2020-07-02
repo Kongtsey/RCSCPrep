@@ -120,7 +120,7 @@ class NavigationBar extends Component {
                 college: this.state.college,
               };
               db.collection(this.state.email).doc("UserProfile").set(data);
-              console.log("email user: ", this.state.email);
+              //console.log("email user: ", this.state.email);
               db.collection("Questions")
                 .get()
                 .then((snapshot) => {
@@ -135,6 +135,31 @@ class NavigationBar extends Component {
                       Question: doc.data().Question,
                       UserHasResponded: doc.data().UserHasResponded,
                       QuestionYear: doc.data().QuestionYear,
+                      Marked: doc.data().Marked,
+                    });
+                    counter = 1 + counter;
+                    console.log(counter);
+                  });
+                  console.log("done copying the database ");
+                });
+
+              db.collection("EnglishQuestions")
+                .get()
+                .then((snapshot) => {
+                  let counter = 0;
+                  snapshot.forEach((doc) => {
+                    console.log(doc.id, " -----> ", doc.data());
+                    db.collection(this.state.email).doc("EnglishQuestions").collection("Questions").doc(doc.id).set({
+                      Category: doc.data().Category,
+                      Choice: doc.data().Choice,
+                      CorrectAnswer: doc.data().CorrectAnswer,
+                      IsAnswerCorrect: doc.data().IsAnswerCorrect,
+                      Question: doc.data().Question,
+                      UserHasResponded: doc.data().UserHasResponded,
+                      QuestionYear: doc.data().QuestionYear,
+                      Marked: doc.data().Marked,
+                      Passage: doc.data().Passage,
+                      isPassageQuestion: doc.data().isPassageQuestion,
                     });
                     counter = 1 + counter;
                     console.log(counter);
