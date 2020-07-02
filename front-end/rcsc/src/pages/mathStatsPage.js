@@ -5,6 +5,7 @@ import {Row, Col, Container} from "react-bootstrap";
 import { AuthContext } from "../components/authentication";
 // import CorrectWrong from "../components/pieChartData";
 import MathStatsBoard from "../components/mathStatsBoard";
+import SelectionQueries from "../components/selection";
 import "../style-sheet/mathStatsPage.css"
 
 function MathLoader() {
@@ -18,9 +19,9 @@ function MathLoader() {
                         <Col sm={3} className="pieChart">
                             {<MathStatsBoard/>}
                         </Col>
-                        <Col sm={{span:8, offset:1}} xs={10}>
+                        <Col sm={{span:7, offset:1}} className="selections">
                             <Row>
-
+                                {<SelectionQueries/>}
                             </Row>
                         </Col>
                     </Row>

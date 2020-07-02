@@ -15,8 +15,8 @@ function App() {
           <Switch>
             <Route exact path='/' component={HomePage} />
             <PrivateRoute exact path='/user' component={UserDashboard} />
-            <Route exact path='/math_practice' component={PracticeMath} />
-            <Route exact path='/math_stats_page' component={MathLoader} />
+            <PrivateRoute exact path='/math_practice' component={PracticeMath} />
+            <PrivateRoute exact path='/math_stats_page' component={MathLoader} />
           </Switch>
         </BrowserRouter>
       </AuthProvider>

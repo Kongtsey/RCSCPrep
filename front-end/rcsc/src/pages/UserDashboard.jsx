@@ -31,7 +31,7 @@ class UserDashboard extends Component {
                   </Row>
                   <Row>
                       <Col md={12} lg={12} sm={12} className="justify-content-center">
-                        <Link to={"/math_practice"} style={{ color: "white" }}>
+                        <Link to={"/math_stats_page"} style={{ color: "white" }}>
                           <Button size="lg" block className="practiceButtons">Practice Math</Button>
                         </Link>
                       </Col>

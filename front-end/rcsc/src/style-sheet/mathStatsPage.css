@@ -7,3 +7,31 @@
 .divParent{
     margin-top: 3rem;
 }
+.selections{
+    background-color: #f7f8db;
+}
+
+/* Selection Queries*/
+.queryTopic{
+    margin-top: 2rem;
+    text-align: center;
+}
+.radioLabel{
+    /*margin-left: 1rem;*/
+    color: black !important;
+}
+.radio{
+    text-align: left;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+}
+.radio input[type="radio"]{
+    width: 15px;
+    height: 15px;
+}
+.radio .form-check-label{
+    margin-left: 20px !important;
+}
+.radio .form-check{
+    margin-top: 1rem;
+}
