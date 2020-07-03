@@ -2,7 +2,9 @@ import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import "../style-sheet/home-page-info.css";
 import dashboard_image from "../images/dashboard.png";
-import ScrollAnimation from "react-animate-on-scroll";
+import ScrollAnimation from 'react-animate-on-scroll';
+
+
 function HomepageInfo() {
   return (
     <React.Fragment>

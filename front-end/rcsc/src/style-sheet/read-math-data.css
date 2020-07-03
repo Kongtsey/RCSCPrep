@@ -1,4 +1,4 @@
-input[type="radio"] {
+.readMathData input[type="radio"] {
   width: 25px;
   height: 25px;
   position: relative;
@@ -6,7 +6,7 @@ input[type="radio"] {
   display: inline-block;
   border: white 1px solid;
 }
-input[type="radio"]:after {
+.readMathData input[type="radio"]:after {
   width: 25px;
   height: 25px;
   position: relative;
@@ -18,7 +18,7 @@ input[type="radio"]:after {
   cursor: pointer;
 }
 
-input[type="radio"]:checked:after {
+.readMathData input[type="radio"]:checked:after {
   width: 25px;
   height: 25px;
   position: relative;
