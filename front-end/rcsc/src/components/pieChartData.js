@@ -28,7 +28,6 @@ class CorrectWrong extends Component{
                 return;
             }
             snapshot.forEach(doc => {
-                console.log(doc.id,'=>',doc.data());
                 totalAnswered += 1;
             })
         })
@@ -45,7 +44,6 @@ class CorrectWrong extends Component{
                         return;
                     }
                     snapshot.forEach(doc =>{
-                        console.log(doc.id,'=>', doc.data());
                         correctAnswers = correctAnswers + 1;
                     });
                     if(this.state.pending === true){
