@@ -7,6 +7,7 @@ import PracticeMath from "./pages/mathPractice";
 import MathLoader from "./pages/mathStatsPage";
 import EnglishLoader from "./pages/englishStatsPage"
 import {AuthProvider} from "./components/authentication";
+
 import PrivateRoute from "./components/PrivateRoute";
 
 function App() {

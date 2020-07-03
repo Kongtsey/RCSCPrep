@@ -8,8 +8,10 @@ function EnglishStatsBoard() {
     <React.Fragment>
       <Row>
         <Col md={12} lg={12} sm={12}>
+
           <h3 className="pieTopic">English</h3>
           {<CorrectWrong category={"EnglishQuestions"}/>}
+
         </Col>
       </Row>
     </React.Fragment>

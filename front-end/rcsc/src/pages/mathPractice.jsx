@@ -17,5 +17,6 @@ class PracticeMath extends Component{
             return <Redirect to='/math_stats_page'/>
         }
     }
+
 }
 export default withRouter(PracticeMath);

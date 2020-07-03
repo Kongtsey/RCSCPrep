@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Fredoka+One&family=Monoton&family=Ultra&family=Rubik+Mono+One&display=swaprel=stylesheet");
 
 .homepage_parent_container {
-  border: solid #F9fbfd 1px;
-  background: #F9fbfd;
+  border: solid #f9fbfd 1px;
+  background: #f9fbfd;
   margin: 0;
-  /*background: -webkit-linear-gradient(to right, #6eD9bb,#00d4ff); !* Chrome 10-25, Safari 5.1-6 *!*/
-  /*background: linear-gradient(to right, #6eD9bb, #00d4ff); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
 }
 
 /* 
@@ -42,7 +40,7 @@ This is the parent div for the tag line on the right of the image.
 .tagline {
   padding-left: 0px !important;
 }
-.product_description{
+.product_description {
   text-align: justify;
   color: #253541bf;
   margin-top: -10px;
@@ -57,16 +55,16 @@ This is the actual message of the tagline.
   font-size: 35px;
   font-weight: 500;
 }
-.featureIcons{
+.featureIcons {
   font-size: 50px;
   color: #0069d9;
 }
-.featureTitle{
+.featureTitle {
   font-size: 25px;
   color: black;
   margin-top: 10px;
 }
-.featureDescription{
+.featureDescription {
   color: #253541bf;
   margin-top: -15px;
 }
