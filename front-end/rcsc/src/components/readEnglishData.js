@@ -161,20 +161,20 @@ class ReadEnglishQuestion extends Component {
           <Col md={12} lg={12} sm={12}>
             <ol>
               {this.state.questionData.map((data) => (
-                <li id={data.id}>
+                <li id={data.id} key={data.id}>
                   {data.isPassageQuestion === true ? (
                     <div>
                       {data.Passage} <br />
                       <br />
                     </div>
                   ) : (
-                    console.log("no passage:", data.id, "  :  ", data.Question)
+                    console.log("No Passage for this question")
                   )}
                   <div>{data.Question} </div>
                   <br />
                   <Form className={data.id}>
                     {data.Choice.map((choice, index) => (
-                      <p className={index}>
+                      <p className={index} key={index}>
                         <input type='radio' id={data.CorrectAnswer} name='choice' value={data.id} onChange={this.handleChange(data.id, choice, data.CorrectAnswer, index)} />
                         &nbsp;&nbsp;&nbsp;&nbsp; {choice}
                       </p>
