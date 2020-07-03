@@ -172,14 +172,16 @@ class ReadEnglishQuestion extends Component {
                   )}
                   <div>{data.Question} </div>
                   <br />
-                  <Form className={data.id}>
-                    {data.Choice.map((choice, index) => (
-                      <p className={index} key={index}>
-                        <input type='radio' id={data.CorrectAnswer} name='choice' value={data.id} onChange={this.handleChange(data.id, choice, data.CorrectAnswer, index)} />
-                        &nbsp;&nbsp;&nbsp;&nbsp; {choice}
-                      </p>
-                    ))}
-                  </Form>
+                  <span className='readMathData'>
+                    <Form className={data.id}>
+                      {data.Choice.map((choice, index) => (
+                        <p className={index} key={index}>
+                          <input type='radio' id={data.CorrectAnswer} name='choice' value={data.id} onChange={this.handleChange(data.id, choice, data.CorrectAnswer, index)} />
+                          &nbsp;&nbsp;&nbsp;&nbsp; {choice}
+                        </p>
+                      ))}
+                    </Form>
+                  </span>
                   <br />
                   <br />
                 </li>
