@@ -11,13 +11,33 @@ class SelectionQueries extends Component {
     this.state = {
       numQuestions: 5,
       questionType: "default",
-      category: "default",
+      category: "any",
+      pathname: '',
+      categoryOptions: {
+        category1: '',
+        category2: '',
+        category3: ''
+      }
     };
     this.handleChange = this.handleChange.bind(this);
   }
   componentDidMount() {
-    this.setState({ numQuestions: 5 });
-    this.setState({ questionType: "default" });
+    if(this.props.type==="Math"){
+      this.setState({pathname: '/math_practice'})
+      this.setState({categoryOptions: {
+          category1: 'Algebra',
+          category2: 'Unscramble',
+          category3: 'Calculus'
+        }})
+    }
+    else if (this.props.type ==="English"){
+      this.setState({pathname: 'english_practice'})
+      this.setState({categoryOptions: {
+          category1: 'Grammar',
+          category2: 'Comprehension',
+          category3: 'Synonyms & Antonyms'
+        }})
+    }
   }
 
   handleChange(e) {
@@ -37,7 +57,7 @@ class SelectionQueries extends Component {
               <Form className='radio' onChange={this.handleChange}>
                 {["radio"].map((type) => (
                   <div key={`default-${type}`} className='mb-3'>
-                    <Form.Check type={type} name='numQuestions' id='5' label='5 questions' checked={this.state.numQuestions === 5} />
+                    <Form.Check type={type} name='numQuestions' id='5' label='5 questions' defaultChecked />
                     <Form.Check type={type} id='10' name='numQuestions' label='10 questions' />
                     <Form.Check type={type} id='15' name='numQuestions' label='15 questions' />
                     <Form.Check type={type} id='20' name='numQuestions' label='20 questions' />
@@ -50,7 +70,7 @@ class SelectionQueries extends Component {
               <Form className='radio typeQuery' onChange={this.handleChange}>
                 {["radio"].map((type) => (
                   <div key={`default-${type}`} className='mb-3'>
-                    <Form.Check type={type} name='questionType' label='Default' id='default' checked={this.state.questionType === "default"} />
+                    <Form.Check type={type} name='questionType' label='Default' id='default' defaultChecked />
                     <Form.Check type={type} name='questionType' id='markedQuestions' label='Marked Questions' />
                     <Form.Check type={type} name='questionType' id='correctAnsweredQuestions' label='Correct Answered Questions' />
                     <Form.Check type={type} name='questionType' id='wrongAnsweredQuestions' label='Wrong Answered Questions' />
@@ -63,10 +83,10 @@ class SelectionQueries extends Component {
               <Form className='radio typeQuery' onChange={this.handleChange}>
                 {["radio"].map((type) => (
                   <div key={`default-${type}`} className='mb-3'>
-                    <Form.Check type={type} name='category' label='Any' id='any' checked={this.state.category === "any"} />
-                    <Form.Check type={type} name='category' id='category1' label='Category 1' />
-                    <Form.Check type={type} name='category' id='category2' label='Category 2' />
-                    <Form.Check type={type} name='category' id='category3' label='Category 3' />
+                    <Form.Check type={type} name='category' label='Any' id='any' defaultChecked />
+                    <Form.Check type={type} name='category' id='category1' label={this.state.categoryOptions.category1} />
+                    <Form.Check type={type} name='category' id='category2' label={this.state.categoryOptions.category2} />
+                    <Form.Check type={type} name='category' id='category3' label={this.state.categoryOptions.category3} />
                   </div>
                 ))}
               </Form>
@@ -74,7 +94,7 @@ class SelectionQueries extends Component {
           </Row>
           <Row>
             <Col md={3} className='practiceButton'>
-              <Link to={{ pathname: "/math_practice", numQuestions: this.state.numQuestions, questionType: this.state.questionType, category: this.state.category }}>
+              <Link to={{ pathname: this.state.pathname, numQuestions: this.state.numQuestions, questionType: this.state.questionType, category: this.state.category }}>
                 <Button size='lg' block>
                   PRACTICE
                 </Button>
