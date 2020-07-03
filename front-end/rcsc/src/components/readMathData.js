@@ -4,6 +4,7 @@ import { Button, Container, Col, Row, Form } from "react-bootstrap";
 import $ from "jquery";
 import "../style-sheet/read-math-data.css";
 import Loading from "../components/loading";
+import { Link } from "react-router-dom";
 
 const answered_question_id = [];
 const answered_question_info = [];
@@ -164,15 +165,15 @@ class MathList extends Component {
                 <li id={data.id}>
                   <div>{data.Question} </div>
                   <br />
-                  <span className="readMathData">
-                  <Form className={data.id}>
-                    {data.Choice.map((choice, index) => (
-                      <p className={index}>
-                        <input type='radio' id={data.CorrectAnswer} name='choice' value={data.id} onChange={this.handleChange(data.id, choice, data.CorrectAnswer, index)} />
-                        &nbsp;&nbsp;&nbsp;&nbsp; {choice}
-                      </p>
-                    ))}
-                  </Form>
+                  <span className='readMathData'>
+                    <Form className={data.id}>
+                      {data.Choice.map((choice, index) => (
+                        <p className={index}>
+                          <input type='radio' id={data.CorrectAnswer} name='choice' value={data.id} onChange={this.handleChange(data.id, choice, data.CorrectAnswer, index)} />
+                          &nbsp;&nbsp;&nbsp;&nbsp; {choice}
+                        </p>
+                      ))}
+                    </Form>
                   </span>
                   <br />
                   <br />
@@ -186,10 +187,11 @@ class MathList extends Component {
                 See Result
               </Button>
             )}
-
-            <Button id='submit' variant='outline-success' onClick={this.updateDatabase}>
-              Done
-            </Button>
+            <Link to={"/math_stats_page"}>
+              <Button id='submit' variant='outline-success' onClick={this.updateDatabase}>
+                Done
+              </Button>
+            </Link>
           </Col>
         </Row>
         <br />
