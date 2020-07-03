@@ -67,8 +67,6 @@ class CorrectWrong extends Component{
         }
         return(
             <React.Fragment>
-                {/*{console.log(this.state.numCorrectAnswers)}*/}
-                {/*{console.log(this.state.numWrongAnswers)}*/}
                 <SimplePieChart correctAnswers={correctAnswers} incorrectAnswers = {incorrectAnswers}/>
             </React.Fragment>
         )
