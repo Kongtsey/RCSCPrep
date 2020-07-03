@@ -1,37 +1,47 @@
-.pieChart{
-    border: solid;
-    border-color: rgba(0, 0, 0, 0.3);
-    border-width: 1px;
-    margin-left: 3rem;
+.pieChart {
+  border: solid;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-width: 1px;
+  margin-left: 3rem;
 }
-.divParent{
-    margin-top: 3rem;
+.divParent {
+  margin-top: 3rem;
 }
-.selections{
-    background-color: #f7f8db;
+.selections {
+  background-color: #f7f8db;
 }
 
 /* Selection Queries*/
-.queryTopic{
-    margin-top: 2rem;
-    text-align: center;
+.queryTopic {
+  margin-top: 2rem;
+  text-align: center;
 }
-.radioLabel{
-    /*margin-left: 1rem;*/
-    color: black !important;
+.radioLabel {
+  /*margin-left: 1rem;*/
+  color: black !important;
 }
-.radio{
-    text-align: left;
-    padding-left: 2rem;
-    padding-top: 0.5rem;
+.radio {
+  text-align: left;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
 }
-.radio input[type="radio"]{
-    width: 15px;
-    height: 15px;
+.radio input[type="radio"] {
+  width: 15px;
+  height: 15px;
 }
-.radio .form-check-label{
-    margin-left: 20px !important;
+.radio .form-check-label {
+  margin-left: 20px !important;
 }
-.radio .form-check{
-    margin-top: 1rem;
+.radio .form-check {
+  margin-top: 1rem;
+}
+.strengthWeak {
+  margin-top: 1rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.swDescrip {
+  text-align: left;
+  font-size: 18px;
+  margin-left: 2rem;
 }
