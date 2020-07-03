@@ -162,6 +162,14 @@ class ReadEnglishQuestion extends Component {
             <ol>
               {this.state.questionData.map((data) => (
                 <li id={data.id}>
+                  {data.isPassageQuestion === true ? (
+                    <div>
+                      {data.Passage} <br />
+                      <br />
+                    </div>
+                  ) : (
+                    console.log("no passage:", data.id, "  :  ", data.Question)
+                  )}
                   <div>{data.Question} </div>
                   <br />
                   <Form className={data.id}>
