@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import fire from "../config/Fire";
 import { Button, Container, Col, Row, Form } from "react-bootstrap";
 import $ from "jquery";
-import "../style-sheet/read-math-data.css";
+import "../style-sheet/radio-customization.css";
 import Loading from "../components/loading";
 
 const answered_question_id = [];
@@ -172,7 +172,7 @@ class ReadEnglishQuestion extends Component {
                   )}
                   <div>{data.Question} </div>
                   <br />
-                  <span className='readMathData'>
+                  <span className='customize-radio-button'>
                     <Form className={data.id}>
                       {data.Choice.map((choice, index) => (
                         <p className={index} key={index}>
