@@ -6,7 +6,12 @@ import GeneralNavigationBar from "../components/generalNavbar";
 
 class Forum extends Component {
   render() {
-    return <GeneralNavigationBar />;
+    return (
+      <React.Fragment>
+        <GeneralNavigationBar />
+        <ForumComponent />
+      </React.Fragment>
+    );
   }
 }
 export default Forum;
