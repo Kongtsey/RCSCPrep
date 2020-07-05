@@ -36,7 +36,6 @@ class ReadEnglishQuestion extends Component {
           id: doc.id,
           ...doc.data(),
         }));
-        //console.log("This is the default number of questions displayed", newTimes);
         this.setState({
           questionData: newData,
           loading: false,
@@ -44,29 +43,6 @@ class ReadEnglishQuestion extends Component {
       });
   }
 
-  componentDidUpdate(prevProps) {
-    let auth = fire.auth();
-    let userName = auth.currentUser.email;
-    if (prevProps.chosenChoiceNumber !== this.props.chosenChoiceNumber) {
-      fire
-        .firestore()
-        .collection(userName)
-        .doc("EnglishQuestions")
-        .collection("Questions")
-        .where("UserHasResponded", "==", false)
-        .limit(this.props.chosenChoiceNumber)
-        .onSnapshot((snapshot) => {
-          const newData = snapshot.docs.map((doc) => ({
-            id: doc.id,
-            ...doc.data(),
-          }));
-          //console.log("This is the default number of questions displayed", newTimes);
-          this.setState({
-            questionData: newData,
-          });
-        });
-    }
-  }
   handleChange = (questionId, userChoice, correctAnswer, index) => () => {
     const userAnsweredIndex = parseInt(index);
     const correctAnswerBool = correctAnswer === userAnsweredIndex;
