@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../style-sheet/forum.css";
-import { Container, Col, Row, Form, FormControl, Nav, Navbar, Button, Modal } from "react-bootstrap";
+import { Container, Col, Row, Form, FormControl, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faToolbox } from "@fortawesome/free-solid-svg-icons";
 
@@ -36,13 +36,45 @@ class ForumComponent extends Component {
               </ol>
             </Col>
           </Row>
+          <br />
           <Row className={"forumPost"}>
-            <Col md={12} lg={12} sm={12}>
-              <p>
-                Automatic organization of documents has become an important research issue since the explosion of digital and online text information. There are mainly two machine learning approaches
-                to enhance this task: supervised approach, where pre-defined category labels are assigned to documents based on the likelihood suggested by a training set of labelled documents; and
-                unsupervised approach, where there is no need for human intervention or labelled documents at any point in the whole process.
-              </p>
+            <Col md={1} lg={1} sm={12} className={"forumUsername"}>
+              Phuntsho Norbu
+              <br />
+              [insert username]
+            </Col>
+            <Col md={9} lg={9} sm={12} className={"individualPost"}>
+              Automatic organization of documents has become an important research issue since the explosion of digital and online text information. There are mainly two machine learning approaches to
+              enhance this task: supervised approach, where pre-defined category labels are assigned to documents based on the likelihood suggested by a training set of labelled documents; and
+              unsupervised approach, where there is no need for human intervention or labelled documents at any point in the whole process.
+            </Col>
+            <Col>
+              <Button className={"replyButton"}>Reply</Button>
+            </Col>
+            <Col className={"replyPost"} md={10} lg={10} sm={12}>
+              <Row>
+                <Col md={1} lg={1} sm={12} className={"forumUsername"}>
+                  Phuntsho Norbu
+                  <br />
+                  [insert username]
+                </Col>
+                <Col md={11} lg={11} sm={12} className={"individualPost"}>
+                  <textarea className={"userForumInput"} />
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+
+          <Row className={"forumPost"}>
+            <Col md={1} lg={1} sm={12} className={"forumUsername"}>
+              Sonam Norbu
+              <br />
+              [insert username]
+            </Col>
+            <Col md={9} lg={9} sm={12} className={"individualPost"}>
+              Automatic organization of documents has become an important research issue since the explosion of digital and online text information. There are mainly two machine learning approaches to
+              enhance this task: supervised approach, where pre-defined category labels are assigned to documents based on the likelihood suggested by a training set of labelled documents; and
+              unsupervised approach, where there is no need for human intervention or labelled documents at any point in the whole process.
             </Col>
           </Row>
         </Container>
