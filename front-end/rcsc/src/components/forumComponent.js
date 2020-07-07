@@ -8,22 +8,22 @@ class ForumComponent extends Component {
   render() {
     return (
       <React.Fragment>
-        <Container fluid={true} className={"wholeForumParent"}>
+        <Container className={"wholeForumParent"}>
           <Row>
-            <Col md={{ size: 6, offset: 1 }} lg={6} sm={12} className={"forumSearchBar"}>
+            <Col md={10} lg={10} sm={12} className={"forumSearchBar"}>
               <Form inline>
                 <FormControl type='text' placeholder='Search' className={"searchBar"} />
                 <Button variant='outline-info'>Search</Button>
               </Form>
             </Col>
 
-            <Col md={{ size: 6, offset: 1 }} lg={7} sm={12} className={"forumQuestionParentDiv"}>
+            <Col md={10} lg={10} sm={12} className={"forumQuestionParentDiv"}>
               <div className={"userInputDiv"}>
                 <span>
                   Phuntsho Norbu <FontAwesomeIcon icon={faToolbox} />
                 </span>
                 <br />
-                <input className={"userForumInput"} />
+                <textarea className={"userForumInput"} />
                 <Button className={"postButton"}>Post</Button>
               </div>
             </Col>
@@ -34,6 +34,15 @@ class ForumComponent extends Component {
                 <li>Sonam Norbu</li>
                 <li>Kezang Norbu</li>
               </ol>
+            </Col>
+          </Row>
+          <Row className={"forumPost"}>
+            <Col md={12} lg={12} sm={12}>
+              <p>
+                Automatic organization of documents has become an important research issue since the explosion of digital and online text information. There are mainly two machine learning approaches
+                to enhance this task: supervised approach, where pre-defined category labels are assigned to documents based on the likelihood suggested by a training set of labelled documents; and
+                unsupervised approach, where there is no need for human intervention or labelled documents at any point in the whole process.
+              </p>
             </Col>
           </Row>
         </Container>

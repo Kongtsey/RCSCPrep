@@ -21,8 +21,14 @@
 }
 
 /*THIS IS PARENT DIV FOR THE USER INPUT*/
-.userInputDiv {
+.userForumInput {
+  height: 100px;
+  width: 100%;
+  padding: 5px;
   /*border: 1px solid gray;*/
+}
+textarea:hover {
+  border: green 1px solid;
 }
 /*THIS IS THE INPUT BOX THE USER WRITES ON. */
 .userForumInput {
@@ -38,9 +44,18 @@
 
 /*THIS IS FOR THE INFORMATION ON THE USERS THAT HAVE BEEN POSTING. THIS IS ON THE RIGHT OF THE QUESTIONS*/
 .posterInfo {
-  border: solid gray 1px;
+  border: #f5f5f2 solid 1px;
   margin-top: 20px;
+  padding: 10px;
+  background: #f5f5f5;
 }
 .topUserNames {
   padding-left: 20px;
+}
+/*_______________________________________________________*/
+/*THIS IS FOR OLD POSTS FROM THE DATABASE.*/
+.forumPost {
+  margin-top: 30px;
+  background: #f5f5f2;
+  padding: 15px;
 }
