@@ -12,7 +12,7 @@
 .searchBar {
   float: right;
   width: 75% !important;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 /*_______________________________________________________*/
 
@@ -20,23 +20,16 @@
 .forumQuestionParentDiv {
   padding: 0 !important;
 }
-/*THIS IS PARENT DIV FOR THE USER INPUT*/
-.userInputDiv {
-  margin-right: 20px;
-}
 /*THIS IS DIV FOR THE USER INPUT*/
 .userForumInput {
   height: 100px;
   width: 100%;
+  padding: 5px;
 }
 .userForumInput:hover {
   border: green 1px solid;
 }
-/*THIS IS THE INPUT BOX THE USER WRITES ON. */
-.userForumInput {
-  height: 100px;
-  width: 100%;
-}
+
 .postButton {
   margin-top: 10px;
   background: transparent !important;
@@ -55,7 +48,7 @@
   padding-left: 20px;
 }
 /*_______________________________________________________*/
-/*THIS IS FOR OLD POSTS FROM THE DATABASE.*/
+/*THIS IS THE PARENT DIV FOR ALL THE WRITTEN POSTS FROM THE DATABASE.*/
 .forumPost {
   margin-top: 10px;
 }
@@ -74,9 +67,11 @@
   border: 1px solid gray !important;
   padding: 1px 5px !important;
 }
-.replyPost {
-  background: transparent !important;
-  color: gray !important;
-  padding: 1px 5px !important;
-  border: 1px solid red;
+/*THIS IS THE PLACE WHERE SOMEONE'S REPLY IS SHOWN*/
+.userReply {
+  border: solid 1px #e3e3e3;
+  padding: 5px;
+}
+#replyToPost {
+  display: none;
 }
