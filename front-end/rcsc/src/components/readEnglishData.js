@@ -4,6 +4,7 @@ import { Button, Container, Col, Row, Form } from "react-bootstrap";
 import $ from "jquery";
 import "../style-sheet/radio-customization.css";
 import Loading from "../components/loading";
+import { Link } from "react-router-dom";
 
 const answered_question_id = [];
 const answered_question_info = [];
@@ -170,10 +171,11 @@ class ReadEnglishQuestion extends Component {
                 See Result
               </Button>
             )}
-
-            <Button id='submit' variant='outline-success' onClick={this.updateDatabase}>
-              Done
-            </Button>
+            <Link to={"/english_stats_page"}>
+              <Button id='submit' variant='outline-success' onClick={this.updateDatabase}>
+                Done
+              </Button>
+            </Link>
           </Col>
         </Row>
         <br />

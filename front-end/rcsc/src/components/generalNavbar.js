@@ -21,8 +21,8 @@ class GeneralNavigationBar extends Component {
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='mr-auto'>
             <Nav.Link href='/'>Dashboard</Nav.Link>
-            <Nav.Link href='#contact'>English</Nav.Link>
-            <Nav.Link href='#contact'>Math</Nav.Link>
+            <Nav.Link href='/english_stats_page'>English</Nav.Link>
+            <Nav.Link href='/math_stats_page'>Math</Nav.Link>
             <Nav.Link href='/forum'>Forum</Nav.Link>
           </Nav>
           <Nav>
