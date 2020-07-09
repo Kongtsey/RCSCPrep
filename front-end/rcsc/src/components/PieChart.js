@@ -32,7 +32,7 @@ export const SimplePieChart = (props) => {
                 JSON.stringify(dataEntry.value)+ "% " + dataEntry.title
             } labelStyle={{
                 ...defaultLabelStyle
-            }} viewBoxSize={[100,85]} center={[50,40]}
+            }} viewBoxSize={[100,80]} center={[50,40]}
             />
             <div className="dataDescription">
                 <p style={{fontSize: "1rem"}}>

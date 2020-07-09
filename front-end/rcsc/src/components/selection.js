@@ -31,7 +31,7 @@ class SelectionQueries extends Component {
         }})
     }
     else if (this.props.type ==="English"){
-      this.setState({pathname: 'english_practice'})
+      this.setState({pathname: '/english_practice'})
       this.setState({categoryOptions: {
           category1: 'Grammar',
           category2: 'Comprehension',
