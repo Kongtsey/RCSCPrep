@@ -1,0 +1,77 @@
+.wholeForumParent {
+  margin: 15px 0 10px 0;
+}
+/*_______________________________________________________*/
+
+/* THE PARENT DIV FOR THE SEARCH BAR*/
+.forumSearchBar {
+  margin-bottom: 30px;
+  padding: 0 !important;
+}
+/* THIS IS THE SEARCH BAR OF TOP OF EVERYTHING*/
+.searchBar {
+  float: right;
+  width: 75% !important;
+  margin-right: 20px;
+}
+/*_______________________________________________________*/
+
+/*THIS IS THE PARENT DIV OF BOXES WHERE THE QUESTION IS TYPED AND POSTED.*/
+.forumQuestionParentDiv {
+  padding: 0 !important;
+}
+/*THIS IS DIV FOR THE USER INPUT*/
+.userForumInput {
+  height: 100px;
+  width: 100%;
+  padding: 5px;
+}
+.userForumInput:hover {
+  border: green 1px solid;
+}
+
+.postButton {
+  margin-top: 10px;
+  background: transparent !important;
+  color: #007bff !important;
+}
+/*_______________________________________________________*/
+
+/*THIS IS FOR THE INFORMATION ON THE USERS THAT HAVE BEEN POSTING. THIS IS ON THE RIGHT OF THE QUESTIONS*/
+.posterInfo {
+  border: #f5f5f2 solid 1px;
+  margin-top: 20px;
+  padding: 10px;
+  background: #f5f5f5;
+}
+.topUserNames {
+  padding-left: 20px;
+}
+/*_______________________________________________________*/
+/*THIS IS THE PARENT DIV FOR ALL THE WRITTEN POSTS FROM THE DATABASE.*/
+.forumPost {
+  margin-top: 10px;
+}
+.forumUsername {
+  padding: 15px 0 !important;
+}
+.individualPost {
+  background-color: #f5f5f5 !important;
+  padding: 15px;
+}
+/*THIS IS THE REPLY BUTTON*/
+.replyButton {
+  margin-top: 20px;
+  background: transparent !important;
+  color: gray !important;
+  border: 1px solid gray !important;
+  padding: 1px 5px !important;
+}
+/*THIS IS THE PLACE WHERE SOMEONE'S REPLY IS SHOWN*/
+.userReply {
+  border: solid 1px #e3e3e3;
+  padding: 5px;
+}
+#replyToPost {
+  display: none;
+}
