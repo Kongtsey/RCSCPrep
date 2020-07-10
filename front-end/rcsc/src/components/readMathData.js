@@ -5,6 +5,7 @@ import $ from "jquery";
 import "../style-sheet/radio-customization.css";
 import Loading from "../components/loading";
 import { Link } from "react-router-dom";
+import "../style-sheet/read-data.css";
 
 const answered_question_id = [];
 const answered_question_info = [];
@@ -19,6 +20,7 @@ class MathList extends Component {
     this.showResult = this.showResult.bind(this);
     this.highlightNewAnswer = this.highlightNewAnswer.bind(this);
     this.updateDatabase = this.updateDatabase.bind(this);
+    this.handleMark = this.handleMark.bind(this);
   }
 
   componentDidMount() {
@@ -128,6 +130,11 @@ class MathList extends Component {
       );
     }
   }
+  handleMark = (index) => () => {
+    $(".markButton")
+      .find("#mark" + index)
+      .css("color", "#cfcfcf !important");
+  };
   render() {
     const loading = this.state.loading;
     return (
@@ -135,9 +142,20 @@ class MathList extends Component {
         <Row>
           <Col md={12} lg={12} sm={12}>
             <ol>
-              {this.state.questionData.map((data) => (
+              {this.state.questionData.map((data, index) => (
                 <li id={data.id}>
-                  <div>{data.Question} </div>
+                  <div>
+                    <Row>
+                      <Col md={10} lg={10} sm={12}>
+                        {data.Question}
+                      </Col>
+                      <Col md={1} lg={1} sm={12}>
+                        <Button className={"markButton"} id={"mark" + index} onClick={this.handleMark(index)}>
+                          <span>mark</span>
+                        </Button>
+                      </Col>
+                    </Row>
+                  </div>
                   <br />
                   <span className='customize-radio-button'>
                     <Form className={data.id}>
