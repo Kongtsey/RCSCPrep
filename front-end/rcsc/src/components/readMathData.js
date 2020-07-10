@@ -139,8 +139,8 @@ class MathList extends Component {
     } else {
       $("#mark" + index).removeClass("markedButton");
       $("#mark" + index).addClass("markButton");
+      $("#mark" + index).html("mark");
     }
-    console.log($("#mark" + index).hasClass("markon"));
   };
   render() {
     const loading = this.state.loading;

@@ -1,3 +1,4 @@
+/*THIS IS WHEN THE MARK BUTTON IS ->NOT<- CLICKED */
 .markButton {
   background: #e7e7e7;
   color: #555555;
@@ -5,7 +6,9 @@
   padding: 2px 10px;
   border-radius: 15px;
   font-size: 10px;
+  transition: 300ms all linear;
 }
+/*THIS IS WHEN THE MARK BUTTON IS  ->CLICKED<- */
 .markedButton {
   background: #5cb85c;
   color: white;
@@ -13,4 +16,5 @@
   padding: 2px 10px;
   border-radius: 15px;
   font-size: 10px;
+  transition: 300ms all linear;
 }
