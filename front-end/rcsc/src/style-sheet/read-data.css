@@ -1,12 +1,16 @@
 .markButton {
-  background: #e7e7e7 !important;
-  color: #555555 !important;
-  border: 1px solid #d9d7d7 !important;
-  padding: 2px 10px !important;
-  border-radius: 15px !important;
-  font-size: 10px !important;
+  background: #e7e7e7;
+  color: #555555;
+  border: 1px solid #d9d7d7;
+  padding: 2px 10px;
+  border-radius: 15px;
+  font-size: 10px;
 }
-
-#mark1 {
-  background: red !important;
+.markedButton {
+  background: #5cb85c;
+  color: white;
+  border: 1px solid white;
+  padding: 2px 10px;
+  border-radius: 15px;
+  font-size: 10px;
 }

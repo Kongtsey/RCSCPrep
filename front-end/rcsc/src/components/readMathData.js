@@ -131,9 +131,16 @@ class MathList extends Component {
     }
   }
   handleMark = (index) => () => {
-    $(".markButton")
-      .find("#mark" + index)
-      .css("color", "#cfcfcf !important");
+    //console.log("you ar here at handleMark and the index is: ", index);
+    if ($("#mark" + index).hasClass("markButton")) {
+      $("#mark" + index).removeClass("markButton");
+      $("#mark" + index).addClass("markedButton");
+      $("#mark" + index).html("marked");
+    } else {
+      $("#mark" + index).removeClass("markedButton");
+      $("#mark" + index).addClass("markButton");
+    }
+    console.log($("#mark" + index).hasClass("markon"));
   };
   render() {
     const loading = this.state.loading;
@@ -150,9 +157,9 @@ class MathList extends Component {
                         {data.Question}
                       </Col>
                       <Col md={1} lg={1} sm={12}>
-                        <Button className={"markButton"} id={"mark" + index} onClick={this.handleMark(index)}>
-                          <span>mark</span>
-                        </Button>
+                        <button type='button' className={"markButton"} id={"mark" + index} onClick={this.handleMark(index)}>
+                          mark
+                        </button>
                       </Col>
                     </Row>
                   </div>
