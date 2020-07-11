@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Container, Col, Row, Form, Nav, Navbar, Button, Modal } from "react-bootstrap";
 import "../style-sheet/homepage-navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faBookReader, faUser, faLock } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faBookReader, faUser, faLock, faMapMarker } from "@fortawesome/free-solid-svg-icons";
 import fire from "../config/Fire";
 
 class NavigationBar extends Component {
@@ -28,6 +28,7 @@ class NavigationBar extends Component {
       errorMessage: "",
       name: "",
       college: "",
+      dzongkhag: "",
       showRequired: false,
     };
   }
@@ -44,6 +45,7 @@ class NavigationBar extends Component {
       password: "",
       errorMessage: "",
       college: "",
+      dzongkhag: "",
       showConfirm: false,
       confirmPassword: "",
       showRequired: false,
@@ -118,6 +120,7 @@ class NavigationBar extends Component {
                 name: this.state.name,
                 email: this.state.email,
                 college: this.state.college,
+                dzongkhag: this.state.dzongkhag,
               };
               db.collection(this.state.email).doc("UserProfile").set(data);
               //console.log("email user: ", this.state.email);
@@ -218,6 +221,25 @@ class NavigationBar extends Component {
                   {this.state.showRequired && <h6 className='error-msg'>Required field!</h6>}
                 </Col>
               </Form.Group>
+              <Form.Group as={Row} controlId='plaintext'>
+                <Form.Label column sm='1'>
+                  <FontAwesomeIcon icon={faBookReader} />
+                </Form.Label>
+                <Col sm='10' className='form-input'>
+                  <Form.Control value={this.state.college} onChange={this.handleChange} name='college' type='text' placeholder='College' />
+                  {this.state.showRequired && <h6 className='error-msg'>Required field!</h6>}
+                </Col>
+              </Form.Group>
+
+              <Form.Group as={Row} controlId='plaintext'>
+                <Form.Label column sm='1'>
+                  <FontAwesomeIcon icon={faMapMarker} />
+                </Form.Label>
+                <Col sm='10' className='form-input'>
+                  <Form.Control value={this.state.dzongkhag} onChange={this.handleChange} name='dzongkhag' type='text' placeholder='Dzongkhag' />
+                  {this.state.showRequired && <h6 className='error-msg'>Required field!</h6>}
+                </Col>
+              </Form.Group>
 
               <Form.Group as={Row} controlId='formPlaintextEmail'>
                 <Form.Label column sm='1'>
@@ -243,16 +265,6 @@ class NavigationBar extends Component {
                 <Col sm='10' className='form-input'>
                   <Form.Control value={this.state.confirmPassword} onChange={this.handleChange} name='confirmPassword' type='password' placeholder='Renter Password' handle={this.handleError} />
                   {this.state.showConfirm && <h6 className='error-msg'>Passwords do not seem to match</h6>}
-                </Col>
-              </Form.Group>
-
-              <Form.Group as={Row} controlId='plaintext'>
-                <Form.Label column sm='1'>
-                  <FontAwesomeIcon icon={faBookReader} />
-                </Form.Label>
-                <Col sm='10' className='form-input'>
-                  <Form.Control value={this.state.college} onChange={this.handleChange} name='college' type='text' placeholder='College' />
-                  {this.state.showRequired && <h6 className='error-msg'>Required field!</h6>}
                 </Col>
               </Form.Group>
             </Form>

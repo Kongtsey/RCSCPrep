@@ -18,3 +18,8 @@
   font-size: 10px;
   transition: 300ms all linear;
 }
+
+button:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0;
+}
