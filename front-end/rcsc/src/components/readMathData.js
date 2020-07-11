@@ -9,8 +9,6 @@ import "../style-sheet/read-data.css";
 
 const answered_question_id = [];
 const answered_question_info = [];
-const marked_question_id = [];
-const marked_question_info = [];
 class MathList extends Component {
   constructor(props) {
     super(props);
