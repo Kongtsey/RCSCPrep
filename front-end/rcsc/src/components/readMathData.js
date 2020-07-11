@@ -9,6 +9,8 @@ import "../style-sheet/read-data.css";
 
 const answered_question_id = [];
 const answered_question_info = [];
+const marked_question_id = [];
+const marked_question_info = [];
 class MathList extends Component {
   constructor(props) {
     super(props);
@@ -130,16 +132,33 @@ class MathList extends Component {
       );
     }
   }
-  handleMark = (index) => () => {
+  handleMark = (index, markedQuestionId) => () => {
     //console.log("you ar here at handleMark and the index is: ", index);
+    let auth = fire.auth();
+    let userName = auth.currentUser.email; //need to get email since we need to know which collection
+    let db = fire.firestore();
+    let userCollection = db.collection(userName); //ref to collection we need to update to.
+
     if ($("#mark" + index).hasClass("markButton")) {
       $("#mark" + index).removeClass("markButton");
       $("#mark" + index).addClass("markedButton");
       $("#mark" + index).html("marked");
+      userCollection.doc("MathQuestions").collection("Questions").doc(markedQuestionId).set(
+        {
+          marked: true,
+        },
+        { merge: true }
+      );
     } else {
       $("#mark" + index).removeClass("markedButton");
       $("#mark" + index).addClass("markButton");
       $("#mark" + index).html("mark");
+      userCollection.doc("MathQuestions").collection("Questions").doc(markedQuestionId).set(
+        {
+          marked: false,
+        },
+        { merge: true }
+      );
     }
   };
   render() {
@@ -157,7 +176,7 @@ class MathList extends Component {
                         {data.Question}
                       </Col>
                       <Col md={1} lg={1} sm={12}>
-                        <button type='button' className={"markButton"} id={"mark" + index} onClick={this.handleMark(index)}>
+                        <button type='button' className={"markButton"} id={"mark" + index} onClick={this.handleMark(index, data.id)}>
                           mark
                         </button>
                       </Col>
