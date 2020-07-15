@@ -7,12 +7,13 @@
         " describing why telling untruths is a way of life"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "Part I: Comprehension\nRead the following passage and answer Question 1-5 by choosing the answer to each question.\nAnswers should be based on what is stated or implied in the passage.\n(The passage given below is excerpts from Word Power Made Easy by Norman Lewis and Why\nWe Lie by Robin Lloyd).\nIt was the famous Greek philosopher and cynic Diogenes who went around the streets of Athens,\nlantern in hand, looking for an honest person.\nThis was over two thousand years ago, but I would presume that Diogenes would have as little\nsuccess in his search today. Lying seems to be an integral weakness of mortal character \u2013 I doubt\nthat few human beings would be so brash as to claim that they have never in their lives told at\nleast a partial untruth. Indeed, one philologist goes so far as to theorize that language must have\nbeen invented for the sole purpose of deception. Perhaps so. It is certainly true that animals seem\nsomewhat more honest than humans, maybe because they are less gifted mentally. Why do\npeople lie? To increase their sense of importance, to escape punishment, to gain an end that\nwould otherwise be denied them, out of long standing habit, or sometimes because they actually\ndo not know the difference between facts and fancy. These are the common reasons for\nWe all lie, all the time. It causes problems, to say the least. So why do we do it? \"It's tied in with\nself-esteem,\" says University of Massachusetts psychologist Robert Feldman. \"We find that as\nsoon as people feel that their self-esteem is threatened, they immediately begin to lie at higher\nNot all lies are harmful. In fact, sometimes lying is the best approach for protecting privacy and\nourselves and others from malice, some researchers say. Some deception, such as boasting and\nlies in the name of tact and politeness, can be classified as less than serious. But bald-faced lies\n(whether they involve leaving out the truth or putting in something false), are harmful, as they\ncorrode trust and intimacy\u2014the glue of society.\n\"We're trying not so much to impress other people but to maintain a view of ourselves that is\nconsistent with the way they would like us to be,\" Feldman said. We want to be agreeable, to\nmake the social situation smoother or easier, and to avoid insulting others through disagreement\nor discord. Men lie no more than women, but they tend to lie to make themselves look better,\nwhile women are more likely to lie to make the other person feel better.\nPeople should become more aware of the extent to which we tend to lie and that honesty yields\nmore genuine relationships and trust. \"The default ought to be to be honest and accurate ... We're\nbetter off if honesty is the norm. It's like the old saying: honesty is the best policy.\"\n   1.     The authors are mainly concerned with\n           A.  how mortals are determined to avoid telling untruths\n           B.  describing the different ways people react to deception\n           C.  why animals are less gifted than humans\n           D.  describing why telling untruths is a way of life\n   2.   If honesty becomes the norm, then\n           A.  distrust in relationships will flourish\n           B.  true relationships and trust will grow\n           C.  discord can be avoided\n           D.  creativity is destroyed\n   3.     Why do people feel the need to lie?\n            A. To boost their self-esteem\n            B. To prove they are more gifted mentally\n            C. To outsmart the other person\n            D. Solely to be the centre of attraction\n   4.     Which of the following best describes the word falsification?\n            A. Correction\n            B. Deception\n            C. Modification\n            D. Coercion\n   5.     Men\u2019s tendency to lie revolves around\n            A. creating trust\n            B. attracting the opposite sex\n            C. allowing others to look better\n            D. making themselves look better or superior\nPart II: Grammar\n   6. Choose the word or phrase that will correctly complete the conversation.\n        I asked the children if they were safe and they replied _______.\n            A. affirmative\n            B. out of harm\u2019s way\n            C. affirmatively\n            D. in protection\n   7. Choose the word or phrase that will correctly complete the conversation.\n       The legislation _______ the adoption of temporary special measures.\n           A.  provision\n           B.  provides for\n           C.  made provided\n           D.  supplied\n   8. Choose the word or phrase that will correctly complete the conversation.\n       The poverty rates will fall ______ focus on rural development.\n           A.  if we\n           B.  if we will\n           C.  whenever we\n           D.  when we will\n   9. Although human beings are believed to be endowed with the seed of enlightenment and\n       are therefore considered fundamentally good, being nonetheless vulnerable beings quite\n       capable of acts of violence and rage when provoked by circumstances.\n       For this sentence to be correct, which among the following should replace the underlined\n           A.  nonetheless, being vulnerable beings\n           B.  they are nonetheless vulnerable beings\n           C.  nonetheless since being vulnerable beings\n           D.  nonetheless as they are vulnerable beings\n",
     "Question": " The authors are mainly concerned with",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": true
 }
 {
@@ -24,12 +25,13 @@
         " creativity is destroyed"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "Part I: Comprehension\nRead the following passage and answer Question 1-5 by choosing the answer to each question.\nAnswers should be based on what is stated or implied in the passage.\n(The passage given below is excerpts from Word Power Made Easy by Norman Lewis and Why\nWe Lie by Robin Lloyd).\nIt was the famous Greek philosopher and cynic Diogenes who went around the streets of Athens,\nlantern in hand, looking for an honest person.\nThis was over two thousand years ago, but I would presume that Diogenes would have as little\nsuccess in his search today. Lying seems to be an integral weakness of mortal character \u2013 I doubt\nthat few human beings would be so brash as to claim that they have never in their lives told at\nleast a partial untruth. Indeed, one philologist goes so far as to theorize that language must have\nbeen invented for the sole purpose of deception. Perhaps so. It is certainly true that animals seem\nsomewhat more honest than humans, maybe because they are less gifted mentally. Why do\npeople lie? To increase their sense of importance, to escape punishment, to gain an end that\nwould otherwise be denied them, out of long standing habit, or sometimes because they actually\ndo not know the difference between facts and fancy. These are the common reasons for\nWe all lie, all the time. It causes problems, to say the least. So why do we do it? \"It's tied in with\nself-esteem,\" says University of Massachusetts psychologist Robert Feldman. \"We find that as\nsoon as people feel that their self-esteem is threatened, they immediately begin to lie at higher\nNot all lies are harmful. In fact, sometimes lying is the best approach for protecting privacy and\nourselves and others from malice, some researchers say. Some deception, such as boasting and\nlies in the name of tact and politeness, can be classified as less than serious. But bald-faced lies\n(whether they involve leaving out the truth or putting in something false), are harmful, as they\ncorrode trust and intimacy\u2014the glue of society.\n\"We're trying not so much to impress other people but to maintain a view of ourselves that is\nconsistent with the way they would like us to be,\" Feldman said. We want to be agreeable, to\nmake the social situation smoother or easier, and to avoid insulting others through disagreement\nor discord. Men lie no more than women, but they tend to lie to make themselves look better,\nwhile women are more likely to lie to make the other person feel better.\nPeople should become more aware of the extent to which we tend to lie and that honesty yields\nmore genuine relationships and trust. \"The default ought to be to be honest and accurate ... We're\nbetter off if honesty is the norm. It's like the old saying: honesty is the best policy.\"\n   1.     The authors are mainly concerned with\n           A.  how mortals are determined to avoid telling untruths\n           B.  describing the different ways people react to deception\n           C.  why animals are less gifted than humans\n           D.  describing why telling untruths is a way of life\n   2.   If honesty becomes the norm, then\n           A.  distrust in relationships will flourish\n           B.  true relationships and trust will grow\n           C.  discord can be avoided\n           D.  creativity is destroyed\n   3.     Why do people feel the need to lie?\n            A. To boost their self-esteem\n            B. To prove they are more gifted mentally\n            C. To outsmart the other person\n            D. Solely to be the centre of attraction\n   4.     Which of the following best describes the word falsification?\n            A. Correction\n            B. Deception\n            C. Modification\n            D. Coercion\n   5.     Men\u2019s tendency to lie revolves around\n            A. creating trust\n            B. attracting the opposite sex\n            C. allowing others to look better\n            D. making themselves look better or superior\nPart II: Grammar\n   6. Choose the word or phrase that will correctly complete the conversation.\n        I asked the children if they were safe and they replied _______.\n            A. affirmative\n            B. out of harm\u2019s way\n            C. affirmatively\n            D. in protection\n   7. Choose the word or phrase that will correctly complete the conversation.\n       The legislation _______ the adoption of temporary special measures.\n           A.  provision\n           B.  provides for\n           C.  made provided\n           D.  supplied\n   8. Choose the word or phrase that will correctly complete the conversation.\n       The poverty rates will fall ______ focus on rural development.\n           A.  if we\n           B.  if we will\n           C.  whenever we\n           D.  when we will\n   9. Although human beings are believed to be endowed with the seed of enlightenment and\n       are therefore considered fundamentally good, being nonetheless vulnerable beings quite\n       capable of acts of violence and rage when provoked by circumstances.\n       For this sentence to be correct, which among the following should replace the underlined\n           A.  nonetheless, being vulnerable beings\n           B.  they are nonetheless vulnerable beings\n           C.  nonetheless since being vulnerable beings\n           D.  nonetheless as they are vulnerable beings\n",
     "Question": " If honesty becomes the norm, then",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": true
 }
 {
@@ -41,12 +43,13 @@
         " Solely to be the centre of attraction"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "Part I: Comprehension\nRead the following passage and answer Question 1-5 by choosing the answer to each question.\nAnswers should be based on what is stated or implied in the passage.\n(The passage given below is excerpts from Word Power Made Easy by Norman Lewis and Why\nWe Lie by Robin Lloyd).\nIt was the famous Greek philosopher and cynic Diogenes who went around the streets of Athens,\nlantern in hand, looking for an honest person.\nThis was over two thousand years ago, but I would presume that Diogenes would have as little\nsuccess in his search today. Lying seems to be an integral weakness of mortal character \u2013 I doubt\nthat few human beings would be so brash as to claim that they have never in their lives told at\nleast a partial untruth. Indeed, one philologist goes so far as to theorize that language must have\nbeen invented for the sole purpose of deception. Perhaps so. It is certainly true that animals seem\nsomewhat more honest than humans, maybe because they are less gifted mentally. Why do\npeople lie? To increase their sense of importance, to escape punishment, to gain an end that\nwould otherwise be denied them, out of long standing habit, or sometimes because they actually\ndo not know the difference between facts and fancy. These are the common reasons for\nWe all lie, all the time. It causes problems, to say the least. So why do we do it? \"It's tied in with\nself-esteem,\" says University of Massachusetts psychologist Robert Feldman. \"We find that as\nsoon as people feel that their self-esteem is threatened, they immediately begin to lie at higher\nNot all lies are harmful. In fact, sometimes lying is the best approach for protecting privacy and\nourselves and others from malice, some researchers say. Some deception, such as boasting and\nlies in the name of tact and politeness, can be classified as less than serious. But bald-faced lies\n(whether they involve leaving out the truth or putting in something false), are harmful, as they\ncorrode trust and intimacy\u2014the glue of society.\n\"We're trying not so much to impress other people but to maintain a view of ourselves that is\nconsistent with the way they would like us to be,\" Feldman said. We want to be agreeable, to\nmake the social situation smoother or easier, and to avoid insulting others through disagreement\nor discord. Men lie no more than women, but they tend to lie to make themselves look better,\nwhile women are more likely to lie to make the other person feel better.\nPeople should become more aware of the extent to which we tend to lie and that honesty yields\nmore genuine relationships and trust. \"The default ought to be to be honest and accurate ... We're\nbetter off if honesty is the norm. It's like the old saying: honesty is the best policy.\"\n   1.     The authors are mainly concerned with\n           A.  how mortals are determined to avoid telling untruths\n           B.  describing the different ways people react to deception\n           C.  why animals are less gifted than humans\n           D.  describing why telling untruths is a way of life\n   2.   If honesty becomes the norm, then\n           A.  distrust in relationships will flourish\n           B.  true relationships and trust will grow\n           C.  discord can be avoided\n           D.  creativity is destroyed\n   3.     Why do people feel the need to lie?\n            A. To boost their self-esteem\n            B. To prove they are more gifted mentally\n            C. To outsmart the other person\n            D. Solely to be the centre of attraction\n   4.     Which of the following best describes the word falsification?\n            A. Correction\n            B. Deception\n            C. Modification\n            D. Coercion\n   5.     Men\u2019s tendency to lie revolves around\n            A. creating trust\n            B. attracting the opposite sex\n            C. allowing others to look better\n            D. making themselves look better or superior\nPart II: Grammar\n   6. Choose the word or phrase that will correctly complete the conversation.\n        I asked the children if they were safe and they replied _______.\n            A. affirmative\n            B. out of harm\u2019s way\n            C. affirmatively\n            D. in protection\n   7. Choose the word or phrase that will correctly complete the conversation.\n       The legislation _______ the adoption of temporary special measures.\n           A.  provision\n           B.  provides for\n           C.  made provided\n           D.  supplied\n   8. Choose the word or phrase that will correctly complete the conversation.\n       The poverty rates will fall ______ focus on rural development.\n           A.  if we\n           B.  if we will\n           C.  whenever we\n           D.  when we will\n   9. Although human beings are believed to be endowed with the seed of enlightenment and\n       are therefore considered fundamentally good, being nonetheless vulnerable beings quite\n       capable of acts of violence and rage when provoked by circumstances.\n       For this sentence to be correct, which among the following should replace the underlined\n           A.  nonetheless, being vulnerable beings\n           B.  they are nonetheless vulnerable beings\n           C.  nonetheless since being vulnerable beings\n           D.  nonetheless as they are vulnerable beings\n",
     "Question": " Why do people feel the need to lie?",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": true
 }
 {
@@ -58,12 +61,13 @@
         " Coercion"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "Part I: Comprehension\nRead the following passage and answer Question 1-5 by choosing the answer to each question.\nAnswers should be based on what is stated or implied in the passage.\n(The passage given below is excerpts from Word Power Made Easy by Norman Lewis and Why\nWe Lie by Robin Lloyd).\nIt was the famous Greek philosopher and cynic Diogenes who went around the streets of Athens,\nlantern in hand, looking for an honest person.\nThis was over two thousand years ago, but I would presume that Diogenes would have as little\nsuccess in his search today. Lying seems to be an integral weakness of mortal character \u2013 I doubt\nthat few human beings would be so brash as to claim that they have never in their lives told at\nleast a partial untruth. Indeed, one philologist goes so far as to theorize that language must have\nbeen invented for the sole purpose of deception. Perhaps so. It is certainly true that animals seem\nsomewhat more honest than humans, maybe because they are less gifted mentally. Why do\npeople lie? To increase their sense of importance, to escape punishment, to gain an end that\nwould otherwise be denied them, out of long standing habit, or sometimes because they actually\ndo not know the difference between facts and fancy. These are the common reasons for\nWe all lie, all the time. It causes problems, to say the least. So why do we do it? \"It's tied in with\nself-esteem,\" says University of Massachusetts psychologist Robert Feldman. \"We find that as\nsoon as people feel that their self-esteem is threatened, they immediately begin to lie at higher\nNot all lies are harmful. In fact, sometimes lying is the best approach for protecting privacy and\nourselves and others from malice, some researchers say. Some deception, such as boasting and\nlies in the name of tact and politeness, can be classified as less than serious. But bald-faced lies\n(whether they involve leaving out the truth or putting in something false), are harmful, as they\ncorrode trust and intimacy\u2014the glue of society.\n\"We're trying not so much to impress other people but to maintain a view of ourselves that is\nconsistent with the way they would like us to be,\" Feldman said. We want to be agreeable, to\nmake the social situation smoother or easier, and to avoid insulting others through disagreement\nor discord. Men lie no more than women, but they tend to lie to make themselves look better,\nwhile women are more likely to lie to make the other person feel better.\nPeople should become more aware of the extent to which we tend to lie and that honesty yields\nmore genuine relationships and trust. \"The default ought to be to be honest and accurate ... We're\nbetter off if honesty is the norm. It's like the old saying: honesty is the best policy.\"\n   1.     The authors are mainly concerned with\n           A.  how mortals are determined to avoid telling untruths\n           B.  describing the different ways people react to deception\n           C.  why animals are less gifted than humans\n           D.  describing why telling untruths is a way of life\n   2.   If honesty becomes the norm, then\n           A.  distrust in relationships will flourish\n           B.  true relationships and trust will grow\n           C.  discord can be avoided\n           D.  creativity is destroyed\n   3.     Why do people feel the need to lie?\n            A. To boost their self-esteem\n            B. To prove they are more gifted mentally\n            C. To outsmart the other person\n            D. Solely to be the centre of attraction\n   4.     Which of the following best describes the word falsification?\n            A. Correction\n            B. Deception\n            C. Modification\n            D. Coercion\n   5.     Men\u2019s tendency to lie revolves around\n            A. creating trust\n            B. attracting the opposite sex\n            C. allowing others to look better\n            D. making themselves look better or superior\nPart II: Grammar\n   6. Choose the word or phrase that will correctly complete the conversation.\n        I asked the children if they were safe and they replied _______.\n            A. affirmative\n            B. out of harm\u2019s way\n            C. affirmatively\n            D. in protection\n   7. Choose the word or phrase that will correctly complete the conversation.\n       The legislation _______ the adoption of temporary special measures.\n           A.  provision\n           B.  provides for\n           C.  made provided\n           D.  supplied\n   8. Choose the word or phrase that will correctly complete the conversation.\n       The poverty rates will fall ______ focus on rural development.\n           A.  if we\n           B.  if we will\n           C.  whenever we\n           D.  when we will\n   9. Although human beings are believed to be endowed with the seed of enlightenment and\n       are therefore considered fundamentally good, being nonetheless vulnerable beings quite\n       capable of acts of violence and rage when provoked by circumstances.\n       For this sentence to be correct, which among the following should replace the underlined\n           A.  nonetheless, being vulnerable beings\n           B.  they are nonetheless vulnerable beings\n           C.  nonetheless since being vulnerable beings\n           D.  nonetheless as they are vulnerable beings\n",
     "Question": " Which of the following best describes the word falsification?",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": true
 }
 {
@@ -75,12 +79,13 @@
         " making themselves look better or superior"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "Part I: Comprehension\nRead the following passage and answer Question 1-5 by choosing the answer to each question.\nAnswers should be based on what is stated or implied in the passage.\n(The passage given below is excerpts from Word Power Made Easy by Norman Lewis and Why\nWe Lie by Robin Lloyd).\nIt was the famous Greek philosopher and cynic Diogenes who went around the streets of Athens,\nlantern in hand, looking for an honest person.\nThis was over two thousand years ago, but I would presume that Diogenes would have as little\nsuccess in his search today. Lying seems to be an integral weakness of mortal character \u2013 I doubt\nthat few human beings would be so brash as to claim that they have never in their lives told at\nleast a partial untruth. Indeed, one philologist goes so far as to theorize that language must have\nbeen invented for the sole purpose of deception. Perhaps so. It is certainly true that animals seem\nsomewhat more honest than humans, maybe because they are less gifted mentally. Why do\npeople lie? To increase their sense of importance, to escape punishment, to gain an end that\nwould otherwise be denied them, out of long standing habit, or sometimes because they actually\ndo not know the difference between facts and fancy. These are the common reasons for\nWe all lie, all the time. It causes problems, to say the least. So why do we do it? \"It's tied in with\nself-esteem,\" says University of Massachusetts psychologist Robert Feldman. \"We find that as\nsoon as people feel that their self-esteem is threatened, they immediately begin to lie at higher\nNot all lies are harmful. In fact, sometimes lying is the best approach for protecting privacy and\nourselves and others from malice, some researchers say. Some deception, such as boasting and\nlies in the name of tact and politeness, can be classified as less than serious. But bald-faced lies\n(whether they involve leaving out the truth or putting in something false), are harmful, as they\ncorrode trust and intimacy\u2014the glue of society.\n\"We're trying not so much to impress other people but to maintain a view of ourselves that is\nconsistent with the way they would like us to be,\" Feldman said. We want to be agreeable, to\nmake the social situation smoother or easier, and to avoid insulting others through disagreement\nor discord. Men lie no more than women, but they tend to lie to make themselves look better,\nwhile women are more likely to lie to make the other person feel better.\nPeople should become more aware of the extent to which we tend to lie and that honesty yields\nmore genuine relationships and trust. \"The default ought to be to be honest and accurate ... We're\nbetter off if honesty is the norm. It's like the old saying: honesty is the best policy.\"\n   1.     The authors are mainly concerned with\n           A.  how mortals are determined to avoid telling untruths\n           B.  describing the different ways people react to deception\n           C.  why animals are less gifted than humans\n           D.  describing why telling untruths is a way of life\n   2.   If honesty becomes the norm, then\n           A.  distrust in relationships will flourish\n           B.  true relationships and trust will grow\n           C.  discord can be avoided\n           D.  creativity is destroyed\n   3.     Why do people feel the need to lie?\n            A. To boost their self-esteem\n            B. To prove they are more gifted mentally\n            C. To outsmart the other person\n            D. Solely to be the centre of attraction\n   4.     Which of the following best describes the word falsification?\n            A. Correction\n            B. Deception\n            C. Modification\n            D. Coercion\n   5.     Men\u2019s tendency to lie revolves around\n            A. creating trust\n            B. attracting the opposite sex\n            C. allowing others to look better\n            D. making themselves look better or superior\nPart II: Grammar\n   6. Choose the word or phrase that will correctly complete the conversation.\n        I asked the children if they were safe and they replied _______.\n            A. affirmative\n            B. out of harm\u2019s way\n            C. affirmatively\n            D. in protection\n   7. Choose the word or phrase that will correctly complete the conversation.\n       The legislation _______ the adoption of temporary special measures.\n           A.  provision\n           B.  provides for\n           C.  made provided\n           D.  supplied\n   8. Choose the word or phrase that will correctly complete the conversation.\n       The poverty rates will fall ______ focus on rural development.\n           A.  if we\n           B.  if we will\n           C.  whenever we\n           D.  when we will\n   9. Although human beings are believed to be endowed with the seed of enlightenment and\n       are therefore considered fundamentally good, being nonetheless vulnerable beings quite\n       capable of acts of violence and rage when provoked by circumstances.\n       For this sentence to be correct, which among the following should replace the underlined\n           A.  nonetheless, being vulnerable beings\n           B.  they are nonetheless vulnerable beings\n           C.  nonetheless since being vulnerable beings\n           D.  nonetheless as they are vulnerable beings\n",
     "Question": " Men\u2019s tendency to lie revolves around",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": true
 }
 {
@@ -92,12 +97,13 @@
         " in protection"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "",
     "Question": " Choose the word or phrase that will correctly complete the conversation. I asked the children if they were safe and they replied _______.",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": false
 }
 {
@@ -109,12 +115,13 @@
         " supplied"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "",
     "Question": " Choose the word or phrase that will correctly complete the conversation. The legislation _______ the adoption of temporary special measures.",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": false
 }
 {
@@ -126,12 +133,13 @@
         " when we will"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "",
     "Question": " Choose the word or phrase that will correctly complete the conversation. The poverty rates will fall ______ focus on rural development.",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": false
 }
 {
@@ -143,12 +151,13 @@
         " nonetheless as they are vulnerable beings"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "",
     "Question": " Although human beings are believed to be endowed with the seed of enlightenment and are therefore considered fundamentally good, being nonetheless vulnerable beings quite capable of acts of violence and rage when provoked by circumstances. For this sentence to be correct, which among the following should replace the underlined",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": false
 }
 {
@@ -160,12 +169,13 @@
         " Fives"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "",
     "Question": " Which of the following words looks plural but is not?",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": false
 }
 {
@@ -177,12 +187,13 @@
         " deficient"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "",
     "Question": " Choose the word that will correctly complete the sentence. Cultivation is ________ by steep slopes and erosion risks.",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": false
 }
 {
@@ -194,12 +205,13 @@
         " single"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "",
     "Question": " Choose the word that will correctly complete the sentence. She was taking a ________ walk in the park when it started to rain.",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": false
 }
 {
@@ -211,12 +223,13 @@
         " Recurring bad memories are tortuous"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "",
     "Question": " Which of the following usages in relation to the word \u201ctortuous\u201d is correct?",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": false
 }
 {
@@ -228,12 +241,13 @@
         " Aggravate means \u201cto add to\u201d and irritate means \u201cto vex\u201d"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "",
     "Question": " Which of the following sentences makes a correct distinction between the words \u201cAggravate\u201d and \u201cIrritate\u201d?",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": false
 }
 {
@@ -245,12 +259,13 @@
         " senior citizen"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "",
     "Question": " The British equivalent of \u201cVeteran\u201d (American) is:",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": false
 }
 {
@@ -262,12 +277,13 @@
         " paid"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "",
     "Question": " Choose the word or phrase that is the closest in meaning to the underlined word in the The man scowled at the counter.",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": false
 }
 {
@@ -279,12 +295,13 @@
         " instigated"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "",
     "Question": " Choose the word or phrase that is the closest in meaning to the underlined word in the A detailed investigation was commissioned.",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": false
 }
 {
@@ -296,12 +313,13 @@
         " adhere to"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "",
     "Question": " Choose the word or phrase that is the closest in meaning to the underlined word in the The agency would circumvent all the procedures.",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": false
 }
 {
@@ -313,12 +331,13 @@
         " warlike"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "",
     "Question": " Which of the following words has the same meaning as \u201cUbiquitous\u201d?",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": false
 }
 {
@@ -330,12 +349,13 @@
         " soothe"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "",
     "Question": " Which of the following words has the same meaning as \u201cDisparage\u201d?",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": false
 }
 {
@@ -347,12 +367,13 @@
         " imbibe"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "",
     "Question": " Which of the following words has the opposite meaning of \u201cImpinge\u201d?",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": false
 }
 {
@@ -364,12 +385,13 @@
         " immune"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "",
     "Question": " Which of the following words has the opposite meaning of \u201cSusceptible\u201d?",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": false
 }
 {
@@ -381,12 +403,13 @@
         " ephemeral"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "",
     "Question": " Which of the following words has the opposite meaning of \u201cTransitory\u201d?",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": false
 }
 {
@@ -398,12 +421,13 @@
         " auspicious"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "",
     "Question": " Which of the following words has the opposite meaning of \u201cSpecious\u201d?",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": false
 }
 {
@@ -415,11 +439,12 @@
         " aggressive"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Passage": "",
     "Question": " Which of the following words has the opposite meaning of \u201cPacific\u201d?",
     "QuestionYear": "2010",
-    "UserHasResponded": false,
+    "UserHasNotResponded": true,
     "isPassageQuestion": false
 }

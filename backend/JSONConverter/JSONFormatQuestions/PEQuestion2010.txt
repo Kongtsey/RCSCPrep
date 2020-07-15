@@ -7,11 +7,12 @@
         " Dorji is the lightest of all."
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Karma is heavier than Sonam. Dorji weighs less than Sonam. Dawa is heavier than Dorji but lighter than Sonam. Which of the following statements is NOT true?",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -22,11 +23,12 @@
         " 15%"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Bumthang is located in Central Bhutan and some Bumthaps (people of Bumthang) can speak Sharchop and some can speak Khengkha. If 70% of Bumthaps speaks Sharchop and 60% of Bumthaps speaks Khengkha, what is the minimum percentage of Khengkha speaking Bumthaps that also speak Sharchop?",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -37,11 +39,12 @@
         " 6 PM"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " I am a time of the day. I am in London (United Kingdom) when it is 3:00 PM in Tokyo (Japan). Assume that Tokyo time is 3 hours ahead of Thimphu (Bhutan) time. I am",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -52,11 +55,12 @@
         " 311311222112"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Look at the number patterns and study the sequence carefully. You will be required to correctly guess the next sequence number. \u2026\u2026\u2026.. \u2026\u2026 Page 15 BCSE 2010 PRELIMINARY EXAMINATION (A) The next sequence number should be\u2026.",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -67,11 +71,12 @@
         " 40"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Five teams from Thimphu\u2019s Schools are participating in a Summer School Football League. If each team plays the other teams 2 times, the total number of games the League will play is \u2026",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -82,11 +87,12 @@
         " He ties the dog to a tree and transports the corn. He returns to get the duck,"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Karma needs to transport a dog, a duck and corn in a boat across a river. The boat is capable of transporting Karma and one of the other three at each crossing. Karma succeeded in crossing them all without letting the dog eat the duck or the duck eat the corn. Which of the following sequence of events made him possible in crossing them all",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -97,11 +103,12 @@
         " Nu. 28,000"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Tandin pays 50% of his monthly income as house rent and 25% as loan repayment. He spends Nu. 2,000 on food and drinks. He still saves Nu. 5,000 per month and deposits into his saving account. What is Tandin\u2019s monthly income?",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -112,11 +119,12 @@
         " Nu. 75 per hour"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Tobgay wants to travel from Paro to Bagdogra in India. He had two options to reach Bagdogra from Paro. He can either travel by air which takes 30 minutes or by a taxi which takes 10 hours. The air ticket will cost him Nu. 5,000 and the taxi fare will costs him Nu. 1,250. Other things remaining constant, Tobgay would gain by choosing air travel if, and only if, his time were valued at more than:",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -127,11 +135,12 @@
         " a & c"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Identify two statements necessary to make the statement \u201cA is south-west to C\u201d true. a. A is two miles south of B. b. B is two miles east of D. c. C is two miles east of B. d. D is North-west of A. The two correct statements are:",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -142,11 +151,12 @@
         " Mobile Phone"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Six electronic items are stacked in a cupboard divided into several racks. Mobile Phone is in the rack right above the Ipod and the Laptop is in the rack right below the Micro Oven. Micro Oven is in the rack right above the Mobile Phone and the Ipod shares the rack with the Headphones. Rice Cooker is kept on the lowest rack. Which item is on the topmost",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -157,11 +167,12 @@
         " When an object is immersed in water, it experiences an upward thrust and losses"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " When a heavy object is lifted under water, it is easier to lift than lifting the same object in the air. Which of the following best provide reasons for this?",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -172,11 +183,12 @@
         " Defender D"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Four defenders in a football match \u2014 Defender A, Defender B, Defender C & Defender D \u2014 take their positions in this order in a row from right to left. During the match, Defender A changes places with Defender C and then Defender C changes places with Defender B. Which defender is now at the right end of the row?",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -187,11 +199,12 @@
         " future development"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Progress that meets the needs of the present generations without compromising the ability of future generations to meet their own needs is called:",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -202,11 +215,12 @@
         " 0.4%"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " In a classroom of 125 students, 75 are male students. What percent of the classroom is",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -217,11 +231,12 @@
         " GDP is a measure of output produced by domestic citizens in a year, while GNP"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Which of the following best describes the difference between Gross Domestic Product (GDP) and Gross National Product (GNP)?",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -232,11 +247,12 @@
         " 240 to 258"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Look at the pictures carefully. Page 19 BCSE 2010 PRELIMINARY EXAMINATION (A) If each car carries 3 passengers and each bus carries 20 passengers except 3 buses which carries only 18 passengers each, the ratio of passengers travelling by buses to total passengers is:",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -247,11 +263,12 @@
         " A CV is a brief and concise summary of a person\u2019s skills, experience and"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Which of the following best describes the difference between a person\u2019s Curriculum Vitae (CV) and Resume?",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -262,11 +279,12 @@
         " The relationship cannot be determined from the information given."
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Sonam and Pema were given an apple pie each. Sonam ate 2/3 of the pie and Pema ate 3/4 . What portion of the pie did they eat altogether?",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -277,11 +295,12 @@
         " The relationship cannot be determined from the information given."
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Compare column A and column B Column A Column B 274 96",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -292,11 +311,12 @@
         " x+4"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " The price of a commodity increased 8 points, then decreased 13 points, and then increased 9 points. If the commodity price before the changes was x points, which of the following was the commodity price, in points, after the changes?",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -307,11 +327,12 @@
         " The relationship cannot be determined from the above"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " If y>2, compare column A and column B Column A Column B y-6 -3",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -322,11 +343,12 @@
         " 41"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Which number should be in next series?",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -337,11 +359,12 @@
         " 28"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Pema, who is sixteen years old, is four times as old as her brother Sonam. How old will Pema be when Pema is twice as old as her brother Sonam?",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -352,11 +375,12 @@
         " 5"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Choose the number that is 1/4 of half of 1/5 of 200?",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -367,9 +391,10 @@
         " City"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " If you arrange the letters \u201cLNGEDNA\u201d you have the name of a (n):",
     "QuestionYear": "2010",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }

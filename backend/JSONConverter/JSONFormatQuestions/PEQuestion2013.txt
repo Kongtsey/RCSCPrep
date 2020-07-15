@@ -7,11 +7,12 @@
         " 1/24"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " If you roll a fair-sided die twice, what is the probability of getting a double?",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -22,11 +23,12 @@
         " 622"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Name the 3-digit number. My ones digit is an even number which is three times as much as my tens digit. My tens digit is the same as my hundreds digit. The sum of all my digits is 10. Which number am I?",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -37,11 +39,12 @@
         " both (A) and (B)"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Read the statements given below and answer the question that follows. Dorji saw more movies than Penjor. Penjor saw fewer movies than lhamo. Lhamo saw more movies than Dorji. If first two statements are true, the third statement is",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -52,11 +55,12 @@
         " Q"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " What is the missing letter: A F D I G L J ___",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -67,11 +71,12 @@
         " None of the statements is a known fact"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Read the statements given below and answer the question that follows. Fact 1: Tissot watches cost between Nu. 1000 and Nu. 10,000. Fact 2: Some Tissot watches have Titanium frames. Fact 3: Some Tissot watches have steel frames. If the above three statements are facts, which of the following statements must also be a fact? I. Tissot watches with Titanium frames cost more than the one with steel frames. II. Expensive Tissot watches last longer than cheap ones. III. Only a few Tissot watches cost less than Nu. 1000.",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -82,11 +87,12 @@
         " 5/11"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Which fraction is greater than \u00bd ?",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -97,11 +103,12 @@
         " river"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " If you unscramble the letters \u2018AKBSLLTAEB\u2019, you will get the name of a",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -112,11 +119,12 @@
         " 18000"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " If an object travels five feet in a second, how many feet will it travel in 1 hour?",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -127,11 +135,12 @@
         " 35/20"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " A basket contains 55 apples. The apples are red and green in colour. 20 apples are green in colour. If Sonam randomly picks an apple, what is the probability that she picks a red apple?",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -142,11 +151,12 @@
         " 92%"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Dorji earns Nu. 15000 in a month. His family uses one LPG cylinder a month. If one LPG cylinder costs Nu. 1200, what percentage of his monthly salary is spent for cooking?",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -157,11 +167,12 @@
         " -11"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " If a/b=0.25. What is the negative value of the reciprocal of the fraction a/b?",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -172,11 +183,12 @@
         " (ii) and (iv)"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " If Speed = Distance/ Time. Which of the following formula are true? (i) Distance= Speed * Time (ii) Time = Distance / Speed (iii) Distance = Speed / Time (iv) Time = Distance * Speed",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -187,11 +199,12 @@
         " 4"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " How many two digit numbers are multiples of both 7 and 4?",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -202,11 +215,12 @@
         " 1.5X"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Car parking along Norzin Lam is charged at flat X Ngultrum for any amount of time up to three hours, and 1/5 of X Ngultrum each hour or fraction of an hour after the first three hours. How much does it cost to park for 5 hours and 30 minutes?",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -217,11 +231,12 @@
         " Karma"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " In a family, Sonam weighs twice as much as Choden. Choden\u2019s weight is 90% of Karma\u2019s. Deki\u2019s weight is 120% of Karma\u2019s. Who is the heaviest in the family?",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -232,11 +247,12 @@
         " 45.0 hrs"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " 20 unskilled workers can finish a job in 50 hours. The same job can be finished by 25 skilled workers in 20 hours. If 10 unskilled and 10 skilled workers are employed, how long will they take to complete the same job?",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -247,11 +263,12 @@
         " 1.9 meters"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " A piece of wood 10 meters long is cut into three smaller pieces. If the first one is 2.7 meters and the second one is 3.5 meters longer than the third one, how long is the shortest of the three pieces?",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -262,11 +279,12 @@
         " 17"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Two numbers are in ratio of 10:7. If the sum of the numbers is 34, what is the smaller",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -277,11 +295,12 @@
         " 4:7:11"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " In a shop, for every pant there are 3 shirts and for every 9 shirts there are 27 pairs of shoes. Express the ratio of pants to shirts to shoes in the store.",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -292,11 +311,12 @@
         " ; ; ;"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Arrange these fractions in ascending order: ; ; ; \ufffd\ufffd\ufffd \ufffd\ufffd\ufffd \ufffd\ufffd\ufffd \ufffd\ufffd\ufffd \ufffd \ufffd \ufffd \ufffd",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -307,11 +327,12 @@
         " 120%"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Person X bought a car for Nu. 500,000. He sold it to Person Y at 20% profit. Person Y in turn sold the car to Person Z at 20% profit. What is Person Y\u2019s profit in terms of Person X\u2019s",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -322,11 +343,12 @@
         " 7"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Deki can carry 6 cartoons of milk. If there are 32 boxes of cartoons in her ware house, how many full trips does she have to make for her to transport all the cartoons of milk from ware house to her shop?",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -337,11 +359,12 @@
         " 15 students"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " The pass percentage of a school stands at 95% with 570 students passing the annual examinations. How many more students in the school would have to pass to raise the pass percentage to 98%?",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -352,11 +375,12 @@
         " 600 units"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " The weight of an object on Planet X is twice that of its weight on Earth and one third of its weight on Planet Y. If an object on Earth weighs 100 units, what is its weight on Planet Y?",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
 {
     "Category": "Quantitative",
@@ -367,9 +391,10 @@
         " Migmar"
     ],
     "CorrectAnswer": 0,
-    "IsAnswerCorrect": false,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
     "Marked": false,
     "Question": " Four men are trying to catch a crazy bull. Jigme is directly behind the bull. Rinzin is behind Jigme. Rada is behind Rinzin. Migmar is ahead of the bull walking down the street in the opposite direction. As the men and bull run, Migmar turns around and joins the team. He runs in behind Rinzin. Jigme runs faster and is alongside the bull on the left. Rinzin runs faster and is alongside the bull on the right. Which man is directly behind the bull?",
     "QuestionYear": "2013",
-    "UserHasResponded": false
+    "UserHasNotResponded": true
 }
