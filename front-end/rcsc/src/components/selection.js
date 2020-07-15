@@ -12,31 +12,34 @@ class SelectionQueries extends Component {
       numQuestions: 5,
       questionType: "default",
       category: "any",
-      pathname: '',
+      pathname: "",
       categoryOptions: {
-        category1: '',
-        category2: '',
-        category3: ''
-      }
+        category1: "",
+        category2: "",
+        category3: "",
+      },
     };
     this.handleChange = this.handleChange.bind(this);
   }
   componentDidMount() {
-    if(this.props.type==="Math"){
-      this.setState({pathname: '/math_practice'})
-      this.setState({categoryOptions: {
-          category1: 'Algebra',
-          category2: 'Unscramble',
-          category3: 'Calculus'
-        }})
-    }
-    else if (this.props.type ==="English"){
-      this.setState({pathname: '/english_practice'})
-      this.setState({categoryOptions: {
-          category1: 'Grammar',
-          category2: 'Comprehension',
-          category3: 'Synonyms & Antonyms'
-        }})
+    if (this.props.type === "Math") {
+      this.setState({ pathname: "/math_practice" });
+      this.setState({
+        categoryOptions: {
+          category1: "Algebra",
+          category2: "Unscramble",
+          category3: "Calculus",
+        },
+      });
+    } else if (this.props.type === "English") {
+      this.setState({ pathname: "/english_practice" });
+      this.setState({
+        categoryOptions: {
+          category1: "Grammar",
+          category2: "Comprehension",
+          category3: "Synonyms & Antonyms",
+        },
+      });
     }
   }
 
@@ -70,10 +73,10 @@ class SelectionQueries extends Component {
               <Form className='radio typeQuery' onChange={this.handleChange}>
                 {["radio"].map((type) => (
                   <div key={`default-${type}`} className='mb-3'>
-                    <Form.Check type={type} name='questionType' label='Default' id='default' defaultChecked />
-                    <Form.Check type={type} name='questionType' id='markedQuestions' label='Marked Questions' />
-                    <Form.Check type={type} name='questionType' id='correctAnsweredQuestions' label='Correct Answered Questions' />
-                    <Form.Check type={type} name='questionType' id='wrongAnsweredQuestions' label='Wrong Answered Questions' />
+                    <Form.Check type={type} name='questionType' id='UserHasNotResponded' label='Unanswered' defaultChecked />
+                    <Form.Check type={type} name='questionType' id='Marked' label='Marked' />
+                    <Form.Check type={type} name='questionType' id='IsCorrectAnswer' label='Correct Answered' />
+                    <Form.Check type={type} name='questionType' id='IsWrongAnswer' label='Wrong Answered ' />
                   </div>
                 ))}
               </Form>
