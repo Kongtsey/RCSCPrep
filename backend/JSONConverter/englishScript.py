@@ -6,11 +6,12 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 # Use the application default credentials
-cred = credentials.Certificate("../credentials/Credentials.json")
+cred = credentials.Certificate("backend/credentials/Credentials.json")
 firebase_admin.initialize_app(cred, {
   'projectId': "bhutanexamfactory-d7ea2",
 })
 db = firestore.client()
+
 def choicesSplitter(list):
     """
     Function to divide the choices as seperate elements
@@ -29,7 +30,7 @@ def choicesSplitter(list):
             temp.append(list[tempIndex:])
     return temp
 year = input("What year is the english paper?\n")
-englishPage = open("PastPapers/Eng" + year + "_PE.txt", "r")
+englishPage = open("backend/JSONConverter/PastPapers/Eng" + year + "_PE.txt", "r")
 content = englishPage.read()
 englishPassage = pD.englishPassageSplit(content)
 content = content.split("\n")
@@ -37,7 +38,7 @@ content = content.split("\n")
 
 questions = []  # list to store all the questions
 choices = []  # list to store all the choices
-qNum = 26  # since the questions start from number 1
+qNum = 26  # since the questions start from number 1/26
 content = cQ.finder(content, 'D.',qNum)  # updates the content list to contain each question
 # and choice as a single element in the list
 orderedList = []  # list to store content but in a standard way
@@ -64,14 +65,15 @@ questionsAnswers = {  # dictionary format to store as JSON.
     "Choice": [],
     "CorrectAnswer":0,
     "isPassageQuestion": False,
-    "UserHasResponded":False,
-    "IsAnswerCorrect":False,
+    "UserHasNotResponded":True,
+    "IsCorrectAnswer":False,
+    "IsWrongAnswer":False,
     "Marked": False,
 }
 
 # ADDING THE PASSAGE TO DB
 # data = js.dumps(passage, sort_keys=True,indent=4)
-json_file = open('JSONFormatQuestions/PEQuestionEnglish' + year + '.txt', 'w')
+json_file = open('backend/JSONConverter/JSONFormatQuestions/PEQuestionEnglish' + year + '.txt', 'w')
 # json_file.write(data+"\n")
 # db.collection("EnglishQuestions").document("passage"+year).set(passage) #adding the passage to the console
 
