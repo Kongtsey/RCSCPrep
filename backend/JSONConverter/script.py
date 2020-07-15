@@ -4,7 +4,7 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 # Use the application default credentials
-cred = credentials.Certificate("../credentials/Credentials.json")
+cred = credentials.Certificate("backend/credentials/Credentials.json")
 firebase_admin.initialize_app(cred, {
   'projectId': "bhutanexamfactory-d7ea2",
 })
@@ -32,7 +32,7 @@ def choicesSplitter(list):
 
 
 year = input("What year is the paper?\n")
-prblmSlvPage = open("PastPapers/" + year + "_PE.txt", "r")  # prblmSlvPage is the quantitative part of the PE
+prblmSlvPage = open("backend/JSONConverter/PastPapers/" + year + "_PE.txt", "r")  # prblmSlvPage is the quantitative part of the PE
 content = prblmSlvPage.read()
 content = content.split("\n")
 # split all of the text files by new lines.
@@ -62,10 +62,11 @@ questionsAnswers = {  # dictionary format to store as JSON.
     "Choice": [],
     "CorrectAnswer":0,
     "Marked": False,
-    "UserHasResponded":False,
-    "IsAnswerCorrect":False
+    "UserHasNotResponded":True,
+    "IsWrongAnswer":False,
+    "IsCorrectAnswer": False
 }
-json_file = open('JSONFormatQuestions/PEQuestion' + year + '.txt', 'w')
+json_file = open('backend/JSONConverter/JSONFormatQuestions/PEQuestion' + year + '.txt', 'w')
 for i in range(len(choices)):  # splitting the choices in order to seperate them
     splitList = choices[i].split()
     choices[i] = choicesSplitter(splitList)
