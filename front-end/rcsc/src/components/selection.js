@@ -4,13 +4,12 @@ import "../style-sheet/mathStatsPage.css";
 import Button from "react-bootstrap/Button";
 import { renderToString } from "react-dom/server";
 import { Link } from "react-router-dom";
-
 class SelectionQueries extends Component {
   constructor(props) {
     super(props);
     this.state = {
       numQuestions: 5,
-      questionType: "default",
+      questionType: "UserHasNotResponded",
       category: "any",
       pathname: "",
       categoryOptions: {

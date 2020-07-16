@@ -126,8 +126,9 @@ class ReadEnglishQuestion extends Component {
       //let userResponse = answered_question_info[i][1];
       userCollection.doc("EnglishQuestions").collection("Questions").doc(qID).set(
         {
-          UserHasResponded: true,
-          IsAnswerCorrect: answered_question_info[i][3],
+          UserHasResponded: false,
+          IsCorrectAnswer: answered_question_info[i][3],
+          IsWrongAnswer: !answered_question_info[i][3]
         },
         { merge: true }
       );
