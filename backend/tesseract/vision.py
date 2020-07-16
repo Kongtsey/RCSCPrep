@@ -10,15 +10,16 @@ def detect_text(path):
     image = vision.types.Image(content=content)
     response = client.document_text_detection(image=image) #.document_text_detection for detecting clustered docs.
     texts = response.text_annotations #get the text
-    file = open("tesseract/visionQuestions/question.txt","r+")
+    file = open("tesseract/visionQuestions/question.txt","a")
     textToWrite = texts[0].description #since api returns a dic where the first element is the text as a whole and other elements are single words
     # also .description since it also stores bounds and other variables in json format and description is the actual text
     file.write(textToWrite)
     file.close
+    print("Text extracted and saved to visionQuestions/question.txt")
     if response.error.message:
         raise Exception(
             '{}\nFor more info on error messages, check: '
             'https://cloud.google.com/apis/design/errors'.format(
                 response.error.message))
-image = "tesseract/test.jpg"
+image = "tesseract/pictures/IMG_7461.JPG"
 detect_text(image)

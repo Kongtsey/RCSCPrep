@@ -1,50 +1,23 @@
-OOOORIAN
-ROYAL GOVERNMENT OF BHUTAN
-MINISTRY OF FINANCE
-DEPARTMENT OF REVENUE & CUSTOMS
-Regional Revenue & Customs Bumthang
-Date
-26-Mar-2020
-ARN AR452087621167
-TPN DAB37701
-Operational Status: Yos
-TCC NUMBER:
-TC452087628052
-TAX CLEARANCE CERTIFICATE
-registered with RRCO
-Bumthang
-This is to certify that M/s
-Dekyil Guest House
-has no outstanding taxes for the income year 2019 as on 26-03-2020.
-TPN
-License No
-License Date
-Sector
-Unit Status
-Entity Name
-Dekyll Guest House
-DAB37701
-5008385
-10-05-2016
-Service Sector
-Active
-Purpose of issue:
-Validity of Certificate
-RENEWAL OF TRADE LICENSE
-This certificate is valid until 31-12-2020 and is applicable only to the above mentioned
-taxpayer
-DIVER
-ARANCE
-SLOVERS
-LENGTRY ON
-Regional Director
-TEENU
-CUSTON
-Please note that:
-1. This is a computer generated Tax Clearance Certificate.
-2. The user organization should confirm the authenticity of this certificate by verifying the TCC Number from the website
-portal.drc.gov.bt.
-3. Follow the steps given below to verify the authenticity:
-Click on the "Online Tax Clearance Certificate" on the portal and enter the TPN or TCC Number
-4. Forging and misuse of this certificate shall be liable for prosecution as per Chapter 5, General Provisions of the Income
-Tax Act.
+An Authentic and Affordable Guide to Securing Your Future
+Problem Solving Exercise
+1. A foundry has a fixed daily cost of Rs. 50,000 whenever it operates and a
+variable cost of Rs. 800Q, where Q is the daily production in tonnes. What is
+the cost of production in Rs. per tonne for a daily production of 100 tonnes?
+A. 1,30,000
+B. 1300
+C. 80,000
+D. 50,00,000
+Solution:
+Fixed cost of production per day = Rs. 50,000
+Variable Cost of production per day = 800 Q, where Q is the daily production in
+tonnes.
+Total cost of production per day = 50,000 + 800 Q
+Given, Q= 100
+So, total cost of production on that day
+=50,000+800(100)
+= 1, 30,000
+130000
+Now, cost of production per tonne that day
+= Rs. 1300
+=
+100
