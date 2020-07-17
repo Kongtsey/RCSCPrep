@@ -1,3 +1,5 @@
+import os
+
 def detect_text(path):
     """Detects text in the file."""
     from google.cloud import vision
@@ -10,7 +12,7 @@ def detect_text(path):
     image = vision.types.Image(content=content)
     response = client.document_text_detection(image=image) #.document_text_detection for detecting clustered docs.
     texts = response.text_annotations #get the text
-    file = open("tesseract/visionQuestions/question.txt","a")
+    file = open("backend/tesseract/visionQuestions/question.txt","a")
     textToWrite = texts[0].description #since api returns a dic where the first element is the text as a whole and other elements are single words
     # also .description since it also stores bounds and other variables in json format and description is the actual text
     file.write(textToWrite)
@@ -21,5 +23,15 @@ def detect_text(path):
             '{}\nFor more info on error messages, check: '
             'https://cloud.google.com/apis/design/errors'.format(
                 response.error.message))
-image = "tesseract/pictures/IMG_7461.JPG"
-detect_text(image)
+
+# detect_text(image)
+directory = "backend/tesseract/pictures"
+pictures = []
+for fileName in os.listdir(directory):
+    if(fileName.endswith(".JPG")):
+        pictures.append(fileName)
+for eachPic in pictures:
+    image = "backend/tesseract/pictures/"
+    image+=eachPic
+    print(image)
+    detect_text(image)
