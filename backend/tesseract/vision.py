@@ -33,5 +33,5 @@ for fileName in os.listdir(directory):
 for eachPic in pictures:
     image = "backend/tesseract/pictures/"
     image+=eachPic
-    print(image)
+    print("Processing:",image,"currently. . .")
     detect_text(image)
