@@ -27,12 +27,13 @@ class ReadEnglishQuestion extends Component {
     this.setState({ loading: true });
     let auth = fire.auth();
     let userName = auth.currentUser.email;
+    console.log("Is the right prop being passed: ", this.props.questionTypeQuery);
     fire
       .firestore()
       .collection(userName)
       .doc("EnglishQuestions")
       .collection("Questions")
-      .where("UserHasResponded", "==", false)
+      .where(this.props.questionTypeQuery, "==", true)
       .limit(this.props.chosenChoiceNumber)
       .onSnapshot((snapshot) => {
         const newData = snapshot.docs.map((doc) => ({
@@ -125,8 +126,9 @@ class ReadEnglishQuestion extends Component {
       //let userResponse = answered_question_info[i][1];
       userCollection.doc("EnglishQuestions").collection("Questions").doc(qID).set(
         {
-          UserHasResponded: true,
-          IsAnswerCorrect: answered_question_info[i][3],
+          UserHasResponded: false,
+          IsCorrectAnswer: answered_question_info[i][3],
+          IsWrongAnswer: !answered_question_info[i][3]
         },
         { merge: true }
       );

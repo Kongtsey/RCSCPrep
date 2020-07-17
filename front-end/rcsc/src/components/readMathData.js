@@ -27,12 +27,13 @@ class MathList extends Component {
     this.setState({ loading: true });
     let auth = fire.auth();
     let userName = auth.currentUser.email;
+    console.log("this is the query: ", this.props.questionTypeQuery);
     fire
       .firestore()
       .collection(userName)
       .doc("MathQuestions")
       .collection("Questions")
-      .where("UserHasResponded", "==", false)
+      .where(this.props.questionTypeQuery, "==", true)
       .limit(this.props.chosenChoiceNumber)
       .onSnapshot((snapshot) => {
         const newData = snapshot.docs.map((doc) => ({
@@ -123,8 +124,9 @@ class MathList extends Component {
       let qID = answered_question_info[i][0];
       userCollection.doc("MathQuestions").collection("Questions").doc(qID).set(
         {
-          UserHasResponded: true,
-          IsAnswerCorrect: answered_question_info[i][3],
+          UserHasNotResponded: false,
+          IsCorrectAnswer: answered_question_info[i][3],
+          IsWrongAnswer: !answered_question_info[i][3],
         },
         { merge: true }
       );
@@ -143,7 +145,7 @@ class MathList extends Component {
       $("#mark" + index).html("marked");
       userCollection.doc("MathQuestions").collection("Questions").doc(markedQuestionId).set(
         {
-          marked: true,
+          Marked: true,
         },
         { merge: true }
       );
@@ -153,7 +155,7 @@ class MathList extends Component {
       $("#mark" + index).html("mark");
       userCollection.doc("MathQuestions").collection("Questions").doc(markedQuestionId).set(
         {
-          marked: false,
+          Marked: false,
         },
         { merge: true }
       );

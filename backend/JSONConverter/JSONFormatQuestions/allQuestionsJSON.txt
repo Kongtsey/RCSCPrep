@@ -197,7 +197,7 @@
     "Choices": [
         {
             "A": " cultural development",
-            "B": " sustainable development Page 18 BCSE 2010 PRELIMINARY EXAMINATION (A)",
+            "B": " sustainable development",
             "C": " economic development",
             "D": " future development"
         }
@@ -510,6 +510,21 @@
     "UserHasResponded": false,
     "isAnswerCorrect": false
 }
+
+
+
+-----------------------------------------------------------------------
+
+||||||||||||||||----------REACHED HERE------------|||||||||||||||||||||
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
 {
     "Question": " The average age of a group of 5 students was 10. The average age increased by 4 years when 2 new students joined the group. What is the average age of the two new students who joined the group?",
     "QuestionYear": "2011",
