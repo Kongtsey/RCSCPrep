@@ -1,0 +1,671 @@
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 15:00 hours",
+        " 16:00 hours",
+        " 17:00 hours",
+        " 18:00 hours"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " A landmark in North America passes through a longitude of 450 West and has a local time of 7:00 hours. What will be the time in Paro fortress in Bhutan in 24 hours format?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " Jamtsho",
+        " Pemba",
+        " Langa",
+        " None"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Langa, Jamtsho and Pemba are competing in a 200 meter dash. Jamtsho falls down while Pemba overtakes Langa. However, Jamtsho recovers and overtakes Pemba. Langa was last. Who was first?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 100",
+        " 200",
+        " 300",
+        " 400"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " When 100 is divided by half and multiplied by 2, the result is:",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 20%",
+        " 10%",
+        " 30%",
+        " 25%"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " A mountain bike costs Nu. 25,000. Pempa rode the cycle and while going home he damaged the front wheel by hitting it to a big stone. To repair, he paid Nu. 2500. What percentage of the total cost of the cycle did he pay for repairing?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 2/5th",
+        " 1/5th",
+        " 3/5th",
+        " 4/5th"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " One-fifth of a banana was given to a monkey. The other monkey demanded equal size of the banana too. I had only one banana. How much of the banana is left with me?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 10 days",
+        " 6 days",
+        " 5.5 days",
+        " 7.5 days"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Vijay, Nayan and Nazdeep can complete a work in 5 days. How many days will Nayan and Nazdeep take to complete the same work, assuming they all put the same effort for the work?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 55",
+        " 70",
+        " 78",
+        " 96"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Look at the figure below: Total number of blocks in total when a 12-step staircase is completed is:",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " Penjore",
+        " Choki",
+        " Lhamo",
+        " Dorji"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Penjore, Choki, Lhamo and Dorji speak many languages. Penjore and Choki speak Chinese while the others speak Arabic. Choki and Dorji speak Dzongkha. Everyone but Penjore speak Hindi. Who is the one speaking only Arabic and Hindi?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 4",
+        " 5",
+        " 6",
+        " 7"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Drinking glasses are stacked forming a pyramid with one glass less in the successive layer. There are six glasses in the bottom layer. How many layers are there in total?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 5 years",
+        " 10 years",
+        " 15 years",
+        " 20 years"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " A is 2 years older than B while B is twice as old as C. The sum of their ages is 27. How old is B?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 1:2",
+        " 2:3",
+        " 3:4",
+        " 4:5"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Let B be the simple interest earned by certain amount for a certain rate in 6 years and D be the simple interest earned by the same amount for same rate in 9 years. The ratio of B to D is:",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 10",
+        " 11",
+        " 13",
+        " 16"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " In a night party of 59 persons, 30 are dancing while 23 are drinking. 5 of them are dancing and drinking at the same time. Find the number of persons who are neither drinking nor dancing.",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 5",
+        " 10",
+        " 15",
+        " 20"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " A number when increased three times divided by five and increased by four gives back the number. Which is the number?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " Namgay is heaviest of all.",
+        " Karpo is heavier than Nagpo.",
+        " Dargay weighs less than Namgay.",
+        " Nagpo is the second lightest of all."
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Namgay is heavier than Dargay. Nagpo weighs less than Dargay. Karpo is heavier than Nagpo but lighter than Dargay. Which of the following statement is NOT true?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 311132211212",
+        " 311222331312",
+        " 322331233112",
+        " 311311222112"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Look at the number patterns and study the sequence carefully. You must guess the next sequence rightly. 2 12 1112 3112 132112 1113122112",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " Nu. 500",
+        " Nu. 300",
+        " Nu. 1500",
+        " Nu. 400"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " A carpet to cover a floor of 30m by 20m costs Nu. 800 in Jaigoan. However, Deki wants to buy a carpet to cover her kitchen floor of exactly 20m by 15m. What will be the cost of the needed carpet?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 13",
+        " 12.54 C.11.17",
+        " 15.87"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Pema took six different amounts of time in minutes to finish a hundred meter distance from Monday to Saturday respectively as given below: 20, 15, 10, 8, 9, and 5. What is the arithmetic mean of the time he consumed?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 80",
+        " 85",
+        " 90",
+        " 95"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Lungten has an average mark of 90 in three subjects' tests. While appearing the fourth subject, he scored 70. The average mark of the four subjects is:",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 49.43m",
+        " 49.78m",
+        " 49.67m",
+        " 49.35m"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " An object travels at 7metres per minute. How much does it travel in 7 minutes and 3 seconds?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " I and II",
+        " I and IV",
+        " II and III",
+        " II and IV"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " A dog and a cat are 50 metres far from each other. A pig is sleeping at a distance of 10 metres from the cat. The distance between the pig and the dog are: I. 40 metres II. 30 metres III. 50 metres IV. 60 metres",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " First",
+        " Second",
+        " Third",
+        " Last"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Nima runs in a marathon competition organized in his district. He overtakes the second person. His position is:",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 0",
+        " 1",
+        " 3.2",
+        " -5"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " A number is an integer that is natural, rational and whole number. Which is the number?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 1/28",
+        " 1/32",
+        " 1/36",
+        " 1/40"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Which number fulfils the pattern: half, one-fourth, one-eight, one- sixteenth...?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 8",
+        " 12",
+        " 32",
+        " 24"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " I am sixteen years old, four times your age. When I am twice as your age, what will my age be?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 10",
+        " 4",
+        " 5",
+        " 9"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Choose the number which is 1/4 of half of 1/5 of 200.",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " Father and step-son",
+        " Husband and wife",
+        " Brother and sister",
+        " Father and daughter"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Karpo has three children. Tashi and Pema are the two younger brothers of Zepa. However, Zepa is neither brother of Tashi nor Pema. What is the relation between Karpo and Zepa?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 70",
+        " 50",
+        " 110",
+        " 90"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Tshering owns 120 guitars. 25% of the total number of guitars is from Gibson Company. How many guitars with Tshering are from companies other than Gibson?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 5",
+        " 3",
+        " 4",
+        " 6"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " There were 20 questions in a multiple choice section in an examination paper. Phuntsho gets 10 marks for each correct answer and loses 5 marks for each wrong answer. He observes that he scored 155 out of 200. How many questions did he answer wrongly?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 274>96",
+        " 274< 96",
+        " 274 = 96",
+        " Can't be determined"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " The relation between 274 and 96 is:",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 33333338",
+        " 333333338",
+        " 333338",
+        " 3333338"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " The next number in the series is: 38 338 3338 33338 333338",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " Nu. 14,000",
+        " Nu. 20,000",
+        " Nu. 35,000",
+        " Nu. 28,000"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Drakpa pays 50% of his monthly income as house rent and 25% as his loan repayment. He spends Nu. 2,000 on food and drinks. He still saves Nu. 5,000 per month and keeps in his locker. What is Drakpa's monthly income?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " More than one pie.",
+        " Less than a pie.",
+        " Three-sixth of a pie.",
+        " Five- seventh of a pie."
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Kinzang and Tashi were given an apple pie each. Kinzang ate 2/3 of the pie and Tashi ate 3/4. What portion of the apple pie did they eat all together?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " When the object is immersed in the water, the water absorbs some of the weight of the object. Thus the weight of the object decreases.",
+        " When an object is immersed in water, some weight of the object is lost on the surface of the water thereby reducing the weight of the object in water.",
+        " When an object is immersed in water, the gravitational force of the earth acts in the opposite direction that is upward force.",
+        " When an object is immersed in water, it experiences an upward thrust and"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " When a heavy object is lifted under water, it is easier to lift than lifting the same object in the air. Which of the following provides the best reason for this?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 10",
+        " 4",
+        " 100",
+        " 200"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " If M+N=20, and M and N are positive integers, what is the value of 10M+10N?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " S+5",
+        " S-5",
+        " S+4",
+        " S-3"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " The price of a shirt increased 8 points, then decreased 13 points, and then increased 9 points. If the price of the shirt at first was S, which of the followings was the shirt's price after all the changes?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 7:00 AM",
+        " 7:25 AM",
+        " 7:35 AM",
+        " 7:45 AM"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Peljor must reach his office at 9:00 AM. Assuming that he takes 50 minutes to cook and eat his breakfast, and 45 minutes to reach his school, at what time should he get up?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 1,30,000",
+        " 1300",
+        " 80,000",
+        " 50,00,000"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " A foundry has a fixed daily cost of Rs. 50,000 whenever it operates and a variable cost of Rs. 8000, where Q is the daily production in tonnes. What is the cost of production in Rs. per tonne for a daily production of 100 tonnes?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " Plant",
+        " Animal",
+        " Flower",
+        " Country"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " If you unscramble the letters ZILBRA, you will get the name of a:",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 69 days",
+        " 100 days",
+        " 78 days",
+        " 96 days"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " On working 12 hours a day, a work is completed in 16days by 24 men. How many days can the same work be done by 8 men considering they work only 6 hours a day?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 0.36",
+        " 0.0036",
+        " 0.00027",
+        " 0.000060"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " What decimal of an hour is second?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 3 years",
+        " 4 years",
+        " 5 years",
+        " 7 years"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " The sum of ages of five children born at the intervals of 3 years each is 50 years. What is the age of the youngest child?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 11 AM",
+        " 10 AM",
+        " 11 PM",
+        " 10 PM"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " I am a time of the day. I am in Tokyo (Japan) when it is 7:30 AM in Delhi (India). Assume that Delhi time is half an hour behind the time in Thimphu (Bhutan). I am:",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 20 males and 4 females",
+        " 15 males and 9 females",
+        " 18 males and 6 females",
+        " 19 males and 5 females"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " There are 24 persons attending a workshop in Gasa. For every 9 males there are 3 females. How many males and females are there attending the workshop?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 25",
+        " 30",
+        " 20",
+        " 35"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " A number of artists are called in a museum. 15 of them only do pencil sketching while 10 do both pencil sketching and oil painting. Only 5 do oil painting. How many artists were there in total?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 15%",
+        " 30%",
+        " 6.67%",
+        " 5.78%"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " 15 is what percent of 225?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 14",
+        " 12",
+        " 6",
+        " 7"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " There are 7 routes for a journey from point X to Y. In how many ways can a person go from X to Y and return, if for returning the same route is taken?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 60",
+        " 120",
+        " 180",
+        " 220"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " If one-fourth of one-third of a number is 20, what is half of that number?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " Equal",
+        " Lower",
+        " Higher",
+        " Can't be determined"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " A number is increased from 30 to 40 and then decreased from 40 to 20. The percentage of increase is the percentage of decrease:",
+    "UserHasResponded": false
+}

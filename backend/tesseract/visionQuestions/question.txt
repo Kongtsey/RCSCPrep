@@ -78,23 +78,9 @@ put the same effort for the work?
 A. 10 days
 B. 6 days
 C. 5.5 days
-Page 67 of 228
-An Authentic and Affordable Guide to Securing Your Future
-magni A AU
-di Sidobivaim our buvo
-40
-8
-30
-24
-نما
-A. 36
-B. 28
-C. 20
-D. 18
-Solution:
-The terms at the corners are multiplied to get the term between them. 5x8=40;
-5x6=30; 8X3=24; so, 6x3=18.
-100. Look at the figure below:
+D. 7.5 days
+
+34. Look at the figure below:
 Total number of blocks in total when a 12-step staircase is completed is:
 A. 55
 B. 70
@@ -396,11 +382,10 @@ I. 40 metres
 II. 30 metres
 III. 50 metres
 IV. 60 metres
-Page 59 of 228
-An Authentic and Affordable Guide to Securing Your Future
-B. Nu. 140
-C. Nu. 60
-D. Nu. 160
+A. I and II
+B. I and IV
+C. II and III
+D. II and IV
 Solution:
 'Premium' means an amount of money paid to get insurance. (For example; Car insurance
 premiums have increased this year. The premiums for healthcare plans are high.)
@@ -536,9 +521,11 @@ After 8 years
 12
 24
 We can see from the table that when I am at the age double of yours, my age will be 24.
-38. Choose the number which is 14 of half of 1/5 of 200.
+38. Choose the number which is 1/4 of half of 1/5 of 200.
 A. 10
 B. 4
+C. 5
+D. 9
 Page 45 of 228
 An Authentic and Affordable Guide to Securing Your Future
 om omota
@@ -655,10 +642,7 @@ A. 33333338
 B. 333333338
 C. 333338
 D. 3333338
-Solution:
-Page 43 of 228
-An Authentic and Affordable Guide to Securing Your Future
-D. 60%
+
 75
 Solution:
 Total number of students in the class = 125
@@ -789,6 +773,10 @@ S+4.
 7. Peljor must reach his office at 9:00 AM. Assuming that he takes 50 minutes
 to cook and eat his breakfast, and 45 minutes to reach his school, at what
 time should he get up?
+A. 7:00 AM
+B. 7:25 AM
+C. 7:35 AM
+D. 7:45 AM
 Page 29 of 228
 An Authentic and Affordable Guide to Securing Your Future
 Problem Solving Exercise
@@ -812,42 +800,6 @@ Now, cost of production per tonne that day =
 = Rs. 1300
 130000
 100
-2. Anuj, Bhola, Chandan, Dilip, Eswar and Faisal live on different floors in a
-six-storeyed building (the ground floor is numbered 1, the floor above it2
-and so on). Anuj lives on an even-numbered floor. Bhola does not live on an
-odd numbered floor. Chandan does not live on any of the floors below
-Faisals floor. Dilip does not live on floor number 2. Eswar does not live on
-a floor immediately above or immediately below Bhola. Faisal lives three
-floors above Dilip. Which of the following floor-person combinations is
-correct?(GATE 2014)
-Anuj
-Bhola
-Chandan Dilip
-Eswar
-Faisal
-2
-5
-1
-در
-2
-6
-ол
-در
-A
-B
-C
-D
-4
-4
-در
-1
-2
-4
-6
-6
-2
-درا
-5
 Solution:
 Page 27 of 228
 An Authentic and Affordable Guide to Securing Your Future
@@ -890,20 +842,12 @@ days
 8
 = 96 days
 49. What decimal of an hour is second?
-Page 49 of 228
-An Authentic and Affordable Guide to Securing Your Future
-The odd terms are natural numbers starting from 1. The even terms are the squares
-of
-natural numbers starting from 1. The term required would be square of 4 which is 16.
-Odd terms are the first term, third term, fifth term, seventh term and so on. Even terms
-are second term, fourth term, sixth term and so on.
-Odd terms- 1, 2, 3, 4...... (Natural numbers)
-Even terms- 2, 4, 9, 16..... (Square of the natural numbers)
+A. 0.36
+B. 0.0036
+C. 0.00027
+D. 0.000060
 42. The sum of ages of five children born at the intervals of 3 years each is 50
-years. What is the
-child?
-age
-of the youngest
+years. What is the age of the youngest child?
 A. 3 years
 B. 4 years
 C. 5 years
@@ -931,12 +875,6 @@ B. 10 AM
 C. 11 PM
 D. 10 PM
 Solution:
-Page 47 of 228
-00
-A. 4%
-B. 20%
-C. 35%
-D. 40%
 Solution:
 Total number of boxes = 10
 Number of shaded boxes = 4
@@ -973,11 +911,7 @@ many artists were there in total?
 A. 25
 B. 30
 C. 20
-Page 51 of 228
-A. 7:00 AM
-B. 7:25 AM
-C. 7:35 AM
-D. 7:45 AM
+D. 35
 Solution:
 Peljor needs to reach office at 9:00AM.
 Time taken by him to cook and eat = 50 minutes
