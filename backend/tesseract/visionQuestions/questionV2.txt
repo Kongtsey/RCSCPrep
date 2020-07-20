@@ -1,0 +1,632 @@
+73. Tashi felt bored in his math class. He had 20 pencils in his pencil box. He
+broke each pencil into half and threw five of the broken pencils. How many
+pencils are left with him?
+A. 30
+B. 35
+C. 40
+D. 45
+Solution:
+Total pencils = 20
+When all are broken into halves, the number of pencils would double, 40.
+Out of 40 broken pencils, 5 are thrown.
+The leftover = 40 - 5
+= 35 pencils.
+74. If m=5n and 15n=3b, b=?
+A. 3m
+B. 3m
+C. m
+D. n
+Solution:
+m = 5n and 15n = 3b
+(we have to find b).
+Problem Solving Exercise
+We know Bhutan is located at 90°E of London while Tokyo is at 135°E. This means
+Tokyo is 3 hours ahead of Bhutan's time (since 45° difference would mean 3 hours time
+difference).
+Earth rotates one round in 24 hours. This means it rotates 15º each hour because it
+rotates 360° in 24 hours.
+I.e. 24 hours =360°
+1 hour = 15°
+Now, time in Delhi is 7:30 AM.
+Since Delhi is half an hour behind Bhutan's time, time in Bhutan must be 8:00AM
+Now, we know Tokyo is 3 hours ahead of Bhutan time; it must be 11:00AM in Tokyo
+then.
+44. An ice cube of good size is placed in a measuring cylinder having water up
+to 50ml mark and a portion of the ice cube is seen above the water level.
+When the ice cube completely melts, water level in the cylinder:
+A. Rises
+B. Falls
+C. Remains unchanged
+D. Overflows
+(Ans. C)
+45. How many times can you subtract 5 from 500?
+A. 10 times
+B. 150 times
+C. 100 times
+D. 200 times
+Solution:
+How
+many
+5s are contained in 500? It is hundred 5s that make to a total of 500. So, it
+also means we can make subtraction of 100 times of 5 from 500.
+46. If
+2, 3=10
+3,5=24
+4, 7=44
+5,9=70
+6, 11=.........
+A. 94
+B. 100
+C. 102
+D. 104
+
+8. 15 is what percent of 225?
+A. 15%
+B. 30%
+C. 6.67%
+D. 5.78%
+Solution:
+From the question, we understand that 15 is a certain percent of 225. Let us assume that
+the certain percent be X.
+Now, we get the equation 15=X % of 225
+On further solving the equation
+X
+15 =
+X 225
+100
+X= 6.67 %.
+9. There are 7 routes for a journey from point X to Y. In how many ways can a
+person go from X to Y and return, if for returning the same route is taken?
+A. 14
+B. 12
+C. 6
+D. 7
+Solution:
+You take the same route while coming back. This means that there are seven different
+routes which you can take.
+Problem Solving Exercise
+11. Tashi is making a Thugpa (Porridge) in the morning on a Losar (New Year
+Festival). He also wants to make a tea. He needs 8/9 glass of water for
+Thugpa and 2/5 glass of water for tea. He has a glass of water. How much
+extra water is needed by him?
+A. 0.12 glass of water
+B. 1.5 glass of water
+C. 0.79 glass of water
+D. 2.5 glass of water
+Solution:
+Quantity of water needed for making Thugpa= 8/9 glass
+Quantity of water needed for making tea = 2/5 glass
+2
+5
+Total quantity of water required = +
+: 1.29 glass
+He already has 1/2 glass of water,
+So the quantity of water required = 1.29 - 0.5 (1/2 glass of water is same as 0.5 glass of
+water).
+= 0.79 glasses is required.
+12. The father is double the age of his daughter. After 10 years, the ratio of their
+age will be 5:3. Find their present ages.
+A. Father is 30 and daughter is 15
+B. Father is 40 and daughter is 20
+C. Father is 50 and daughter is 25
+D. Father is 60 and daughter is 30
+40. If B>2, then compare i and ii: i) B-6 ii) B-3
+A. i>ii
+B. i<ii
+C. i =ii
+D. Can't be determined.
+Solution:
+Since B is greater than 2, let us assume B=3, or you can even take 4, 5, and higher.
+I.B - 6 = 3 - 6
+= -3.
+II. B-3=3 - 3
+= 0.
+So, we conclude that i<ii.
+41. Write the next term of the series below:
+1, 1, 2, 4, 3, 9, 4..........
+A. 8
+B. 20
+C. 24
+D. 16
+Problem Solving Exercise
+Solution:
+68. Kezang stole two bags from a shop in Thimphu. One bag, A, contains a
+kilogram of apple while the other, bag B, contains a kilogram of cotton.
+Which statement below is NOT true?
+A. A is heavier than B
+B. There were apples and cottons in the two bags
+C. The bags were stolen by Kezang
+D. Kezang was the thieve in above incidence
+Solution:
+One bag contains apple and the other cotton. By just reading without serious
+concentration, one may mistake by thinking that cotton is much lighter than the apple.
+However, it is clear that both cotton and apple in different bags are of one kilogram
+each which means both the bags are equal in weight. So, all the statements are correct
+except A.
+69. If you unscramble the letters ETAHRCE, you will get the name of a:
+A. Country
+B. Ocean
+C. Flower
+D. Profession
+67. You are drunk one night. The distance from the bar to your house is 10
+kilometres. You walk 2 kilometres each hour and rest for half an hour. The
+trend continues till you reach home. How many hours do you take to reach home?
+A. 12 hours
+B. 10 hours
+C. 7.5 hours
+D. 7 hours
+30. Four defenders in a soccer match 'Defender A, Defender B, Defender C and
+Defender D' take their positions in this order in a row from right to left.
+During the match, Defender A changes places with Defender C. Defender C
+further changes his position with Defender B. Which Defender is now at the
+right end of the row?
+A. Defender B
+B. Defender C
+C. Defender D
+D. Defender A
+Solution:
+Original Position: D
+D C B A
+First change:
+D A
+A B С
+Second change: DA C
+B
+Now, we can clearly see who is at the right end of the position. It is Defender B.
+31. Progress that meets the needs of the present generations without
+compromising the ability of future generations to meet their own needs is
+called:
+A. Cultural Development
+B. Economic Development
+C. Sustainable Development
+D. Futuristic Development
+(Ans: C)
+32. Identify two statements necessary to make the statement "A is south-west to
+C” correct.
+a. A is two miles south of B.
+b. B is two miles east of D.
+C. C is two miles east of B.
+d. Did north-west of A.
+The two correct statements are:
+A. c & b.
+B. d & b.
+C. a & d.
+D. a &c.
+Solution:
+S.
+20
+40
+F
+Problem Solving Exercise
+Percentage of decrease =: x 100 = 50%
+So, we conclude that the percentage of increase is lower than the percentage of
+decrease.
+F:
+TO
+58. To fill Lhendup's stomach, three plates of rice are required. If the size of his
+plate is reduced to 2/3 of his original plate size, how many plates (new size)
+of rice are required to fill his stomach?
+A. 2 plates
+B. 3.5 plates
+C. 4 plates
+D.' 4.5 plates
+2
+3
+Solution:
+Let us assume the original size of the plate to be 9 units. (Any number can be taken).
+9 units = 3plates
+(1)
+Now, his plate is reduced by 2/3 of the original size
+x9 = 6 Units --- (2)
+From (1), 9 units = 3plates
+1 unit = 3x 9 plates (if the size of the plate is reduced, he would eat
+more).
+So,
+6 units = plates
+= 4.5 plates
+3x9
+6
+59. Tokyo is ahead of Bhutan by three hours. What will be the time in Tokyo if
+time in Bhutan is 11:00 AM?
+A. 9 AM
+B. 9 PM
+C. 2 PM
+D. 1 PM
+Solution;
+Three hours ahead of 11am is 2pm.
+60. Tandin is younger than Khando. Yeshey was born after Tandin. Yeshey is
+younger than Khando. If the first two statements are true, the third one is:
+A. False
+B. True
+C. No basis
+D. Uncertain
+Problem Solving Exercise
+Solution:
+principle x rate x time
+Simple Interest =
+100
+Case one: (B-interest)
+Simple Interest (B) = principle x rate x 6
+100
+Case two: (D- interest)
+principle x rate x 9
+Simple Interest (D) =
+100
+Since all other variables remain constant, the ratio of B to D is 6:9 which is 2:3
+63. Kinzang Choden can cross a river of length 600m on a boat in 5 minutes.
+What is her speed in kilometres per hour?
+A. 5.7
+B. 6.8
+C. 7.2
+D. More than 10
+Solution:
+Her speed is 600metres per minute. Converting both distance into kilometres and time
+into hour, the new unit of her speed is worked out as below:
+Distance, 1000m = 1km
+1m = 1/1000 km
+600
+600m = km
+1000
+= 0.6km
+Time 60 minute = 1 hour
+1 min = 1/60 hours
+5
+5 min = -hours
+60
+= 0.083 hours
+Speed is distance divided by time
+0.6
+.i.e. = 7.23km/hr.
+0.083
+64. Wangpo alone can finish a certain work in 4 days. The same job is finished
+in 3 and 7 days by Tashi and Karma respectively. If they unite and work
+together, how many days will they take to complete the same work?
+A. 1 day
+B. 2. 4 days
+C. 1.4 days
+D. 3 days
+Problem Solving Exercise
+We can observe that one more *3' digit is added to the existing number before the digit
+*8' to get the next term of the series. There should be six 3s and one 8 in the required
+term. Option D is the answer.
+35. There are 12 buses and 8 cars. Each car carries 3 passengers while each bus
+carries 20 passengers except 3 buses which carry 18 passengers each. The
+ratio between the number of passengers carried by bus to the total number
+of passengers is:
+A. 250:250
+B. 236:259
+C. 235:250
+D. 234:258
+Solution:
+Car:
+There are total 8 cars. Each car carries 3 passengers. So the total passenger carried by all
+8 cars is 8X 3 = 24.
+Bus:
+Total number of bus is 12. Out of 12, only 3 buses carry only 18 passengers each
+(18x 3) while the rest 9 buses carry 20 passengers each (9x 20). So the total passenger
+carried by all buses is (18x 3) + (9x 20) = 234.
+Now, total passenger carried by both buses and cars
+= 24 + 234
+= 258
+The ratio between the number of passengers carried by bus to the total number of
+passengers is 234: 258
+36. The hour-hand of a clock is at 3. It gradually moves and reaches 12. The
+angular measurement in degree of the movement of the hand is:
+A. 180
+B. 12
+C. 270
+D. 9
+20. Merak is at a time where it is losing its language's significance. However,
+people over there also speak English. If 60% of the Merakpas (people of
+Merak) speak English and 70% of them speak their own language (Brami),
+what is the minimum percentage of English speaking Merakpas that also
+speak Brami
+A. 20%
+B. 30%
+C. 40%
+D. 60%
+Solution:
+The use of Venn diagram makes the job easy in this kind of questions. It is basic logic
+that the total percent is always 100. The rule here is that Merakpas speaking only English,
+only Brami and both must be 100%.
+English Brami
+(60-?)%
+?
+(70-?)
+From the above diagram,
+The minimum number of Merakpas speaking both English and Brami will be;
+(60-?)% + (70-?)% +3% = 100%, this is because the total Merakpas speaking only
+English, only Brami and both must be 100% in total.
+So, 130% -P% =100%
+?% = 30%.
+Problem Solving Exercise
+Three friends of Euden each bought the same number of apples on her birthday party. Three of them had promised to buy all the apples needed for the party in such a way that every person present in the party gets an apple
+each. Five more apples are needed for fulfilling their words because there were 50 persons in the party. How many apples were bought by each of the
+three friends?
+A. 10
+B. 15
+C. 20
+D. 25
+Solution:
+There are 3 friends of Euden buying equal number of apples which must result into a
+total of 50 since the population in the party was 50.
+Let the number of apples bought by each friend be A.
+There was a shortage of five apples in the party.
+3 A + 5 = 50
+3A = 45
+A = 15
+Each friend of Euden had bought 15 apples each.
+83. All but 18 boys in a class of 45 students had to be terminated from school
+due to their unhealthy behaviour. How many are left in the class now?
+A. 27
+B. 18
+C. 45
+D. None of the above
+Solution:
+All are terminated except 18 boys. "But would mean “except in the above sentence.
+This means 18 boys are not terminated.
+84. If 10 men working 8 hours a day can complete a job in 12 days, how many
+days will 5 men working 2 hours a day take to complete the same job?
+A. 24
+B. 36
+C. 76
+D. 96
+Solution:
+First condition:
+Page 64 of 228
+d
+Problem Solving Exercise
+78. Two bikes depart from a point at a road junction. One rides towards north at
+a speed of 40 miles per hour while the other does in the east at 30 miles per
+hour. What is the distance between them after 1 hour?
+A. 20 miles
+B. 40 miles
+C. 50 miles
+D. 120 miles
+
+79. The volume of the cube is 216m3. Find the side of the cube.
+A. 5m
+B. 6m
+C. 7m
+D. 15m
+
+The volume of a cube is given .i.e. 216m².
+We know the formula for volume of a cube as
+V=Ixbxh
+For a cube, length, breadth and height are same,
+So, V = 13
+Page 62 of 228
+Problem Solving Exercise
+Total no. of guitars = 120
+No. of guitars from Gibson company = 25% of the total.
+25
+X 120
+100
+= 30 guitars are from Gibson Company.
+Now, no. of guitars from other companies = 120 - 30
+90 guitars
+15. What is the relation of the lady with the one in the portrait if the man points
+to a portrait and says, "Her mother is the only daughter of your mother”?
+A. Sister
+B. Brother
+C. Sister in law
+D. Daughter
+Solution:
+The mother of the woman in the portrait is the only daughter of the mother of the woman
+standing. The woman in the portrait is the daughter of the woman standing with the man.
+16. What is the next number of the series 1, 2, 3, 5, 8, 13, 21.....?
+A. 33
+B. 34
+C. 35
+D. 36
+17. The temperature in Jalandhar on August 14, 2014, was noted as 34°C at 9am,
+39°C at 12pm in the afternoon, 37°C at 5pm and finally 41°C at 10pm at night.
+What was the average temperature in Jalandhar on the same day?
+A. 40.12°C
+B. 38.34°C
+C. 37.75°C
+D. 38.23˚C
+
+87. For every 10 plates there were only 3 cups in a showcase. The sum of the
+cups and plates was 78. How many cups and plates were there?
+A. 50 plates and 28 cups
+B. 45 plates and 33 cups
+C. 57 plates and 21 cups
+D. 60 plates and 18 cups
+Solution:
+Since the ratio of plates to cups is 10:3,
+10X + 3X = 78; number of plates is 10X and cups 3X.
+X = 6
+Number of plates (6 multiplied 10) is 60 and cups is 18(6 multiplied 3).
+88. A student attempted four papers of 100 marks each and in total he got 340
+marks when adding all the marks obtained in four papers. The percentage of
+the obtained mark is:
+A. 75
+B. 80
+C. 85
+D. 90
+23. I am a time of the day. I am in London (United Kingdom) when it is 3:00PM
+in Tokyo (Japan). Assume that Tokyo time is three hours ahead of Thimphu
+(Bhutan) time. I am....
+A. 9 AM
+B. 9 PM
+C. 6 AM
+D. 6 PM
+24. In a classroom, there are 125 students out of which 75 are male students.
+What percentage of the class is female?
+A. 30%
+B. 40%
+C. 50%
+Page 38 of 228
+Problem Solving Exercise
+26. Vijay, a tourist, wants to go back home to India from Paro to Bagdogra,
+India. He has two options to reach Bagdogra from Paro. He can either travel
+by air which takes 30 minutes or by taxi which takes 10 and half hours. The
+air ticket costs him Nu. 5000 and the taxi fare is Nu. 1250. Other things
+remaining constant, Vijay would gain by choosing air travel if, and only if,
+his time were valued at more than:
+A. Nu. 370 per hour
+B. Nu. 375 per hour
+C. Nu. 280 per hour
+D. Nu. 385 per hour
+Solution:
+Here, we need to calculate the time-value of money. One option takes him more time to
+reach his destination but cuts down his travel cost while the other reaches him faster
+but is of higher cost.
+First option: By taxi
+Time to be taken = 10 and half hours
+Ticket fare = Nu. 1250
+Second option: By air
+Time to be taken = 30 minutes
+Ticket fare = Nu. 5000
+3750
+Extra time taken by taxi = 10 hours
+Extra money charged for air travel = 3750
+So, the money value of time offered by air service = = Nu. 375 per bour. Now
+we can say that Vijay would gain from travelling by flight only if his time is valued more
+than Nu.375 per hour. At Nu. 375 per hour, it is same as travelling by taxi. At less than
+Nu.375 per hour, he gains from travelling by taxi.
+10
+27. Six electronic items are stacked in a cupboard divided into several racks.
+Mobile phone is in the rack right above the IPod and the laptop is in the
+rack right below the micro Oven. Micro Oven is in the rack above the
+Mobile Phone and the IPod shares the rack with the Headphones. Rice
+cooker is kept on the lowest rack. Which item is on the topmost rack?
+A. Mobile Phone
+B. IPod
+C. Laptop
+D. Micro Oven
+Solution:
+92. There is a soccer league tournament in Trashigang and there are only five
+teams participating since it's the first time such tournament is being
+organized. If each team has to play two matches with all the other teams,
+how many matches will be played in total in the tournament?
+A. 10
+B. 15
+C. 20
+D. 25
+
+
+93. Nu. 100 shares are being sold at a premium of 60% by a company. The price
+to be paid by a subscriber is:
+A. Nu. 40
+B. Nu. 140
+C. Nu. 60
+D. Nu. 160
+97. 30% of the 10,000 class twelve students didn't qualify anywhere. 3% of the
+qualified students were sent for ex-country scholarship. How many were
+sent for ex-country scholarship?
+A. 500
+B. 320
+C. 210
+D. 190
+98. Rinzin is a very busy guy. He has to reach his office on time which is at a
+distance of 100 km which takes half an hour to reach. At what speed must he
+travel so that he reaches there exactly in 30 minutes?
+A. 50 km/hr.
+B. 100 km/hr.
+C. 150 km/hr.
+D. 200 km/hr.
+SO
+ti
+Solution:
+His required speed = 100km/30 min. (since he has to reach his office in 30mins.)
+This speed in hour is = 200km per 60min.
+200km/hr.
+
+50. Jamtsho is facing North-East. He jumps and turns 90° in the clockwise
+direction. From that position he turns 180° in the anticlockwise direction and
+then 90° in the same direction. Which direction is he facing at the end?
+A. East
+B. North
+C. South-East
+D. South-West
+Solution:
+This question can be simply solved by the following diagram.
+N
+N
+Jamtsho's first
+position
+w
+E
+W
+Jamtsho's
+second position
+1
+S
+2
+lamtsho's third N
+position
+W
++
+E
+W
+E
+3
+4
+Jamtsho's final
+position
+His final position is obviously South-West.
+
+3. One percent of the people of country X are taller than 6 ft. Two percent of
+the people of country Y are taller than 6 ft. There are thrice as many
+people in country X as in country Y. Taking both countries together, what is
+the percentage of people taller than 6 ft?
+A. 3.0
+B. 2.5
+C. 1.5
+D. 1.25
+Solution:
+Assume any number as the population of X and that of Y should be 1/3 of X.
+Let population in country X be 300 & 100 in Y. (Assume population of X any number
+but the Y's population must be 1/3 of the X. This is the condition in the question).
+So, 3 people out of 300 in country X are taller than 6ft & 2 out of 100 people in country
+
+So, overall 5 people in 400 are taller than 6ft.
+So,% = (5/400) x100 = 1.25
+(Ans. D
+You may wonder why the population of X was taken particularly as 300. This is
+randomly chosen. You can choose any number. The answer will be the same.
+4. Find the missing value of 20:4=X:5
+A. 20
+B. 25
+C. 30
+D. 40
+ion:
+15 of them only do pencil sketching while only five do oil painting. 10 of them do both.
+The total should be the sum of those who do only pencil sketching, onhy oil painting and both.
+.i.e. 15+5+10 which is 30.
+54. An umbrella seller had certain number of umbrellas. He sold 30% of his total
+umbrella yet is left with 553 more in hand. How many umbrellas did he have
+in total in the beginning?
+A. 820
+B. 680
+C. 790
+D. 930
+Solution:
+Umbrellas sold = 30% of the total.
+Number of leftover umbrellas = 553
+If umbrellas sold are 30% of the total (100%), then the leftover must be 70%, (100% -
+30%).
+So,
+if 70% = 553 umbrellas
+553
+1% = umbrellas
+70
+553
+Now,
+30% =
+x 30
+70
+=237 umbrellas
+Now, total number of umbrellas
+= total umbrellas sold + leftover umbrellas
+= 237 +553
+= 790 umbrellas
+55. After being dropped, a football always bounces 3/5th of its previous bounce
+height. After the first bounce it reaches a height of 70 metres. How high in
+metres will the ball reach in its third bounce?
+A. 25 metres
+B. 25.2 metres
+C. 26.3 metres
+D. 24.9 metres

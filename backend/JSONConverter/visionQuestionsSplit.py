@@ -34,7 +34,7 @@ def splitChoices(list):
     return temp
 
 # ---> Splitting the text to have just choices and the questions
-questionTxt = open("backend/tesseract/visionQuestions/question.txt")
+questionTxt = open("backend/tesseract/visionQuestions/questionV2.txt")
 questionText = questionTxt.read()
 splitQuestionText = questionText.split("\n")
 questions = []
@@ -80,7 +80,7 @@ jsonFormatData = {
 }
 # <-- End.
 
-question_file = open('backend/JSONConverter/JSONFormatQuestions/VisionQuestionJSON.txt', 'a')
+question_file = open('backend/JSONConverter/JSONFormatQuestions/VisionQuestionJSONV2.txt', 'a')
 
 #--> Splitting the choices make each one a seperate element
 for choicesForEachQ in range(len(choices)):
@@ -95,7 +95,7 @@ for eachQuestionAndChoice in range(len(questions)):
     jsonFormatData["Question"] = questions[eachQuestionAndChoice]
     jsonFormatData["Choice"] = choices[eachQuestionAndChoice]
     print("Uploading question", eachQuestionAndChoice+1,"of",len(questions))
-    # db.collection('visionQuestions').add(jsonFormatData)
+    db.collection('visionQuestions').add(jsonFormatData)
     data = js.dumps(jsonFormatData, sort_keys=True, indent=4)
     question_file.write(data+"\n")
 question_file.close()
