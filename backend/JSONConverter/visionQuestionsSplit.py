@@ -2,6 +2,18 @@ import visionQuestionsClassfier as questionClassifier
 import classifierQuestions as cq
 import json as js
 
+#--> Firebase Setup
+import firebase_admin
+from firebase_admin import credentials
+from firebase_admin import firestore
+# Use the application default credentials
+cred = credentials.Certificate("backend/credentials/Credentials.json")
+firebase_admin.initialize_app(cred, {
+  'projectId': "bhutanexamfactory-d7ea2",
+})
+db = firestore.client()
+# <-- End.
+
 def splitChoices(list):
     """
     Function to divide the choices as seperate elements
@@ -82,7 +94,10 @@ for choicesForEachQ in range(len(choices)):
 for eachQuestionAndChoice in range(len(questions)):
     jsonFormatData["Question"] = questions[eachQuestionAndChoice]
     jsonFormatData["Choice"] = choices[eachQuestionAndChoice]
+    print("Uploading question", eachQuestionAndChoice+1,"of",len(questions))
+    # db.collection('visionQuestions').add(jsonFormatData)
     data = js.dumps(jsonFormatData, sort_keys=True, indent=4)
     question_file.write(data+"\n")
 question_file.close()
 questionTxt.close()
+print("All questions have been uploaded to the console. The txt file has been save in the folder 'JSONConverter/JSONFormatQuestions.'")
