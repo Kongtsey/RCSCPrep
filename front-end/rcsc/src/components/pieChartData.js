@@ -19,7 +19,7 @@ class CorrectWrong extends Component{
         let docPath = this.props.category;
         let user = fire.auth().currentUser;
         let questionRef = db.collection(user.email).doc(docPath).collection("Questions");//abc
-        let responseQuery = questionRef.where('UserHasResponded','==',true);
+        let responseQuery = questionRef.where('UserHasNotResponded','==',false);
         responseQuery.get().then(snapshot => {
             if (snapshot.empty){
                 this.setState({pending: false});
@@ -35,7 +35,7 @@ class CorrectWrong extends Component{
                 console.log(err);
             });
         if(this.state.pending === true){
-            responseQuery.where('IsAnswerCorrect','==',true).get()
+            responseQuery.where('IsCorrectAnswer','==',true).get()
                 .then(snapshot =>{
                     if (snapshot.empty){
                         this.setState({pending: false});
