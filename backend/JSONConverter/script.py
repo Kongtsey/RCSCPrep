@@ -1,5 +1,6 @@
 import classifierQuestions as cQ
 import json as js
+<<<<<<< HEAD
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
@@ -9,6 +10,17 @@ firebase_admin.initialize_app(cred, {
   'projectId': "bhutanexamfactory-d7ea2",
 })
 db = firestore.client()
+=======
+# import firebase_admin
+# from firebase_admin import credentials
+# from firebase_admin import firestore
+# # Use the application default credentials
+# cred = credentials.Certificate("../credentials/Credentials.json")
+# firebase_admin.initialize_app(cred, {
+#   'projectId': "bhutanexamfactory-d7ea2",
+# })
+# db = firestore.client()
+>>>>>>> 1b6828a9459d54c1fab2bb3ee7b6cb20356ba4d2
 
 
 def choicesSplitter(list):
@@ -78,7 +90,7 @@ for i in range(len(questions)):
     questionsAnswers["Question"] = questions[i]  # each question is stored in question
     questionsAnswers["Choice"]=choices[i] #assign the right array to the choice in form on indexes
     data = js.dumps(questionsAnswers, sort_keys=True,indent=4)  # and then choice and question are converted and process repeats.
-    db.collection('Questions').add(questionsAnswers)
+    # db.collection('Questions').add(questionsAnswers)
     json_file.write(data + "\n")
 json_file.close()
 prblmSlvPage.close()

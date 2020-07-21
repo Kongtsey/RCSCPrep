@@ -1,0 +1,986 @@
+An Authentic and Affordable Guide to Securing Your Future
+B. Nu. 140
+C. Nu. 60
+D. Nu. 160
+Solution:
+'Premium' means an amount of money paid to get insurance. (For example; Car insurance
+premiums have increased this year. The premiums for healthcare plans are high.)
+The share value is Nu. 100 and the premium is 60% of the share value. 60% of Nu.100
+is Nu.60. So, in total a subscriber shall pay Nu.160.
+94. A landmark in North America passes through a longitude of 450 West and
+has a local time of 7:00 hours. What will be the time in Paro fortress in
+Bhutan in 24 hours format?
+A. 15:00 hours
+B. 16:00 hours
+C. 17:00 hours
+D. 18:00 hours
+Solution:
+The landmark is 450 West meaning the time at it will be 3 hours late than that of
+London. Paro is yet another 90° east of London. This means additional 6 hours from
+London. So, when it is 7:00 at the Landmark in North America, it must be (3 + 6) hours
+ahead of it in Paro. This is 16:00 hours in 24 hours format.
+95. Langa, Jamtsho and Pemba are competing in a 200 meter dash. Jamtsho
+falls down while Pemba overtakes Langa. However, Jamtsho recovers and
+overtakes Pemba. Langa was last. Who was first?
+A. Jamtsho
+B. Pemba
+C. Langa
+D. None
+(Ans. A)
+96. When 100 is divided by half and multiplied by 2, the result is:
+A. 100
+B. 200
+C. 300
+D. 400
+Solution:
+Page 69 of 228
+An Authentic and Affordable Guide to Securing Your Future
+89. A mountain bike costs Nu. 25,000. Pempa rode the cycle and while going
+home he damaged the front wheel by hitting it to a big stone. To repair, he
+paid Nu. 2500. What percentage of the total cost of the cycle did he pay
+for
+repairing?
+A. 20%
+B. 10%
+C. 30%
+D. 25%
+Solution:
+Original cost of the bike = Nu. 25,000
+Cost of repairing = Nu. 2500
+Percentage cost of repairing = X 100
+= 10%
+We conclude that Pempa spent 10% of the total cost of the bicycle for repairing.
+2500
+25000
+90. One-fifth of a banana was given to a monkey. The other monkey demanded
+equal size of the banana too. I had only one banana. How much of the
+banana is left with me?
+A. 2/5th
+B. 1/5th
+C. 3/5th
+D. 4/5th
+Solution:
+Portion given to the first monkey = 1/5 of a banana,
+Portion demanded by and given to the second monkey
+= 1/5 of a banana,
+2
+Total portion given to monkeys =
++
+ten
+Initial banana with me =1
+2
+5
+Portion left with me = 1 -
+=of a banana
+91. Vijay, Nayan and Nazdeep can complete a work in 5 days. How many days
+will Nayan and Nazdeep take to complete the same work, assuming they all
+put the same effort for the work?
+A. 10 days
+B. 6 days
+C. 5.5 days
+D. 7.5 days
+
+34. Look at the figure below:
+Total number of blocks in total when a 12-step staircase is completed is:
+A. 55
+B. 70
+C. 78
+D. 96
+Solution:
+From the figure, to complete the first stair, one block is required. To complete the
+second stair, two blocks are needed. Three is needed to complete the third stair and the
+trend continues. So, to complete the 12th stair, 12 blocks will be required.
+So, the total number of blocks required to complete the staircase would be
+1+2+3+4+5+6+7+8+9+10+11+12,
+=78 blocks.
+Other Method;
+This question is related to sequence and series. It is in arithmetic progression since only
+one block increases for each next stair.
+a = 1, d = 1, n = 12
+We are asked to find S12
+We know, Sn = [2a + (n - d)]
+[2 x 1 +(12 - 1)]
+2
+S12=
+2
+Page 71 of 228
+Solution:
+Time taken by Wangpo to finish the work=4 days,
+In 1 day, he can finish=1/4 of the total work,
+In the similar way, Tashi and Karma can finish 1/3th and 1/7th of the total work
+respectively in a day.
+When they unite and work, they can finish/4+1/3+ 1/7 of the total work in one day.
+.i.e. 61/84 of the total work in a day,
+So, they will take 84/61 days to complete the work which is 1.37 days.
+65. Penjore, Choki, Lhamo and Dorji speak many languages. Penjore and Choki
+speak Chinese while the others speak Arabic. Choki and Dorji speak
+Dzongkha. Everyone but Penjore speak Hindi. Who is the one speaking
+only Arabic and Hindi?
+A. Penjore
+B. Choki
+C. Lhamo
+D. Dorji
+Solution:
+Let us make some simple relations or equations based on the above lines.
+Second sentence -- Penjore and Choki = Chinese
+Lhamo and Dorji = Arabic
+Third sentence ---Choki and Dorji = Dzongkha
+Fourth sentence --Choki, Lhamo and Dorji = Hindi
+The name coming in only Hindi and Arabic is Lhamo.
+66. Drinking glasses are stacked forming a pyramid with one glass less in the
+successive layer. There are six glasses in the bottom layer. How many layers
+are there in total?
+A. 4
+B. 5
+C. 6
+D. 7
+Solution:
+The first layer would have 6 glasses. The second one will have 5 glasses, the third 4, the
+fourth 3, the fifth 2 and the sixth will have only one glass. We observe that there are six
+layers in total.
+Page 57 of 228
+Solution:
+From first sentence: Tandin < Khando
+From second sentence: Yeshey < Tandin
+Yeshey < Tandin < Khando
+The third sentence says Yeshey < Khando which is true.
+61. A is 2 years older than B while B is twice as old as C. The sum of their ages
+is 27. How old is B?
+A. 5 years
+B. 10
+years
+C. 15 years
+D. 20 years
+Solution:
+Let the ages of A, B and C be a, b and c respectively.
+Given a = 2 + b
+(1)
+b = 2c
+(2)
+Now, a + b + c = 27
+Putting (1) and (2) in the above equation:
+2 + b + 2c + c = 27
+Which is,
+2 + 2c + 2c + c = 27
+5c + 2 = 27
+C= 5
+Now, putting c = 5 in (2)
+b = 10
+So we conclude that the age of B is 10years.
+Cross-Checking the answer;
+C=5, b= 10. Now we get a=12, (2+b).
+Given condition; a+b+c=27
+.i.e. 12+10+5=27
+27=27
+So, our solution is correct.
+62. Let B be the simple interest earned by certain amount for a certain rate in 6
+years and D be the simple interest earned by the same amount for same rate
+in 9 years. The ratio of B to D is:
+A. 1:2
+B. 2:3
+C. 3:4
+D. 4:5
+Page 55 of 228
+An Authentic and Affordable Guide to Securing Your Future
+10 men working 8 hours a day can complete the work in 12 days. If we say, only 5 men
+work for same 8 hours, the number of days taken to complete the work will double, 24
+days.
+(By 5 men) 8 hours = 24 days
+1 hour = (24x 8) days -
+- (1)
+Second condition:
+men are working only 2 hours a day. We are asked to find the number of days taken
+by them.
+Equation (1) is also based on 5 men.
+So, (5 men) 2 hours = days
+24x8
+2
+= 96 days
+85. In a night party of 59 persons, 30 are dancing while 23 are drinking. 5 of
+them are dancing and drinking at the same time. Find the number of
+persons who are neither drinking nor dancing.
+A. 10
+B. 11
+C. 13
+D. 16
+Solution:
+It is not stated that 30 are only dancing and 23 are only drinking. So the 5 who are
+dancing and drinking at the same time are included in these 23 drinkers and 30 dancers.
+So, number of only dancers are 25 (30 - 5) and only drinkers are 18 (23 - 5). So those
+engaged either in dancing or drinking are 25+18+5 which is 48. Now,
+Those who are neither drinking nor dancing = Total persons - sum of those who are
+either drinking or dancing.
+.i.e. 59 - 48 which is 11.
+Dancing
+Drinking
+5
+30.6=25
+23.5.18
+59-(5+25+18)=11
+86. The next number in the series is: 4, 7, 12, 19, 28 ...
+A. 33
+Page 65 of 228
+An Authentic and Affordable Guide to Securing Your Future
+D. 38.23°C
+Solution:
+Average of any given data set means the result of sum of all the data divided by the
+quantity of the data.
+34 + 39 + 37 + 41
+Average Temperature
+4
+= 37.75°C
+18. A number when increased three times divided by five and increased by four
+gives back the number. Which is the number?
+A. 5
+B. 10
+C. 15
+D. 20
+3Z
+5
+Solution:
+Let the number by anything, say Z.
+Given,
+3Z+5+4=Z
+Solving the equation, +4=Z
+Z=10
+Cross-Checking the answer
+We got the number as 10. Now applying the conditions for the number;
+10x (3) -5 +4 = 10
+10=10
+Our solution is right.
+19. Namgay is heavier than Dargay. Nagpo weighs less than Dargay. Karpo is
+heavier than Nagpo but lighter than Dargay. Which of the following
+statement is NOT true?
+A. Namgay is heaviest of all.
+B. Karpo is heavier than Nagpo.
+C. Dargay weighs less than Namgay.
+D. Nagpo is the second lightest of all.
+Solution:
+The best method I have found and used myself in such a relationship question is to make
+an equation or comparison for each line of the question. This will lead you to getting a
+single comparison or equation easily at the end which will compare all the given objects
+(persons in this case).
+Page 35 of 228
+An Authentic and Affordable Guide to Securing Your Future
+We
+got
+the empty value (?) as 30%. The empty value here represents the percentage of
+Merakpas who speaks both English and Brami.
+So, the minimum number of Merakpas speaking both English and Brami is 30%.
+21. Look at the number patterns and study the sequence carefully. You must
+guess the next sequence rightly.
+2
+12
+1112
+3112
+132112
+1113122112
+A. 311132211212
+B. 311222331312
+C. 322331233112
+D. 311311222112
+Solution:
+2(the first term is 2
+12 (the next term just counts each digit of the previous term, one 2)
+1112 (one 1 and one 2, however the count is written in digit form)
+3112 (three 1 and one 2)
+132112 (one 3 two 1 and one 2)
+1113122112 (one 1 one 3 one 2 two 1 and one 2)
+1
+The next term would be (three 1 one 3 one 1 two 2 two 1 and one 2). When written all
+in digit form, it is 311311222112
+22. Norden needs to transport a dog, a duck and corn in a boat across a river.
+The boat is capable of transporting Norden and one of the other three at
+each crossing. Norden succeeded in crossing them all without letting the
+dog eat the duck or the duck eat the corn. Which of the following sequence
+of events made him possible in crossing them all safely?
+A. He ties the dog to a tree and transports the com. He returns and takes the
+duck. Finally he returns to untie the dog and transports the dog.
+B. He transports the dog. He returns to get the duck, transports the duck but
+brings back the dog. He leaves the dog on the shore and crosses with corn.
+He leaves corn with the duck and returns to get the dog.
+Page 37 of 228
+An Authentic and Affordable Guide to Securing Your Future
+motino
+im 0
+020 base
+216 = 13
+Or, l= 216
+= 6 m.
+80. A carpet to cover a floor of 30m by 20m costs Nu. 800 in Jaigoan. However,
+Deki wants to buy a carpet to cover her kitchen floor of exactly 20m by 15m.
+What will be the cost of the needed carpet?
+A. Nu. 500
+B. Nu. 300
+C. Nu. 1500
+D. Nu. 400
+Solution:
+First case:
+Total area to be covered = 30m by 20m = 600m2
+600m2 = Nu. 800
+800
+1m2 = Nu.
+600
+Deki wants to be a carpet of area = 20m by 15m which is 300m2
+So, 300m2 =Nu. X 300 = Nu. 400
+800
+600
+81. Pema took six different amounts of time in minutes to finish a hundred meter
+distance from Monday to Saturday respectively as given below: 20, 15, 10, 8, 9,
+and 5. What is the arithmetic mean of the time he consumed?
+A. 13
+B. 12.54
+C.11.17
+D. 15.87
+Solution:
+sum of all the values
+Arithmetic mean of a given set of values =
+number of values
+20+15+10+8+9+5
+Arithmetic mean here =
+6
+= 11.17
+82. Three friends of Euden each bought the same number of apples on her
+birthday party. Three of them had promised to buy all the apples needed for
+Page 63 of 228
+Solution:
+We get the word TEACHER which is name of a profession.
+70. Lungten has an average mark of 90 in three subjects' tests. While appearing
+the fourth subject, he scored 70. The average mark of the four subjects is:
+A. 80
+B. 85
+C. 90
+D. 95
+Solution:
+Average in the first three subjects = 90
+The score in the fourth subject = 70
+Average of the four subject =
+90+90+90+70
+4
+= 85
+71. An object travels at 7metres per minute. How much does it travel in 7
+minutes and 3 seconds?
+A. 49.43m
+B. 49.78m
+C. 49.67m
+D. 49.35m
+Solution:
+The object travels 7m per minute .i.e. 1min = 7m
+Or, 60 sec = 7m
+7
+1 sec = -m
+So, in 3 sec = 50 x 3 m = 0.35 m
+Now, in 7 minutes it's sure it will travel 7 x7 metres.
+So, in 7.3 minutes, he will travel 7x7m plus 0.35 metres which is 49.35 metres.
+60
+7
+60
+72. A dog and a cat are 50 metres far from each other. A pig is sleeping at a
+distance of 10 metres from the cat. The distance between the pig and the
+dog are:
+I. 40 metres
+II. 30 metres
+III. 50 metres
+IV. 60 metres
+A. I and II
+B. I and IV
+C. II and III
+D. II and IV
+Solution:
+'Premium' means an amount of money paid to get insurance. (For example; Car insurance
+premiums have increased this year. The premiums for healthcare plans are high.)
+The share value is Nu. 100 and the premium is 60% of the share value. 60% of Nu.100
+is Nu.60. So, in total a subscriber shall pay Nu.160.
+94. A landmark in North America passes through a longitude of 450 West and
+has a local time of 7:00 hours. What will be the time in Paro fortress in
+Bhutan in 24 hours format?
+A. 15:00 hours
+B. 16:00 hours
+C. 17:00 hours
+D. 18:00 hours
+Solution:
+The landmark is 450 West meaning the time at it will be 3 hours late than that of
+London. Paro is yet another 90° east of London. This means additional 6 hours from
+London. So, when it is 7:00 at the Landmark in North America, it must be (3 + 6) hours
+ahead of it in Paro. This is 16:00 hours in 24 hours format.
+95. Langa, Jamtsho and Pemba are competing in a 200 meter dash. Jamtsho
+falls down while Pemba overtakes Langa. However, Jamtsho recovers and
+overtakes Pemba. Langa was last. Who was first?
+A. Jamtsho
+B. Pemba
+C. Langa
+D. None
+(Ans. A)
+96. When 100 is divided by half and multiplied by 2, the result is:
+A. 100
+B. 200
+C. 300
+D. 400
+Solution:
+Page 69 of 228
+Given, 3b = 15m
+b = 5n
+m = 5n and also b = 5n
+This means b =m
+75. Nima runs in a marathon competition organized in his district. He
+overtakes the second person. His position is:
+A. First
+B. Second
+C. Third
+D. Last
+Solution:
+He overtakes the second person not the first one. So his position is second.
+76. A number is an integer that is natural, rational and whole number. Which is
+the number?
+A. 0
+B. 1
+C. 3.2
+D. -5
+(Ans. B)
+77. Which number fulfils the pattern: half, one-fourth, one-eight, one-
+sixteenth...?
+A. 1/28
+B. 1/32
+C. 1/36
+D. 1/40
+Solution:
+1
+1 1
+1
+II.
+8
+16
+The given pattern is
+2'4
+The given pattern or sequence is in Geometric Progression since the next term is half its
+preceding term.
+Common ratio, r= or
+1.1
+r=0.5
+So the required term is half of 1/16 which is 1/32.
+:
+NIE
+8
+4
+Page 61 of 228
+An Authentic and Affordable Guide to Securing Your Future
+So when the hand moves from 3 to 12 (crossing 4, 5, 6...up to 12), it completes % of
+360°.
+11
+1
+9
+3
+6
+2
+/
+3
+4
+x 360 = 270º. We multiply 3/4 by 360 since we are converting the quantity in terms
+of angle and the total angle of a circle is 360°.
+So, when the hour-hand starts from 3 and reaches 12, it has made an angular movement
+of 2700
+37. I am sixteen years old, four times your age. When I am twice as your age,
+what will my age be?
+A. 8
+B. 12
+C. 32
+D. 24
+Solution:
+We can solve this question easily by the following method.
+My age is 16 and I am four times older than you. So your age at present must be
+16+ 4 = 4.
+Now, we shall count our ages for the coming years until my age becomes twice your
+age.
+My age
+Present
+16 + 4 = 4
+16
+Your age
+17
+18
+After 1 year
+After 2 years
+After 3 years
+After 4 years
+5
+6.
+7
+8
+19
+20
+After 5
+years
+21
+10
+22
+After 6 years
+After 7 years
+After 8 years
+11
+23
+12
+24
+We can see from the table that when I am at the age double of yours, my age will be 24.
+38. Choose the number which is 1/4 of half of 1/5 of 200.
+A. 10
+B. 4
+C. 5
+D. 9
+Page 45 of 228
+An Authentic and Affordable Guide to Securing Your Future
+om omota
+Let the present age of daughter be ‘. From the question, the present age of father is 2d.
+It is no doubt that the age of daughter after 10 years will be d+10 and father's 2d+10.
+But we have got more information on their ages after 10 years. The ratio of their ages
+after 10 years will be 5:3.
+Ratio of the age of father to daughter after ten years= 5:3
+From the table we also know the ratio will be = (2d+10) : (d+10)
+The two of the above are same
+5:3 = (2d+10) : (d+10)
+It is same as,
+2d + 10
+3 d + 10
+By cross-multiplying;
+5(d+10 = 3(2d+10)
+d=20, which is the present age of daughter.
+Now the present age of the father is 2d
+5
+= 40 years.
+So, the present ages of the father and daughter are 40 and 20 years respectively.
+13. Karpo has three children. Tashi and Pema are the two younger brothers of
+Zepa. However, Zepa is neither brother of Tashi nor Pema. What is the
+relation between Karpo and Zepa?
+A. Father and step-son
+B. Husband and wife
+C. Brother and sister
+D. Father and daughter
+Solution:
+Tashi, Pema and Zepa are the three children of Karpo.
+It is mentioned that Zepa is not a brother of Tashi and Pema. But Zepa is a child of
+Karpo and if Zepa is not brother, Zepa must be Sister of both. So we can say Zepa is
+the daughter of Karpo.
+14. Tshering owns 120 guitars. 25% of the total number of guitars is from
+Gibson Company. How many guitars with Tshering are from companies
+other than Gibson?
+A. 70
+B. 50
+C. 110
+D. 90
+An Authentic and Affordable Guide to Securing Your Future
+MA00
+Routes
+2
+3
+XO
+Y
+10. There were 20 questions in a multiple choice section in an examination
+paper. Phuntsho gets 10 marks for each correct answer and loses 5 marks for
+each wrong answer. He observes that he scored 155 out of 200. How many
+questions did he answer wrongly?
+A. 5
+B. 3
+C. 4
+D. 6
+Solution:
+We need to frame equations for such a question. Let x and y be the number of
+questions answered correctly and wrongly by Phuntsho respectively. Since the total
+number of questions is 20, total questions answered by him will also be 20.
+x + y = 20
+x= 20 -y -
+(1)
+He gets 10 marks for each correct answer and loses 5 marks for each wrong answer.
+The total mark he gets is 155. So an equation can be framed as below:
+10x-5y = 155
+(2)
+Using (1) in (2)
+10 (20 -y) - 5y =155
+y = 3
+We have assumed y as the number of questions he answered wrongly. So the number of
+answers he answered wrongly is 3.
+Answer Cross-Check
+In this kind of questions, we can also cross-check the answer to confirm if our solution
+is right. If he has answered 3 questions wrong, then he must have definitely answer 17
+questions correctly. So, this must conform to the equation (2).
+10x-5y = 155; here our x=17 and y=3,
+Applying these values in equation (2);
+10 (17) - 5 (3) =155,
+170 - 15 =155
+155 =155; the terms on the left and right are equal meaning our solution is correct.
+Page 31 of 228
+An Authentic and Affordable Guide to Securing Your Future
+B
+-C
+A
+Option A: c and b.
+c says A is two miles south of B. b says B is two miles east of D. so, from these we
+don't really get the actual position of A.
+Option B: d and b.
+d
+says
+D is north-west of A. b says B is two miles east of D. From these also, we can't
+actually know the position of A.
+Option C: a and d.
+a says A is two miles south of B. d says D is north-west of A. Even from here, we can't
+conclude the position of A.
+Option D: a and c.
+A is two miles south of B. C is two miles east of B. So, A is south-west of C.
+a says
+33. The relation between 274 and 96 is:
+A. 274>96
+B. 274< 96
+C. 274 = 96
+D. Can't be determined
+Solution:
+The answer can be easily computed using a calculator to save time. They are equal.
+34. The next number in the series is:
+38
+338
+3338
+33338
+333338
+A. 33333338
+B. 333333338
+C. 333338
+D. 3333338
+
+75
+Solution:
+Total number of students in the class = 125
+Number of male students
+Number of female students = total students - no. of male students
+= 125 - 75
+= 50 females
+Percentage of female students in the class
+no.of female students x 100
+total students
+50
+X 100
+125
+= 40%
+25. Drakpa pays 50% of his monthly income as house rent and 25% as his loan
+repayment. He spends Nu. 2,000 on food and drinks. He still saves Nu.
+5,000 per month and keeps in his locker. What is Drakpa's monthly income?
+A. Nu. 14,000
+B. Nu. 20,000
+C. Nu. 35,000
+D. Nu. 28,000
+Solution:
+This question demands a simple logic and ability to be a bit smart.
+In total he spends 75% of his income on house rent and loan repayment. Now the
+leftover is 25%.
+He spends 2,000 on food and drinks and finally saves 5,000 monthly.
+We should understand that the last 25% (that we didn't include as house rent and loan
+repayment)are the sum of his expenditure on food and drinks, and his monthly savings.
+This is 7,000.
+So, 25% comes out to be 7,000.
+His monthly income must be hundred percent,
+Therefore, 25% X 4 = 100%
+Likewise, 7,000x 4 = 28,000
+His monthly salary is Nu. 28,000
+Page 39 of 228
+eigar
+An Authentic and Affordable Guide to Securing Your Future
+gobasa o
+This question can be solved in an easy manner with the help of a diagram. I would
+151 152
+recommend you to draw such tables roughly and solve such questions in the exam since
+you have limited time. Choosing other ways to solve this kind of questions will consume
+more time.
+Order
+Item
+Remarks
+Micro Oven
+1
+2.
+در
+Laptop
+Mobile Phone
+IPod and Headphones
+Above Mobile Phone
+Below the Micro Oven
+Just above the IPod
+They share the rack
+Empty
+Lowest rack
+4
+ол
+Rice Cooker
+a
+So, Micro Oven is on the topmost rack.
+28. Kinzang and Tashi were given an apple pie each. Kinzang ate 2/3 of the pie
+and Tashi ate 3/4. What portion of the apple pie did they eat all together?
+A. More than one pie.
+B. Less than a pie.
+C. Three-sixth of a pie.
+D. Five- seventh of a pie.
+Solution:
+2
+Kinzang ate of a pie
+Tashi ate 34 of a pie.
+They ate in total, + = +2 = 1.42 of a pie.
+1.42 pies is more than a pie of apple. So they ate more than a pie all together.
+29. When a heavy object is lifted under water, it is easier to lift than lifting the
+same object in the air. Which of the following provides the best reason for
+this?
+A. When the object is immersed in the water, the water absorbs some of the
+weight of the object. Thus the weight of the object decreases.
+B. When an object is immersed in water, some weight of the object is lost on
+the surface of the water thereby reducing the weight of the object in water.
+C. When an object is immersed in water, the gravitational force of the earth acts
+in the opposite direction that is upward force.
+D. When an object is immersed in water, it experiences an upward thrust and
+loses weight equal to the water displaced by the immersed object and hence
+becomes lighter.
+(Ans. D)
+Page 41 of 228
+Given,
+20:4=X: 5
+20
+20 = (Ratio of 20:4 means 20+4)
+This is similar to:
+5?
+Now, cross multiplying, 20 X5 = 4xX
+100 = 4X
+X= 25
+5. If M+N=20, and M and N are positive integers, what is the value of
+10M+10N?
+A. 10
+B. 4
+C. 100
+D. 200
+Solution:
+Given equation is M+N=20-------- (1)
+To find
+10M + 10 N=? ---- (2)
+What do we observe and learn from the two equations above? We notice that all the
+terms in the first equation is being multiplied by 10 to get equation (2). For the equation
+to be correct, the answer-part of equation (1) must be also multiplied by the same
+number, 10.
+Now the answer comes out to be 200.
+6. The price of a shirt increased 8 points, then decreased 13 points, and then
+increased 9 points. If the price of the shirt at first was S, which of the
+followings was the shirt's price after all the changes?
+A. S+5
+B. S-5
+C. S+4
+D. S-3
+Solution:
+Original price of the shirt is S.
+At first, the price increased by 8. The cost then is S + 8.
+It then decreased by 13. The cost after this decrease is S + 8 – 13
+Finally, the cost increased by 9. The final cost will be S + 8 – 13 + 9 which is same as
+S+4.
+7. Peljor must reach his office at 9:00 AM. Assuming that he takes 50 minutes
+to cook and eat his breakfast, and 45 minutes to reach his school, at what
+time should he get up?
+A. 7:00 AM
+B. 7:25 AM
+C. 7:35 AM
+D. 7:45 AM
+Page 29 of 228
+An Authentic and Affordable Guide to Securing Your Future
+Problem Solving Exercise
+1. A foundry has a fixed daily cost of Rs. 50,000 whenever it operates and a
+variable cost of Rs. 8000, where Q is the daily production in tonnes. What is
+the cost of production in Rs. per tonne for a daily production of 100 tonnes?
+A. 1,30,000
+B. 1300
+C. 80,000
+D. 50,00,000
+Solution:
+Fixed cost of production per day = Rs. 50,000
+Variable Cost of production per day = 800 Q, where Q is the daily production in
+tonnes.
+Total cost of production per day = 50,000 + 800 Q
+Given, Q=100
+So, total cost of production on that day
+=50,000+800(100)
+= 1, 30,000
+Now, cost of production per tonne that day =
+= Rs. 1300
+130000
+100
+Solution:
+Page 27 of 228
+An Authentic and Affordable Guide to Securing Your Future
+Solution:
+We can say that the two elements are added and the result is multiplied with the first
+element. This results to the element right to the equal sign.
+First, 2+3=5 and 5x 2(first term) = 10.
+Likewise, 3+5=8 and 8 X 3(first term) =24. Now what we need is 6+11=17 and
+17X6=102
+47. If you unscramble the letters ZILBRA, you will get the name of a:
+A. Plant
+B. Animal
+C. Flower
+D. Country
+Solution:
+We BRAZIL which is name of a country.
+get
+48. On working 12 hours a day, a work is completed in 16days by 24 men. How
+many days can the same work be done by 8 men considering they work only
+6 hours a day?
+A. 69 days
+B. 100 days
+C. 78 days
+D. 96 days
+Solution:
+First scenario:
+24 men can complete a work in 16days working 12 hours a day.
+...e. 24 men = 16 days (considering they work 12 hours daily)
+If they work only half the time .i.e. 6 hours daily, the time taken to finish the work
+would be double the time they take now. They would take 32 days.
+.e. 24 men = 32 days (considering they work 6 hours daily)
+1 man = (32 X24) days
+(1)
+Now, the question asks us to find the time that would be taken to complete the same
+work by 8 men considering they work 6 hours daily.
+Modifying (1):
+32x24
+8 men =
+days
+8
+= 96 days
+49. What decimal of an hour is second?
+A. 0.36
+B. 0.0036
+C. 0.00027
+D. 0.000060
+42. The sum of ages of five children born at the intervals of 3 years each is 50
+years. What is the age of the youngest child?
+A. 3 years
+B. 4 years
+C. 5 years
+D. 7 years
+Solution:
+Let the ages of five children be X, X+3, X+6, X+9 and X+12; their intervals are 3
+years.
+Given, sum of ages of all children is 50.
+.i.e. X+ (X+3) + (X+6) + (X+9) + (X+12) = 50
+5X + 30 =50
+X = 4
+Since X in the assumption is the age of the youngest child, the age of the youngest child
+is 4 years.
+Cross-Checking the answer;
+X+ (X+3) + (X+6) + (X+9) + (X+12) = 50
+Using X=4;
+4+7+10+13+16 = 50
+50 =50
+The value of X=4 fulfils the equation. So our solution is correct.
+43. I am a time of the day. I am in Tokyo (Japan) when it is 7:30 AM in Delhi
+(India). Assume that Delhi time is half an hour behind the time in Thimphu
+(Bhutan). I am:
+A. 11 AM
+B. 10 AM
+C. 11 PM
+D. 10 PM
+Solution:
+Solution:
+Total number of boxes = 10
+Number of shaded boxes = 4
+percentage of shaded boxes
+(number of shaded boxes)
+* 100
+total number of boxes
+= x 100
+X 100
+= 40%
+52. There are 24 persons attending a workshop in Gasa. For every 9 males there
+are 3 females. How many males and females are there attending the
+workshop?
+A. 20 males and 4 females
+B. 15 males and 9 females
+C. 18 males and 6 females
+D. 19 males and 5 females
+Solution:
+Total persons are 24. Let the number of male be 'm' and female be 'P respectively. The
+number of males are 3 times the number of females. So m=3f.
+Total,
+m + f= 24
+Or,
+(3f) + f =24; since for every female, there are 3 males.
+4f = 24
+f=6
+Then, m = 3(0) = 18
+So, there are 18 males and 6 females. We can also check the answers by seeing if the
+answers conform to the given conditions.
+53. A number of artists are called in a museum. 15 of them only do pencil
+sketching while 10 do both pencil sketching and oil painting. Only 5 do oil
+painting. How
+many artists were there in total?
+A. 25
+B. 30
+C. 20
+D. 35
+Solution:
+Peljor needs to reach office at 9:00AM.
+Time taken by him to cook and eat = 50 minutes
+Time taken to reach school = 45 minutes
+Total time taken = 50+45 = 95 minutes (one hour 35 minutes). This means that to
+reach his office on time he must wake up 1 hour and 35 minutes before 9:00AM which
+is 7:25AM.
+8. 15 is what percent of 225?
+A. 15%
+B. 30%
+C. 6.67%
+D. 5.78%
+Solution:
+From the question, we understand that 15 is a certain percent of 225. Let us assume that
+the certain percent be X.
+Now, we get the equation 15=X% of 225
+On further solving the equation
+X
+15 = X 225
+100
+X= 6.67 %.
+9. There are 7 routes for a journey from point X to Y. In how many ways can a
+person go from X to Y and return, if for returning the same route is taken?
+A. 14
+B. 12
+C. 6
+D. 7
+Solution:
+You take the same route while coming back. This means that there are seven different
+routes which
+you can take.
+Page 30 of 228
+Problem Solving Exercise
+ball
+ball
+ball
+**70m
+ball
+c=?
+Let a, b and c be the heights at first, second and third bounces. a=70m
+b= -x 70 = 42m
+{ x 70 = 42m
+c=42
+3
+5
+x 42 = 25.2m
+56. If one-fourth of one-third of a number is 20, what is half of that number?
+A. 60
+B. 120
+C. 180
+D. 220
+Solution:
+Let the number be R.
+Given,
+{ (R)} = 20
+4 (3
+R = 240
+So, half of 240 is 120.
+57. A number is increased from 30 to 40 and then decreased from 40 to 20. The
+percentage of increase is
+the percentage of decrease:
+A. Equal
+B. Lower
+C. Higher
+D. Can't be determined
+Solutions
+Increase is from 30 to 40. The increase is by 10.
+Percentage of increase = x 100 = 33.33%
+30
+10
+Decrease is from 40 to 20. The decrease is by 20.
+Page 53 of 228

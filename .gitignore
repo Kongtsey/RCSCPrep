@@ -5,4 +5,9 @@ venv/
 __pycache__/
 *.json
 credentials/
+<<<<<<< HEAD
 rcscEnv/
+=======
+rcscEnv/
+pictures/
+>>>>>>> 1b6828a9459d54c1fab2bb3ee7b6cb20356ba4d2
