@@ -1,0 +1,630 @@
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 30",
+        " 35",
+        " 40",
+        " 45"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Tashi felt bored in his math class. He had 20 pencils in his pencil box. He broke each pencil into half and threw five of the broken pencils. How many pencils are left with him?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 3m",
+        " 3m",
+        " m",
+        " n"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " If m=5n and 15n=3b, b=?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " Rises",
+        " Falls",
+        " Remains unchanged",
+        " Overflows"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " An ice cube of good size is placed in a measuring cylinder having water up to 50ml mark and a portion of the ice cube is seen above the water level. When the ice cube completely melts, water level in the cylinder:",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 10 times",
+        " 150 times",
+        " 100 times",
+        " 200 times"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " How many times can you subtract 5 from 500?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 94",
+        " 100",
+        " 102",
+        " 104"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " If 2, 3=10 3,5=24 4, 7=44 5,9=70 6, 11=.........",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 15%",
+        " 30%",
+        " 6.67%",
+        " 5.78%"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " 15 is what percent of 225?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 14",
+        " 12",
+        " 6",
+        " 7"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " There are 7 routes for a journey from point X to Y. In how many ways can a person go from X to Y and return, if for returning the same route is taken?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 0.12 glass of water",
+        " 1.5 glass of water",
+        " 0.79 glass of water",
+        " 2.5 glass of water"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Tashi is making a Thugpa (Porridge) in the morning on a Losar (New Year Festival). He also wants to make a tea. He needs 8/9 glass of water for Thugpa and 2/5 glass of water for tea. He has a glass of water. How much extra water is needed by him?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " Father is 30 and daughter is 15",
+        " Father is 40 and daughter is 20",
+        " Father is 50 and daughter is 25",
+        " Father is 60 and daughter is 30"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " The father is double the age of his daughter. After 10 years, the ratio of their age will be 5:3. Find their present ages.",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " i>ii",
+        " i<ii",
+        " i =ii",
+        " Can't be determined."
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " If B>2, then compare i and ii: i) B-6 ii) B-3",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 8",
+        " 20",
+        " 24",
+        " 16"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Write the next term of the series below: 1, 1, 2, 4, 3, 9, 4..........",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " A is heavier than B",
+        " There were apples and cottons in the two bags",
+        " The bags were stolen by Kezang",
+        " Kezang was the thieve in above incidence"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Kezang stole two bags from a shop in Thimphu. One bag, A, contains a kilogram of apple while the other, bag B, contains a kilogram of cotton. Which statement below is NOT true?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " Country",
+        " Ocean",
+        " Flower",
+        " Profession"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " If you unscramble the letters ETAHRCE, you will get the name of a:",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 12 hours",
+        " 10 hours",
+        " 7.5 hours",
+        " 7 hours"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " You are drunk one night. The distance from the bar to your house is 10 kilometres. You walk 2 kilometres each hour and rest for half an hour. The trend continues till you reach home. How many hours do you take to reach home?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " Defender B",
+        " Defender C",
+        " Defender D",
+        " Defender A"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Four defenders in a soccer match 'Defender A, Defender B, Defender C and Defender D' take their positions in this order in a row from right to left. During the match, Defender A changes places with Defender C. Defender C further changes his position with Defender B. Which Defender is now at the right end of the row?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " Cultural Development",
+        " Economic Development",
+        " Sustainable Development",
+        " Futuristic Development"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Progress that meets the needs of the present generations without compromising the ability of future generations to meet their own needs is called:",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " c & b.",
+        " d & b.",
+        " a & d.",
+        " a &c."
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Identify two statements necessary to make the statement \"A is south-west to C\u201d correct. a. A is two miles south of B. b. B is two miles east of D. C. C is two miles east of B. d. Did north-west of A. The two correct statements are:",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 9 AM",
+        " 9 PM",
+        " 2 PM",
+        " 1 PM"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Tokyo is ahead of Bhutan by three hours. What will be the time in Tokyo if time in Bhutan is 11:00 AM?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " False",
+        " True",
+        " No basis",
+        " Uncertain"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Tandin is younger than Khando. Yeshey was born after Tandin. Yeshey is younger than Khando. If the first two statements are true, the third one is:",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 5.7",
+        " 6.8",
+        " 7.2",
+        " More than 10"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Kinzang Choden can cross a river of length 600m on a boat in 5 minutes. What is her speed in kilometres per hour?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 1 day",
+        " 2. 4 days",
+        " 1.4 days",
+        " 3 days"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Wangpo alone can finish a certain work in 4 days. The same job is finished in 3 and 7 days by Tashi and Karma respectively. If they unite and work together, how many days will they take to complete the same work?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 250:250",
+        " 236:259",
+        " 235:250",
+        " 234:258"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " There are 12 buses and 8 cars. Each car carries 3 passengers while each bus carries 20 passengers except 3 buses which carry 18 passengers each. The ratio between the number of passengers carried by bus to the total number of passengers is:",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 180",
+        " 12",
+        " 270",
+        " 9"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " The hour-hand of a clock is at 3. It gradually moves and reaches 12. The angular measurement in degree of the movement of the hand is:",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 20%",
+        " 30%",
+        " 40%",
+        " 60%"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Merak is at a time where it is losing its language's significance. However, people over there also speak English. If 60% of the Merakpas (people of Merak) speak English and 70% of them speak their own language (Brami), what is the minimum percentage of English speaking Merakpas that also speak Brami",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 27",
+        " 18",
+        " 45",
+        " None of the above"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " All but 18 boys in a class of 45 students had to be terminated from school due to their unhealthy behaviour. How many are left in the class now?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 24",
+        " 36",
+        " 76",
+        " 96"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " If 10 men working 8 hours a day can complete a job in 12 days, how many days will 5 men working 2 hours a day take to complete the same job?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 20 miles",
+        " 40 miles",
+        " 50 miles",
+        " 120 miles"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Two bikes depart from a point at a road junction. One rides towards north at a speed of 40 miles per hour while the other does in the east at 30 miles per hour. What is the distance between them after 1 hour?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 5m",
+        " 6m",
+        " 7m",
+        " 15m"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " The volume of the cube is 216m3. Find the side of the cube.",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " Sister",
+        " Brother",
+        " Sister in law",
+        " Daughter"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " What is the relation of the lady with the one in the portrait if the man points to a portrait and says, \"Her mother is the only daughter of your mother\u201d?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 33",
+        " 34",
+        " 35",
+        " 36"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " What is the next number of the series 1, 2, 3, 5, 8, 13, 21.....?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 40.12\u00b0C",
+        " 38.34\u00b0C",
+        " 37.75\u00b0C",
+        " 38.23\u02daC"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " The temperature in Jalandhar on August 14, 2014, was noted as 34\u00b0C at 9am, 39\u00b0C at 12pm in the afternoon, 37\u00b0C at 5pm and finally 41\u00b0C at 10pm at night. What was the average temperature in Jalandhar on the same day?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 50 plates and 28 cups",
+        " 45 plates and 33 cups",
+        " 57 plates and 21 cups",
+        " 60 plates and 18 cups"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " For every 10 plates there were only 3 cups in a showcase. The sum of the cups and plates was 78. How many cups and plates were there?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 75",
+        " 80",
+        " 85",
+        " 90"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " A student attempted four papers of 100 marks each and in total he got 340 marks when adding all the marks obtained in four papers. The percentage of the obtained mark is:",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 9 AM",
+        " 9 PM",
+        " 6 AM",
+        " 6 PM"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " I am a time of the day. I am in London (United Kingdom) when it is 3:00PM in Tokyo (Japan). Assume that Tokyo time is three hours ahead of Thimphu (Bhutan) time. I am....",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " Nu. 370 per hour",
+        " Nu. 375 per hour",
+        " Nu. 280 per hour",
+        " Nu. 385 per hour"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Vijay, a tourist, wants to go back home to India from Paro to Bagdogra, India. He has two options to reach Bagdogra from Paro. He can either travel by air which takes 30 minutes or by taxi which takes 10 and half hours. The air ticket costs him Nu. 5000 and the taxi fare is Nu. 1250. Other things remaining constant, Vijay would gain by choosing air travel if, and only if, his time were valued at more than:",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " Mobile Phone",
+        " IPod",
+        " Laptop",
+        " Micro Oven"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Six electronic items are stacked in a cupboard divided into several racks. Mobile phone is in the rack right above the IPod and the laptop is in the rack right below the micro Oven. Micro Oven is in the rack above the Mobile Phone and the IPod shares the rack with the Headphones. Rice cooker is kept on the lowest rack. Which item is on the topmost rack?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 10",
+        " 15",
+        " 20",
+        " 25"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " There is a soccer league tournament in Trashigang and there are only five teams participating since it's the first time such tournament is being organized. If each team has to play two matches with all the other teams, how many matches will be played in total in the tournament?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " Nu. 40",
+        " Nu. 140",
+        " Nu. 60",
+        " Nu. 160"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Nu. 100 shares are being sold at a premium of 60% by a company. The price to be paid by a subscriber is:",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 500",
+        " 320",
+        " 210",
+        " 190"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " 30% of the 10,000 class twelve students didn't qualify anywhere. 3% of the qualified students were sent for ex-country scholarship. How many were sent for ex-country scholarship?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 50 km/hr.",
+        " 100 km/hr.",
+        " 150 km/hr.",
+        " 200 km/hr."
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Rinzin is a very busy guy. He has to reach his office on time which is at a distance of 100 km which takes half an hour to reach. At what speed must he travel so that he reaches there exactly in 30 minutes?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " East",
+        " North",
+        " South-East",
+        " South-West"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Jamtsho is facing North-East. He jumps and turns 90\u00b0 in the clockwise direction. From that position he turns 180\u00b0 in the anticlockwise direction and then 90\u00b0 in the same direction. Which direction is he facing at the end?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 3.0",
+        " 2.5",
+        " 1.5",
+        " 1.25"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " One percent of the people of country X are taller than 6 ft. Two percent of the people of country Y are taller than 6 ft. There are thrice as many people in country X as in country Y. Taking both countries together, what is the percentage of people taller than 6 ft?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 20",
+        " 25",
+        " 30",
+        " 40"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " Find the missing value of 20:4=X:5",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 820",
+        " 680",
+        " 790",
+        " 930"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " An umbrella seller had certain number of umbrellas. He sold 30% of his total umbrella yet is left with 553 more in hand. How many umbrellas did he have in total in the beginning?",
+    "UserHasResponded": false
+}
+{
+    "Category": "Quantitative",
+    "Choice": [
+        " 25 metres",
+        " 25.2 metres",
+        " 26.3 metres",
+        " 24.9 metres"
+    ],
+    "CorrectAnswer": 0,
+    "IsAnswerCorrect": false,
+    "Marked": false,
+    "Question": " After being dropped, a football always bounces 3/5th of its previous bounce height. After the first bounce it reaches a height of 70 metres. How high in metres will the ball reach in its third bounce?",
+    "UserHasResponded": false
+}
