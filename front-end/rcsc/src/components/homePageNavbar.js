@@ -120,18 +120,9 @@ class NavigationBar extends Component {
                 name: this.state.name,
                 email: this.state.email,
                 college: this.state.college,
-<<<<<<< HEAD
                 dzongkhag: this.state.dzongkhag,
-<<<<<<< HEAD
               }
-              db.collection(this.state.email).doc("UserProfile").set(data)
-=======
-              };
-=======
-              }
->>>>>>> 1b6828a9459d54c1fab2bb3ee7b6cb20356ba4d2
               db.collection(this.state.email).doc("UserProfile").set(data);
->>>>>>> pyTesseract
               //console.log("email user: ", this.state.email);
               db.collection("Questions")
                 .get()
@@ -153,7 +144,7 @@ class NavigationBar extends Component {
                     counter = 1 + counter;
                     console.log(counter);
                   });
-                  console.log("done copying the database ");
+                  // console.log("done copying the database ");
                 });
 
               db.collection("EnglishQuestions")
@@ -186,7 +177,7 @@ class NavigationBar extends Component {
       .catch((error) => {
         console.log(error);
         this.setState({ errorMessage: error.message });
-      });
+      })
   }
 
   //Render
