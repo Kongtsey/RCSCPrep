@@ -1,5 +1,7 @@
 import pandas as pd  
 from sklearn.feature_extraction.text import CountVectorizer
+from nltk.tokenize import word_tokenize
+
 questionFile = pd.read_csv("backend/NaiveBayesQuestionClassifier/data/questions.csv")
 
 # --> Helpers 
@@ -99,3 +101,16 @@ freqGk = dict(zip(wordListGk,countListGk))
 gkWordsProb = wordProbability(wordListGk, countListGk)
 totalCntGk = countListGk.sum(axis=0)
 # --> End.
+
+# <-- Start of Bayes Probability
+aLogicQuestion = "What is the next letter in the series: k a l b m __"
+wordList = word_tokenize(aLogicQuestion)
+probWordInLogic = []
+for word in wordList:
+    if word in freq_logic.keys():
+        count = freq_logic[word]
+    else:
+        count = 0
+    probWordInLogic.append((count + 1)/(totalCntLogic + totalFeatures))
+print(dict(zip(wordList,probWordInLogic)))
+# End.
