@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from nltk.tokenize import word_tokenize
 
-questionFile = pd.read_csv("backend/NaiveBayesQuestionClassifier/data/questions.csv")
+questionFile = pd.read_csv("backend/NaiveBayesQuestionClassifier/data/Questions.csv")
 
 # --> Helpers 
 # print(questionFile.iloc[0])
@@ -127,7 +127,7 @@ totalCntGk = countListGk.sum(axis=0)
 
 
 
-aLogicQuestion = "what is half of 1/5 of 200"
+aLogicQuestion = "Resourceful restoration is the process of:"
 categoryList = ['Logic','Fraction','Algebra','Comparison','Percentage','Probability','Gk']
 wordList = word_tokenize(aLogicQuestion)
 wordProbabilities = []
