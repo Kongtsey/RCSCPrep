@@ -29,6 +29,16 @@ def bayesWordProb(wordList, wordFreq,totalFeatures, totalCntInClass):
     return(bayesWordProb)
 # End.
 
+# <-- Probability Product
+def probProduct(categoryList, wordProbabilities, map):
+    for eachCategory in range(len(categoryList)):
+        totalProduct = 1
+        for eachWord in wordProbabilities[eachCategory]:
+            totalProduct = totalProduct * eachWord
+        map[categoryList[eachCategory]]=totalProduct
+    return(map)
+# End.
+
 questionDocs = questionFile.loc[:,'Question']
 vectorizer = CountVectorizer()
 X = vectorizer.fit_transform(questionDocs)
@@ -114,7 +124,10 @@ gkWordsProb = wordProbability(wordListGk, countListGk)
 totalCntGk = countListGk.sum(axis=0)
 # --> End.
 
-aLogicQuestion = "What is the next letter in the series: k a l b m __"
+
+
+
+aLogicQuestion = "what is half of 1/5 of 200"
 categoryList = ['Logic','Fraction','Algebra','Comparison','Percentage','Probability','Gk']
 wordList = word_tokenize(aLogicQuestion)
 wordProbabilities = []
@@ -134,3 +147,8 @@ for eachCategory in categoryList:
     else:
         probWordInCategory = bayesWordProb(wordList, freqGk, totalCntGk, totalFeatures)
     wordProbabilities.append(probWordInCategory)
+
+probabilityMap = {}
+probabilityMap = probProduct(categoryList, wordProbabilities, probabilityMap)
+maxProbCategory = max(probabilityMap, key=probabilityMap.get)
+print(maxProbCategory)
