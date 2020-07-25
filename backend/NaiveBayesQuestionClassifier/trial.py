@@ -17,6 +17,18 @@ def wordProbability(wordList, countList):
         probWords.append(count/len(wordList))
     return(dict(zip(wordList, probWords)))
 
+# <-- Start of Bayes Probability Function 
+def bayesWordProb(wordList, wordFreq,totalFeatures, totalCntInClass):
+    bayesWordProb = []
+    for word in wordList:
+        if word in wordFreq.keys():
+            count = wordFreq[word]
+        else:
+            count = 0
+        bayesWordProb.append((count+1)/(totalCntInClass + totalFeatures))
+    return(bayesWordProb)
+# End.
+
 questionDocs = questionFile.loc[:,'Question']
 vectorizer = CountVectorizer()
 X = vectorizer.fit_transform(questionDocs)
@@ -28,7 +40,7 @@ logicVectorizer = CountVectorizer()
 X_logic = logicVectorizer.fit_transform(logicDocs)
 word_list_logic = logicVectorizer.get_feature_names();    
 count_list_logic = X_logic.toarray().sum(axis=0) 
-freq_logic = dict(zip(word_list_logic,count_list_logic))
+freqLogic = dict(zip(word_list_logic,count_list_logic))
 logicWordsProb = wordProbability(word_list_logic, count_list_logic)
 totalCntLogic = count_list_logic.sum(axis=0)
 # print(logicWordsProb)
@@ -40,7 +52,7 @@ fractionVectorizer = CountVectorizer()
 X_fraction = fractionVectorizer.fit_transform(fractionDocs)
 word_list_fraction = fractionVectorizer.get_feature_names();    
 count_list_fraction = X_fraction.toarray().sum(axis=0) 
-freq_fraction = dict(zip(word_list_fraction,count_list_fraction))
+freqFraction = dict(zip(word_list_fraction,count_list_fraction))
 fractionWordsProb = wordProbability(word_list_fraction, count_list_fraction)
 totalCntFraction = count_list_fraction.sum(axis=0)
 # print(fractionWordsProb)
@@ -102,15 +114,23 @@ gkWordsProb = wordProbability(wordListGk, countListGk)
 totalCntGk = countListGk.sum(axis=0)
 # --> End.
 
-# <-- Start of Bayes Probability
 aLogicQuestion = "What is the next letter in the series: k a l b m __"
+categoryList = ['Logic','Fraction','Algebra','Comparison','Percentage','Probability','Gk']
 wordList = word_tokenize(aLogicQuestion)
-probWordInLogic = []
-for word in wordList:
-    if word in freq_logic.keys():
-        count = freq_logic[word]
+wordProbabilities = []
+for eachCategory in categoryList:
+    if eachCategory == "Logic":
+        probWordInCategory = bayesWordProb(wordList, freqLogic, totalCntLogic, totalFeatures)
+    elif eachCategory == "Fraction":
+        probWordInCategory = bayesWordProb(wordList, freqFraction, totalCntFraction, totalFeatures)
+    elif eachCategory == "Algebra":
+        probWordInCategory = bayesWordProb(wordList, freqAlgebra, totalCntAlgebra, totalFeatures)
+    elif eachCategory == "Comparison":
+        probWordInCategory = bayesWordProb(wordList, freqComparison, totalCntComparison, totalFeatures)
+    elif eachCategory == "Percentage":
+        probWordInCategory = bayesWordProb(wordList, freqFraction, totalCntFraction, totalFeatures)
+    elif eachCategory == "Probability":
+        probWordInCategory = bayesWordProb(wordList, freqProbability, totalCntProbability, totalFeatures)
     else:
-        count = 0
-    probWordInLogic.append((count + 1)/(totalCntLogic + totalFeatures))
-print(dict(zip(wordList,probWordInLogic)))
-# End.
+        probWordInCategory = bayesWordProb(wordList, freqGk, totalCntGk, totalFeatures)
+    wordProbabilities.append(probWordInCategory)
