@@ -1,8 +1,10 @@
-import pandas as pd  
+import pandas as pd
+from NaiveBayesQuestionClassifier import NBFunctions
 from sklearn.feature_extraction.text import CountVectorizer
 from nltk.tokenize import word_tokenize
 
-questionFile = pd.read_csv("backend/NaiveBayesQuestionClassifier/data/Questions.csv")
+print("Reading Training data ... ")
+questionFile = pd.read_csv("data/Questions.csv")
 
 # --> Helpers 
 # print(questionFile.iloc[0])
@@ -17,28 +19,7 @@ def wordProbability(wordList, countList):
         probWords.append(count/len(wordList))
     return(dict(zip(wordList, probWords)))
 
-# <-- Start of Bayes Probability Function 
-def bayesWordProb(wordList, wordFreq,totalFeatures, totalCntInClass):
-    bayesWordProb = []
-    for word in wordList:
-        if word in wordFreq.keys():
-            count = wordFreq[word]
-        else:
-            count = 0
-        bayesWordProb.append((count+1)/(totalCntInClass + totalFeatures))
-    return(bayesWordProb)
-# End.
-
-# <-- Probability Product
-def probProduct(categoryList, wordProbabilities, map):
-    for eachCategory in range(len(categoryList)):
-        totalProduct = 1
-        for eachWord in wordProbabilities[eachCategory]:
-            totalProduct = totalProduct * eachWord
-        map[categoryList[eachCategory]]=totalProduct
-    return(map)
-# End.
-
+print("Training NB algo")
 questionDocs = questionFile.loc[:,'Question']
 vectorizer = CountVectorizer()
 X = vectorizer.fit_transform(questionDocs)
@@ -124,31 +105,32 @@ gkWordsProb = wordProbability(wordListGk, countListGk)
 totalCntGk = countListGk.sum(axis=0)
 # --> End.
 
-
-
-
-aLogicQuestion = "Resourceful restoration is the process of:"
+# <-- Naive Bayes Function
 categoryList = ['Logic','Fraction','Algebra','Comparison','Percentage','Probability','Gk']
-wordList = word_tokenize(aLogicQuestion)
-wordProbabilities = []
-for eachCategory in categoryList:
-    if eachCategory == "Logic":
-        probWordInCategory = bayesWordProb(wordList, freqLogic, totalCntLogic, totalFeatures)
-    elif eachCategory == "Fraction":
-        probWordInCategory = bayesWordProb(wordList, freqFraction, totalCntFraction, totalFeatures)
-    elif eachCategory == "Algebra":
-        probWordInCategory = bayesWordProb(wordList, freqAlgebra, totalCntAlgebra, totalFeatures)
-    elif eachCategory == "Comparison":
-        probWordInCategory = bayesWordProb(wordList, freqComparison, totalCntComparison, totalFeatures)
-    elif eachCategory == "Percentage":
-        probWordInCategory = bayesWordProb(wordList, freqFraction, totalCntFraction, totalFeatures)
-    elif eachCategory == "Probability":
-        probWordInCategory = bayesWordProb(wordList, freqProbability, totalCntProbability, totalFeatures)
-    else:
-        probWordInCategory = bayesWordProb(wordList, freqGk, totalCntGk, totalFeatures)
-    wordProbabilities.append(probWordInCategory)
 
-probabilityMap = {}
-probabilityMap = probProduct(categoryList, wordProbabilities, probabilityMap)
-maxProbCategory = max(probabilityMap, key=probabilityMap.get)
-print(maxProbCategory)
+def calcProbability(question):
+    # print("Classifying Question:",question)
+    wordList = word_tokenize(question)
+    wordProbabilities = []
+    for eachCategory in categoryList:
+        if eachCategory == "Logic":
+            probWordInCategory = NBFunctions.bayesWordProb(wordList, freqLogic, totalCntLogic, totalFeatures)
+        elif eachCategory == "Fraction":
+            probWordInCategory = NBFunctions.bayesWordProb(wordList, freqFraction, totalCntFraction, totalFeatures)
+        elif eachCategory == "Algebra":
+            probWordInCategory = NBFunctions.bayesWordProb(wordList, freqAlgebra, totalCntAlgebra, totalFeatures)
+        elif eachCategory == "Comparison":
+            probWordInCategory = NBFunctions.bayesWordProb(wordList, freqComparison, totalCntComparison, totalFeatures)
+        elif eachCategory == "Percentage":
+            probWordInCategory = NBFunctions.bayesWordProb(wordList, freqFraction, totalCntFraction, totalFeatures)
+        elif eachCategory == "Probability":
+            probWordInCategory = NBFunctions.bayesWordProb(wordList, freqProbability, totalCntProbability, totalFeatures)
+        else:
+            probWordInCategory = NBFunctions.bayesWordProb(wordList, freqGk, totalCntGk, totalFeatures)
+        wordProbabilities.append(probWordInCategory)
+
+    probabilityMap = {}
+    probabilityMap = NBFunctions.probProduct(categoryList, wordProbabilities, probabilityMap)
+    maxProbCategory = max(probabilityMap, key=probabilityMap.get)
+    return (maxProbCategory)
+# --> End.
