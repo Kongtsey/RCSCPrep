@@ -74,6 +74,7 @@ totalCntComparison = countListComparison.sum(axis=0)
 
 # --> CountVectorizer for percentage questions
 percentageDocs = questionFile.loc[questionFile.Category == "Percentages",'Question']
+# print(percentageDocs)
 percentageVectorizer = CountVectorizer()
 X_percentage = percentageVectorizer.fit_transform(percentageDocs)
 wordListPercentage = percentageVectorizer.get_feature_names();    
@@ -96,6 +97,7 @@ totalCntProbability = countListProbability.sum(axis=0)
 
 # --> CountVectorizer for general knowledge questions
 gkDocs = questionFile.loc[questionFile.Category == "General Knowledge",'Question']
+# print(gkDocs)
 gkVectorizer = CountVectorizer()
 X_gk = gkVectorizer.fit_transform(gkDocs)
 wordListGk = gkVectorizer.get_feature_names();    
@@ -122,7 +124,7 @@ def calcProbability(question):
         elif eachCategory == "Comparison":
             probWordInCategory = NBFunctions.bayesWordProb(wordList, freqComparison, totalCntComparison, totalFeatures)
         elif eachCategory == "Percentage":
-            probWordInCategory = NBFunctions.bayesWordProb(wordList, freqFraction, totalCntFraction, totalFeatures)
+            probWordInCategory = NBFunctions.bayesWordProb(wordList, freqPercentage, totalCntPercentage, totalFeatures)
         elif eachCategory == "Probability":
             probWordInCategory = NBFunctions.bayesWordProb(wordList, freqProbability, totalCntProbability, totalFeatures)
         else:
@@ -134,3 +136,5 @@ def calcProbability(question):
     maxProbCategory = max(probabilityMap, key=probabilityMap.get)
     return (maxProbCategory)
 # --> End.
+
+print(calcProbability("Tandin pays 80% of fees to a household. How much percentage left?"))
