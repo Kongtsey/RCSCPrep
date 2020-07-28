@@ -3,13 +3,13 @@ import fire from "../config/Fire";
 import { Button, Container, Col, Row, Form } from "react-bootstrap";
 import $ from "jquery";
 import "../style-sheet/radio-customization.css";
-import Loading from "../components/loading";
+import Loading from "./loading";
 import { Link } from "react-router-dom";
 import "../style-sheet/mark-button.css";
 
 const answered_question_id = [];
 const answered_question_info = [];
-class ReadExamPractice extends Component {
+class ReadExamPracticeMath extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -130,7 +130,7 @@ class ReadExamPractice extends Component {
       );
     }
   }
-  handleMark = (index, markedQuestionId) => () => {
+  handleMark = (index, markedQuestionId, subject) => () => {
     //console.log("you ar here at handleMark and the index is: ", index);
     let auth = fire.auth();
     let userName = auth.currentUser.email; //need to get email since we need to know which collection
@@ -219,4 +219,4 @@ class ReadExamPractice extends Component {
   }
 }
 
-export default ReadExamPractice;
+export default ReadExamPracticeMath;
