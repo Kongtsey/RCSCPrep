@@ -121,15 +121,15 @@ class NavigationBar extends Component {
                 email: this.state.email,
                 college: this.state.college,
                 dzongkhag: this.state.dzongkhag,
-              }
+              };
               db.collection(this.state.email).doc("UserProfile").set(data);
-              //console.log("email user: ", this.state.email);
+
+              //>>>>>>>>>> C O P Y I N G   T H E   M A T H   Q U E S T I O N <<<<<<<<<<<<<<
               db.collection("Questions")
                 .get()
                 .then((snapshot) => {
                   let counter = 0;
                   snapshot.forEach((doc) => {
-                    console.log(doc.id, " -----> ", doc.data());
                     db.collection(this.state.email).doc("MathQuestions").collection("Questions").doc(doc.id).set({
                       Category: doc.data().Category,
                       Choice: doc.data().Choice,
@@ -144,15 +144,14 @@ class NavigationBar extends Component {
                     counter = 1 + counter;
                     console.log(counter);
                   });
-                  // console.log("done copying the database ");
                 });
 
+              //>>>>>>>>>> C O P Y I N G   T H E   E N G L I S H   Q U E S T I O N <<<<<<<<<<<<<<
               db.collection("EnglishQuestions")
                 .get()
                 .then((snapshot) => {
                   let counter = 0;
                   snapshot.forEach((doc) => {
-                    console.log(doc.id, " -----> ", doc.data());
                     db.collection(this.state.email).doc("EnglishQuestions").collection("Questions").doc(doc.id).set({
                       Category: doc.data().Category,
                       Choice: doc.data().Choice,
@@ -171,13 +170,40 @@ class NavigationBar extends Component {
                   });
                   console.log("done copying the database ");
                 });
+
+              //>>>>>>>>>> C O P Y I N G   T H E   E N G L I S H   Q U E S T I O N <<<<<<<<<<<<<<
+              db.collection("PracticeExamOnSignUp")
+                .doc("Math")
+                .collection("MathQuestions")
+                .get()
+                .then((snapshot) => {
+                  let counter = 0;
+                  snapshot.forEach((doc) => {
+                    console.log(doc.id, " -----> ", doc.data());
+                    db.collection(this.state.email).doc("ExamOnSignUp").collection("Math").set({
+                      Category: doc.data().Category,
+                      Choice: doc.data().Choice,
+                      CorrectAnswer: doc.data().CorrectAnswer,
+                      IsCorrectAnswer: doc.data().IsCorrectAnswer,
+                      IsWrongAnswer: doc.data().IsWrongAnswer,
+                      Question: doc.data().Question,
+                      UserHasNotResponded: doc.data().UserHasNotResponded,
+                      QuestionYear: doc.data().QuestionYear,
+                      Marked: doc.data().Marked,
+                      ImageUrl: doc.data().ImageUrl,
+                    });
+                    counter = 1 + counter;
+                    console.log(counter);
+                  });
+                  console.log("done copying the database ");
+                });
             });
         }
       })
       .catch((error) => {
         console.log(error);
         this.setState({ errorMessage: error.message });
-      })
+      });
   }
 
   //Render

@@ -23,7 +23,7 @@ class GeneralNavigationBar extends Component {
             <Nav.Link href='/'>Dashboard</Nav.Link>
             <Nav.Link href='/english_stats_page'>English</Nav.Link>
             <Nav.Link href='/math_stats_page'>Math</Nav.Link>
-            <Nav.Link href='/forum'>Forum</Nav.Link>
+            <Nav.Link href='/exam'>Exam</Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link> {fire.auth().currentUser.displayName}</Nav.Link>
