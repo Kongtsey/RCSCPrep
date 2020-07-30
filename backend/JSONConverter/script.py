@@ -59,7 +59,6 @@ for i in range(len(orderedList)):
 # Time to convert into a dictionary
 questionsAnswers = {  # dictionary format to store as JSON.
     "Question": "",
-    "QuestionYear":year,
     "Category":"Quantitative",
     "Choice": [],
     "CorrectAnswer":0,

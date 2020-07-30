@@ -43,6 +43,11 @@ def upload(filePath):
         choiceRowHeader = ['Choice__001','Choice__002','Choice__003','Choice__004']
         for eachChoiceHeader in choiceRowHeader:
             jsonFormatQuestion['Choice'].append(row[eachChoiceHeader])
-        print(jsonFormatQuestion)
+        print("Uploading question:",index,"...")
+        db.collection('Questions').add(jsonFormatQuestion)
+        # print(jsonFormatQuestion)
+        jsonFormatQuestion['Choice']=[]
+    print("Fin uploading questions to db.")
 #End.
 upload("./data/jsonUploadData.csv")
+# upload("./data/classfiedQuestionsForUpload.csv")
