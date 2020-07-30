@@ -138,7 +138,7 @@ class NavigationBar extends Component {
                       IsWrongAnswer: doc.data().IsWrongAnswer,
                       Question: doc.data().Question,
                       UserHasNotResponded: doc.data().UserHasNotResponded,
-                      QuestionYear: doc.data().QuestionYear,
+                      // QuestionYear: doc.data().QuestionYear,
                       Marked: doc.data().Marked,
                     });
                     counter = 1 + counter;

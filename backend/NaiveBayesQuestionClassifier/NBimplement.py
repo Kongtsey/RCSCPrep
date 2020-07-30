@@ -4,7 +4,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from nltk.tokenize import word_tokenize
 
 print("Reading Training data ... ")
-questionFile = pd.read_csv("data/Questions.csv")
+questionFile = pd.read_csv("data/filtratedTrainingQuestions.csv")
 
 # --> Helpers 
 # print(questionFile.iloc[0])
@@ -58,15 +58,14 @@ countListAlgebra = X_algebra.toarray().sum(axis=0)
 freqAlgebra = dict(zip(wordListAlgebra,countListAlgebra))
 algebraWordsProb = wordProbability(wordListAlgebra, countListAlgebra)
 totalCntAlgebra = countListAlgebra.sum(axis=0)
-# print(algebraWordsProb)
 # # --> End.
 
 # # --> CountVectorizer for comparison questions
 comparisonDocs = questionFile.loc[questionFile.Category == "Comparisons",'Question']
 comparisonVectorizer = CountVectorizer()
 X_comparison = comparisonVectorizer.fit_transform(comparisonDocs)
-wordListComparison = comparisonVectorizer.get_feature_names();    
-countListComparison = X_comparison.toarray().sum(axis=0) 
+wordListComparison = comparisonVectorizer.get_feature_names();
+countListComparison = X_comparison.toarray().sum(axis=0)
 freqComparison = dict(zip(wordListComparison,countListComparison))
 comparisonWordsProb = wordProbability(wordListComparison, countListComparison)
 totalCntComparison = countListComparison.sum(axis=0)
@@ -74,6 +73,7 @@ totalCntComparison = countListComparison.sum(axis=0)
 
 # --> CountVectorizer for percentage questions
 percentageDocs = questionFile.loc[questionFile.Category == "Percentages",'Question']
+# print(percentageDocs)
 percentageVectorizer = CountVectorizer()
 X_percentage = percentageVectorizer.fit_transform(percentageDocs)
 wordListPercentage = percentageVectorizer.get_feature_names();    
@@ -98,8 +98,8 @@ totalCntProbability = countListProbability.sum(axis=0)
 gkDocs = questionFile.loc[questionFile.Category == "General Knowledge",'Question']
 gkVectorizer = CountVectorizer()
 X_gk = gkVectorizer.fit_transform(gkDocs)
-wordListGk = gkVectorizer.get_feature_names();    
-countListGk = X_gk.toarray().sum(axis=0) 
+wordListGk = gkVectorizer.get_feature_names()
+countListGk = X_gk.toarray().sum(axis=0)
 freqGk = dict(zip(wordListGk,countListGk))
 gkWordsProb = wordProbability(wordListGk, countListGk)
 totalCntGk = countListGk.sum(axis=0)
@@ -109,7 +109,13 @@ totalCntGk = countListGk.sum(axis=0)
 categoryList = ['Logic','Fraction','Algebra','Comparison','Percentage','Probability','Gk']
 
 def calcProbability(question):
+    """
+    Function to calcuate probability of question being in a certain category
+    :param question: question to calculate probability of
+    :return: maxProbCategory category with the highest probability.
+    """
     # print("Classifying Question:",question)
+    question = NBFunctions.stopWordRemoval(question)
     wordList = word_tokenize(question)
     wordProbabilities = []
     for eachCategory in categoryList:
@@ -122,10 +128,10 @@ def calcProbability(question):
         elif eachCategory == "Comparison":
             probWordInCategory = NBFunctions.bayesWordProb(wordList, freqComparison, totalCntComparison, totalFeatures)
         elif eachCategory == "Percentage":
-            probWordInCategory = NBFunctions.bayesWordProb(wordList, freqFraction, totalCntFraction, totalFeatures)
+            probWordInCategory = NBFunctions.bayesWordProb(wordList, freqPercentage, totalCntPercentage, totalFeatures)
         elif eachCategory == "Probability":
             probWordInCategory = NBFunctions.bayesWordProb(wordList, freqProbability, totalCntProbability, totalFeatures)
-        else:
+        elif eachCategory=="Gk":
             probWordInCategory = NBFunctions.bayesWordProb(wordList, freqGk, totalCntGk, totalFeatures)
         wordProbabilities.append(probWordInCategory)
 
@@ -134,3 +140,8 @@ def calcProbability(question):
     maxProbCategory = max(probabilityMap, key=probabilityMap.get)
     return (maxProbCategory)
 # --> End.
+trialQuestion = "Write the next term of the series below: 1, 1, 2, 4, 3, 9, 4 _ _ _"
+print(calcProbability(trialQuestion))
+# wordList = word_tokenize(question)R
+# NBFunctions.bayesWordProb(wordList,freqGk, totalCntGk,totalFeatures)
+# NBFunctions.bayesWordProb(wordList,freqLogic, totalCntGk,totalFeatures)
