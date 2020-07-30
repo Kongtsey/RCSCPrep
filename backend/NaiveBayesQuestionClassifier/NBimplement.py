@@ -131,18 +131,17 @@ def calcProbability(question):
             probWordInCategory = NBFunctions.bayesWordProb(wordList, freqPercentage, totalCntPercentage, totalFeatures)
         elif eachCategory == "Probability":
             probWordInCategory = NBFunctions.bayesWordProb(wordList, freqProbability, totalCntProbability, totalFeatures)
-        else:
+        elif eachCategory=="Gk":
             probWordInCategory = NBFunctions.bayesWordProb(wordList, freqGk, totalCntGk, totalFeatures)
         wordProbabilities.append(probWordInCategory)
 
     probabilityMap = {}
     probabilityMap = NBFunctions.probProduct(categoryList, wordProbabilities, probabilityMap)
-    # print(probabilityMap)
     maxProbCategory = max(probabilityMap, key=probabilityMap.get)
     return (maxProbCategory)
 # --> End.
-trialQuestion = "Write the next term of the series below: 1, 1, 2, 4, 3, 9, 4.........."
-# print(calcProbability(trialQuestion))
+trialQuestion = "Write the next term of the series below: 1, 1, 2, 4, 3, 9, 4 _ _ _"
+print(calcProbability(trialQuestion))
 # wordList = word_tokenize(question)R
 # NBFunctions.bayesWordProb(wordList,freqGk, totalCntGk,totalFeatures)
 # NBFunctions.bayesWordProb(wordList,freqLogic, totalCntGk,totalFeatures)

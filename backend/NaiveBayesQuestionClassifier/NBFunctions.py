@@ -27,6 +27,8 @@ def probProduct(categoryList, wordProbabilities, map):
     """
     for eachCategory in range(len(categoryList)):
         totalProduct = 1
+        # print(categoryList[eachCategory])
+        # print(wordProbabilities[eachCategory])
         for eachWord in wordProbabilities[eachCategory]:
             totalProduct = totalProduct * eachWord
         map[categoryList[eachCategory]]=totalProduct

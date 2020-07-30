@@ -1,27 +1,17 @@
 import classifierQuestions as cQ
 import json as js
-<<<<<<< HEAD
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 # Use the application default credentials
 cred = credentials.Certificate("backend/credentials/Credentials.json")
+db = firestore.client()
+# # Use the application default credentials
+cred = credentials.Certificate("../credentials/Credentials.json")
 firebase_admin.initialize_app(cred, {
   'projectId': "bhutanexamfactory-d7ea2",
 })
-db = firestore.client()
-=======
-# import firebase_admin
-# from firebase_admin import credentials
-# from firebase_admin import firestore
-# # Use the application default credentials
-# cred = credentials.Certificate("../credentials/Credentials.json")
-# firebase_admin.initialize_app(cred, {
-#   'projectId': "bhutanexamfactory-d7ea2",
-# })
 # db = firestore.client()
->>>>>>> 1b6828a9459d54c1fab2bb3ee7b6cb20356ba4d2
-
 
 def choicesSplitter(list):
     """
