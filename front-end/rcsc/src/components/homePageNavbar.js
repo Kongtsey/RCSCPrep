@@ -191,7 +191,6 @@ class NavigationBar extends Component {
                       QuestionYear: doc.data().QuestionYear,
                       Marked: doc.data().Marked,
                       ImageUrl: doc.data().ImageUrl
-
                     });
                     counter = 1 + counter;
                     console.log(counter);
