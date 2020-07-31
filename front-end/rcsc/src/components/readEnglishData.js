@@ -128,7 +128,7 @@ class ReadEnglishQuestion extends Component {
         {
           UserHasResponded: false,
           IsCorrectAnswer: answered_question_info[i][3],
-          IsWrongAnswer: !answered_question_info[i][3]
+          IsWrongAnswer: !answered_question_info[i][3],
         },
         { merge: true }
       );
@@ -140,7 +140,6 @@ class ReadEnglishQuestion extends Component {
     let userName = auth.currentUser.email; //need to get email since we need to know which collection
     let db = fire.firestore();
     let userCollection = db.collection(userName); //ref to collection we need to update to.
-
     if ($("#mark" + index).hasClass("markButton")) {
       $("#mark" + index).removeClass("markButton");
       $("#mark" + index).addClass("markedButton");
@@ -185,6 +184,7 @@ class ReadEnglishQuestion extends Component {
                       {data.Question}
                     </Col>
                     <Col md={1} lg={1} sm={12}>
+                      TODO: conditional rendering based on if the marked query is selected or not, when selected call another function.
                       <button type='button' className={"markButton"} id={"mark" + index} onClick={this.handleMark(index, data.id)}>
                         mark
                       </button>

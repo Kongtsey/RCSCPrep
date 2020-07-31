@@ -38,7 +38,6 @@ class ReadExamPracticeMath extends Component {
           id: doc.id,
           ...doc.data(),
         }));
-        //console.log("This is the default number of questions displayed", newTimes);
         this.setState({
           questionData: newData,
           loading: false,

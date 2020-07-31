@@ -137,11 +137,10 @@ class NavigationBar extends Component {
                       IsWrongAnswer: doc.data().IsWrongAnswer,
                       Question: doc.data().Question,
                       UserHasNotResponded: doc.data().UserHasNotResponded,
-                      QuestionYear: doc.data().QuestionYear,
                       Marked: doc.data().Marked,
                     });
                   });
-                  //console.log("Done copying the Math Questions");
+                  console.log("Done copying the Math Questions");
                 });
 
               //>>>>>>>>>> C O P Y I N G   T H E   E N G L I S H   Q U E S T I O N <<<<<<<<<<<<<<
@@ -157,65 +156,13 @@ class NavigationBar extends Component {
                       IsWrongAnswer: doc.data().IsWrongAnswer,
                       Question: doc.data().Question,
                       UserHasNotResponded: doc.data().UserHasNotResponded,
-                      QuestionYear: doc.data().QuestionYear,
                       Marked: doc.data().Marked,
                       Passage: doc.data().Passage,
                       isPassageQuestion: doc.data().isPassageQuestion,
                     });
                   });
-                  //console.log("Done copying the English Questions");
+                  console.log("Done copying the English Questions");
                 });
-
-              // //>>>>>>>>>> C O P Y I N G   T H E   E X A M   M A T H   Q U E S T I O N <<<<<<<<<<<<<<
-              // db.collection("PracticeExamOnSignUp")
-              //   .doc("Math")
-              //   .collection("MathQuestions")
-              //   .get()
-              //   .then((snapshot) => {
-              //     let counter = 0;
-              //     snapshot.forEach((doc) => {
-              //       db.collection(this.state.email).doc("ExamOnSignUp").collection("Math").doc(doc.id).set({
-              //         Category: doc.data().Category,
-              //         Choice: doc.data().Choice,
-              //         CorrectAnswer: doc.data().CorrectAnswer,
-              //         IsCorrectAnswer: doc.data().IsCorrectAnswer,
-              //         IsWrongAnswer: doc.data().IsWrongAnswer,
-              //         Question: doc.data().Question,
-              //         UserHasNotResponded: doc.data().UserHasNotResponded,
-              //         QuestionYear: doc.data().QuestionYear,
-              //         Marked: doc.data().Marked,
-              //         ImageUrl: doc.data().ImageUrl,
-              //       });
-              //       counter = 1 + counter;
-              //       console.log(counter);
-              //     });
-              //     console.log("Done copying the Signup Math Exam");
-              //   });
-
-              // //>>>>>>>>>> C O P Y I N G   T H E   E X A M   E N G L I S H   Q U E S T I O N <<<<<<<<<<<<<<
-              // db.collection("PracticeExamOnSignUp")
-              //   .doc("English")
-              //   .collection("EnglishQuestions")
-              //   .get()
-              //   .then((snapshot) => {
-              //     console.log("--->" + snapshot);
-              //     snapshot.forEach((doc) => {
-              //       db.collection(this.state.email).doc("ExamOnSignUp").collection("English").doc(doc.id).set({
-              //         Category: doc.data().Category,
-              //         Choice: doc.data().Choice,
-              //         CorrectAnswer: doc.data().CorrectAnswer,
-              //         IsCorrectAnswer: doc.data().IsCorrectAnswer,
-              //         IsWrongAnswer: doc.data().IsWrongAnswer,
-              //         Question: doc.data().Question,
-              //         UserHasNotResponded: doc.data().UserHasNotResponded,
-              //         QuestionYear: doc.data().QuestionYear,
-              //         Marked: doc.data().Marked,
-              //         isPassageQuestion: doc.data().IsPassageQuestion,
-              //         Passage: doc.data().Passage,
-              //       });
-              //     });
-              //     console.log("Done copying the Signup English Exam ");
-              //   });
             });
         }
       })
