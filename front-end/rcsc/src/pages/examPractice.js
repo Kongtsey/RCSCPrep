@@ -10,43 +10,34 @@ class ExamPractice extends React.Component {
       <React.Fragment>
         {<GeneralNavbar />}
         <Container>
-          <Row>
-            <div className='tabs'>
-              <Tabs>
-                <Tab label='Tab 1'>
-                  <div>
-                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm' />
-                    <p>Tab 1 content</p>
-                  </div>
-                </Tab>
-                <Tab label='Tab 2'>
-                  <div>
-                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2E3SrDqYWF9J_TDWNzjZkwJOAGxkLJVZPvUly7SqUL9WqLqEw' />
-                    <p>Tab 2 content</p>
-                  </div>
-                </Tab>
-                <Tab label='Tab 3'>
-                  <div>
-                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB7Y713wstirF-PvKJa6OioS83ozc-BeFAzjjyndv58ZnfyaZK0g' />
-                    <p>Tab 3 content</p>
-                  </div>
-                </Tab>
-                <Tab label='Tab 4'>
-                  <div>
-                    <img src='http://choseneye.org/image/cache/catalog/SERVICES4-600x600.png' />
-
-                    <p>Tab 4 content</p>
-                  </div>
-                </Tab>
-                <Tab label='Tab 5'>
-                  <div>
-                    <img src='https://iconcept.com.my/wp-content/uploads/2018/10/iStock-956508212-600x600.jpg' />
-                    <p>Tab 5 content</p>
-                  </div>
-                </Tab>
-              </Tabs>
-            </div>
-          </Row>
+          <br />
+          <br />
+          <h3> Practice Exam </h3>
+          <hr />
+          <div className='tabs'>
+            <Tabs>
+              <Tab label='Math'>
+                <div>
+                  <ReadExamPracticeMath />
+                </div>
+              </Tab>
+              <Tab label='English'>
+                <div>
+                  <p>Tab 2 content</p>
+                </div>
+              </Tab>
+              <Tab label='Dzongkha'>
+                <div>
+                  <p>Tab 3 content</p>
+                </div>
+              </Tab>
+              <Tab label='Data Interpretation'>
+                <div>
+                  <p>Tab 4 content</p>
+                </div>
+              </Tab>
+            </Tabs>
+          </div>
         </Container>
       </React.Fragment>
     );
