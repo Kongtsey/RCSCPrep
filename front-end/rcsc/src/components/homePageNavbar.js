@@ -141,7 +141,7 @@ class NavigationBar extends Component {
                       Marked: doc.data().Marked,
                     });
                   });
-                  console.log("Done copying the Math Questions");
+                  console.log("Done copying the Math database");
                 });
 
               //>>>>>>>>>> C O P Y I N G   T H E   E N G L I S H   Q U E S T I O N  <<<<<<<<<<<<<<
@@ -162,7 +162,7 @@ class NavigationBar extends Component {
                       isPassageQuestion: doc.data().isPassageQuestion,
                     });
                   });
-                  console.log("done copying the database ");
+                  console.log("Done copying the English database ");
                 });
 
               //>>>>>>>>>> C O P Y I N G   T H E   M A T H   Q U E S T I O N  F O R  P R A C T I C E  E X A M <<<<<<<<<<<<<<
@@ -171,9 +171,8 @@ class NavigationBar extends Component {
                 .collection("MathQuestions")
                 .get()
                 .then((snapshot) => {
-                  let counter = 0;
                   snapshot.forEach((doc) => {
-                    console.log(doc.id, " -----> ", doc.data());
+                    //console.log("math:", doc.id, " -----> ", doc.data());
                     db.collection(this.state.email).doc("ExamOnSignUp").collection("Math").add({
                       Category: doc.data().Category,
                       Choice: doc.data().Choice,
@@ -184,12 +183,36 @@ class NavigationBar extends Component {
                       UserHasNotResponded: doc.data().UserHasNotResponded,
                       QuestionYear: doc.data().QuestionYear,
                       Marked: doc.data().Marked,
-                      ImageUrl: doc.data().ImageUrl
+                      ImageUrl: doc.data().ImageUrl,
                     });
-                    counter = 1 + counter;
-                    console.log(counter);
                   });
-                  console.log("done copying the database ");
+                  console.log("Done copying the Exam on sign up Math database");
+                });
+
+              //>>>>>>>>>> C O P Y I N G   T H E   E N G L I S H   Q U E S T I O N  F O R  P R A C T I C E  E X A M <<<<<<<<<<<<<<
+              db.collection("PracticeExamOnSignUp")
+                .doc("English")
+                .collection("EnglishQuestions")
+                .get()
+                .then((snapshot) => {
+                  let counter = 0;
+                  snapshot.forEach((doc) => {
+                    //console.log("english :", doc.id, " -----> ", doc.data());
+                    db.collection(this.state.email).doc("ExamOnSignUp").collection("English").add({
+                      Category: doc.data().Category,
+                      Choice: doc.data().Choice,
+                      CorrectAnswer: doc.data().CorrectAnswer,
+                      IsCorrectAnswer: doc.data().IsCorrectAnswer,
+                      IsWrongAnswer: doc.data().IsWrongAnswer,
+                      Question: doc.data().Question,
+                      UserHasNotResponded: doc.data().UserHasNotResponded,
+                      QuestionYear: doc.data().QuestionYear,
+                      Marked: doc.data().Marked,
+                      IsPassageQuestion: doc.data().IsPassageQuestion,
+                      Passage: doc.data().Passage,
+                    });
+                  });
+                  console.log("Done copying the Exam on sign up English database ");
                 });
             });
         }
