@@ -137,13 +137,14 @@ class NavigationBar extends Component {
                       IsWrongAnswer: doc.data().IsWrongAnswer,
                       Question: doc.data().Question,
                       UserHasNotResponded: doc.data().UserHasNotResponded,
+                      // QuestionYear: doc.data().QuestionYear,
                       Marked: doc.data().Marked,
                     });
                   });
                   console.log("Done copying the Math Questions");
                 });
 
-              //>>>>>>>>>> C O P Y I N G   T H E   E N G L I S H   Q U E S T I O N <<<<<<<<<<<<<<
+              //>>>>>>>>>> C O P Y I N G   T H E   E N G L I S H   Q U E S T I O N  <<<<<<<<<<<<<<
               db.collection("EnglishQuestions")
                 .get()
                 .then((snapshot) => {
@@ -161,7 +162,34 @@ class NavigationBar extends Component {
                       isPassageQuestion: doc.data().isPassageQuestion,
                     });
                   });
-                  console.log("Done copying the English Questions");
+                  console.log("done copying the database ");
+                });
+
+              //>>>>>>>>>> C O P Y I N G   T H E   M A T H   Q U E S T I O N  F O R  P R A C T I C E  E X A M <<<<<<<<<<<<<<
+              db.collection("PracticeExamOnSignUp")
+                .doc("Math")
+                .collection("MathQuestions")
+                .get()
+                .then((snapshot) => {
+                  let counter = 0;
+                  snapshot.forEach((doc) => {
+                    console.log(doc.id, " -----> ", doc.data());
+                    db.collection(this.state.email).doc("ExamOnSignUp").collection("Math").add({
+                      Category: doc.data().Category,
+                      Choice: doc.data().Choice,
+                      CorrectAnswer: doc.data().CorrectAnswer,
+                      IsCorrectAnswer: doc.data().IsCorrectAnswer,
+                      IsWrongAnswer: doc.data().IsWrongAnswer,
+                      Question: doc.data().Question,
+                      UserHasNotResponded: doc.data().UserHasNotResponded,
+                      QuestionYear: doc.data().QuestionYear,
+                      Marked: doc.data().Marked,
+                      ImageUrl: doc.data().ImageUrl
+                    });
+                    counter = 1 + counter;
+                    console.log(counter);
+                  });
+                  console.log("done copying the database ");
                 });
             });
         }
