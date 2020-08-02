@@ -1,20 +1,14 @@
-.tab-buttons {
-  margin-bottom: 50px;
-}
-
-button {
-  margin-right: 30px;
-  font-size: 20px;
-  background: transparent;
-  border: none;
-  outline: none;
-  padding: 10px 50px;
-  cursor: pointer;
-  color: rgba(0, 0, 0, 0.4);
-  transition: all ease-in-out 0.2s;
-  border-bottom: 2px solid transparent;
+.tabs {
+  text-align: center;
 }
 .active {
-  border-bottom: 2px solid #ffc106;
-  color: black;
+  border-bottom: 2px solid #ffc10678;
+  display: block !important;
+}
+.math {
+  display: none;
+}
+button {
+  background: transparent;
+  border: none;
 }
