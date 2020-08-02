@@ -4,10 +4,9 @@ import { withRouter, Redirect } from "react-router-dom";
 import { AuthContext } from "../components/authentication";
 import { Container } from "react-bootstrap";
 
-// import ContactUs from "../components/contactUs";
+
 import NavigationBar from "../components/homePageNavbar";
 import FrontPage from "../components/homeFrontPage";
-// import HomepageInfo from "../components/HomepageInfo";
 import ReasonsToStart from "../components/reasonsToStart/reasonsToStart";
 import Footer from "../components/footer";
 import PerksInUsing from  "../components/perksOfUsing/perksInUsing"
@@ -24,11 +23,9 @@ function HomePage() {
         <Container fluid={true} style={{ background: "rgb(0,148,151)", padding: "0px" }}>
           <FrontPage />
           <NavigationBar />
-          {/*<HomepageInfo />*/}
           <ReasonsToStart/>
           <PerksInUsing/>
           <Founders/>
-          {/*<ContactUs />*/}
           <Footer />
         </Container>
       </React.Fragment>
