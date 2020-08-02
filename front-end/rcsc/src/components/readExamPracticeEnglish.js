@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import fire from "../config/Fire";
-import { Button, Container, Col, Row, Form } from "react-bootstrap";
+import { Container, Col, Row, Form } from "react-bootstrap";
 import $ from "jquery";
 import "../style-sheet/radio-customization.css";
 import Loading from "../components/loading";
-import { Link } from "react-router-dom";
 import "../style-sheet/mark-button.css";
 
 class ReadEnglishQuestion extends Component {
@@ -116,7 +115,7 @@ class ReadEnglishQuestion extends Component {
                       <br />
                     </div>
                   ) : (
-                    console.log(data.IsPassageQuestion)
+                    console.log(data.Passage)
                   )}
                   <Row>
                     <Col md={10} lg={10} sm={12}>

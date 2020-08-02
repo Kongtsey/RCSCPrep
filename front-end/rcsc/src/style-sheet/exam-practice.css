@@ -11,9 +11,6 @@
 .active button {
   color: black;
 }
-.math {
-  display: none;
-}
 button {
   background: transparent;
   border: none;
@@ -24,11 +21,44 @@ button {
 .subject-active {
   display: block;
 }
-
 /*SUBMIT BUTTON AT THE END OF THE SUBJECT TABS*/
 .submit-exam {
   border-radius: 25px !important;
   font-size: 10px !important;
   margin-top: -5px !important;
   padding: 5px 20px !important;
+}
+
+/*THIS IS FOR THE CONFIRMATION TABLE THAT WILL APPEAR AFTER THE USER HITS SUBMIT*/
+
+.parent-table-submit-exam {
+  text-align: right;
+}
+/*SUBMIT BUTTON AT THE END OF THE SUBJECT TABS*/
+.table-submit-exam {
+  border-radius: 25px !important;
+  font-size: 10px !important;
+  margin-top: -5px !important;
+  padding: 0px 10px !important;
+  margin-left: 20px;
+  text-align: right;
+}
+
+.table-tab-header {
+  margin-top: 20px;
+  margin-bottom: -20px;
+  padding-left: 20px;
+}
+.table-tabs button {
+  color: #9c9c9c;
+  font-size: 13px;
+}
+.active button {
+  color: black;
+}
+.table-subject {
+  display: none;
+}
+.table-subject-active {
+  display: block;
 }
