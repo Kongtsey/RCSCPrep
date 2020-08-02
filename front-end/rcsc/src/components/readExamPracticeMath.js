@@ -27,7 +27,6 @@ class ReadExamPracticeMath extends Component {
     this.setState({ loading: true });
     let auth = fire.auth();
     let userName = auth.currentUser.email;
-    console.log("this is the query: ", this.props.questionTypeQuery);
     fire
       .firestore()
       .collection(userName)

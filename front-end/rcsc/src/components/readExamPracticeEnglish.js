@@ -3,13 +3,13 @@ import fire from "../config/Fire";
 import { Button, Container, Col, Row, Form } from "react-bootstrap";
 import $ from "jquery";
 import "../style-sheet/radio-customization.css";
-import Loading from "./loading";
+import Loading from "../components/loading";
 import { Link } from "react-router-dom";
 import "../style-sheet/mark-button.css";
 
 const answered_question_id = [];
 const answered_question_info = [];
-class ReadExamPracticeMath extends Component {
+class ReadEnglishQuestion extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -27,18 +27,17 @@ class ReadExamPracticeMath extends Component {
     this.setState({ loading: true });
     let auth = fire.auth();
     let userName = auth.currentUser.email;
-    console.log("this is the query: ", this.props.questionTypeQuery);
+    console.log("Is the right prop being passed: ", this.props.questionTypeQuery);
     fire
       .firestore()
       .collection(userName)
       .doc("ExamOnSignUp")
-      .collection("Math")
+      .collection("English")
       .onSnapshot((snapshot) => {
         const newData = snapshot.docs.map((doc) => ({
           id: doc.id,
           ...doc.data(),
         }));
-        //console.log("This is the default number of questions displayed", newTimes);
         this.setState({
           questionData: newData,
           loading: false,
@@ -119,8 +118,11 @@ class ReadExamPracticeMath extends Component {
     let db = fire.firestore();
     let userCollection = db.collection(userName); //ref to collection we need to update to.
     for (let i = 0; i < answered_question_id.length; i++) {
+      //console.log("Question ", i, " : ", answered_question_id[i]);
+      //console.log("Question ", i, " : ", answered_question_info[i][1]);
       let qID = answered_question_info[i][0];
-      userCollection.doc("ExamOnSignUp").collection("Math").doc(qID).set(
+      //let userResponse = answered_question_info[i][1];
+      userCollection.doc("ExamOnSignUp").collection("English").doc(qID).set(
         {
           UserHasNotResponded: false,
           IsCorrectAnswer: answered_question_info[i][3],
@@ -130,18 +132,17 @@ class ReadExamPracticeMath extends Component {
       );
     }
   }
-  handleMark = (index, markedQuestionId, subject) => () => {
+  handleMark = (index, markedQuestionId) => () => {
     //console.log("you ar here at handleMark and the index is: ", index);
     let auth = fire.auth();
     let userName = auth.currentUser.email; //need to get email since we need to know which collection
     let db = fire.firestore();
     let userCollection = db.collection(userName); //ref to collection we need to update to.
-
     if ($("#mark" + index).hasClass("markButton")) {
       $("#mark" + index).removeClass("markButton");
       $("#mark" + index).addClass("markedButton");
       $("#mark" + index).html("marked");
-      userCollection.doc("ExamOnSignUp").collection("Math").doc(markedQuestionId).set(
+      userCollection.doc("ExamOnSignUp").collection("English").doc(markedQuestionId).set(
         {
           Marked: true,
         },
@@ -151,7 +152,7 @@ class ReadExamPracticeMath extends Component {
       $("#mark" + index).removeClass("markedButton");
       $("#mark" + index).addClass("markButton");
       $("#mark" + index).html("mark");
-      userCollection.doc("ExamOnSignUp").collection("Math").doc(markedQuestionId).set(
+      userCollection.doc("ExamOnSignUp").collection("English").doc(markedQuestionId).set(
         {
           Marked: false,
         },
@@ -167,24 +168,31 @@ class ReadExamPracticeMath extends Component {
           <Col md={12} lg={12} sm={12}>
             <ol>
               {this.state.questionData.map((data, index) => (
-                <li id={data.id}>
-                  <div>
-                    <Row>
-                      <Col md={10} lg={10} sm={12}>
-                        {data.Question}
-                      </Col>
-                      <Col md={1} lg={1} sm={12}>
-                        <button type='button' className={"markButton"} id={"mark" + index} onClick={this.handleMark(index, data.id)}>
-                          mark
-                        </button>
-                      </Col>
-                    </Row>
-                  </div>
+                <li id={data.id} key={data.id}>
+                  {data.isPassageQuestion === true ? (
+                    <div>
+                      {data.Passage} <br />
+                      <br />
+                    </div>
+                  ) : (
+                    console.log("No Passage for this question")
+                  )}
+                  <Row>
+                    <Col md={10} lg={10} sm={12}>
+                      {data.Question}
+                    </Col>
+                    <Col md={1} lg={1} sm={12}>
+                      TODO: conditional rendering based on if the marked query is selected or not, when selected call another function.
+                      <button type='button' className={"markButton"} id={"mark" + index} onClick={this.handleMark(index, data.id)}>
+                        mark
+                      </button>
+                    </Col>
+                  </Row>
                   <br />
                   <span className='customize-radio-button'>
                     <Form className={data.id}>
                       {data.Choice.map((choice, index) => (
-                        <p className={index}>
+                        <p className={index} key={index}>
                           <input type='radio' id={data.CorrectAnswer} name='choice' value={data.id} onChange={this.handleChange(data.id, choice, data.CorrectAnswer, index)} />
                           &nbsp;&nbsp;&nbsp;&nbsp; {choice}
                         </p>
@@ -203,7 +211,7 @@ class ReadExamPracticeMath extends Component {
                 See Result
               </Button>
             )}
-            <Link to={"/math_stats_page"}>
+            <Link to={"/english_stats_page"}>
               <Button id='submit' variant='outline-success' onClick={this.updateDatabase}>
                 Done
               </Button>
@@ -219,4 +227,4 @@ class ReadExamPracticeMath extends Component {
   }
 }
 
-export default ReadExamPracticeMath;
+export default ReadEnglishQuestion;

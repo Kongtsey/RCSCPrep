@@ -1,9 +1,15 @@
 .tabs {
   text-align: center;
 }
+.tabs button {
+  color: #9c9c9c;
+}
 .active {
   border-bottom: 2px solid #ffc10678;
   display: block !important;
+}
+.active button {
+  color: black;
 }
 .math {
   display: none;
@@ -11,4 +17,10 @@
 button {
   background: transparent;
   border: none;
+}
+.subject {
+  display: none;
+}
+.subject-active {
+  display: block;
 }
