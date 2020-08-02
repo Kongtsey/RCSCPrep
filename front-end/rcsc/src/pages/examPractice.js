@@ -47,6 +47,9 @@ class ExamPractice extends React.Component {
             <Col md={3} id={"data"} className={"tabs"}>
               <button onClick={this.handleDisplay("data")}>Data Interpretation</button>
             </Col>
+            <Col md={2}>
+              <Button>Submit</Button>
+            </Col>
           </Row>
           <br /> <br />
           <Row className={"subjects-parent"}>
