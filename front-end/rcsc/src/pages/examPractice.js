@@ -48,7 +48,9 @@ class ExamPractice extends React.Component {
               <button onClick={this.handleDisplay("data")}>Data Interpretation</button>
             </Col>
             <Col md={2}>
-              <Button>Submit</Button>
+              <Button variant='success' className={"submit-exam"}>
+                Submit
+              </Button>
             </Col>
           </Row>
           <br /> <br />

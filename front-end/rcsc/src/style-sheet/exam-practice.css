@@ -24,3 +24,11 @@ button {
 .subject-active {
   display: block;
 }
+
+/*SUBMIT BUTTON AT THE END OF THE SUBJECT TABS*/
+.submit-exam {
+  border-radius: 25px !important;
+  font-size: 10px !important;
+  margin-top: -5px !important;
+  padding: 5px 20px !important;
+}

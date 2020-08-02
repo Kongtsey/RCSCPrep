@@ -7,8 +7,6 @@ import Loading from "../components/loading";
 import { Link } from "react-router-dom";
 import "../style-sheet/mark-button.css";
 
-const answered_question_id = [];
-const answered_question_info = [];
 class ReadEnglishQuestion extends Component {
   constructor(props) {
     super(props);
@@ -17,9 +15,7 @@ class ReadEnglishQuestion extends Component {
       loading: false,
     };
     this.handleChange = this.handleChange.bind(this);
-    this.showResult = this.showResult.bind(this);
     this.highlightNewAnswer = this.highlightNewAnswer.bind(this);
-    this.updateDatabase = this.updateDatabase.bind(this);
     this.handleMark = this.handleMark.bind(this);
   }
 
@@ -46,31 +42,20 @@ class ReadEnglishQuestion extends Component {
   }
 
   handleChange = (questionId, userChoice, correctAnswer, index) => () => {
-    const userAnsweredIndex = parseInt(index);
-    const correctAnswerBool = correctAnswer === userAnsweredIndex;
-    let iterator = 0;
-    if (answered_question_id.length === 0) {
-      answered_question_id[0] = questionId;
-      answered_question_info[0] = [questionId, userChoice, correctAnswer, correctAnswerBool];
-    } else {
-      for (let i = 0; i < answered_question_id.length; i++) {
-        if (answered_question_id[i] === questionId) {
-          answered_question_info[i] = [questionId, userChoice, correctAnswer, correctAnswerBool];
-          iterator = 0;
-          break;
-        } else {
-          iterator = answered_question_id.length;
-        }
-      }
-    }
-    if (iterator === answered_question_id.length) {
-      answered_question_id[iterator] = questionId;
-      answered_question_info[iterator] = [questionId, userChoice, correctAnswer, correctAnswerBool];
-      console.log("Added the question ID: ", questionId);
-    } else {
-      console.log("The question id ", questionId, " already exist.");
-    }
-    this.highlightNewAnswer(questionId, index);
+    let correct_answer = correctAnswer === parseInt(index);
+    console.log("question ID: ", questionId, "\n User Choice: ", userChoice, "\n Correct Answer: ", correctAnswer, "\n Index: ", index);
+    let auth = fire.auth();
+    let userName = auth.currentUser.email; //need to get email since we need to know which collection
+    let db = fire.firestore();
+    let userCollection = db.collection(userName);
+    userCollection.doc("ExamOnSignUp").collection("English").doc(questionId).set(
+      {
+        UserHasNotResponded: false,
+        IsCorrectAnswer: correct_answer,
+        IsWrongAnswer: !correct_answer,
+      },
+      { merge: true }
+    );
   };
 
   highlightNewAnswer(questionId, index) {
@@ -86,58 +71,12 @@ class ReadEnglishQuestion extends Component {
       .css("color", "#ffc107");
   }
 
-  /***
-   * @return: void;
-   * @param: void;
-   * This class method is called when the user is finished answering the questions.
-   * This method highlights the wrong questions in light gray color and the correct in green.
-   */
-  showResult() {
-    $(":radio").attr("disabled", true);
-    for (let i = 0; i < answered_question_id.length; i++) {
-      let id = "#" + answered_question_info[i][0];
-      let answer_class = "." + answered_question_info[i][2];
-      for (let j = 0; j < 4; j++) {
-        if (j === parseInt(answered_question_info[i][2])) {
-          $(id).find("form").find(answer_class).css("color", "green");
-        } else {
-          $(id)
-            .find("form")
-            .find("." + j)
-            .css("color", "#cfcfcf");
-        }
-      }
-    }
-    $("#showResult").css("display", "none");
-    $("#submit").css("display", "block");
-  }
+  handleMark = (index, markedQuestionId, subject) => () => {
+    let auth = fire.auth();
+    let userName = auth.currentUser.email; //need to get email since we need to know which collection
+    let db = fire.firestore();
+    let userCollection = db.collection(userName); //ref to collection we need to update to.
 
-  updateDatabase() {
-    let auth = fire.auth();
-    let userName = auth.currentUser.email; //need to get email since we need to know which collection
-    let db = fire.firestore();
-    let userCollection = db.collection(userName); //ref to collection we need to update to.
-    for (let i = 0; i < answered_question_id.length; i++) {
-      //console.log("Question ", i, " : ", answered_question_id[i]);
-      //console.log("Question ", i, " : ", answered_question_info[i][1]);
-      let qID = answered_question_info[i][0];
-      //let userResponse = answered_question_info[i][1];
-      userCollection.doc("ExamOnSignUp").collection("English").doc(qID).set(
-        {
-          UserHasNotResponded: false,
-          IsCorrectAnswer: answered_question_info[i][3],
-          IsWrongAnswer: !answered_question_info[i][3],
-        },
-        { merge: true }
-      );
-    }
-  }
-  handleMark = (index, markedQuestionId) => () => {
-    //console.log("you ar here at handleMark and the index is: ", index);
-    let auth = fire.auth();
-    let userName = auth.currentUser.email; //need to get email since we need to know which collection
-    let db = fire.firestore();
-    let userCollection = db.collection(userName); //ref to collection we need to update to.
     if ($("#mark" + index).hasClass("markButton")) {
       $("#mark" + index).removeClass("markButton");
       $("#mark" + index).addClass("markedButton");
@@ -160,6 +99,7 @@ class ReadEnglishQuestion extends Component {
       );
     }
   };
+
   render() {
     const loading = this.state.loading;
     return (
@@ -169,20 +109,20 @@ class ReadEnglishQuestion extends Component {
             <ol>
               {this.state.questionData.map((data, index) => (
                 <li id={data.id} key={data.id}>
-                  {data.isPassageQuestion === true ? (
+                  {data.IsPassageQuestion === "True" ? (
                     <div>
                       {data.Passage} <br />
+                      console.log(data.Passage)
                       <br />
                     </div>
                   ) : (
-                    console.log("No Passage for this question")
+                    console.log(data.IsPassageQuestion)
                   )}
                   <Row>
                     <Col md={10} lg={10} sm={12}>
                       {data.Question}
                     </Col>
                     <Col md={1} lg={1} sm={12}>
-                      TODO: conditional rendering based on if the marked query is selected or not, when selected call another function.
                       <button type='button' className={"markButton"} id={"mark" + index} onClick={this.handleMark(index, data.id)}>
                         mark
                       </button>
@@ -204,18 +144,6 @@ class ReadEnglishQuestion extends Component {
                 </li>
               ))}
             </ol>
-            {loading ? (
-              <Loading />
-            ) : (
-              <Button variant='warning' id='showResult' onClick={this.showResult}>
-                See Result
-              </Button>
-            )}
-            <Link to={"/english_stats_page"}>
-              <Button id='submit' variant='outline-success' onClick={this.updateDatabase}>
-                Done
-              </Button>
-            </Link>
           </Col>
         </Row>
         <br />
