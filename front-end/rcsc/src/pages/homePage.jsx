@@ -3,14 +3,15 @@ import React, { useContext } from "react";
 import { withRouter, Redirect } from "react-router-dom";
 import { AuthContext } from "../components/authentication";
 import { Container } from "react-bootstrap";
-import ContactUs from "../components/contactUs";
 
+// import ContactUs from "../components/contactUs";
 import NavigationBar from "../components/homePageNavbar";
 import FrontPage from "../components/homeFrontPage";
 // import HomepageInfo from "../components/HomepageInfo";
 import ReasonsToStart from "../components/reasonsToStart/reasonsToStart";
 import Footer from "../components/footer";
 import PerksInUsing from  "../components/perksOfUsing/perksInUsing"
+import Founders from "../components/foundersComponent/founders";
 
 
 function HomePage() {
@@ -26,7 +27,8 @@ function HomePage() {
           {/*<HomepageInfo />*/}
           <ReasonsToStart/>
           <PerksInUsing/>
-          <ContactUs />
+          <Founders/>
+          {/*<ContactUs />*/}
           <Footer />
         </Container>
       </React.Fragment>

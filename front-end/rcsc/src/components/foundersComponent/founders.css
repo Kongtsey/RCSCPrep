@@ -1,0 +1,36 @@
+.foundersContainer{
+    background-color: rgb(0,81,84);
+}
+.title{
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+.titleHr{
+    margin-top: 0 !important;
+    border-top: 2px solid rgba(255, 255, 255, 0.9) !important;
+}
+.foundersPic{
+    width: auto;
+    height: 100%;
+}
+.foundersPicContainer{
+    text-align: right;
+    padding-right: 0 !important;
+    margin-left: 30px;
+    margin-right: -50px;
+    height: 340px;
+}
+.foundersBio{
+    /*border:1px solid red;*/
+    height: 340px;
+    overflow: hidden;
+    font-weight: 500;
+    padding-top: 40px;
+    padding-left: 0 !important;
+    font-size: 20px;
+    line-height: 1.75;
+    word-spacing: 3px;
+    text-align: justify;
+    color: rgb(161,192,193);
+}
