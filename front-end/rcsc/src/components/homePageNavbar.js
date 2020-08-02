@@ -186,24 +186,24 @@ class NavigationBar extends Component {
       <React.Fragment>
         <Container className='navbar-parent-container'>
           <Navbar collapseOnSelect expand='lg'>
-            <Navbar.Brand href='#home'>RCSC Prep</Navbar.Brand>
+            <Navbar.Brand href='#home' className="companyName">RCSC Prep</Navbar.Brand>
             <Navbar.Toggle aria-controls='responsive-navbar-nav' />
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav className='mr-auto'>
-                <Nav.Link href='#about'>About</Nav.Link>
+                <Nav.Link href='#about' >About</Nav.Link>
                 <Nav.Link href='#contact'>Contact</Nav.Link>
               </Nav>
               <Form inline>
-                <Button variant='light' className='login' onClick={this.handleShowLogin}>
+                <Button variant='link' className='login' onClick={this.handleShowLogin}>
                   Login
                 </Button>
-                <Button className='button buttonText' onClick={this.handleShow}>
+                <Button  className='button buttonText' onClick={this.handleShow}>
                   <span>Sign Up</span>
                 </Button>
               </Form>
             </Navbar.Collapse>
           </Navbar>
-          <hr />
+          <hr/>
         </Container>
 
         {/*Sign Up Form*/}

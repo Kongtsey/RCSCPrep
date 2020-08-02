@@ -3,7 +3,7 @@ import { Container, Col, Row, Button } from "react-bootstrap";
 import "../style-sheet/home-front-page.css";
 import front_page_image from "../images/studying.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChartPie, faLaptopHouse, faMoneyBillAlt } from "@fortawesome/free-solid-svg-icons";
+import { faChartPie, faLaptopHouse, faMoneyBillAlt,faWallet,faMoneyBill } from "@fortawesome/free-solid-svg-icons";
 
 function FrontPage() {
   return (
@@ -17,7 +17,7 @@ function FrontPage() {
               Our free online test prep makes it easier for you to practice for the P.E and to score better on it. By providing you metrics with how you're performing, RCSC Prep makes prepping for the
               Prelims more fun and efficient!
             </p>
-            <Button> Explore</Button>
+            <Button className="exploreButton"> Explore</Button>
           </Col>
           <Col lg={6} md={6} sm={12} className='front_page_image'>
             <img alt='people sitting infront of a laptop' src={front_page_image}></img>
@@ -45,14 +45,14 @@ function FrontPage() {
             </ul>
           </Col>
           <Col lg={4} md={4} sm={12}>
-            <FontAwesomeIcon icon={faMoneyBillAlt} className='featureIcons' />
+            <FontAwesomeIcon icon={faMoneyBill} className='featureIcons' />
             <br />
             <p className='featureTitle'>Free!</p> <br />
             <ul className='featureDescription'>
               <li>
-                No more paying for Tuition! RCSC Prep is completely free with no registration cost.
+                RCSC Prep is completely free with no registration cost.
                 <br />
-                Sign Up now!!
+                Sign Up NOW!!
               </li>
               {/*<li>Compatible with phones and laptop to make sure your device is not an issue!</li>*/}
             </ul>
