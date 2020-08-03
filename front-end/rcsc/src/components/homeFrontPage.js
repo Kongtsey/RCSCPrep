@@ -5,12 +5,13 @@ import front_page_image from "../images/studying.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartPie, faLaptopHouse, faMoneyBillAlt,faWallet,faMoneyBill } from "@fortawesome/free-solid-svg-icons";
 
+import user from "../images/homePage/laptop.png"
 function FrontPage() {
   return (
     <React.Fragment>
       <Container className='homepage_parent_container'>
         <Row className='front_page_content'>
-          <Col lg={6} md={6} sm={12} className='tagline'>
+          <Col lg={6} md={6} sm={12} className='tagline' className="frontPageHeader">
             <p className='tagline_message'>Pass the RCSC Prelims with ease!</p>
             <br />
             <p className='product_description'>
@@ -20,11 +21,11 @@ function FrontPage() {
             <Button className="exploreButton"> Explore</Button>
           </Col>
           <Col lg={6} md={6} sm={12} className='front_page_image'>
-            <img alt='people sitting infront of a laptop' src={front_page_image}></img>
+            <img alt='people sitting infront of a laptop' src={user}></img>
           </Col>
         </Row>
-        <Row>
-          <Col lg={4} md={4} sm={12}>
+        <Row style={{marginBottom: "25px"}}>
+          <Col lg={4} md={4} sm={12} className='featureContainer'>
             <FontAwesomeIcon icon={faChartPie} className='featureIcons' />
             <br />
             <p className='featureTitle'>Smart FeedBack</p> <br />
@@ -54,7 +55,6 @@ function FrontPage() {
                 <br />
                 Sign Up NOW!!
               </li>
-              {/*<li>Compatible with phones and laptop to make sure your device is not an issue!</li>*/}
             </ul>
           </Col>
         </Row>

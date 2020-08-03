@@ -14,8 +14,12 @@ meaning it would intersect with the image if the margin
 is not set.
 */
 .front_page_content {
+  /*margin-top: 190px;*/
+  /*margin-bottom: 100px;*/
+  z-index: 99;
+}
+.frontPageHeader{
   margin-top: 190px;
-  margin-bottom: 100px;
 }
 
 /*
@@ -23,7 +27,10 @@ This is for the div containing the image  on the front-page.
 it takes 6 cols on a desktop and 12 in mobile. 
 */
 .front_page_image {
+  padding-left: 0 !important;
+  margin-top: 110px;
   text-align: right;
+  /*z-index: 1;*/
 }
 
 /*
@@ -31,7 +38,12 @@ This is for the actual image tag. Changing the size of the
 image from here. 
 */
 .front_page_image img {
-  width: 80%;
+  width: 129%;
+  margin-bottom: -150px;
+}
+.featureContainer{
+  /*background-color: rgb(38,148,146) !important;
+  */
 }
 
 /*
@@ -45,6 +57,7 @@ This is the parent div for the tag line on the right of the image.
   color: rgb(214,214,214);
   margin-top: -10px;
   font-size: 18px;
+  z-index: 99;
 }
 
 /*
@@ -69,15 +82,14 @@ This is the actual message of the tagline.
   margin-top: -15px;
 }
 .exploreButton{
-  background: #DD8790 !important;
-  border: 1px solid #DD8790 !important;
+  background: transparent !important;
+  border: 2px solid white !important;
+  border-radius: 14% !important;
   display: block;
   margin-left: 0;
   line-height: 1.5;
-  border-radius: .25rem;
 }
 .exploreButton:hover{
   transition: 0.25s;
-  background: #D9707A !important;
-  border: 1px solid #D9707A !important;
+  border: 2px solid #D9707A !important;
 }

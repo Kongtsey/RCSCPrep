@@ -5,6 +5,7 @@
     width: 150px;
     height: 150px;
     margin-top: 35px;
+    cursor: pointer;
 }
 .perksIconsContainer{
     text-align: center;

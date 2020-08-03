@@ -21,12 +21,12 @@ function Footer() {
           <Col className='footer_contacts' md={4} sm={6}>
             <Row>
               <Col sm={12} className="contactContent">
-                <FontAwesomeIcon icon={faMapMarker}/> &nbsp;&nbsp; Olakha, Thimphu, Bhutan
+                <FontAwesomeIcon icon={faMapMarker} className="footerIcons"/> &nbsp;&nbsp; Olakha, Thimphu, Bhutan
               </Col>
             </Row>
             <Row>
               <Col sm={12} className="contactContent" style={{marginTop: "10px",marginBottom:"10px"}}>
-                <FontAwesomeIcon icon={faEnvelope}/> &nbsp;&nbsp; bhutanexamfactory@gmail.com
+                <FontAwesomeIcon icon={faEnvelope} className="footerIcons"/> &nbsp;&nbsp; bhutanexamfactory@gmail.com
               </Col>
             </Row>
             <Row>
@@ -38,13 +38,13 @@ function Footer() {
               <Col sm={12} style={{marginLeft: "60px"}}>
                 <Row>
                   <Col sm={4}>
-                    <a href="facebook.com"><FontAwesomeIcon icon={faFacebook}/></a>
+                    <a href="facebook.com"><FontAwesomeIcon icon={faFacebook}  className="footerIcons smIcons"/></a>
                   </Col>
                   <Col sm={4}>
-                    <a href="instagram.com"><FontAwesomeIcon icon={faInstagram}/></a>
+                    <a href="instagram.com"><FontAwesomeIcon icon={faInstagram} className="footerIcons smIcons"/></a>
                   </Col>
                   <Col sm={4}>
-                    <a href="youtube.com"><FontAwesomeIcon icon={faYoutube}/></a>
+                    <a href="youtube.com"><FontAwesomeIcon icon={faYoutube}  className="footerIcons smIcons"/></a>
                   </Col>
                 </Row>
               </Col>
@@ -67,26 +67,6 @@ function Footer() {
 
             </p>
           </Col>
-          {/*<Col lg={2} md={2} sm={4} className='socialMedia'>*/}
-          {/*  <h6>Follow RCSC Prep</h6>*/}
-          {/*  <Row>*/}
-
-          {/*    <Col lg={12} md={12} sm={12} className="smIcons">*/}
-          {/*      <a href="instagram.com"><FontAwesomeIcon icon={faFacebook}/> &nbsp; Facebook</a>*/}
-          {/*    </Col>*/}
-          {/*  </Row>*/}
-          {/*  <Row>*/}
-          {/*    <Col lg={12} md={12} sm={12} className="smIcons">*/}
-          {/*      <a href="facebook.com"><FontAwesomeIcon icon={faInstagram}/> &nbsp; Instagram</a>*/}
-          {/*    </Col>*/}
-          {/*  </Row>*/}
-          {/*  <Row>*/}
-          {/*    <Col lg={12} md={12} sm={12} className="smIcons">*/}
-          {/*      <a href="youtube.com"><FontAwesomeIcon icon={faYoutube}/> &nbsp; Youtube</a>*/}
-
-          {/*    </Col>*/}
-          {/*  </Row>*/}
-          {/*</Col>*/}
         </Row>
         <hr />
         <Row className='legal'>
@@ -94,8 +74,8 @@ function Footer() {
             <p>&#169; 2020 RCSC Prep</p>
           </Col>
 
-          <Col md={2} lg={4} sm={2}><a href="google.com">Terms of use</a></Col>
-          <Col md={2} lg={3} sm={2}><a href="google.com">Privacy Policy</a></Col>
+          <Col md={2} lg={4} sm={2}><a href="google.com" className="footerTermsOfUse">Terms of use</a></Col>
+          <Col md={2} lg={3} sm={2}><a href="google.com" className="footerTermsOfUse">Privacy Policy</a></Col>
 
         </Row>
       </Container>

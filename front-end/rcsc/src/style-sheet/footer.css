@@ -11,23 +11,24 @@
   color: white;
   margin-top: 50px;
   text-align: left;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 2;
   padding-left: 50px !important;
 }
 .quickNav {
   color: white;
   margin-top: 50px;
-  font-size: 20px;
+  font-size: 1rem;
   text-align: left;
   padding-left: 100px !important;
 }
 .quickNavText{
   margin-left: 50px;
+  color: white!important;
 }
 .footerSocial{
   margin-left: 40px;
-  font-size: 20px;
+  font-size: 1rem;
  }
 .contactContent{
   margin-left: 40px;
@@ -36,10 +37,12 @@
   text-align: left;
 }
 .copyright{
-  color: #253541bf !important;
+  color: rgb(163,161,161) !important;
+  font-size: 0.75rem;
 }
-a{
-  color: white !important;
+.footerTermsOfUse{
+  color: rgb(163,161,161) !important;
+  font-size: 0.75rem;
 }
 a:hover{
   transition: 0.5s;
@@ -51,5 +54,13 @@ a:hover{
   text-align: left;
 }
 .smIcons{
-  margin-top: 20px;
+  font-size: 20px !important;
+}
+.smIcons:hover{
+  transition: 0.5s !important;
+  color: white!important;
+}
+.footerIcons{
+  color: rgb(167,161,161);
+  font-size: 20px;
 }
