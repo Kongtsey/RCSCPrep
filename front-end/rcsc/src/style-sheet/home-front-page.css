@@ -42,8 +42,9 @@ image from here.
   margin-bottom: -150px;
 }
 .featureContainer{
-  /*background-color: rgb(38,148,146) !important;
-  */
+  height: 285px;
+  margin-left: 5px;
+  background-color: rgba(1, 130, 127, 0.54) !important;
 }
 
 /*
@@ -71,15 +72,22 @@ This is the actual message of the tagline.
 .featureIcons {
   font-size: 50px;
   color: white;
+  text-align: center;
+}
+.featureIconsContainer{
+  margin-top: 20px;
+  text-align: center;
 }
 .featureTitle {
   font-size: 25px;
   color: white;
   margin-top: 10px;
+  text-align: center;
 }
 .featureDescription {
   color: white;
   margin-top: -15px;
+  margin-left: 20px;
 }
 .exploreButton{
   background: transparent !important;
