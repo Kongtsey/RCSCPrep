@@ -78,6 +78,12 @@ This is the actual message of the tagline.
   margin-top: 20px;
   text-align: center;
 }
+.emailLink {
+  color: white !important;
+}
+.emailLink:hover{
+  color: white !important;
+}
 .featureTitle {
   font-size: 25px;
   color: white;

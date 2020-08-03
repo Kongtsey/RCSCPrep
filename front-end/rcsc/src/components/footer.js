@@ -26,7 +26,7 @@ function Footer() {
             </Row>
             <Row>
               <Col sm={12} className="contactContent" style={{marginTop: "10px",marginBottom:"10px"}}>
-                <FontAwesomeIcon icon={faEnvelope} className="footerIcons"/> &nbsp;&nbsp; bhutanexamfactory@gmail.com
+                <a href="mailto: bhutanexamfactory@gmail.com" className="emailLink"><FontAwesomeIcon icon={faEnvelope} className="footerIcons"/> &nbsp; bhutanexamfactory@gmail.com</a>
               </Col>
             </Row>
             <Row>
@@ -37,14 +37,14 @@ function Footer() {
             <Row>
               <Col sm={12} style={{marginLeft: "60px"}}>
                 <Row>
-                  <Col sm={4}>
-                    <a href="facebook.com"><FontAwesomeIcon icon={faFacebook}  className="footerIcons smIcons"/></a>
+                  <Col sm={4} className="smIcons">
+                    <a href="facebook.com"><FontAwesomeIcon icon={faFacebook} className="footerIcons smIcons"/></a>
                   </Col>
                   <Col sm={4}>
-                    <a href="instagram.com"><FontAwesomeIcon icon={faInstagram} className="footerIcons smIcons"/></a>
+                    <a href="instagram.com"><FontAwesomeIcon icon={faInstagram} style={{marginTop: "15px"}} className="footerIcons smIcons"/></a>
                   </Col>
                   <Col sm={4}>
-                    <a href="youtube.com"><FontAwesomeIcon icon={faYoutube}  className="footerIcons smIcons"/></a>
+                    <a href="youtube.com"><FontAwesomeIcon icon={faYoutube} style={{marginTop: "15px"}} className="footerIcons smIcons"/></a>
                   </Col>
                 </Row>
               </Col>
