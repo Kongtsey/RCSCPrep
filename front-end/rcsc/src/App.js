@@ -8,7 +8,6 @@ import PracticeEnglish from "./pages/englishPractice";
 import MathLoader from "./pages/mathStatsPage";
 import EnglishLoader from "./pages/englishStatsPage";
 import ExamPractice from "./pages/examPractice.js";
-import Forum from "./pages/forum";
 import { AuthProvider } from "./components/authentication";
 
 import PrivateRoute from "./components/PrivateRoute";

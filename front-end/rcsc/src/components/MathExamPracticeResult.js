@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import fire from "../config/Fire";
-import { Table, Container, Col, Row } from "react-bootstrap";
+import { Table, Container, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import "../style-sheet/result-tables.css";

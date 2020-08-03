@@ -195,7 +195,6 @@ class NavigationBar extends Component {
                 .collection("EnglishQuestions")
                 .get()
                 .then((snapshot) => {
-                  let counter = 0;
                   snapshot.forEach((doc) => {
                     //console.log("english :", doc.id, " -----> ", doc.data());
                     db.collection(this.state.email).doc("ExamOnSignUp").collection("English").add({

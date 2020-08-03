@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import fire from "../config/Fire";
-import { Button, Container, Col, Row, Form } from "react-bootstrap";
+import { Container, Col, Row, Form } from "react-bootstrap";
 import $ from "jquery";
 import "../style-sheet/radio-customization.css";
-import Loading from "./loading";
-import { Link } from "react-router-dom";
 import "../style-sheet/mark-button.css";
 
 class ReadExamPracticeMath extends Component {
@@ -101,7 +99,6 @@ class ReadExamPracticeMath extends Component {
   };
 
   render() {
-    const loading = this.state.loading;
     return (
       <Container>
         <Row>
