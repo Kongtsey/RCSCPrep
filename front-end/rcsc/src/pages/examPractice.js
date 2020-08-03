@@ -15,12 +15,21 @@ class ExamPractice extends React.Component {
     this.handleDisplay = this.handleDisplay.bind(this);
     this.handleTable = this.handleTable.bind(this);
     this.closeTable = this.closeTable.bind(this);
+    this.showReview = this.showReview.bind(this);
   }
+  //TODO: NEED TO CLOSE THE REVIEW TABLE AND SET THE OPACITY FOR THE EXAM QUESTIONS BACK TO 1.
   closeTable = () => () => {
-    $("review-confirmation").removeClass("table-active");
+    console.log("-------->");
+    //$("review-confirmation").removeClass("table-active");
+    $(".review-confirmation").css("display", "none");
+    $(".exam-question-display").css("opacity", 1);
   };
+  showReview = () => () => {
+    $(".review-confirmation").css("display", "block");
+    $(".exam-question-display").css("opacity", 0.1);
+  };
+
   handleDisplay = (subject_name) => () => {
-    //console.log(id_name);
     // This highlights the border-bottom and the color of the text.
     $(".tabs").removeClass("active");
     $(".tab-header #" + subject_name).addClass("active");
@@ -117,7 +126,7 @@ class ExamPractice extends React.Component {
                 <button onClick={this.handleDisplay("data")}>Data Interpretation</button>
               </Col>
               <Col md={2}>
-                <Button variant='success' className={"submit-exam"}>
+                <Button variant='success' className={"submit-exam"} onClick={this.showReview()}>
                   Submit
                 </Button>
               </Col>

@@ -109,11 +109,10 @@ class ReadEnglishQuestion extends Component {
                   {data.IsPassageQuestion === "True" ? (
                     <div>
                       {data.Passage} <br />
-                      console.log(data.Passage)
                       <br />
                     </div>
                   ) : (
-                    console.log(data.Passage)
+                    console.log("")
                   )}
                   <Row>
                     <Col md={10} lg={10} sm={12}>
