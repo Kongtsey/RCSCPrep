@@ -1,3 +1,6 @@
+* {
+  transition: 300ms linear ease-in;
+}
 .exam-question-display {
   opacity: 1;
 }
@@ -36,20 +39,27 @@ button {
 
 /*SUBMIT BUTTON AT THE END OF THE SUBJECT TABS*/
 .review-confirmation {
-  position: absolute;
+  position: fixed;
   z-index: 2;
   padding: 20px;
   border-radius: 10px;
   background: linear-gradient(145deg, #ffffff, #e6e6e6);
   box-shadow: 9px 9px 30px #d9d9d9, -9px -9px 30px #ffffff;
   display: none;
+  transition: 300ms linear ease-in;
 }
 .close-parent {
   text-align: right;
 }
 .close-tab {
-  color: #0058ff;
-  cursor: pointer;
+  color: #0058ff !important;
+  background: none !important;
+  border: none !important;
+}
+.close-tab:hover {
+  color: #66ab1e !important;
+  background: none !important;
+  border: none !important;
 }
 .table-submit-exam {
   border-radius: 25px !important;

@@ -8,6 +8,7 @@ import ReadExamPracticeEnglish from "../components/readExamPracticeEnglish";
 import MathExamPracticeResult from "../components/MathExamPracticeResult";
 import EnglishExamPracticeResult from "../components/EnglishExamPracticeResult";
 import $ from "jquery";
+import { Link } from "react-router-dom";
 
 class ExamPractice extends React.Component {
   constructor(props) {
@@ -17,7 +18,9 @@ class ExamPractice extends React.Component {
     this.closeTable = this.closeTable.bind(this);
     this.showReview = this.showReview.bind(this);
   }
-  //TODO: NEED TO CLOSE THE REVIEW TABLE AND SET THE OPACITY FOR THE EXAM QUESTIONS BACK TO 1.
+
+  //TODO: NEED TO HANDLE THE RESULTS ONCE THE USER SUBMITS IT.
+
   closeTable = () => () => {
     console.log("-------->");
     //$("review-confirmation").removeClass("table-active");
@@ -66,9 +69,9 @@ class ExamPractice extends React.Component {
                 <h6> &nbsp; Review </h6>
               </Col>
               <Col md={"6"} className={"close-parent"}>
-                <span className={"close-tab"} onClick={this.closeTable}>
+                <Button className={"close-tab"} onClick={this.closeTable()}>
                   Close X
-                </span>
+                </Button>
               </Col>
               <hr />
             </Row>
@@ -104,9 +107,11 @@ class ExamPractice extends React.Component {
                 <span> Are you usure you want to submit? </span>
               </Col>
               <Col md={"2"} className={"parent-table-submit-exam"}>
-                <Button variant='danger' className={"table-submit-exam"}>
-                  Submit
-                </Button>
+                <Link to={"/sign-up-exam-review"}>
+                  <Button variant='danger' className={"table-submit-exam"}>
+                    Submit
+                  </Button>
+                </Link>
               </Col>
             </Row>
           </Container>
