@@ -1,40 +1,66 @@
 .footer_parent_div {
-  background: #F4F9FC;
+  background: rgb(0,149,152);
 }
 .project_motto {
-  color: #2B3568;
+  color: white;
   margin-top: 50px;
+  text-align: left;
   /*margin-bottom: 40px;*/
 }
 .footer_contacts {
-  color: #2B3568;
-  margin-top: 30px;
+  color: white;
+  margin-top: 50px;
   text-align: left;
+  font-size: 1rem;
+  line-height: 2;
+  padding-left: 50px !important;
 }
 .quickNav {
-  color: #2B3568;
-  margin-top: 30px;
+  color: white;
+  margin-top: 50px;
+  font-size: 1rem;
   text-align: left;
+  padding-left: 100px !important;
+}
+.quickNavText{
+  margin-left: 50px;
+  color: white!important;
+}
+.footerSocial{
+  margin-left: 40px;
+  font-size: 1rem;
+ }
+.contactContent{
+  margin-left: 40px;
 }
 .legal{
   text-align: left;
-
 }
 .copyright{
-  color: #253541bf;
+  color: rgb(163,161,161) !important;
+  font-size: 0.75rem;
 }
-a{
-  color: #2B3568 !important;
+.footerTermsOfUse{
+  color: rgb(163,161,161) !important;
+  font-size: 0.75rem;
 }
 a:hover{
   transition: 0.5s;
   text-decoration: none !important;
-  color: #007bff !important;
+  color: #DD8790 !important;
 }
 .socialMedia{
   margin-top: 30px;
   text-align: left;
 }
 .smIcons{
-  margin-top: 20px;
+  font-size: 30px !important;
+}
+.smIcons:hover{
+  transition: 0.5s !important;
+  color: white!important;
+}
+.footerIcons{
+  color: rgb(167,161,161);
+  font-size: 20px;
 }

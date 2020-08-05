@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Fredoka+One&family=Monoton&family=Ultra&family=Rubik+Mono+One&display=swaprel=stylesheet");
 
 .homepage_parent_container {
-  border: solid #f9fbfd 1px;
-  background: #f9fbfd;
+  border: solid rgb(0,148,151) 1px;
+  background: rgb(0,148,151);
   margin: 0;
 }
 
@@ -14,8 +14,12 @@ meaning it would intersect with the image if the margin
 is not set.
 */
 .front_page_content {
+  /*margin-top: 190px;*/
+  /*margin-bottom: 100px;*/
+  z-index: 99;
+}
+.frontPageHeader{
   margin-top: 190px;
-  margin-bottom: 100px;
 }
 
 /*
@@ -23,7 +27,10 @@ This is for the div containing the image  on the front-page.
 it takes 6 cols on a desktop and 12 in mobile. 
 */
 .front_page_image {
+  padding-left: 0 !important;
+  margin-top: 110px;
   text-align: right;
+  /*z-index: 1;*/
 }
 
 /*
@@ -31,7 +38,13 @@ This is for the actual image tag. Changing the size of the
 image from here. 
 */
 .front_page_image img {
-  width: 80%;
+  width: 129%;
+  margin-bottom: -150px;
+}
+.featureContainer{
+  height: 285px;
+  margin-left: 5px;
+  background-color: rgba(1, 130, 127, 0.54) !important;
 }
 
 /*
@@ -42,29 +55,55 @@ This is the parent div for the tag line on the right of the image.
 }
 .product_description {
   text-align: justify;
-  color: #253541bf;
+  color: rgb(214,214,214);
   margin-top: -10px;
   font-size: 18px;
+  z-index: 99;
 }
 
 /*
 This is the actual message of the tagline.
 */
 .tagline_message {
-  color: #2b354f;
+  color: white;
   font-size: 35px;
   font-weight: 500;
 }
 .featureIcons {
   font-size: 50px;
-  color: #0069d9;
+  color: white;
+  text-align: center;
+}
+.featureIconsContainer{
+  margin-top: 20px;
+  text-align: center;
+}
+.emailLink {
+  color: white !important;
+}
+.emailLink:hover{
+  color: white !important;
 }
 .featureTitle {
   font-size: 25px;
-  color: black;
+  color: white;
   margin-top: 10px;
+  text-align: center;
 }
 .featureDescription {
-  color: #253541bf;
+  color: white;
   margin-top: -15px;
+  margin-left: 20px;
+}
+.exploreButton{
+  background: transparent !important;
+  border: 2px solid white !important;
+  border-radius: 14% !important;
+  display: block;
+  margin-left: 0;
+  line-height: 1.5;
+}
+.exploreButton:hover{
+  transition: 0.25s;
+  border: 2px solid #D9707A !important;
 }

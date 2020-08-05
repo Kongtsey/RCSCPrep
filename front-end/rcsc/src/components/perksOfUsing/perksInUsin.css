@@ -1,0 +1,18 @@
+.perksInUsingContainer{
+    background-color: white;
+}
+.perksIcons{
+    width: 150px;
+    height: 150px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+.perksIconsContainer{
+    text-align: center;
+}
+.perksDescription{
+    line-height: 2;
+    text-align: justify;
+    word-spacing: 5px;
+    color: rgb(96,98,100);
+}
