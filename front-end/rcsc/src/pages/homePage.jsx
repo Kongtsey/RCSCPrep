@@ -21,8 +21,8 @@ function HomePage() {
     return (
       <React.Fragment>
         <Container fluid={true} style={{ background: "rgb(0,148,151)", padding: "0px" }}>
-          <FrontPage />
           <NavigationBar />
+          <FrontPage />
           <ReasonsToStart/>
           <PerksInUsing/>
           <Founders/>

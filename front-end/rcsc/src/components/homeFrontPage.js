@@ -23,7 +23,7 @@ function FrontPage() {
             <img alt='people sitting infront of a laptop' src={user}></img>
           </Col>
         </Row>
-        <Row style={{marginBottom: "25px"}}>
+        <Row style={{marginBottom: "25px",marginTop: "40px"}}>
           <Col lg={4} md={4} sm={12}>
             <Row>
               <Col sm={11} className="featureContainer">
