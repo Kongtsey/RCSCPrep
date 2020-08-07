@@ -44,24 +44,24 @@ class PerksInUsing extends React.Component{
                     <Col sm={6}>
                         <Row style={{marginTop: "45px"}}>
                             <Col sm={4} className="perksIconsContainer">
-                                <img src={weakness} className="perksIcons" style={{opacity: this.state.opacity[0]}} onClick={(e) => this.handleChange(0,e)}/>
+                                <img src={weakness} className="perksIcons" style={{opacity: this.state.opacity[0]}} onClick={(e) => this.handleChange(0,e)} alt="weaknessPic"/>
                             </Col>
                             <Col sm={4} className="perksIconsContainer">
-                                <img src={examFinal} className="perksIcons" style={{opacity: this.state.opacity[1]}} onClick={(e) => this.handleChange(1,e)}/>
+                                <img src={examFinal} className="perksIcons" style={{opacity: this.state.opacity[1]}} onClick={(e) => this.handleChange(1,e)} alt="finalExamPic"/>
                             </Col>
                             <Col sm={4} className="perksIconsContainer">
-                                <img src={stats} className="perksIcons" style={{opacity: this.state.opacity[2]}} onClick={(e) => this.handleChange(2,e)}/>
+                                <img src={stats} className="perksIcons" style={{opacity: this.state.opacity[2]}} onClick={(e) => this.handleChange(2,e)} alt="statsPic"/>
                             </Col>
                         </Row>
                         <Row style={{marginBottom: "80px"}}>
                             <Col sm={4} className="perksIconsContainer">
-                                <img src={easyReview} className="perksIcons" style={{opacity: this.state.opacity[3]}} onClick={(e) => this.handleChange(3,e)}/>
+                                <img src={easyReview} className="perksIcons" style={{opacity: this.state.opacity[3]}} onClick={(e) => this.handleChange(3,e)} alt="reviewPic"/>
                             </Col>
                             <Col sm={4} className="perksIconsContainer">
-                                <img src={category} className="perksIcons" style={{opacity: this.state.opacity[4]}} onClick={(e) => this.handleChange(4,e)}/>
+                                <img src={category} className="perksIcons" style={{opacity: this.state.opacity[4]}} onClick={(e) => this.handleChange(4,e)} alt="categoryPic"/>
                             </Col>
                             <Col sm={4} className="perksIconsContainer">
-                                <img src={history} className="perksIcons" style={{opacity: this.state.opacity[5]}} onClick={(e) => this.handleChange(5,e)}/>
+                                <img src={history} className="perksIcons" style={{opacity: this.state.opacity[5]}} onClick={(e) => this.handleChange(5,e)} alt="historyPic"/>
                             </Col>
                         </Row>
                     </Col>
