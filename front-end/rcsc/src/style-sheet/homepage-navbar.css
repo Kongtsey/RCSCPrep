@@ -49,8 +49,9 @@ This is the actual text of the navbar.
 }
 .haveAnAcc{
 }
-hr{
+.hrNavBar{
   border-top: 1px solid rgba(205, 205, 205, 0.8) !important;
+  margin-bottom: 0 !important;
 }
 .login {
   transition: 0.5s;

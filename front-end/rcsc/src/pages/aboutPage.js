@@ -10,7 +10,7 @@ class AboutPage extends React.Component{
             <Container fluid={true} style={{ backgroundColor: "rgb(0,148,151)", padding: "0px" }}>
                 <Row>
                     <Col sm={12} style={{height: "auto"}}>
-                        <HomePageNavbar style={{position:"relative !important"}}/>
+                        <HomePageNavbar/>
                     </Col>
                 </Row>
                 <Row>
@@ -18,8 +18,6 @@ class AboutPage extends React.Component{
                         <JoinUs/>
                     </Col>
                 </Row>
-                {/*<JoinUs/>*/}
-                {/*<HomePageNavbar/>*/}
             </Container>
         )
     }

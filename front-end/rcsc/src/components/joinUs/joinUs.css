@@ -1,3 +1,18 @@
 .joinUsContainer{
     background-color: rgb(251,251,251);
 }
+.joinUsHeader{
+    text-align: center;
+}
+.joinUsHeader h3{
+    margin-top: 100px;
+    color: rgb(112,112,112);
+    text-align: left;
+    margin-left: 160px;
+}
+.lookingFor h5{
+    color: rgb(124,124,124);
+    margin-left: 160px;
+    text-align: left;
+    margin-top: 20px;
+}

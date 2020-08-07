@@ -203,7 +203,7 @@ class NavigationBar extends Component {
               </Form>
             </Navbar.Collapse>
           </Navbar>
-          <hr/>
+          <hr className="hrNavBar"/>
         </Container>
 
         {/*Sign Up Form*/}
