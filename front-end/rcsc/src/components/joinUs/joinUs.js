@@ -18,8 +18,29 @@ class JoinUs extends React.Component{
                             <Col sm={12} className="lookingFor">
                                 <h5>We are currently looking for: </h5>
                             </Col>
-                        </Row></Col>
-
+                        </Row>
+                        <Row className="justify-content-center">
+                            <Col sm={8} className="employeeBoxesContainer">
+                                <div className="employeeBoxes">
+                                    <p>Graphic Designer</p>
+                                </div>
+                            </Col>
+                        </Row>
+                        <Row className="justify-content-center">
+                            <Col sm={8} className="employeeBoxesContainer">
+                                <div className="employeeBoxes">
+                                    <p>Webapp Dev</p>
+                                </div>
+                            </Col>
+                        </Row>
+                        <Row className="justify-content-center" style={{marginBottom: "100px"}}>
+                            <Col sm={8} className="employeeBoxesContainer">
+                                <div className="employeeBoxes">
+                                    <p>Digital Marketer</p>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Col>
                 </Row>
             </Container>
         )

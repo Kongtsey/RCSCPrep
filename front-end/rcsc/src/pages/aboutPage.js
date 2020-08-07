@@ -17,6 +17,9 @@ class AboutPage extends React.Component{
                     <Col sm={6}>
                         <JoinUs/>
                     </Col>
+                    <Col sm={6}>
+
+                    </Col>
                 </Row>
             </Container>
         )
