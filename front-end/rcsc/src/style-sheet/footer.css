@@ -54,7 +54,7 @@ a:hover{
   text-align: left;
 }
 .smIcons{
-  font-size: 30px !important;
+  font-size: 25px !important;
 }
 .smIcons:hover{
   transition: 0.5s !important;
@@ -63,4 +63,10 @@ a:hover{
 .footerIcons{
   color: rgb(167,161,161);
   font-size: 20px;
+}
+.extraMessage {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  font-weight: 600;
 }

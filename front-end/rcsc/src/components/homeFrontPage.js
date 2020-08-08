@@ -1,17 +1,16 @@
 import React from "react";
 import { Container, Col, Row, Button } from "react-bootstrap";
 import "../style-sheet/home-front-page.css";
-import front_page_image from "../images/studying.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartPie, faLaptopHouse,faMoneyBill } from "@fortawesome/free-solid-svg-icons";
-
 import user from "../images/homePage/laptop.png"
+
 function FrontPage() {
   return (
     <React.Fragment>
       <Container className='homepage_parent_container'>
         <Row className='front_page_content'>
-          <Col lg={6} md={6} sm={12} className='tagline' className="frontPageHeader">
+          <Col lg={6} md={6} sm={12} className="tagline frontPageHeader">
             <p className='tagline_message'>Pass the RCSC Prelims with ease!</p>
             <br />
             <p className='product_description'>
@@ -24,7 +23,7 @@ function FrontPage() {
             <img alt='people sitting infront of a laptop' src={user}></img>
           </Col>
         </Row>
-        <Row style={{marginBottom: "25px"}}>
+        <Row style={{marginBottom: "25px",marginTop: "40px"}}>
           <Col lg={4} md={4} sm={12}>
             <Row>
               <Col sm={11} className="featureContainer">

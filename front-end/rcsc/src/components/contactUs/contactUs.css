@@ -1,0 +1,26 @@
+.descripText{
+    /*text-align: center;*/
+}
+.descripText p{
+    text-align: left;
+    margin-top: 20px;
+    color: rgb(156,156,156);
+    margin-left: 160px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.contactDetails{
+    color: rgb(112,112,112);
+    margin-left: 175px;
+    font-weight: 600;
+    font-size: 1.20rem;
+    word-spacing: 2px;
+    padding-left: 0 !important;
+    border-bottom: solid rgb(255,192,0) 2px;
+}
+.contactDetails p{
+    margin-bottom: 5px;
+}
+.lastDetail{
+    margin-bottom: 107px;
+}

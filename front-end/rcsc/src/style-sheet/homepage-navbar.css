@@ -7,12 +7,11 @@
   so that it sits on top of the background of the front-page content.
 */
 .navbar-parent-container {
-  position: absolute;
+  /*position: absolute;*/
   z-index: 10;
   top: 0;
   left: 0;
   right: 0;
-  margin-top: 10px;
   padding: 0px!important;
 }
 /*
@@ -50,8 +49,9 @@ This is the actual text of the navbar.
 }
 .haveAnAcc{
 }
-hr{
+.hrNavBar{
   border-top: 1px solid rgba(205, 205, 205, 0.8) !important;
+  margin-bottom: 0 !important;
 }
 .login {
   transition: 0.5s;

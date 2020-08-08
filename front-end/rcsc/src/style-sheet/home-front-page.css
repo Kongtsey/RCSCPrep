@@ -19,7 +19,7 @@ is not set.
   z-index: 99;
 }
 .frontPageHeader{
-  margin-top: 190px;
+  margin-top: 70px;
 }
 
 /*
@@ -28,7 +28,7 @@ it takes 6 cols on a desktop and 12 in mobile.
 */
 .front_page_image {
   padding-left: 0 !important;
-  margin-top: 110px;
+  margin-top: 10px;
   text-align: right;
   /*z-index: 1;*/
 }

@@ -16,7 +16,7 @@ class Founders extends React.Component{
                 <hr className="titleHr"/>
                 <Row>
                     <Col sm={3} className="foundersPicContainer">
-                        <img src={founders} className="foundersPic"/>
+                        <img src={founders} className="foundersPic" alt="foundersPic"/>
                     </Col>
                     <Col sm={7} className="foundersBio">
                         RCSC Prep makes it easy for you to study at your own pace and at your own time. Our feedback is personalized to your performance and helps you find your weaknesses and your strengths.

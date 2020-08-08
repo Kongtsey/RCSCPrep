@@ -1,0 +1,37 @@
+.joinUsContainer{
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,148,151,1) 0%, rgba(251,251,251,1) 77%);
+}
+.joinUsHeader{
+    text-align: center;
+}
+.joinUsHeader h3{
+    margin-top: 100px;
+    color: rgb(112,112,112);
+    text-align: left;
+    margin-left: 160px;
+}
+.lookingFor h5{
+    color: rgb(124,124,124);
+    margin-left: 160px;
+    text-align: left;
+    margin-top: 20px;
+}
+.employeeBoxes{
+    background-color: white;
+    border-radius: 60px;
+    width: 50%;
+    height: 50px;
+    box-shadow: 10px 5px 5px 2px rgba(135, 130, 130, 0.53);
+    margin-left: 80px;
+}
+.employeeBoxes p{
+    float: right;
+    font-weight: 600;
+    color: rgb(124,124,124);
+    margin-top: 11px;
+    margin-right: 19px;
+}
+.employeeBoxesContainer{
+    text-align: center;
+    margin-top: 40px;
+}
