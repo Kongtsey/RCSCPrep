@@ -64,3 +64,9 @@ a:hover{
   color: rgb(167,161,161);
   font-size: 20px;
 }
+.extraMessage {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  font-weight: 600;
+}

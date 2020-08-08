@@ -26,7 +26,7 @@ function HomePage() {
           <ReasonsToStart/>
           <PerksInUsing/>
           <Founders/>
-          <Footer />
+          <Footer extraMsg=""/>
         </Container>
       </React.Fragment>
     );

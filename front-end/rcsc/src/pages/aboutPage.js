@@ -24,7 +24,7 @@ class AboutPage extends React.Component{
                     </Col>
                 </Row>
                 <Row>
-                    <Footer/>
+                    <Footer extraMsg="We are always looking for more collaborators. Shoot us an email even if what you are looking for is not listed."/>
                 </Row>
             </Container>
         )
