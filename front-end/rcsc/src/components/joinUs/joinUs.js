@@ -33,7 +33,7 @@ class JoinUs extends React.Component{
                                 </div>
                             </Col>
                         </Row>
-                        <Row className="justify-content-center" style={{marginBottom: "100px"}}>
+                        <Row className="justify-content-center" style={{marginBottom: "150px"}}>
                             <Col sm={8} className="employeeBoxesContainer">
                                 <div className="employeeBoxes">
                                     <p>Digital Marketer</p>
