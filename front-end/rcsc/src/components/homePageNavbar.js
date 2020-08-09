@@ -137,11 +137,11 @@ class NavigationBar extends Component {
                       IsWrongAnswer: doc.data().IsWrongAnswer,
                       Question: doc.data().Question,
                       UserHasNotResponded: doc.data().UserHasNotResponded,
-                      // QuestionYear: doc.data().QuestionYear,
                       Marked: doc.data().Marked,
                     });
+                    console.log("Math Questions: ", doc.id, doc.data().Question);
                   });
-                  console.log("Done copying the Math database");
+                  console.log("--------------------------------- \n Done copying the Math database ---------------------------------\n");
                 });
 
               //>>>>>>>>>> C O P Y I N G   T H E   E N G L I S H   Q U E S T I O N  <<<<<<<<<<<<<<
@@ -161,8 +161,9 @@ class NavigationBar extends Component {
                       Passage: doc.data().Passage,
                       isPassageQuestion: doc.data().isPassageQuestion,
                     });
+                    console.log("English Questions: ", doc.id, doc.data().Question);
                   });
-                  console.log("Done copying the English database ");
+                  console.log("--------------------------------- \n Done copying the English database ---------------------------------\n");
                 });
 
               //>>>>>>>>>> C O P Y I N G   T H E   M A T H   Q U E S T I O N  F O R  P R A C T I C E  E X A M <<<<<<<<<<<<<<
@@ -185,8 +186,8 @@ class NavigationBar extends Component {
                       Marked: doc.data().Marked,
                       ImageUrl: doc.data().ImageUrl,
                     });
+                    console.log("EXAM Math Questions: ", doc.id, doc.data().Question);
                   });
-                  console.log("Done copying the Exam on sign up Math database");
                 });
 
               //>>>>>>>>>> C O P Y I N G   T H E   E N G L I S H   Q U E S T I O N  F O R  P R A C T I C E  E X A M <<<<<<<<<<<<<<
@@ -210,8 +211,8 @@ class NavigationBar extends Component {
                       IsPassageQuestion: doc.data().IsPassageQuestion,
                       Passage: doc.data().Passage,
                     });
+                    console.log("EXAM English Questions: ", doc.id, doc.data().Question);
                   });
-                  console.log("Done copying the Exam on sign up English database ");
                 });
             });
         }

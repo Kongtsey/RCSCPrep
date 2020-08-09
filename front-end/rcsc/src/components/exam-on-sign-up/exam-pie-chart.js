@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import fire from "../config/Fire";
-import { SimplePieChart } from "./PieChart";
-class CorrectWrong extends Component {
+import fire from "../../config/Fire";
+import { SimplePieChart } from "../PieChart";
+
+class ExamPieChart extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,9 +15,9 @@ class CorrectWrong extends Component {
     let correctAnswers = 0;
     let totalAnswered = 0;
     let db = fire.firestore();
-    let docPath = this.props.category;
+    let collecPath = this.props.subject;
     let user = fire.auth().currentUser;
-    let questionRef = db.collection(user.email).doc(docPath).collection("Questions"); //abc
+    let questionRef = db.collection(user.email).doc("ExamOnSignUp").collection(collecPath);
     let responseQuery = questionRef.where("UserHasNotResponded", "==", false);
     responseQuery
       .get()
@@ -72,4 +73,4 @@ class CorrectWrong extends Component {
     );
   }
 }
-export default CorrectWrong;
+export default ExamPieChart;

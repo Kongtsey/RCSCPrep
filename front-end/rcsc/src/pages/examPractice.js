@@ -7,6 +7,7 @@ import ReadExamPracticeMath from "../components/readExamPracticeMath";
 import ReadExamPracticeEnglish from "../components/readExamPracticeEnglish";
 import MathExamPracticeResult from "../components/MathExamPracticeResult";
 import EnglishExamPracticeResult from "../components/EnglishExamPracticeResult";
+import SignUpExamResult from "../components/exam-on-sign-up/exam-on-sign-up-result";
 import $ from "jquery";
 
 class ExamPractice extends React.Component {
@@ -20,12 +21,11 @@ class ExamPractice extends React.Component {
     this.closeTable = this.closeTable.bind(this);
     this.showReview = this.showReview.bind(this);
     this.changeShowResult = this.changeShowResult.bind(this);
+    this.showFinalResult = this.showFinalResult.bind(this);
+    this.closeResultTable = this.closeResultTable.bind(this);
   }
 
-  
   closeTable = () => () => {
-    console.log("-------->");
-    //$("review-confirmation").removeClass("table-active");
     $(".review-confirmation").css("display", "none");
     $(".exam-question-display").css("opacity", 1);
   };
@@ -54,7 +54,18 @@ class ExamPractice extends React.Component {
   };
 
   changeShowResult = () => () => {
+    $(".review-confirmation").css("display", "none");
+    $(".exam-question-display").css("opacity", 1);
+    $(":radio").attr("disabled", true);
     this.setState({ showResult: true });
+  };
+  showFinalResult = () => () => {
+    $(".exam-question-display").css("opacity", 0.1);
+    $(".end-result").css("display", "block");
+  };
+  closeResultTable = () => () => {
+    $(".exam-question-display").css("opacity", 1);
+    $(".end-result").css("display", "none");
   };
 
   render() {
@@ -68,7 +79,22 @@ class ExamPractice extends React.Component {
             <hr />
           </Row>
           <br />
+
           {/* --------------------------------------------------------------------------------------------- */}
+          {/* T H I S   I S   F O R   T H E   R E S U L T   T A B L E.   */}
+          {/* --------------------------------------------------------------------------------------------- */}
+
+          <Container className={"end-result"}>
+            <SignUpExamResult />
+            <div style={{ paddingLeft: "15px" }}>
+              <Button onClick={this.closeResultTable()}> Close X </Button>
+            </div>
+          </Container>
+
+          {/* --------------------------------------------------------------------------------------------- */}
+          {/* T H I S   I S   F O R   T H E   R E V I E W   T A B .   */}
+          {/* --------------------------------------------------------------------------------------------- */}
+
           <Container className={"review-confirmation"}>
             <Row>
               <Col md={"6"}>
@@ -119,7 +145,11 @@ class ExamPractice extends React.Component {
               </Col>
             </Row>
           </Container>
+
           {/* --------------------------------------------------------------------------------------------- */}
+          {/*  T H I S   I S   F O R   T H E   S U B J E C T S   T A B S   O N   T H E   T O P . */}
+          {/* --------------------------------------------------------------------------------------------- */}
+
           <Container className={"exam-question-display"}>
             <Row className={"tab-header"}>
               <Col md={2} id={"math"} className={"tabs active"}>
@@ -135,12 +165,21 @@ class ExamPractice extends React.Component {
                 <button onClick={this.handleDisplay("data")}>Data Interpretation</button>
               </Col>
               <Col md={2}>
-                <Button variant='success' className={"submit-exam"} onClick={this.showReview()}>
-                  Submit
-                </Button>
+                {this.state.showResult ? (
+                  <Button variant='success' className={"submit-exam"} onClick={this.showFinalResult()}>
+                    See Result
+                  </Button>
+                ) : (
+                  <Button variant='success' className={"submit-exam"} onClick={this.showReview()}>
+                    Submit
+                  </Button>
+                )}
               </Col>
             </Row>
             <br /> <br />
+            {/* --------------------------------------------------------------------------------------------- */}
+            {/* T H I S   I S   F O R   T H E   D I S P L A Y I N G   O F   T H E   A C T U A L   Q U E S T I O N S .   */}
+            {/* --------------------------------------------------------------------------------------------- */}
             <Row className={"subjects-parent"}>
               <div id={"math"} className={"subject subject-active"}>
                 <ReadExamPracticeMath showResult={this.state.showResult} />
