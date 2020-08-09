@@ -159,12 +159,9 @@ class MathList extends Component {
   };
   render() {
     const showResult = this.props.showResult;
-    {
-      showResult ? this.showResult() : console.log(showResult);
-    }
-    {
-      showResult ? this.updateDatabase() : console.log(showResult);
-    }
+    showResult ? this.showResult() : console.log(showResult);
+    showResult ? this.updateDatabase() : console.log(showResult);
+
     return (
       <Container>
         <Row>

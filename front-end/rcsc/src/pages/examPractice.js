@@ -8,7 +8,6 @@ import ReadExamPracticeEnglish from "../components/readExamPracticeEnglish";
 import MathExamPracticeResult from "../components/MathExamPracticeResult";
 import EnglishExamPracticeResult from "../components/EnglishExamPracticeResult";
 import $ from "jquery";
-import { Link } from "react-router-dom";
 
 class ExamPractice extends React.Component {
   constructor(props) {
@@ -23,8 +22,7 @@ class ExamPractice extends React.Component {
     this.changeShowResult = this.changeShowResult.bind(this);
   }
 
-  //TODO: NEED TO HANDLE THE RESULTS ONCE THE USER SUBMITS IT.
-
+  
   closeTable = () => () => {
     console.log("-------->");
     //$("review-confirmation").removeClass("table-active");
