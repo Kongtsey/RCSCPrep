@@ -13,10 +13,14 @@ import { Link } from "react-router-dom";
 class ExamPractice extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      showResult: false,
+    };
     this.handleDisplay = this.handleDisplay.bind(this);
     this.handleTable = this.handleTable.bind(this);
     this.closeTable = this.closeTable.bind(this);
     this.showReview = this.showReview.bind(this);
+    this.changeShowResult = this.changeShowResult.bind(this);
   }
 
   //TODO: NEED TO HANDLE THE RESULTS ONCE THE USER SUBMITS IT.
@@ -49,6 +53,10 @@ class ExamPractice extends React.Component {
 
     $(".table-subjects-parent .table-subject").removeClass("table-subject-active");
     $(".table-subjects-parent #" + subject_name).addClass("table-subject-active");
+  };
+
+  changeShowResult = () => () => {
+    this.setState({ showResult: true });
   };
 
   render() {
@@ -107,11 +115,9 @@ class ExamPractice extends React.Component {
                 <span> Are you usure you want to submit? </span>
               </Col>
               <Col md={"2"} className={"parent-table-submit-exam"}>
-                <Link to={"/sign-up-exam-review"}>
-                  <Button variant='danger' className={"table-submit-exam"}>
-                    Submit
-                  </Button>
-                </Link>
+                <Button variant='danger' className={"table-submit-exam"} onClick={this.changeShowResult()}>
+                  Submit
+                </Button>
               </Col>
             </Row>
           </Container>
@@ -139,10 +145,10 @@ class ExamPractice extends React.Component {
             <br /> <br />
             <Row className={"subjects-parent"}>
               <div id={"math"} className={"subject subject-active"}>
-                <ReadExamPracticeMath />
+                <ReadExamPracticeMath showResult={this.state.showResult} />
               </div>
               <div id={"english"} className={"subject"}>
-                <ReadExamPracticeEnglish />
+                <ReadExamPracticeEnglish showResult={this.state.showResult} />
               </div>
             </Row>
           </Container>
