@@ -1,0 +1,450 @@
+{
+    "Category": "Comprehension",
+    "Choice": [
+        " It is the conclusion",
+        " It states an assumption",
+        " It contradicts the topic under discussion",
+        " It states the impossible"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "Part I: Comprehension\nRead the following passage and answer Questions 1-5 by choosing the answer to each question. Answers\nshould be based on what is stated or implied in the passage.\n (The passage given below is an excerpt from Nudge \u2013 Improving Decisions about Health, Wealth and\nHappiness by Richard H. Thaler and Cass R. Sunstein)\nHow much should you worry about hurricanes, nuclear power, terrorism, mad cow disease, alligator\nattacks, or avian flu? How much care should you take in avoiding risks associated with each? What exactly\nshould you do to prevent the kind of dangers that you face in ordinary life?\nIn answering questions of this kind, most people use what is called the \u201cavailability heuristic\u201d. They assess\nthe likelihood of risks by asking how readily examples come to mind. If people can easily think of relevant\nexamples, they are far more likely to be frightened and concerned than if they cannot. A risk that is\nfamiliar, like that associated with terrorism in the aftermath of 9/11, will be seen as more serious than a risk\nthat is less familiar. Homicides are more available than suicides, and so people tend to believe, wrongly,\nthat more people die from homicide.\nAccessibility and salience are closely related to availability, and they are important as well. If you have\npersonally experienced a serious earthquake, you\u2019re more likely to believe that an earthquake is likely than\nif you read about it in a weekly magazine. Thus, vivid and easily imagined causes of death (for example,\ntornadoes) often receive inflated estimates of probability, and less-vivid causes (for example, asthma\nattacks) receive low estimates, even if they occur with a far greater frequency. So, too, recent events have a\ngreater impact on our behavior and on our fears, than earlier ones.\nThe availability heuristic helps to explain much risk-related behavior, including both public and private\ndecisions to take precautions. Whether people buy insurance for natural disasters is greatly affected by\nrecent experiences. In the aftermath of an earthquake, purchases of new earthquake insurance policies rise\nsharply \u2013 but purchases decline steadily from that point, as vivid memories recede.\nWhen \u201cavailability bias\u201d is at work, both public and private decisions may be improved if judgments can be\nmade in the direction of true probabilities. A good way to increase people\u2019s fear of a bad outcome is to\nremind them of a related incident in which things went wrong; a good way to increase people\u2019s\nconfidence is to remind them of a similar situation in which everything worked out for the best. The\npervasive problems are that easily remembered events may inflate people\u2019s probability judgments, and that\nif no such events come to mind, their judgments of likelihoods might be distorted downward.\n   1. What role does the bolded and italicized sentence play in the passage?\n       A. It is the conclusion\n       B. It states an assumption\n       C. It contradicts the topic under discussion\n       D. It states the impossible\n   2. Which of the following best describes the word \u201cheuristic\u201d?\n          A.   Theoretical knowledge\n          B.   Rule of thumb\n          C.   Dynamics\n          D.   Common sense\n   3. The whole passage is about the phenomenon of:\n          A.   Making good judgments based on past and recent experiences\n          B.   Keeping risk-related behavior a total mystery\n          C.   Selecting which public and private decisions to make\n          D.   Discerning risks based on experiences that easily come to mind\n   4. What would influence people to buy insurance?\n          A.   Events that occur occasionally\n          B.   An event that occurred 5 years ago\n          C.   An event that occurred recently and can be remembered vividly\n          D.   A disease that has high probability\n   5. Which two words best explain the words \u201cpervasive\u201d and \u201cvivid\u201d as used in the passage?\n          A.   Pervasive means \u201cinvasive\u201d and vivid means \u201clucid\u201d\n          B.   Pervasive means \u201cevade\u201d and vivid means \u201cstriking\u201d\n          C.   Pervasive means \u201ccomprehensive\u201d and vivid means \u201cscarlet\u201d\n          D.   Pervasive means \u201crestrictive\u201d and vivid means \u201ccolorless\u201d\nPART II: Grammar\n   6. Choose the word or phrase that will correctly complete the conversation.\n   \u201cWhat _________ has the new administration\u2019s policies had on investor confidence\u201d?\n          A.  Outcomes\n          B.  Effect\n          C.  Affect\n          D.  Influences\n   7. Choose the correct word or phrase that will correctly complete the sentence.\n   The government\u2019s decision __________ discussion of the Health Bill to the 9th Session of the\n   Parliament was the best one given the current situation.\n          A.  To defer\n          B.  In deferring\n          C.  For deferring\n          D.  To deferring\n   8. Choose the correct word or phrase that will correctly complete the sentence.\n   Her ability to be objective on all matters irrespective of circumstances earned her the __________ of\n   even her __________ adversaries.\n          A.  Admiration; anxious\n          B.  Respect; anxious\n          C.  Respect; exacting\n          D.  Respect; eager\n   9. Choose the word or phrase that will correctly complete the conversation.\n   \u201cThe political party ________ from a group of interested citizens who met frequently to protest\n   government actions\u201d\n          A.  Consisted\n          B.  Emerge\n          C.  Develop\n          D.  Evolved\n",
+    "Question": " What role does the bolded and italicized sentence play in the passage?",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": true
+}
+{
+    "Category": "Comprehension",
+    "Choice": [
+        " Theoretical knowledge",
+        " Rule of thumb",
+        " Dynamics",
+        " Common sense"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "Part I: Comprehension\nRead the following passage and answer Questions 1-5 by choosing the answer to each question. Answers\nshould be based on what is stated or implied in the passage.\n (The passage given below is an excerpt from Nudge \u2013 Improving Decisions about Health, Wealth and\nHappiness by Richard H. Thaler and Cass R. Sunstein)\nHow much should you worry about hurricanes, nuclear power, terrorism, mad cow disease, alligator\nattacks, or avian flu? How much care should you take in avoiding risks associated with each? What exactly\nshould you do to prevent the kind of dangers that you face in ordinary life?\nIn answering questions of this kind, most people use what is called the \u201cavailability heuristic\u201d. They assess\nthe likelihood of risks by asking how readily examples come to mind. If people can easily think of relevant\nexamples, they are far more likely to be frightened and concerned than if they cannot. A risk that is\nfamiliar, like that associated with terrorism in the aftermath of 9/11, will be seen as more serious than a risk\nthat is less familiar. Homicides are more available than suicides, and so people tend to believe, wrongly,\nthat more people die from homicide.\nAccessibility and salience are closely related to availability, and they are important as well. If you have\npersonally experienced a serious earthquake, you\u2019re more likely to believe that an earthquake is likely than\nif you read about it in a weekly magazine. Thus, vivid and easily imagined causes of death (for example,\ntornadoes) often receive inflated estimates of probability, and less-vivid causes (for example, asthma\nattacks) receive low estimates, even if they occur with a far greater frequency. So, too, recent events have a\ngreater impact on our behavior and on our fears, than earlier ones.\nThe availability heuristic helps to explain much risk-related behavior, including both public and private\ndecisions to take precautions. Whether people buy insurance for natural disasters is greatly affected by\nrecent experiences. In the aftermath of an earthquake, purchases of new earthquake insurance policies rise\nsharply \u2013 but purchases decline steadily from that point, as vivid memories recede.\nWhen \u201cavailability bias\u201d is at work, both public and private decisions may be improved if judgments can be\nmade in the direction of true probabilities. A good way to increase people\u2019s fear of a bad outcome is to\nremind them of a related incident in which things went wrong; a good way to increase people\u2019s\nconfidence is to remind them of a similar situation in which everything worked out for the best. The\npervasive problems are that easily remembered events may inflate people\u2019s probability judgments, and that\nif no such events come to mind, their judgments of likelihoods might be distorted downward.\n   1. What role does the bolded and italicized sentence play in the passage?\n       A. It is the conclusion\n       B. It states an assumption\n       C. It contradicts the topic under discussion\n       D. It states the impossible\n   2. Which of the following best describes the word \u201cheuristic\u201d?\n          A.   Theoretical knowledge\n          B.   Rule of thumb\n          C.   Dynamics\n          D.   Common sense\n   3. The whole passage is about the phenomenon of:\n          A.   Making good judgments based on past and recent experiences\n          B.   Keeping risk-related behavior a total mystery\n          C.   Selecting which public and private decisions to make\n          D.   Discerning risks based on experiences that easily come to mind\n   4. What would influence people to buy insurance?\n          A.   Events that occur occasionally\n          B.   An event that occurred 5 years ago\n          C.   An event that occurred recently and can be remembered vividly\n          D.   A disease that has high probability\n   5. Which two words best explain the words \u201cpervasive\u201d and \u201cvivid\u201d as used in the passage?\n          A.   Pervasive means \u201cinvasive\u201d and vivid means \u201clucid\u201d\n          B.   Pervasive means \u201cevade\u201d and vivid means \u201cstriking\u201d\n          C.   Pervasive means \u201ccomprehensive\u201d and vivid means \u201cscarlet\u201d\n          D.   Pervasive means \u201crestrictive\u201d and vivid means \u201ccolorless\u201d\nPART II: Grammar\n   6. Choose the word or phrase that will correctly complete the conversation.\n   \u201cWhat _________ has the new administration\u2019s policies had on investor confidence\u201d?\n          A.  Outcomes\n          B.  Effect\n          C.  Affect\n          D.  Influences\n   7. Choose the correct word or phrase that will correctly complete the sentence.\n   The government\u2019s decision __________ discussion of the Health Bill to the 9th Session of the\n   Parliament was the best one given the current situation.\n          A.  To defer\n          B.  In deferring\n          C.  For deferring\n          D.  To deferring\n   8. Choose the correct word or phrase that will correctly complete the sentence.\n   Her ability to be objective on all matters irrespective of circumstances earned her the __________ of\n   even her __________ adversaries.\n          A.  Admiration; anxious\n          B.  Respect; anxious\n          C.  Respect; exacting\n          D.  Respect; eager\n   9. Choose the word or phrase that will correctly complete the conversation.\n   \u201cThe political party ________ from a group of interested citizens who met frequently to protest\n   government actions\u201d\n          A.  Consisted\n          B.  Emerge\n          C.  Develop\n          D.  Evolved\n",
+    "Question": " Which of the following best describes the word \u201cheuristic\u201d?",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": true
+}
+{
+    "Category": "Comprehension",
+    "Choice": [
+        " Making good judgments based on past and recent experiences",
+        " Keeping risk-related behavior a total mystery",
+        " Selecting which public and private decisions to make",
+        " Discerning risks based on experiences that easily come to mind"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "Part I: Comprehension\nRead the following passage and answer Questions 1-5 by choosing the answer to each question. Answers\nshould be based on what is stated or implied in the passage.\n (The passage given below is an excerpt from Nudge \u2013 Improving Decisions about Health, Wealth and\nHappiness by Richard H. Thaler and Cass R. Sunstein)\nHow much should you worry about hurricanes, nuclear power, terrorism, mad cow disease, alligator\nattacks, or avian flu? How much care should you take in avoiding risks associated with each? What exactly\nshould you do to prevent the kind of dangers that you face in ordinary life?\nIn answering questions of this kind, most people use what is called the \u201cavailability heuristic\u201d. They assess\nthe likelihood of risks by asking how readily examples come to mind. If people can easily think of relevant\nexamples, they are far more likely to be frightened and concerned than if they cannot. A risk that is\nfamiliar, like that associated with terrorism in the aftermath of 9/11, will be seen as more serious than a risk\nthat is less familiar. Homicides are more available than suicides, and so people tend to believe, wrongly,\nthat more people die from homicide.\nAccessibility and salience are closely related to availability, and they are important as well. If you have\npersonally experienced a serious earthquake, you\u2019re more likely to believe that an earthquake is likely than\nif you read about it in a weekly magazine. Thus, vivid and easily imagined causes of death (for example,\ntornadoes) often receive inflated estimates of probability, and less-vivid causes (for example, asthma\nattacks) receive low estimates, even if they occur with a far greater frequency. So, too, recent events have a\ngreater impact on our behavior and on our fears, than earlier ones.\nThe availability heuristic helps to explain much risk-related behavior, including both public and private\ndecisions to take precautions. Whether people buy insurance for natural disasters is greatly affected by\nrecent experiences. In the aftermath of an earthquake, purchases of new earthquake insurance policies rise\nsharply \u2013 but purchases decline steadily from that point, as vivid memories recede.\nWhen \u201cavailability bias\u201d is at work, both public and private decisions may be improved if judgments can be\nmade in the direction of true probabilities. A good way to increase people\u2019s fear of a bad outcome is to\nremind them of a related incident in which things went wrong; a good way to increase people\u2019s\nconfidence is to remind them of a similar situation in which everything worked out for the best. The\npervasive problems are that easily remembered events may inflate people\u2019s probability judgments, and that\nif no such events come to mind, their judgments of likelihoods might be distorted downward.\n   1. What role does the bolded and italicized sentence play in the passage?\n       A. It is the conclusion\n       B. It states an assumption\n       C. It contradicts the topic under discussion\n       D. It states the impossible\n   2. Which of the following best describes the word \u201cheuristic\u201d?\n          A.   Theoretical knowledge\n          B.   Rule of thumb\n          C.   Dynamics\n          D.   Common sense\n   3. The whole passage is about the phenomenon of:\n          A.   Making good judgments based on past and recent experiences\n          B.   Keeping risk-related behavior a total mystery\n          C.   Selecting which public and private decisions to make\n          D.   Discerning risks based on experiences that easily come to mind\n   4. What would influence people to buy insurance?\n          A.   Events that occur occasionally\n          B.   An event that occurred 5 years ago\n          C.   An event that occurred recently and can be remembered vividly\n          D.   A disease that has high probability\n   5. Which two words best explain the words \u201cpervasive\u201d and \u201cvivid\u201d as used in the passage?\n          A.   Pervasive means \u201cinvasive\u201d and vivid means \u201clucid\u201d\n          B.   Pervasive means \u201cevade\u201d and vivid means \u201cstriking\u201d\n          C.   Pervasive means \u201ccomprehensive\u201d and vivid means \u201cscarlet\u201d\n          D.   Pervasive means \u201crestrictive\u201d and vivid means \u201ccolorless\u201d\nPART II: Grammar\n   6. Choose the word or phrase that will correctly complete the conversation.\n   \u201cWhat _________ has the new administration\u2019s policies had on investor confidence\u201d?\n          A.  Outcomes\n          B.  Effect\n          C.  Affect\n          D.  Influences\n   7. Choose the correct word or phrase that will correctly complete the sentence.\n   The government\u2019s decision __________ discussion of the Health Bill to the 9th Session of the\n   Parliament was the best one given the current situation.\n          A.  To defer\n          B.  In deferring\n          C.  For deferring\n          D.  To deferring\n   8. Choose the correct word or phrase that will correctly complete the sentence.\n   Her ability to be objective on all matters irrespective of circumstances earned her the __________ of\n   even her __________ adversaries.\n          A.  Admiration; anxious\n          B.  Respect; anxious\n          C.  Respect; exacting\n          D.  Respect; eager\n   9. Choose the word or phrase that will correctly complete the conversation.\n   \u201cThe political party ________ from a group of interested citizens who met frequently to protest\n   government actions\u201d\n          A.  Consisted\n          B.  Emerge\n          C.  Develop\n          D.  Evolved\n",
+    "Question": " The whole passage is about the phenomenon of:",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": true
+}
+{
+    "Category": "Comprehension",
+    "Choice": [
+        " Events that occur occasionally",
+        " An event that occurred 5 years ago",
+        " An event that occurred recently and can be remembered vividly",
+        " A disease that has high probability"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "Part I: Comprehension\nRead the following passage and answer Questions 1-5 by choosing the answer to each question. Answers\nshould be based on what is stated or implied in the passage.\n (The passage given below is an excerpt from Nudge \u2013 Improving Decisions about Health, Wealth and\nHappiness by Richard H. Thaler and Cass R. Sunstein)\nHow much should you worry about hurricanes, nuclear power, terrorism, mad cow disease, alligator\nattacks, or avian flu? How much care should you take in avoiding risks associated with each? What exactly\nshould you do to prevent the kind of dangers that you face in ordinary life?\nIn answering questions of this kind, most people use what is called the \u201cavailability heuristic\u201d. They assess\nthe likelihood of risks by asking how readily examples come to mind. If people can easily think of relevant\nexamples, they are far more likely to be frightened and concerned than if they cannot. A risk that is\nfamiliar, like that associated with terrorism in the aftermath of 9/11, will be seen as more serious than a risk\nthat is less familiar. Homicides are more available than suicides, and so people tend to believe, wrongly,\nthat more people die from homicide.\nAccessibility and salience are closely related to availability, and they are important as well. If you have\npersonally experienced a serious earthquake, you\u2019re more likely to believe that an earthquake is likely than\nif you read about it in a weekly magazine. Thus, vivid and easily imagined causes of death (for example,\ntornadoes) often receive inflated estimates of probability, and less-vivid causes (for example, asthma\nattacks) receive low estimates, even if they occur with a far greater frequency. So, too, recent events have a\ngreater impact on our behavior and on our fears, than earlier ones.\nThe availability heuristic helps to explain much risk-related behavior, including both public and private\ndecisions to take precautions. Whether people buy insurance for natural disasters is greatly affected by\nrecent experiences. In the aftermath of an earthquake, purchases of new earthquake insurance policies rise\nsharply \u2013 but purchases decline steadily from that point, as vivid memories recede.\nWhen \u201cavailability bias\u201d is at work, both public and private decisions may be improved if judgments can be\nmade in the direction of true probabilities. A good way to increase people\u2019s fear of a bad outcome is to\nremind them of a related incident in which things went wrong; a good way to increase people\u2019s\nconfidence is to remind them of a similar situation in which everything worked out for the best. The\npervasive problems are that easily remembered events may inflate people\u2019s probability judgments, and that\nif no such events come to mind, their judgments of likelihoods might be distorted downward.\n   1. What role does the bolded and italicized sentence play in the passage?\n       A. It is the conclusion\n       B. It states an assumption\n       C. It contradicts the topic under discussion\n       D. It states the impossible\n   2. Which of the following best describes the word \u201cheuristic\u201d?\n          A.   Theoretical knowledge\n          B.   Rule of thumb\n          C.   Dynamics\n          D.   Common sense\n   3. The whole passage is about the phenomenon of:\n          A.   Making good judgments based on past and recent experiences\n          B.   Keeping risk-related behavior a total mystery\n          C.   Selecting which public and private decisions to make\n          D.   Discerning risks based on experiences that easily come to mind\n   4. What would influence people to buy insurance?\n          A.   Events that occur occasionally\n          B.   An event that occurred 5 years ago\n          C.   An event that occurred recently and can be remembered vividly\n          D.   A disease that has high probability\n   5. Which two words best explain the words \u201cpervasive\u201d and \u201cvivid\u201d as used in the passage?\n          A.   Pervasive means \u201cinvasive\u201d and vivid means \u201clucid\u201d\n          B.   Pervasive means \u201cevade\u201d and vivid means \u201cstriking\u201d\n          C.   Pervasive means \u201ccomprehensive\u201d and vivid means \u201cscarlet\u201d\n          D.   Pervasive means \u201crestrictive\u201d and vivid means \u201ccolorless\u201d\nPART II: Grammar\n   6. Choose the word or phrase that will correctly complete the conversation.\n   \u201cWhat _________ has the new administration\u2019s policies had on investor confidence\u201d?\n          A.  Outcomes\n          B.  Effect\n          C.  Affect\n          D.  Influences\n   7. Choose the correct word or phrase that will correctly complete the sentence.\n   The government\u2019s decision __________ discussion of the Health Bill to the 9th Session of the\n   Parliament was the best one given the current situation.\n          A.  To defer\n          B.  In deferring\n          C.  For deferring\n          D.  To deferring\n   8. Choose the correct word or phrase that will correctly complete the sentence.\n   Her ability to be objective on all matters irrespective of circumstances earned her the __________ of\n   even her __________ adversaries.\n          A.  Admiration; anxious\n          B.  Respect; anxious\n          C.  Respect; exacting\n          D.  Respect; eager\n   9. Choose the word or phrase that will correctly complete the conversation.\n   \u201cThe political party ________ from a group of interested citizens who met frequently to protest\n   government actions\u201d\n          A.  Consisted\n          B.  Emerge\n          C.  Develop\n          D.  Evolved\n",
+    "Question": " What would influence people to buy insurance?",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": true
+}
+{
+    "Category": "Comprehension",
+    "Choice": [
+        " Pervasive means \u201cinvasive\u201d and vivid means \u201clucid\u201d",
+        " Pervasive means \u201cevade\u201d and vivid means \u201cstriking\u201d",
+        " Pervasive means \u201ccomprehensive\u201d and vivid means \u201cscarlet\u201d",
+        " Pervasive means \u201crestrictive\u201d and vivid means \u201ccolorless\u201d"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "Part I: Comprehension\nRead the following passage and answer Questions 1-5 by choosing the answer to each question. Answers\nshould be based on what is stated or implied in the passage.\n (The passage given below is an excerpt from Nudge \u2013 Improving Decisions about Health, Wealth and\nHappiness by Richard H. Thaler and Cass R. Sunstein)\nHow much should you worry about hurricanes, nuclear power, terrorism, mad cow disease, alligator\nattacks, or avian flu? How much care should you take in avoiding risks associated with each? What exactly\nshould you do to prevent the kind of dangers that you face in ordinary life?\nIn answering questions of this kind, most people use what is called the \u201cavailability heuristic\u201d. They assess\nthe likelihood of risks by asking how readily examples come to mind. If people can easily think of relevant\nexamples, they are far more likely to be frightened and concerned than if they cannot. A risk that is\nfamiliar, like that associated with terrorism in the aftermath of 9/11, will be seen as more serious than a risk\nthat is less familiar. Homicides are more available than suicides, and so people tend to believe, wrongly,\nthat more people die from homicide.\nAccessibility and salience are closely related to availability, and they are important as well. If you have\npersonally experienced a serious earthquake, you\u2019re more likely to believe that an earthquake is likely than\nif you read about it in a weekly magazine. Thus, vivid and easily imagined causes of death (for example,\ntornadoes) often receive inflated estimates of probability, and less-vivid causes (for example, asthma\nattacks) receive low estimates, even if they occur with a far greater frequency. So, too, recent events have a\ngreater impact on our behavior and on our fears, than earlier ones.\nThe availability heuristic helps to explain much risk-related behavior, including both public and private\ndecisions to take precautions. Whether people buy insurance for natural disasters is greatly affected by\nrecent experiences. In the aftermath of an earthquake, purchases of new earthquake insurance policies rise\nsharply \u2013 but purchases decline steadily from that point, as vivid memories recede.\nWhen \u201cavailability bias\u201d is at work, both public and private decisions may be improved if judgments can be\nmade in the direction of true probabilities. A good way to increase people\u2019s fear of a bad outcome is to\nremind them of a related incident in which things went wrong; a good way to increase people\u2019s\nconfidence is to remind them of a similar situation in which everything worked out for the best. The\npervasive problems are that easily remembered events may inflate people\u2019s probability judgments, and that\nif no such events come to mind, their judgments of likelihoods might be distorted downward.\n   1. What role does the bolded and italicized sentence play in the passage?\n       A. It is the conclusion\n       B. It states an assumption\n       C. It contradicts the topic under discussion\n       D. It states the impossible\n   2. Which of the following best describes the word \u201cheuristic\u201d?\n          A.   Theoretical knowledge\n          B.   Rule of thumb\n          C.   Dynamics\n          D.   Common sense\n   3. The whole passage is about the phenomenon of:\n          A.   Making good judgments based on past and recent experiences\n          B.   Keeping risk-related behavior a total mystery\n          C.   Selecting which public and private decisions to make\n          D.   Discerning risks based on experiences that easily come to mind\n   4. What would influence people to buy insurance?\n          A.   Events that occur occasionally\n          B.   An event that occurred 5 years ago\n          C.   An event that occurred recently and can be remembered vividly\n          D.   A disease that has high probability\n   5. Which two words best explain the words \u201cpervasive\u201d and \u201cvivid\u201d as used in the passage?\n          A.   Pervasive means \u201cinvasive\u201d and vivid means \u201clucid\u201d\n          B.   Pervasive means \u201cevade\u201d and vivid means \u201cstriking\u201d\n          C.   Pervasive means \u201ccomprehensive\u201d and vivid means \u201cscarlet\u201d\n          D.   Pervasive means \u201crestrictive\u201d and vivid means \u201ccolorless\u201d\nPART II: Grammar\n   6. Choose the word or phrase that will correctly complete the conversation.\n   \u201cWhat _________ has the new administration\u2019s policies had on investor confidence\u201d?\n          A.  Outcomes\n          B.  Effect\n          C.  Affect\n          D.  Influences\n   7. Choose the correct word or phrase that will correctly complete the sentence.\n   The government\u2019s decision __________ discussion of the Health Bill to the 9th Session of the\n   Parliament was the best one given the current situation.\n          A.  To defer\n          B.  In deferring\n          C.  For deferring\n          D.  To deferring\n   8. Choose the correct word or phrase that will correctly complete the sentence.\n   Her ability to be objective on all matters irrespective of circumstances earned her the __________ of\n   even her __________ adversaries.\n          A.  Admiration; anxious\n          B.  Respect; anxious\n          C.  Respect; exacting\n          D.  Respect; eager\n   9. Choose the word or phrase that will correctly complete the conversation.\n   \u201cThe political party ________ from a group of interested citizens who met frequently to protest\n   government actions\u201d\n          A.  Consisted\n          B.  Emerge\n          C.  Develop\n          D.  Evolved\n",
+    "Question": " Which two words best explain the words \u201cpervasive\u201d and \u201cvivid\u201d as used in the passage?",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": true
+}
+{
+    "Category": "Grammar",
+    "Choice": [
+        " Outcomes",
+        " Effect",
+        " Affect",
+        " Influences"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Choose the word or phrase that will correctly complete the conversation. \u201cWhat _________ has the new administration\u2019s policies had on investor confidence\u201d?",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Grammar",
+    "Choice": [
+        " To defer",
+        " In deferring",
+        " For deferring",
+        " To deferring"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Choose the correct word or phrase that will correctly complete the sentence. The government\u2019s decision __________ discussion of the Health Bill to the 9th Session of the Parliament was the best one given the current situation.",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Grammar",
+    "Choice": [
+        " Admiration; anxious",
+        " Respect; anxious",
+        " Respect; exacting",
+        " Respect; eager"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Choose the correct word or phrase that will correctly complete the sentence. Her ability to be objective on all matters irrespective of circumstances earned her the __________ of even her __________ adversaries.",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Grammar",
+    "Choice": [
+        " Consisted",
+        " Emerge",
+        " Develop",
+        " Evolved"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Choose the word or phrase that will correctly complete the conversation. \u201cThe political party ________ from a group of interested citizens who met frequently to protest government actions\u201d",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Grammar",
+    "Choice": [
+        " Vehement",
+        " Bizarre",
+        " Savory",
+        " Complacent"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " The _____ smell of Italian food makes me crave it whenever I smell it!",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Vocabulary",
+    "Choice": [
+        " Adverse means \u201copponent\u201d and averse means \u201cindifferent\u201d",
+        " Adverse means \u201cunwilling\u201d and averse means \u201coblige\u201d",
+        " Adverse means \u201cagreeable\u201d and averse means \u201callergic\u201d",
+        " Adverse means \u201cdifficult\u201d and averse means \u201cdisinclined\u201d"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Which of the following sentences makes a correct distinction between the words \u201cadverse\u201d and",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Vocabulary",
+    "Choice": [
+        " Of or related to the sport of fencing",
+        " Of or related to water; living in or near water",
+        " Of or relating to horseback riding or horseback riders",
+        " The study of marine environments"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " What is an equestrian?",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Vocabulary",
+    "Choice": [
+        " Extensive",
+        " Striking",
+        " Theatrical",
+        " Spectacular"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Under the despotic regime of the Blue government, citizens of Arawen repeatedly reported that the continuous mining for coal was causing dramatic physical harm, primarily the poisoning of water Which of the following words is most suitable to replace the underlined word?",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Vocabulary",
+    "Choice": [
+        " Augments",
+        " Inflates",
+        " Lifts up",
+        " Promotes"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Choose the correct word or phrase that will correctly complete the sentence. The geographical terrain in Bhutan __________ road construction costs.",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Vocabulary",
+    "Choice": [
+        " A novice",
+        " An eloquent",
+        " An experienced",
+        " An inarticulate"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Choose the correct word or phrase that will correctly complete the sentence. The professor is __________ speaker; his classes are very informative and inspirational.",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Synonyms and Antonyms",
+    "Choice": [
+        " Insolence",
+        " Risk taking nature or recklessness",
+        " Untruthfulness",
+        " Susceptibility"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Choose the word that is closest in meaning to the underlined word in the following sentence. It is believed that the sheer mendacity of the High Priest will lead to the fall of the century old religious order.",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Synonyms and Antonyms",
+    "Choice": [
+        " Posting",
+        " Placing side by side",
+        " Contrasting",
+        " Combining"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Choose the word or phrase that is closest in meaning to the underlined word in the following Juxtaposing the settee against the display of wallpapers would determine which matched it the best.",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Synonyms and Antonyms",
+    "Choice": [
+        " Block",
+        " Obstruct",
+        " Constrain",
+        " Vague"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Obscure has the same meaning as:",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Synonyms and Antonyms",
+    "Choice": [
+        " Adjustment",
+        " Option",
+        " Row",
+        " Modification"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Choose the word or phrase that is closest in meaning to the underlined word in the sentence. The police have the tendency to make a big deal over a minor altercation.",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Synonyms and Antonyms",
+    "Choice": [
+        " Renounce",
+        " Surrender",
+        " Spiritual",
+        " Disrespect"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Which of the following words has the same meaning as \u201csacrilege\u201d?",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Synonyms and Antonyms",
+    "Choice": [
+        " Agreeable",
+        " Oblivious",
+        " Pretentious",
+        " Modest"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Which of the following words has the opposite meaning of \u201cPresumptuous\u201d?",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Synonyms and Antonyms",
+    "Choice": [
+        " Diminish",
+        " Stray",
+        " Claim",
+        " Abandon"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Which of the following words has the opposite meaning of \u201cWaive\u201d?",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Synonyms and Antonyms",
+    "Choice": [
+        " Restrained",
+        " Honest",
+        " Discrete",
+        " Unemotional"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Which of the following words has the opposite meaning of \u201cFraudulent\u201d?",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Synonyms and Antonyms",
+    "Choice": [
+        " Authentic",
+        " Genuine",
+        " Standard",
+        " Banal"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Which of the following words has the opposite meaning of \u201coriginal\u201d?",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Synonyms and Antonyms",
+    "Choice": [
+        " Realistic",
+        " Idealistic",
+        " Complicated",
+        " Ambiguous"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Which of the following words has the opposite meaning of \u201cpragmatic\u201d?",
+    "QuestionYear": "2011",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}

@@ -1,10 +1,12 @@
 import React from "react";
 import {PieChart} from "react-minimal-pie-chart";
 import "../style-sheet/math-stats-jumbo-box.css";
+
+import StrengthWeakness from "./strengthWeakness/strengthWeakness";
+
 const defaultLabelStyle = {
     fontSize: '4px',
     fontFamily: 'Helvetica Neue',
-
 };
 export const SimplePieChart = (props) => {
     let correctAnswers = props.correctAnswers;
@@ -14,7 +16,7 @@ export const SimplePieChart = (props) => {
     let percentInCorrectAnswers = Math.round(incorrectAnswers/totalAnswers*100);
     if (correctAnswers===0 && incorrectAnswers===0){
         return (
-            <h4>Not Enough Data</h4>
+            <span className="noData">Not Enough Data</span>
         )
     }
     return (
@@ -38,11 +40,11 @@ export const SimplePieChart = (props) => {
                 <p style={{fontSize: "1rem"}}>
                     <span className="description">Questions answered: {totalAnswers}</span>
                     <br />
-                    <div className="colorBox correctAnswerBox"></div> <span className="description">Correct Answers: {correctAnswers}</span>
+                    <span className="description">Correct Answers: {correctAnswers}</span>
                     <br />
-                    <div className="colorBox incorrectAnswerBox description"></div> <span className="description">Incorrect Answers: {incorrectAnswers}</span>
+                    <span className="description">Incorrect Answers: {incorrectAnswers}</span>
                     <br />
-                    <div className="description"></div> <span className="description">Weakest Topic: Algebra</span>
+                    <span className="description">Weakest Topic: <StrengthWeakness questionType={props.questionType}/></span>
                 </p>
             </div>
         </React.Fragment>

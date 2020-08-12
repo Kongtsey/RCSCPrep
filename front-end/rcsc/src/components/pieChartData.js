@@ -65,7 +65,7 @@ class CorrectWrong extends Component{
         }
         return(
             <React.Fragment>
-                <SimplePieChart correctAnswers={correctAnswers} incorrectAnswers = {incorrectAnswers}/>
+                <SimplePieChart correctAnswers={correctAnswers} incorrectAnswers = {incorrectAnswers} questionType={this.props.category}/>
             </React.Fragment>
         )
     }
