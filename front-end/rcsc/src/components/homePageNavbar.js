@@ -258,7 +258,7 @@ class NavigationBar extends Component {
             <Form>
               {this.state.errorMessage && <h6 className='error-msg'>{this.state.errorMessage}</h6>}
               <Form.Group as={Row}>
-                <Form.Label column sm='1'>
+                <Form.Label column='true' sm='1'>
                   <FontAwesomeIcon icon={faUser} />
                 </Form.Label>
                 <Col sm='10' className='form-input'>
@@ -267,7 +267,7 @@ class NavigationBar extends Component {
                 </Col>
               </Form.Group>
               <Form.Group as={Row} controlId='plaintext'>
-                <Form.Label column sm='1'>
+                <Form.Label column='true' sm='1'>
                   <FontAwesomeIcon icon={faBookReader} />
                 </Form.Label>
                 <Col sm='10' className='form-input'>
@@ -277,7 +277,7 @@ class NavigationBar extends Component {
               </Form.Group>
 
               <Form.Group as={Row} controlId='plaintext'>
-                <Form.Label column sm='1'>
+                <Form.Label column='true' sm='1'>
                   <FontAwesomeIcon icon={faMapMarker} />
                 </Form.Label>
                 <Col sm='10' className='form-input'>
@@ -287,7 +287,7 @@ class NavigationBar extends Component {
               </Form.Group>
 
               <Form.Group as={Row} controlId='formPlaintextEmail'>
-                <Form.Label column sm='1'>
+                <Form.Label column='true' sm='1'>
                   <FontAwesomeIcon icon={faEnvelope} />
                 </Form.Label>
                 <Col sm='10' className='form-input'>
@@ -296,7 +296,7 @@ class NavigationBar extends Component {
               </Form.Group>
 
               <Form.Group as={Row} controlId='formPlaintextPassword'>
-                <Form.Label column sm='1'>
+                <Form.Label column='true' sm='1'>
                   <FontAwesomeIcon icon={faLock} />
                 </Form.Label>
                 <Col sm='10' className='form-input'>
@@ -304,7 +304,7 @@ class NavigationBar extends Component {
                 </Col>
               </Form.Group>
               <Form.Group as={Row} controlId='formPlaintextPasswordConfirm'>
-                <Form.Label column sm='1'>
+                <Form.Label column='true' sm='1'>
                   <FontAwesomeIcon icon={faLock} />
                 </Form.Label>
                 <Col sm='10' className='form-input'>
@@ -324,7 +324,7 @@ class NavigationBar extends Component {
             >
               Already have an account?
             </p>
-            <div column sm={4}>
+            <div column='true' sm={4}>
               <Button variant='primary' onClick={this.handleSubmit} name={this.state.name}>
                 Sign up
               </Button>
@@ -341,7 +341,7 @@ class NavigationBar extends Component {
             <Form>
               {this.state.errorMessage && <h6 className='error-msg'>{this.state.errorMessage}</h6>}
               <Form.Group as={Row} controlId='formPlaintextEmail'>
-                <Form.Label column sm='1'>
+                <Form.Label column='true' sm='1'>
                   <FontAwesomeIcon icon={faUser} />
                 </Form.Label>
                 <Col sm='10' className='form-input'>
@@ -349,7 +349,7 @@ class NavigationBar extends Component {
                 </Col>
               </Form.Group>
               <Form.Group as={Row} controlId='formPlaintextPassword'>
-                <Form.Label column sm='1'>
+                <Form.Label column='true' sm='1'>
                   <FontAwesomeIcon icon={faLock} />
                 </Form.Label>
                 <Col sm='10' className='form-input'>
