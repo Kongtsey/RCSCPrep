@@ -4,10 +4,14 @@ import "../style-sheet/mathStatsPage.css";
 import Button from "react-bootstrap/Button";
 import { renderToString } from "react-dom/server";
 import { Link } from "react-router-dom";
+
+import StrengthWeakness from "./strengthWeakness/strengthWeakness";
+
 class SelectionQueries extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      pending: true,
       numQuestions: 5,
       questionType: "UserHasNotResponded",
       category: "any",
@@ -17,12 +21,13 @@ class SelectionQueries extends Component {
         category2: "",
         category3: "",
       },
+      collectionName: ''
     };
     this.handleChange = this.handleChange.bind(this);
   }
   componentDidMount() {
     if (this.props.type === "Math") {
-      this.setState({ pathname: "/math_practice" });
+      this.setState({ pathname: "/math_practice",collectionName: 'MathQuestions',pending:false});
       this.setState({
         categoryOptions: {
           category1: "Algebra",
@@ -31,7 +36,7 @@ class SelectionQueries extends Component {
         },
       });
     } else if (this.props.type === "English") {
-      this.setState({ pathname: "/english_practice" });
+      this.setState({ pathname: "/english_practice",collectionName: 'EnglishQuestions',pending: false});
       this.setState({
         categoryOptions: {
           category1: "Grammar",
@@ -50,6 +55,9 @@ class SelectionQueries extends Component {
     }
   }
   render() {
+    if(this.state.pending){
+      return <p>Loading ...</p>
+    }
     return (
       <React.Fragment>
         <Container fluid={true}>
@@ -109,14 +117,12 @@ class SelectionQueries extends Component {
               <br />
               <p className='swDescrip'>Calculus</p>
               <br />
-              <p className='swDescrip'>Unscrambling letters</p>
             </Col>
             <Col md={{ span: 4, offset: 0 }} className='strengthWeak'>
               <h5 style={{ marginTop: "1rem", marginLeft: "2rem" }}>Weaknesses:</h5>
               <br />
-              <p className='swDescrip'>Height differences</p>
-              <br />
-              <p className='swDescrip'>Algebra</p>
+              {console.log(this.state.collectionName,"Collection Name")}
+              <p className='swDescrip'><StrengthWeakness questionType={this.state.collectionName}/></p>
             </Col>
           </Row>
         </Container>

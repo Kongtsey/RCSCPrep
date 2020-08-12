@@ -3,6 +3,7 @@ import fire from "../../config/Fire";
 
 import {Container} from "react-bootstrap";
 
+//TODO: Remove console logs.
 class StrengthWeakness extends React.Component{
     constructor(props) {
         super(props);
@@ -15,13 +16,27 @@ class StrengthWeakness extends React.Component{
         }
     }
     componentDidMount() {
-        let questionCategories = ['Algebra','Probability','Fraction','Logic'];
+        let questionType = this.props.questionType;
+        console.log(questionType);
+        let questionTypeDefined = false;
+        let questionCategories=[]
+        if (questionType==='MathQuestions'){
+            console.log("Hello there inside math")
+            questionCategories = ['Algebra','Probability','Fraction','Logic'];
+            questionTypeDefined = true
+        }
+        else if(questionType==='EnglishQuestions'){
+            console.log("Hello there inside english")
+            questionCategories = ['Grammar','Comprehension','Vocabulary','Synonyms and Antonyms'];
+            questionTypeDefined = true
+        }
+        if (questionType){
         let questionsAnswered = [0,0,0,0];
         let questionsAnsweredCorrectly = [0,0,0,0];
         let ratio = [0,0,0,0];
         let db = fire.firestore();
         let user = fire.auth().currentUser;
-        let questionRef = db.collection(user.email).doc('MathQuestions').collection("Questions");
+        let questionRef = db.collection(user.email).doc(this.props.questionType).collection("Questions");
         let responseQuery = questionRef.where('UserHasNotResponded','==',false);
         responseQuery.get().then(snapshot => {
             if(snapshot.empty){
@@ -73,13 +88,19 @@ class StrengthWeakness extends React.Component{
                 }
                 console.log("weakest category is:",this.state.weakestCategory);
             }
-        })
+        })}
     }
 
     render() {
+        if(this.state.pending){
+            return <p>Loading ...</p>
+        }
         return(
             <React.Fragment>
                 <span>{this.state.weakestCategory}</span>
+                {console.log(this.state.questionsAnswered, "Questions Answered")}
+                {console.log(this.state.questionsAnsweredCorrectly, "Questions Answered Correctly")}
+                {console.log(this.state.ratio, "Ratio")}
             </React.Fragment>
         )
     }
