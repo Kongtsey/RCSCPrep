@@ -1,0 +1,450 @@
+{
+    "Category": "Comprehension",
+    "Choice": [
+        " be a threat to democracy.",
+        " result in limiting editorial viewpoints.",
+        " result in misuse of certain laws.",
+        " both (A) and (B)."
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "Part I: Comprehension\nDirection: Read the following passage and answer Questions 26-30 by choosing the answer to\n             each question. Answers should be based on the information given in the passage.\n             The passage given below is from http://www.2iim.com/india_mba_iim_cat_faq/rc-\nFirst AOL and Time Warner announced their intention to combine. Then came Time\nWarner/EMI and Tribune/ Times Mirror. Even more significant, however, has been the\nspeculation that these mergers have caused: If these transactions are consummated, a large\nnumber of additional media mergers are expected. There is even the possibility of a nightmare\nscenario-a wave of media mergers so large that within a decade most of our information will be\nsupplied by perhaps six of these huge conglomerates and a fringe of much smaller firms.\nIt's time to ask two critical questions. Is this kind of media oligopoly what we, as a society,\nwant? And if not, can the anti-trust laws effectively prevent the threatened merger wave? The\nanswer to the first question is clear. We do not want a media oligopoly. The answer to the second\nquestion, however, is far less certain. We should distrust a media oligopoly because it would give\nundue control to a small number of individuals. This need not manifest itself in a price rise for\nthe daily newspaper or AOL's monthly fee. Rather, it could consist of a change in editorial\nviewpoints, a shift in the relative prominence of links to certain websites or a decision not to\ncover certain topics, because they are not \"newsworthy\". These problems could exist without any\nimproper intent on the part of the media barons. Even if they try to be fair and objective, they\nwill necessarily bring their own worldview to the job. And in time some of these conglomerates\nmay be controlled by people who are not fair or objective.\nAt first it might appear that the anti-trust laws can be of little help in grappling with the issues\npresented by large media mergers. The anti-merger laws are commonly understood as protecting\nprice competition and a relatively small number of firms - to greatly oversimplify, let's say at\nmost half a dozen - are normally thought to be enough to keep a market price - competitive. In\nindustry after industry, firms merge until there is only a handful left, and the anti-trust enforcers\nare normally unable to do anything to prevent this. (In former years mergers were governed by\nan \"incipiency\" standard that prevented mergers and merger waves well before they would have\nled to very large or likely anti-competitive problems.) Even if a handful of firms are enough to\ninsure effective competition in most industries, would six conglomerate media firms be sufficient\nfor the diversity of viewpoints necessary to democracy? Would we be reassured if they could\nsomehow guarantee that they would sell their magazines and internet advertisements at\ncompetitive prices?\nI am hopeful that the anti-trust laws, if correctly and vigorously interpreted, are adaptable enough\nto meet this challenge. This is because anti-trust is not exclusively about price. It is essentially\nabout choice - about giving consumers a competitive range of options in the marketplace so that\nthey can make their own, effective selection from the markets\u2019 offerings. Consumers should be\nable to make their choices along any dimension important to them - including price, variety and\neditorial viewpoint.\nCommunications media compete in part by offering independent editorial viewpoints and an\nindependent gatekeeper function. Six media firms cannot effectively respond to the demand for\nchoice or diversity competition by extending their product lines, because new media products\nwill inevitably bear, to some degree, the perspective of their corporate parent. For these reasons\ncompetition in terms of editorial viewpoint or gate-keeping can be guaranteed only by insuring\nthat a media market contains a significantly larger number of firms than is required for price\ncompetition in other, more conventional markets.\nIt is unclear, however, whether this interpretation of the anti-trust laws will be applied by the\nenforcement agencies and the courts. What is needed, therefore, is a much more careful look at\nthe challenges that will be raised by future media mergers.\nThis could best be accomplished if Congress created a Temporary Committee to Study Media\nMergers and Media Convergence. This committee could include members of Congress, the heads\nof the Federal Trade Commission, the Federal Communications Commission, the Justice\nDepartment's anti-trust division, CEOs of media companies, and the representatives of consumer\ngroups. The committee would identify problems that may be caused by large media mergers and\nby media convergence. If the committee concludes that existing anti-trust laws are inadequate, it\nshould recommend to Congress that new anti-merger legislation be enacted. This may be the\nonly way to prevent the nightmare scenario of a media oligopoly.\n",
+    "Question": " A wave of media mergers could",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": true
+}
+{
+    "Category": "Comprehension",
+    "Choice": [
+        " An increase in the cost of newspapers.",
+        " A shift of power to people who might not be balanced and fair in their views about the media. Page 10 of 36 BCSE 2013 PRELIMINARY EXAMINATION SERIES B",
+        " Certain websites may get more prominence than others.",
+        " There will be no competition among the newspapers."
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "Part I: Comprehension\nDirection: Read the following passage and answer Questions 26-30 by choosing the answer to\n             each question. Answers should be based on the information given in the passage.\n             The passage given below is from http://www.2iim.com/india_mba_iim_cat_faq/rc-\nFirst AOL and Time Warner announced their intention to combine. Then came Time\nWarner/EMI and Tribune/ Times Mirror. Even more significant, however, has been the\nspeculation that these mergers have caused: If these transactions are consummated, a large\nnumber of additional media mergers are expected. There is even the possibility of a nightmare\nscenario-a wave of media mergers so large that within a decade most of our information will be\nsupplied by perhaps six of these huge conglomerates and a fringe of much smaller firms.\nIt's time to ask two critical questions. Is this kind of media oligopoly what we, as a society,\nwant? And if not, can the anti-trust laws effectively prevent the threatened merger wave? The\nanswer to the first question is clear. We do not want a media oligopoly. The answer to the second\nquestion, however, is far less certain. We should distrust a media oligopoly because it would give\nundue control to a small number of individuals. This need not manifest itself in a price rise for\nthe daily newspaper or AOL's monthly fee. Rather, it could consist of a change in editorial\nviewpoints, a shift in the relative prominence of links to certain websites or a decision not to\ncover certain topics, because they are not \"newsworthy\". These problems could exist without any\nimproper intent on the part of the media barons. Even if they try to be fair and objective, they\nwill necessarily bring their own worldview to the job. And in time some of these conglomerates\nmay be controlled by people who are not fair or objective.\nAt first it might appear that the anti-trust laws can be of little help in grappling with the issues\npresented by large media mergers. The anti-merger laws are commonly understood as protecting\nprice competition and a relatively small number of firms - to greatly oversimplify, let's say at\nmost half a dozen - are normally thought to be enough to keep a market price - competitive. In\nindustry after industry, firms merge until there is only a handful left, and the anti-trust enforcers\nare normally unable to do anything to prevent this. (In former years mergers were governed by\nan \"incipiency\" standard that prevented mergers and merger waves well before they would have\nled to very large or likely anti-competitive problems.) Even if a handful of firms are enough to\ninsure effective competition in most industries, would six conglomerate media firms be sufficient\nfor the diversity of viewpoints necessary to democracy? Would we be reassured if they could\nsomehow guarantee that they would sell their magazines and internet advertisements at\ncompetitive prices?\nI am hopeful that the anti-trust laws, if correctly and vigorously interpreted, are adaptable enough\nto meet this challenge. This is because anti-trust is not exclusively about price. It is essentially\nabout choice - about giving consumers a competitive range of options in the marketplace so that\nthey can make their own, effective selection from the markets\u2019 offerings. Consumers should be\nable to make their choices along any dimension important to them - including price, variety and\neditorial viewpoint.\nCommunications media compete in part by offering independent editorial viewpoints and an\nindependent gatekeeper function. Six media firms cannot effectively respond to the demand for\nchoice or diversity competition by extending their product lines, because new media products\nwill inevitably bear, to some degree, the perspective of their corporate parent. For these reasons\ncompetition in terms of editorial viewpoint or gate-keeping can be guaranteed only by insuring\nthat a media market contains a significantly larger number of firms than is required for price\ncompetition in other, more conventional markets.\nIt is unclear, however, whether this interpretation of the anti-trust laws will be applied by the\nenforcement agencies and the courts. What is needed, therefore, is a much more careful look at\nthe challenges that will be raised by future media mergers.\nThis could best be accomplished if Congress created a Temporary Committee to Study Media\nMergers and Media Convergence. This committee could include members of Congress, the heads\nof the Federal Trade Commission, the Federal Communications Commission, the Justice\nDepartment's anti-trust division, CEOs of media companies, and the representatives of consumer\ngroups. The committee would identify problems that may be caused by large media mergers and\nby media convergence. If the committee concludes that existing anti-trust laws are inadequate, it\nshould recommend to Congress that new anti-merger legislation be enacted. This may be the\nonly way to prevent the nightmare scenario of a media oligopoly.\n",
+    "Question": " According to the passage, what could be the most significant outcome of media oligopoly?",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": true
+}
+{
+    "Category": "Comprehension",
+    "Choice": [
+        " (i), (ii)",
+        " (i), (ii), (iii)",
+        " (ii), (iii), (iv)",
+        " (i), (ii), (iii), (iv)"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "Part I: Comprehension\nDirection: Read the following passage and answer Questions 26-30 by choosing the answer to\n             each question. Answers should be based on the information given in the passage.\n             The passage given below is from http://www.2iim.com/india_mba_iim_cat_faq/rc-\nFirst AOL and Time Warner announced their intention to combine. Then came Time\nWarner/EMI and Tribune/ Times Mirror. Even more significant, however, has been the\nspeculation that these mergers have caused: If these transactions are consummated, a large\nnumber of additional media mergers are expected. There is even the possibility of a nightmare\nscenario-a wave of media mergers so large that within a decade most of our information will be\nsupplied by perhaps six of these huge conglomerates and a fringe of much smaller firms.\nIt's time to ask two critical questions. Is this kind of media oligopoly what we, as a society,\nwant? And if not, can the anti-trust laws effectively prevent the threatened merger wave? The\nanswer to the first question is clear. We do not want a media oligopoly. The answer to the second\nquestion, however, is far less certain. We should distrust a media oligopoly because it would give\nundue control to a small number of individuals. This need not manifest itself in a price rise for\nthe daily newspaper or AOL's monthly fee. Rather, it could consist of a change in editorial\nviewpoints, a shift in the relative prominence of links to certain websites or a decision not to\ncover certain topics, because they are not \"newsworthy\". These problems could exist without any\nimproper intent on the part of the media barons. Even if they try to be fair and objective, they\nwill necessarily bring their own worldview to the job. And in time some of these conglomerates\nmay be controlled by people who are not fair or objective.\nAt first it might appear that the anti-trust laws can be of little help in grappling with the issues\npresented by large media mergers. The anti-merger laws are commonly understood as protecting\nprice competition and a relatively small number of firms - to greatly oversimplify, let's say at\nmost half a dozen - are normally thought to be enough to keep a market price - competitive. In\nindustry after industry, firms merge until there is only a handful left, and the anti-trust enforcers\nare normally unable to do anything to prevent this. (In former years mergers were governed by\nan \"incipiency\" standard that prevented mergers and merger waves well before they would have\nled to very large or likely anti-competitive problems.) Even if a handful of firms are enough to\ninsure effective competition in most industries, would six conglomerate media firms be sufficient\nfor the diversity of viewpoints necessary to democracy? Would we be reassured if they could\nsomehow guarantee that they would sell their magazines and internet advertisements at\ncompetitive prices?\nI am hopeful that the anti-trust laws, if correctly and vigorously interpreted, are adaptable enough\nto meet this challenge. This is because anti-trust is not exclusively about price. It is essentially\nabout choice - about giving consumers a competitive range of options in the marketplace so that\nthey can make their own, effective selection from the markets\u2019 offerings. Consumers should be\nable to make their choices along any dimension important to them - including price, variety and\neditorial viewpoint.\nCommunications media compete in part by offering independent editorial viewpoints and an\nindependent gatekeeper function. Six media firms cannot effectively respond to the demand for\nchoice or diversity competition by extending their product lines, because new media products\nwill inevitably bear, to some degree, the perspective of their corporate parent. For these reasons\ncompetition in terms of editorial viewpoint or gate-keeping can be guaranteed only by insuring\nthat a media market contains a significantly larger number of firms than is required for price\ncompetition in other, more conventional markets.\nIt is unclear, however, whether this interpretation of the anti-trust laws will be applied by the\nenforcement agencies and the courts. What is needed, therefore, is a much more careful look at\nthe challenges that will be raised by future media mergers.\nThis could best be accomplished if Congress created a Temporary Committee to Study Media\nMergers and Media Convergence. This committee could include members of Congress, the heads\nof the Federal Trade Commission, the Federal Communications Commission, the Justice\nDepartment's anti-trust division, CEOs of media companies, and the representatives of consumer\ngroups. The committee would identify problems that may be caused by large media mergers and\nby media convergence. If the committee concludes that existing anti-trust laws are inadequate, it\nshould recommend to Congress that new anti-merger legislation be enacted. This may be the\nonly way to prevent the nightmare scenario of a media oligopoly.\n",
+    "Question": " Which of the following statements, according to the author, are true: (i) Half a dozen firms are enough to keep the market price \u2013 competitive. (ii) Half a dozen companies are not enough to provide a democratic media. (iii) Enforcement agencies may not interpret the anti-trust laws correctly. (iv) Half a dozen companies will be inadequate to meet the consumer demand for product",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": true
+}
+{
+    "Category": "Comprehension",
+    "Choice": [
+        " are not at all sufficient to deal with issues relating to large scale media mergers.",
+        " can prevent mergers from happening.",
+        " will be effective if properly interpreted.",
+        " favour a particular company or group of companies."
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "Part I: Comprehension\nDirection: Read the following passage and answer Questions 26-30 by choosing the answer to\n             each question. Answers should be based on the information given in the passage.\n             The passage given below is from http://www.2iim.com/india_mba_iim_cat_faq/rc-\nFirst AOL and Time Warner announced their intention to combine. Then came Time\nWarner/EMI and Tribune/ Times Mirror. Even more significant, however, has been the\nspeculation that these mergers have caused: If these transactions are consummated, a large\nnumber of additional media mergers are expected. There is even the possibility of a nightmare\nscenario-a wave of media mergers so large that within a decade most of our information will be\nsupplied by perhaps six of these huge conglomerates and a fringe of much smaller firms.\nIt's time to ask two critical questions. Is this kind of media oligopoly what we, as a society,\nwant? And if not, can the anti-trust laws effectively prevent the threatened merger wave? The\nanswer to the first question is clear. We do not want a media oligopoly. The answer to the second\nquestion, however, is far less certain. We should distrust a media oligopoly because it would give\nundue control to a small number of individuals. This need not manifest itself in a price rise for\nthe daily newspaper or AOL's monthly fee. Rather, it could consist of a change in editorial\nviewpoints, a shift in the relative prominence of links to certain websites or a decision not to\ncover certain topics, because they are not \"newsworthy\". These problems could exist without any\nimproper intent on the part of the media barons. Even if they try to be fair and objective, they\nwill necessarily bring their own worldview to the job. And in time some of these conglomerates\nmay be controlled by people who are not fair or objective.\nAt first it might appear that the anti-trust laws can be of little help in grappling with the issues\npresented by large media mergers. The anti-merger laws are commonly understood as protecting\nprice competition and a relatively small number of firms - to greatly oversimplify, let's say at\nmost half a dozen - are normally thought to be enough to keep a market price - competitive. In\nindustry after industry, firms merge until there is only a handful left, and the anti-trust enforcers\nare normally unable to do anything to prevent this. (In former years mergers were governed by\nan \"incipiency\" standard that prevented mergers and merger waves well before they would have\nled to very large or likely anti-competitive problems.) Even if a handful of firms are enough to\ninsure effective competition in most industries, would six conglomerate media firms be sufficient\nfor the diversity of viewpoints necessary to democracy? Would we be reassured if they could\nsomehow guarantee that they would sell their magazines and internet advertisements at\ncompetitive prices?\nI am hopeful that the anti-trust laws, if correctly and vigorously interpreted, are adaptable enough\nto meet this challenge. This is because anti-trust is not exclusively about price. It is essentially\nabout choice - about giving consumers a competitive range of options in the marketplace so that\nthey can make their own, effective selection from the markets\u2019 offerings. Consumers should be\nable to make their choices along any dimension important to them - including price, variety and\neditorial viewpoint.\nCommunications media compete in part by offering independent editorial viewpoints and an\nindependent gatekeeper function. Six media firms cannot effectively respond to the demand for\nchoice or diversity competition by extending their product lines, because new media products\nwill inevitably bear, to some degree, the perspective of their corporate parent. For these reasons\ncompetition in terms of editorial viewpoint or gate-keeping can be guaranteed only by insuring\nthat a media market contains a significantly larger number of firms than is required for price\ncompetition in other, more conventional markets.\nIt is unclear, however, whether this interpretation of the anti-trust laws will be applied by the\nenforcement agencies and the courts. What is needed, therefore, is a much more careful look at\nthe challenges that will be raised by future media mergers.\nThis could best be accomplished if Congress created a Temporary Committee to Study Media\nMergers and Media Convergence. This committee could include members of Congress, the heads\nof the Federal Trade Commission, the Federal Communications Commission, the Justice\nDepartment's anti-trust division, CEOs of media companies, and the representatives of consumer\ngroups. The committee would identify problems that may be caused by large media mergers and\nby media convergence. If the committee concludes that existing anti-trust laws are inadequate, it\nshould recommend to Congress that new anti-merger legislation be enacted. This may be the\nonly way to prevent the nightmare scenario of a media oligopoly.\n",
+    "Question": " The current anti-trust laws",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": true
+}
+{
+    "Category": "Comprehension",
+    "Choice": [
+        " Creation of strict laws.",
+        " Strengthening the enforcement agencies.",
+        " Creation of a study committee by the Congress.",
+        " None of the above."
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "Part I: Comprehension\nDirection: Read the following passage and answer Questions 26-30 by choosing the answer to\n             each question. Answers should be based on the information given in the passage.\n             The passage given below is from http://www.2iim.com/india_mba_iim_cat_faq/rc-\nFirst AOL and Time Warner announced their intention to combine. Then came Time\nWarner/EMI and Tribune/ Times Mirror. Even more significant, however, has been the\nspeculation that these mergers have caused: If these transactions are consummated, a large\nnumber of additional media mergers are expected. There is even the possibility of a nightmare\nscenario-a wave of media mergers so large that within a decade most of our information will be\nsupplied by perhaps six of these huge conglomerates and a fringe of much smaller firms.\nIt's time to ask two critical questions. Is this kind of media oligopoly what we, as a society,\nwant? And if not, can the anti-trust laws effectively prevent the threatened merger wave? The\nanswer to the first question is clear. We do not want a media oligopoly. The answer to the second\nquestion, however, is far less certain. We should distrust a media oligopoly because it would give\nundue control to a small number of individuals. This need not manifest itself in a price rise for\nthe daily newspaper or AOL's monthly fee. Rather, it could consist of a change in editorial\nviewpoints, a shift in the relative prominence of links to certain websites or a decision not to\ncover certain topics, because they are not \"newsworthy\". These problems could exist without any\nimproper intent on the part of the media barons. Even if they try to be fair and objective, they\nwill necessarily bring their own worldview to the job. And in time some of these conglomerates\nmay be controlled by people who are not fair or objective.\nAt first it might appear that the anti-trust laws can be of little help in grappling with the issues\npresented by large media mergers. The anti-merger laws are commonly understood as protecting\nprice competition and a relatively small number of firms - to greatly oversimplify, let's say at\nmost half a dozen - are normally thought to be enough to keep a market price - competitive. In\nindustry after industry, firms merge until there is only a handful left, and the anti-trust enforcers\nare normally unable to do anything to prevent this. (In former years mergers were governed by\nan \"incipiency\" standard that prevented mergers and merger waves well before they would have\nled to very large or likely anti-competitive problems.) Even if a handful of firms are enough to\ninsure effective competition in most industries, would six conglomerate media firms be sufficient\nfor the diversity of viewpoints necessary to democracy? Would we be reassured if they could\nsomehow guarantee that they would sell their magazines and internet advertisements at\ncompetitive prices?\nI am hopeful that the anti-trust laws, if correctly and vigorously interpreted, are adaptable enough\nto meet this challenge. This is because anti-trust is not exclusively about price. It is essentially\nabout choice - about giving consumers a competitive range of options in the marketplace so that\nthey can make their own, effective selection from the markets\u2019 offerings. Consumers should be\nable to make their choices along any dimension important to them - including price, variety and\neditorial viewpoint.\nCommunications media compete in part by offering independent editorial viewpoints and an\nindependent gatekeeper function. Six media firms cannot effectively respond to the demand for\nchoice or diversity competition by extending their product lines, because new media products\nwill inevitably bear, to some degree, the perspective of their corporate parent. For these reasons\ncompetition in terms of editorial viewpoint or gate-keeping can be guaranteed only by insuring\nthat a media market contains a significantly larger number of firms than is required for price\ncompetition in other, more conventional markets.\nIt is unclear, however, whether this interpretation of the anti-trust laws will be applied by the\nenforcement agencies and the courts. What is needed, therefore, is a much more careful look at\nthe challenges that will be raised by future media mergers.\nThis could best be accomplished if Congress created a Temporary Committee to Study Media\nMergers and Media Convergence. This committee could include members of Congress, the heads\nof the Federal Trade Commission, the Federal Communications Commission, the Justice\nDepartment's anti-trust division, CEOs of media companies, and the representatives of consumer\ngroups. The committee would identify problems that may be caused by large media mergers and\nby media convergence. If the committee concludes that existing anti-trust laws are inadequate, it\nshould recommend to Congress that new anti-merger legislation be enacted. This may be the\nonly way to prevent the nightmare scenario of a media oligopoly.\n",
+    "Question": " To get a clear picture of the challenges posed by media mergers, the author recommends:",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": true
+}
+{
+    "Category": "Grammar",
+    "Choice": [
+        " kept pace with",
+        " kept paces along Page 11 of 36 BCSE 2013 PRELIMINARY EXAMINATION SERIES B",
+        " kept its pace for",
+        " kept pace together with"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Agriculture in Bhutan has __________ industrial progress.",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Grammar",
+    "Choice": [
+        " unworthy of his salt",
+        " not worth his salt",
+        " not of worth to his salt",
+        " not worth of the salt"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " He is __________ if he does not meet this situation boldly.",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Grammar",
+    "Choice": [
+        " lay my hands on",
+        " lay my hands to",
+        " lay my fingers on",
+        " lay my fingers to"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " I know I have a copy of the book you need, but at the moment, I can't __________ it.",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Grammar",
+    "Choice": [
+        " in",
+        " at",
+        " for",
+        " to"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Dema is a great hand __________ organizing meetings.",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Grammar",
+    "Choice": [
+        " saw me",
+        " seen me",
+        " had seen me",
+        " have seen me"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Did you think you __________ somewhere before?",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Vocabulary",
+    "Choice": [
+        " 1=Z, 2=Y, 3=X",
+        " 1=Y, 2=Z, 3=X Page 12 of 36 BCSE 2013 PRELIMINARY EXAMINATION SERIES B",
+        " 1=Y, 2=W, 3=Z",
+        " 1=X, 2=W, 3=Z"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Correctly match the words in column A to their meanings in column B and choose the correct response pattern. Column A Column B 1 decent W fanciful or unreal occurrence 2 descent X to disagree or to differ in opinion 3 dissent Y appropriate or in good taste Z to decline or the act of moving downward",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Vocabulary",
+    "Choice": [
+        " mafia",
+        " maize",
+        " potato",
+        " subway"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " What is the \u2018tube\u2019 or \u2018underground\u2019 in Britain synonymous to in America?",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Vocabulary",
+    "Choice": [
+        " illicit means \u2018legitimate\u2019 and elicit means \u2018exclusive\u2019.",
+        " illicit means to \u2018support legally\u2019 and elicit means \u2018reject the law\u2019.",
+        " illicit means \u2018illegal\u2019 and elicit means \u2018extract a reply or reaction\u2019.",
+        " illicit means \u2018direct meaning\u2019 and elicit means \u2018not directly but indirectly implied\u2019."
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Which of the following sentences best differentiates between the words \u201cillicit\u201d and \u201celicit\u201d?",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Vocabulary",
+    "Choice": [
+        " Swamps",
+        " Archipelago",
+        " Isthmus",
+        " Hinterland"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Which of the given words can substitute the sentence given below: Parts of a country behind the coast or a river bank.",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Vocabulary",
+    "Choice": [
+        " One filled with excessive and mistaken enthusiasm in cause",
+        " A Martyr who can sacrifice his/her life",
+        " A Pedant who criticizes religious beliefs",
+        " A Patriot."
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Who is a fanatic?",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Synonyms and Antonyms",
+    "Choice": [
+        " bearing",
+        " balance",
+        " behaviour",
+        " background"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " The word demeanor has similar meaning to",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Synonyms and Antonyms",
+    "Choice": [
+        " old",
+        " quiet",
+        " haunted",
+        " unusual"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Choose the word that is closest in meaning to the underlined word in the sentence. I rather like the quaint little house at the end of the street.",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Synonyms and Antonyms",
+    "Choice": [
+        " further more",
+        " because",
+        " not only",
+        " although"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Choose the word that is closest in meaning to the underlined word in the sentence. The Principal had a sympathetic presence, albeit a commanding one.",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Synonyms and Antonyms",
+    "Choice": [
+        " prolonged",
+        " sporadic",
+        " incoherent",
+        " intervening"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " The word intermittent has the same meaning as:",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Synonyms and Antonyms",
+    "Choice": [
+        " acquit",
+        " convict",
+        " censure",
+        " condemn"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Choose the word that is closest in meaning to the underlined word in the sentence. In light of the evidence produced in court, it was the judge\u2019s decision to exonerate her.",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Synonyms and Antonyms",
+    "Choice": [
+        " diminish",
+        " fiasco",
+        " refutation",
+        " catastrophe"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Which of the following words has the opposite meaning of \u201csuccess\u201d?",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Synonyms and Antonyms",
+    "Choice": [
+        " shrink",
+        " restrain",
+        " dwindle",
+        " replenish"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Which of the following words has the opposite meaning of \u201cincrease\u201d?",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Synonyms and Antonyms",
+    "Choice": [
+        " tranquility",
+        " harmony",
+        " failure",
+        " confusion"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Choose the word that means the opposite of the underlined word in the statement. The world media has tended to focus far more upon the occasional discord than on the spectacular achievements.",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Synonyms and Antonyms",
+    "Choice": [
+        " conceited",
+        " haughty",
+        " proud",
+        " timid"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Choose the word that means the opposite of the underlined word in the sentence. He was poor and arrogant.",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
+{
+    "Category": "Synonyms and Antonyms",
+    "Choice": [
+        " elevate",
+        " sharpen",
+        " aggravate",
+        " promote"
+    ],
+    "CorrectAnswer": 0,
+    "IsCorrectAnswer": false,
+    "IsWrongAnswer": false,
+    "Marked": false,
+    "Passage": "",
+    "Question": " Choose the word that means the opposite of the underlined word in the question. What can we do to alleviate the pain?",
+    "QuestionYear": "2013",
+    "UserHasNotResponded": true,
+    "isPassageQuestion": false
+}
