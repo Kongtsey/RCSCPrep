@@ -7,7 +7,7 @@ import "../style-sheet/mark-button.css";
 
 const answered_question_id = [];
 const answered_question_info = [];
-class ReadEnglishQuestion extends Component {
+class ReadEnglishSignUpExamQuestion extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -204,18 +204,6 @@ class ReadEnglishQuestion extends Component {
                 </li>
               ))}
             </ol>
-            {/* {loading ? (
-              <Loading />
-            ) : (
-              <Button variant='warning' id='showResult' onClick={this.showResult}>
-                See Result
-              </Button>
-            )}
-            <Link to={"/english_stats_page"}>
-              <Button id='submit' variant='outline-success' onClick={this.updateDatabase}>
-                Done
-              </Button>
-            </Link> */}
           </Col>
         </Row>
         <br />
@@ -227,4 +215,4 @@ class ReadEnglishQuestion extends Component {
   }
 }
 
-export default ReadEnglishQuestion;
+export default ReadEnglishSignUpExamQuestion;

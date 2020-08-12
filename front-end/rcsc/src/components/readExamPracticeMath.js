@@ -7,7 +7,7 @@ import "../style-sheet/mark-button.css";
 
 const answered_question_id = [];
 const answered_question_info = [];
-class MathList extends Component {
+class ReadMathSignUpExamQuestion extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -168,7 +168,7 @@ class MathList extends Component {
           <Col md={12} lg={12} sm={12}>
             <ol>
               {this.state.questionData.map((data, index) => (
-                <li id={data.id}>
+                <li id={data.id} key={data.id}>
                   <div>
                     <Row>
                       <Col md={10} lg={10} sm={12}>
@@ -185,7 +185,7 @@ class MathList extends Component {
                   <span className='customize-radio-button'>
                     <Form className={data.id}>
                       {data.Choice.map((choice, index) => (
-                        <p className={index}>
+                        <p className={index} key={index}>
                           <input type='radio' id={data.CorrectAnswer} name='choice' value={data.id} onChange={this.handleChange(data.id, choice, data.CorrectAnswer, index)} />
                           &nbsp;&nbsp;&nbsp;&nbsp; {choice}
                         </p>
@@ -197,18 +197,6 @@ class MathList extends Component {
                 </li>
               ))}
             </ol>
-            {/* {loading ? (
-              <Loading />
-            ) : (
-              <Button variant='warning' id='showResult' onClick={this.showResult}>
-                See Result
-              </Button>
-            )}
-            <Link to={"/math_stats_page"}>
-              <Button id='submit' variant='outline-success' onClick={this.updateDatabase}>
-                Done
-              </Button>
-            </Link> */}
           </Col>
         </Row>
         <br />
@@ -220,4 +208,4 @@ class MathList extends Component {
   }
 }
 
-export default MathList;
+export default ReadMathSignUpExamQuestion;

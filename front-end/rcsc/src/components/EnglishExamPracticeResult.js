@@ -45,7 +45,7 @@ class EnglishExamPracticeResult extends Component {
             </thead>
             <tbody>
               {this.state.questionData.map((data, index) => (
-                <tr>
+                <tr key={data.id}>
                   <td className={"question-number"}>{index + 1}</td>
                   <td className={"correct-answer"}>{data.CorrectAnswer}</td>
                   <td className={"mark-check"}>{data.Marked === true ? <FontAwesomeIcon icon={faCheck} /> : ""}</td>
