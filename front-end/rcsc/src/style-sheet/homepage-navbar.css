@@ -48,6 +48,12 @@ This is the actual text of the navbar.
   margin-bottom: 0.2rem;
 }
 .haveAnAcc{
+  cursor: pointer;
+  margin-right: 150px !important;
+}
+.createAcc{
+  margin-right: 130px !important;
+  cursor: pointer;
 }
 .hrNavBar{
   border-top: 1px solid rgba(205, 205, 205, 0.8) !important;

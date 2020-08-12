@@ -316,19 +316,21 @@ class NavigationBar extends Component {
             </Form>
           </Modal.Body>
           <Modal.Footer>
+            <p>Forgot Password?</p>
+            <p
+                className="createAcc"
+                onClick={() => {
+                  this.handleCloseLogin();
+                  this.handleShow();
+                }}
+            >
+              Create Account
+            </p>
             <Button variant='primary' onClick={this.login} name={this.state.name}>
               Log in
             </Button>
           </Modal.Footer>
-          <p>Forgot Password?</p>
-          <p
-            onClick={() => {
-              this.handleCloseLogin();
-              this.handleShow();
-            }}
-          >
-            Create Account
-          </p>
+
         </Modal>
       </React.Fragment>
     );
