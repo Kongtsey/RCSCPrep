@@ -18,15 +18,15 @@ class StrengthWeakness extends React.Component {
 
     componentDidMount() {
         let questionType = this.props.questionType;
-        console.log(questionType);
+        // console.log(questionType);
         let questionTypeDefined = false;
         let questionCategories = []
         if (questionType === 'MathQuestions') {
-            console.log("Hello there inside math")
+            // console.log("Hello there inside math")
             questionCategories = ['Algebra', 'Probability', 'Fraction', 'Logic'];
             questionTypeDefined = true
         } else if (questionType === 'EnglishQuestions') {
-            console.log("Hello there inside english")
+            // console.log("Hello there inside english")
             questionCategories = ['Grammar', 'Comprehension', 'Vocabulary', 'Synonyms and Antonyms'];
             questionTypeDefined = true
         }
@@ -88,7 +88,7 @@ class StrengthWeakness extends React.Component {
                     if (flag === true) {
                         this.setState({weakestCategory: questionCategories[minIndex]});
                     }
-                    console.log("weakest category is:", this.state.weakestCategory);
+                    // console.log("weakest category is:", this.state.weakestCategory);
                 }
             })
         }
@@ -96,7 +96,7 @@ class StrengthWeakness extends React.Component {
 
     render() {
         if (this.state.pending) {
-            return <p>...</p>
+            return <span>...</span>
         }
         return (
             <React.Fragment>
