@@ -10,7 +10,8 @@ class StrengthWeakness extends React.Component{
             pending: true,
             questionsAnswered: [0,0,0,0],
             questionsAnsweredCorrectly: [0,0,0,0],
-            ratios: [0,0,0,0]
+            ratios: [0,0,0,0],
+            weakestCategory: '',
         }
     }
     componentDidMount() {
@@ -31,7 +32,6 @@ class StrengthWeakness extends React.Component{
                     for(let i =0;i<questionsAnswered.length;i++){
                         let questionObj = doc.data();
                         if(questionObj.Category === questionCategories[i]){
-                            console.log(questionObj.Category, questionCategories[i]);
                             questionsAnswered[i]+=1;
                             if(questionObj.IsCorrectAnswer === true){
                                 questionsAnsweredCorrectly[i]+=1
@@ -48,15 +48,39 @@ class StrengthWeakness extends React.Component{
                     }
                 }
                 this.setState({pending: false,questionsAnswered: questionsAnswered, questionsAnsweredCorrectly: questionsAnsweredCorrectly,ratio: ratio});
+                let min;
+                let minIndex;
+                let flag=false;
+                for(let i =0;i<questionsAnswered.length;i++){
+                    if(flag===false){
+                        if(ratio[i]>=0){
+                            min = ratio[i];
+                            minIndex = i;
+                            flag=true;
+                        }
+                    }
+                    else{
+                        if(ratio[i]>=0){
+                            if(min>ratio[i]){
+                                min=ratio[i];
+                                minIndex=i;
+                            }
+                        }
+                    }
+                }
+                if(flag===true) {
+                    this.setState({weakestCategory: questionCategories[minIndex]});
+                }
+                console.log("weakest category is:",this.state.weakestCategory);
             }
         })
     }
 
     render() {
         return(
-            <Container>
-                {console.log(this.state.questionsAnswered, this.state.questionsAnsweredCorrectly,this.state.ratio)}
-            </Container>
+            <React.Fragment>
+                <span>{this.state.weakestCategory}</span>
+            </React.Fragment>
         )
     }
 }
