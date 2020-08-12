@@ -14,7 +14,7 @@ export const SimplePieChart = (props) => {
     let percentInCorrectAnswers = Math.round(incorrectAnswers/totalAnswers*100);
     if (correctAnswers===0 && incorrectAnswers===0){
         return (
-            <h4>Not Enough Data</h4>
+            <span className="noData">Not Enough Data</span>
         )
     }
     return (
