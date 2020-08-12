@@ -49,17 +49,17 @@ class Footer extends React.Component{
                       <Col sm={12} style={{marginLeft: "60px"}}>
                         <Row>
                           <Col sm={4} className="smIcons">
-                            <a href="facebook.com">
+                            <a href="https://www.facebook.com/BhtExmFct">
                               <FontAwesomeIcon icon={faFacebook} className="footerIcons smIcons"/>
                             </a>
                           </Col>
                           <Col sm={4}>
-                            <a href="instagram.com">
+                            <a href="https://www.instagram.com/bhutan_exam_factory/">
                               <FontAwesomeIcon icon={faInstagram} style={{marginTop: "15px"}}className="footerIcons smIcons"/>
                             </a>
                           </Col>
                           <Col sm={4}>
-                            <a href="youtube.com">
+                            <a href="https://www.youtube.com/channel/UCmS06px2S8hXCz0A7eB_ZhA">
                               <FontAwesomeIcon icon={faYoutube} style={{marginTop: "15px"}} className="footerIcons smIcons"/>
                             </a>
                           </Col>
@@ -73,15 +73,14 @@ class Footer extends React.Component{
                       <a href='about' className="quickNavText">About</a>
                     </p>
                     <p>
-                      <a href='english' className="quickNavText">English</a>
+                      <a href='/' className="quickNavText">Home</a>
                     </p>
-                    <p>
-                      <a href='mathematics' className="quickNavText">Mathematics</a>
-                    </p>
-                    <p>
-                      <a href='signup' className="quickNavText">Sign Up </a>
-
-                    </p>
+                    {/*<p>*/}
+                    {/*  <a href='english' className="quickNavText">English</a>*/}
+                    {/*</p>*/}
+                    {/*<p>*/}
+                    {/*  <a href='mathematics' className="quickNavText">Mathematics</a>*/}
+                    {/*</p>*/}
                   </Col></Row>
               </Col>
             </Row>
