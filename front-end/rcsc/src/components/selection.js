@@ -123,7 +123,7 @@ class SelectionQueries extends Component {
               <br />
             </Col>
             <Col md={{ span: 4, offset: 0 }} className='strengthWeak'>
-              <h5 style={{ marginTop: "1rem", marginLeft: "2rem" }}>Weaknesses:</h5>
+              <h5 style={{ marginTop: "1rem", marginLeft: "2rem" }}>Weakness:</h5>
               <br />
               {/*{console.log(this.state.collectionName,"Collection Name")}*/}
               <p className='swDescrip'><StrengthWeakness questionType={this.state.collectionName}/></p>
