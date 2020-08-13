@@ -25,7 +25,8 @@ function FrontPage() {
             <img alt='people sitting infront of a laptop' src={user}></img>
           </Col>
         </Row>
-        <Row style={{ marginBottom: "25px", marginTop: "40px" }}>
+
+        <Row style={{ marginTop: "100px" }}>
           <Col lg={4} md={4} sm={12}>
             <Row>
               <Col sm={11} className='featureContainer'>
@@ -39,6 +40,7 @@ function FrontPage() {
                   <li>Get metrics and feedback to turn your weaknesses into strengths.</li>
                   <li>Questions from past papers that are continuously updated.</li>
                 </ul>
+                <br />
               </Col>
             </Row>
           </Col>
