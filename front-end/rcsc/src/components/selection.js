@@ -20,6 +20,7 @@ class SelectionQueries extends Component {
         category1: "",
         category2: "",
         category3: "",
+        category4: ""
       },
       collectionName: ''
     };
@@ -31,8 +32,9 @@ class SelectionQueries extends Component {
       this.setState({
         categoryOptions: {
           category1: "Algebra",
-          category2: "Unscramble",
-          category3: "Calculus",
+          category2: "Logic",
+          category3: "Probability",
+          category4: 'Fractions',
         },
       });
     } else if (this.props.type === "English") {
@@ -42,6 +44,7 @@ class SelectionQueries extends Component {
           category1: "Grammar",
           category2: "Comprehension",
           category3: "Synonyms & Antonyms",
+          category4: 'Vocabulary',
         },
       });
     }
@@ -94,9 +97,10 @@ class SelectionQueries extends Component {
                 {["radio"].map((type) => (
                   <div key={`default-${type}`} className='mb-3'>
                     <Form.Check type={type} name='category' label='Any' id='any' defaultChecked />
-                    <Form.Check type={type} name='category' id='category1' label={this.state.categoryOptions.category1} />
-                    <Form.Check type={type} name='category' id='category2' label={this.state.categoryOptions.category2} />
-                    <Form.Check type={type} name='category' id='category3' label={this.state.categoryOptions.category3} />
+                    <Form.Check type={type} name='category' id={this.state.categoryOptions.category1} label={this.state.categoryOptions.category1} />
+                    <Form.Check type={type} name='category' id={this.state.categoryOptions.category2} label={this.state.categoryOptions.category2} />
+                    <Form.Check type={type} name='category' id={this.state.categoryOptions.category3} label={this.state.categoryOptions.category3} />
+                    <Form.Check type={type} name='category' id={this.state.categoryOptions.category4} label={this.state.categoryOptions.category4} />
                   </div>
                 ))}
               </Form>

@@ -27,13 +27,14 @@ class ReadEnglishQuestion extends Component {
     this.setState({ loading: true });
     let auth = fire.auth();
     let userName = auth.currentUser.email;
-    console.log("Is the right prop being passed: ", this.props.questionTypeQuery);
+    // console.log("Is the right prop being passed: ", this.props.questionTypeQuery);
+    // console.log("This is the category prop: ",this.props.questionCategory);
     fire
       .firestore()
       .collection(userName)
       .doc("EnglishQuestions")
       .collection("Questions")
-      .where(this.props.questionTypeQuery, "==", true)
+      .where('Category', "==", this.props.questionCategory)
       .limit(this.props.chosenChoiceNumber)
       .onSnapshot((snapshot) => {
         const newData = snapshot.docs.map((doc) => ({
