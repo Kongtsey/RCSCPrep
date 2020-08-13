@@ -27,25 +27,58 @@ class ReadEnglishQuestion extends Component {
     this.setState({ loading: true });
     let auth = fire.auth();
     let userName = auth.currentUser.email;
-    // console.log("Is the right prop being passed: ", this.props.questionTypeQuery);
+    console.log("Is the right prop being passed: ", this.props.questionTypeQuery);
     // console.log("This is the category prop: ",this.props.questionCategory);
-    fire
-      .firestore()
-      .collection(userName)
-      .doc("EnglishQuestions")
-      .collection("Questions")
-      .where('Category', "==", this.props.questionCategory)
-      .limit(this.props.chosenChoiceNumber)
-      .onSnapshot((snapshot) => {
-        const newData = snapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }));
-        this.setState({
-          questionData: newData,
-          loading: false,
-        });
-      });
+    if (this.props.questionCategory!=='any') {
+      fire
+          .firestore()
+          .collection(userName)
+          .doc("EnglishQuestions")
+          .collection("Questions")
+          .where('Category', "==", this.props.questionCategory).where(this.props.questionTypeQuery,'==',true)
+          .limit(this.props.chosenChoiceNumber)
+          .onSnapshot((snapshot) => {
+            const newData = snapshot.docs.map((doc) => ({
+              id: doc.id,
+              ...doc.data(),
+            }));
+            this.setState({
+              questionData: newData,
+              loading: false,
+            });
+            for (let i =0; i < this.state.questionData.length;i++){
+              console.log(this.state.questionData[i].Category,"question category")
+              console.log(this.state.questionData[i].IsCorrectAnswer,"question been correctly answered?")
+              console.log(this.state.questionData[i].IsWrongAnswer,"question been incorrectly answered?")
+            }
+          });
+
+    }
+    else{
+      fire
+          .firestore()
+          .collection(userName)
+          .doc("EnglishQuestions")
+          .collection("Questions")
+          .where(this.props.questionTypeQuery, "==", true)
+          .limit(this.props.chosenChoiceNumber)
+          .onSnapshot((snapshot) => {
+            const newData = snapshot.docs.map((doc) => ({
+              id: doc.id,
+              ...doc.data(),
+            }));
+            this.setState({
+              questionData: newData,
+              loading: false,
+            });
+            console.log(this.state.questionData,"question data")
+            for (let i =0; i < this.state.questionData.length;i++){
+              console.log(this.state.questionData[i].Category,"question category")
+              console.log(this.state.questionData[i].IsCorrectAnswer,"question been correctly answered?")
+              console.log(this.state.questionData[i].IsWrongAnswer,"question been incorrectly answered?")
+            }
+          });
+    }
   }
 
   handleChange = (questionId, userChoice, correctAnswer, index) => () => {

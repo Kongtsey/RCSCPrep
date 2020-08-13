@@ -43,7 +43,7 @@ class SelectionQueries extends Component {
         categoryOptions: {
           category1: "Grammar",
           category2: "Comprehension",
-          category3: "Synonyms & Antonyms",
+          category3: "Synonyms and Antonyms",
           category4: 'Vocabulary',
         },
       });
