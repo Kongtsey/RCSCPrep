@@ -46,6 +46,14 @@ class MathList extends Component {
               questionData: newData,
               loading: false,
             });
+
+            //<---- FOR DEBUGGING ---->
+            // for (let i =0; i < this.state.questionData.length;i++){
+              // console.log(this.state.questionData[i].Category,"question category")
+              // console.log(this.state.questionData[i].IsCorrectAnswer,"question been correctly answered?")
+              // console.log(this.state.questionData[i].IsWrongAnswer,"question been incorrectly answered?")
+            // }
+            //<---- END FOR DEBUGGING ---->
           });
     }
     else{
@@ -65,11 +73,14 @@ class MathList extends Component {
               questionData: newData,
               loading: false,
             });
-            for (let i =0; i < this.state.questionData.length;i++){
-            console.log(this.state.questionData[i].Category,"question category")
-            // console.log(this.state.questionData[i].IsCorrectAnswer,"question been correctly answered?")
-            // console.log(this.state.questionData[i].IsWrongAnswer,"question been incorrectly answered?")
-            }
+
+            // <----- FOR DEBUGGING --->
+            // for (let i =0; i < this.state.questionData.length;i++){
+            // // console.log(this.state.questionData[i].Category,"question category")
+            // // // console.log(this.state.questionData[i].IsCorrectAnswer,"question been correctly answered?")
+            // // console.log(this.state.questionData[i].IsWrongAnswer,"question been incorrectly answered?")
+            // }
+            // <----- END FOR DEBUGGING ----->
           });
     }
   }
