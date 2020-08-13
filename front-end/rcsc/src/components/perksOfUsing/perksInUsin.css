@@ -1,18 +1,22 @@
-.perksInUsingContainer{
-    background-color: white;
+.perksInUsingContainer {
+  background-color: transparent;
 }
-.perksIcons{
-    width: 150px;
-    height: 150px;
-    margin-top: 35px;
-    cursor: pointer;
+.perksIcons {
+  width: 150px;
+  height: 150px;
+  margin-top: 35px;
+  cursor: pointer;
 }
-.perksIconsContainer{
-    text-align: center;
+.perksIconsContainer {
+  text-align: center;
 }
-.perksDescription{
-    line-height: 2;
-    text-align: justify;
-    word-spacing: 5px;
-    color: rgb(96,98,100);
+.perksDescription {
+  line-height: 2;
+  text-align: justify;
+  word-spacing: 5px;
+  color: white;
+}
+.perksDescription p {
+  padding-left: 30px;
+  padding-top: 25px;
 }
