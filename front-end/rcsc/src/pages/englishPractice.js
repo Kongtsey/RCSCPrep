@@ -11,7 +11,7 @@ class PracticeEnglish extends Component {
         <React.Fragment>
           <GeneralNavbar />
           <br />
-          {<ReadEnglishQuestion chosenChoiceNumber={parseInt(this.props.location.numQuestions)} questionTypeQuery={this.props.location.questionType} />}
+          {<ReadEnglishQuestion chosenChoiceNumber={parseInt(this.props.location.numQuestions)} questionTypeQuery={this.props.location.questionType} questionCategory={this.props.location.category}/>}
         </React.Fragment>
       );
     } else {
