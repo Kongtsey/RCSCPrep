@@ -119,14 +119,14 @@ class SelectionQueries extends Component {
             <Col md={4} className='strengthWeak'>
               <h5 style={{ marginTop: "1rem", marginLeft: "2rem" }}>Strengths:</h5>
               <br />
-              <p className='swDescrip'>Calculus</p>
+              <p className='swDescrip'><StrengthWeakness toDisplay="strength" questionType={this.state.collectionName}/></p>
               <br />
             </Col>
             <Col md={{ span: 4, offset: 0 }} className='strengthWeak'>
               <h5 style={{ marginTop: "1rem", marginLeft: "2rem" }}>Weakness:</h5>
               <br />
               {/*{console.log(this.state.collectionName,"Collection Name")}*/}
-              <p className='swDescrip'><StrengthWeakness questionType={this.state.collectionName}/></p>
+              <p className='swDescrip'><StrengthWeakness toDisplay="weakness" questionType={this.state.collectionName}/></p>
             </Col>
           </Row>
         </Container>

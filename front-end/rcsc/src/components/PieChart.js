@@ -44,7 +44,7 @@ export const SimplePieChart = (props) => {
                     <br />
                     <span className="description">Incorrect Answers: {incorrectAnswers}</span>
                     <br />
-                    <span className="description">Weakest Topic: <StrengthWeakness questionType={props.questionType}/></span>
+                    <span className="description">Weakest Topic: <StrengthWeakness toDisplay="weakness"questionType={props.questionType}/></span>
                 </p>
             </div>
         </React.Fragment>

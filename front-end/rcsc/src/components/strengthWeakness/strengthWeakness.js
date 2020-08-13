@@ -13,10 +13,23 @@ class StrengthWeakness extends React.Component {
             questionsAnsweredCorrectly: [0, 0, 0, 0],
             ratios: [0, 0, 0, 0],
             weakestCategory: '',
+            strongestCategory: '',
+            displayStrength: false,
+            displayWeakness: false,
         }
     }
 
     componentDidMount() {
+        this.setState({
+            displayStrength: false,
+            displayWeakness: false,
+        })
+        if (this.props.toDisplay==="strength"){
+            this.setState({displayStrength: true})
+        }
+        if(this.props.toDisplay==="weakness"){
+            this.setState({displayWeakness: true})
+        }
         let questionType = this.props.questionType;
         // console.log(questionType);
         let questionTypeDefined = false;
@@ -60,6 +73,11 @@ class StrengthWeakness extends React.Component {
                             ratio[i] = questionsAnsweredCorrectly[i] / questionsAnswered[i];
                         }
                     }
+
+                    // console.log(questionsAnswered,'QA');
+                    // console.log(questionsAnsweredCorrectly,"QAC");
+                    // console.log(ratio, 'ratio');
+
                     this.setState({
                         pending: false,
                         questionsAnswered: questionsAnswered,
@@ -67,14 +85,18 @@ class StrengthWeakness extends React.Component {
                         ratio: ratio
                     });
                     let min;
+                    let max;
+                    let maxIndex;
                     let minIndex;
-                    let flag = false;
+                    let isValidIndex = false;
                     for (let i = 0; i < questionsAnswered.length; i++) {
-                        if (flag === false) {
+                        if (isValidIndex === false) {
                             if (ratio[i] >= 0) {
                                 min = ratio[i];
+                                max = ratio[i];
+                                maxIndex = i;
                                 minIndex = i;
-                                flag = true;
+                                isValidIndex = true;
                             }
                         } else {
                             if (ratio[i] >= 0) {
@@ -82,13 +104,19 @@ class StrengthWeakness extends React.Component {
                                     min = ratio[i];
                                     minIndex = i;
                                 }
+                                if( max<ratio[i]){
+                                    max = ratio[i]
+                                    maxIndex = i;
+                                }
                             }
                         }
                     }
-                    if (flag === true) {
+                    if (isValidIndex === true && min !== 1 && max !== 0) {
                         this.setState({weakestCategory: questionCategories[minIndex]});
+                        this.setState({strongestCategory: questionCategories[maxIndex]})
+                    } else {
+                        this.setState({weakestCategory: 'N/A',strongestCategory: 'N/A'});
                     }
-                    // console.log("weakest category is:", this.state.weakestCategory);
                 }
             })
         }
@@ -100,7 +128,8 @@ class StrengthWeakness extends React.Component {
         }
         return (
             <React.Fragment>
-                <span>{this.state.weakestCategory}</span>
+                {this.state.displayStrength && <span>{this.state.strongestCategory}</span>}
+                {this.state.displayWeakness && <span>{this.state.weakestCategory}</span>}
             </React.Fragment>
         )
     }
