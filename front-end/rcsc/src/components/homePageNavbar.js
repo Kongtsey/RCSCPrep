@@ -121,7 +121,7 @@ class NavigationBar extends Component {
                 email: this.state.email,
                 college: this.state.college,
                 dzongkhag: this.state.dzongkhag,
-              }
+              };
               db.collection(this.state.email).doc("UserProfile").set(data);
               //console.log("email user: ", this.state.email);
               db.collection("Questions")
@@ -177,7 +177,7 @@ class NavigationBar extends Component {
       .catch((error) => {
         console.log(error);
         this.setState({ errorMessage: error.message });
-      })
+      });
   }
 
   //Render
@@ -186,24 +186,26 @@ class NavigationBar extends Component {
       <React.Fragment>
         <Container className='navbar-parent-container'>
           <Navbar collapseOnSelect expand='lg'>
-            <Navbar.Brand href='/' className="companyName">RCSC Prep</Navbar.Brand>
+            <Navbar.Brand href='/' className='companyName'>
+              RCSC Prep
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls='responsive-navbar-nav' />
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav className='mr-auto'>
-                <Nav.Link href="/about">About</Nav.Link>
+                <Nav.Link href='/about'>About</Nav.Link>
                 <Nav.Link href='#contact'>Contact</Nav.Link>
               </Nav>
               <Form inline>
                 <Button variant='link' className='login' onClick={this.handleShowLogin}>
                   Login
                 </Button>
-                <Button  className='button buttonText' onClick={this.handleShow}>
+                <Button className='button buttonText' onClick={this.handleShow}>
                   <span>Sign Up</span>
                 </Button>
               </Form>
             </Navbar.Collapse>
           </Navbar>
-          <hr className="hrNavBar"/>
+          <hr className='hrNavBar' />
         </Container>
 
         {/*Sign Up Form*/}
@@ -318,11 +320,11 @@ class NavigationBar extends Component {
           <Modal.Footer>
             <p>Forgot Password?</p>
             <p
-                className="createAcc"
-                onClick={() => {
-                  this.handleCloseLogin();
-                  this.handleShow();
-                }}
+              className='createAcc'
+              onClick={() => {
+                this.handleCloseLogin();
+                this.handleShow();
+              }}
             >
               Create Account
             </p>
@@ -330,7 +332,6 @@ class NavigationBar extends Component {
               Log in
             </Button>
           </Modal.Footer>
-
         </Modal>
       </React.Fragment>
     );
