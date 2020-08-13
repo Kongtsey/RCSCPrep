@@ -28,7 +28,7 @@ class ReadEnglishQuestion extends Component {
     let auth = fire.auth();
     let userName = auth.currentUser.email;
     console.log("Is the right prop being passed: ", this.props.questionTypeQuery);
-    // console.log("This is the category prop: ",this.props.questionCategory);
+    console.log("This is the category prop: ",this.props.questionCategory);
     if (this.props.questionCategory!=='any') {
       fire
           .firestore()
@@ -46,11 +46,11 @@ class ReadEnglishQuestion extends Component {
               questionData: newData,
               loading: false,
             });
-            for (let i =0; i < this.state.questionData.length;i++){
-              console.log(this.state.questionData[i].Category,"question category")
-              console.log(this.state.questionData[i].IsCorrectAnswer,"question been correctly answered?")
-              console.log(this.state.questionData[i].IsWrongAnswer,"question been incorrectly answered?")
-            }
+            // for (let i =0; i < this.state.questionData.length;i++){
+              // console.log(this.state.questionData[i].Category,"question category")
+              // console.log(this.state.questionData[i].IsCorrectAnswer,"question been correctly answered?")
+              // console.log(this.state.questionData[i].IsWrongAnswer,"question been incorrectly answered?")
+            // }
           });
 
     }
@@ -72,11 +72,11 @@ class ReadEnglishQuestion extends Component {
               loading: false,
             });
             console.log(this.state.questionData,"question data")
-            for (let i =0; i < this.state.questionData.length;i++){
-              console.log(this.state.questionData[i].Category,"question category")
-              console.log(this.state.questionData[i].IsCorrectAnswer,"question been correctly answered?")
-              console.log(this.state.questionData[i].IsWrongAnswer,"question been incorrectly answered?")
-            }
+            // for (let i =0; i < this.state.questionData.length;i++){
+            //   console.log(this.state.questionData[i].Category,"question category")
+            //   console.log(this.state.questionData[i].IsCorrectAnswer,"question been correctly answered?")
+            //   console.log(this.state.questionData[i].IsWrongAnswer,"question been incorrectly answered?")
+            // }
           });
     }
   }

@@ -10,7 +10,7 @@ class PracticeMath extends Component {
         <React.Fragment>
           <GeneralNavbar />
           <br />
-          {<MathList chosenChoiceNumber={parseInt(this.props.location.numQuestions)} questionTypeQuery={this.props.location.questionType} />}
+          {<MathList chosenChoiceNumber={parseInt(this.props.location.numQuestions)} questionTypeQuery={this.props.location.questionType} questionCategory={this.props.location.category}/>}
         </React.Fragment>
       );
     } else {

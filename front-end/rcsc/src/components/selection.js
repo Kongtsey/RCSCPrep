@@ -34,7 +34,7 @@ class SelectionQueries extends Component {
           category1: "Algebra",
           category2: "Logic",
           category3: "Probability",
-          category4: 'Fractions',
+          category4: 'Fraction',
         },
       });
     } else if (this.props.type === "English") {
