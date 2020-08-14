@@ -41,48 +41,43 @@ class PerksInUsing extends React.Component {
     return (
       <Container className='perksInUsingContainer'>
         <Row>
-          <Col sm={6}>
+          <Col md={6} lg={6} sm={6} xs={12}>
             <Row style={{ marginTop: "45px" }}>
-              <Col sm={4} className='perksIconsContainer'>
+              <Col xs={4} md={4} lg={4} sm={4} className='perksIconsContainer'>
                 <img src={stats} className='perksIcons' style={{ opacity: this.state.opacity[0] }} onClick={(e) => this.handleChange(0, e)} alt='statsPic' />
               </Col>
-              <Col sm={4} className='perksIconsContainer'>
+              <Col xs={4} md={4} lg={4} sm={4} className='perksIconsContainer'>
                 <img src={weakness} className='perksIcons' style={{ opacity: this.state.opacity[1] }} onClick={(e) => this.handleChange(1, e)} alt='weaknessPic' />
               </Col>
-              <Col sm={4} className='perksIconsContainer'>
+              <Col xs={4} md={4} lg={4} sm={4} className='perksIconsContainer'>
                 <img src={examFinal} className='perksIcons' style={{ opacity: this.state.opacity[2] }} onClick={(e) => this.handleChange(2, e)} alt='finalExamPic' />
               </Col>
             </Row>
             <Row style={{ marginBottom: "80px" }}>
-              <Col sm={4} className='perksIconsContainer'>
+              <Col xs={4} md={4} lg={4} sm={4} className='perksIconsContainer'>
                 <img src={easyReview} className='perksIcons' style={{ opacity: this.state.opacity[3] }} onClick={(e) => this.handleChange(3, e)} alt='reviewPic' />
               </Col>
-              <Col sm={4} className='perksIconsContainer'>
+              <Col xs={4} md={4} lg={4} sm={4} className='perksIconsContainer'>
                 <img src={category} className='perksIcons' style={{ opacity: this.state.opacity[4] }} onClick={(e) => this.handleChange(4, e)} alt='categoryPic' />
               </Col>
-              <Col sm={4} className='perksIconsContainer'>
+              <Col xs={4} md={4} lg={4} sm={4} className='perksIconsContainer'>
                 <img src={history} className='perksIcons' style={{ opacity: this.state.opacity[5] }} onClick={(e) => this.handleChange(5, e)} alt='historyPic' />
               </Col>
             </Row>
           </Col>
-          <Col sm={6} className='perksDescription' style={{ marginTop: "80px" }}>
-            <Row>
-              <Col sm={12} className='perksDescription'>
-                {this.state.showMessage[0] && (
-                  <p>
-                    RCSC Prep makes it easy for you to study at your own pace and at your own time. Our feedback is personalized to your performance and helps you find your weaknesses and your
-                    strengths. RCSC Prep also has features that make you be able to take control of when you want to study and is tailor made just for you. You can also choose to focus on what you
-                    lack rather than just going along with the classroom, in a sense RCSC Prep is what allows you to make this education a 21st century education and the best part is that its
-                    completely free.
-                  </p>
-                )}
-                {this.state.showMessage[1] && <p>Lorem Ipsum Dolor Amet</p>}
-                {this.state.showMessage[2] && <p>P 3</p>}
-                {this.state.showMessage[3] && <p>P 4</p>}
-                {this.state.showMessage[4] && <p>P 5</p>}
-                {this.state.showMessage[5] && <p>P 6</p>}
-              </Col>
-            </Row>
+          <Col xs={12} md={6} lg={6} sm={6} className='perksDescription'>
+            {this.state.showMessage[0] && (
+              <p>
+                RCSC Prep makes it easy for you to study at your own pace and at your own time. Our feedback is personalized to your performance and helps you find your weaknesses and your strengths.
+                RCSC Prep also has features that make you be able to take control of when you want to study and is tailor made just for you. You can also choose to focus on what you lack rather than
+                just going along with the classroom, in a sense RCSC Prep is what allows you to make this education a 21st century education and the best part is that its completely free.
+              </p>
+            )}
+            {this.state.showMessage[1] && <p>Lorem Ipsum Dolor Amet</p>}
+            {this.state.showMessage[2] && <p>P 3</p>}
+            {this.state.showMessage[3] && <p>P 4</p>}
+            {this.state.showMessage[4] && <p>P 5</p>}
+            {this.state.showMessage[5] && <p>P 6</p>}
           </Col>
         </Row>
       </Container>

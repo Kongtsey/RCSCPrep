@@ -37,7 +37,7 @@
 /*Mobile Phones*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .foundersPic {
-    margin-left: 20px;
+    margin-left: 0px;
   }
   .foundersBio {
     text-align: justify;

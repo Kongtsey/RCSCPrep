@@ -21,13 +21,13 @@ function FrontPage() {
             </p>
             <Button className='exploreButton'> Explore</Button>
           </Col>
-          <Col lg={6} md={6} sm={12} className='front_page_image'>
+          <Col lg={6} md={6} sm={12} xs={12} className='front_page_image'>
             <img alt='people sitting infront of a laptop' src={user}></img>
           </Col>
         </Row>
 
-        <Row style={{ marginTop: "100px" }}>
-          <Col lg={4} md={4} sm={12}>
+        <Row className={"featureContainerParentDiv"}>
+          <Col lg={4} md={4} sm={12} xs={12}>
             <Row>
               <Col sm={11} className='featureContainer'>
                 <Row>
@@ -44,7 +44,8 @@ function FrontPage() {
               </Col>
             </Row>
           </Col>
-          <Col lg={4} md={4} sm={12}>
+
+          <Col lg={4} md={4} sm={12} xs={12}>
             <Row>
               <Col sm={11} className='featureContainer'>
                 <Row>
@@ -60,6 +61,7 @@ function FrontPage() {
               </Col>
             </Row>
           </Col>
+
           <Col lg={4} md={4} sm={12}>
             <Row className='justify-content-center'>
               <Col sm={11} className='featureContainer'>
