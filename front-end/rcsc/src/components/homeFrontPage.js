@@ -12,7 +12,7 @@ function FrontPage() {
         <Row className='front_page_content'>
           <Col lg={6} md={6} sm={12} className='tagline frontPageHeader'>
             <p className='tagline_message'>
-              Pass the <b>RCSC Prelims </b>with ease!
+              PASS THE <b>RCSC PRELIM </b>WITH <i style={{ color: "white" }}>EASE!</i>
             </p>
             <br />
             <p className='product_description'>

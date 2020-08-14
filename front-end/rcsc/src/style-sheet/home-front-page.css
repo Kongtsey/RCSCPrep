@@ -4,7 +4,6 @@
   background: rgb(0, 148, 151);
   margin: 0;
   height: 100vh;
-  border: solid green 3px;
 }
 
 /* 
@@ -51,7 +50,7 @@ This is the parent div for the tag line on the right of the image.
 }
 .tagline_message {
   color: #1cfaff;
-  font-size: 35px;
+  font-size: 55px;
   font-weight: 500;
 }
 .exploreButton {
@@ -118,10 +117,9 @@ This is the parent div for the tag line on the right of the image.
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .homepage_parent_container {
-    border: solid rgb(0, 148, 151) 1px;
     background: rgb(0, 148, 151);
     margin: 0;
-    height: 200vh;
+    height: 210vh;
   }
   .front_page_content {
     margin: 0 !important;
@@ -133,6 +131,11 @@ This is the parent div for the tag line on the right of the image.
     margin-top: -50px;
     padding-left: 30px;
     z-index: 0;
+  }
+  .tagline_message {
+    color: #1cfaff;
+    font-size: 50px;
+    font-weight: 500;
   }
   .featureContainer {
     height: 285px;

@@ -32,4 +32,16 @@
     background-image: url("../../images/homePage/mountain.jpg");
     background-attachment: scroll;
   }
+  .reason-slogan {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    margin: 0px 10px -10x 10px;
+    padding: 20px;
+  }
+  .threeReasons {
+    padding: 30px;
+    background: #ffffff4f;
+    margin: 10px;
+  }
 }

@@ -20,8 +20,10 @@ class ReasonsToStart extends React.Component {
             <span className={"reason-slogan"}>
               <Row>
                 <Col md={10}>
-                  <h5>Playing out part in creating a digital Bhutan.</h5>
-                  <p>For a small country like ours, technology is the only way that we can keep up and possibly even compete with the rest of world</p>
+                  <h5>Playing out part in creating a digital Bhutan</h5>
+                  <p>
+                    <i>For a small country like ours, technology is the only way that we can keep up and possibly even compete with the rest of world</i>
+                  </p>
                 </Col>
               </Row>
             </span>
@@ -32,7 +34,9 @@ class ReasonsToStart extends React.Component {
               <Row>
                 <Col md={10}>
                   <h5>His Majesty's constant push for technology</h5>
-                  <p>His Majesty has championed the push for technology and its importance especially in a small country like Bhutan.</p>
+                  <p>
+                    <i>His Majesty has championed the push for technology and its importance especially in a small country like Bhutan.</i>
+                  </p>
                 </Col>
               </Row>
             </span>
@@ -43,7 +47,9 @@ class ReasonsToStart extends React.Component {
               <Row>
                 <Col md={10}>
                   <h5>Rethinking our Education and Learning system. </h5>
-                  <p>The digital revolution has changed a lot of things around us. Unfortunately our education and the way we learn hasn't changed much.</p>
+                  <p>
+                    <i>The digital revolution has changed a lot of things around us. Unfortunately our education and the way we learn hasn't changed much.</i>
+                  </p>
                 </Col>
               </Row>
             </span>
