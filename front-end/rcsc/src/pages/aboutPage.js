@@ -16,10 +16,11 @@ class AboutPage extends React.Component {
             </Col>
           </Row>
           <Row>
-            <Col sm={6}>
+            <Col sm={5}>
               <JoinUs />
             </Col>
-            <Col sm={6}>
+            <Col sm={2}></Col>
+            <Col sm={5}>
               <ContactUs />
             </Col>
           </Row>

@@ -1,3 +1,7 @@
+.joinUsHeader {
+  /* border: solid red; */
+  padding-left: 0 !important;
+}
 .descripText {
   /*text-align: center;*/
 }
@@ -5,13 +9,12 @@
   text-align: left;
   margin-top: 20px;
   color: rgb(156, 156, 156);
-  margin-left: 160px;
   font-weight: 600;
   font-size: 0.9rem;
+  padding-left: 0 !important;
 }
 .contactDetails {
   color: rgb(112, 112, 112);
-  margin-left: 175px;
   font-weight: 600;
   font-size: 1.2rem;
   word-spacing: 2px;
@@ -20,6 +23,7 @@
 }
 .contactDetails p {
   margin-bottom: 5px;
+  color: white;
 }
 .lastDetail {
   margin-bottom: 107px;

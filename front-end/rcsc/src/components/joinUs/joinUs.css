@@ -1,5 +1,3 @@
-.joinUsContainer {
-}
 .joinUsHeader {
   text-align: center;
 }
@@ -16,10 +14,9 @@
 .employeeBoxes {
   background-color: white;
   border-radius: 60px;
-  width: 50%;
+  width: 100%;
   height: 50px;
   box-shadow: 10px 5px 5px 2px rgba(135, 130, 130, 0.53);
-  margin-left: 80px;
 }
 .employeeBoxes span img {
   height: 50px;
@@ -34,4 +31,12 @@
 .employeeBoxesContainer {
   text-align: center;
   margin-top: 40px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .joinUsHeader h3 {
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+  }
 }
