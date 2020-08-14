@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Fredoka+One&family=Monoton&family=Ultra&family=Rubik+Mono+One&display=swaprel=stylesheet");
 
 .homepage_parent_container {
-  border: solid rgb(0,148,151) 1px;
-  background: rgb(0,148,151);
+  background: rgb(0, 148, 151);
   margin: 0;
+  height: 100vh;
 }
 
 /* 
@@ -18,7 +18,7 @@ is not set.
   /*margin-bottom: 100px;*/
   z-index: 99;
 }
-.frontPageHeader{
+.frontPageHeader {
   margin-top: 70px;
 }
 
@@ -38,13 +38,8 @@ This is for the actual image tag. Changing the size of the
 image from here. 
 */
 .front_page_image img {
-  width: 129%;
+  width: 100%;
   margin-bottom: -150px;
-}
-.featureContainer{
-  height: 285px;
-  margin-left: 5px;
-  background-color: rgba(1, 130, 127, 0.54) !important;
 }
 
 /*
@@ -53,35 +48,59 @@ This is the parent div for the tag line on the right of the image.
 .tagline {
   padding-left: 0px !important;
 }
+.tagline_message {
+  color: #1cfaff;
+  font-size: 55px;
+  font-weight: 500;
+}
+.exploreButton {
+  background: transparent !important;
+  border: 2px solid white !important;
+  border-radius: 50px !important;
+  display: block;
+  margin-left: 0;
+  line-height: 1.5;
+  padding: 5px 15px !important;
+  margin-top: 20px;
+}
+.exploreButton:hover {
+  transition: 0.25s;
+  border: 2px solid #d9707a !important;
+}
 .product_description {
   text-align: justify;
-  color: rgb(214,214,214);
+  color: rgb(214, 214, 214);
   margin-top: -10px;
   font-size: 18px;
   z-index: 99;
 }
 
 /*
-This is the actual message of the tagline.
+------------------------------------
 */
-.tagline_message {
-  color: white;
-  font-size: 35px;
-  font-weight: 500;
+.featureContainer {
+  height: 285px;
+  margin-left: 5px;
+  background-color: rgba(1, 130, 127, 0.54) !important;
+  padding-bottom: 60px;
+}
+
+.featureContainerParentDiv {
+  margin-top: 100px;
 }
 .featureIcons {
   font-size: 50px;
   color: white;
   text-align: center;
 }
-.featureIconsContainer{
+.featureIconsContainer {
   margin-top: 20px;
   text-align: center;
 }
 .emailLink {
   color: white !important;
 }
-.emailLink:hover{
+.emailLink:hover {
   color: white !important;
 }
 .featureTitle {
@@ -95,15 +114,36 @@ This is the actual message of the tagline.
   margin-top: -15px;
   margin-left: 20px;
 }
-.exploreButton{
-  background: transparent !important;
-  border: 2px solid white !important;
-  border-radius: 14% !important;
-  display: block;
-  margin-left: 0;
-  line-height: 1.5;
-}
-.exploreButton:hover{
-  transition: 0.25s;
-  border: 2px solid #D9707A !important;
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .homepage_parent_container {
+    background: rgb(0, 148, 151);
+    margin: 0;
+    height: 1800px;
+  }
+  .front_page_content {
+    margin: 0 !important;
+    z-index: 99;
+  }
+  .front_page_image {
+    width: 100%;
+    margin-bottom: -150px;
+    margin-top: -50px;
+    padding-left: 30px;
+    z-index: 0;
+  }
+  .tagline_message {
+    color: #1cfaff;
+    font-size: 50px;
+    font-weight: 500;
+  }
+  .featureContainer {
+    height: 285px;
+    margin: 10px 10px 10px 10px;
+    background-color: rgba(1, 130, 127, 0.54) !important;
+    padding-bottom: 60px;
+  }
+  .featureContainerParentDiv {
+    margin-top: 190px;
+  }
 }
