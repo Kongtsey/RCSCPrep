@@ -85,4 +85,7 @@ a:hover {
   .quickNav {
     display: none;
   }
+  .footer-msg-breaker {
+    margin-bottom: 20px;
+  }
 }

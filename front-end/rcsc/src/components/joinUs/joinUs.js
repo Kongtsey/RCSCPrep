@@ -1,6 +1,9 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import "./joinUs.css";
+import developer from "../../images/join_us/coder.png";
+import graphic_designer from "../../images/join_us/graphic-design.png";
+import marketeer from "../../images/join_us/digital-market.png";
 
 class JoinUs extends React.Component {
   render() {
@@ -14,28 +17,37 @@ class JoinUs extends React.Component {
               </Col>
             </Row>
             <Row>
-              <Col sm={12} className='lookingFor'>
+              <Col md={12} lg={12} sm={12} xs={12} className='lookingFor'>
                 <h5>We are currently looking for: </h5>
               </Col>
             </Row>
             <Row className='justify-content-center'>
-              <Col sm={8} className='employeeBoxesContainer'>
+              <Col md={12} lg={12} sm={12} xs={12} className='employeeBoxesContainer'>
                 <div className='employeeBoxes'>
-                  <p>Graphic Designer</p>
+                  <span>
+                    <img src={graphic_designer} alt='graphic design icon' />
+                    <p>Graphic Designer</p>
+                  </span>
                 </div>
               </Col>
             </Row>
             <Row className='justify-content-center'>
-              <Col sm={8} className='employeeBoxesContainer'>
+              <Col md={12} lg={12} sm={12} xs={12} className='employeeBoxesContainer'>
                 <div className='employeeBoxes'>
-                  <p>Webapp Dev</p>
+                  <span>
+                    <img src={developer} alt='graphic design icon' />
+                    <p>Webapp Dev</p>
+                  </span>
                 </div>
               </Col>
             </Row>
             <Row className='justify-content-center' style={{ marginBottom: "150px" }}>
-              <Col sm={8} className='employeeBoxesContainer'>
+              <Col md={12} lg={12} sm={12} xs={12} className='employeeBoxesContainer'>
                 <div className='employeeBoxes'>
-                  <p>Digital Marketer</p>
+                  <span>
+                    <img src={marketeer} alt='graphic design icon' />
+                    <p>Digital Marketer</p>
+                  </span>
                 </div>
               </Col>
             </Row>

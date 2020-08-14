@@ -15,6 +15,7 @@ class Footer extends React.Component {
               <Row>
                 <Col sm={12} className='extraMessage'>
                   {this.props.extraMsg || ""}
+                  {this.props.extraMsg ? <hr className={"footer-msg-breaker"} /> : ""}
                 </Col>
               </Row>
               <Row>
@@ -72,7 +73,7 @@ class Footer extends React.Component {
                     </Col>
                     <Col lg={12} md={12} sm={12} xs={3}>
                       <p>
-                        <a href='about' className='quickNavText'>
+                        <a href='about_and_contact' className='quickNavText'>
                           About
                         </a>
                       </p>
