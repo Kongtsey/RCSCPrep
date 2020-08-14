@@ -24,7 +24,6 @@
 .foundersBio {
   /* border: 1px solid red; */
   text-align: right;
-  height: 360px;
   margin-top: 30px;
   padding-top: 60px;
   font-weight: 300;
@@ -33,4 +32,21 @@
   word-spacing: 3px;
   color: rgb(161, 192, 193);
   overflow: hidden;
+}
+
+/*Mobile Phones*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .foundersPic {
+    margin-left: 20px;
+  }
+  .foundersBio {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 10px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.75;
+    word-spacing: 3px;
+    color: rgb(161, 192, 193);
+  }
 }
