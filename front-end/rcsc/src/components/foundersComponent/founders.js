@@ -17,8 +17,8 @@ class Founders extends React.Component {
         <Container>
           <Row>
             <Col xs={12} sm={9} className='foundersBio'>
-              Karma Yoezer <i>(left)</i> is a sophomore in Connecticut College, USA studying Computer science and Economics with a minor in Mathematics. Karma has held several internships both at home
-              and abroad. Phuntsho Norbu <i>(right)</i> graduated from Wheaton College in the USA with Bachelors of Arts in Computer Science and Mathematical Economics. After Completing his
+              Karma Yoezer <i>(left)</i> is a sophomore in Connecticut College, USA, studying Computer science and Economics with a minor in Mathematics. Karma has held several internships both at
+              home and abroad. Phuntsho Norbu <i>(right)</i> graduated from Wheaton College in the USA with Bachelors of Arts in Computer Science and Mathematical Economics. After Completing his
               undergraduate, Phuntsho travelled around the world for a year as a Thomas J Watson fellow, looking at how Drones are helping rural communities and ultimately helping build local robotics
               capacity. Phuntsho Norbu and Karma Yoezer are brothers, passionate about technology and innovation. They are strong believers in bringing social change through technology.
             </Col>
