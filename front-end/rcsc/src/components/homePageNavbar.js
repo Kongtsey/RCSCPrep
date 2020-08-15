@@ -187,7 +187,7 @@ class NavigationBar extends Component {
         <Container className='navbar-parent-container'>
           <Navbar collapseOnSelect expand='lg'>
             <Navbar.Brand href='/' className='companyName'>
-              RCSC Prep
+              Kongtsey
             </Navbar.Brand>
             <Navbar.Toggle aria-controls='responsive-navbar-nav' />
             <Navbar.Collapse id='responsive-navbar-nav'>

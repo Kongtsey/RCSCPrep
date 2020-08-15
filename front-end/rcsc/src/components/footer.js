@@ -21,8 +21,8 @@ class Footer extends React.Component {
               <Row>
                 <Col className='project_motto' md={4} lg={4} sm={12} xs={12}>
                   <p>
-                    RCSC Prep is an online test prep designed to help students and to give them the personalised aid that they aren't able to receive at tuition centers. Our site is designed with the
-                    idea of the student in mind and our mission is to provide the most helpful prep that one can receive
+                    <b>Kongtsey</b> is an online test prep designed to help students and to give them the personalised aid that they aren't able to receive at tuition centers. Our site is designed
+                    with the idea of the student in mind and our mission is to provide the most helpful prep that one can receive
                   </p>
                 </Col>
                 <Col className='footer_contacts' md={4} sm={6} xs={12}>
@@ -93,7 +93,7 @@ class Footer extends React.Component {
           <hr />
           <Row className='legal'>
             <Col md={4} lg={5} sm={8} xs={4} className='footerTermsOfUse'>
-              <p style={{ paddingTop: "5px" }}>&#169; 2020 Kongzey</p>
+              <p style={{ paddingTop: "5px" }}>&#169; 2020 Kongtsey</p>
             </Col>
 
             <Col md={2} lg={4} sm={2} xs={4}>
