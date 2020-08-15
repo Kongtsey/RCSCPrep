@@ -16,8 +16,8 @@ function FrontPage() {
             </p>
             <br />
             <p className='product_description'>
-              Our free online test prep makes it easier for you to practice for the P.E and to score better on it. By providing you metrics with how you're performing, RCSC Prep makes prepping for the
-              Prelims more fun and efficient!
+              Kongtsey makes it easy for you to study at your own pace and at your own time. Our feedback is personalized to your performance and helps you find your weaknesses and your strengths.
+              Kongtsey is what allows you to make this education a 21st century education.
             </p>
             <Button className='exploreButton'> Explore</Button>
           </Col>

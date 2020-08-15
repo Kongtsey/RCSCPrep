@@ -17,9 +17,10 @@ class Founders extends React.Component {
         <Container>
           <Row>
             <Col xs={12} sm={9} className='foundersBio'>
-              RCSC Prep makes it easy for you to study at your own pace and at your own time. Our feedback is personalized to your performance and helps you find your weaknesses and your strengths.
-              RCSC Prep also has features that make you be able to take control of when you want to study and is tailor made just for you. You can also choose to focus on what you lack rather than
-              just going along with the classroom, in a sense RCSC Prep is what allows you to make this education a 21st century education and the best part is that its completely free.
+              Karma Yoezer <i>(left)</i> is a sophomore in Connecticut College, USA studying Computer science and Economics with a minor in Mathematics. Karma has held several internships both at home
+              and abroad. Phuntsho Norbu <i>(right)</i> graduated from Wheaton College in the USA with Bachelors of Arts in Computer Science and Mathematical Economics. After Completing his
+              undergraduate, Phuntsho travelled around the world for a year as a Thomas J Watson fellow, looking at how Drones are helping rural communities and ultimately helping build local robotics
+              capacity. Phuntsho Norbu and Karma Yoezer are brothers, passionate about technology and innovation. They are strong believers in bringing social change through technology.
             </Col>
             <Col xs={12} sm={3} className='foundersPicContainer'>
               <img src={founders} className='foundersPic' alt='foundersPic' />
