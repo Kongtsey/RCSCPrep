@@ -19,6 +19,8 @@ class NavigationBar extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.copyMathDatabase = this.copyMathDatabase.bind(this);
     this.copyEnglishDatabase = this.copyEnglishDatabase.bind(this);
+    this.copyMathSignUpExam = this.copyMathSignUpExam.bind(this);
+    this.copyEnglishSignUpExam = this.copyEnglishSignUpExam.bind(this);
     this.state = {
       questionData: [],
       toShowLogin: false,
@@ -125,9 +127,7 @@ class NavigationBar extends Component {
                 dzongkhag: this.state.dzongkhag,
               };
               db.collection(this.state.email).doc("UserProfile").set(data);
-
               this.copyMathDatabase();
-              this.copyEnglishDatabase();
             });
         }
       });
@@ -150,6 +150,7 @@ class NavigationBar extends Component {
           });
           console.log("Math Questions: ", doc.id);
         });
+        this.copyEnglishDatabase();
         console.log(" Done copying the Math database ");
       });
   }
@@ -174,9 +175,64 @@ class NavigationBar extends Component {
           });
           console.log("English Questions: ", doc.id);
         });
+        this.copyMathSignUpExam();
         console.log("Done copying the English database");
       });
   }
+  copyMathSignUpExam() {
+    let db = fire.firestore();
+    db.collection("PracticeExamOnSignUp")
+      .doc("Math")
+      .collection("MathQuestions")
+      .get()
+      .then((snapshot) => {
+        snapshot.forEach((doc) => {
+          db.collection(this.state.email).doc("ExamOnSignUp").collection("Math").doc(doc.id).set({
+            Category: doc.data().Category,
+            Choice: doc.data().Choice,
+            CorrectAnswer: doc.data().CorrectAnswer,
+            IsCorrectAnswer: doc.data().IsCorrectAnswer,
+            IsWrongAnswer: doc.data().IsWrongAnswer,
+            Question: doc.data().Question,
+            UserHasNotResponded: doc.data().UserHasNotResponded,
+            QuestionYear: doc.data().QuestionYear,
+            Marked: doc.data().Marked,
+            ImageUrl: doc.data().ImageUrl,
+          });
+          console.log("EXAM Math Questions: ", doc.id, doc.data().Question);
+        });
+        this.copyEnglishSignUpExam();
+        console.log("done with practice math exam.");
+      });
+  }
+
+  copyEnglishSignUpExam() {
+    let db = fire.firestore();
+    db.collection("PracticeExamOnSignUp")
+      .doc("English")
+      .collection("EnglishQuestions")
+      .get()
+      .then((snapshot) => {
+        snapshot.forEach((doc) => {
+          db.collection(this.state.email).doc("ExamOnSignUp").collection("English").doc(doc.id).set({
+            Category: doc.data().Category,
+            Choice: doc.data().Choice,
+            CorrectAnswer: doc.data().CorrectAnswer,
+            IsCorrectAnswer: doc.data().IsCorrectAnswer,
+            IsWrongAnswer: doc.data().IsWrongAnswer,
+            Question: doc.data().Question,
+            UserHasNotResponded: doc.data().UserHasNotResponded,
+            QuestionYear: doc.data().QuestionYear,
+            Marked: doc.data().Marked,
+            IsPassageQuestion: doc.data().IsPassageQuestion,
+            Passage: doc.data().Passage,
+          });
+          console.log("EXAM English Questions: ", doc.id, doc.data().Question);
+        });
+        console.log("done with sign up english exam practice.");
+      });
+  }
+
   //Render
   render() {
     return (
