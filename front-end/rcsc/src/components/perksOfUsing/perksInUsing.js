@@ -68,16 +68,42 @@ class PerksInUsing extends React.Component {
           <Col xs={12} md={6} lg={6} sm={6} className='perksDescription'>
             {this.state.showMessage[0] && (
               <p>
-                RCSC Prep makes it easy for you to study at your own pace and at your own time. Our feedback is personalized to your performance and helps you find your weaknesses and your strengths.
-                RCSC Prep also has features that make you be able to take control of when you want to study and is tailor made just for you. You can also choose to focus on what you lack rather than
-                just going along with the classroom, in a sense RCSC Prep is what allows you to make this education a 21st century education and the best part is that its completely free.
+                Kongtsey keeps a record of every question you answer, therefore, you will know exactly how many questions you have attempted. Gone are the days where you are confused or don’t remember
+                if you attempted the question before. Kongtsey also shows you exactly how many questions you have correctly and incorrectly answered. With later releases, Kongtsey will also be able to
+                predict your scores to help you know where you stand.
               </p>
             )}
-            {this.state.showMessage[1] && <p>Lorem Ipsum Dolor Amet</p>}
-            {this.state.showMessage[2] && <p>P 3</p>}
-            {this.state.showMessage[3] && <p>P 4</p>}
-            {this.state.showMessage[4] && <p>P 5</p>}
-            {this.state.showMessage[5] && <p>P 6</p>}
+            {this.state.showMessage[1] && (
+              <p>
+                Let the data lead you and show you where you need to work rather than studying blindly. Study smarter, not harder! Kongtsey enables you to see not just your weaknesses but even your
+                strengths so you don't waste time on topics where you don't need to. Additionally, the more you use Kongtsey, the more it is able to accurately point to your weaknesses and strengths.{" "}
+              </p>
+            )}
+            {this.state.showMessage[2] && (
+              <p>
+                Kongtsey’s practice exams are there to not just measure your improvements but to also allow you to initiate a mock exam whenever you like. Unlike the past you don't have to time
+                yourself and look for past papers which are a huge waste of time. With just a click of a button, you can start a practice exam, It is that EASY!
+              </p>
+            )}
+            {this.state.showMessage[3] && (
+              <p>
+                Study whenever you want and wherever you want. Kongtsey is designed both for mobile devices as well as desktops and laptops. Be it a doctor's appointment or stuck in traffic, you can
+                always study using Kongtsey, a feature that no books can replicate to the level that Kongtsey allows.
+              </p>
+            )}
+            {this.state.showMessage[4] && (
+              <p>
+                What we pride in, is the ability to categorize questions so that you can just focus on the particular topic you want to. We do the hard brunt work so that you can study smarter, easier
+                and efficiently. Our categories work in conjunction with our data analytics showing strengths and weaknesses.{" "}
+              </p>
+            )}
+            {this.state.showMessage[5] && (
+              <p>
+                The most common case today is that we print a lot of past papers to study from. However, once they are answered, you hardly ever come back to the questions because it takes time to
+                sift through all the papers. Kongtsey enables students to mark a question for any reason and allow the user to easily fetch all the marked questions. Kongtsey also allows users to not
+                only look through all the questions answered but also the questions that are correctly and incorrectly answered.
+              </p>
+            )}
           </Col>
         </Row>
       </Container>
