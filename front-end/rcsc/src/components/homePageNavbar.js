@@ -21,6 +21,7 @@ class NavigationBar extends Component {
     this.copyEnglishDatabase = this.copyEnglishDatabase.bind(this);
     this.copyMathSignUpExam = this.copyMathSignUpExam.bind(this);
     this.copyEnglishSignUpExam = this.copyEnglishSignUpExam.bind(this);
+    this.copyDzongkhaSignUpExam = this.copyDzongkhaSignUpExam.bind(this);
     this.state = {
       questionData: [],
       toShowLogin: false,
@@ -139,6 +140,9 @@ class NavigationBar extends Component {
             })
             .then(() => {
               return this.copyEnglishSignUpExam();
+            })
+            .then(() => {
+              return this.copyDzongkhaSignUpExam();
             });
         }
       });
@@ -162,7 +166,7 @@ class NavigationBar extends Component {
             Marked: doc.data().Marked,
           });
         });
-        console.log(" Done copying the Math database ");
+        // console.log(" Done copying the Math database ");
       });
   }
 
@@ -185,9 +189,9 @@ class NavigationBar extends Component {
             Passage: doc.data().Passage,
             isPassageQuestion: doc.data().isPassageQuestion,
           });
-          console.log("English Questions: ", doc.id);
+          // console.log("English Questions: ", doc.id);
         });
-        console.log("Done copying the English database");
+        // console.log("Done copying the English database");
       });
   }
 
@@ -211,9 +215,9 @@ class NavigationBar extends Component {
             QuestionYear: doc.data().QuestionYear,
             Marked: doc.data().Marked,
           });
-          console.log("English Questions: ", doc.id);
+          // console.log("English Questions: ", doc.id);
         });
-        console.log("Done copying the English database");
+        // console.log("Done copying the English database");
       });
   }
 
@@ -239,9 +243,35 @@ class NavigationBar extends Component {
             IsPassageQuestion: doc.data().IsPassageQuestion,
             Passage: doc.data().Passage,
           });
-          console.log("EXAM English Questions: ", doc.id, doc.data().Question);
+          // console.log("EXAM English Questions: ", doc.id, doc.data().Question);
         });
-        console.log("done with sign up english exam practice.");
+        // console.log("done with sign up english exam practice.");
+      });
+  }
+  copyDzongkhaSignUpExam() {
+    let db = fire.firestore();
+    return db
+      .collection("PracticeExamOnSignUp")
+      .doc("Dzongkha")
+      .collection("DzongkhaQuestions")
+      .get()
+      .then((snapshot) => {
+        snapshot.forEach((doc) => {
+          db.collection(this.state.email).doc("ExamOnSignUp").collection("Dzongkha").doc(doc.id).set({
+            Category: doc.data().Category,
+            CorrectAnswer: doc.data().CorrectAnswer,
+            IsCorrectAnswer: doc.data().IsCorrectAnswer,
+            IsWrongAnswer: doc.data().IsWrongAnswer,
+            Question: doc.data().Question,
+            UserHasNotResponded: doc.data().UserHasNotResponded,
+            QuestionYear: doc.data().QuestionYear,
+            Marked: doc.data().Marked,
+            IsPassageQuestion: doc.data().IsPassageQuestion,
+            Passage: doc.data().Passage,
+          });
+          console.log("EXAM Dzongkha Questions: ", doc.id, doc.data().Question);
+        });
+        console.log("done with sign up dzongkha exam practice.");
       });
   }
 

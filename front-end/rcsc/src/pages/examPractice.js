@@ -5,6 +5,7 @@ import { Container, Col, Row, Button } from "react-bootstrap";
 import GeneralNavbar from "../components/generalNavbar";
 import ReadExamPracticeMath from "../components/readExamPracticeMath";
 import ReadExamPracticeEnglish from "../components/readExamPracticeEnglish";
+import ReadExamPracticeDzongkha from "../components/readExamPracticeDzongkha";
 import MathExamPracticeResult from "../components/MathExamPracticeResult";
 import EnglishExamPracticeResult from "../components/EnglishExamPracticeResult";
 import SignUpExamResult from "../components/exam-on-sign-up/exam-on-sign-up-result";
@@ -186,6 +187,9 @@ class ExamPractice extends React.Component {
               </div>
               <div id={"english"} className={"subject"}>
                 <ReadExamPracticeEnglish showResult={this.state.showResult} />
+              </div>
+              <div id={"dzongkha"} className={"subject"}>
+                <ReadExamPracticeDzongkha showResult={this.state.showResult} />
               </div>
             </Row>
           </Container>
