@@ -126,15 +126,28 @@ class NavigationBar extends Component {
                 college: this.state.college,
                 dzongkhag: this.state.dzongkhag,
               };
-              db.collection(this.state.email).doc("UserProfile").set(data);
-              this.copyMathDatabase();
+              return db.collection(this.state.email).doc("UserProfile").set(data);
+            })
+            .then(() => {
+              return this.copyMathDatabase();
+            })
+            .then(() => {
+              return this.copyEnglishDatabase();
+            })
+            .then(() => {
+              return this.copyMathSignUpExam();
+            })
+            .then(() => {
+              return this.copyEnglishSignUpExam();
             });
         }
       });
   }
+
   copyMathDatabase() {
     let db = fire.firestore();
-    db.collection("Questions")
+    return db
+      .collection("Questions")
       .get()
       .then((snapshot) => {
         snapshot.forEach((doc) => {
@@ -148,16 +161,15 @@ class NavigationBar extends Component {
             UserHasNotResponded: doc.data().UserHasNotResponded,
             Marked: doc.data().Marked,
           });
-          console.log("Math Questions: ", doc.id);
         });
-        this.copyEnglishDatabase();
         console.log(" Done copying the Math database ");
       });
   }
 
   copyEnglishDatabase() {
     let db = fire.firestore();
-    db.collection("EnglishQuestions")
+    return db
+      .collection("EnglishQuestions")
       .get()
       .then((snapshot) => {
         snapshot.forEach((doc) => {
@@ -175,13 +187,14 @@ class NavigationBar extends Component {
           });
           console.log("English Questions: ", doc.id);
         });
-        this.copyMathSignUpExam();
         console.log("Done copying the English database");
       });
   }
+
   copyMathSignUpExam() {
     let db = fire.firestore();
-    db.collection("PracticeExamOnSignUp")
+    return db
+      .collection("PracticeExamOnSignUp")
       .doc("Math")
       .collection("MathQuestions")
       .get()
@@ -197,18 +210,17 @@ class NavigationBar extends Component {
             UserHasNotResponded: doc.data().UserHasNotResponded,
             QuestionYear: doc.data().QuestionYear,
             Marked: doc.data().Marked,
-            ImageUrl: doc.data().ImageUrl,
           });
-          console.log("EXAM Math Questions: ", doc.id, doc.data().Question);
+          console.log("English Questions: ", doc.id);
         });
-        this.copyEnglishSignUpExam();
-        console.log("done with practice math exam.");
+        console.log("Done copying the English database");
       });
   }
 
   copyEnglishSignUpExam() {
     let db = fire.firestore();
-    db.collection("PracticeExamOnSignUp")
+    return db
+      .collection("PracticeExamOnSignUp")
       .doc("English")
       .collection("EnglishQuestions")
       .get()
