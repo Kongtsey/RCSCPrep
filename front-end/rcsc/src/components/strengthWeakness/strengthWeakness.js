@@ -1,8 +1,6 @@
 import React from "react";
 import fire from "../../config/Fire";
 
-import {Container} from "react-bootstrap";
-
 //TODO: Remove console logs.
 class StrengthWeakness extends React.Component {
     constructor(props) {
@@ -74,9 +72,9 @@ class StrengthWeakness extends React.Component {
                         }
                     }
 
-                    // console.log(questionsAnswered,'QA');
-                    // console.log(questionsAnsweredCorrectly,"QAC");
-                    // console.log(ratio, 'ratio');
+                    console.log(questionsAnswered,'QA');
+                    console.log(questionsAnsweredCorrectly,"QAC");
+                    console.log(ratio, 'ratio');
 
                     this.setState({
                         pending: false,

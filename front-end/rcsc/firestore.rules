@@ -1,0 +1,44 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+      function isAuthenticated(){
+          return( request.auth != null);
+      }
+      function checkEmailMatch(userEmail) {
+          return(request.auth.token.email == userEmail)
+      }
+        match /{document=**}{
+            allow read,write: if false;
+        }
+        match /EnglishQuestions/{questionID} {
+            allow read: if request.auth != null;
+            allow write: if false;
+        }
+        match /Questions/{questionID} {
+            allow read: if request.auth != null;
+            allow write: if false;
+        }
+        match /{userEmail}/EnglishQuestions/Questions/{questionID} {
+            allow read,write: if isAuthenticated() && checkEmailMatch(userEmail);
+            allow get,create: if isAuthenticated() && checkEmailMatch(userEmail);
+            allow update: if isAuthenticated() && checkEmailMatch(userEmail);
+            allow delete: if false;
+        }
+        match /{userEmail}/MathQuestions/Questions/{questionID} {
+            allow read,write: if isAuthenticated() && checkEmailMatch(userEmail);
+            allow get,create: if isAuthenticated() && checkEmailMatch(userEmail);
+            allow update: if isAuthenticated() && checkEmailMatch(userEmail);
+            allow delete: if false;
+        }
+        match /{userEmail}/UserProfile{
+            allow read: if isAuthenticated() && checkEmailMatch(userEmail);
+            allow write: if isAuthenticated() && checkEmailMatch(userEmail);
+            // allow update: if false;
+            // allow delete: if false;
+        }
+        match /PracticeExamOnSignUp/{question=**} {
+            allow read: if isAuthenticated();
+            allow write: if false
+        }
+     }
+  }
