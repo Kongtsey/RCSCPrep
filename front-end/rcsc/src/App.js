@@ -21,15 +21,14 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={HomePage} />
-          <Route exact path="/about" component={AboutPage}/>
+          <Route exact path='/about_and_contact' component={AboutPage} />
           <PrivateRoute exact path='/user' component={UserDashboard} />
           <PrivateRoute exact path='/math_practice' component={PracticeMath} />
           <PrivateRoute exact path='/english_practice' component={PracticeEnglish} />
           <PrivateRoute exact path='/math_stats_page' component={MathLoader} />
           <PrivateRoute exact path='/english_stats_page' component={EnglishLoader} />
           <PrivateRoute exact path='/forum' component={Forum} />
-          <PrivateRoute exact path='/testPractice' component={StrengthWeakness}/>
-          <PrivateRoute exact path='/exam' component={ExamPractice} />
+          <PrivateRoute exact path='/testPractice' component={StrengthWeakness} />
         </Switch>
       </BrowserRouter>
     </AuthProvider>

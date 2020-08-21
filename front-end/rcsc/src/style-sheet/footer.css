@@ -1,5 +1,5 @@
 .footer_parent_div {
-  background: rgb(0,149,152);
+  background: rgb(0, 149, 152);
 }
 .project_motto {
   color: white;
@@ -22,46 +22,43 @@
   text-align: left;
   padding-left: 100px !important;
 }
-.quickNavText{
+.quickNavText {
   margin-left: 50px;
-  color: white!important;
+  color: white !important;
 }
-.footerSocial{
+.footerSocial {
   margin-left: 40px;
   font-size: 1rem;
- }
-.contactContent{
+}
+.contactContent {
   margin-left: 40px;
 }
-.legal{
+.legal {
   text-align: left;
 }
-.copyright{
-  color: rgb(163,161,161) !important;
+
+.footerTermsOfUse {
+  color: rgb(163, 161, 161) !important;
   font-size: 0.75rem;
 }
-.footerTermsOfUse{
-  color: rgb(163,161,161) !important;
-  font-size: 0.75rem;
-}
-a:hover{
+a:hover {
   transition: 0.5s;
   text-decoration: none !important;
-  color: #DD8790 !important;
+  color: #dd8790 !important;
 }
-.socialMedia{
+.socialMedia {
   margin-top: 30px;
   text-align: left;
 }
-.smIcons{
+.smIcons {
   font-size: 25px !important;
 }
-.smIcons:hover{
+.smIcons:hover {
   transition: 0.5s !important;
-  color: white!important;
+  color: white !important;
 }
-.footerIcons{
-  color: rgb(167,161,161);
+.footerIcons {
+  color: rgb(167, 161, 161);
   font-size: 20px;
 }
 .extraMessage {
@@ -69,4 +66,26 @@ a:hover{
   margin-top: 30px;
   color: white;
   font-weight: 600;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .project_motto {
+    color: white;
+    margin-top: 0px;
+    text-align: justify;
+  }
+  .footer_contacts {
+    color: white;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 2;
+    padding-left: 0px !important;
+  }
+  .quickNav {
+    display: none;
+  }
+  .footer-msg-breaker {
+    margin-bottom: 20px;
+  }
 }

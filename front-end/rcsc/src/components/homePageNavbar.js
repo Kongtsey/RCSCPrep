@@ -130,106 +130,10 @@ class NavigationBar extends Component {
               this.copyMathDatabase();
             });
         }
-      });
-  }
-  copyMathDatabase() {
-    let db = fire.firestore();
-    db.collection("Questions")
-      .get()
-      .then((snapshot) => {
-        snapshot.forEach((doc) => {
-          db.collection(this.state.email).doc("MathQuestions").collection("Questions").doc(doc.id).set({
-            Category: doc.data().Category,
-            Choice: doc.data().Choice,
-            CorrectAnswer: doc.data().CorrectAnswer,
-            IsCorrectAnswer: doc.data().IsCorrectAnswer,
-            IsWrongAnswer: doc.data().IsWrongAnswer,
-            Question: doc.data().Question,
-            UserHasNotResponded: doc.data().UserHasNotResponded,
-            Marked: doc.data().Marked,
-          });
-          console.log("Math Questions: ", doc.id);
-        });
-        this.copyEnglishDatabase();
-        console.log(" Done copying the Math database ");
-      });
-  }
-
-  copyEnglishDatabase() {
-    let db = fire.firestore();
-    db.collection("EnglishQuestions")
-      .get()
-      .then((snapshot) => {
-        snapshot.forEach((doc) => {
-          db.collection(this.state.email).doc("EnglishQuestions").collection("Questions").doc(doc.id).set({
-            Category: doc.data().Category,
-            Choice: doc.data().Choice,
-            CorrectAnswer: doc.data().CorrectAnswer,
-            IsCorrectAnswer: doc.data().IsCorrectAnswer,
-            IsWrongAnswer: doc.data().IsWrongAnswer,
-            Question: doc.data().Question,
-            UserHasNotResponded: doc.data().UserHasNotResponded,
-            Marked: doc.data().Marked,
-            Passage: doc.data().Passage,
-            isPassageQuestion: doc.data().isPassageQuestion,
-          });
-          console.log("English Questions: ", doc.id);
-        });
-        this.copyMathSignUpExam();
-        console.log("Done copying the English database");
-      });
-  }
-  copyMathSignUpExam() {
-    let db = fire.firestore();
-    db.collection("PracticeExamOnSignUp")
-      .doc("Math")
-      .collection("MathQuestions")
-      .get()
-      .then((snapshot) => {
-        snapshot.forEach((doc) => {
-          db.collection(this.state.email).doc("ExamOnSignUp").collection("Math").doc(doc.id).set({
-            Category: doc.data().Category,
-            Choice: doc.data().Choice,
-            CorrectAnswer: doc.data().CorrectAnswer,
-            IsCorrectAnswer: doc.data().IsCorrectAnswer,
-            IsWrongAnswer: doc.data().IsWrongAnswer,
-            Question: doc.data().Question,
-            UserHasNotResponded: doc.data().UserHasNotResponded,
-            QuestionYear: doc.data().QuestionYear,
-            Marked: doc.data().Marked,
-            ImageUrl: doc.data().ImageUrl,
-          });
-          console.log("EXAM Math Questions: ", doc.id, doc.data().Question);
-        });
-        this.copyEnglishSignUpExam();
-        console.log("done with practice math exam.");
-      });
-  }
-
-  copyEnglishSignUpExam() {
-    let db = fire.firestore();
-    db.collection("PracticeExamOnSignUp")
-      .doc("English")
-      .collection("EnglishQuestions")
-      .get()
-      .then((snapshot) => {
-        snapshot.forEach((doc) => {
-          db.collection(this.state.email).doc("ExamOnSignUp").collection("English").doc(doc.id).set({
-            Category: doc.data().Category,
-            Choice: doc.data().Choice,
-            CorrectAnswer: doc.data().CorrectAnswer,
-            IsCorrectAnswer: doc.data().IsCorrectAnswer,
-            IsWrongAnswer: doc.data().IsWrongAnswer,
-            Question: doc.data().Question,
-            UserHasNotResponded: doc.data().UserHasNotResponded,
-            QuestionYear: doc.data().QuestionYear,
-            Marked: doc.data().Marked,
-            IsPassageQuestion: doc.data().IsPassageQuestion,
-            Passage: doc.data().Passage,
-          });
-          console.log("EXAM English Questions: ", doc.id, doc.data().Question);
-        });
-        console.log("done with sign up english exam practice.");
+      })
+      .catch((error) => {
+        console.log(error);
+        this.setState({ errorMessage: error.message });
       });
   }
 
@@ -239,24 +143,26 @@ class NavigationBar extends Component {
       <React.Fragment>
         <Container className='navbar-parent-container'>
           <Navbar collapseOnSelect expand='lg'>
-            <Navbar.Brand href='/' className="companyName">RCSC Prep</Navbar.Brand>
+            <Navbar.Brand href='/' className='companyName'>
+              Kongtsey
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls='responsive-navbar-nav' />
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav className='mr-auto'>
-                <Nav.Link href="/about">About</Nav.Link>
-                <Nav.Link href='#contact'>Contact</Nav.Link>
+                <Nav.Link href='/about_and_contact'>About</Nav.Link>
+                <Nav.Link href='/about_and_contact'>Contact</Nav.Link>
               </Nav>
               <Form inline>
                 <Button variant='link' className='login' onClick={this.handleShowLogin}>
                   Login
                 </Button>
-                <Button  className='button buttonText' onClick={this.handleShow}>
+                <Button className='button buttonText' onClick={this.handleShow}>
                   <span>Sign Up</span>
                 </Button>
               </Form>
             </Navbar.Collapse>
           </Navbar>
-          <hr className="hrNavBar"/>
+          <hr className='hrNavBar' />
         </Container>
 
         {/*Sign Up Form*/}
@@ -371,11 +277,11 @@ class NavigationBar extends Component {
           <Modal.Footer>
             <p>Forgot Password?</p>
             <p
-                className="createAcc"
-                onClick={() => {
-                  this.handleCloseLogin();
-                  this.handleShow();
-                }}
+              className='createAcc'
+              onClick={() => {
+                this.handleCloseLogin();
+                this.handleShow();
+              }}
             >
               Create Account
             </p>
@@ -383,7 +289,6 @@ class NavigationBar extends Component {
               Log in
             </Button>
           </Modal.Footer>
-
         </Modal>
       </React.Fragment>
     );
