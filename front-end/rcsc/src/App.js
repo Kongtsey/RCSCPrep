@@ -10,6 +10,7 @@ import EnglishLoader from "./pages/englishStatsPage";
 import Forum from "./pages/forum";
 import AboutPage from "./pages/aboutPage";
 import StrengthWeakness from "./components/strengthWeakness/strengthWeakness";
+import ExamPractice from "./pages/examPractice.js";
 import { AuthProvider } from "./components/authentication";
 
 import PrivateRoute from "./components/PrivateRoute";

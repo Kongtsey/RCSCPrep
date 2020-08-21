@@ -17,6 +17,10 @@ class NavigationBar extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.signUp = this.signUp.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.copyMathDatabase = this.copyMathDatabase.bind(this);
+    this.copyEnglishDatabase = this.copyEnglishDatabase.bind(this);
+    this.copyMathSignUpExam = this.copyMathSignUpExam.bind(this);
+    this.copyEnglishSignUpExam = this.copyEnglishSignUpExam.bind(this);
     this.state = {
       questionData: [],
       toShowLogin: false,
