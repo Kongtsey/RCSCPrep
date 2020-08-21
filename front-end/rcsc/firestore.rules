@@ -40,10 +40,5 @@ service cloud.firestore {
             allow read: if isAuthenticated();
             allow write: if false
         }
-        match /readOnly/{docID} {
-            allow read: if true;
-            allow write: if false;
-        }
-
      }
   }
