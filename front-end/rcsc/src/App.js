@@ -10,7 +10,7 @@ import EnglishLoader from "./pages/englishStatsPage";
 import Forum from "./pages/forum";
 import AboutPage from "./pages/aboutPage";
 import StrengthWeakness from "./components/strengthWeakness/strengthWeakness";
-
+import ExamPractice from "./pages/examPractice.js";
 import { AuthProvider } from "./components/authentication";
 
 import PrivateRoute from "./components/PrivateRoute";
@@ -29,6 +29,7 @@ function App() {
           <PrivateRoute exact path='/english_stats_page' component={EnglishLoader} />
           <PrivateRoute exact path='/forum' component={Forum} />
           <PrivateRoute exact path='/testPractice' component={StrengthWeakness}/>
+          <PrivateRoute exact path='/exam' component={ExamPractice} />
         </Switch>
       </BrowserRouter>
     </AuthProvider>

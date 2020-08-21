@@ -17,6 +17,10 @@ class NavigationBar extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.signUp = this.signUp.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.copyMathDatabase = this.copyMathDatabase.bind(this);
+    this.copyEnglishDatabase = this.copyEnglishDatabase.bind(this);
+    this.copyMathSignUpExam = this.copyMathSignUpExam.bind(this);
+    this.copyEnglishSignUpExam = this.copyEnglishSignUpExam.bind(this);
     this.state = {
       questionData: [],
       toShowLogin: false,
@@ -107,8 +111,8 @@ class NavigationBar extends Component {
       .auth()
       .createUserWithEmailAndPassword(this.state.email, this.state.password)
       .then((u) => {
-        console.log(u);
         let user = fire.auth().currentUser;
+        console.log(user);
         if (user != null) {
           user
             .updateProfile({
@@ -121,63 +125,112 @@ class NavigationBar extends Component {
                 email: this.state.email,
                 college: this.state.college,
                 dzongkhag: this.state.dzongkhag,
-              }
+              };
               db.collection(this.state.email).doc("UserProfile").set(data);
-              //console.log("email user: ", this.state.email);
-              db.collection("Questions")
-                .get()
-                .then((snapshot) => {
-                  let counter = 0;
-                  snapshot.forEach((doc) => {
-                    console.log(doc.id, " -----> ", doc.data());
-                    db.collection(this.state.email).doc("MathQuestions").collection("Questions").doc(doc.id).set({
-                      Category: doc.data().Category,
-                      Choice: doc.data().Choice,
-                      CorrectAnswer: doc.data().CorrectAnswer,
-                      IsCorrectAnswer: doc.data().IsCorrectAnswer,
-                      IsWrongAnswer: doc.data().IsWrongAnswer,
-                      Question: doc.data().Question,
-                      UserHasNotResponded: doc.data().UserHasNotResponded,
-                      // QuestionYear: doc.data().QuestionYear,
-                      Marked: doc.data().Marked,
-                    });
-                    counter = 1 + counter;
-                    console.log(counter);
-                  });
-                  // console.log("done copying the database ");
-                });
-
-              db.collection("EnglishQuestions")
-                .get()
-                .then((snapshot) => {
-                  let counter = 0;
-                  snapshot.forEach((doc) => {
-                    console.log(doc.id, " -----> ", doc.data());
-                    db.collection(this.state.email).doc("EnglishQuestions").collection("Questions").doc(doc.id).set({
-                      Category: doc.data().Category,
-                      Choice: doc.data().Choice,
-                      CorrectAnswer: doc.data().CorrectAnswer,
-                      IsCorrectAnswer: doc.data().IsCorrectAnswer,
-                      IsWrongAnswer: doc.data().IsWrongAnswer,
-                      Question: doc.data().Question,
-                      UserHasNotResponded: doc.data().UserHasNotResponded,
-                      QuestionYear: doc.data().QuestionYear,
-                      Marked: doc.data().Marked,
-                      Passage: doc.data().Passage,
-                      isPassageQuestion: doc.data().isPassageQuestion,
-                    });
-                    counter = 1 + counter;
-                    console.log(counter);
-                  });
-                  console.log("done copying the database ");
-                });
+              this.copyMathDatabase();
             });
         }
-      })
-      .catch((error) => {
-        console.log(error);
-        this.setState({ errorMessage: error.message });
-      })
+      });
+  }
+  copyMathDatabase() {
+    let db = fire.firestore();
+    db.collection("Questions")
+      .get()
+      .then((snapshot) => {
+        snapshot.forEach((doc) => {
+          db.collection(this.state.email).doc("MathQuestions").collection("Questions").doc(doc.id).set({
+            Category: doc.data().Category,
+            Choice: doc.data().Choice,
+            CorrectAnswer: doc.data().CorrectAnswer,
+            IsCorrectAnswer: doc.data().IsCorrectAnswer,
+            IsWrongAnswer: doc.data().IsWrongAnswer,
+            Question: doc.data().Question,
+            UserHasNotResponded: doc.data().UserHasNotResponded,
+            Marked: doc.data().Marked,
+          });
+          console.log("Math Questions: ", doc.id);
+        });
+        this.copyEnglishDatabase();
+        console.log(" Done copying the Math database ");
+      });
+  }
+
+  copyEnglishDatabase() {
+    let db = fire.firestore();
+    db.collection("EnglishQuestions")
+      .get()
+      .then((snapshot) => {
+        snapshot.forEach((doc) => {
+          db.collection(this.state.email).doc("EnglishQuestions").collection("Questions").doc(doc.id).set({
+            Category: doc.data().Category,
+            Choice: doc.data().Choice,
+            CorrectAnswer: doc.data().CorrectAnswer,
+            IsCorrectAnswer: doc.data().IsCorrectAnswer,
+            IsWrongAnswer: doc.data().IsWrongAnswer,
+            Question: doc.data().Question,
+            UserHasNotResponded: doc.data().UserHasNotResponded,
+            Marked: doc.data().Marked,
+            Passage: doc.data().Passage,
+            isPassageQuestion: doc.data().isPassageQuestion,
+          });
+          console.log("English Questions: ", doc.id);
+        });
+        this.copyMathSignUpExam();
+        console.log("Done copying the English database");
+      });
+  }
+  copyMathSignUpExam() {
+    let db = fire.firestore();
+    db.collection("PracticeExamOnSignUp")
+      .doc("Math")
+      .collection("MathQuestions")
+      .get()
+      .then((snapshot) => {
+        snapshot.forEach((doc) => {
+          db.collection(this.state.email).doc("ExamOnSignUp").collection("Math").doc(doc.id).set({
+            Category: doc.data().Category,
+            Choice: doc.data().Choice,
+            CorrectAnswer: doc.data().CorrectAnswer,
+            IsCorrectAnswer: doc.data().IsCorrectAnswer,
+            IsWrongAnswer: doc.data().IsWrongAnswer,
+            Question: doc.data().Question,
+            UserHasNotResponded: doc.data().UserHasNotResponded,
+            QuestionYear: doc.data().QuestionYear,
+            Marked: doc.data().Marked,
+            ImageUrl: doc.data().ImageUrl,
+          });
+          console.log("EXAM Math Questions: ", doc.id, doc.data().Question);
+        });
+        this.copyEnglishSignUpExam();
+        console.log("done with practice math exam.");
+      });
+  }
+
+  copyEnglishSignUpExam() {
+    let db = fire.firestore();
+    db.collection("PracticeExamOnSignUp")
+      .doc("English")
+      .collection("EnglishQuestions")
+      .get()
+      .then((snapshot) => {
+        snapshot.forEach((doc) => {
+          db.collection(this.state.email).doc("ExamOnSignUp").collection("English").doc(doc.id).set({
+            Category: doc.data().Category,
+            Choice: doc.data().Choice,
+            CorrectAnswer: doc.data().CorrectAnswer,
+            IsCorrectAnswer: doc.data().IsCorrectAnswer,
+            IsWrongAnswer: doc.data().IsWrongAnswer,
+            Question: doc.data().Question,
+            UserHasNotResponded: doc.data().UserHasNotResponded,
+            QuestionYear: doc.data().QuestionYear,
+            Marked: doc.data().Marked,
+            IsPassageQuestion: doc.data().IsPassageQuestion,
+            Passage: doc.data().Passage,
+          });
+          console.log("EXAM English Questions: ", doc.id, doc.data().Question);
+        });
+        console.log("done with sign up english exam practice.");
+      });
   }
 
   //Render
@@ -215,7 +268,7 @@ class NavigationBar extends Component {
             <Form>
               {this.state.errorMessage && <h6 className='error-msg'>{this.state.errorMessage}</h6>}
               <Form.Group as={Row}>
-                <Form.Label column sm='1'>
+                <Form.Label column='true' sm='1'>
                   <FontAwesomeIcon icon={faUser} />
                 </Form.Label>
                 <Col sm='10' className='form-input'>
@@ -224,7 +277,7 @@ class NavigationBar extends Component {
                 </Col>
               </Form.Group>
               <Form.Group as={Row} controlId='plaintext'>
-                <Form.Label column sm='1'>
+                <Form.Label column='true' sm='1'>
                   <FontAwesomeIcon icon={faBookReader} />
                 </Form.Label>
                 <Col sm='10' className='form-input'>
@@ -234,7 +287,7 @@ class NavigationBar extends Component {
               </Form.Group>
 
               <Form.Group as={Row} controlId='plaintext'>
-                <Form.Label column sm='1'>
+                <Form.Label column='true' sm='1'>
                   <FontAwesomeIcon icon={faMapMarker} />
                 </Form.Label>
                 <Col sm='10' className='form-input'>
@@ -244,7 +297,7 @@ class NavigationBar extends Component {
               </Form.Group>
 
               <Form.Group as={Row} controlId='formPlaintextEmail'>
-                <Form.Label column sm='1'>
+                <Form.Label column='true' sm='1'>
                   <FontAwesomeIcon icon={faEnvelope} />
                 </Form.Label>
                 <Col sm='10' className='form-input'>
@@ -253,7 +306,7 @@ class NavigationBar extends Component {
               </Form.Group>
 
               <Form.Group as={Row} controlId='formPlaintextPassword'>
-                <Form.Label column sm='1'>
+                <Form.Label column='true' sm='1'>
                   <FontAwesomeIcon icon={faLock} />
                 </Form.Label>
                 <Col sm='10' className='form-input'>
@@ -261,7 +314,7 @@ class NavigationBar extends Component {
                 </Col>
               </Form.Group>
               <Form.Group as={Row} controlId='formPlaintextPasswordConfirm'>
-                <Form.Label column sm='1'>
+                <Form.Label column='true' sm='1'>
                   <FontAwesomeIcon icon={faLock} />
                 </Form.Label>
                 <Col sm='10' className='form-input'>
@@ -281,7 +334,7 @@ class NavigationBar extends Component {
             >
               Already have an account?
             </p>
-            <div column sm={4}>
+            <div column='true' sm={4}>
               <Button variant='primary' onClick={this.handleSubmit} name={this.state.name}>
                 Sign up
               </Button>
@@ -298,7 +351,7 @@ class NavigationBar extends Component {
             <Form>
               {this.state.errorMessage && <h6 className='error-msg'>{this.state.errorMessage}</h6>}
               <Form.Group as={Row} controlId='formPlaintextEmail'>
-                <Form.Label column sm='1'>
+                <Form.Label column='true' sm='1'>
                   <FontAwesomeIcon icon={faUser} />
                 </Form.Label>
                 <Col sm='10' className='form-input'>
@@ -306,7 +359,7 @@ class NavigationBar extends Component {
                 </Col>
               </Form.Group>
               <Form.Group as={Row} controlId='formPlaintextPassword'>
-                <Form.Label column sm='1'>
+                <Form.Label column='true' sm='1'>
                   <FontAwesomeIcon icon={faLock} />
                 </Form.Label>
                 <Col sm='10' className='form-input'>

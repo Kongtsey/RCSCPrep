@@ -1,5 +1,5 @@
 import React from "react";
-import {PieChart} from "react-minimal-pie-chart";
+import { PieChart } from "react-minimal-pie-chart";
 import "../style-sheet/math-stats-jumbo-box.css";
 
 import StrengthWeakness from "./strengthWeakness/strengthWeakness";
