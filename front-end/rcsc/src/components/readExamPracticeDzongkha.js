@@ -151,6 +151,8 @@ class ReadDzongkhaSignUpExamQuestion extends Component {
                     </Row>
                   </div>
                   <br />
+                  <p> {data.id}</p>
+                  <p> {data.CorrectAnswer}</p>
                   <span className='customize-radio-button'>
                     <Form className={data.id}>
                       <select name='answer' id='dzo-answer'>
