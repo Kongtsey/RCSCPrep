@@ -76,6 +76,7 @@ This is the actual text of the navbar.
   color: #d9707a !important;
 }
 .companyName {
+  text-align: left!important;
   color: white !important;
 }
 .companyName:hover {

@@ -4,6 +4,7 @@ import "../style-sheet/homepage-navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faBookReader, faUser, faLock, faMapMarker } from "@fortawesome/free-solid-svg-icons";
 import fire from "../config/Fire";
+import logo from '../images/Kongtsey..png';
 
 class NavigationBar extends Component {
   constructor(props) {
@@ -187,7 +188,7 @@ class NavigationBar extends Component {
         <Container className='navbar-parent-container'>
           <Navbar collapseOnSelect expand='lg'>
             <Navbar.Brand href='/' className='companyName'>
-              Kongtsey
+              <img src={logo} alt='this is the logo' className='logo' />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls='responsive-navbar-nav' />
             <Navbar.Collapse id='responsive-navbar-nav'>
