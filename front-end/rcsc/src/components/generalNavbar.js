@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import fire from "../config/Fire";
 import "../style-sheet/general-navbar.css";
-import logo from "../images/web-logo.png";
+import logo from "../images/Kongtsey..png";
 
 class GeneralNavigationBar extends Component {
   logout() {
