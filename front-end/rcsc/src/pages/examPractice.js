@@ -7,7 +7,6 @@ import ReadExamPracticeMath from "../components/readExamPracticeMath";
 import ReadExamPracticeEnglish from "../components/readExamPracticeEnglish";
 import ReadExamPracticeDzongkha from "../components/readExamPracticeDzongkha";
 import ReadExamPracticeData from "../components/readExamPracticeData";
-
 import PracticeExamResult from "../components/sign-up-exam-result/PracticeExamResult";
 import SignUpExamResult from "../components/exam-on-sign-up/exam-on-sign-up-result";
 import $ from "jquery";
@@ -89,7 +88,7 @@ class ExamPractice extends React.Component {
           <Container className={"end-result"}>
             <SignUpExamResult />
             <div style={{ paddingLeft: "15px" }}>
-              <Button onClick={this.closeResultTable()}> Close X </Button>
+              <Button onClick={this.closeResultTable()}> Close </Button>
             </div>
           </Container>
 

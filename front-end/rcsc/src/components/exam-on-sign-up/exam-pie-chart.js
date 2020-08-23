@@ -18,8 +18,7 @@ class ExamPieChart extends Component {
     let collecPath = this.props.subject;
     let user = fire.auth().currentUser;
     let questionRef = db.collection(user.email).doc("ExamOnSignUp").collection(collecPath);
-    let responseQuery = questionRef.where("UserHasNotResponded", "==", false);
-    responseQuery
+    questionRef
       .get()
       .then((snapshot) => {
         if (snapshot.empty) {
@@ -36,7 +35,7 @@ class ExamPieChart extends Component {
         console.log(err);
       });
     if (this.state.pending === true) {
-      responseQuery
+      questionRef
         .where("IsCorrectAnswer", "==", true)
         .get()
         .then((snapshot) => {

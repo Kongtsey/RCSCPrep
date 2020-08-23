@@ -1,9 +1,8 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import { Container, Col, Row } from "react-bootstrap";
-import MathSignUpExam from "./math-exam-sign-up-result";
-import EnglishSignUpExam from "./english-exam-sign-up-result";
 import "../../style-sheet/sign-up-exam-result.css";
+import ExamPieChart from "./exam-pie-chart";
 
 class SignUpExamResult extends React.Component {
   constructor(props) {
@@ -17,28 +16,28 @@ class SignUpExamResult extends React.Component {
         <Container>
           <br />
           <Row>
-            <h3 style={{ paddingLeft: "10px" }}> Final Score: 55/100</h3>
+            <h3 style={{ paddingLeft: "10px" }}> Final Score: need to aggregate all the scores</h3>
           </Row>
           <br />
           <Row>
             <Col md={3} className={"sign-up-exam-subject-result-parent-box"}>
               <div className={"sign-up-exam-subject-result"}>
-                <MathSignUpExam />
+                <ExamPieChart subject='Math' />
               </div>
             </Col>
             <Col md={3} className={"sign-up-exam-subject-result-parent-box"}>
               <div className={"sign-up-exam-subject-result"}>
-                <EnglishSignUpExam />
+                <ExamPieChart subject={"English"} />
               </div>
             </Col>
             <Col md={3} className={"sign-up-exam-subject-result-parent-box"}>
               <div className={"sign-up-exam-subject-result"}>
-                <MathSignUpExam />
+                <ExamPieChart subject={"Dzongkha"} />
               </div>
             </Col>
             <Col md={3} className={"sign-up-exam-subject-result-parent-box"}>
               <div className={"sign-up-exam-subject-result"}>
-                <MathSignUpExam />
+                <ExamPieChart subject={"Data"} />
               </div>
             </Col>
           </Row>
