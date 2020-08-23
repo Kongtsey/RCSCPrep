@@ -1,0 +1,15 @@
+.feedbackFormLabel{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.feedbackFormSubmit{
+    margin-bottom: 25px;
+}
+.requiredField{
+    color: red;
+    font-size: 1.3rem;
+}
+.feedbackSubmitSuccess{
+    font-size: 1.3rem;
+    color: #1d971d;
+}

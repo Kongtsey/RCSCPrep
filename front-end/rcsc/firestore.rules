@@ -1,6 +1,9 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
+  		// match /{document=**} {
+  		// allow read,write: if true;
+  		// }
       function isAuthenticated(){
           return( request.auth != null);
       }
@@ -30,6 +33,22 @@ service cloud.firestore {
             allow update: if isAuthenticated() && checkEmailMatch(userEmail);
             allow delete: if false;
         }
+        match /{userEmail}/ExamOnSignUp/English/{documentID}{
+        		allow read: if isAuthenticated() && checkEmailMatch(userEmail);
+            allow write: if isAuthenticated() && checkEmailMatch(userEmail);
+        }
+        match /{userEmail}/ExamOnSignUp/Math/{documentID}{
+        		allow read: if isAuthenticated() && checkEmailMatch(userEmail);
+            allow write: if isAuthenticated() && checkEmailMatch(userEmail);
+        }
+        match /{userEmail}/ExamOnSignUp/Dzongkha/{documentID}{
+        		allow read: if isAuthenticated() && checkEmailMatch(userEmail);
+            allow write: if isAuthenticated() && checkEmailMatch(userEmail);
+        }
+        match /{userEmail}/ExamOnSignUp/Data/{documentID}{
+        		allow read: if isAuthenticated() && checkEmailMatch(userEmail);
+            allow write: if isAuthenticated() && checkEmailMatch(userEmail);
+        }
         match /{userEmail}/UserProfile{
             allow read: if isAuthenticated() && checkEmailMatch(userEmail);
             allow write: if isAuthenticated() && checkEmailMatch(userEmail);
@@ -38,7 +57,13 @@ service cloud.firestore {
         }
         match /PracticeExamOnSignUp/{question=**} {
             allow read: if isAuthenticated();
-            allow write: if false
+            allow write: if false;
+        }
+        match /Feedback/{docID}{
+            allow read: if false;
+            allow create: if isAuthenticated();
+            allow update: if false;
+            allow delete: if false;
         }
      }
   }
