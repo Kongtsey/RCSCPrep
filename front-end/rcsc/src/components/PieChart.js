@@ -50,3 +50,4 @@ export const SimplePieChart = (props) => {
         </React.Fragment>
     );
 }
+
