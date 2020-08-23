@@ -263,6 +263,7 @@ class NavigationBar extends Component {
             UserHasNotResponded: doc.data().UserHasNotResponded,
             QuestionYear: doc.data().QuestionYear,
             Marked: doc.data().Marked,
+            Choice: doc.data().Choice,
           });
         });
       });
@@ -287,6 +288,7 @@ class NavigationBar extends Component {
             UserHasNotResponded: doc.data().UserHasNotResponded,
             QuestionYear: doc.data().QuestionYear,
             Marked: doc.data().Marked,
+            Choice: doc.data().Choice,
           });
           console.log("Question id: ", doc.id);
         });

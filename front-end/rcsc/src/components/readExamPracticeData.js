@@ -7,7 +7,7 @@ import "../style-sheet/mark-button.css";
 
 const answered_question_id = [];
 const answered_question_info = [];
-class ReadDzongkhaSignUpExamQuestion extends Component {
+class ReadDataSignUpExamQuestion extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -30,7 +30,7 @@ class ReadDzongkhaSignUpExamQuestion extends Component {
       .firestore()
       .collection(userName)
       .doc("ExamOnSignUp")
-      .collection("Dzongkha")
+      .collection("Data")
       .onSnapshot((snapshot) => {
         const newData = snapshot.docs.map((doc) => ({
           id: doc.id,
@@ -118,7 +118,7 @@ class ReadDzongkhaSignUpExamQuestion extends Component {
     let userCollection = db.collection(userName); //ref to collection we need to update to.
     for (let i = 0; i < answered_question_id.length; i++) {
       let qID = answered_question_info[i][0];
-      userCollection.doc("ExamOnSignUp").collection("Dzongkha").doc(qID).set(
+      userCollection.doc("ExamOnSignUp").collection("Data").doc(qID).set(
         {
           UserHasNotResponded: false,
           IsCorrectAnswer: answered_question_info[i][3],
@@ -139,7 +139,7 @@ class ReadDzongkhaSignUpExamQuestion extends Component {
       $("#mark" + index).removeClass("markButton");
       $("#mark" + index).addClass("markedButton");
       $("#mark" + index).html("marked");
-      userCollection.doc("ExamOnSignUp").collection("Dzongkha").doc(markedQuestionId).set(
+      userCollection.doc("ExamOnSignUp").collection("Data").doc(markedQuestionId).set(
         {
           Marked: true,
         },
@@ -149,7 +149,7 @@ class ReadDzongkhaSignUpExamQuestion extends Component {
       $("#mark" + index).removeClass("markedButton");
       $("#mark" + index).addClass("markButton");
       $("#mark" + index).html("mark");
-      userCollection.doc("ExamOnSignUp").collection("Dzongkha").doc(markedQuestionId).set(
+      userCollection.doc("ExamOnSignUp").collection("Data").doc(markedQuestionId).set(
         {
           Marked: false,
         },
@@ -208,4 +208,4 @@ class ReadDzongkhaSignUpExamQuestion extends Component {
   }
 }
 
-export default ReadDzongkhaSignUpExamQuestion;
+export default ReadDataSignUpExamQuestion;

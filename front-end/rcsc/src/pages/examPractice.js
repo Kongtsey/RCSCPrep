@@ -6,6 +6,7 @@ import GeneralNavbar from "../components/generalNavbar";
 import ReadExamPracticeMath from "../components/readExamPracticeMath";
 import ReadExamPracticeEnglish from "../components/readExamPracticeEnglish";
 import ReadExamPracticeDzongkha from "../components/readExamPracticeDzongkha";
+import ReadExamPracticeData from "../components/readExamPracticeData";
 import MathExamPracticeResult from "../components/MathExamPracticeResult";
 import EnglishExamPracticeResult from "../components/EnglishExamPracticeResult";
 import SignUpExamResult from "../components/exam-on-sign-up/exam-on-sign-up-result";
@@ -190,6 +191,9 @@ class ExamPractice extends React.Component {
               </div>
               <div id={"dzongkha"} className={"subject"}>
                 <ReadExamPracticeDzongkha showResult={this.state.showResult} />
+              </div>
+              <div id={"data"} className={"subject"}>
+                <ReadExamPracticeData showResult={this.state.showResult} />
               </div>
             </Row>
           </Container>
