@@ -18,7 +18,6 @@ class ReadDataSignUpExamQuestion extends Component {
     this.showResult = this.showResult.bind(this);
     this.highlightNewAnswer = this.highlightNewAnswer.bind(this);
     this.updateDatabase = this.updateDatabase.bind(this);
-    this.handleMark = this.handleMark.bind(this);
   }
 
   componentDidMount() {
@@ -138,35 +137,7 @@ class ReadDataSignUpExamQuestion extends Component {
       );
     }
   }
-  handleMark = (index, markedQuestionId) => () => {
-    //console.log("you ar here at handleMark and the index is: ", index);
-    let auth = fire.auth();
-    let userName = auth.currentUser.email; //need to get email since we need to know which collection
-    let db = fire.firestore();
-    let userCollection = db.collection(userName); //ref to collection we need to update to.
 
-    if ($("#mark" + index).hasClass("markButton")) {
-      $("#mark" + index).removeClass("markButton");
-      $("#mark" + index).addClass("markedButton");
-      $("#mark" + index).html("marked");
-      userCollection.doc("ExamOnSignUp").collection("Data").doc(markedQuestionId).set(
-        {
-          Marked: true,
-        },
-        { merge: true }
-      );
-    } else {
-      $("#mark" + index).removeClass("markedButton");
-      $("#mark" + index).addClass("markButton");
-      $("#mark" + index).html("mark");
-      userCollection.doc("ExamOnSignUp").collection("Data").doc(markedQuestionId).set(
-        {
-          Marked: false,
-        },
-        { merge: true }
-      );
-    }
-  };
   render() {
     const showResult = this.props.showResult;
     showResult ? this.showResult() : console.log(showResult);
@@ -183,11 +154,6 @@ class ReadDataSignUpExamQuestion extends Component {
                     <Row>
                       <Col md={10} lg={10} sm={12}>
                         <img src={data.Question} alt={"Question" + index} style={{ width: "100%" }} />
-                      </Col>
-                      <Col md={1} lg={1} sm={12}>
-                        <button type='button' className={"markButton"} id={"mark" + index} onClick={this.handleMark(index, data.id)}>
-                          mark
-                        </button>
                       </Col>
                     </Row>
                   </div>
