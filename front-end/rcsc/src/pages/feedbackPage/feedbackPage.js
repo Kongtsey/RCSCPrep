@@ -1,7 +1,6 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import GeneralNavBar from "../../components/generalNavbar";
-import DashboardTool from "../../components/dashboardTool";
 import FeedbackForm from "../../components/feedbackForm/feedbackForm";
 import "./feedbackPage.css";
 
