@@ -4,6 +4,7 @@ import "../style-sheet/homepage-navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faBookReader, faUser, faLock, faMapMarker } from "@fortawesome/free-solid-svg-icons";
 import fire from "../config/Fire";
+import logo from '../images/Kongtsey..png';
 
 class NavigationBar extends Component {
   constructor(props) {
@@ -293,6 +294,7 @@ class NavigationBar extends Component {
           console.log("Question id: ", doc.id);
         });
         console.log("------------------ DONE ----------------------");
+
       });
   }
 
@@ -302,15 +304,17 @@ class NavigationBar extends Component {
       <React.Fragment>
         <Container className='navbar-parent-container'>
           <Navbar collapseOnSelect expand='lg'>
-            <Navbar.Brand href='#home'>RCSC Prep</Navbar.Brand>
+            <Navbar.Brand href='/' className='companyName'>
+              <img src={logo} alt='this is the logo' className='logo' />
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls='responsive-navbar-nav' />
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav className='mr-auto'>
-                <Nav.Link href='#about'>About</Nav.Link>
-                <Nav.Link href='#contact'>Contact</Nav.Link>
+                <Nav.Link href='/about_and_contact'>About</Nav.Link>
+                <Nav.Link href='/about_and_contact'>Contact</Nav.Link>
               </Nav>
               <Form inline>
-                <Button variant='light' className='login' onClick={this.handleShowLogin}>
+                <Button variant='link' className='login' onClick={this.handleShowLogin}>
                   Login
                 </Button>
                 <Button className='button buttonText' onClick={this.handleShow}>
@@ -319,7 +323,7 @@ class NavigationBar extends Component {
               </Form>
             </Navbar.Collapse>
           </Navbar>
-          <hr />
+          <hr className='hrNavBar' />
         </Container>
 
         {/*Sign Up Form*/}
@@ -432,19 +436,20 @@ class NavigationBar extends Component {
             </Form>
           </Modal.Body>
           <Modal.Footer>
+            <p>Forgot Password?</p>
+            <p
+              className='createAcc'
+              onClick={() => {
+                this.handleCloseLogin();
+                this.handleShow();
+              }}
+            >
+              Create Account
+            </p>
             <Button variant='primary' onClick={this.login} name={this.state.name}>
               Log in
             </Button>
           </Modal.Footer>
-          <p>Forgot Password?</p>
-          <p
-            onClick={() => {
-              this.handleCloseLogin();
-              this.handleShow();
-            }}
-          >
-            Create Account
-          </p>
         </Modal>
       </React.Fragment>
     );

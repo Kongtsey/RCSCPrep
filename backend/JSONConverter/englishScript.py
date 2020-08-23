@@ -6,12 +6,12 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 # Use the application default credentials
-cred = credentials.Certificate("backend/credentials/Credentials.json")
+credentialsPath = "../credentials/Credentials.json"
+cred = credentials.Certificate(credentialsPath)
 firebase_admin.initialize_app(cred, {
   'projectId': "bhutanexamfactory-d7ea2",
 })
 db = firestore.client()
-
 def choicesSplitter(list):
     """
     Function to divide the choices as seperate elements
@@ -30,7 +30,7 @@ def choicesSplitter(list):
             temp.append(list[tempIndex:])
     return temp
 year = input("What year is the english paper?\n")
-englishPage = open("backend/JSONConverter/PastPapers/Eng" + year + "_PE.txt", "r")
+englishPage = open("./PastPapers/Eng" + year + "_PE.txt", "r")
 content = englishPage.read()
 englishPassage = pD.englishPassageSplit(content)
 content = content.split("\n")
@@ -38,7 +38,10 @@ content = content.split("\n")
 
 questions = []  # list to store all the questions
 choices = []  # list to store all the choices
-qNum = 26  # since the questions start from number 1/26
+if year == str(2010) or year == str(2011):
+    qNum = 1
+else:
+    qNum = 26  # since the questions start from number 1 in 2010 and 11 / 26 in 13
 content = cQ.finder(content, 'D.',qNum)  # updates the content list to contain each question
 # and choice as a single element in the list
 orderedList = []  # list to store content but in a standard way
@@ -53,10 +56,6 @@ for i in range(len(orderedList)):
     choicesResult = cQ.finder3(orderedList[i],
                                'D.')  # compiles all choices into a single list and have each choice as an element
     choices.append(choicesResult)
-# passage = {
-#     "passage": englishPassage,
-#     "QuestionYear": year
-# }
 questionsAnswers = {  # dictionary format to store as JSON.
     "Question": "",
     "Passage": "",
@@ -73,7 +72,7 @@ questionsAnswers = {  # dictionary format to store as JSON.
 
 # ADDING THE PASSAGE TO DB
 # data = js.dumps(passage, sort_keys=True,indent=4)
-json_file = open('backend/JSONConverter/JSONFormatQuestions/PEQuestionEnglish' + year + '.txt', 'w')
+json_file = open('./JSONFormatQuestions/PEQuestionEnglish' + year + '.txt', 'w')
 # json_file.write(data+"\n")
 # db.collection("EnglishQuestions").document("passage"+year).set(passage) #adding the passage to the console
 
@@ -84,6 +83,7 @@ for i in range(len(choices)):  # splitting the choices in order to seperate them
     for y in range(len(choices[i])):
         choices[i][y] = cQ.joiner(
             choices[i][y])  # joining the elements together inside of the list since subdivided within.
+
 for i in range(len(questions)):
     questionsAnswers["Question"] = questions[i]  # each question is stored in question
     questionsAnswers["Choice"]=choices[i] #assign the right array to the choice in form on indexes
@@ -98,10 +98,11 @@ for i in range(len(questions)):
     elif (i>=10 and i<=14):
         questionsAnswers["Category"] = "Vocabulary"
     elif (i >= 15 and i <= 19):
-        questionsAnswers["Category"] = "Synonyms"
+        questionsAnswers["Category"] = "Synonyms and Antonyms"
     else:
-        questionsAnswers["Category"] = "Antonyms"
+        questionsAnswers["Category"] = "Synonyms and Antonyms"
     data = js.dumps(questionsAnswers, sort_keys=True,indent=4)  # and then choice and question are converted and process repeats.
+    print("Uploading question:",i,"...")
     db.collection('EnglishQuestions').add(questionsAnswers)
     json_file.write(data + "\n")
 

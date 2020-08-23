@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import fire from "../config/Fire";
 import "../style-sheet/general-navbar.css";
-import logo from "../images/web-logo.png";
+import logo from "../images/Kongtsey..png";
 
 class GeneralNavigationBar extends Component {
   logout() {
@@ -24,6 +24,9 @@ class GeneralNavigationBar extends Component {
             <Nav.Link href='/english_stats_page'>English</Nav.Link>
             <Nav.Link href='/math_stats_page'>Math</Nav.Link>
             <Nav.Link href='/exam'>Exam</Nav.Link>
+
+            <Nav.Link href='/feedback'><span className='feedbackLink'>Feedback</span></Nav.Link>
+
           </Nav>
           <Nav>
             <Nav.Link> {fire.auth().currentUser.displayName}</Nav.Link>

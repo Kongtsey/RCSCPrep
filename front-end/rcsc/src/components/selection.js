@@ -4,10 +4,14 @@ import "../style-sheet/mathStatsPage.css";
 import Button from "react-bootstrap/Button";
 import { renderToString } from "react-dom/server";
 import { Link } from "react-router-dom";
+
+import StrengthWeakness from "./strengthWeakness/strengthWeakness";
+
 class SelectionQueries extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      pending: true,
       numQuestions: 5,
       questionType: "UserHasNotResponded",
       category: "any",
@@ -16,27 +20,31 @@ class SelectionQueries extends Component {
         category1: "",
         category2: "",
         category3: "",
+        category4: ""
       },
+      collectionName: ''
     };
     this.handleChange = this.handleChange.bind(this);
   }
   componentDidMount() {
     if (this.props.type === "Math") {
-      this.setState({ pathname: "/math_practice" });
+      this.setState({ pathname: "/math_practice",collectionName: 'MathQuestions',pending:false});
       this.setState({
         categoryOptions: {
           category1: "Algebra",
-          category2: "Unscramble",
-          category3: "Calculus",
+          category2: "Logic",
+          category3: "Probability",
+          category4: 'Fraction',
         },
       });
     } else if (this.props.type === "English") {
-      this.setState({ pathname: "/english_practice" });
+      this.setState({ pathname: "/english_practice",collectionName: 'EnglishQuestions',pending: false});
       this.setState({
         categoryOptions: {
           category1: "Grammar",
           category2: "Comprehension",
-          category3: "Synonyms & Antonyms",
+          category3: "Synonyms and Antonyms",
+          category4: 'Vocabulary',
         },
       });
     }
@@ -50,6 +58,9 @@ class SelectionQueries extends Component {
     }
   }
   render() {
+    if(this.state.pending){
+      return <p>Loading ...</p>
+    }
     return (
       <React.Fragment>
         <Container fluid={true}>
@@ -86,9 +97,10 @@ class SelectionQueries extends Component {
                 {["radio"].map((type) => (
                   <div key={`default-${type}`} className='mb-3'>
                     <Form.Check type={type} name='category' label='Any' id='any' defaultChecked />
-                    <Form.Check type={type} name='category' id='category1' label={this.state.categoryOptions.category1} />
-                    <Form.Check type={type} name='category' id='category2' label={this.state.categoryOptions.category2} />
-                    <Form.Check type={type} name='category' id='category3' label={this.state.categoryOptions.category3} />
+                    <Form.Check type={type} name='category' id={this.state.categoryOptions.category1} label={this.state.categoryOptions.category1} />
+                    <Form.Check type={type} name='category' id={this.state.categoryOptions.category2} label={this.state.categoryOptions.category2} />
+                    <Form.Check type={type} name='category' id={this.state.categoryOptions.category3} label={this.state.categoryOptions.category3} />
+                    <Form.Check type={type} name='category' id={this.state.categoryOptions.category4} label={this.state.categoryOptions.category4} />
                   </div>
                 ))}
               </Form>
@@ -107,16 +119,14 @@ class SelectionQueries extends Component {
             <Col md={4} className='strengthWeak'>
               <h5 style={{ marginTop: "1rem", marginLeft: "2rem" }}>Strengths:</h5>
               <br />
-              <p className='swDescrip'>Calculus</p>
+              <p className='swDescrip'><StrengthWeakness toDisplay="strength" questionType={this.state.collectionName}/></p>
               <br />
-              <p className='swDescrip'>Unscrambling letters</p>
             </Col>
             <Col md={{ span: 4, offset: 0 }} className='strengthWeak'>
-              <h5 style={{ marginTop: "1rem", marginLeft: "2rem" }}>Weaknesses:</h5>
+              <h5 style={{ marginTop: "1rem", marginLeft: "2rem" }}>Weakness:</h5>
               <br />
-              <p className='swDescrip'>Height differences</p>
-              <br />
-              <p className='swDescrip'>Algebra</p>
+              {/*{console.log(this.state.collectionName,"Collection Name")}*/}
+              <p className='swDescrip'><StrengthWeakness toDisplay="weakness" questionType={this.state.collectionName}/></p>
             </Col>
           </Row>
         </Container>

@@ -28,24 +28,61 @@ class MathList extends Component {
     let auth = fire.auth();
     let userName = auth.currentUser.email;
     console.log("this is the query: ", this.props.questionTypeQuery);
-    fire
-      .firestore()
-      .collection(userName)
-      .doc("MathQuestions")
-      .collection("Questions")
-      .where(this.props.questionTypeQuery, "==", true)
-      .limit(this.props.chosenChoiceNumber)
-      .onSnapshot((snapshot) => {
-        const newData = snapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }));
-        //console.log("This is the default number of questions displayed", newTimes);
-        this.setState({
-          questionData: newData,
-          loading: false,
-        });
-      });
+    if(this.props.questionCategory === 'any') {
+      fire
+          .firestore()
+          .collection(userName)
+          .doc("MathQuestions")
+          .collection("Questions")
+          .where(this.props.questionTypeQuery, "==", true)
+          .limit(this.props.chosenChoiceNumber)
+          .onSnapshot((snapshot) => {
+            const newData = snapshot.docs.map((doc) => ({
+              id: doc.id,
+              ...doc.data(),
+            }));
+            //console.log("This is the default number of questions displayed", newTimes);
+            this.setState({
+              questionData: newData,
+              loading: false,
+            });
+
+            //<---- FOR DEBUGGING ---->
+            // for (let i =0; i < this.state.questionData.length;i++){
+              // console.log(this.state.questionData[i].Category,"question category")
+              // console.log(this.state.questionData[i].IsCorrectAnswer,"question been correctly answered?")
+              // console.log(this.state.questionData[i].IsWrongAnswer,"question been incorrectly answered?")
+            // }
+            //<---- END FOR DEBUGGING ---->
+          });
+    }
+    else{
+      fire
+          .firestore()
+          .collection(userName)
+          .doc("MathQuestions")
+          .collection("Questions")
+          .where(this.props.questionTypeQuery, "==", true).where('Category','==',this.props.questionCategory)
+          .limit(this.props.chosenChoiceNumber)
+          .onSnapshot((snapshot) => {
+            const newData = snapshot.docs.map((doc) => ({
+              id: doc.id,
+              ...doc.data(),
+            }));
+            this.setState({
+              questionData: newData,
+              loading: false,
+            });
+
+            // <----- FOR DEBUGGING --->
+            // for (let i =0; i < this.state.questionData.length;i++){
+            // // console.log(this.state.questionData[i].Category,"question category")
+            // // // console.log(this.state.questionData[i].IsCorrectAnswer,"question been correctly answered?")
+            // // console.log(this.state.questionData[i].IsWrongAnswer,"question been incorrectly answered?")
+            // }
+            // <----- END FOR DEBUGGING ----->
+          });
+    }
   }
 
   handleChange = (questionId, userChoice, correctAnswer, index) => () => {

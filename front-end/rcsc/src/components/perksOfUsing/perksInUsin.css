@@ -1,0 +1,49 @@
+.perksInUsingContainer {
+  background-color: transparent;
+}
+.perksIcons {
+  width: 150px;
+  height: 150px;
+  margin-top: 35px;
+  cursor: pointer;
+}
+.perksIconsContainer {
+  text-align: center;
+}
+.perksDescription {
+  line-height: 2;
+  text-align: justify;
+  word-spacing: 5px;
+  color: white;
+  margin-top: 120px;
+}
+.perksDescription p {
+  padding-left: 30px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .perksInUsingContainer {
+    background-color: transparent;
+  }
+  .perksIcons {
+    width: 100%;
+    height: auto;
+    margin-top: 35px;
+    cursor: pointer;
+  }
+  .perksIconsContainer {
+    text-align: center;
+    /* border: solid 1px red; */
+  }
+  .perksDescription {
+    /* border: solid 1px red; */
+    line-height: 2;
+    text-align: justify;
+    word-spacing: 2px;
+    color: white;
+    margin-top: -50px;
+  }
+  .perksDescription p {
+    padding-left: 0px;
+  }
+}

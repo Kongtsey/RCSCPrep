@@ -13,7 +13,6 @@ def englishPassageSplit(content):
                 continue
             if(int(words[0][0:2])): #identifier to see if passage has ended
                 copy = False
-                print("Copy finished. English Passage saved.")
                 return (passage)
         except:
             if(copy==True):

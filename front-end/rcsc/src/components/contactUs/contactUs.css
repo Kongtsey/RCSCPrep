@@ -1,0 +1,30 @@
+.joinUsHeader {
+  /* border: solid red; */
+  padding-left: 0 !important;
+}
+.descripText {
+  /*text-align: center;*/
+}
+.descripText p {
+  text-align: left;
+  margin-top: 20px;
+  color: rgb(156, 156, 156);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding-left: 0 !important;
+}
+.contactDetails {
+  color: rgb(112, 112, 112);
+  font-weight: 600;
+  font-size: 1.2rem;
+  word-spacing: 2px;
+  padding-left: 0 !important;
+  border-bottom: solid rgb(255, 192, 0) 2px;
+}
+.contactDetails p {
+  margin-bottom: 5px;
+  color: white;
+}
+.lastDetail {
+  margin-bottom: 107px;
+}

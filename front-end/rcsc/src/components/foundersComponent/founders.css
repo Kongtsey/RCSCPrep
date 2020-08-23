@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@300&display=swap");
+.foundersContainer {
+  background-color: rgb(0, 81, 84);
+}
+.title {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  font-family: "Abril Fatface", sans-serif;
+  /* letter-spacing: 5px; */
+}
+.titleHr {
+  margin-top: 0 !important;
+  border-top: 1px solid rgba(124, 124, 124, 0.9) !important;
+}
+.foundersPic {
+  width: auto;
+  height: 100%;
+}
+.foundersPicContainer {
+  margin-top: 30px;
+  height: 360px;
+}
+.foundersBio {
+  text-align: left;
+  margin-top: 30px;
+  padding-top: 60px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 2;
+  word-spacing: 3px;
+  color: rgb(161, 192, 193);
+  overflow: hidden;
+}
+
+/*Mobile Phones*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .foundersPic {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .foundersBio {
+    text-align: justify;
+    margin-top: 0;
+    padding-top: 10px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.75;
+    word-spacing: 3px;
+    color: rgb(161, 192, 193);
+  }
+}
