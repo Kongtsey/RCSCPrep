@@ -178,7 +178,7 @@ class ReadEnglishQuestion extends Component {
     $("#mark" + index).addClass("markButton");
     $("#mark" + index).removeClass("markedButton");
     $("#mark" + index).html("marked");
-    userCollection.doc("MathQuestions").collection("Questions").doc(markedQuestionId).set(
+    userCollection.doc("EnglishQuestions").collection("Questions").doc(markedQuestionId).set(
       {
         Marked: true,
       },
@@ -194,7 +194,7 @@ class ReadEnglishQuestion extends Component {
     $("#mark" + index).addClass("markedButton");
     $("#mark" + index).removeClass("markButton");
     $("#mark" + index).html("mark");
-    userCollection.doc("MathQuestions").collection("Questions").doc(markedQuestionId).set(
+    userCollection.doc("EnglishQuestions").collection("Questions").doc(markedQuestionId).set(
       {
         Marked: false,
       },
