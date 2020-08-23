@@ -7,8 +7,8 @@ import ReadExamPracticeMath from "../components/readExamPracticeMath";
 import ReadExamPracticeEnglish from "../components/readExamPracticeEnglish";
 import ReadExamPracticeDzongkha from "../components/readExamPracticeDzongkha";
 import ReadExamPracticeData from "../components/readExamPracticeData";
-import MathExamPracticeResult from "../components/MathExamPracticeResult";
-import EnglishExamPracticeResult from "../components/EnglishExamPracticeResult";
+
+import PracticeExamResult from "../components/sign-up-exam-result/PracticeExamResult";
 import SignUpExamResult from "../components/exam-on-sign-up/exam-on-sign-up-result";
 import $ from "jquery";
 
@@ -127,12 +127,22 @@ class ExamPractice extends React.Component {
             <Row className={"table-subjects-parent"}>
               <Col md={12}>
                 <div id={"table-math"} className={"table-subject table-subject-active"}>
-                  <MathExamPracticeResult />
+                  <PracticeExamResult subject={"Math"} />
                 </div>
               </Col>
               <Col md={12}>
                 <div id={"table-english"} className={"table-subject"}>
-                  <EnglishExamPracticeResult />
+                  <PracticeExamResult subject={"English"} />
+                </div>
+              </Col>
+              <Col md={12}>
+                <div id={"table-dzongkha"} className={"table-subject"}>
+                  <PracticeExamResult subject={"Dzongkha"} />
+                </div>
+              </Col>
+              <Col md={12}>
+                <div id={"table-data"} className={"table-subject"}>
+                  <PracticeExamResult subject={"Data"} />
                 </div>
               </Col>
             </Row>
@@ -168,12 +178,12 @@ class ExamPractice extends React.Component {
               </Col>
               <Col md={2}>
                 {this.state.showResult ? (
-                  <Button variant='success' className={"submit-exam"} onClick={this.showFinalResult()}>
-                    See Result
+                  <Button variant='danger' id={"sign-up-exam-result"} className={"submit-exam"} onClick={this.showFinalResult()}>
+                    Result
                   </Button>
                 ) : (
                   <Button variant='success' className={"submit-exam"} onClick={this.showReview()}>
-                    Submit
+                    Review
                   </Button>
                 )}
               </Col>

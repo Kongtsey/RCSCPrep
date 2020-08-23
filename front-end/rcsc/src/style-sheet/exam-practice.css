@@ -35,6 +35,15 @@ button {
   padding: 5px 20px !important;
 }
 
+#sign-up-exam-result {
+  box-shadow: 0 5px 15px rgb(220 53 69);
+  transition: linear 300ms;
+}
+#sign-up-exam-result:hover {
+  box-shadow: 0 10px 15px rgb(220 53 69);
+  transition: linear 300ms;
+}
+
 /*THIS IS FOR THE CONFIRMATION TABLE THAT WILL APPEAR AFTER THE USER HITS SUBMIT*/
 
 /*SUBMIT BUTTON AT THE END OF THE SUBJECT TABS*/

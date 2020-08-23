@@ -9,4 +9,6 @@
   text-align: center;
   padding: 0px 15px !important;
 }
-
+.correct-answer-from-exam-on-sign-result {
+  text-align: left !important;
+}

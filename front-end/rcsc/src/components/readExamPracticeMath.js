@@ -45,6 +45,17 @@ class ReadMathSignUpExamQuestion extends Component {
   }
 
   handleChange = (questionId, userChoice, correctAnswer, index) => () => {
+    let auth = fire.auth();
+    let userName = auth.currentUser.email; //need to get email since we need to know which collection
+    let db = fire.firestore();
+    let userCollection = db.collection(userName); //ref to collection we need to update to.
+    userCollection.doc("ExamOnSignUp").collection("Math").doc(questionId).set(
+      {
+        UserAnswer: index,
+      },
+      { merge: true }
+    );
+
     const userAnsweredIndex = parseInt(index);
     const correctAnswerBool = correctAnswer === userAnsweredIndex;
     let iterator = 0;
