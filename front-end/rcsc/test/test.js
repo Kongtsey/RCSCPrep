@@ -120,4 +120,14 @@ describe('RSCS Prep site',() => {
         const testDoc = db.collection('PracticeExamOnSignUp').doc('English').collection('EnglishQuestions').doc('testDoc');
         await firebase.assertSucceeds(testDoc.get());
     })
+    it('cant read on Feedback',async () =>{
+        const db = getFirestore(myAuth);
+        const testDoc = db.collection('Feedback').doc(myEmail);
+        await firebase.assertFails(testDoc.get());
+    })
+    it('can create on Feedback',async () =>{
+        const db = getFirestore(myAuth);
+        const testDoc = db.collection('Feedback').doc(myEmail);
+        await firebase.assertSucceeds(testDoc.set({foo: "bar"}));
+    })
 })

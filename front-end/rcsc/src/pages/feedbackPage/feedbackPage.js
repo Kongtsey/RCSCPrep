@@ -12,10 +12,7 @@ class FeedbackPage extends React.Component {
                 <GeneralNavBar/>
                 <Container fluid={true}>
                     <Row>
-                        <Col md={3} className='dboardTool'>
-                            <DashboardTool/>
-                        </Col>
-                        <Col md={{span: 8, offset: 1}}>
+                        <Col md={{span: 10, offset: 1}}>
                             <Row>
                                 <Col xs={12}>
                                     <h3 style={{marginTop: '30px'}}>
