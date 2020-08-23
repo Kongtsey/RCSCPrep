@@ -149,7 +149,7 @@ class ExamPractice extends React.Component {
           </Container>
 
           {/* --------------------------------------------------------------------------------------------- */}
-          {/*  T H I S   I S   F O R   T H E   S U B J E C T S   T A B S   O N   T H E   T O P . */}
+          {/*  T H I S   I S   F O R   T H E   S U B J E C T S   T A B S   O N   T H E   T O P .            */}
           {/* --------------------------------------------------------------------------------------------- */}
 
           <Container className={"exam-question-display"}>

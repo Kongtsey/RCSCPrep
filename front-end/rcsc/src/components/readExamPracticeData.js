@@ -187,7 +187,10 @@ class ReadDataSignUpExamQuestion extends Component {
                       {data.Choice.map((choice, index) => (
                         <p className={index} key={index}>
                           <input type='radio' id={data.CorrectAnswer} name='choice' value={data.id} onChange={this.handleChange(data.id, choice, data.CorrectAnswer, index)} />
-                          &nbsp;&nbsp;&nbsp;&nbsp; {choice}
+                          &nbsp;&nbsp;&nbsp;&nbsp;
+                          <b>
+                            <b>{choice}</b>
+                          </b>
                         </p>
                       ))}
                     </Form>
