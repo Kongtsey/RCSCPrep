@@ -123,7 +123,54 @@ class NavigationBar extends Component {
                 dzongkhag: this.state.dzongkhag,
               };
               db.collection(this.state.email).doc("UserProfile").set(data);
-              this.copyMathDatabase();
+              //console.log("email user: ", this.state.email);
+              db.collection("Questions")
+                  .get()
+                  .then((snapshot) => {
+                    let counter = 0;
+                    snapshot.forEach((doc) => {
+                      console.log(doc.id, " -----> ", doc.data());
+                      db.collection(this.state.email).doc("MathQuestions").collection("Questions").doc(doc.id).set({
+                        Category: doc.data().Category,
+                        Choice: doc.data().Choice,
+                        CorrectAnswer: doc.data().CorrectAnswer,
+                        IsCorrectAnswer: doc.data().IsCorrectAnswer,
+                        IsWrongAnswer: doc.data().IsWrongAnswer,
+                        Question: doc.data().Question,
+                        UserHasNotResponded: doc.data().UserHasNotResponded,
+                        // QuestionYear: doc.data().QuestionYear,
+                        Marked: doc.data().Marked,
+                      });
+                      counter = 1 + counter;
+                      console.log(counter);
+                    });
+                    // console.log("done copying the database ");
+                  });
+
+              db.collection("EnglishQuestions")
+                  .get()
+                  .then((snapshot) => {
+                    let counter = 0;
+                    snapshot.forEach((doc) => {
+                      console.log(doc.id, " -----> ", doc.data());
+                      db.collection(this.state.email).doc("EnglishQuestions").collection("Questions").doc(doc.id).set({
+                        Category: doc.data().Category,
+                        Choice: doc.data().Choice,
+                        CorrectAnswer: doc.data().CorrectAnswer,
+                        IsCorrectAnswer: doc.data().IsCorrectAnswer,
+                        IsWrongAnswer: doc.data().IsWrongAnswer,
+                        Question: doc.data().Question,
+                        UserHasNotResponded: doc.data().UserHasNotResponded,
+                        QuestionYear: doc.data().QuestionYear,
+                        Marked: doc.data().Marked,
+                        Passage: doc.data().Passage,
+                        isPassageQuestion: doc.data().isPassageQuestion,
+                      });
+                      counter = 1 + counter;
+                      console.log(counter);
+                    });
+                    console.log("done copying the database ");
+                  });
             });
         }
       })
