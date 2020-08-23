@@ -16,6 +16,7 @@ class ReadDzongkhaSignUpExamQuestion extends Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.showResult = this.showResult.bind(this);
+    this.highlightNewAnswer = this.highlightNewAnswer.bind(this);
     this.updateDatabase = this.updateDatabase.bind(this);
     this.handleMark = this.handleMark.bind(this);
   }
@@ -64,11 +65,25 @@ class ReadDzongkhaSignUpExamQuestion extends Component {
     if (iterator === answered_question_id.length) {
       answered_question_id[iterator] = questionId;
       answered_question_info[iterator] = [questionId, userChoice, correctAnswer, correctAnswerBool];
-      console.log("Added the question ID: ", questionId);
+      //console.log("Added the question ID: ", questionId);
     } else {
-      console.log("The question id ", questionId, " already exist.");
+      //console.log("The question id ", questionId, " already exist.");
     }
+    this.highlightNewAnswer(questionId, index);
   };
+
+  highlightNewAnswer(questionId, index) {
+    for (let i = 0; i < 4; i++) {
+      $("#" + questionId)
+        .find("form")
+        .find("." + i)
+        .css("color", "black");
+    }
+    $("#" + questionId)
+      .find("form")
+      .find("." + index)
+      .css("color", "#ffc107");
+  }
 
   /***
    * @return: void;
@@ -77,7 +92,23 @@ class ReadDzongkhaSignUpExamQuestion extends Component {
    * This method highlights the wrong questions in light gray color and the correct in green.
    */
   showResult() {
-    // NEED TO THINK OF A DIFFERENT WAY HERE
+    $(":radio").attr("disabled", true);
+    for (let i = 0; i < answered_question_id.length; i++) {
+      let id = "#" + answered_question_info[i][0];
+      let answer_class = "." + answered_question_info[i][2];
+      for (let j = 0; j < 4; j++) {
+        if (j === parseInt(answered_question_info[i][2])) {
+          $(id).find("form").find(answer_class).css("color", "green");
+        } else {
+          $(id)
+            .find("form")
+            .find("." + j)
+            .css("color", "#cfcfcf");
+        }
+      }
+    }
+    $("#showResult").css("display", "none");
+    $("#submit").css("display", "block");
   }
 
   updateDatabase() {
@@ -141,7 +172,7 @@ class ReadDzongkhaSignUpExamQuestion extends Component {
                   <div>
                     <Row>
                       <Col md={10} lg={10} sm={12}>
-                        <img src={data.Question} alt={"question" + index} className={"dzongkha-question-image"} />
+                        {data.Question}
                       </Col>
                       <Col md={1} lg={1} sm={12}>
                         <button type='button' className={"markButton"} id={"mark" + index} onClick={this.handleMark(index, data.id)}>
@@ -151,22 +182,14 @@ class ReadDzongkhaSignUpExamQuestion extends Component {
                     </Row>
                   </div>
                   <br />
-                  <p> {data.id}</p>
-                  <p> {data.CorrectAnswer}</p>
                   <span className='customize-radio-button'>
                     <Form className={data.id}>
-                      <select name='answer' id='dzo-answer'>
-                        <option value='volvo'>ཀ</option>
-                        <option value='saab'>ཁ</option>
-                        <option value='mercedes'>ག</option>
-                        <option value='audi'>ང</option>
-                      </select>
-                      {/* {data.Choice.map((choice, index) => (
+                      {data.Choice.map((choice, index) => (
                         <p className={index} key={index}>
                           <input type='radio' id={data.CorrectAnswer} name='choice' value={data.id} onChange={this.handleChange(data.id, choice, data.CorrectAnswer, index)} />
                           &nbsp;&nbsp;&nbsp;&nbsp; {choice}
                         </p>
-                      ))} */}
+                      ))}
                     </Form>
                   </span>
                   <br />
