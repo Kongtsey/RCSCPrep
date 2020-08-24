@@ -21,6 +21,7 @@ class ReadEnglishQuestion extends Component {
     this.highlightNewAnswer = this.highlightNewAnswer.bind(this);
     this.updateDatabase = this.updateDatabase.bind(this);
     this.handleMark = this.handleMark.bind(this);
+    this.handleUnmark = this.handleUnmark.bind(this);
   }
 
   componentDidMount() {
@@ -28,56 +29,55 @@ class ReadEnglishQuestion extends Component {
     let auth = fire.auth();
     let userName = auth.currentUser.email;
     console.log("Is the right prop being passed: ", this.props.questionTypeQuery);
-    console.log("This is the category prop: ",this.props.questionCategory);
-    if (this.props.questionCategory!=='any') {
+    console.log("This is the category prop: ", this.props.questionCategory);
+    if (this.props.questionCategory !== "any") {
       fire
-          .firestore()
-          .collection(userName)
-          .doc("EnglishQuestions")
-          .collection("Questions")
-          .where('Category', "==", this.props.questionCategory).where(this.props.questionTypeQuery,'==',true)
-          .limit(this.props.chosenChoiceNumber)
-          .onSnapshot((snapshot) => {
-            const newData = snapshot.docs.map((doc) => ({
-              id: doc.id,
-              ...doc.data(),
-            }));
-            this.setState({
-              questionData: newData,
-              loading: false,
-            });
-            // for (let i =0; i < this.state.questionData.length;i++){
-              // console.log(this.state.questionData[i].Category,"question category")
-              // console.log(this.state.questionData[i].IsCorrectAnswer,"question been correctly answered?")
-              // console.log(this.state.questionData[i].IsWrongAnswer,"question been incorrectly answered?")
-            // }
+        .firestore()
+        .collection(userName)
+        .doc("EnglishQuestions")
+        .collection("Questions")
+        .where("Category", "==", this.props.questionCategory)
+        .where(this.props.questionTypeQuery, "==", true)
+        .limit(this.props.chosenChoiceNumber)
+        .onSnapshot((snapshot) => {
+          const newData = snapshot.docs.map((doc) => ({
+            id: doc.id,
+            ...doc.data(),
+          }));
+          this.setState({
+            questionData: newData,
+            loading: false,
           });
-
-    }
-    else{
+          // for (let i =0; i < this.state.questionData.length;i++){
+          // console.log(this.state.questionData[i].Category,"question category")
+          // console.log(this.state.questionData[i].IsCorrectAnswer,"question been correctly answered?")
+          // console.log(this.state.questionData[i].IsWrongAnswer,"question been incorrectly answered?")
+          // }
+        });
+    } else {
       fire
-          .firestore()
-          .collection(userName)
-          .doc("EnglishQuestions")
-          .collection("Questions")
-          .where(this.props.questionTypeQuery, "==", true)
-          .limit(this.props.chosenChoiceNumber)
-          .onSnapshot((snapshot) => {
-            const newData = snapshot.docs.map((doc) => ({
-              id: doc.id,
-              ...doc.data(),
-            }));
-            this.setState({
-              questionData: newData,
-              loading: false,
-            });
-            console.log(this.state.questionData,"question data")
-            // for (let i =0; i < this.state.questionData.length;i++){
-            //   console.log(this.state.questionData[i].Category,"question category")
-            //   console.log(this.state.questionData[i].IsCorrectAnswer,"question been correctly answered?")
-            //   console.log(this.state.questionData[i].IsWrongAnswer,"question been incorrectly answered?")
-            // }
+        .firestore()
+        .collection(userName)
+        .doc("EnglishQuestions")
+        .collection("Questions")
+        .where(this.props.questionTypeQuery, "==", true)
+        .limit(this.props.chosenChoiceNumber)
+        .onSnapshot((snapshot) => {
+          const newData = snapshot.docs.map((doc) => ({
+            id: doc.id,
+            ...doc.data(),
+          }));
+          this.setState({
+            questionData: newData,
+            loading: false,
           });
+          console.log(this.state.questionData, "question data");
+          // for (let i =0; i < this.state.questionData.length;i++){
+          //   console.log(this.state.questionData[i].Category,"question category")
+          //   console.log(this.state.questionData[i].IsCorrectAnswer,"question been correctly answered?")
+          //   console.log(this.state.questionData[i].IsWrongAnswer,"question been incorrectly answered?")
+          // }
+        });
     }
   }
 
@@ -174,27 +174,32 @@ class ReadEnglishQuestion extends Component {
     let userName = auth.currentUser.email; //need to get email since we need to know which collection
     let db = fire.firestore();
     let userCollection = db.collection(userName); //ref to collection we need to update to.
-    if ($("#mark" + index).hasClass("markButton")) {
-      $("#mark" + index).removeClass("markButton");
-      $("#mark" + index).addClass("markedButton");
-      $("#mark" + index).html("marked");
-      userCollection.doc("EnglishQuestions").collection("Questions").doc(markedQuestionId).set(
-        {
-          Marked: true,
-        },
-        { merge: true }
-      );
-    } else {
-      $("#mark" + index).removeClass("markedButton");
-      $("#mark" + index).addClass("markButton");
-      $("#mark" + index).html("mark");
-      userCollection.doc("EnglishQuestions").collection("Questions").doc(markedQuestionId).set(
-        {
-          Marked: false,
-        },
-        { merge: true }
-      );
-    }
+
+    $("#mark" + index).addClass("markButton");
+    $("#mark" + index).removeClass("markedButton");
+    $("#mark" + index).html("marked");
+    userCollection.doc("EnglishQuestions").collection("Questions").doc(markedQuestionId).set(
+      {
+        Marked: true,
+      },
+      { merge: true }
+    );
+  };
+  handleUnmark = (index, markedQuestionId) => () => {
+    let auth = fire.auth();
+    let userName = auth.currentUser.email; //need to get email since we need to know which collection
+    let db = fire.firestore();
+    let userCollection = db.collection(userName); //ref to collection we need to update to.
+
+    $("#mark" + index).addClass("markedButton");
+    $("#mark" + index).removeClass("markButton");
+    $("#mark" + index).html("mark");
+    userCollection.doc("EnglishQuestions").collection("Questions").doc(markedQuestionId).set(
+      {
+        Marked: false,
+      },
+      { merge: true }
+    );
   };
   render() {
     const loading = this.state.loading;
@@ -218,10 +223,15 @@ class ReadEnglishQuestion extends Component {
                       {data.Question}
                     </Col>
                     <Col md={1} lg={1} sm={12}>
-                      TODO: conditional rendering based on if the marked query is selected or not, when selected call another function.
-                      <button type='button' className={"markButton"} id={"mark" + index} onClick={this.handleMark(index, data.id)}>
-                        mark
-                      </button>
+                      {data.Marked ? (
+                        <button type='button' className={"markedButton"} id={"mark" + index} onClick={this.handleUnmark(index, data.id)}>
+                          Unmark
+                        </button>
+                      ) : (
+                        <button type='button' className={"markButton"} id={"mark" + index} onClick={this.handleMark(index, data.id)}>
+                          mark
+                        </button>
+                      )}
                     </Col>
                   </Row>
                   <br />

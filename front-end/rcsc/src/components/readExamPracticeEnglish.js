@@ -18,14 +18,12 @@ class ReadEnglishSignUpExamQuestion extends Component {
     this.showResult = this.showResult.bind(this);
     this.highlightNewAnswer = this.highlightNewAnswer.bind(this);
     this.updateDatabase = this.updateDatabase.bind(this);
-    this.handleMark = this.handleMark.bind(this);
   }
 
   componentDidMount() {
     this.setState({ loading: true });
     let auth = fire.auth();
     let userName = auth.currentUser.email;
-    //console.log("Is the right prop being passed: ", this.props.questionTypeQuery);
     fire
       .firestore()
       .collection(userName)
@@ -75,9 +73,7 @@ class ReadEnglishSignUpExamQuestion extends Component {
     if (iterator === answered_question_id.length) {
       answered_question_id[iterator] = questionId;
       answered_question_info[iterator] = [questionId, userChoice, correctAnswer, correctAnswerBool];
-      //console.log("Added the question ID: ", questionId);
     } else {
-      //console.log("The question id ", questionId, " already exist.");
     }
     this.highlightNewAnswer(questionId, index);
   };
@@ -127,10 +123,7 @@ class ReadEnglishSignUpExamQuestion extends Component {
     let db = fire.firestore();
     let userCollection = db.collection(userName); //ref to collection we need to update to.
     for (let i = 0; i < answered_question_id.length; i++) {
-      //console.log("Question ", i, " : ", answered_question_id[i]);
-      //console.log("Question ", i, " : ", answered_question_info[i][1]);
       let qID = answered_question_info[i][0];
-      //let userResponse = answered_question_info[i][1];
       userCollection.doc("ExamOnSignUp").collection("English").doc(qID).set(
         {
           UserHasNotResponded: false,
@@ -141,34 +134,7 @@ class ReadEnglishSignUpExamQuestion extends Component {
       );
     }
   }
-  handleMark = (index, markedQuestionId) => () => {
-    //console.log("you ar here at handleMark and the index is: ", index);
-    let auth = fire.auth();
-    let userName = auth.currentUser.email; //need to get email since we need to know which collection
-    let db = fire.firestore();
-    let userCollection = db.collection(userName); //ref to collection we need to update to.
-    if ($("#mark" + index).hasClass("markButton")) {
-      $("#mark" + index).removeClass("markButton");
-      $("#mark" + index).addClass("markedButton");
-      $("#mark" + index).html("marked");
-      userCollection.doc("ExamOnSignUp").collection("English").doc(markedQuestionId).set(
-        {
-          Marked: true,
-        },
-        { merge: true }
-      );
-    } else {
-      $("#mark" + index).removeClass("markedButton");
-      $("#mark" + index).addClass("markButton");
-      $("#mark" + index).html("mark");
-      userCollection.doc("ExamOnSignUp").collection("English").doc(markedQuestionId).set(
-        {
-          Marked: false,
-        },
-        { merge: true }
-      );
-    }
-  };
+
   render() {
     const showResult = this.props.showResult;
     showResult ? this.showResult() : console.log(showResult);
@@ -192,11 +158,6 @@ class ReadEnglishSignUpExamQuestion extends Component {
                   <Row>
                     <Col md={10} lg={10} sm={12}>
                       {data.Question}
-                    </Col>
-                    <Col md={1} lg={1} sm={12}>
-                      <button type='button' className={"markButton"} id={"mark" + index} onClick={this.handleMark(index, data.id)}>
-                        mark
-                      </button>
                     </Col>
                   </Row>
                   <br />
