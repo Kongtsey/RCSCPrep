@@ -53,7 +53,7 @@ class ReadEnglishSignUpExamQuestion extends Component {
       { merge: true }
     );
 
-    const userAnsweredIndex = parseInt(index);
+    const userAnsweredIndex = index;
     const correctAnswerBool = correctAnswer === userAnsweredIndex;
     let iterator = 0;
     if (answered_question_id.length === 0) {

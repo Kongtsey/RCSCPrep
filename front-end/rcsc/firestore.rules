@@ -22,14 +22,14 @@ service cloud.firestore {
             allow write: if false;
         }
         match /{userEmail}/EnglishQuestions/Questions/{questionID} {
-            allow read,write: if isAuthenticated() && checkEmailMatch(userEmail);
-            allow get,create: if isAuthenticated() && checkEmailMatch(userEmail);
+            allow read: if isAuthenticated() && checkEmailMatch(userEmail);
+            allow create: if isAuthenticated() && checkEmailMatch(userEmail);
             allow update: if isAuthenticated() && checkEmailMatch(userEmail);
             allow delete: if false;
         }
         match /{userEmail}/MathQuestions/Questions/{questionID} {
-            allow read,write: if isAuthenticated() && checkEmailMatch(userEmail);
-            allow get,create: if isAuthenticated() && checkEmailMatch(userEmail);
+            allow read: if isAuthenticated() && checkEmailMatch(userEmail);
+            allow create: if isAuthenticated() && checkEmailMatch(userEmail);
             allow update: if isAuthenticated() && checkEmailMatch(userEmail);
             allow delete: if false;
         }
