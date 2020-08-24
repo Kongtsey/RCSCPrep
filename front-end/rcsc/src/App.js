@@ -14,7 +14,7 @@ import Forum from "./pages/forum";
 import AboutPage from "./pages/aboutPage";
 import StrengthWeakness from "./components/strengthWeakness/strengthWeakness";
 import FeedbackPage from "./pages/feedbackPage/feedbackPage";
-
+import TestPage from "./pages/testPage";
 import { AuthProvider } from "./components/authentication";
 
 import PrivateRoute from "./components/PrivateRoute";
@@ -31,13 +31,13 @@ function App() {
           <PrivateRoute exact path='/english_practice' component={PracticeEnglish} />
           <PrivateRoute exact path='/math_stats_page' component={MathLoader} />
           <PrivateRoute exact path='/english_stats_page' component={EnglishLoader} />
-
           <PrivateRoute exact path='/exam' component={ExamPractice} />
-
           <PrivateRoute exact path='/forum' component={Forum} />
           <PrivateRoute exact path='/testPractice' component={StrengthWeakness} />
           <PrivateRoute exact path='/feedback' component={FeedbackPage}/>
-
+          {/*FOR TESTING*/}
+          <PrivateRoute exact path='/testPage' component={TestPage}/>
+          {/*FOR TESTING END*/}
         </Switch>
       </BrowserRouter>
     </AuthProvider>

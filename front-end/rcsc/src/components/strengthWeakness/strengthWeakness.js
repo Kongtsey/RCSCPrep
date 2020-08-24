@@ -71,11 +71,6 @@ class StrengthWeakness extends React.Component {
                             ratio[i] = questionsAnsweredCorrectly[i] / questionsAnswered[i];
                         }
                     }
-
-                    console.log(questionsAnswered,'QA');
-                    console.log(questionsAnsweredCorrectly,"QAC");
-                    console.log(ratio, 'ratio');
-
                     this.setState({
                         pending: false,
                         questionsAnswered: questionsAnswered,

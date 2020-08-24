@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import fire from "../config/Fire";
-import { Container, Col, Row, Form } from "react-bootstrap";
+import {Col, Container, Form, Row} from "react-bootstrap";
 import $ from "jquery";
 import "../style-sheet/radio-customization.css";
 import "../style-sheet/mark-button.css";
@@ -56,8 +56,7 @@ class ReadMathSignUpExamQuestion extends Component {
       { merge: true }
     );
 
-    const userAnsweredIndex = parseInt(index);
-    const correctAnswerBool = correctAnswer === userAnsweredIndex;
+    const correctAnswerBool = correctAnswer === toString(index);
     let iterator = 0;
     if (answered_question_id.length === 0) {
       answered_question_id[0] = questionId;

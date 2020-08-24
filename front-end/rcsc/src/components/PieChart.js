@@ -3,6 +3,7 @@ import { PieChart } from "react-minimal-pie-chart";
 import "../style-sheet/math-stats-jumbo-box.css";
 
 import StrengthWeakness from "./strengthWeakness/strengthWeakness";
+import StrengthWeaknessPE from "./strengthWeaknessesPracticeExam/strengthWeakness";
 
 const defaultLabelStyle = {
     fontSize: '4px',
@@ -44,7 +45,7 @@ export const SimplePieChart = (props) => {
                     <br />
                     <span className="description">Incorrect Answers: {incorrectAnswers}</span>
                     <br />
-                    <span className="description">Weakest Topic: <StrengthWeakness toDisplay="weakness"questionType={props.questionType}/></span>
+                    <span className="description">Weakest Topic: {props.poc === 'examPractice' ? <StrengthWeaknessPE name={props.name} /> : <StrengthWeakness toDisplay="weakness" name={props.name} questionType={props.questionType}/>}</span>
                 </p>
             </div>
         </React.Fragment>

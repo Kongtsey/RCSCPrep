@@ -16,6 +16,7 @@ class ExamPractice extends React.Component {
     super(props);
     this.state = {
       showResult: false,
+      showPieChart: false,
     };
     this.handleDisplay = this.handleDisplay.bind(this);
     this.handleTable = this.handleTable.bind(this);
@@ -61,6 +62,9 @@ class ExamPractice extends React.Component {
     this.setState({ showResult: true });
   };
   showFinalResult = () => () => {
+    this.setState({
+      showPieChart: true,
+    })
     $(".exam-question-display").css("opacity", 0.1);
     $(".end-result").css("display", "block");
   };
@@ -86,9 +90,9 @@ class ExamPractice extends React.Component {
           {/* --------------------------------------------------------------------------------------------- */}
 
           <Container className={"end-result"}>
-            <SignUpExamResult />
+            {(this.state.showPieChart) ? <SignUpExamResult />: ''}
             <div style={{ paddingLeft: "15px" }}>
-              <Button onClick={this.closeResultTable()}> Close </Button>
+              <Button onClick={this.closeResultTable()}> Close X </Button>
             </div>
           </Container>
 
