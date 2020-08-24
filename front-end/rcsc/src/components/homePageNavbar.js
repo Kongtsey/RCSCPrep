@@ -4,7 +4,7 @@ import "../style-sheet/homepage-navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faBookReader, faUser, faLock, faMapMarker } from "@fortawesome/free-solid-svg-icons";
 import fire from "../config/Fire";
-import logo from '../images/Kongtsey..png';
+import logo from "../images/Kongtsey..png";
 
 class NavigationBar extends Component {
   constructor(props) {
@@ -294,7 +294,6 @@ class NavigationBar extends Component {
           console.log("Question id: ", doc.id);
         });
         console.log("------------------ DONE ----------------------");
-
       });
   }
 

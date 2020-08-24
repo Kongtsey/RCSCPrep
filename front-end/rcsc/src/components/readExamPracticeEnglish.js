@@ -147,13 +147,14 @@ class ReadEnglishSignUpExamQuestion extends Component {
             <ol>
               {this.state.questionData.map((data, index) => (
                 <li id={data.id} key={data.id}>
-                  {data.isPassageQuestion === true ? (
+                  {data.IsPassageQuestion === true ? (
                     <div>
-                      {data.Passage} <br />
+                      {data.Passage}
+                      <br />
                       <br />
                     </div>
                   ) : (
-                    console.log("No Passage for this question")
+                    console.log("")
                   )}
                   <Row>
                     <Col md={10} lg={10} sm={12}>

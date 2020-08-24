@@ -55,6 +55,7 @@ class ReadMathSignUpExamQuestion extends Component {
       { merge: true }
     );
 
+
     const correctAnswerBool = parseInt(correctAnswer) === parseInt(index);
     let iterator = 0;
     if (answered_question_id.length === 0) {

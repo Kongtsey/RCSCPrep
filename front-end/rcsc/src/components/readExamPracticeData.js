@@ -4,6 +4,7 @@ import {Col, Container, Form, Row} from "react-bootstrap";
 import $ from "jquery";
 import "../style-sheet/radio-customization.css";
 import "../style-sheet/mark-button.css";
+import question_1_image from "../images/exam-broken-images/data_question_1.png";
 
 const answered_question_id = [];
 const answered_question_info = [];
@@ -54,6 +55,7 @@ class ReadDataSignUpExamQuestion extends Component {
       },
       { merge: true }
     );
+
     const correctAnswerBool = parseInt(correctAnswer) === parseInt(index);
     let iterator = 0;
     if (answered_question_id.length === 0) {
@@ -147,12 +149,13 @@ class ReadDataSignUpExamQuestion extends Component {
         <Row>
           <Col md={12} lg={12} sm={12}>
             <ol>
+              <img src={question_1_image} alt='question 1' style={{ width: "100%" }} />
               {this.state.questionData.map((data, index) => (
                 <li id={data.id} key={data.id}>
                   <div>
                     <Row>
                       <Col md={10} lg={10} sm={12}>
-                        <img src={data.Question} alt={"Question" + index} style={{ width: "100%" }} />
+                        <img src={data.Question} alt='' style={{ width: "100%" }} />
                       </Col>
                     </Row>
                   </div>
