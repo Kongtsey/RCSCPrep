@@ -13,9 +13,6 @@ class UserDashboard extends Component {
         <GeneralNavbar />
         <Container>
           <Row>
-            {/* <Col md={3} className='dboardTool'>
-              <DashboardTool />
-            </Col> */}
             <Col md={12}>
               <h3 style={{ marginTop: "30px" }}> Result Summary </h3>
               <br />
