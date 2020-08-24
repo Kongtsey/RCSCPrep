@@ -56,7 +56,7 @@ class ReadMathSignUpExamQuestion extends Component {
     );
 
     const userAnsweredIndex = parseInt(index);
-    const correctAnswerBool = correctAnswer === userAnsweredIndex;
+    const correctAnswerBool = parseInt(correctAnswer) === userAnsweredIndex;
     let iterator = 0;
     if (answered_question_id.length === 0) {
       answered_question_id[0] = questionId;
