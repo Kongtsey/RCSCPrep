@@ -1,5 +1,6 @@
 .nav-link {
   color: white !important;
+  margin-left: 20px !important;
 }
 .user_profile_picture {
   font-size: xx-large;
@@ -11,6 +12,6 @@
   height: 50px;
   padding-bottom: 9px;
 }
-.feedbackLink{
+.feedbackLink {
   color: #007bff !important;
 }
