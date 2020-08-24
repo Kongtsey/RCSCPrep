@@ -14,6 +14,7 @@ class SignUpExamResult extends React.Component {
             dzongkhaCorrectAnswer: 0,
             englishCorrectAnswer: 0,
             mathCorrectAnswer: 0,
+            weakestSection: '',
             finalScore: 0,
         };
     }
@@ -21,6 +22,7 @@ class SignUpExamResult extends React.Component {
         let db=fire.firestore();
         let user = fire.auth().currentUser;
         let totalCorrectAnswers = 0;
+        let sections = ['Data Interpretation','Dzongkha', 'English','Math'];
         let correctAnswers = [0,0,0,0];//data dzongkha english math
         let dataCollectionRef = db.collection(user.email).doc('ExamOnSignUp').collection('Data')
         let dataResponseQuery = dataCollectionRef.where('IsCorrectAnswer','==',true)
@@ -76,12 +78,15 @@ class SignUpExamResult extends React.Component {
                     .then((snapshot)=>{
                         if(snapshot.empty){
                             correctAnswers[3]=0;
+                            let weakestSectionIndex = Math.min(...correctAnswers);
+                            // console.log(weakestSectionIndex, 'weakest section index')
                             this.setState({
                                 dataCorrectAnswer: correctAnswers[0],
                                 dzongkhaCorrectAnswer: correctAnswers[1],
                                 englishCorrectAnswer: correctAnswers[2],
                                 mathCorrectAnswer: correctAnswers[3],
                                 finalScore: totalCorrectAnswers,
+                                weakestSection:sections[weakestSectionIndex],
                                 pending: false,
                             })
                         } else {
@@ -89,12 +94,15 @@ class SignUpExamResult extends React.Component {
                                 correctAnswers[3]+=1;
                                 totalCorrectAnswers+=1;
                             })
+                            let weakestSectionIndex = Math.min(...correctAnswers);
+                            // console.log(weakestSectionIndex, 'weakest section index')
                             this.setState({
                                 dataCorrectAnswer: correctAnswers[0],
                                 dzongkhaCorrectAnswer: correctAnswers[1],
                                 englishCorrectAnswer: correctAnswers[2],
                                 mathCorrectAnswer: correctAnswers[3],
                                 finalScore: totalCorrectAnswers,
+                                weakestSection:sections[weakestSectionIndex],
                                 pending: false,
                             })
                         }
@@ -112,7 +120,10 @@ class SignUpExamResult extends React.Component {
                     <Container>
                         <br/>
                         <Row>
-                            <h3 style={{paddingLeft: "10px"}}> Final Score: {this.state.finalScore}/100</h3>
+                            <h3 style={{paddingLeft: "10px"}}> Composite Score: {this.state.finalScore}/100</h3>
+                        </Row>
+                        <Row>
+                            <p style={{paddingLeft: "10px"}}>Your weakest section seems to be: <b>{this.state.weakestSection}</b></p>
                         </Row>
                         <br/>
                         <Row>

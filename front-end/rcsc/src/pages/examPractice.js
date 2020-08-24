@@ -151,7 +151,7 @@ class ExamPractice extends React.Component {
             </Row>
             <Row>
               <Col md={"3"}>
-                <span> Are you usure you want to submit? </span>
+                <span> Are you sure you want to submit? </span>
               </Col>
               <Col md={"2"} className={"parent-table-submit-exam"}>
                 <Button variant='danger' className={"table-submit-exam"} onClick={this.changeShowResult()}>

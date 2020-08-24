@@ -62,8 +62,6 @@ class StrengthWeaknessPE extends React.Component{
                         questionsAnsweredCorrectly: questionsAnsweredCorrectly,
                         ratio: ratio
                     })
-                    console.log(this.state.questionCategoryCount, 'category')
-                    console.log(this.state.questionsAnsweredCorrectly, 'answered correctly')
                     let min;
                     let minIndex;
                     let isValidIndex = false;
@@ -98,7 +96,7 @@ class StrengthWeaknessPE extends React.Component{
         }
         return(
             <React.Fragment>
-                <span>{this.state.weakestCategory}</span>
+                <b><span>{this.state.weakestCategory}</span></b>
             </React.Fragment>
         )
     }

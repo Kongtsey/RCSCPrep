@@ -121,8 +121,8 @@ class StrengthWeakness extends React.Component {
         }
         return (
             <React.Fragment>
-                {this.state.displayStrength && <span>{this.state.strongestCategory}</span>}
-                {this.state.displayWeakness && <span>{this.state.weakestCategory}</span>}
+                {this.state.displayStrength && <b><span>{this.state.strongestCategory}</span></b>}
+                {this.state.displayWeakness && <b><span>{this.state.weakestCategory}</span></b>}
             </React.Fragment>
         )
     }
