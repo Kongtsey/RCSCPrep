@@ -41,9 +41,6 @@ class GeneralNavigationBar extends Component {
     auth().signOut();
   }
   render() {
-    if (this.state.pending){
-      return <p>loading . . . </p>
-    }
     return (
       <Navbar collapseOnSelect expand='lg' bg='warning'>
         <Navbar.Brand href='/'>
@@ -56,16 +53,13 @@ class GeneralNavigationBar extends Component {
             <Nav.Link href='/'>Dashboard</Nav.Link>
             <Nav.Link href='/english_stats_page'>English</Nav.Link>
             <Nav.Link href='/math_stats_page'>Math</Nav.Link>
-            {this.state.toShowPieChartPage ? <Nav.Link href='/examPracticePage'>Exam</Nav.Link>: <Nav.Link href='/exam'>Exam</Nav.Link>}
+            {(this.state.pending)? '. . .' : ((this.state.toShowPieChartPage) ? <Nav.Link href='/examPracticePage'>Exam</Nav.Link>: <Nav.Link href='/exam'>Exam</Nav.Link>)}
             <Nav.Link href='/feedback'><span className='feedbackLink'>Feedback</span></Nav.Link>
 
           </Nav>
           <Nav>
-            <Nav.Link> {auth().currentUser.displayName}</Nav.Link>
+            <Nav><span style={{color: "white",fontSize: "large"}}>{auth().currentUser.displayName}</span></Nav>
             &nbsp;&nbsp;&nbsp;
-            <Nav.Link>
-              <FontAwesomeIcon icon={faUserCircle} className='user_profile_picture' />
-            </Nav.Link>
             <Nav.Link onClick={this.logout}> LogOut </Nav.Link>
           </Nav>
         </Navbar.Collapse>
