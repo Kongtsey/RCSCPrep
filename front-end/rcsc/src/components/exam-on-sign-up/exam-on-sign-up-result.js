@@ -2,7 +2,7 @@ import React from "react";
 import {withRouter} from "react-router-dom";
 import {Container, Col, Row} from "react-bootstrap";
 import "../../style-sheet/sign-up-exam-result.css";
-import fire from "../../config/Fire";
+import {auth,firestore} from "firebase"
 import {SimplePieChart} from "../PieChart";
 
 class SignUpExamResult extends React.Component {
@@ -19,8 +19,8 @@ class SignUpExamResult extends React.Component {
         };
     }
     componentDidMount() {
-        let db=fire.firestore();
-        let user = fire.auth().currentUser;
+        let db=firestore();
+        let user = auth().currentUser;
         let totalCorrectAnswers = 0;
         let sections = ['Data Interpretation','Dzongkha', 'English','Math'];
         let correctAnswers = [0,0,0,0];//data dzongkha english math

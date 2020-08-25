@@ -128,6 +128,7 @@ class NavigationBar extends Component {
                 email: this.state.email,
                 college: this.state.college,
                 dzongkhag: this.state.dzongkhag,
+                practiceExam: false,
               };
               return db.collection(this.state.email).doc("UserProfile").set(data);
             })

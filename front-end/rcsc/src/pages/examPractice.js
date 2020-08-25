@@ -10,6 +10,7 @@ import ReadExamPracticeData from "../components/readExamPracticeData";
 import PracticeExamResult from "../components/sign-up-exam-result/PracticeExamResult";
 import SignUpExamResult from "../components/exam-on-sign-up/exam-on-sign-up-result";
 import $ from "jquery";
+import {auth,firestore} from "firebase";
 
 class ExamPractice extends React.Component {
   constructor(props) {
@@ -62,8 +63,13 @@ class ExamPractice extends React.Component {
     this.setState({ showResult: true });
   };
   showFinalResult = () => () => {
-    this.setState({
-      showPieChart: true,
+    let user =auth().currentUser;
+    let db = firestore();
+    console.log(user.email);
+    db.collection(user.email).doc('UserProfile').update({practiceExam: true}).then(()=>{
+        this.setState({
+            showPieChart: true,
+        })
     })
     $(".exam-question-display").css("opacity", 0.1);
     $(".end-result").css("display", "block");
