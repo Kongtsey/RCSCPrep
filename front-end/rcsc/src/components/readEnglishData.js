@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import fire from "../config/Fire";
+import {auth,firestore} from "firebase";
 import { Button, Container, Col, Row, Form } from "react-bootstrap";
 import $ from "jquery";
 import "../style-sheet/radio-customization.css";
@@ -30,13 +30,11 @@ class ReadEnglishQuestion extends Component {
   }
   componentDidMount() {
     this.setState({ loading: true });
-    let auth = fire.auth();
-    let userName = auth.currentUser.email;
-    console.log("Is the right prop being passed: ", this.props.questionTypeQuery);
-    console.log("This is the category prop: ", this.props.questionCategory);
+    let userName = auth().currentUser.email;
+    // console.log("Is the right prop being passed: ", this.props.questionTypeQuery);
+    // console.log("This is the category prop: ", this.props.questionCategory);
     if (this.props.questionCategory !== "any") {
-      fire
-        .firestore()
+      firestore()
         .collection(userName)
         .doc("EnglishQuestions")
         .collection("Questions")
@@ -59,8 +57,7 @@ class ReadEnglishQuestion extends Component {
           // }
         });
     } else {
-      fire
-        .firestore()
+      firestore()
         .collection(userName)
         .doc("EnglishQuestions")
         .collection("Questions")
@@ -75,7 +72,7 @@ class ReadEnglishQuestion extends Component {
             questionData: newData,
             loading: false,
           });
-          console.log(this.state.questionData, "question data");
+          // console.log(this.state.questionData, "question data");
           // for (let i =0; i < this.state.questionData.length;i++){
           //   console.log(this.state.questionData[i].Category,"question category")
           //   console.log(this.state.questionData[i].IsCorrectAnswer,"question been correctly answered?")
@@ -106,9 +103,9 @@ class ReadEnglishQuestion extends Component {
     if (iterator === answered_question_id.length) {
       answered_question_id[iterator] = questionId;
       answered_question_info[iterator] = [questionId, userChoice, correctAnswer, correctAnswerBool];
-      console.log("Added the question ID: ", questionId);
+      // console.log("Added the question ID: ", questionId);
     } else {
-      console.log("The question id ", questionId, " already exist.");
+      // console.log("The question id ", questionId, " already exist.");
     }
     this.highlightNewAnswer(questionId, index);
   };
@@ -153,9 +150,8 @@ class ReadEnglishQuestion extends Component {
   }
 
   updateDatabase() {
-    let auth = fire.auth();
-    let userName = auth.currentUser.email; //need to get email since we need to know which collection
-    let db = fire.firestore();
+    let userName = auth().currentUser.email; //need to get email since we need to know which collection
+    let db = firestore();
     let userCollection = db.collection(userName); //ref to collection we need to update to.
     for (let i = 0; i < answered_question_id.length; i++) {
       //console.log("Question ", i, " : ", answered_question_id[i]);
@@ -175,9 +171,8 @@ class ReadEnglishQuestion extends Component {
   }
   handleMark = (index, markedQuestionId) => () => {
     //console.log("you ar here at handleMark and the index is: ", index);
-    let auth = fire.auth();
-    let userName = auth.currentUser.email; //need to get email since we need to know which collection
-    let db = fire.firestore();
+    let userName = auth().currentUser.email; //need to get email since we need to know which collection
+    let db = firestore();
     let userCollection = db.collection(userName); //ref to collection we need to update to.
 
     $("#mark" + index).addClass("markButton");
@@ -191,9 +186,8 @@ class ReadEnglishQuestion extends Component {
     );
   };
   handleUnmark = (index, markedQuestionId) => () => {
-    let auth = fire.auth();
-    let userName = auth.currentUser.email; //need to get email since we need to know which collection
-    let db = fire.firestore();
+    let userName = auth().currentUser.email; //need to get email since we need to know which collection
+    let db = firestore();
     let userCollection = db.collection(userName); //ref to collection we need to update to.
 
     $("#mark" + index).addClass("markedButton");
@@ -221,7 +215,8 @@ class ReadEnglishQuestion extends Component {
                       <br />
                     </div>
                   ) : (
-                    console.log("No Passage for this question")
+                    // console.log("No Passage for this question")
+                      ''
                   )}
                   <Row>
                     <Col md={10} lg={10} sm={12}>
