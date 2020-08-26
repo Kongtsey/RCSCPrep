@@ -10,10 +10,11 @@ const override = css`
   border-color: red;
 `;
 class AfterSignUpLoading extends Component {
+  // TODO: need to direct the page here once the user signs up instead of the page.
   componentDidMount() {
-    // setTimeout(() => {
-    //   this.props.history.push("/user");
-    // }, 5000);
+    setTimeout(() => {
+      this.props.history.push("/user");
+    }, 20000);
   }
   render() {
     return (
@@ -25,7 +26,7 @@ class AfterSignUpLoading extends Component {
                 <ClipLoader css={override} size={30} color={"#ffc107"} />
               </div>
               <br />
-              <h2 style={{ color: "white" }}>We are preparing your Profile.</h2>
+              <h2 style={{ color: "white" }}>We are loading.</h2>
             </Col>
           </Row>
         </Container>
