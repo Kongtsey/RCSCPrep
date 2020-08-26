@@ -209,10 +209,13 @@ class ExamPractice extends React.Component {
         <Container className={"temporary-exam-conatiner"} fluid={true}>
           <Row>
             <Col md={12} style={{ marginTop: "100px" }}>
-              <p style={{ fontSize: "10vh", textAlign: "center" }}> COMING </p>
+              <p style={{ color: "white" ,fontSize: "10vh", textAlign: "center" }}> COMING </p>
             </Col>
             <Col md={12}>
-              <p style={{ fontSize: "15vh", textAlign: "center" }}> SOON </p>
+              <p style={{color: "white" ,fontSize: "15vh", textAlign: "center" }}> SOON </p>
+            </Col>
+            <Col md={12}>
+              <p style={{ color: "white" ,fontSize: "4vh", textAlign: "center" }}> in about a week . . .</p>
             </Col>
           </Row>
         </Container>

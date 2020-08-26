@@ -4,7 +4,7 @@ import { Button, Container, Col, Row, Form } from "react-bootstrap";
 import $ from "jquery";
 import "../style-sheet/radio-customization.css";
 import Loading from "../components/loading";
-import { Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import "../style-sheet/mark-button.css";
 
 const answered_question_id = [];
@@ -22,8 +22,12 @@ class MathList extends Component {
     this.updateDatabase = this.updateDatabase.bind(this);
     this.handleMark = this.handleMark.bind(this);
     this.handleUnmark = this.handleUnmark.bind(this);
+    this.routeChange = this.routeChange.bind(this);
   }
-
+  routeChange(){
+    let path = '/math_stats_page'
+    this.props.history.push(path)
+  }
   componentDidMount() {
     this.setState({ loading: true });
     let auth = fire.auth();
@@ -169,6 +173,7 @@ class MathList extends Component {
         { merge: true }
       );
     }
+    this.routeChange();
   }
   handleMark = (index, markedQuestionId) => () => {
     //console.log("you ar here at handleMark and the index is: ", index);
@@ -254,11 +259,9 @@ class MathList extends Component {
                 See Result
               </Button>
             )}
-            <Link to={"/math_stats_page"}>
               <Button id='submit' variant='outline-success' onClick={this.updateDatabase}>
                 Done
               </Button>
-            </Link>
           </Col>
         </Row>
         <br />
@@ -270,4 +273,4 @@ class MathList extends Component {
   }
 }
 
-export default MathList;
+export default withRouter(MathList);

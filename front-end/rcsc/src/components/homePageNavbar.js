@@ -326,8 +326,7 @@ class NavigationBar extends Component {
             <Navbar.Toggle aria-controls='responsive-navbar-nav' />
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav className='mr-auto'>
-                <Nav.Link href='/about_and_contact'>About</Nav.Link>
-                <Nav.Link href='/about_and_contact'>Contact</Nav.Link>
+                <Nav.Link href='/about_and_contact'>Contact Us</Nav.Link>
               </Nav>
               <Form inline>
                 <Button variant='link' className='login' onClick={this.handleShowLogin}>
