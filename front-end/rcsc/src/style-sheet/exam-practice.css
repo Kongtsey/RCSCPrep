@@ -1,0 +1,119 @@
+/* * {
+  transition: 300ms linear ease-in;
+}
+.exam-question-display {
+  opacity: 1;
+}
+.tabs {
+  text-align: center;
+}
+.tabs button {
+  color: #9c9c9c;
+}
+.active {
+  border-bottom: 2px solid #ffc10678;
+  display: block !important;
+}
+.active button {
+  color: black;
+}
+button {
+  background: transparent;
+  border: none;
+}
+.subject {
+  display: none;
+}
+.subject-active {
+  display: block;
+} */
+/*SUBMIT BUTTON AT THE END OF THE SUBJECT TABS*/
+/* .submit-exam {
+  border-radius: 25px !important;
+  font-size: 10px !important;
+  margin-top: -5px !important;
+  padding: 5px 20px !important;
+}
+
+#sign-up-exam-result {
+  box-shadow: 0 5px 15px rgb(220 53 69);
+  transition: linear 300ms;
+}
+#sign-up-exam-result:hover {
+  box-shadow: 0 10px 15px rgb(220 53 69);
+  transition: linear 300ms;
+} */
+
+/*THIS IS FOR THE CONFIRMATION TABLE THAT WILL APPEAR AFTER THE USER HITS SUBMIT*/
+
+/*SUBMIT BUTTON AT THE END OF THE SUBJECT TABS*/
+/* .review-confirmation {
+  position: fixed;
+  z-index: 2;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 9px 9px 30px #d9d9d9, -9px -9px 30px #ffffff;
+  display: none;
+  transition: 300ms linear ease-in;
+}
+.close-parent {
+  text-align: right;
+}
+.close-tab {
+  color: #0058ff !important;
+  background: none !important;
+  border: none !important;
+}
+.close-tab:hover {
+  color: #66ab1e !important;
+  background: none !important;
+  border: none !important;
+}
+.table-submit-exam {
+  border-radius: 25px !important;
+  font-size: 10px !important;
+  margin-top: -5px !important;
+  padding: 0px 10px !important;
+} */
+
+/* .table-tab-header {
+  margin-bottom: -20px;
+  padding-left: 20px;
+}
+
+.table-tabs button {
+  color: #9c9c9c;
+  font-size: 13px;
+}
+
+.active button {
+  color: black;
+}
+
+.table-subject {
+  display: none;
+}
+
+.table-subject-active {
+  display: block;
+} */
+
+/*THIS IS FOR THE RESULT. */
+/* .end-result {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 9px 9px 30px #d9d9d9, -9px -9px 30px #ffffff;
+  transition: 300ms linear ease-in;
+} */
+
+.temporary-exam-conatiner {
+  background-image: url("../images/homePage/tibetan-cloud.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

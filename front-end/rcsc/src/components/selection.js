@@ -4,7 +4,7 @@ import "../style-sheet/mathStatsPage.css";
 import Button from "react-bootstrap/Button";
 import { renderToString } from "react-dom/server";
 import { Link } from "react-router-dom";
-
+import Loading from "./loading";
 import StrengthWeakness from "./strengthWeakness/strengthWeakness";
 
 class SelectionQueries extends Component {
@@ -59,7 +59,7 @@ class SelectionQueries extends Component {
   }
   render() {
     if(this.state.pending){
-      return <p>Loading ...</p>
+      return <Loading/>
     }
     return (
       <React.Fragment>

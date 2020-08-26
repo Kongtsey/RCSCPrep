@@ -12,7 +12,7 @@ function getFirestore(auth){
 }
 describe('RSCS Prep site',() => {
 
-    it('cant read items in the englishQuestions collection',async () => {
+    it('cant read items in the EnglishQuestions collection',async () => {
         const db = getFirestore(null);
         const testDoc = db.collection('EnglishQuestions').doc("testDoc");
         await firebase.assertFails(testDoc.get());
@@ -36,11 +36,6 @@ describe('RSCS Prep site',() => {
         const db = getFirestore(myAuth);
         const testDoc = db.collection('Questions').doc("testDoc");
         await firebase.assertSucceeds(testDoc.get());
-    })
-    it('cant write items in the questions collection',async () => {
-        const db = getFirestore(myAuth);
-        const testDoc = db.collection('Questions').doc("testDoc");
-        await firebase.assertFails(testDoc.set({food: "apple"}));
     })
     it('cant write items in the questions collection',async () => {
         const db = getFirestore(myAuth);
@@ -119,5 +114,20 @@ describe('RSCS Prep site',() => {
         const db = getFirestore(myAuth);
         const testDoc = db.collection('PracticeExamOnSignUp').doc('English').collection('EnglishQuestions').doc('testDoc');
         await firebase.assertSucceeds(testDoc.get());
+    })
+    it('cant read on Feedback',async () =>{
+        const db = getFirestore(myAuth);
+        const testDoc = db.collection('Feedback').doc(myEmail);
+        await firebase.assertFails(testDoc.get());
+    })
+    it('can create on Feedback',async () =>{
+        const db = getFirestore(myAuth);
+        const testDoc = db.collection('Feedback').doc();
+        await firebase.assertSucceeds(testDoc.set({foo: "bar"}));
+    })
+    it('can read on UserEmail/EnglishQuestions/Questions/qs',async ()=>{
+        const db = getFirestore(myAuth);
+        const testDox = db.collection(myEmail).doc('EnglishQuestions').collection('Questions').doc('testDoc');
+        await firebase.assertSucceeds(testDox.get());
     })
 })

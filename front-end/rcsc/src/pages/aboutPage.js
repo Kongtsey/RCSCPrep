@@ -8,7 +8,7 @@ import Footer from "../components/footer";
 class AboutPage extends React.Component {
   render() {
     return (
-      <Container fluid={true} style={{ background: "gray" }}>
+      <Container fluid={true} style={{ background: "rgb(0, 149, 152)" }}>
         <Container>
           <Row>
             <Col sm={12}>

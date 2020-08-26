@@ -1,14 +1,38 @@
 import React, { Component } from "react";
 import { Nav, Navbar } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
-import fire from "../config/Fire";
+import { auth } from "firebase";
 import "../style-sheet/general-navbar.css";
-import logo from "../images/web-logo.png";
+import logo from "../images/Kongtsey..png";
 
 class GeneralNavigationBar extends Component {
+  // constructor(props) {
+  //   super(props);
+  // }
+  // componentDidMount() {
+  //   let user = auth().currentUser;
+  //   let db = firestore();
+  //   let isPracticeExamDone = db.collection(user.email).doc("UserProfile");
+  //   isPracticeExamDone
+  //     .get()
+  //     .then((doc) => {
+  //       if (doc.data().practiceExam) {
+  //         this.setState({
+  //           pending: false,
+  //           toShowPieChartPage: true,
+  //         });
+  //       } else {
+  //         this.setState({
+  //           pending: false,
+  //         });
+  //       }
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }
+
   logout() {
-    fire.auth().signOut();
+    auth().signOut();
   }
   render() {
     return (
@@ -24,14 +48,16 @@ class GeneralNavigationBar extends Component {
             <Nav.Link href='/english_stats_page'>English</Nav.Link>
             <Nav.Link href='/math_stats_page'>Math</Nav.Link>
             <Nav.Link href='/exam'>Exam</Nav.Link>
+            <Nav.Link href='/feedback'>
+              <span className='feedbackLink'>Feedback</span>
+            </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link> {fire.auth().currentUser.displayName}</Nav.Link>
-            &nbsp;&nbsp;&nbsp;
             <Nav.Link>
-              <FontAwesomeIcon icon={faUserCircle} className='user_profile_picture' />
+              <span style={{ color: "white", fontSize: "large", cursor: "text" }}>{auth().currentUser.displayName}</span>
             </Nav.Link>
-            <Nav.Link onClick={this.logout}> LogOut </Nav.Link>
+            &nbsp;&nbsp;&nbsp;
+            <Nav.Link onClick={this.logout}> Log Out </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

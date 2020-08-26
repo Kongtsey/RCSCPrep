@@ -37,9 +37,9 @@ This is the actual text of the navbar.
   margin-left: 20px;
   padding: 2px 10px !important;
   border-radius: 50px !important;
-  background: #ff8a07 !important;
+  background: white !important;
   border: white 1px solid !important;
-  color: #e2e2e2 !important;
+  color: rgb(0, 148, 151) !important;
   font-family: "Rubik", sans-serif;
   box-shadow: 5px 5px 22px #007577, -5px -5px 22px #00b3b7;
 }
@@ -76,6 +76,7 @@ This is the actual text of the navbar.
   color: #d9707a !important;
 }
 .companyName {
+  text-align: left!important;
   color: white !important;
 }
 .companyName:hover {

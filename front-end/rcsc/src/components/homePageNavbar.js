@@ -4,6 +4,8 @@ import "../style-sheet/homepage-navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faBookReader, faUser, faLock, faMapMarker } from "@fortawesome/free-solid-svg-icons";
 import fire from "../config/Fire";
+import logo from "../images/Kongtsey..png";
+// import Loading from "./loading-page-after-sign-up/after-sign-up-loading";
 
 class NavigationBar extends Component {
   constructor(props) {
@@ -17,6 +19,12 @@ class NavigationBar extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.signUp = this.signUp.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.copyMathDatabase = this.copyMathDatabase.bind(this);
+    this.copyEnglishDatabase = this.copyEnglishDatabase.bind(this);
+    // this.copyMathSignUpExam = this.copyMathSignUpExam.bind(this);
+    // this.copyEnglishSignUpExam = this.copyEnglishSignUpExam.bind(this);
+    // this.copyDzongkhaSignUpExam = this.copyDzongkhaSignUpExam.bind(this);
+    // this.copyDataIntSignUpExam = this.copyDataIntSignUpExam.bind(this);
     this.state = {
       questionData: [],
       toShowLogin: false,
@@ -35,7 +43,10 @@ class NavigationBar extends Component {
   //Functions
   //Modal Functions Start <---
   handleClose() {
-    this.setState({ toShowSignUp: false });
+    this.setState({
+      toShowSignUp: false,
+      errorMessage: '',
+    });
   }
   handleShow() {
     this.setState({ toShowSignUp: true });
@@ -86,6 +97,7 @@ class NavigationBar extends Component {
   }
   login(e) {
     e.preventDefault();
+    this.setState({errorMessage: ''});
     fire
       .auth()
       .signInWithEmailAndPassword(this.state.email, this.state.password)
@@ -121,64 +133,186 @@ class NavigationBar extends Component {
                 email: this.state.email,
                 college: this.state.college,
                 dzongkhag: this.state.dzongkhag,
+                practiceExam: false,
               };
-              db.collection(this.state.email).doc("UserProfile").set(data);
-              //console.log("email user: ", this.state.email);
-              db.collection("Questions")
-                  .get()
-                  .then((snapshot) => {
-                    let counter = 0;
-                    snapshot.forEach((doc) => {
-                      console.log(doc.id, " -----> ", doc.data());
-                      db.collection(this.state.email).doc("MathQuestions").collection("Questions").doc(doc.id).set({
-                        Category: doc.data().Category,
-                        Choice: doc.data().Choice,
-                        CorrectAnswer: doc.data().CorrectAnswer,
-                        IsCorrectAnswer: doc.data().IsCorrectAnswer,
-                        IsWrongAnswer: doc.data().IsWrongAnswer,
-                        Question: doc.data().Question,
-                        UserHasNotResponded: doc.data().UserHasNotResponded,
-                        // QuestionYear: doc.data().QuestionYear,
-                        Marked: doc.data().Marked,
-                      });
-                      counter = 1 + counter;
-                      console.log(counter);
-                    });
-                    // console.log("done copying the database ");
-                  });
-
-              db.collection("EnglishQuestions")
-                  .get()
-                  .then((snapshot) => {
-                    let counter = 0;
-                    snapshot.forEach((doc) => {
-                      console.log(doc.id, " -----> ", doc.data());
-                      db.collection(this.state.email).doc("EnglishQuestions").collection("Questions").doc(doc.id).set({
-                        Category: doc.data().Category,
-                        Choice: doc.data().Choice,
-                        CorrectAnswer: doc.data().CorrectAnswer,
-                        IsCorrectAnswer: doc.data().IsCorrectAnswer,
-                        IsWrongAnswer: doc.data().IsWrongAnswer,
-                        Question: doc.data().Question,
-                        UserHasNotResponded: doc.data().UserHasNotResponded,
-                        QuestionYear: doc.data().QuestionYear,
-                        Marked: doc.data().Marked,
-                        Passage: doc.data().Passage,
-                        isPassageQuestion: doc.data().isPassageQuestion,
-                      });
-                      counter = 1 + counter;
-                      console.log(counter);
-                    });
-                    console.log("done copying the database ");
-                  });
+              return db.collection(this.state.email).doc("UserProfile").set(data);
+            })
+            .then(() => {
+              return this.copyEnglishDatabase();
+            })
+            .then(() => {
+              return this.copyMathDatabase();
             });
+          // .then(() => {
+          //   return this.copyMathSignUpExam();
+          // })
+          // .then(() => {
+          //   return this.copyEnglishSignUpExam();
+          // })
+          // .then(() => {
+          //   return this.copyDzongkhaSignUpExam();
+          // })
+          // .then(() => {
+          //   return this.copyDataIntSignUpExam();
+          // });
+          // .then(() => {
+          //   this.props.history.push("/loader");
+          // });
         }
       })
-      .catch((error) => {
-        console.log(error);
-        this.setState({ errorMessage: error.message });
+        .catch((error)=>{
+          console.log(error)
+          this.setState({errorMessage: error.message });
+        })
+  }
+
+  copyMathDatabase() {
+    let db = fire.firestore();
+    return db
+      .collection("Questions")
+      .get()
+      .then((snapshot) => {
+        snapshot.forEach((doc) => {
+          db.collection(this.state.email).doc("MathQuestions").collection("Questions").doc(doc.id).set({
+            Category: doc.data().Category,
+            Choice: doc.data().Choice,
+            CorrectAnswer: doc.data().CorrectAnswer,
+            IsCorrectAnswer: doc.data().IsCorrectAnswer,
+            IsWrongAnswer: doc.data().IsWrongAnswer,
+            Question: doc.data().Question,
+            UserHasNotResponded: doc.data().UserHasNotResponded,
+            Marked: doc.data().Marked,
+          });
+        });
+        console.log("done with Math");
       });
   }
+
+  copyEnglishDatabase() {
+    let db = fire.firestore();
+    return db
+      .collection("EnglishQuestions")
+      .get()
+      .then((snapshot) => {
+        snapshot.forEach((doc) => {
+          db.collection(this.state.email).doc("EnglishQuestions").collection("Questions").doc(doc.id).set({
+            Category: doc.data().Category,
+            Choice: doc.data().Choice,
+            CorrectAnswer: doc.data().CorrectAnswer,
+            IsCorrectAnswer: doc.data().IsCorrectAnswer,
+            IsWrongAnswer: doc.data().IsWrongAnswer,
+            Question: doc.data().Question,
+            UserHasNotResponded: doc.data().UserHasNotResponded,
+            Marked: doc.data().Marked,
+            Passage: doc.data().Passage,
+            isPassageQuestion: doc.data().isPassageQuestion,
+          });
+        });
+        console.log("done with English  ");
+      });
+  }
+
+  // copyMathSignUpExam() {
+  //   let db = fire.firestore();
+  //   return db
+  //     .collection("PracticeExamOnSignUp")
+  //     .doc("Math")
+  //     .collection("MathQuestions")
+  //     .get()
+  //     .then((snapshot) => {
+  //       snapshot.forEach((doc) => {
+  //         db.collection(this.state.email).doc("ExamOnSignUp").collection("Math").doc(doc.id).set({
+  //           Category: doc.data().Category,
+  //           Choice: doc.data().Choice,
+  //           CorrectAnswer: doc.data().CorrectAnswer,
+  //           IsCorrectAnswer: doc.data().IsCorrectAnswer,
+  //           IsWrongAnswer: doc.data().IsWrongAnswer,
+  //           Question: doc.data().Question,
+  //           UserHasNotResponded: doc.data().UserHasNotResponded,
+  //           QuestionYear: doc.data().QuestionYear,
+  //           Marked: doc.data().Marked,
+  //         });
+  //       });
+  //       console.log("done with Math Exam");
+  //     });
+  // }
+
+  // copyEnglishSignUpExam() {
+  //   let db = fire.firestore();
+  //   return db
+  //     .collection("PracticeExamOnSignUp")
+  //     .doc("English")
+  //     .collection("EnglishQuestions")
+  //     .get()
+  //     .then((snapshot) => {
+  //       snapshot.forEach((doc) => {
+  //         db.collection(this.state.email).doc("ExamOnSignUp").collection("English").doc(doc.id).set({
+  //           Category: doc.data().Category,
+  //           Choice: doc.data().Choice,
+  //           CorrectAnswer: doc.data().CorrectAnswer,
+  //           IsCorrectAnswer: doc.data().IsCorrectAnswer,
+  //           IsWrongAnswer: doc.data().IsWrongAnswer,
+  //           Question: doc.data().Question,
+  //           UserHasNotResponded: doc.data().UserHasNotResponded,
+  //           QuestionYear: doc.data().QuestionYear,
+  //           Marked: doc.data().Marked,
+  //           IsPassageQuestion: doc.data().IsPassageQuestion,
+  //           Passage: doc.data().Passage,
+  //         });
+  //       });
+  //       console.log("done with Eng exam");
+  //     });
+  // }
+  // copyDzongkhaSignUpExam() {
+  //   let db = fire.firestore();
+  //   return db
+  //     .collection("PracticeExamOnSignUp")
+  //     .doc("Dzongkha")
+  //     .collection("DzongkhaQuestions")
+  //     .get()
+  //     .then((snapshot) => {
+  //       snapshot.forEach((doc) => {
+  //         db.collection(this.state.email).doc("ExamOnSignUp").collection("Dzongkha").doc(doc.id).set({
+  //           Category: doc.data().Category,
+  //           CorrectAnswer: doc.data().CorrectAnswer,
+  //           IsCorrectAnswer: doc.data().IsCorrectAnswer,
+  //           IsWrongAnswer: doc.data().IsWrongAnswer,
+  //           Question: doc.data().Question,
+  //           UserHasNotResponded: doc.data().UserHasNotResponded,
+  //           QuestionYear: doc.data().QuestionYear,
+  //           Marked: doc.data().Marked,
+  //           Choice: doc.data().Choice,
+  //         });
+  //       });
+  //       console.log("done with dzon");
+  //     });
+  // }
+
+  // copyDataIntSignUpExam() {
+  //   console.log("Into data Interpretation Question");
+  //   let db = fire.firestore();
+  //   return db
+  //     .collection("PracticeExamOnSignUp")
+  //     .doc("Data_Interpretation")
+  //     .collection("DataInterpretationQuestions")
+  //     .get()
+  //     .then((snapshot) => {
+  //       snapshot.forEach((doc) => {
+  //         db.collection(this.state.email).doc("ExamOnSignUp").collection("Data").doc(doc.id).set({
+  //           Category: doc.data().Category,
+  //           CorrectAnswer: doc.data().CorrectAnswer,
+  //           IsCorrectAnswer: doc.data().IsCorrectAnswer,
+  //           IsWrongAnswer: doc.data().IsWrongAnswer,
+  //           Question: doc.data().Question,
+  //           UserHasNotResponded: doc.data().UserHasNotResponded,
+  //           QuestionYear: doc.data().QuestionYear,
+  //           Marked: doc.data().Marked,
+  //           Choice: doc.data().Choice,
+  //         });
+  //       });
+  //       console.log("------------------ DONE ----------------------");
+  //     });
+  // }
 
   //Render
   render() {
@@ -187,13 +321,12 @@ class NavigationBar extends Component {
         <Container className='navbar-parent-container'>
           <Navbar collapseOnSelect expand='lg'>
             <Navbar.Brand href='/' className='companyName'>
-              Kongtsey
+              <img src={logo} alt='this is the logo' className='logo' />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls='responsive-navbar-nav' />
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav className='mr-auto'>
-                <Nav.Link href='/about_and_contact'>About</Nav.Link>
-                <Nav.Link href='/about_and_contact'>Contact</Nav.Link>
+                <Nav.Link href='/about_and_contact'>Contact Us</Nav.Link>
               </Nav>
               <Form inline>
                 <Button variant='link' className='login' onClick={this.handleShowLogin}>

@@ -4,7 +4,7 @@ import { Button, Container, Col, Row, Form } from "react-bootstrap";
 import $ from "jquery";
 import "../style-sheet/radio-customization.css";
 import Loading from "../components/loading";
-import { Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import "../style-sheet/mark-button.css";
 
 const answered_question_id = [];
@@ -21,67 +21,72 @@ class MathList extends Component {
     this.highlightNewAnswer = this.highlightNewAnswer.bind(this);
     this.updateDatabase = this.updateDatabase.bind(this);
     this.handleMark = this.handleMark.bind(this);
+    this.handleUnmark = this.handleUnmark.bind(this);
+    this.routeChange = this.routeChange.bind(this);
   }
-
+  routeChange(){
+    let path = '/math_stats_page'
+    this.props.history.push(path)
+  }
   componentDidMount() {
     this.setState({ loading: true });
     let auth = fire.auth();
     let userName = auth.currentUser.email;
     console.log("this is the query: ", this.props.questionTypeQuery);
-    if(this.props.questionCategory === 'any') {
+    if (this.props.questionCategory === "any") {
       fire
-          .firestore()
-          .collection(userName)
-          .doc("MathQuestions")
-          .collection("Questions")
-          .where(this.props.questionTypeQuery, "==", true)
-          .limit(this.props.chosenChoiceNumber)
-          .onSnapshot((snapshot) => {
-            const newData = snapshot.docs.map((doc) => ({
-              id: doc.id,
-              ...doc.data(),
-            }));
-            //console.log("This is the default number of questions displayed", newTimes);
-            this.setState({
-              questionData: newData,
-              loading: false,
-            });
-
-            //<---- FOR DEBUGGING ---->
-            // for (let i =0; i < this.state.questionData.length;i++){
-              // console.log(this.state.questionData[i].Category,"question category")
-              // console.log(this.state.questionData[i].IsCorrectAnswer,"question been correctly answered?")
-              // console.log(this.state.questionData[i].IsWrongAnswer,"question been incorrectly answered?")
-            // }
-            //<---- END FOR DEBUGGING ---->
+        .firestore()
+        .collection(userName)
+        .doc("MathQuestions")
+        .collection("Questions")
+        .where(this.props.questionTypeQuery, "==", true)
+        .limit(this.props.chosenChoiceNumber)
+        .onSnapshot((snapshot) => {
+          const newData = snapshot.docs.map((doc) => ({
+            id: doc.id,
+            ...doc.data(),
+          }));
+          //console.log("This is the default number of questions displayed", newTimes);
+          this.setState({
+            questionData: newData,
+            loading: false,
           });
-    }
-    else{
+
+          //<---- FOR DEBUGGING ---->
+          // for (let i =0; i < this.state.questionData.length;i++){
+          // console.log(this.state.questionData[i].Category,"question category")
+          // console.log(this.state.questionData[i].IsCorrectAnswer,"question been correctly answered?")
+          // console.log(this.state.questionData[i].IsWrongAnswer,"question been incorrectly answered?")
+          // }
+          //<---- END FOR DEBUGGING ---->
+        });
+    } else {
       fire
-          .firestore()
-          .collection(userName)
-          .doc("MathQuestions")
-          .collection("Questions")
-          .where(this.props.questionTypeQuery, "==", true).where('Category','==',this.props.questionCategory)
-          .limit(this.props.chosenChoiceNumber)
-          .onSnapshot((snapshot) => {
-            const newData = snapshot.docs.map((doc) => ({
-              id: doc.id,
-              ...doc.data(),
-            }));
-            this.setState({
-              questionData: newData,
-              loading: false,
-            });
-
-            // <----- FOR DEBUGGING --->
-            // for (let i =0; i < this.state.questionData.length;i++){
-            // // console.log(this.state.questionData[i].Category,"question category")
-            // // // console.log(this.state.questionData[i].IsCorrectAnswer,"question been correctly answered?")
-            // // console.log(this.state.questionData[i].IsWrongAnswer,"question been incorrectly answered?")
-            // }
-            // <----- END FOR DEBUGGING ----->
+        .firestore()
+        .collection(userName)
+        .doc("MathQuestions")
+        .collection("Questions")
+        .where(this.props.questionTypeQuery, "==", true)
+        .where("Category", "==", this.props.questionCategory)
+        .limit(this.props.chosenChoiceNumber)
+        .onSnapshot((snapshot) => {
+          const newData = snapshot.docs.map((doc) => ({
+            id: doc.id,
+            ...doc.data(),
+          }));
+          this.setState({
+            questionData: newData,
+            loading: false,
           });
+
+          // <----- FOR DEBUGGING --->
+          // for (let i =0; i < this.state.questionData.length;i++){
+          // // console.log(this.state.questionData[i].Category,"question category")
+          // // // console.log(this.state.questionData[i].IsCorrectAnswer,"question been correctly answered?")
+          // // console.log(this.state.questionData[i].IsWrongAnswer,"question been incorrectly answered?")
+          // }
+          // <----- END FOR DEBUGGING ----->
+        });
     }
   }
 
@@ -168,6 +173,7 @@ class MathList extends Component {
         { merge: true }
       );
     }
+    this.routeChange();
   }
   handleMark = (index, markedQuestionId) => () => {
     //console.log("you ar here at handleMark and the index is: ", index);
@@ -176,28 +182,33 @@ class MathList extends Component {
     let db = fire.firestore();
     let userCollection = db.collection(userName); //ref to collection we need to update to.
 
-    if ($("#mark" + index).hasClass("markButton")) {
-      $("#mark" + index).removeClass("markButton");
-      $("#mark" + index).addClass("markedButton");
-      $("#mark" + index).html("marked");
-      userCollection.doc("MathQuestions").collection("Questions").doc(markedQuestionId).set(
-        {
-          Marked: true,
-        },
-        { merge: true }
-      );
-    } else {
-      $("#mark" + index).removeClass("markedButton");
-      $("#mark" + index).addClass("markButton");
-      $("#mark" + index).html("mark");
-      userCollection.doc("MathQuestions").collection("Questions").doc(markedQuestionId).set(
-        {
-          Marked: false,
-        },
-        { merge: true }
-      );
-    }
+    $("#mark" + index).addClass("markButton");
+    $("#mark" + index).removeClass("markedButton");
+    $("#mark" + index).html("marked");
+    userCollection.doc("MathQuestions").collection("Questions").doc(markedQuestionId).set(
+      {
+        Marked: true,
+      },
+      { merge: true }
+    );
   };
+  handleUnmark = (index, markedQuestionId) => () => {
+    let auth = fire.auth();
+    let userName = auth.currentUser.email; //need to get email since we need to know which collection
+    let db = fire.firestore();
+    let userCollection = db.collection(userName); //ref to collection we need to update to.
+
+    $("#mark" + index).addClass("markedButton");
+    $("#mark" + index).removeClass("markButton");
+    $("#mark" + index).html("mark");
+    userCollection.doc("MathQuestions").collection("Questions").doc(markedQuestionId).set(
+      {
+        Marked: false,
+      },
+      { merge: true }
+    );
+  };
+
   render() {
     const loading = this.state.loading;
     return (
@@ -213,9 +224,15 @@ class MathList extends Component {
                         {data.Question}
                       </Col>
                       <Col md={1} lg={1} sm={12}>
-                        <button type='button' className={"markButton"} id={"mark" + index} onClick={this.handleMark(index, data.id)}>
-                          mark
-                        </button>
+                        {data.Marked ? (
+                          <button type='button' className={"markedButton"} id={"mark" + index} onClick={this.handleUnmark(index, data.id)}>
+                            Unmark
+                          </button>
+                        ) : (
+                          <button type='button' className={"markButton"} id={"mark" + index} onClick={this.handleMark(index, data.id)}>
+                            mark
+                          </button>
+                        )}
                       </Col>
                     </Row>
                   </div>
@@ -242,11 +259,9 @@ class MathList extends Component {
                 See Result
               </Button>
             )}
-            <Link to={"/math_stats_page"}>
               <Button id='submit' variant='outline-success' onClick={this.updateDatabase}>
                 Done
               </Button>
-            </Link>
           </Col>
         </Row>
         <br />
@@ -258,4 +273,4 @@ class MathList extends Component {
   }
 }
 
-export default MathList;
+export default withRouter(MathList);

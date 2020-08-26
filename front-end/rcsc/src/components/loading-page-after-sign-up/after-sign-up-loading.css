@@ -1,0 +1,22 @@
+/* .bkg-image {
+  background-image: none;
+  height: auto;
+} */
+.bkg-image {
+  background-image: url("../../images/homePage/tibetan-cloud.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parent-after-sign-up-loader {
+  padding-top: 200px;
+}
+
+@media only screen and (max-width: 767px) {
+  .bkg-image {
+    background-image: url("../../images/homePage/tibetan-cloud.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
