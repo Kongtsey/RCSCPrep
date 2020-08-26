@@ -43,7 +43,10 @@ class NavigationBar extends Component {
   //Functions
   //Modal Functions Start <---
   handleClose() {
-    this.setState({ toShowSignUp: false });
+    this.setState({
+      toShowSignUp: false,
+      errorMessage: '',
+    });
   }
   handleShow() {
     this.setState({ toShowSignUp: true });
@@ -94,6 +97,7 @@ class NavigationBar extends Component {
   }
   login(e) {
     e.preventDefault();
+    this.setState({errorMessage: ''});
     fire
       .auth()
       .signInWithEmailAndPassword(this.state.email, this.state.password)
@@ -139,7 +143,6 @@ class NavigationBar extends Component {
             .then(() => {
               return this.copyMathDatabase();
             });
-
           // .then(() => {
           //   return this.copyMathSignUpExam();
           // })
@@ -156,7 +159,11 @@ class NavigationBar extends Component {
           //   this.props.history.push("/loader");
           // });
         }
-      });
+      })
+        .catch((error)=>{
+          console.log(error)
+          this.setState({errorMessage: error.message });
+        })
   }
 
   copyMathDatabase() {

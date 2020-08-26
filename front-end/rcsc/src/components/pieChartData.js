@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import fire from "../config/Fire";
+import Loading from "./loading";
 import { SimplePieChart } from "./PieChart";
 class CorrectWrong extends Component {
     constructor(props) {
@@ -64,7 +65,7 @@ class CorrectWrong extends Component {
         let correctAnswers = this.state.numCorrectAnswers;
         let incorrectAnswers = this.state.numWrongAnswers;
         if (this.state.pending) {
-            return <p>Loading ...</p>
+            return <Loading/>
         }
         return (
             <React.Fragment>
