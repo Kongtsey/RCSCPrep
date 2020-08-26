@@ -3,7 +3,7 @@ import { Container, Col, Row, Form, Nav, Navbar, Button, Modal } from "react-boo
 import "../style-sheet/homepage-navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faBookReader, faUser, faLock, faMapMarker } from "@fortawesome/free-solid-svg-icons";
-import fire from "../config/Fire";
+import {auth,firestore} from "firebase";
 import logo from "../images/Kongtsey..png";
 // import Loading from "./loading-page-after-sign-up/after-sign-up-loading";
 
@@ -98,11 +98,10 @@ class NavigationBar extends Component {
   login(e) {
     e.preventDefault();
     this.setState({errorMessage: ''});
-    fire
-      .auth()
+    auth()
       .signInWithEmailAndPassword(this.state.email, this.state.password)
       .then((u) => {
-        console.log("Logged In");
+        // console.log("Logged In");
       })
       .catch((error) => {
         console.log(error);
@@ -115,11 +114,10 @@ class NavigationBar extends Component {
   }
 
   signUp() {
-    fire
-      .auth()
+    auth()
       .createUserWithEmailAndPassword(this.state.email, this.state.password)
       .then((u) => {
-        let user = fire.auth().currentUser;
+        let user = auth().currentUser;
         console.log(user);
         if (user != null) {
           user
@@ -127,7 +125,7 @@ class NavigationBar extends Component {
               displayName: this.state.name,
             })
             .then((r) => {
-              let db = fire.firestore();
+              let db = firestore();
               let data = {
                 name: this.state.name,
                 email: this.state.email,
@@ -167,7 +165,7 @@ class NavigationBar extends Component {
   }
 
   copyMathDatabase() {
-    let db = fire.firestore();
+    let db = firestore();
     return db
       .collection("Questions")
       .get()
@@ -189,7 +187,7 @@ class NavigationBar extends Component {
   }
 
   copyEnglishDatabase() {
-    let db = fire.firestore();
+    let db = firestore();
     return db
       .collection("EnglishQuestions")
       .get()
