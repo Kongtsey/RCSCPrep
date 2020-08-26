@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Row, Col, Container, Button } from "react-bootstrap";
 import GeneralNavbar from "../components/generalNavbar";
-import DashboardTool from "../components/dashboardTool";
 import MathStatsBoard from "../components/mathStatsBoard";
 import EnglishStatsBoard from "../components/englishStatsBoard";
 import "../style-sheet/user-dashboard.css";
@@ -12,19 +11,28 @@ class UserDashboard extends Component {
     return (
       <React.Fragment>
         <GeneralNavbar />
-        <Container fluid={true}>
+        <Container>
           <Row>
-            <Col md={3} className='dboardTool'>
-              <DashboardTool />
-            </Col>
-            <Col md={{ span: 8, offset: 1 }}>
+            <Col md={12}>
               <h3 style={{ marginTop: "30px" }}> Result Summary </h3>
               <br />
               <hr />
               <Row>
                 <Col md={5} lg={5}>
                   <Row>
-                    <Col sm={12} md={12} lg={12} style={{ color: "black", padding: "8px", borderStyle: "solid", borderWidth: "1px", borderColor: "rgba(0,0,0,.3)" }} className='statsBoard'>
+                    <Col
+                      sm={12}
+                      md={12}
+                      lg={12}
+                      style={{
+                        padding: "20px",
+                        borderRadius: "10px",
+                        background: "linear-gradient(145deg, #ffffff, #e6e6e6)",
+                        boxShadow: "9px 9px 30px #d9d9d9, -9px -9px 30px #ffffff",
+                        transition: "300ms linear ease-in",
+                      }}
+                      className='statsBoard'
+                    >
                       <MathStatsBoard />
                     </Col>
                   </Row>
@@ -38,9 +46,21 @@ class UserDashboard extends Component {
                     </Col>
                   </Row>
                 </Col>
-                <Col md={{ span: 5, offset: 1 }} lg={{ span: 5, offset: 1 }}>
+                <Col md={{ span: 5, offset: 2 }} lg={{ span: 5, offset: 2 }}>
                   <Row>
-                    <Col sm={12} md={12} lg={12} style={{ color: "black", padding: "8px", borderStyle: "solid", borderWidth: "1px", borderColor: "rgba(0,0,0,.3)" }} className='statsBoard'>
+                    <Col
+                      sm={12}
+                      md={12}
+                      lg={12}
+                      style={{
+                        padding: "20px",
+                        borderRadius: "10px",
+                        background: "linear-gradient(145deg, #ffffff, #e6e6e6)",
+                        boxShadow: "9px 9px 30px #d9d9d9, -9px -9px 30px #ffffff",
+                        transition: "300ms linear ease-in",
+                      }}
+                      className='statsBoard'
+                    >
                       <EnglishStatsBoard />
                     </Col>
                   </Row>

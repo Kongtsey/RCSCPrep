@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faBookReader, faUser, faLock, faMapMarker } from "@fortawesome/free-solid-svg-icons";
 import fire from "../config/Fire";
 import logo from "../images/Kongtsey..png";
+// import Loading from "./loading-page-after-sign-up/after-sign-up-loading";
 
 class NavigationBar extends Component {
   constructor(props) {
@@ -20,10 +21,10 @@ class NavigationBar extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.copyMathDatabase = this.copyMathDatabase.bind(this);
     this.copyEnglishDatabase = this.copyEnglishDatabase.bind(this);
-    this.copyMathSignUpExam = this.copyMathSignUpExam.bind(this);
-    this.copyEnglishSignUpExam = this.copyEnglishSignUpExam.bind(this);
-    this.copyDzongkhaSignUpExam = this.copyDzongkhaSignUpExam.bind(this);
-    this.copyDataIntSignUpExam = this.copyDataIntSignUpExam.bind(this);
+    // this.copyMathSignUpExam = this.copyMathSignUpExam.bind(this);
+    // this.copyEnglishSignUpExam = this.copyEnglishSignUpExam.bind(this);
+    // this.copyDzongkhaSignUpExam = this.copyDzongkhaSignUpExam.bind(this);
+    // this.copyDataIntSignUpExam = this.copyDataIntSignUpExam.bind(this);
     this.state = {
       questionData: [],
       toShowLogin: false,
@@ -133,23 +134,27 @@ class NavigationBar extends Component {
               return db.collection(this.state.email).doc("UserProfile").set(data);
             })
             .then(() => {
-              return this.copyMathDatabase();
-            })
-            .then(() => {
               return this.copyEnglishDatabase();
             })
             .then(() => {
-              return this.copyMathSignUpExam();
-            })
-            .then(() => {
-              return this.copyEnglishSignUpExam();
-            })
-            .then(() => {
-              return this.copyDzongkhaSignUpExam();
-            })
-            .then(() => {
-              return this.copyDataIntSignUpExam();
+              return this.copyMathDatabase();
             });
+
+          // .then(() => {
+          //   return this.copyMathSignUpExam();
+          // })
+          // .then(() => {
+          //   return this.copyEnglishSignUpExam();
+          // })
+          // .then(() => {
+          //   return this.copyDzongkhaSignUpExam();
+          // })
+          // .then(() => {
+          //   return this.copyDataIntSignUpExam();
+          // });
+          // .then(() => {
+          //   this.props.history.push("/loader");
+          // });
         }
       });
   }
@@ -172,6 +177,7 @@ class NavigationBar extends Component {
             Marked: doc.data().Marked,
           });
         });
+        console.log("done with Math");
       });
   }
 
@@ -195,108 +201,111 @@ class NavigationBar extends Component {
             isPassageQuestion: doc.data().isPassageQuestion,
           });
         });
+        console.log("done with English  ");
       });
   }
 
-  copyMathSignUpExam() {
-    let db = fire.firestore();
-    return db
-      .collection("PracticeExamOnSignUp")
-      .doc("Math")
-      .collection("MathQuestions")
-      .get()
-      .then((snapshot) => {
-        snapshot.forEach((doc) => {
-          db.collection(this.state.email).doc("ExamOnSignUp").collection("Math").doc(doc.id).set({
-            Category: doc.data().Category,
-            Choice: doc.data().Choice,
-            CorrectAnswer: doc.data().CorrectAnswer,
-            IsCorrectAnswer: doc.data().IsCorrectAnswer,
-            IsWrongAnswer: doc.data().IsWrongAnswer,
-            Question: doc.data().Question,
-            UserHasNotResponded: doc.data().UserHasNotResponded,
-            QuestionYear: doc.data().QuestionYear,
-            Marked: doc.data().Marked,
-          });
-        });
-      });
-  }
+  // copyMathSignUpExam() {
+  //   let db = fire.firestore();
+  //   return db
+  //     .collection("PracticeExamOnSignUp")
+  //     .doc("Math")
+  //     .collection("MathQuestions")
+  //     .get()
+  //     .then((snapshot) => {
+  //       snapshot.forEach((doc) => {
+  //         db.collection(this.state.email).doc("ExamOnSignUp").collection("Math").doc(doc.id).set({
+  //           Category: doc.data().Category,
+  //           Choice: doc.data().Choice,
+  //           CorrectAnswer: doc.data().CorrectAnswer,
+  //           IsCorrectAnswer: doc.data().IsCorrectAnswer,
+  //           IsWrongAnswer: doc.data().IsWrongAnswer,
+  //           Question: doc.data().Question,
+  //           UserHasNotResponded: doc.data().UserHasNotResponded,
+  //           QuestionYear: doc.data().QuestionYear,
+  //           Marked: doc.data().Marked,
+  //         });
+  //       });
+  //       console.log("done with Math Exam");
+  //     });
+  // }
 
-  copyEnglishSignUpExam() {
-    let db = fire.firestore();
-    return db
-      .collection("PracticeExamOnSignUp")
-      .doc("English")
-      .collection("EnglishQuestions")
-      .get()
-      .then((snapshot) => {
-        snapshot.forEach((doc) => {
-          db.collection(this.state.email).doc("ExamOnSignUp").collection("English").doc(doc.id).set({
-            Category: doc.data().Category,
-            Choice: doc.data().Choice,
-            CorrectAnswer: doc.data().CorrectAnswer,
-            IsCorrectAnswer: doc.data().IsCorrectAnswer,
-            IsWrongAnswer: doc.data().IsWrongAnswer,
-            Question: doc.data().Question,
-            UserHasNotResponded: doc.data().UserHasNotResponded,
-            QuestionYear: doc.data().QuestionYear,
-            Marked: doc.data().Marked,
-            IsPassageQuestion: doc.data().IsPassageQuestion,
-            Passage: doc.data().Passage,
-          });
-        });
-      });
-  }
-  copyDzongkhaSignUpExam() {
-    let db = fire.firestore();
-    return db
-      .collection("PracticeExamOnSignUp")
-      .doc("Dzongkha")
-      .collection("DzongkhaQuestions")
-      .get()
-      .then((snapshot) => {
-        snapshot.forEach((doc) => {
-          db.collection(this.state.email).doc("ExamOnSignUp").collection("Dzongkha").doc(doc.id).set({
-            Category: doc.data().Category,
-            CorrectAnswer: doc.data().CorrectAnswer,
-            IsCorrectAnswer: doc.data().IsCorrectAnswer,
-            IsWrongAnswer: doc.data().IsWrongAnswer,
-            Question: doc.data().Question,
-            UserHasNotResponded: doc.data().UserHasNotResponded,
-            QuestionYear: doc.data().QuestionYear,
-            Marked: doc.data().Marked,
-            Choice: doc.data().Choice,
-          });
-        });
-      });
-  }
+  // copyEnglishSignUpExam() {
+  //   let db = fire.firestore();
+  //   return db
+  //     .collection("PracticeExamOnSignUp")
+  //     .doc("English")
+  //     .collection("EnglishQuestions")
+  //     .get()
+  //     .then((snapshot) => {
+  //       snapshot.forEach((doc) => {
+  //         db.collection(this.state.email).doc("ExamOnSignUp").collection("English").doc(doc.id).set({
+  //           Category: doc.data().Category,
+  //           Choice: doc.data().Choice,
+  //           CorrectAnswer: doc.data().CorrectAnswer,
+  //           IsCorrectAnswer: doc.data().IsCorrectAnswer,
+  //           IsWrongAnswer: doc.data().IsWrongAnswer,
+  //           Question: doc.data().Question,
+  //           UserHasNotResponded: doc.data().UserHasNotResponded,
+  //           QuestionYear: doc.data().QuestionYear,
+  //           Marked: doc.data().Marked,
+  //           IsPassageQuestion: doc.data().IsPassageQuestion,
+  //           Passage: doc.data().Passage,
+  //         });
+  //       });
+  //       console.log("done with Eng exam");
+  //     });
+  // }
+  // copyDzongkhaSignUpExam() {
+  //   let db = fire.firestore();
+  //   return db
+  //     .collection("PracticeExamOnSignUp")
+  //     .doc("Dzongkha")
+  //     .collection("DzongkhaQuestions")
+  //     .get()
+  //     .then((snapshot) => {
+  //       snapshot.forEach((doc) => {
+  //         db.collection(this.state.email).doc("ExamOnSignUp").collection("Dzongkha").doc(doc.id).set({
+  //           Category: doc.data().Category,
+  //           CorrectAnswer: doc.data().CorrectAnswer,
+  //           IsCorrectAnswer: doc.data().IsCorrectAnswer,
+  //           IsWrongAnswer: doc.data().IsWrongAnswer,
+  //           Question: doc.data().Question,
+  //           UserHasNotResponded: doc.data().UserHasNotResponded,
+  //           QuestionYear: doc.data().QuestionYear,
+  //           Marked: doc.data().Marked,
+  //           Choice: doc.data().Choice,
+  //         });
+  //       });
+  //       console.log("done with dzon");
+  //     });
+  // }
 
-  copyDataIntSignUpExam() {
-    console.log("Into data Interpretation Question");
-    let db = fire.firestore();
-    return db
-      .collection("PracticeExamOnSignUp")
-      .doc("Data_Interpretation")
-      .collection("DataInterpretationQuestions")
-      .get()
-      .then((snapshot) => {
-        snapshot.forEach((doc) => {
-          db.collection(this.state.email).doc("ExamOnSignUp").collection("Data").doc(doc.id).set({
-            Category: doc.data().Category,
-            CorrectAnswer: doc.data().CorrectAnswer,
-            IsCorrectAnswer: doc.data().IsCorrectAnswer,
-            IsWrongAnswer: doc.data().IsWrongAnswer,
-            Question: doc.data().Question,
-            UserHasNotResponded: doc.data().UserHasNotResponded,
-            QuestionYear: doc.data().QuestionYear,
-            Marked: doc.data().Marked,
-            Choice: doc.data().Choice,
-          });
-          console.log("Question id: ", doc.id);
-        });
-        console.log("------------------ DONE ----------------------");
-      });
-  }
+  // copyDataIntSignUpExam() {
+  //   console.log("Into data Interpretation Question");
+  //   let db = fire.firestore();
+  //   return db
+  //     .collection("PracticeExamOnSignUp")
+  //     .doc("Data_Interpretation")
+  //     .collection("DataInterpretationQuestions")
+  //     .get()
+  //     .then((snapshot) => {
+  //       snapshot.forEach((doc) => {
+  //         db.collection(this.state.email).doc("ExamOnSignUp").collection("Data").doc(doc.id).set({
+  //           Category: doc.data().Category,
+  //           CorrectAnswer: doc.data().CorrectAnswer,
+  //           IsCorrectAnswer: doc.data().IsCorrectAnswer,
+  //           IsWrongAnswer: doc.data().IsWrongAnswer,
+  //           Question: doc.data().Question,
+  //           UserHasNotResponded: doc.data().UserHasNotResponded,
+  //           QuestionYear: doc.data().QuestionYear,
+  //           Marked: doc.data().Marked,
+  //           Choice: doc.data().Choice,
+  //         });
+  //       });
+  //       console.log("------------------ DONE ----------------------");
+  //     });
+  // }
 
   //Render
   render() {

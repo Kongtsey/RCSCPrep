@@ -1,4 +1,4 @@
-* {
+/* * {
   transition: 300ms linear ease-in;
 }
 .exam-question-display {
@@ -26,9 +26,9 @@ button {
 }
 .subject-active {
   display: block;
-}
+} */
 /*SUBMIT BUTTON AT THE END OF THE SUBJECT TABS*/
-.submit-exam {
+/* .submit-exam {
   border-radius: 25px !important;
   font-size: 10px !important;
   margin-top: -5px !important;
@@ -42,12 +42,12 @@ button {
 #sign-up-exam-result:hover {
   box-shadow: 0 10px 15px rgb(220 53 69);
   transition: linear 300ms;
-}
+} */
 
 /*THIS IS FOR THE CONFIRMATION TABLE THAT WILL APPEAR AFTER THE USER HITS SUBMIT*/
 
 /*SUBMIT BUTTON AT THE END OF THE SUBJECT TABS*/
-.review-confirmation {
+/* .review-confirmation {
   position: fixed;
   z-index: 2;
   padding: 20px;
@@ -75,9 +75,9 @@ button {
   font-size: 10px !important;
   margin-top: -5px !important;
   padding: 0px 10px !important;
-}
+} */
 
-.table-tab-header {
+/* .table-tab-header {
   margin-bottom: -20px;
   padding-left: 20px;
 }
@@ -97,10 +97,10 @@ button {
 
 .table-subject-active {
   display: block;
-}
+} */
 
 /*THIS IS FOR THE RESULT. */
-.end-result {
+/* .end-result {
   display: none;
   position: fixed;
   z-index: 2;
@@ -109,4 +109,11 @@ button {
   background: linear-gradient(145deg, #ffffff, #e6e6e6);
   box-shadow: 9px 9px 30px #d9d9d9, -9px -9px 30px #ffffff;
   transition: 300ms linear ease-in;
+} */
+
+.temporary-exam-conatiner {
+  background-image: url("../images/homePage/tibetan-cloud.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
