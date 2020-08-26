@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import fire from "../config/Fire";
+import Loading from "./loading";
 
 export const AuthContext = React.createContext();
 
@@ -15,7 +16,7 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   if (pending) {
-    return <>Loading...</>;
+    return <Loading/>;
   }
 
   return (
