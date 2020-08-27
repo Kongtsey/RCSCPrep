@@ -33,8 +33,8 @@ class Footer extends React.Component {
                   </Row>
                   <Row>
                     <Col sm={12} className='contactContent' style={{ marginTop: "10px", marginBottom: "10px" }}>
-                      <a href='mailto: bhutanexamfactory@gmail.com' className='emailLink'>
-                        <FontAwesomeIcon icon={faEnvelope} className='footerIcons' /> &nbsp; bhutanexamfactory@gmail.com
+                      <a href='mailto: kongtsey@gmail.com' className='emailLink'>
+                        <FontAwesomeIcon icon={faEnvelope} className='footerIcons' /> &nbsp; kongtsey@gmail.com
                       </a>
                     </Col>
                   </Row>
@@ -46,19 +46,19 @@ class Footer extends React.Component {
                     <Col xs={8} sm={12} style={{ marginLeft: "60px" }}>
                       <Row>
                         <Col xs={2} sm={4} className='smIcons'>
-                          <a href='https://www.facebook.com/BhtExmFct'>
+                          <a href='https://www.facebook.com/kongTseyBht'>
                             <FontAwesomeIcon icon={faFacebook} className='footerIcons smIcons' />
                           </a>
                         </Col>
 
                         <Col xs={2} sm={4}>
-                          <a href='https://www.instagram.com/bhutan_exam_factory/'>
+                          <a href='https://www.instagram.com/kongtsey/'>
                             <FontAwesomeIcon icon={faInstagram} style={{ marginTop: "13px" }} className='footerIcons smIcons' />
                           </a>
                         </Col>
 
                         <Col xs={2} sm={4}>
-                          <a href='https://www.youtube.com/channel/UCmS06px2S8hXCz0A7eB_ZhA'>
+                          <a href='https://www.youtube.com/channel/UCM3BEac4pLaUq96MQ_VM0Cg/?guided_help_flow=5'>
                             <FontAwesomeIcon icon={faYoutube} style={{ marginTop: "13px" }} className='footerIcons smIcons' />
                           </a>
                         </Col>
@@ -74,7 +74,7 @@ class Footer extends React.Component {
                     <Col lg={12} md={12} sm={12} xs={3}>
                       <p>
                         <a href='about_and_contact' className='quickNavText'>
-                          About
+                          Contact
                         </a>
                       </p>
                     </Col>
