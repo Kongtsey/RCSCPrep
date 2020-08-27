@@ -1,7 +1,7 @@
 import React from "react";
 import {Button, Col, Container, Form, Row} from "react-bootstrap";
 import "./feedbackForm.css"
-import fire from "../../config/Fire";
+import {auth,firestore} from "firebase"
 
 class FeedbackForm extends React.Component {
     constructor(props) {
@@ -43,7 +43,7 @@ class FeedbackForm extends React.Component {
             behavior: 'smooth'
         });
         if (this.state.recommend !== '') {
-            let user = fire.auth().currentUser;
+            let user = auth().currentUser;
             let userID = user.uid;
             let userEmail = user.email;
             let userName = user.displayName;
@@ -60,7 +60,7 @@ class FeedbackForm extends React.Component {
                 additionalComments: this.state.comments,
             }
             // console.log(userID,userEmail,userName);
-            let db = fire.firestore();
+            let db = firestore();
             db.collection('Feedback').doc().set(feedback);
             console.log("Form submitted");
             this.setState({

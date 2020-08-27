@@ -1,5 +1,5 @@
 import React from "react";
-import fire from "../../config/Fire";
+import {auth,firestore} from "firebase"
 
 //TODO: Remove console logs.
 class StrengthWeakness extends React.Component {
@@ -45,8 +45,8 @@ class StrengthWeakness extends React.Component {
             let questionsAnswered = [0, 0, 0, 0];
             let questionsAnsweredCorrectly = [0, 0, 0, 0];
             let ratio = [0, 0, 0, 0];
-            let db = fire.firestore();
-            let user = fire.auth().currentUser;
+            let db = firestore();
+            let user = auth().currentUser;
             let questionRef = db.collection(user.email).doc(this.props.questionType).collection("Questions");
             let responseQuery = questionRef.where('UserHasNotResponded', '==', false);
             responseQuery.get().then(snapshot => {

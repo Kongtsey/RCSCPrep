@@ -20,7 +20,7 @@ class ContactUs extends React.Component {
 
           <Row className='justify-content-center'>
             <Col md={12} lg={12} sm={12} xs={12} className='contactDetails'>
-              <p>Bhutan Exam Factory</p>
+              <p>Kongtsey</p>
             </Col>
           </Row>
 
