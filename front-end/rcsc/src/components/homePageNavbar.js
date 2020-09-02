@@ -3,7 +3,7 @@ import { Container, Col, Row, Form, Nav, Navbar, Button, Modal } from "react-boo
 import "../style-sheet/homepage-navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faBookReader, faUser, faLock, faMapMarker } from "@fortawesome/free-solid-svg-icons";
-import {auth,firestore} from "firebase";
+import {auth,firestore,analytics} from "firebase";
 import logo from "../images/Kongtsey..png";
 // import Loading from "./loading-page-after-sign-up/after-sign-up-loading";
 
@@ -102,6 +102,7 @@ class NavigationBar extends Component {
       .signInWithEmailAndPassword(this.state.email, this.state.password)
       .then((u) => {
         // console.log("Logged In");
+          analytics().logEvent('login');
       })
       .catch((error) => {
         console.log(error);
@@ -133,6 +134,7 @@ class NavigationBar extends Component {
                 dzongkhag: this.state.dzongkhag,
                 practiceExam: false,
               };
+              analytics().logEvent('sign_up');
               return db.collection(this.state.email).doc("UserProfile").set(data);
             })
             .then(() => {
