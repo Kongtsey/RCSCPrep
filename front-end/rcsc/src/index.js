@@ -16,6 +16,6 @@ const firebaseConfig = {
     measurementId: "G-W5X78CV6V1"
 };
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+// firebase.analytics();
 ReactDOM.render(<App />, document.getElementById("root"));
 serviceWorker.unregister();

@@ -102,7 +102,7 @@ class NavigationBar extends Component {
       .signInWithEmailAndPassword(this.state.email, this.state.password)
       .then((u) => {
         // console.log("Logged In");
-          analytics().logEvent('login');
+        //   analytics().logEvent('login');
       })
       .catch((error) => {
         console.log(error);
@@ -134,7 +134,7 @@ class NavigationBar extends Component {
                 dzongkhag: this.state.dzongkhag,
                 practiceExam: false,
               };
-              analytics().logEvent('sign_up');
+              // analytics().logEvent('sign_up');
               return db.collection(this.state.email).doc("UserProfile").set(data);
             })
             .then(() => {
