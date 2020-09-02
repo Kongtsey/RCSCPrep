@@ -1,5 +1,4 @@
 {
-  "homepage": "https://myusername.github.io/RCSCPrep/front-end/rcsc/public",
   "name": "rcsc",
   "version": "0.1.0",
   "private": true,
@@ -27,8 +26,6 @@
     "react-spinners": "^0.9.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b develop -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
