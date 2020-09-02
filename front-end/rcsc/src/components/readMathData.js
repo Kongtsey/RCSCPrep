@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import fire from "../config/Fire";
+import { auth, firestore } from "firebase";
 import { Button, Container, Col, Row, Form } from "react-bootstrap";
 import $ from "jquery";
 import "../style-sheet/radio-customization.css";
 import Loading from "../components/loading";
-import { Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import "../style-sheet/mark-button.css";
 
 const answered_question_id = [];
@@ -22,16 +22,18 @@ class MathList extends Component {
     this.updateDatabase = this.updateDatabase.bind(this);
     this.handleMark = this.handleMark.bind(this);
     this.handleUnmark = this.handleUnmark.bind(this);
+    this.routeChange = this.routeChange.bind(this);
   }
-
+  routeChange(){
+    let path = '/math_stats_page'
+    this.props.history.push(path)
+  }
   componentDidMount() {
     this.setState({ loading: true });
-    let auth = fire.auth();
-    let userName = auth.currentUser.email;
-    console.log("this is the query: ", this.props.questionTypeQuery);
+    let userName = auth().currentUser.email;
+    // console.log("this is the query: ", this.props.questionTypeQuery);
     if (this.props.questionCategory === "any") {
-      fire
-        .firestore()
+      firestore()
         .collection(userName)
         .doc("MathQuestions")
         .collection("Questions")
@@ -57,8 +59,7 @@ class MathList extends Component {
           //<---- END FOR DEBUGGING ---->
         });
     } else {
-      fire
-        .firestore()
+      firestore()
         .collection(userName)
         .doc("MathQuestions")
         .collection("Questions")
@@ -107,9 +108,9 @@ class MathList extends Component {
     if (iterator === answered_question_id.length) {
       answered_question_id[iterator] = questionId;
       answered_question_info[iterator] = [questionId, userChoice, correctAnswer, correctAnswerBool];
-      console.log("Added the question ID: ", questionId);
+      // console.log("Added the question ID: ", questionId);
     } else {
-      console.log("The question id ", questionId, " already exist.");
+      // console.log("The question id ", questionId, " already exist.");
     }
     this.highlightNewAnswer(questionId, index);
   };
@@ -154,9 +155,8 @@ class MathList extends Component {
   }
 
   updateDatabase() {
-    let auth = fire.auth();
-    let userName = auth.currentUser.email; //need to get email since we need to know which collection
-    let db = fire.firestore();
+    let userName = auth().currentUser.email; //need to get email since we need to know which collection
+    let db = firestore();
     let userCollection = db.collection(userName); //ref to collection we need to update to.
     for (let i = 0; i < answered_question_id.length; i++) {
       let qID = answered_question_info[i][0];
@@ -169,12 +169,12 @@ class MathList extends Component {
         { merge: true }
       );
     }
+    this.routeChange();
   }
   handleMark = (index, markedQuestionId) => () => {
     //console.log("you ar here at handleMark and the index is: ", index);
-    let auth = fire.auth();
-    let userName = auth.currentUser.email; //need to get email since we need to know which collection
-    let db = fire.firestore();
+    let userName = auth().currentUser.email; //need to get email since we need to know which collection
+    let db = firestore();
     let userCollection = db.collection(userName); //ref to collection we need to update to.
 
     $("#mark" + index).addClass("markButton");
@@ -188,9 +188,8 @@ class MathList extends Component {
     );
   };
   handleUnmark = (index, markedQuestionId) => () => {
-    let auth = fire.auth();
-    let userName = auth.currentUser.email; //need to get email since we need to know which collection
-    let db = fire.firestore();
+    let userName = auth().currentUser.email; //need to get email since we need to know which collection
+    let db = firestore();
     let userCollection = db.collection(userName); //ref to collection we need to update to.
 
     $("#mark" + index).addClass("markedButton");
@@ -254,11 +253,9 @@ class MathList extends Component {
                 See Result
               </Button>
             )}
-            <Link to={"/math_stats_page"}>
               <Button id='submit' variant='outline-success' onClick={this.updateDatabase}>
                 Done
               </Button>
-            </Link>
           </Col>
         </Row>
         <br />
@@ -270,4 +267,4 @@ class MathList extends Component {
   }
 }
 
-export default MathList;
+export default withRouter(MathList);

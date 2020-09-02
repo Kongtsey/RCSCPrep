@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import fire from "../config/Fire";
+import {auth, firestore} from "firebase";
+import Loading from "./loading";
 import { SimplePieChart } from "./PieChart";
 class CorrectWrong extends Component {
     constructor(props) {
@@ -14,9 +15,9 @@ class CorrectWrong extends Component {
     componentDidMount() {
         let correctAnswers = 0;
         let totalAnswered = 0;
-        let db = fire.firestore();
+        let db = firestore();
         let docPath = this.props.category;
-        let user = fire.auth().currentUser;
+        let user = auth().currentUser;
         let questionRef = db.collection(user.email).doc(docPath).collection("Questions"); //abc
         let responseQuery = questionRef.where("UserHasNotResponded", "==", false);
         responseQuery
@@ -64,7 +65,7 @@ class CorrectWrong extends Component {
         let correctAnswers = this.state.numCorrectAnswers;
         let incorrectAnswers = this.state.numWrongAnswers;
         if (this.state.pending) {
-            return <p>Loading ...</p>
+            return <Loading/>
         }
         return (
             <React.Fragment>

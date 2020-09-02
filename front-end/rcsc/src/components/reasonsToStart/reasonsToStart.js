@@ -20,7 +20,7 @@ class ReasonsToStart extends React.Component {
             <span className={"reason-slogan"}>
               <Row>
                 <Col md={10}>
-                  <h5>Playing out part in creating a digital Bhutan</h5>
+                  <h5>Playing our part in creating a digital Bhutan</h5>
                   <p>
                     <i>For a small country like ours, technology is the only way that we can keep up and possibly even compete with the rest of world</i>
                   </p>

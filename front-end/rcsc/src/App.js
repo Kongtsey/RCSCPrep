@@ -7,7 +7,6 @@ import PracticeMath from "./pages/mathPractice";
 import PracticeEnglish from "./pages/englishPractice";
 import MathLoader from "./pages/mathStatsPage";
 import EnglishLoader from "./pages/englishStatsPage";
-import Loading from "../src/components/loading-page-after-sign-up/after-sign-up-loading";
 
 import ExamPractice from "./pages/examPractice.js";
 

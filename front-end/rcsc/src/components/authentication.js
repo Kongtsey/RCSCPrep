@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import fire from "../config/Fire";
+import {auth} from "firebase"
+import Loading from "./loading";
 
 export const AuthContext = React.createContext();
 
@@ -8,14 +9,14 @@ export const AuthProvider = ({ children }) => {
   const [pending, setPending] = useState(true);
 
   useEffect(() => {
-    fire.auth().onAuthStateChanged((user) => {
+    auth().onAuthStateChanged((user) => {
       setCurrentUser(user);
       setPending(false);
     });
   }, []);
 
   if (pending) {
-    return <>Loading...</>;
+    return <Loading/>;
   }
 
   return (
