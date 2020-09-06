@@ -11,7 +11,7 @@ class ReasonsToStart extends React.Component {
       <Container fluid={true} className='reasonsToStartContainer'>
         <Row className='justify-content-center'>
           <Col sm={10} className='reasonsToStartHeader'>
-            <h3>Why we started PrepCity</h3>
+            <h3>Why we started Kongtsey</h3>
           </Col>
         </Row>
         <Row>
