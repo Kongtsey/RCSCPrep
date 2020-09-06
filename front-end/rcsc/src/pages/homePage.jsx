@@ -23,7 +23,7 @@ function HomePage() {
           <FrontPage />
           <ReasonsToStart />
           <PerksInUsing />
-          <Founders />
+          <hr/>
           <Footer extraMsg='' />
         </Container>
       </React.Fragment>

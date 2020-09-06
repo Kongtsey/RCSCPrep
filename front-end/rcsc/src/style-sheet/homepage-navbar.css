@@ -62,7 +62,7 @@ This is the actual text of the navbar.
   color: #d2d2d2 !important;
   font-size: large !important;
   font-weight: 500 !important;
-  border-color: none !important;
+  border: none !important;
 }
 .login:hover {
   text-decoration: none !important;
@@ -88,7 +88,8 @@ This is the actual text of the navbar.
     margin-top: 7px;
   }
   .login {
-    margin-left: 7px;
+    margin-left: 30px;
+
   }
   .buttonText {
     padding: 0px 10px !important;
