@@ -9,7 +9,7 @@ import FrontPage from "../components/homeFrontPage";
 import ReasonsToStart from "../components/reasonsToStart/reasonsToStart";
 import Footer from "../components/footer";
 import PerksInUsing from "../components/perksOfUsing/perksInUsing";
-import Founders from "../components/foundersComponent/founders";
+// import Founders from "../components/foundersComponent/founders";
 
 function HomePage() {
   const { currentUser } = useContext(AuthContext);
