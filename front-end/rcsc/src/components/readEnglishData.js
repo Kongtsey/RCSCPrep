@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {auth,firestore} from "firebase";
+import { auth, firestore } from "firebase";
 import { Button, Container, Col, Row, Form } from "react-bootstrap";
 import $ from "jquery";
 import "../style-sheet/radio-customization.css";
@@ -24,8 +24,8 @@ class ReadEnglishQuestion extends Component {
     this.handleUnmark = this.handleUnmark.bind(this);
     this.routeChange = this.routeChange.bind(this);
   }
-  routeChange(){
-    let path = '/english_stats_page';
+  routeChange() {
+    let path = "/english_stats_page";
     this.props.history.push(path);
   }
   componentDidMount() {
@@ -130,18 +130,22 @@ class ReadEnglishQuestion extends Component {
    * This method highlights the wrong questions in light gray color and the correct in green.
    */
   showResult() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
     $(":radio").attr("disabled", true);
     for (let i = 0; i < answered_question_id.length; i++) {
       let id = "#" + answered_question_info[i][0];
       let answer_class = "." + answered_question_info[i][2];
       for (let j = 0; j < 4; j++) {
         if (j === parseInt(answered_question_info[i][2])) {
-          $(id).find("form").find(answer_class).css("color", "green");
+          $(id).find("form").find(answer_class).css({ color: "black", background: "rgba(50, 232, 50, 0.46)", padding: "8px 10px 15px 10px" });
         } else {
           $(id)
             .find("form")
             .find("." + j)
-            .css("color", "#cfcfcf");
+            .css({ color: "#cfcfcf" });
         }
       }
     }
@@ -204,7 +208,7 @@ class ReadEnglishQuestion extends Component {
     const loading = this.state.loading;
     return (
       <Container>
-        <Row>
+        <Row style={{ padding: "10px" }}>
           <Col md={12} lg={12} sm={12}>
             <ol>
               {this.state.questionData.map((data, index) => (
@@ -216,7 +220,7 @@ class ReadEnglishQuestion extends Component {
                     </div>
                   ) : (
                     // console.log("No Passage for this question")
-                      ''
+                    ""
                   )}
                   <Row>
                     <Col md={10} lg={10} sm={12}>
@@ -257,9 +261,9 @@ class ReadEnglishQuestion extends Component {
                 See Result
               </Button>
             )}
-              <Button id='submit' variant='outline-success' onClick={this.updateDatabase}>
-                Done
-              </Button>
+            <Button id='submit' variant='outline-success' onClick={this.updateDatabase}>
+              Done
+            </Button>
           </Col>
         </Row>
         <br />

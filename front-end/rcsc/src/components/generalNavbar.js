@@ -51,6 +51,7 @@ class GeneralNavigationBar extends Component {
             <Nav.Link href='/feedback'>
               <span className='feedbackLink'>Feedback</span>
             </Nav.Link>
+            {/* <Nav.Link href='/tutorial_videos'>Tutorial Videos</Nav.Link> */}
           </Nav>
           <Nav>
             <Nav.Link>
