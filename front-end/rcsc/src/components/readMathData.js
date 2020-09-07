@@ -135,6 +135,10 @@ class MathList extends Component {
    * This method highlights the wrong questions in light gray color and the correct in green.
    */
   showResult() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
     $(":radio").attr("disabled", true);
     for (let i = 0; i < answered_question_id.length; i++) {
       let id = "#" + answered_question_info[i][0];
