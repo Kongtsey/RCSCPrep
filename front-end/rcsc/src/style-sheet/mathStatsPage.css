@@ -3,6 +3,7 @@
   border-color: rgba(0, 0, 0, 0.3);
   border-width: 1px;
   margin-left: 3rem;
+  padding: 10px;
 }
 .divParent {
   margin-top: 3rem;
@@ -44,4 +45,11 @@
   text-align: left;
   font-size: 18px;
   margin-left: 3.25rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .pieChart {
+    padding: 10px;
+    margin-left: 0rem;
+  }
 }

@@ -24,9 +24,9 @@ class MathList extends Component {
     this.handleUnmark = this.handleUnmark.bind(this);
     this.routeChange = this.routeChange.bind(this);
   }
-  routeChange(){
-    let path = '/math_stats_page'
-    this.props.history.push(path)
+  routeChange() {
+    let path = "/math_stats_page";
+    this.props.history.push(path);
   }
   componentDidMount() {
     this.setState({ loading: true });
@@ -137,20 +137,20 @@ class MathList extends Component {
   showResult() {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
-    })
+      behavior: "smooth",
+    });
     $(":radio").attr("disabled", true);
     for (let i = 0; i < answered_question_id.length; i++) {
       let id = "#" + answered_question_info[i][0];
       let answer_class = "." + answered_question_info[i][2];
       for (let j = 0; j < 4; j++) {
         if (j === parseInt(answered_question_info[i][2])) {
-          $(id).find("form").find(answer_class).css("color", "green");
+          $(id).find("form").find(answer_class).css({ color: "black", background: "rgba(50, 232, 50, 0.46)", padding: "8px 10px 15px 10px" });
         } else {
           $(id)
             .find("form")
             .find("." + j)
-            .css("color", "#cfcfcf");
+            .css({ color: "#cfcfcf", padding: "8px 10px 15px 10px" });
         }
       }
     }
@@ -211,7 +211,7 @@ class MathList extends Component {
     const loading = this.state.loading;
     return (
       <Container>
-        <Row>
+        <Row style={{ padding: "10px" }}>
           <Col md={12} lg={12} sm={12}>
             <ol>
               {this.state.questionData.map((data, index) => (
@@ -257,9 +257,9 @@ class MathList extends Component {
                 See Result
               </Button>
             )}
-              <Button id='submit' variant='outline-success' onClick={this.updateDatabase}>
-                Done
-              </Button>
+            <Button id='submit' variant='outline-success' onClick={this.updateDatabase}>
+              Done
+            </Button>
           </Col>
         </Row>
         <br />
