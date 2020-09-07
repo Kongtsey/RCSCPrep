@@ -1,6 +1,5 @@
 import React from "react";
 import {Row, Col} from "react-bootstrap";
-import Pattern from "../../images/tutorialImageCovers/pattern.jpg"
 import "./TutorialJumbotron.css"
 import {Link} from "react-router-dom";
 
@@ -35,7 +34,7 @@ class TutorialJumbotron extends React.Component {
                                         tutorialDescrip: this.props.tutorialDescrip,
                                         vidTitle: this.props.vidTitle
                                     }}>
-                                        <h5> Solving Patterns </h5>
+                                        <h5> {this.props.tutorialVidTitle||"insert vid title"} </h5>
                                     </Link>
                                 </Col>
                             </Row>
