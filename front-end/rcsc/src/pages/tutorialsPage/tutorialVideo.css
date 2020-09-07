@@ -1,0 +1,12 @@
+.tutorialQuesDescription{
+    text-align: justify;
+}
+.tutorialVideoContainer{
+    margin-top: 50px;
+}
+.resourcesList {
+    margin-left: 20px;
+}
+.resourcesList li {
+    margin-top: 15px;
+}

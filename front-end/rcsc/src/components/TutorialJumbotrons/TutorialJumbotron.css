@@ -1,0 +1,22 @@
+.topicImage {
+    width: 100%;
+    height: 215px;
+}
+.jumbotronImageContainer {
+    cursor: pointer;
+    text-align: center;
+}
+.jumbotronTextContainer h5 {
+    margin-top: 10px;
+}
+.jumbotronNotMetaContainer{
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:  21px 21px 31px #cfcfcf,
+    -21px -21px 31px #ffffff;
+    padding-right: 0!important;
+    padding-left: 0!important;
+}
+.jumbotronTextContainer h5{
+    cursor: pointer;
+    text-align: center;
+}
