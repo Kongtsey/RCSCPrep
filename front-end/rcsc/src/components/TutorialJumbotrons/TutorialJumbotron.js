@@ -10,7 +10,7 @@ class TutorialJumbotron extends React.Component {
                 <Row>
                     <Col lg={10} className="jumbotronNotMetaContainer">
                         <div className="">
-                            <Row className="justify-content-center">
+                            <Row className="justify-content-center no-gutters">
                                 <Col xs={12} lg={12} className="jumbotronImageContainer">
                                     <Link to={{
                                         pathname: this.props.pathname,
