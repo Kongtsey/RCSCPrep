@@ -21,7 +21,7 @@ class FeedbackPage extends React.Component {
                                         Your feedback matters and greatly helps us in improving our website for you and
                                         for
                                         others.<br/>
-                                        So please take just 5 minutes of your time to help complete this small survey.
+                                        We would be very grateful if we could take just 5 minutes of your time to complete this small survey. <span role="img" aria-label="heart">💛</span>
                                     </p>
                                     <hr/>
                                 </Col>
