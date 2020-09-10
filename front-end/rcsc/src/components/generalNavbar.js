@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import { Nav, Navbar } from "react-bootstrap";
-import { auth } from "firebase";
+import {analytics, auth} from "firebase";
 import "../style-sheet/general-navbar.css";
 import logo from "../images/Kongtsey..png";
 
 class GeneralNavigationBar extends Component {
-  // constructor(props) {
-  //   super(props);
-  // }
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
   // componentDidMount() {
   //   let user = auth().currentUser;
   //   let db = firestore();
@@ -30,7 +31,9 @@ class GeneralNavigationBar extends Component {
   //       console.log(err);
   //     });
   // }
-
+  handleClick() {
+    analytics().logEvent('feedback_click');
+  }
   logout() {
     auth().signOut();
   }
@@ -48,7 +51,7 @@ class GeneralNavigationBar extends Component {
             <Nav.Link href='/english_stats_page'>English</Nav.Link>
             <Nav.Link href='/math_stats_page'>Math</Nav.Link>
             {/*<Nav.Link href='/exam'>Exam</Nav.Link>*/}
-            <Nav.Link href='/feedback'>
+            <Nav.Link href='/feedback' onClick={this.handleClick()}>
               <span className='feedbackLink'>Feedback</span>
             </Nav.Link>
             <Nav.Link href='/tutorial_videos'>Tutorial Videos</Nav.Link>

@@ -3,6 +3,7 @@ import GeneralNavigationBar from "../../components/generalNavbar";
 import {Container, Row, Col} from "react-bootstrap";
 import {Redirect, withRouter} from "react-router-dom";
 import "./tutorialVideo.css"
+import {analytics} from "firebase";
 
 class TutorialVideo extends React.Component {
     constructor(props) {
@@ -20,6 +21,7 @@ class TutorialVideo extends React.Component {
         )
     }
     render() {
+        analytics().logEvent('watch_tutorial');
         if (typeof this.props.location.tutorialVidTitle !== "undefined" || typeof this.props.location.vidSrc !== "undefined") {
             return (
                 <div>

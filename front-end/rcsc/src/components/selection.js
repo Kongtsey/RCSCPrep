@@ -6,6 +6,7 @@ import { renderToString } from "react-dom/server";
 import { Link } from "react-router-dom";
 import Loading from "./loading";
 import StrengthWeakness from "./strengthWeakness/strengthWeakness";
+import {analytics} from "firebase";
 
 class SelectionQueries extends Component {
   constructor(props) {
@@ -25,6 +26,7 @@ class SelectionQueries extends Component {
       collectionName: ''
     };
     this.handleChange = this.handleChange.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
   componentDidMount() {
     if (this.props.type === "Math") {
@@ -49,7 +51,11 @@ class SelectionQueries extends Component {
       });
     }
   }
-
+  handleClick(){
+    let practiceType = this.props.type;
+    practiceType = 'practice '+practiceType;
+    analytics().logEvent(practiceType,{category: this.state.category, numQuestions: this.state.numQuestions, questionType: this.state.questionType});
+  }
   handleChange(e) {
     if (renderToString([e.target.name]) === "numQuestions") {
       this.setState({ [e.target.name]: parseInt([e.target.id]) });
@@ -109,7 +115,7 @@ class SelectionQueries extends Component {
           <Row>
             <Col md={3} className='practiceButton'>
               <Link to={{ pathname: this.state.pathname, numQuestions: this.state.numQuestions, questionType: this.state.questionType, category: this.state.category }}>
-                <Button size='lg' block>
+                <Button size='lg' block onClick={this.handleClick()}>
                   PRACTICE
                 </Button>
               </Link>
