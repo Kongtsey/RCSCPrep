@@ -8,3 +8,8 @@
     margin-top: 65px;
     margin-bottom: 80px;
 }
+@media(max-width: 450px) {
+    .jumbotronContainer{
+        margin-top: 65px;
+    }
+}

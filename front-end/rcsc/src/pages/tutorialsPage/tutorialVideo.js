@@ -13,7 +13,7 @@ class TutorialVideo extends React.Component {
         let relatedResource = this.props.location.relatedResources;
         relatedResource = relatedResource.split(',');
         let resourceList = relatedResource.map((resource)=>
-            <li>{resource}</li>
+            <li><a target="_blank" rel="noopener noreferrer" href={resource}>{resource}</a></li>
         );
         return (
             <ul className="resourcesList">{resourceList}</ul>
@@ -35,6 +35,17 @@ class TutorialVideo extends React.Component {
                                     <span className='tutorialQuesDescription'>
                                         {this.props.location.tutorialDescrip||"insert tutorial description"}
                                     </span>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col xs={12} className="pastInfoContainer">
+                                        Some examples of solving patterns questions from the RCSC: <br/>
+                                        <ol className='pastQuestions'>
+                                            <li>What is the missing letter in this series: g ? d i j d k l d</li>
+                                            <li>What is the missing letter in this series: a z b ? c x</li>
+                                            <li>If: 2, 3 = 10 7, 2 = 63 6, 5 = 66 8 ,4 = 96 9 ,7 =…….</li>
+                                        </ol>
+                                        The question we will be solving in the video is: What is the missing letter in the series: A F D I G L J ___
                                     </Col>
                                 </Row>
                                 <Row>

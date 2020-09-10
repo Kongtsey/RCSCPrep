@@ -10,3 +10,15 @@
 .resourcesList li {
     margin-top: 15px;
 }
+.pastQuestions{
+    margin-left: 20px;
+}
+.pastInfoContainer{
+    margin-top: 2rem;
+}
+@media (max-width: 450px){
+    .tutorialVideoContainer iframe{
+        width: 100% !important;
+        height: 315px;
+    }
+}
