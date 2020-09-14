@@ -49,7 +49,7 @@ This is the actual text of the navbar.
   margin-right: 150px !important;
 }
 .createAcc {
-  margin-right: 130px !important;
+  /*margin-right: 130px !important;*/
   cursor: pointer;
 }
 .hrNavBar {
@@ -83,6 +83,12 @@ This is the actual text of the navbar.
   transition: 0.5s;
   color: #d9707a !important;
 }
+.loginBtn{
+  text-align: right;
+}
+.modal-footer{
+  display: inline !important;
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .nav-link {
     margin-top: 7px;
@@ -93,5 +99,11 @@ This is the actual text of the navbar.
   }
   .buttonText {
     padding: 0px 10px !important;
+  }
+  .alreadyHaveAcc{
+    width: 200px;
+  }
+  .haveAnAcc {
+    margin-right: 0 !important;
   }
 }

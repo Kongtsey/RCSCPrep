@@ -18,7 +18,9 @@ class TutorialJumbotron extends React.Component {
                                         vidSrc: this.props.vidSrc,
                                         relatedResources: this.props.relatedResources,
                                         tutorialDescrip: this.props.tutorialDescrip,
-                                        vidTitle: this.props.vidTitle
+                                        vidTitle: this.props.vidTitle,
+                                        pastQuestions: this.props.pastQuestions,
+                                        lastRemark: this.props.lastRemark
                                     }}>
                                         <img src={this.props.coverImage || "insert image"} className="topicImage" alt={this.props.imageAlt||"insert img alt"}/>
                                     </Link>
