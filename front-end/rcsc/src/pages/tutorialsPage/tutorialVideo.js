@@ -10,12 +10,19 @@ class TutorialVideo extends React.Component {
         super(props);
         this.mapResources = this.mapResources.bind(this);
     }
-    mapResources(){
-        let relatedResource = this.props.location.relatedResources;
+    mapResources(props, path){
+        let relatedResource = props;
         relatedResource = relatedResource.split(',');
-        let resourceList = relatedResource.map((resource)=>
-            <li><a target="_blank" rel="noopener noreferrer" href={resource}>{resource}</a></li>
-        );
+        let resourceList;
+        if(path==="resource"){
+            resourceList = relatedResource.map((resource)=>
+                <li><a target="_blank" rel="noopener noreferrer" href={resource}>{resource}</a></li>
+            );
+        } else {
+            resourceList = relatedResource.map((resource)=>
+                <li>{resource}</li>
+            );
+        }
         return (
             <ul className="resourcesList">{resourceList}</ul>
         )
@@ -41,13 +48,10 @@ class TutorialVideo extends React.Component {
                                 </Row>
                                 <Row>
                                     <Col xs={12} className="pastInfoContainer">
-                                        Some examples of solving patterns questions from the RCSC: <br/>
-                                        <ol className='pastQuestions'>
-                                            <li>What is the missing letter in this series: g ? d i j d k l d</li>
-                                            <li>What is the missing letter in this series: a z b ? c x</li>
-                                            <li>If: 2, 3 = 10 7, 2 = 63 6, 5 = 66 8 ,4 = 96 9 ,7 =…….</li>
-                                        </ol>
-                                        The question we will be solving in the video is: What is the missing letter in the series: A F D I G L J ___
+                                        Some examples of {this.props.tutorialVidTitle} questions from the RCSC PE past papers: <br/>
+                                        {this.mapResources(this.props.location.pastQuestions,"pastQues")}
+                                        <br/>
+                                        {this.props.location.lastRemark}
                                     </Col>
                                 </Row>
                                 <Row>
@@ -66,7 +70,7 @@ class TutorialVideo extends React.Component {
                                 </Row>
                                 <Row>
                                     <Col xs={12}>
-                                        {this.mapResources()}
+                                        {this.mapResources(this.props.location.relatedResources, "resource")}
                                     </Col>
                                 </Row>
                             </Col>
