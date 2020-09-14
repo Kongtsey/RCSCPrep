@@ -9,11 +9,11 @@ class FeedbackForm extends React.Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.state = {
-            goal: '',
-            hasAchieved: '',
+            // goal: '',
+            // hasAchieved: '',
             recommend: '',
-            recommendReason: '',
-            hearing: '',
+            // recommendReason: '',
+            // hearing: '',
             comments: '',
             errorMessage: false,
             formSubmitted: false,
@@ -52,23 +52,22 @@ class FeedbackForm extends React.Component {
                 userID: userID,
                 userEmail: userEmail,
                 userName: userName,
-                reasonToUse: this.state.goal,
-                hasReasonAchieved: this.state.hasAchieved,
+                // reasonToUse: this.state.goal,
+                // hasReasonAchieved: this.state.hasAchieved,
                 wouldRecommend: this.state.recommend,
-                recommendationReason: this.state.recommendReason,
-                discovery: this.state.hearing,
-                additionalComments: this.state.comments,
+                // recommendationReason: this.state.recommendReason,
+                // discovery: this.state.hearing,
+                suggestions: this.state.comments,
             }
             // console.log(userID,userEmail,userName);
             let db = firestore();
             db.collection('Feedback').doc().set(feedback);
-            console.log("Form submitted");
             this.setState({
                 goal: '',
-                hasAchieved: '',
+                // hasAchieved: '',
                 recommend: '',
                 recommendReason: '',
-                hearing: '',
+                // hearing: '',
                 comments: '',
                 formSubmitted: true,
             })
@@ -91,19 +90,19 @@ class FeedbackForm extends React.Component {
                                 {this.state.errorMessage && <p className='requiredField'>
                                     Reason to recommend or not required!!
                                 </p>}
-                                <Form.Group controlId='feedbackForm.ControlTextArea1'>
-                                    <Form.Label className='feedbackFormLabel'>What did you hope to achieve from using
-                                        our website?</Form.Label>
-                                    <Form.Control as="textarea" rows="3" placeholder="Enter text here ..." name='goal'
-                                                  value={this.state.goal} onChange={this.handleChange}/>
-                                </Form.Group>
-                                <Form.Group controlId='feedbackForm.ControlTextArea2'>
-                                    <Form.Label className='feedbackFormLabel'>Did you achieve your goal? More detail the
-                                        better. </Form.Label>
-                                    <Form.Control as='textarea' rows='3' placeholder='Enter text here ...'
-                                                  name='hasAchieved' value={this.state.hasAchieved}
-                                                  onChange={this.handleChange}/>
-                                </Form.Group>
+                                {/*<Form.Group controlId='feedbackForm.ControlTextArea1'>*/}
+                                {/*    <Form.Label className='feedbackFormLabel'>What did you hope to achieve from using*/}
+                                {/*        our website?</Form.Label>*/}
+                                {/*    <Form.Control as="textarea" rows="3" placeholder="Enter text here ..." name='goal'*/}
+                                {/*                  value={this.state.goal} onChange={this.handleChange}/>*/}
+                                {/*</Form.Group>*/}
+                                {/*<Form.Group controlId='feedbackForm.ControlTextArea2'>*/}
+                                {/*    <Form.Label className='feedbackFormLabel'>Did you achieve your goal? More detail the*/}
+                                {/*        better. </Form.Label>*/}
+                                {/*    <Form.Control as='textarea' rows='3' placeholder='Enter text here ...'*/}
+                                {/*                  name='hasAchieved' value={this.state.hasAchieved}*/}
+                                {/*                  onChange={this.handleChange}/>*/}
+                                {/*</Form.Group>*/}
                                 <Form.Group controlId='feedbackForm.recommendRadio' onChange={this.handleChange}>
                                     <Form.Label className='feedbackFormLabel'>Would you recommend Kongtsey to a
                                         friend?<span className='requiredField'>**</span></Form.Label>
@@ -131,20 +130,20 @@ class FeedbackForm extends React.Component {
                                         </div>
                                     ))}
                                 </Form.Group>
-                                <Form.Group controlId='feedbackForm.RecommendText'>
-                                    <Form.Label className='feedbackFormLabel'>If you answered the above question why or
-                                        why would you not recommend Kongtsey?</Form.Label>
-                                    <Form.Control as='textarea' rows='3' placeholder='Enter text here ...'
-                                                  name='recommendReason' value={this.state.recommendReason}
-                                                  onChange={this.handleChange}/>
-                                </Form.Group>
-                                <Form.Group controlId='feedbackForm.Hearing'>
-                                    <Form.Label className='feedbackFormLabel'>How did you hear about us?</Form.Label>
-                                    <Form.Control as='textarea' name='hearing' value={this.state.hearing} rows='3'
-                                                  placeholder='Enter text here ...' onChange={this.handleChange}/>
-                                </Form.Group>
+                                {/*<Form.Group controlId='feedbackForm.RecommendText'>*/}
+                                {/*    <Form.Label className='feedbackFormLabel'>If you answered the above question why or*/}
+                                {/*        why would you not recommend Kongtsey?</Form.Label>*/}
+                                {/*    <Form.Control as='textarea' rows='3' placeholder='Enter text here ...'*/}
+                                {/*                  name='recommendReason' value={this.state.recommendReason}*/}
+                                {/*                  onChange={this.handleChange}/>*/}
+                                {/*</Form.Group>*/}
+                                {/*<Form.Group controlId='feedbackForm.Hearing'>*/}
+                                {/*    <Form.Label className='feedbackFormLabel'>How did you hear about us?</Form.Label>*/}
+                                {/*    <Form.Control as='textarea' name='hearing' value={this.state.hearing} rows='3'*/}
+                                {/*                  placeholder='Enter text here ...' onChange={this.handleChange}/>*/}
+                                {/*</Form.Group>*/}
                                 <Form.Group controlId='feedbackForm.Comments'>
-                                    <Form.Label className='feedbackFormLabel'>Any other comments? Eg: new features you
+                                    <Form.Label className='feedbackFormLabel'>Any suggestions? Eg: new features you
                                         want, bugs you encountered etc ...</Form.Label>
                                     <Form.Control as='textarea' rows='3' placeholder='Enter text here ...'
                                                   name='comments' value={this.state.comments}
