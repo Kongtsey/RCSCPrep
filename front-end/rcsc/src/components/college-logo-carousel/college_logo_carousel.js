@@ -92,9 +92,6 @@ function CollegeLogoCarousel() {
             <img alt='SHARDA' src={SHARDA} className={"college-logo"} />
           </div>
           <div>
-            <img alt='RANGSIT' src={RANGSIT} className={"college-logo"} />
-          </div>
-          <div>
             <img alt='SHERUBTSE' src={SHERUBTSE} className={"college-logo"} />
           </div>
           <div>
