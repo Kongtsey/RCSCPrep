@@ -8,7 +8,7 @@ import FrontPage from "../components/homeFrontPage";
 import ReasonsToStart from "../components/reasonsToStart/reasonsToStart";
 import Footer from "../components/footer";
 import PerksInUsing from "../components/perksOfUsing/perksInUsing";
-import Colleges from "../components/college-logo-carousel/college_logo_carousel";
+import CollegesLogoCarousel from "../components/college-logo-carousel/college_logo_carousel";
 // import Founders from "../components/foundersComponent/founders";
 
 function HomePage() {
@@ -23,9 +23,7 @@ function HomePage() {
           <FrontPage />
           <ReasonsToStart />
           <PerksInUsing />
-          <hr />
-          <Colleges />
-          <hr />
+          <CollegesLogoCarousel />
           <Footer extraMsg='' />
         </Container>
       </React.Fragment>
