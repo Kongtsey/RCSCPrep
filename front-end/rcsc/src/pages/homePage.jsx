@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-
 import { withRouter, Redirect } from "react-router-dom";
 import { AuthContext } from "../components/authentication";
 import { Container } from "react-bootstrap";
@@ -9,6 +8,7 @@ import FrontPage from "../components/homeFrontPage";
 import ReasonsToStart from "../components/reasonsToStart/reasonsToStart";
 import Footer from "../components/footer";
 import PerksInUsing from "../components/perksOfUsing/perksInUsing";
+import CollegesLogoCarousel from "../components/college-logo-carousel/college_logo_carousel";
 // import Founders from "../components/foundersComponent/founders";
 
 function HomePage() {
@@ -23,7 +23,7 @@ function HomePage() {
           <FrontPage />
           <ReasonsToStart />
           <PerksInUsing />
-          <hr/>
+          <CollegesLogoCarousel />
           <Footer extraMsg='' />
         </Container>
       </React.Fragment>

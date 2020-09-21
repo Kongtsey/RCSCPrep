@@ -1,0 +1,33 @@
+.InfiniteCarouselSlide img {
+  width: auto !important;
+  padding: 10px;
+}
+
+.logo-carousel-holder {
+  height: 250px;
+  background: white;
+  padding: 30px;
+}
+.college-logo {
+  height: 120px;
+  width: auto;
+  margin-top: 30px;
+}
+.college-logo-tagline {
+  text-align: center;
+}
+.InfiniteCarouselDots {
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  .logo-carousel-holder {
+    height: 250px;
+    background: white;
+    padding: 20px;
+  }
+  .college-logo {
+    height: 90px;
+    width: auto;
+    margin-top: 30px;
+  }
+}
