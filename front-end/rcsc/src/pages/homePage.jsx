@@ -9,7 +9,6 @@ import ReasonsToStart from "../components/reasonsToStart/reasonsToStart";
 import Footer from "../components/footer";
 import PerksInUsing from "../components/perksOfUsing/perksInUsing";
 import CollegesLogoCarousel from "../components/college-logo-carousel/college_logo_carousel";
-import Maintanence from "../components/maintenance/maintanence";
 // import Founders from "../components/foundersComponent/founders";
 
 function HomePage() {
@@ -21,7 +20,6 @@ function HomePage() {
       <React.Fragment>
         <Container fluid={true} style={{ background: "rgb(0,148,151)", padding: "0px" }}>
           <NavigationBar />
-          <Maintanence />
           <FrontPage />
           <ReasonsToStart />
           <PerksInUsing />

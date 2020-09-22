@@ -337,10 +337,10 @@ class NavigationBar extends Component {
                 <Nav.Link href='/about_and_contact'>Contact Us</Nav.Link>
               </Nav>
               <Form inline>
-                <Button variant='link' className='login' onClick={this.handleShowLogin} disabled>
+                <Button variant='link' className='login' onClick={this.handleShowLogin} >
                   Login
                 </Button>
-                <Button className='button buttonText' onClick={this.handleShow} disabled>
+                <Button className='button buttonText' onClick={this.handleShow} >
                   <span>Sign Up</span>
                 </Button>
               </Form>

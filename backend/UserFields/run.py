@@ -3,7 +3,6 @@ from firebase_admin import credentials
 from firebase_admin import firestore
 import pandas as pd
 
-# EXCEEDED AT DTASHI505@gmail.com
 print("Connecting to DB ... ")
 credential = credentials.Certificate("../credentials/Credentials.json")
 firebase_admin.initialize_app(credential)
@@ -20,10 +19,12 @@ englishDocsRef = db.collection("admin@gmail.com").document("EnglishQuestions").c
 mathDocsRef = db.collection("admin@gmail.com").document("MathQuestions").collection("Questions")
 data = pd.read_csv("./emails.csv")
 df = pd.DataFrame(data=data)
-with open('errUserDbs', 'w') as errDBs:
-    for eachUser in range(2, len(df)):
+with open('errUserDbs.txt', 'a+') as errDBs:
+    for eachUser in range(181, len(df)):
         userEmail = (df.iloc[eachUser][0])
         print(userEmail + "'s collection")
+        print("------------------------------------------")
+        dbError = False
         for eachEnglishDocID in englishDocIDsText:
             userRef = db.collection(userEmail).document("EnglishQuestions").collection("Questions").document(
                 eachEnglishDocID)
@@ -39,7 +40,9 @@ with open('errUserDbs', 'w') as errDBs:
                     u'futureOption4': ""
                 }, merge=True)
             else:
-                errDBs.write(userEmail+"\n")
+                dbError = True
+        if dbError:
+            errDBs.write(userEmail+"\n")
 # for eachDocID in englishDocIDsText:
 #     print("Setting up:",eachDocID,"document")
 #     englishDocsRef.document(eachDocID).set({
