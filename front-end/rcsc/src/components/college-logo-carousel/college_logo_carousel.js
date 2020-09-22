@@ -7,7 +7,7 @@ import "./college_logo_carousel.css";
 import CST from "../../images/college/CST.jpeg";
 import RTC from "../../images/college/RTC.png";
 import AMITY from "../../images/college/amity.png";
-import AUW from "../../images/college/auw-logo.png";
+// import AUW from "../../images/college/auw-logo.png";
 import CNR from "../../images/college/CNR.gif";
 import GEDU from "../../images/college/Gedu.jpeg";
 import KHESAR from "../../images/college/khesar.png";
