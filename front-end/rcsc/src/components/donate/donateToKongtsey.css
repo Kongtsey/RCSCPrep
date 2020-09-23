@@ -1,0 +1,19 @@
+.donateToKongtseyHeader{
+    margin-top: 10px;
+    text-align: justify;
+}
+.donateToKongtseyHeader h3{
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+.donateToKongtseyHeader hr {
+    margin-top: 5px !important;
+    background-color: #C4FFFF !important;
+}
+.donateToKongtseyDescription{
+    text-align: justify;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    color: white;
+}
