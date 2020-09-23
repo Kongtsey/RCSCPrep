@@ -17,7 +17,7 @@ function Maintanence() {
           <p style={{ textAlign: "center" }}>
             <hr />
             <br />
-            <b>Visit us again at 2:00 pm 22st September. </b>
+            <b>Visit us again at 1:00 pm 23rd September. </b>
             <br />
             We apologize for the inconveneince!
           </p>
