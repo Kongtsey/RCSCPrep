@@ -5,12 +5,14 @@ import MathStatsBoard from "../components/mathStatsBoard";
 import EnglishStatsBoard from "../components/englishStatsBoard";
 import "../style-sheet/user-dashboard.css";
 import { Link } from "react-router-dom";
+// import Maintanence from "../components/maintenance/maintanence";
 
 class UserDashboard extends Component {
   render() {
     return (
       <React.Fragment>
-        <GeneralNavbar />
+        <GeneralNavbar/>
+        {/*<Maintanence/>*/}
         <Container>
           <Row>
             <Col md={12}>
