@@ -115,7 +115,7 @@ class SelectionQueries extends Component {
           <Row>
             <Col md={3} className='practiceButton'>
               <Link to={{ pathname: this.state.pathname, numQuestions: this.state.numQuestions, questionType: this.state.questionType, category: this.state.category }}>
-                <Button size='lg' block onClick={this.handleClick()} disabled={true}>
+                <Button size='lg' block onClick={this.handleClick()} >
                   PRACTICE
                 </Button>
               </Link>
