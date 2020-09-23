@@ -11,7 +11,7 @@ class UserDashboard extends Component {
   render() {
     return (
       <React.Fragment>
-        <GeneralNavbar />
+        <GeneralNavbar/>
         <Maintanence/>
         <Container>
           <Row>
