@@ -336,6 +336,9 @@ class NavigationBar extends Component {
               <Nav className='mr-auto'>
                 <Nav.Link href='/about_and_contact'>Contact Us</Nav.Link>
               </Nav>
+              <Nav>
+                <Nav.Link href='donate'>Donate</Nav.Link>
+              </Nav>
               <Form inline>
                 <Button variant='link' className='login' onClick={this.handleShowLogin} >
                   Login
