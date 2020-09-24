@@ -18,7 +18,7 @@ class DonationInfo extends React.Component {
                                 </Row>
                                 <Row>
                                     <Col xs={12} className='accountNumber'>
-                                        <p>12023012312</p>
+                                        <p>202530563</p>
                                     </Col>
                                 </Row>
                                 <Row>

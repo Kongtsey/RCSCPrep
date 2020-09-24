@@ -9,7 +9,7 @@ class DonateWallPaper extends React.Component {
             <Container fluid={true} className="donateWallPaperContainer">
                 <Row className="no-gutters">
                     <Col xs={12} className='donateWallPaperImageContainer'>
-                        <img src={donateWallPaper} className='donateWallPaperImage'/>
+                        <img src={donateWallPaper} alt="person donating" className='donateWallPaperImage'/>
                     </Col>
                 </Row>
             </Container>

@@ -16,3 +16,11 @@
         margin-bottom: -70px;
     }
 }
+@media (min-width: 800px) {
+    .donateWallPaperContainer{
+        background-color: white;
+    }
+    .donateWallPaperImage{
+        height: 500px;
+    }
+}
