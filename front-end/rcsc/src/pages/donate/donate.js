@@ -28,7 +28,7 @@ class Donate extends React.Component{
                        </Row>
                     </Col>
                 </Row>
-                <hr/>
+                <hr style={{backgroundColor: "white"}}/>
                 <Footer/>
             </div>
         );
