@@ -1,16 +1,14 @@
 .donate_to_kongtsey_parent_container {
-  background-image: url("./donate-background.png");
+  background-image: url("./donate_to_kongtsey.png");
 
   background-repeat: no-repeat;
   background-position: center center;
 }
-
 .donate_to_kongtsey_conten_div {
   padding: 20px;
 }
-
 .donate_to_kongtsey_desc {
-  background: #ffffffe6;
+  background: #ffffffc4;
   padding: 20px 0;
   font-size: large;
   border-radius: 10px;

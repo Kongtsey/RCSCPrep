@@ -1,7 +1,5 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoins } from "@fortawesome/free-solid-svg-icons";
 import "./donateToKongtsey.css";
 import qr_code from "./QR-code.jpg";
 class DonateToKongtsey extends React.Component {
