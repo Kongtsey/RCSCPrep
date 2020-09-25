@@ -1,3 +1,12 @@
 .donateContainer{
     background-color: #439497;
 }
+@media (min-width: 470px) {
+    .donationBoxContainer{
+        background-color: #499aa7;
+        box-shadow:  22px 22px 53px #3e838e,
+        -22px -22px 53px #54b1c0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}

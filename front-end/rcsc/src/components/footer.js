@@ -1,14 +1,14 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faMapMarker, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {Col, Container, Row} from "react-bootstrap";
+import {faFacebook, faInstagram, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import {faEnvelope, faMapMarker} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import "../style-sheet/footer.css";
 
 class Footer extends React.Component {
   render() {
     return (
-      <Container className='footer_parent_div' fluid={true}>
+      <Container className='footer_parent_div' fluid={true} >
         <Container>
           <Row className='footer_elements'>
             <Col sm={12}>
