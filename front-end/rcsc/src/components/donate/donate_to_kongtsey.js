@@ -11,8 +11,9 @@ class DonateToKongtsey extends React.Component {
             <h3>Donate to Kongtsey</h3>
             <hr />
             <p style={{ textAlign: "justify" }}>
-              The team at Kongtsey consists of just two brothers working to give users the best experience possible. But we need your help! Server costs, hosting costs and other costs incurred while
-              bringing this product to you is a limiting factor for us. Your donation, whatever the amount, would help not only keep the website running but also motivate us to do better.
+              The team at Kongtsey consists of just two brothers working to give you guys the best experience possible. But we need your help! Server costs, hosting costs and other costs incurred
+              while bringing this product to you is limiting us to produce more features. Your donation, whatever the amount, would not only help to keep the website running but also allow us to bring
+              you newer and better features.
             </p>
             <br />
             <Row style={{ padding: "0px 20px" }}>
