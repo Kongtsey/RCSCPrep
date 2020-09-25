@@ -16,7 +16,6 @@ function Donate() {
       <div className='donateContainer'>
         <NavigationBar />
         <DonateToKongtsey />
-        <hr style={{ backgroundColor: "white" }} />
         <Footer />
       </div>
     );
