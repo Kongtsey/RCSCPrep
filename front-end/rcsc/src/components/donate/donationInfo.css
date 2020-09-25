@@ -45,3 +45,17 @@
     margin-top: 0!important;
     font-weight: bold;
 }
+@media (min-width: 470px) {
+    .donationInfoContainer{
+        margin-top: 50px;
+    }
+    .accountNumber p{
+        color: #212529;
+    }
+    .accountName p {
+        color: #212529;
+    }
+    .donationInfoContainer{
+        margin-bottom: 70px;
+    }
+}

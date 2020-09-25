@@ -24,3 +24,8 @@
         height: 500px;
     }
 }
+@media (min-width: 470px) {
+    .donateWallPaperImage{
+        display: none;
+    }
+}

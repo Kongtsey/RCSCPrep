@@ -10,7 +10,7 @@ class DonationInfo extends React.Component {
                 <Row className='justify-content-center no-gutters'>
                     <Col xs={12} className="donationInformationMetaContainer">
                         <Row className='justify-content-center'>
-                            <Col xs={11} className='donationInformationContainer'>
+                            <Col xs={11} lg={8} className='donationInformationContainer'>
                                 <Row>
                                     <Col xs={12}>
                                         <p>Account Number</p>

@@ -19,6 +19,7 @@ import { AuthProvider } from "./components/authentication";
 import PrivateRoute from "./components/PrivateRoute";
 import ComingSoon from "./pages/comingSoon";
 import Donate from "./pages/donate/donate";
+import DonateAuthenticated from "./pages/donate/donateAuthenticated";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <PrivateRoute exact path='/feedback' component={FeedbackPage} />
           <PrivateRoute exact path='/examPracticePage' component={ExamPieChartPage} />
           <PrivateRoute exact path='/coming_soon' component={ComingSoon}/>
+          <PrivateRoute exact path='/donate_to_us' component={DonateAuthenticated}/>
           <Route exact path='/donate' component={Donate}/>
           {/*<------------------ TUTS PATHS --------------------->*/}
           <PrivateRoute exact path='/tutorial_videos' component={AllTopicsTutorials} />

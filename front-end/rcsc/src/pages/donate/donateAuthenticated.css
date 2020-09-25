@@ -1,0 +1,10 @@
+.donateAuthenticatedContainer{
+    background-color: #f9c10a;
+}
+@media (min-width: 470px) {
+    .donateAuthenticatedContainer{
+        background-color: transparent;
+        background-image: url("../../images/donate/mountainBG.png");
+        background-size: cover;
+    }
+}
