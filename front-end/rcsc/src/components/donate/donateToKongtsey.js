@@ -15,7 +15,7 @@ class DonateToKongtsey extends React.Component {
                 </Row>
                 <Row className="justify-content-center no-gutters">
                     <Col xs={12} lg={7} className='donateToKongtseyDescription'>
-                        <p>The team at Kongtsey just consists of two brothers working to give users the best experience
+                        <p>The team at Kongtsey consists of just two brothers working to give users the best experience
                             possible. But we need your help! Server costs, hosting costs and other costs incurred while bringing this product to you is a limiting factor for us.
                             Your donation, whatever the amount, would help not only keep the website running but also motivate us to do better.
                         </p>

@@ -14,7 +14,7 @@ import "./donate.css"
 function Donate() {
     const {currentUser} = useContext(AuthContext);
     if (currentUser != null) {
-        return <Redirect to={"/user"}/>
+        return <Redirect to={"/donate_to_us"}/>
     } else {
         return (
             <div className='donateContainer'>
