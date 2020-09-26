@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Nav, Navbar } from "react-bootstrap";
-import {analytics, auth} from "firebase";
+import { analytics, auth } from "firebase";
 import "../style-sheet/general-navbar.css";
 import logo from "../images/Kongtsey..png";
 
@@ -32,7 +32,7 @@ class GeneralNavigationBar extends Component {
   //     });
   // }
   handleClick() {
-    analytics().logEvent('feedback_click');
+    analytics().logEvent("feedback_click");
   }
   logout() {
     auth().signOut();
@@ -55,6 +55,7 @@ class GeneralNavigationBar extends Component {
               <span className='feedbackLink'>Feedback</span>
             </Nav.Link>
             <Nav.Link href='/tutorial_videos'>Tutorial Videos</Nav.Link>
+            <Nav.Link href='/donate_to_us'>Donate</Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link>

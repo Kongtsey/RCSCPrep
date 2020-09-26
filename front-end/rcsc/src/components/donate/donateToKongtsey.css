@@ -1,35 +1,35 @@
-.donateToKongtseyHeader{
-    margin-top: 10px;
-    text-align: center;
+.donate_to_kongtsey_parent_container {
+  background-image: url("./donate_to_kongtsey.png");
+
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-.donateToKongtseyHeader h3{
-    margin-top: 10px;
-    font-weight: bold;
-    color: white;
+.donate_to_kongtsey_conten_div {
+  padding: 20px;
 }
-.donateToKongtseyHeader hr {
-    margin-top: 5px !important;
-    background-color: #C4FFFF !important;
+.donate_to_kongtsey_desc {
+  background: #ffffffc4;
+  padding: 20px 0;
+  font-size: large;
+  border-radius: 10px;
 }
-.donateToKongtseyDescription{
-    text-align: justify;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-    color: white;
+
+.donate_to_kongtsey_desc h3 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #449497;
 }
-@media (min-width: 470px) {
-    .donateToKongtseyHeader h3{
-        color: #212529;
-    }
-    .donateToKongtseyDescription{
-        color: #212529;
-        line-height: 35px;
-    }
-    .donateToKongtseyHeader{
-        margin-top: 50px;
-    }
-    .donateToKongtseyHeader hr{
-        margin-bottom: 50px;
-        margin-top: 20px !important;
-    }
+
+.donate_to_kongtsey_desc p {
+  padding: 0px 20px;
+  line-height: 30px;
+}
+.qr_code_donate {
+  width: 100%;
+  height: auto;
+}
+.account_number_info {
+  background: #ffffffed;
+  padding: 5px 10px;
+  border-radius: 3px;
 }

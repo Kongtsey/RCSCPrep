@@ -37,14 +37,14 @@ function App() {
           <PrivateRoute exact path='/forum' component={Forum} />
           <PrivateRoute exact path='/feedback' component={FeedbackPage} />
           <PrivateRoute exact path='/examPracticePage' component={ExamPieChartPage} />
-          <PrivateRoute exact path='/coming_soon' component={ComingSoon}/>
-          <PrivateRoute exact path='/donate_to_us' component={DonateAuthenticated}/>
-          <Route exact path='/donate' component={Donate}/>
+          <PrivateRoute exact path='/coming_soon' component={ComingSoon} />
+          <PrivateRoute exact path='/donate_to_us' component={DonateAuthenticated} />
+          <Route exact path='/donate' component={Donate} />
           {/*<------------------ TUTS PATHS --------------------->*/}
           <PrivateRoute exact path='/tutorial_videos' component={AllTopicsTutorials} />
           <PrivateRoute exact path='/tutorial_videos/solving_patterns' component={TutorialVideo} />
           <PrivateRoute exact path='/tutorial_videos/simple_algebra' component={TutorialVideo} />
-          <PrivateRoute exact path='/tutorial_videos/solving_comparisons' component={TutorialVideo}/>
+          <PrivateRoute exact path='/tutorial_videos/solving_comparisons' component={TutorialVideo} />
           {/*<------------------ TUTS PATHS --------------------->*/}
         </Switch>
       </BrowserRouter>
