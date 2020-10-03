@@ -4,6 +4,7 @@ from firebase_admin import firestore
 import pandas as pd
 import os
 
+
 def databaseSetUp(userEmail, category, docIDs):
     """
 
@@ -13,7 +14,7 @@ def databaseSetUp(userEmail, category, docIDs):
     :return:
     """
     dbError = False
-    with open('errUserDbs.txt', 'a+') as errDBs:
+    with open('errUserDbs2809.txt', 'a+') as errDBs:
         for eachDocId in docIDs:
             userRef = db.collection(userEmail).document(category).collection("Questions").document(
                 eachDocId)
@@ -38,53 +39,14 @@ with open('englishDocIDs.txt', 'r') as englishDocIDs:
     englishDocIDsText = englishDocIDsText.split('\n')
 with open('mathDocIDs.txt', 'r') as mathDocIDs:
     mathDocIDsList = mathDocIDs.read().split('\n')
-data = pd.read_csv("./emails.csv")
+data = pd.read_csv("./userEmails2809clean.csv")
 df = pd.DataFrame(data=data)
-for eachUser in range(50,80):
+for eachUser in range(95, 122):
     userEmail = (df.iloc[eachUser][0])
     print("------------------------------------------")
     print(userEmail + "'s collection")
     print("------------------------------------------")
     dbError = False
     databaseSetUp(userEmail, "MathQuestions", mathDocIDsList)
-# for eachDocID in englishDocIDsText:
-#     print("Setting up:",eachDocID,"document")
-#     englishDocsRef.document(eachDocID).set({
-#         u'explanationURL': "",
-#         u'futureOption': "",
-#         u'futureOption1': "",
-#         u'futureOption2': "",
-#         u'futureOption3': "",
-#         u'futureOption4': ""
-#
-#     }, merge=True)
-# for eachDocID in mathDocIDsText:
-#     print("Setting up:", eachDocID,"document")
-#     mathDocsRef.document(eachDocID).set({
-#         u'explanationURL': "",
-#         u'futureOption': "",
-#         u'futureOption1': "",
-#         u'futureOption2': "",
-#         u'futureOption3': "",
-#         u'futureOption4': ""
-#     }, merge=True)
-# for eachEnglishDocID in englishDocIDsText:
-#     userRef = db.collection(userEmail).document("EnglishQuestions").collection("Questions").document(
-#         eachEnglishDocID)
-#     doc = userRef.get()
-#     if doc.exists:
-#         print("Setting up", doc.id, " fields")
-#         userRef.set({
-#             u'explanationURL': "",
-#             u'futureOption': "",
-#             u'futureOption1': "",
-#             u'futureOption2': "",
-#             u'futureOption3': "",
-#             u'futureOption4': ""
-#         }, merge=True)
-#     else:
-#         dbError = True
-# if dbError:
-#     errDBs.write(userEmail + "\n")
-os.system('say "Your processes have been completed! dickhead"')
+os.system('say "Woof Woof Woof"')
 print("Processes done! 😉")
