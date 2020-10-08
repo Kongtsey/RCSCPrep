@@ -7,3 +7,5 @@ __pycache__/
 credentials/
 rcscEnv/
 pictures/
+backend/imageCompress/scannedAnswers/
+backend/imageCompress/compressedImages/

@@ -21,5 +21,4 @@ function Donate() {
     );
   }
 }
-
 export default withRouter(Donate);
